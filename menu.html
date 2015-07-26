@@ -4,6 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <title>jd</title>
+
+
+    </script>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        function show( elt ) {
+            var index = $( elt ).index();
+
+            $( "#categorys-2014 .dd .item" ).removeClass( "hover" ).find( "i" ).hide();
+            $( elt ).addClass( "hover" );
+            $( elt ).find( "i" ).hide();
+
+            $( ".dorpdown-layer" ).show(); 
+            $( ".dorpdown-layer .item-sub" ).hide().eq( index ).show(); 
+
+        }
+
+        function hide( elt ) {
+            $( ".dorpdown-layer" ).hide();
+        }
+        
+    //----------------
+
+        var clearTimeoutId;
+
+        $( "#categorys-2014 .dd .item" ).mouseover( function() {
+
+            if ( pos.isRight && $( ".dorpdown-layer" ).css( "display" ) === "block" ) {
+                return;
+            }
+            /*
+            */
+            if ( clearTimeoutId ) {
+                clearTimeout( clearTimeoutId );
+            }
+            show( this );
+        } ).mouseout( function( e ) {
+            var e = e || window.event;
+            if ( pos.isRight ) {
+                return;
+            }
+            clearTimeoutId = setTimeout( function() {
+                var relatedTarget = e.relatedTarget || e.toElement;
+                if ( $( relatedTarget ).parents( ".dorpdown-layer" ) ) {
+                    return;
+                }
+                hide( this );
+            }, 50 );
+        } );
+
+    //----------------
+
+        /*
+            给菜单栏注册 mousemove 事件， 初值坐标为 刚进入时的坐标；
+            移动过程中，取间隔的两个点的X坐标进行比较，
+            如果后一个点X值大于前一个点的X值，则判定为向右（右上或右下）。
+        */
+        var pos = { x: 0, y: 0, isRight: false, callback: []};
+        var counter = 0;
+
+        $(".dd-inner").mousemove( mousemoveHandler ).mouseover( function(e){
+            pos.x = e.clientX;
+            pos.y = e.clientY;
+        } );
+
+        function mousemoveHandler ( e ) {
+            e = e || window.e;
+
+            if ( ++counter % 20 !== 0) {
+                return;
+            }
+            
+            //console.info( e.target, e.clientX, e.clientY );
+            if ( e.clientX > pos.x ) {
+                pos.isRight = true;
+                console.info(e.clientX, pos.x, "右");
+            } else {
+                pos.isRight = false;
+                console.info(e.clientX, pos.x, "------------------");
+            }
+            pos.x = e.clientX;
+        }
+
+
+    });
+    </script>
+
+
     <style>
     * {
         margin: 0;
@@ -251,84 +341,7 @@
         display: block;
         margin-bottom: 1px;
     }
-    </style>
-
-    </script>
-    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
-    <script>
-    $(document).ready(function() {
-        function show( elt ) {
-            var index = $( elt ).index();
-
-            $( "#categorys-2014 .dd .item" ).removeClass( "hover" ).find( "i" ).hide();
-            $( elt ).addClass( "hover" );
-            $( elt ).find( "i" ).hide();
-
-            $( ".dorpdown-layer" ).show(); 
-            $( ".dorpdown-layer .item-sub" ).hide().eq( index ).show(); 
-
-        }
-        function hide( elt ) {
-            $( ".dorpdown-layer" ).hide();
-        }
-
-        var clearTimeoutId;
-
-        $( "#categorys-2014 .dd .item" ).mouseover( function() {
-            /*
-            if ( pos.isRight && $( ".dorpdown-layer" ).css( "display" ) === "block" ) {
-                return;
-            }
-            */
-            if ( clearTimeoutId ) {
-                clearTimeout( clearTimeoutId );
-            }
-            show( this );
-        } ).mouseout( function( e ) {
-            var e = e || window.event;
-            if ( pos.isRight ) {
-                return;
-            }
-            clearTimeoutId = setTimeout( function() {
-                var relatedTarget = e.relatedTarget || e.toElement;
-                if ( $( relatedTarget ).parents( ".dorpdown-layer" ) ) {
-                    return;
-                }
-                hide( this );
-            }, 50 );
-        } );
-
-        /*
-        var pos = { x: 0, y: 0, isRight: false, callback: []};
-        var counter = 0;
-
-        $(".dd-inner").mousemove( mousemoveHandler ).mouseover( function(e){
-            pos.x = e.clientX;
-            pos.y = e.clientY;
-        } );
-
-        function mousemoveHandler ( e ) {
-            e = e || window.e;
-
-            if ( ++counter % 20 !== 0) {
-                return;
-            }
-            
-            //console.info( e.target, e.clientX, e.clientY );
-            if ( e.clientX > pos.x ) {
-                console.info(e.clientX, pos.x, "右");
-                pos.isRight = true;
-            } else {
-                pos.isRight = false;
-                console.info(e.clientX, pos.x, "------------------");
-            }
-            pos.x = e.clientX;
-        }
-        */
-
-
-    });
-    </script>
+    </style>    
 </head>
 
 <body>
