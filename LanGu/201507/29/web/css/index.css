@@ -1,8 +1,7 @@
 a:hover { text-decoration: none; }
 h1,h2,h3 { font-weight: normal; font-size: 100%;} 
-body { font-family: "Microsoft Yahei"; font-size: 14px; 
-    background: url("../images/main_bg.jpg") repeat-x left 168px;
-}
+html, body { height: 100%; }
+body { font-family: "Microsoft Yahei"; font-size: 14px; background: url("../images/main_bg.jpg") repeat-x left 168px; }
 
 /* header */
 .header { width: 1000px; height: 168px; margin: 0 auto; background-color: #FFFFFF;  margin-bottom: 28px;}
@@ -16,7 +15,7 @@ body { font-family: "Microsoft Yahei"; font-size: 14px;
 .header .nav .item a:hover,
 .header .nav .item .current_page{ color: #0b57c7; display: block; border-bottom: solid 2px #0b57c7; }
 
-.main { width: 1000px; margin: 0 auto; overflow: hidden; }
+.main { width: 1000px; margin: 0 auto; overflow: hidden;  min-height: 70%;}
 
 /* footer */
 .footer { text-align: center; height: 232px; background: url("../images/footer_bg.jpg") repeat-x; font-family: "Microsoft Yahei"; font-size: 14px; padding-top: 24px; }
@@ -45,40 +44,39 @@ body { font-family: "Microsoft Yahei"; font-size: 14px;
 .focus-banner .page-index { display: inline-block; width: 11px; height: 11px; border: solid 1px #FFFFFF; background-color: #bcbcbc; }
 .focus-banner .page-index.active { background-color: #1f90bf; }
 
-.index .floor2 { margin-top: 20px; padding-bottom: 20px; }
-.index .policy_focus    ,
-.index .company_profile { float: left; width: 450px; }
-.index .company_profile .title,
-.index .policy_focus    .title { background-color: #0653c7; overflow: hidden; line-height: 45px; }
-.index .company_profile .title h1,
-.index .policy_focus    .title h1 { float: left; color: #FFFFFF; font-size: 20px; font-weight: bold; height: 45px; margin-left: 36px; }
-.index .company_profile .title a ,
-.index .policy_focus    .title a { float: right; font-size: 14px; color: #FFFFFF; margin-right: 30px; }
-.index .company_profile .cont { overflow: hidden; }
-.index .company_profile .cont .apply_join { float: left; text-align: center; width: 124px; margin-left: 20px; margin-top: 24px; }
-.index .company_profile .cont .apply_join img{ display: block; }
-.index .company_profile .cont .apply_join a { display: block; width: 124px; height: 33px; background-color: #ff0000; line-height: 33px; color: #FFFFFF; margin-top: 16px; }
-.index .company_profile .cont .brief { float: right; width: 264px; text-indent: 28px; margin-right: 20px; margin-top: 24px; line-height: 1.8; color: #333333; }
-.index .chairman_info,
-.index .members { float: right; width: 508px; }
-.index .chairman_info .title,
-.index .members .title { font-size: 20px; font-weight: bold; line-height: 45px; }
-.index .chairman_info .cont { overflow: hidden; margin-top: 8px; }
-.index .chairman_info .cont li { float: left; width: 240px; margin-top: 16px; }
-.index .chairman_info .cont dt { float: left; width: 66px; height: 66px; margin-right: 14px; }
-.index .chairman_info .cont dt img { width: 100%; }
-.index .chairman_info .cont dd { color: #333333; font-size: 14px; line-height: 20px; } 
-
-.index .floor3 { margin-top: 20px; margin-bottom: 88px; padding-bottom: 20px;}
-.index .policy_focus .cont { }
-.index .policy_focus .cont h2 { text-align: center; padding-top: 16px; }
-.index .policy_focus .cont h2 a { color: #0b57c7; font-size: 20px; font-weight: bold;  }
-.index .policy_focus .cont dl { width: 400px; margin: 0 auto; }
-.index .policy_focus .cont dd { line-height: 26px; padding-left: 28px; background: url("../images/list_style_news.png") no-repeat 13px center; }
-.index .policy_focus .cont dd a:hover { color: #0b57c7; }
-.index .policy_focus .cont dt { border-top: solid 1px #d9d9d9; margin: 16px 0; }
-.index .members .cont { overflow: hidden; padding-top: 10px; }
-.index .members .cont a { float: left; color: #333333; margin-right: 14px; width: 48px; line-height: 32px; }
+.floor2 { margin-top: 20px; padding-bottom: 20px; }
+.policy_focus    ,
+.company_profile { float: left; width: 450px; }
+.company_profile .title,
+.policy_focus    .title { background-color: #0653c7; overflow: hidden; line-height: 45px; }
+.company_profile .title h1,
+.policy_focus    .title h1 { float: left; color: #FFFFFF; font-size: 20px; font-weight: bold; height: 45px; margin-left: 36px; }
+.company_profile .title a ,
+.policy_focus    .title a { float: right; font-size: 14px; color: #FFFFFF; margin-right: 30px; }
+.company_profile .cont { overflow: hidden; }
+.company_profile .cont .apply_join { float: left; text-align: center; width: 124px; margin-left: 20px; margin-top: 24px; }
+.company_profile .cont .apply_join img{ display: block; }
+.company_profile .cont .apply_join a { display: block; width: 124px; height: 33px; background-color: #ff0000; line-height: 33px; color: #FFFFFF; margin-top: 16px; }
+.company_profile .cont .brief { float: right; width: 264px; text-indent: 28px; margin-right: 20px; margin-top: 24px; line-height: 1.8; color: #333333; }
+.chairman_info,
+.members { float: right; width: 508px; }
+.chairman_info .title,
+.members .title { font-size: 20px; font-weight: bold; line-height: 45px; }
+.chairman_info .cont { overflow: hidden; margin-top: 8px; }
+.chairman_info .cont li { float: left; width: 240px; margin-top: 16px; }
+.chairman_info .cont dt { float: left; width: 66px; height: 66px; margin-right: 14px; }
+.chairman_info .cont dt img { width: 100%; }
+.chairman_info .cont dd { color: #333333; font-size: 14px; line-height: 20px; } 
+.floor3 { margin-top: 20px; margin-bottom: 88px; padding-bottom: 20px;}
+.policy_focus .cont { }
+.policy_focus .cont h2 { text-align: center; padding-top: 16px; }
+.policy_focus .cont h2 a { color: #0b57c7; font-size: 20px; font-weight: bold;  }
+.policy_focus .cont dl { width: 400px; margin: 0 auto; }
+.policy_focus .cont dd { line-height: 26px; padding-left: 28px; background: url("../images/list_style_news.png") no-repeat 13px center; }
+.policy_focus .cont dd a:hover { color: #0b57c7; }
+.policy_focus .cont dt { border-top: solid 1px #d9d9d9; margin: 16px 0; }
+.members .cont { overflow: hidden; padding-top: 10px; }
+.members .cont a { float: left; color: #333333; margin-right: 14px; width: 48px; line-height: 32px; }
 
 
 
