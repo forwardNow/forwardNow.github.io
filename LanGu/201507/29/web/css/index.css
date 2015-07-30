@@ -97,7 +97,7 @@ body { font-family: "Microsoft Yahei"; font-size: 14px;
 .module .cont .contact_us { margin: 0 20px 0 34px; }
 .module .cont .contact_us li { position: relative; border-bottom: solid 1px #eaeae9; line-height: 28px; }
 .module .cont .contact_us li img { position: absolute; left: -30px; top: 4px; }
-.module .cont .contact_us li p { word-break: break-word; }
+.module .cont .contact_us li p { word-break:break-all;word-wrap:break-word;overflow:hidden }
 
 .breadcrumb_nav { height: 36px; background-color: #FFFFFF; color: #4c4c4c; line-height: 36px; }
 .breadcrumb_nav h1 { font-size: 16px; padding-left: 10px; float: left; }
