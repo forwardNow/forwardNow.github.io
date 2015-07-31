@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+    * { margin: 0; padding: 0;}
+    
+    body {
+        height: 1764px;
+        background: url("page.jpg") no-repeat center top;
+    }
+
+
+    .container {
+        width: 1000px;
+        height:100px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .sidebar {
+        position: absolute;
+        left: 0px;
+        top: 406px;
+    }
+    </style>
+    <script>
+        window.onscroll = function(){ 
+            var top = document.documentElement.scrollTop || document.body.scrollTop;  
+            //console.info( top );
+            var sidebar = document.getElementById( "sidebar" ); 
+            if( top >= 406 ) { 
+                sidebar.style.top = top + "px"; 
+            } else { 
+                sidebar.style.top = 406 + "px";
+            } 
+        } 
+    </script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <img src="sidebar_left.png" alt="" class="sidebar" id="sidebar">
+    </div>
+
+</body>
+</html>
