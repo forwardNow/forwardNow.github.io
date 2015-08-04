@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body {
+    background-color: #fafafa;
+    color: #333333;
+}
+
+.box-shadow-1{  
+  -webkit-box-shadow: 1px 1px 4px #cecdcd;  
+  -moz-box-shadow: 1px 1px 4px #cecdcd;  
+  box-shadow: 1px 1px 4px #cecdcd;  
+} 
+/* header */
+.header { width: 1000px; margin: 0 auto; height: 98px; }
+.site-logo { float: left; margin-top: 16px; }
+.site-logo .logo { display: block; }
+.nav { float: right; margin-top: 40px; }
+.nav-item { float: left; position: relative; }
+.nav-item .nav-item-link { color: #5c5c5c; font-size: 14px; font-family: "宋体"; display: block; text-align: center; line-height: 1; }
+.nav-item .nav-item-link i { display: block; border-right: solid 1px #8a8a8a; padding: 0px 17px; }
+.nav-item-last .nav-item-link i { border: none 0; }
+.nav-item .nav-item-link em { display: inline-block; width: 67%; border-bottom: solid 2px transparent; height: 10px; }
+.nav-item:hover .nav-item-link em { border-bottom-color: #ed8856; }
+.nav-item-current .nav-item-link em { border-bottom-color: #ed8856; }
+.nav-item .nav-children { display: none; width: 90px; position: absolute; top: 23px; left: 0px; z-index: 2; }
+.nav-item:hover .nav-children { display: block; }
+.nav-item .nav-children .children-item { background-color: #eeeeee; }
+.nav-item .nav-children .children-item-link { font-family: "宋体"; font-size: 12px; display:block; height: 24px; line-height: 24px; padding-left: 8px; color: #999999; } 
+.nav-item .nav-children .children-item-link:hover { background-color: #d5d5d5; color: #934787; }
+
+/* banner */
+.banner { background-color: #f5f5f5; border-top: solid 1px #f7f7f7; border-bottom: solid 1px #f0f0f0; height: 642px; } 
+.banner-inner { position: relative; width: 1000px; height: 100%; margin: 0 auto; background: url("../images/banner_bg.jpg") no-repeat 260px top; }
+.banner-inner .banner-info { position: absolute; left: 10px; top: 120px; }
+.banner-inner .banner-btn { position: absolute; width: 160px; height: 48px; background: url("../images/banner_btn.jpg") no-repeat; top: 410px; left: 10px; }
+
+/* consult */
