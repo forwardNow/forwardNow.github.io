@@ -1,0 +1,30 @@
+/* reset */
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,i{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+/* fonts */
+body{font:14px/1.25 "Microsoft Yahei",arial,helvetica,clean,sans-serif;}
+
+/* custom */
+a { text-decoration: none; border: none 0;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/*透明*/
+.opacity_20{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; /* ie8  */filter:alpha(opacity=20);/* ie5-7  */opacity: 0.2;}
+.opacity_40{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; /* ie8  */filter:alpha(opacity=40);/* ie5-7  */opacity: 0.4;}
+.opacity_50{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* ie8  */filter:alpha(opacity=50);/* ie5-7  */opacity: 0.5;}
+.opacity_60{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* ie8  */filter:alpha(opacity=60);/* ie5-7  */opacity: 0.6;}
+.opacity_70{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* ie8  */filter:alpha(opacity=70);/* ie5-7  */opacity: 0.7;}
+.opacity_80{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* ie8  */filter:alpha(opacity=80);/* ie5-7  */opacity: 0.8;}
