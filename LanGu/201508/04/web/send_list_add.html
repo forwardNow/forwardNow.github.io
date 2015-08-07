@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>蔡甸区公安局</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/content.css">    
+</head>
+<body>
+    
+<div class="site-wrapper">
+        
+    <div class="page">
+        
+        <div class="header">
+            <div class="site-logo">
+                <a href="index.html"><img class="logo" src="./images/site_logo.png" alt=""></a>
+                <img class="slogan" src="./images/site_slogan.png" alt="">
+            </div>
+            <div class="nav">
+                <ul class="nav-list clearfix">
+                    <li class="nav-list-item"><a href="index.html" class="nav-list-item-link">首页</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-item-link">分局概况</a></li>
+                    <li class="nav-list-item"><a href="fj_file.html" class="nav-list-item-link">分局文件</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-item-link">队伍建设</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-item-link">警情研判</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-item-link">法制园地</a></li>
+                    <li class="nav-list-item"><a href="send_login.html" class="nav-list-item-link current-page">网上报送</a></li>
+                    <li class="nav-list-item"><a href="./tel_list.html" class="nav-list-item-link">办公电话</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-item-link">旧版回顾</a></li>
+                </ul>
+            </div>
+            <div class="functions">
+                <div class="functions-onduty">
+                    <dl class="onduty-list">
+                        <dt class="onduty-titile">今日值班</dt>
+                        <dd class="onduty-item"><label class="label">局领导</label>：李坚</dd>
+                        <dd class="onduty-item"><label class="label">警务指挥室</label>：李怡</dd>
+                        <dd class="onduty-item"><label class="label">法制大队</label>：曾轶</dd>
+                    </dl>
+                </div>
+                <div class="functions-search">
+                    <label class="search-label">站内搜索</label>
+                    <input class="search-input" type="text" value="请输入关键字">
+                    <button class="search-btn">全网搜索</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="breadcrumb-nav"><!-- 
+         --><label class="breadcrumb-nav-label">所在位置：</label><!-- 
+         --><a class="breadcrumb-nav-aheadlink" href="index.html">首页</a><!-- 
+         --><span class="breadcrumb-nav-separator">&gt;&gt;</span><!--
+         --><span class="breadcrumb-nav-currentlink">网上报送</span>
+        </div>
+
+        <div class="main">
+          <div class="send-inner">
+                
+
+            <div class="send-left">
+                <div class="send-head">
+                    <div class="send-welcome"><span class="send-username">永安所</span>，欢迎登陆！</div>
+                    <p class="send-funcs"><a class="send-logout" href="#">[退出]</a></p>
+                </div>
+                <div class="send-btns">
+                    <button class="send-btns-list" onclick="location='send_list.html'">报送列表</button>
+                    <button class="send-btns-add send-btns-current" onclick="location='send_list_add.html'">新增报送</button>
+                </div>
+            </div>
+            <div class="send-right">
+                
+                <div class="send-list-head">
+                    <h1 class="send-list-head-title">新增报送</h1>
+                </div>
+                <script>
+
+                    function changeTab( index ) {
+                        var tabLinks = document.querySelectorAll( ".send-tabs a" );
+                        var tabs = document.querySelectorAll( ".send-tabbody" );
+                        for ( var i =0; i < tabLinks.length; i++ ) {
+                            tabLinks[ i ].setAttribute( "class", tabLinks[ i ].className.replace("active", "") );
+                            tabs[ i ].style.display = "none";
+                            if ( i === index) {
+                                tabLinks[ i ].setAttribute( "class", tabLinks[ i ].className + " active" );
+                                tabs[ i ].style.display = "block";
+                            }
+                        }
+                    }
+
+                </script>                    
+                <div class="send-list-body">
+                    <div class="send-tabs"><!-- 
+                     --><a href="javascript:void changeTab(0)" class="send-tabs-article active">文章信息</a>|<!-- 
+                     --><a href="javascript:void changeTab(1)" class="send-tabs-pic">图片附件</a>
+                    </div>
+                    <div class="send-tabsbody">
+                        <div class="send-tabbody tab-inner-article" style="display:block;">
+                            <table class="article-tab">
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label">父级分类：</td>
+                                    <td class="article-tab-cont"><select><option>首页模板</option></select></td>
+                                </tr>
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label">文章标题：</td>
+                                    <td class="article-tab-cont"><!-- 
+                                     --><input type="text" class="article-title-input">
+                                    </td>
+                                </tr>
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label html-edit-label">文章内容：</td>
+                                    <td class="article-tab-cont"><textarea style="width:600px;height: 370px;"></textarea></td>
+                                </tr>
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label"></td>
+                                    <td class="article-tab-cont"><!-- 
+                                     --><input type="submit" value="报 送" class="send-commit-btn">
+                                    </td>                                
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="send-tabbody tab-inner-pic" style="display:none;">
+                            <div class="tab-pic clearfix">
+                                <label class="tab-pic-label">缩略图：</label>
+                                <div class="tab-pic-cont"></div>
+                            </div>
+                            <div class="tab-pic clearfix">
+                                <label class="tab-pic-label">附　件：</label>
+                                <div class="tab-pic-cont"></div>
+                            </div>
+                            <input type="submit" class="tab-pic-submit" value="保 存">
+                        </div>
+                    </div>
+                </div>    
+                
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <a href="#">管理员入口</a>|<!-- 
+             --><a href="#">收藏本站</a>
+            </div>
+            <div class="tail">
+                <div class="visit-record"><!-- 
+                  -->在线人数：<span class="record-num">48</span>人<br><!-- 
+                  -->访问次数：<span class="record-num">2041122</span>次
+                </div>
+                <div class="copyright">Copyright&copy;2015 蔡甸区公安局 All Rights Rsaervd</div>
+                <div class="resolution">建议分辨率：1024*768以上最佳浏览效果</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

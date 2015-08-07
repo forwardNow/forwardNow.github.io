@@ -1,0 +1,19 @@
+﻿
+1. 修改 web/index.html
+    
+   
+
+	1）修改轮播图，提取 HTML页面 JS代码 到 web/js/main.js
+
+   
+
+	2）新增网站集合面板
+
+
+
+2. 修改 web/css/content.css
+
+
+
+3. 新增 web/js/main.js
+

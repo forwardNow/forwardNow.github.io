@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>关于我们</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0,user-scalable=no"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/fx.js"></script>
+</head>
+<body>
+	<div class="mod_about_001">
+    	<img src="images/about_img.jpg" width="100%" />
+    </div>
+    
+    <div class="mod_about_002">
+    	<p>
+        	<span class="red">移动互联时代，专业地产网络服务提供商</span><br /><br />
+            
+            
+EDO元度 移动互联领域的先行者<br />
+<span class="c333">元度科技是专注于移动互联领域+房地产营销的新锐信息技术公司</span><br /><br />
+
+公司成立于2009年，曾为武汉万科、珠海万科、成都万达、成都金辉、
+成都蓝光、大连瑞安等多家品牌公司提供创新互动营销服务；现在公
+司专注于移动互联领域服务，以核心产品“X-Files”移动案场管
+理系统为全国多家品牌地产提供全新营销管理信息技术服务；<br /><br />
+
+<span class="c333">携手名企 致力推动销售管理变革</span><br />
+西安万科、广州万科、珠海万科、昆明万科、武汉万科、中航地产、
+银海地产、天合地产、地高地产......<br />
+
+<span class="red">房地产+IT核心团队，最专业的房地产软件服务商</span><br /><br />
+
+————来源于专业地产名企
+团队核心成员来自万科、蓝光等知名开发商和专业地产营销机构，
+均拥有多年专业地产开发、营销策划从业经验，深谙房地产营销流程。<br /><br />
+
+————来源于国内资深IT技术团队
+由资深IT技术团队构成，涵盖IOS\安卓\PC端的专业研发团队，曾参
+与研发中国移动音乐平台、中国银联支付平台等大型移动互联产品，
+历经多年磨合，拥有强大的产品实现能力。<br /><br />
+
+<span class="red">X-Files元度移动案场系统 推动中国房地产销售管理变革</span><br /><br />
+
+X-Files元度移动案场系统软件为元度科技自主研发的移动互联时代
+房地产销售管理软件。 该系统基于手机端和PC端，实现对房地产销
+售环节的全面信息管理，极大的提高了开发商对市场的把握能力和对
+客户的管理效率。 <br /><br />
+
+2013年，X-Files移动案场管理系统甫一问世，便迅速获得众多国
+内知名开发企业的认可，并迅速推行使用，获得置业顾问和销售管理
+人员的高度认可，正逐步颠覆房地产企业管理客户的传统方式。<br /><br />
+
+
+<span class="c000">公司地址:成都市东玉龙街37号(西部化工中心)A518
+产品咨询:028-86918186 或 13709019611 李先生</span>
+        </p>
+</div>
+
+<div class="mod_about_003">
+  <div class="mod_about_003_head">X-FILES客户体验申请</div>
+  	<form>
+    <table>
+       	<tr>
+           	<td width="70">公司名称</td>
+            <td colspan="3"><input class="text" type="text" /></td>
+        </tr>
+        <tr>
+           	<td width="">申请人</td>
+            <td><input class="text" type="text" /></td>
+            <td width="70">联系电话</td>
+            <td><input class="text" type="text" /></td>
+        </tr>
+    </table>
+    <div class="btn"><input class="submit" type="submit" value="申请15天免费试用" /></div>
+    </form>
+</div>
+
+
+<footer>
+<div class="img"><img src="images/footer_logo.jpg" /></div>
+<div class="contact">
+<p>TEL.+028-86918186  +13709019611(李先生)<br />
+ADD.成都市东玉龙街37号（西部化工中心）A518</p>
+</div>
+<div class="icp">粤ICP备13018756号</div>
+</footer>
+
+<div class="g_gotop">顶部</div>
+<script>
+(function(){
+	$('.g_gotop').on('click',function(){
+		$(window).scrollTop(0)	;
+	});	
+})();
+</script>
+
+<div class="g_nav">
+	<div class="img"><img src="images/g_nav_logo.png" /></div>
+    <div class="nav">
+    	<ul>
+        	<li class="on"><a href="#">首页</a></li>
+            <li><a href="#">产品</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+    <a class="phone" href="#">一键拨号</a>
+    <div class="bar"></div>
+</div>
+<script>
+(function(){
+	var h = $(window).height();
+	$('.g_nav').css({height:h});	
+	$('.g_nav .bar').on('click',function(){
+		var l = $('.g_nav').css('left');
+		if(l=='-160px'){
+			$('.g_nav').animate({left:0},300,'liner');
+		}else{
+			$('.g_nav').animate({left:-160},300,'liner');
+		}
+		
+	});
+})();
+</script>
+    
+</body>
+</html>

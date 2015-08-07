@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>产品-抢客宝</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0,user-scalable=no"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/fx.js"></script>
+</head>
+<body>
+	<div class="mod_pro1_001">
+    	<img src="images/pro2_banner.jpg" width="100%" />
+    </div>
+    
+    <div class="mod_pro1_002">
+    	<table>
+        	<tr>
+            	<td>
+                	<a class="item" href="#"><img src="images/mod_pro1_002_1.png" /></a>
+                	<a class="item on" href="#"><img src="images/mod_pro1_002_1_on.png" /></a>    
+                </td>
+                <td class="on">
+                	<a class="item" href="#"><img src="images/mod_pro1_002_2.png" /></a>
+                    <a class="item on" href="#"><img src="images/mod_pro1_002_2_on.png" /></a>
+                	
+                </td>
+                <td>
+                	<a class="item" href="#"><img src="images/mod_pro1_002_3.png" /></a>
+                	<a class="item on" href="#"><img src="images/mod_pro1_002_3_on.png" /></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="mod_pro2_001">
+    	<div class="red_img"><img src="images/mod_pro2_red_head.jpg" /></div>
+        <div class="text">传统时代，客户是属于售楼员的，客户成交全依赖<br />
+售楼员的责任心与能力；元度抢客宝，<br />
+让客户成为公司的客户，让资源自动流向<br />
+有能力与责任心的售楼员！</div>
+		<div class="text_1">四大手段，让客户无漏网之鱼</div>
+    </div>
+    
+    <div class="mod_pro2_002">
+    	<div class="mod_pro2_002_wrap">
+        	<h1 class="title">一.回访逾期自动分配</h1>
+            <div class="img"><img src="images/mod_pro2_002.jpg" /></div>
+            <div class="note"><span>后台设定回访期限，超过时间自动分配给其他人</span><br />分配前提前两天，提示置业顾问回访</div>
+            <div class="img"><img src="images/mod_pro2_001.jpg" /></div>
+        </div>
+    </div>
+    
+    <div class="mod_pro2_002">
+    	<div class="mod_pro2_002_wrap">
+        	<h1 class="title">二.流失客户公池抢客</h1>
+            <div class="note">置业顾问判为无效的客户，放入公池
+<br />置业顾问任意抢客<br />实现自动高效的客户“鞭尸”</div>
+            <div class="img"><img src="images/mod_pro2_003.jpg" /></div>
+            <div class="img"><img src="images/mod_pro2_004.jpg" /></div>
+        </div>
+    </div>
+    
+    <div class="mod_pro2_002">
+    	<div class="mod_pro2_002_wrap">
+        	<h1 class="title">三.项目间客户转介</h1>
+            <div class="note">跨项目客户一键转介，自动结佣<br />便捷、高效的项目联动平台</div>
+            <div class="img"><img src="images/mod_pro2_005.jpg" /></div>
+        </div>
+    </div>
+    
+    <div class="mod_pro2_002">
+    	<div class="mod_pro2_002_wrap" style="border:none;">
+        	<h1 class="title">四.逾期未成交放入公司公池抢客</h1>
+            <div class="note">设定公司项目的成交周期，逾期未成交放入公司公池<br />实现全公司客户资源大共享</div>
+            <div class="img"><img src="images/mod_pro2_006.jpg" /></div>
+        </div>
+    </div>
+    
+    
+    
+
+<div class="mod_about_003">
+  <div class="mod_about_003_head">X-FILES客户体验申请</div>
+  	<form>
+    <table>
+       	<tr>
+           	<td width="70">公司名称</td>
+            <td colspan="3"><input class="text" type="text" /></td>
+        </tr>
+        <tr>
+           	<td width="">申请人</td>
+            <td><input class="text" type="text" /></td>
+            <td width="70">联系电话</td>
+            <td><input class="text" type="text" /></td>
+        </tr>
+    </table>
+    <div class="btn"><input class="submit" type="submit" value="申请15天免费试用" /></div>
+    </form>
+</div>
+
+<footer>
+<div class="img"><img src="images/footer_logo.jpg" /></div>
+<div class="contact">
+<p>TEL.+028-86918186  +13709019611(李先生)<br />
+ADD.成都市东玉龙街37号（西部化工中心）A518</p>
+</div>
+<div class="icp">粤ICP备13018756号</div>
+</footer>
+
+<div class="g_gotop">顶部</div>
+<script>
+(function(){
+	$('.g_gotop').on('click',function(){
+		$(window).scrollTop(0)	;
+	});	
+})();
+</script>
+
+<div class="g_nav">
+	<div class="img"><img src="images/g_nav_logo.png" /></div>
+    <div class="nav">
+    	<ul>
+        	<li class="on"><a href="#">首页</a></li>
+            <li><a href="#">产品</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+    <a class="phone" href="#">一键拨号</a>
+    <div class="bar"></div>
+</div>
+<script>
+(function(){
+	var h = $(window).height();
+	$('.g_nav').css({height:h});	
+	$('.g_nav .bar').on('click',function(){
+		var l = $('.g_nav').css('left');
+		if(l=='-160px'){
+			$('.g_nav').animate({left:0},300,'liner');
+		}else{
+			$('.g_nav').animate({left:-160},300,'liner');
+		}
+		
+	});
+})();
+</script>
+    
+</body>
+</html>
