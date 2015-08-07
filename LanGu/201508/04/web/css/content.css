@@ -288,67 +288,111 @@ body {
 .send-left .send-logout { font-family: "宋体"; color: #666666; }
 .send-left .send-btns { padding-top: 36px; }
 .send-btns-list,
-.send-btns-add { display: block; border: none 0; width: 154px; height: 48px; background: url("../images/send_list.png") no-repeat; margin: 0 auto; cursor: pointer; }
-.send-btns-list { background-position: 0px -49px; margin-bottom: 14px; }
-.send-btns-add { background-position: 0px -112px; }
+.send-btns-add { display: block; border: none 0; width: 154px; height: 48px; background: url("../images/send_list.png") no-repeat 0px -112px;; margin: 0 auto; cursor: pointer; }
+.send-btns-list {  margin-bottom: 14px; }
+.send-btns-add { }
+.send-btns-current { background-position: 0px -49px; }
 
-.send-list-head {
-    height: 67px;
-    line-height: 67px;
-    border-bottom: solid 1px #e6e6e6;
-    overflow: hidden;
+.send-list-head { height: 67px; line-height: 67px; border-bottom: solid 1px #e6e6e6; overflow: hidden; }
+.send-list-head-title { font-size: 20px; line-height: 22px; color: #6b6b6b; padding-left: 28px; background: url("../images/send_list.png") no-repeat 0px -14px; margin-top: 26px; }
+.send-list-body { padding: 20px 0 0 0; }
+.send-list-tab { width: 100%; color: #5c5c5c; }
+.send-list-tab td, 
+.send-list-tab th{ border: solid 1px #e6e6e6; height: 40px; vertical-align: middle; }
+.send-list-row { }
+.send-list-title { font-size: 16px; color: #3d3d3d; text-align: center; }
+.send-list-cell { }
+.send-list-cell:nth-child(1) { padding-left: 10px; }
+.send-list-cell:nth-child(2) { text-align: center; }
+.send-list-cell:nth-child(3) { text-align: center; }
+.send-list-cell:nth-child(4) { text-align: center; }
+.send-list-cell:nth-child(4) a { font-family: "宋体"; font-size: 12px; color: #1f6299; margin: 0 10px; }
+.send-list-row:nth-child(even) { background-color: #f5f5f5; }
+
+/* 网上报送-新增  */
+.send-tabs {
+    color: #5c5c5c;
+    line-height: 24px;
 }
-.send-list-head-title {
-    font-size: 20px;
-    line-height: 22px;
-    color: #6b6b6b;
-    padding-left: 28px;
-    background: url("../images/send_list.png") no-repeat 0px -14px;
-    margin-top: 26px;
+.send-tabs a {
+    display: inline-block;
+    font-family: "宋体";
+    color: #5c5c5c;
+    padding: 7px 12px;
 }
-.send-list-body {
-    padding: 20px 0 0 0;
+.send-tabs .active {
+    background-color: #4c5255;
+    color: #e5e5e5;
+    border-radius: 4px;
 }
-.send-list-tab {
-    width: 100%;
+.send-tabs-article {
+    margin-right: 14px;
+}
+.send-tabs-pic {
+    margin-left: 14px;
+}
+
+.tab-inner-article {
+
+}
+.article-tab {
+
+}
+.article-tab-tr {
+}
+.article-tab-label {
     color: #5c5c5c;
 }
-.send-list-tab td, 
-.send-list-tab th{
-    border: solid 1px #e6e6e6;
-    height: 40px;
-    vertical-align: middle;
+.article-tab td {
+    padding-top: 38px;
 }
-.send-list-row {
+.article-tab-cont .article-title-input {
+    width: 400px;
+    height: 26px;
+    line-height: 26px;
+    border: solid 1px #cccccc;
+}
+.html-edit-label {
+    vertical-align: top;
+}
+.send-commit-btn {
+    border: none 0;
+    width: 122px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: url("../images/send_add.png") no-repeat 0px 0px;
+    font-size: 22px;
+    color: #ffffff;
+}
 
+/* 网上报送-新增-图片附件 */
+.tab-inner-pic{
+    margin-top: 40px;
 }
-.send-list-title {
-    font-size: 16px;
-    color: #3d3d3d;
+.tab-pic {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e6e6e6; 
+}
+.tab-pic-label {
+    float: left;
+    color: #5c5c5c;
+}
+.tab-pic-cont {
+    float: left;
+    background-color: gray;
+    width: 680px;
+    height: 200px;
+}
+.tab-pic-submit {
+    border: none 0;
+    width: 82px;
+    height: 30px;
     text-align: center;
-}
-.send-list-cell {
-
-}
-.send-list-cell:nth-child(1) {
-    padding-left: 10px;
-}
-.send-list-cell:nth-child(2) {
-    text-align: center;
-}
-.send-list-cell:nth-child(3) {
-    text-align: center;
-}
-.send-list-cell:nth-child(4) {
-    text-align: center;
-}
-.send-list-cell:nth-child(4) a {
+    line-height: 30px;
+    background: url("../images/send_add.png") no-repeat 0px -60px;
     font-family: "宋体";
-    font-size: 12px;
-    color: #1f6299;
-    margin: 0 10px;
+    color: #ffffff;
+    margin-left: 54px;
 }
-.send-list-row:nth-child(even) {
-    background-color: #f5f5f5;
-}
-
