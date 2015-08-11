@@ -2,9 +2,9 @@
 .col2of3 { width: 66.666666%; }
 
 
-body { min-width: 640px; }
+body { /*min-width: 640px;*/ }
 .site-banner { }
-.site-banner-inner { height: 400px; width: 100%; background: url("../images/banner.jpg") no-repeat center center; background-color: #52cccb; }
+.site-banner-inner { height: 400px; width: 100%; /*background: url("../images/banner.jpg") no-repeat center center;*/ background-color: #52cccb; }
 .site-banner-inner img { height: 100%; }
 
 .nav-wrap { }
