@@ -3,34 +3,223 @@ body {
     background-color: #fafafa;
     color: #333333;
 }
+.c-424242 { color: #424242; }
+.c-4c4c4c { color: #4c4c4c; }
+.c-5c5c5c { color: #5c5c5c; }
+.c-3d3d3d { color: #3d3d3d; }
+.mb-16 { margin-bottom: 16px; }
+.relative { position: relative; }
+.absolute { position: absolute; }
 
 .box-shadow-1{  
   -webkit-box-shadow: 1px 1px 4px #cecdcd;  
   -moz-box-shadow: 1px 1px 4px #cecdcd;  
   box-shadow: 1px 1px 4px #cecdcd;  
 } 
+.wrap { width: 1000px; margin: 0 auto;}
+.main { overflow: hidden; }
+
 /* header */
-.header { width: 1000px; margin: 0 auto; height: 98px; }
+.header {  height: 98px; }
 .site-logo { float: left; margin-top: 16px; }
 .site-logo .logo { display: block; }
-.nav { float: right; margin-top: 40px; }
+.nav { float: right; margin: 40px 0 0 0; }
 .nav-item { float: left; position: relative; }
 .nav-item .nav-item-link { color: #5c5c5c; font-size: 14px; font-family: "宋体"; display: block; text-align: center; line-height: 1; }
 .nav-item .nav-item-link i { display: block; border-right: solid 1px #8a8a8a; padding: 0px 17px; }
 .nav-item-last .nav-item-link i { border: none 0; }
-.nav-item .nav-item-link em { display: inline-block; width: 67%; border-bottom: solid 2px transparent; height: 10px; }
+.nav-item .nav-item-link em { display: inline-block; /*width: 67%; */ width: 98%; border-bottom: solid 2px transparent; height: 10px; }
 .nav-item:hover .nav-item-link em { border-bottom-color: #ed8856; }
 .nav-item-current .nav-item-link em { border-bottom-color: #ed8856; }
-.nav-item .nav-children { display: none; width: 90px; position: absolute; top: 23px; left: 0px; z-index: 2; }
-.nav-item:hover .nav-children { display: block; }
+.nav-item .nav-children { border-radius: 2px; overflow: hidden; width: 90px; position: absolute; top: 26px; left: 0px; z-index: -2; transition: opacity 600ms linear; opacity: 0.1;}
+.nav-item .children-list {}
+.nav-item:hover .nav-children { z-index: 2; opacity: 0.8;}
 .nav-item .nav-children .children-item { background-color: #eeeeee; }
 .nav-item .nav-children .children-item-link { font-family: "宋体"; font-size: 12px; display:block; height: 24px; line-height: 24px; padding-left: 8px; color: #999999; } 
 .nav-item .nav-children .children-item-link:hover { background-color: #d5d5d5; color: #934787; }
 
 /* banner */
 .banner { background-color: #f5f5f5; border-top: solid 1px #f7f7f7; border-bottom: solid 1px #f0f0f0; height: 642px; } 
-.banner-inner { position: relative; width: 1000px; height: 100%; margin: 0 auto; background: url("../images/banner_bg.jpg") no-repeat 260px top; }
+.banner-inner { position: relative; height: 100%;  background: url("../images/banner_bg.jpg") no-repeat 260px top; }
 .banner-inner .banner-info { position: absolute; left: 10px; top: 120px; }
 .banner-inner .banner-btn { position: absolute; width: 160px; height: 48px; background: url("../images/banner_btn.jpg") no-repeat; top: 410px; left: 10px; }
 
 /* consult */
+.niche-consulting { margin-top: 54px; }
+.index-mod { }
+.index-mod-head-title { font-size: 16px; line-height: 16px; text-align: center; }
+.index-mod-head-title-cn { color: #333333; /*padding-bottom: 6px;*/ padding: 0 0 6px 0;}
+.index-mod-head-title-us { font-family: "Monotype Corsiva", Arial; color: #999999; background: url("../images/mod_title_bg.png") no-repeat center center; }
+.index-mod-body { }
+.consult-list { overflow: hidden; /*margin-top: 28px;*/ margin: 28px 0 0 0; padding: 6px; }
+.consult-list-item { position: relative; float: left; width: 229px; height: 350px; /*margin-right: 20px;*/ margin: 0 20px 0 0; border-radius: 4px; }
+.consult-list-item-title { color: #ef976c; font-size: 24px; text-align: center; line-height: 24px; padding: 30px 0 12px 0; }
+.consult-list-item-cont { color: #4c4c4c; line-height: 28px; padding: 0 14px; }
+.job-recommendation{ background: url("../images/magnifier_1.png") no-repeat 45px 132px; background-color: #f0f0f0; }
+.job-recommendation-list { /*margin-top: 16px;*/ margin: 16px 0 0 0; }
+.service-proces { background-color: #f5f2f4; }
+.service-proces-item { /*padding-left: 17px;*/ padding: 0 0 0 17px; background: url("../images/list_style_circle.png") no-repeat left center; }
+.service-range { background: url("../images/magnifier_2.png") no-repeat 48px 174px; background-color: #f5f5f5; }
+.core-advantage { background-color: #f5f3f2; margin-right: 0px; }
+.core-advantage-list  { /*margin-top: 16px;*/ margin: 16px 0 0 0;}
+
+.dl-mod { }
+.dl-mod-label { float: left; padding-bottom: 100%; }
+.consult-list-item:hover,
+.consult-hover { box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); opacity: 0.8; }
+.consult-list-item:hover .more-info { z-index: 1; }
+.index-mod .more-info { z-index: -1; position: absolute; bottom: 0px; left: 50%; /*margin-left: -40px;*/ margin: 0 0 0 -40px; width: 80px; height: 24px; line-height: 24px; text-align: center; color: #fafafa; font-family: Dungeon, Arial; font-size: 12px; background-color: #a15e96; border-radius: 2px; }
+
+/* footer */
+.footer { background-color: #e1e1e1; }
+.footer-inner { /*padding-top: 46px;*/ padding: 46px 0 0 0;}
+.link-groups { overflow: hidden; }
+.link-group { float: left; }
+.link-group-title { color: #3d3d3d; font-size: 14px; line-height: 14px; /*padding-bottom: 8px;*/ padding: 0 0 8px 0; }
+.link-group-item { font-size: 12px; font-family: "宋体"; color: #5c5c5c; line-height: 24px; }
+.link-group-item-link { color: #5c5c5c; }
+.link-group-item-link:hover{ color: #ef976c; }
+
+.links-contact-us { /*margin-left: 134px;*/ margin: 0 0 0 134px;}
+.links-contact-us .link-group-item { /*padding-left: 34px;*/padding: 0 0 0 34px; line-height: 32px; background-image: url("../images/links_symbol.png"); background-repeat: no-repeat; }
+.contact-us-address { background-position: 0px 5px; }
+.contact-us-address-text { width: 360px; line-height: 18px; }
+.contact-us-email { background-position: 0px -43px; }
+.contact-us-tel { background-position: 0px -95px; }
+.links-about-us { /*margin-left: 58px;*/ margin: 0 0 0 58px;}
+.links-service-intro { /*margin-left: 80px;*/ margin: 0 0 0 80px;}
+.links-job-rec { /*margin-left: 116px;*/ margin: 0 0 0 116px;}
+.copyright { border-top: solid 1px #c7c7c7; line-height: 43px; height: 43px; color: #757575; font-family: "宋体"; font-size: 12px; text-align: center; margin-top: 40px; }
+
+/*  news-center */
+.news-center-wrap { background-color: #f0f0f0; padding: 42px 0 32px 0; /*margin-top: 48px;*/ margin: 48px 0 0 0;}
+.news-center { }
+.news-center-list { /*margin-top: 46px;*/ margin: 46px 0 0 0; border-bottom: solid 1px #dbdbdb; }
+.news-center-list-item { position: relative; padding: 10px 0; }
+.news-mod { overflow: hidden; }
+.news-mod-img { width: 258px; height: 160px; overflow: hidden; float: left; }
+.news-mod-img img { display: block; width: 100%; }
+.news-mod-info { float: right; width: 714px; }
+.new-mod-title { font-size: 16px; line-height: 16px; color: #525252; padding: 8px 0 12px 0; }
+.news-mod-bar { font-family: Verdana; font-size: 12px; line-height: 16px; color: #999999; /*padding-bottom: 10px;*/ padding: 0 0 10px 0;}
+.news-mod-bar-date,
+.news-mod-bar-viewtimes { display: inline-block; /*padding-left: 20px;*/padding: 0 0 0 20px; background: url("../images/news_info.png") no-repeat; }
+.news-mod-bar-date { background-position: 0px 0px; /*margin-right: 22px;*/ margin: 0 22px 0 0;}
+.news-mod-bar-viewtimes { background-position: 0px -31px; }
+.news-mod-body { font-family: "宋体"; font-size: 12px; color: #8a8a8a; line-height: 20px; }
+.news-center-list-item .more-info { z-index: 1; margin: 0; left: auto; right: 10px; bottom: 10px; background-color: #adadad; }
+.news-center-list-item:hover .more-info { background-color: #a15e96; }
+.news-center-list-item:hover { background-color: #e6e6e6; }
+
+.news-center-more { color: #757575; font-family: "宋体"; font-size: 12px; display: block; margin: 38px auto 0px auto; width: 136px; height: 28px; border-radius: 3px; border: solid 1px #a3a3a3; text-align: center; line-height: 28px; }
+.news-center-more:hover { background-color: #edb498; border-color: #cc8d6e; color: #fafafa; }
+
+/* successful-cases */
+.successful-cases { margin-top: 54px;  }
+.successful-case-list { overflow: hidden; /*margin-top: 50px;*/margin: 50px 0 0 0; padding: 5px 5px 42px 5px; }
+.successful-case-list-item { float: left; height: 92px; line-height: 92px; background-color: #feffff; margin: 0 20px 20px 0; padding: 0 16px; }
+.successful-case-list-item a { border: none 0; height: 100%; display: inline-block;}
+.successful-case-list-item:hover { opacity: 0.8; box-shadow: 0px 0px 5px #ccc;}
+.successful-case-list-item img { max-height: 90%; vertical-align: middle; }
+
+
+/* 关于力氏 */
+.innerpage-banner { height: 160px; background: url("../images/innerpage_banner.png") no-repeat center center; }
+.innerpage-banner-inner { height: 100%; }
+.innerpage-name { float: left; margin-top: 60px; }
+.search { float: right; margin-top: 64px; }
+.search-input { float: left; border: none 0; font-size: 12px; font-family: "宋体"; color: #e5e5e5; border-bottom: solid 1px #fcfcfc; height: 27px; line-height: 29px; padding-left: 30px; margin-right: 10px; background: url("../images/innerpage_banner_magnifier.png") no-repeat 0px center; }
+.search-input, .search-input:focus { outline: none; }
+.search-btn { float: left; border: none 0; width: 40px; height: 28px; line-height: 28px; text-align: center; background-color: #ed8856; color: #fafafa; font-family: "宋体"; border-radius: 2px; cursor: pointer; }
+
+
+.main-content { width: 800px; float: left; overflow: hidden; padding-bottom: 100px; }
+.main-outline { position: absolute; right: 0px; top: 40px; }
+.outline-wrap { margin-right: 48px; border-left: solid 1px #cfd0d1; padding: 1px 0; }
+.outline-item { margin: 48px 0; line-height: 14px; padding-left: 29px; background: url("../images/outline_symbol_0.png") no-repeat 0px center; margin-left: -7px; background-color: #fafafa; }
+.outline-active { background-image: url("../images/outline_symbol_1.png"); background-color: transparent; }
+.outline-anchor { font-family: "宋体"; color: #707070; }
+.article-mod { }
+.article-mod-head { padding: 32px 0 32px 0; margin-top: 32px; }
+.article-mod-head-title { color: #3d3d3d; font-size: 20px; padding-left: 28px; line-height: 28px; background: url("../images/list_style_circle_2.png") no-repeat left center; }
+.article-mod-body { }
+.article-mod-body .p { font-family: "宋体"; font-size: 14px; color: #6b6b6b; line-height: 32px; text-indent: 28px; margin-bottom: 16px; }
+.article-mod-body .h2 { font-size: 16px; color: #3d3d3d; line-height: 16px; padding: 20px 0; }
+
+
+/* 新闻中心-行业新闻 */
+.newscenter-wrap { margin: 70px 0 0 0; }
+.newscenter-tabs { }
+.newscenter-tabs-list { overflow: hidden; }
+.newscenter-tabs-list-item { float: left; padding: 0 4px; border-right: dotted 1px #dbdbdb; }
+.newscenter-tabs-list-item.last { border-right: none 0; }
+.newscenter-tabs-list-item-link { display: block; font-size: 18px; line-height: 36px; text-align: center; color: #808080; width: 112px; height: 36px; border-radius: 4px; }
+.active.newscenter-tabs-list-item-link { color: #fafafa; background-color: #ed8856; }
+
+.newscenter-list .news-center-list-item { border-top: solid 1px #dbdbdb; }
+.paging { float: right; margin: 60px 0 90px 0; }
+.paging-list { overflow: hidden; }
+.paging-list-item { float: left; font-family: "宋体", Arial; color: #999999; font-size: 14px; line-height: 14px; margin-left: 10px; }
+.page-etc.paging-list-item { line-height: 24px; }
+.paging-list-item-btn { display: block; padding: 8px 2px; min-width: 30px; text-align: center; color: #999999; border: solid 1px #cccccc; border-radius: 4px; background-color: #fcfcfc; }
+.active.paging-list-item-btn { color: #f5f5f5; background-color: #808080; border-color: #808080; }
+
+
+/* 新闻中心-走进猎头 */
+.news-center-list-item-nopic { padding-bottom: 20px; padding-left: 8px; }
+.news-center-list-item-nopic:hover { border-left: solid 4px #a15e96; padding-left: 4px; }
+.news-center-list-item-nopic .news-mod-info { width: 100%; float: none; padding-bottom: 10px}
+
+/* 新闻中心-详情页 */
+.newscenter-content { margin-top: 39px; padding-bottom: 60px; }
+.newscenter-content-head { background-color: #f0f0f0; text-align: center; border-top: solid 1px #dbdbdb; }
+.newscenter-content-head-title { font-size: 22px; line-height: 22px; color: #4c4c4c; padding: 30px 0 24px 0; }
+.newscenter-content-head-bar { font-family: "宋体"; font-size: 12px; line-height: 16px; color: #999999; padding-bottom: 10px; }
+.newscenter-content-head-bar-src,
+.newscenter-content-head-bar-date,
+.newscenter-content-head-bar-viewtimes,
+.newscenter-content-head-bar-agree { display: inline-block; padding-left: 24px; margin-right: 30px; }
+.newscenter-content-head-bar-src { }
+.newscenter-content-head-bar-date { background: url("../images/news_info.png") no-repeat 0px 0px; }
+.newscenter-content-head-bar-viewtimes { background: url("../images/news_info.png") no-repeat 0px -31px; }
+.newscenter-content-head-bar-agree { background: url("../images/news_info.png") no-repeat 0px -66px; }
+.newscenter-content-body { padding: 32px 20px; }
+.newscenter-content-footer { }
+.article-links { padding: 20px 0px 32px 20px; }
+.article-links-item { display: block; font-family: "宋体"; color: #666666; line-height: 14px; }
+.article-links-item:hover { color: #ed8856; }    
+.article-links-prev { margin-bottom: 18px; }
+
+/* 新闻中心-详情页-图片 */
+.newscenter-content-body-imgwrap { width: 100%; overflow: hidden; padding: 12px 0 32px 0; text-align: center; }
+.newscenter-content-body-img { height: 420px; border: none 0; }
+.newscenter-content-body-cont { }
+
+/* 联系我们 */
+.contactus-wrap { overflow: hidden; padding: 100px 0 140px 0; }
+.contactus-map { float: left; width: 620px; height: 380px; overflow: hidden; border: solid 1px #757575; }
+.contactus-info { float: left; width: 240px; height: 380px; border: dashed 1px #ed8856; margin-left: 48px; position: relative; }
+.contactus-info-list { margin: 0 12px; }
+.contactus-info-title { font-size: 18px; color: #ed8856; text-align: center; line-height: 18px; padding: 28px 0 12px 0; }
+.contactus-info-item { font-size: 14px; color: #4c4c4c; overflow: hidden; line-height: 24px; margin-top: 8px; }
+.contactus-info-item-qr { text-align: center; }
+.contactus-info-item-label { color: #934787; float: left; padding-bottom: 2px; }
+.contactus-info-arrow { position: absolute; width: 12px; height: 22px; background: url("../images/contactus_info_arrow.png") no-repeat center; left: -12px; top: 86px; }
+
+/* 核心优势 */
+.coreadv-list { font-family: "宋体"; width: 800px; border-left: solid 1px #e6e6e6; padding: 36px 0 36px 0; margin: 50px 0 98px 16px; position: relative; }
+.coreadv-list-item { line-height: 32px; margin-bottom: 16px; padding-left: 24px; }
+.coreadv-info { }
+.coreadv-info-title { color: #5c5c5c; font-size: 16px; position: relative; }
+.coreadv-info-title-symbol { position: absolute; width: 16px; height: 16px; line-height: 16px; font-family: Arial; font-size: 12px; color: #934787; text-align: center; background-color: #dbdbdb; border-radius: 16px; top: 8px; left: -33px; }
+.active.coreadv-info-title-symbol { background-color: #934787; color: #fafafa; }
+.coreadv-info-body { color: #6b6b6b; }
+.list-arrow-down { position: absolute; width: 13px; height: 14px; background: url("../images/list_style_arrow.png") no-repeat; bottom: -12px; left: -7px; }
+
+/* 职位推荐 */
+.job-rec .news-center-list-item {
+    border-top-style: dotted;
+}
+.job-rec .news-center-list {
+    border-bottom-style: dotted;
+}
