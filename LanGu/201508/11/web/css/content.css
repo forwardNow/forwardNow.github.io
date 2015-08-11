@@ -20,8 +20,14 @@ body { /*min-width: 640px;*/ }
 .bg-1 { background-color: #40d698; }
 .bg-2 { background-color: #cca83d; }
 
-@media screen and (min-width: 480px) {
+/* > 350px 时，图片 */
+@media screen and (min-width: 350px) {
     .nav-list-item.item-img  img { height: auto; width: 100%;}
+}
+/* < 480px 时，文字 */
+@media screen and (max-width: 479px) {
+    .nav-list .row-1 , .nav-list .row-3 { height: 15.4rem; line-height: 15.4rem; }
+    .nav-list .row-2, .nav-list .row-4 { height: 9rem; line-height: 9rem; }
 }
 
 
