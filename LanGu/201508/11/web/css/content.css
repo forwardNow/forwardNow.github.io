@@ -23,13 +23,93 @@ body { /*min-width: 640px;*/ }
 /* > 350px 时，图片 */
 @media screen and (min-width: 350px) {
     .nav-list-item.item-img  img { height: auto; width: 100%;}
+
 }
 /* < 480px 时，文字 */
 @media screen and (max-width: 479px) {
     .nav-list .row-1 , .nav-list .row-3 { height: 15.4rem; line-height: 15.4rem; }
     .nav-list .row-2, .nav-list .row-4 { height: 9rem; line-height: 9rem; }
 }
+/* < 480px 时，文字 */
+@media screen and (max-width: 320px) {
+    .nav-list .row-1 , .nav-list .row-3 { height: 15.4rem; line-height: 15.4rem; }
+    .nav-list .row-2, .nav-list .row-4 { height: 9rem; line-height: 9rem; }
+}
 
 
+
+/* 新闻列表 */
+.header {
+    width: 100%;
+}
+.header img {
+    width: 100%;
+}
+.main {
+    padding-bottom: 2rem;
+}
+.news-list {
+    margin: 0 2rem;
+}
+.news-list-item {
+    border-bottom: dashed 0.1rem #dbdbdb;
+}
+
+.news-mod {
+    overflow: hidden;
+    padding: 1rem 0;
+}
+.news-mod-imgbox {
+    float: left;
+    width: 30%;
+}
+.news-mod-imgbox img {
+    width: 100%;
+}
+.news-mod-body {
+    float: right;
+    width: 65.8%;
+}
+.news-mod-body-title {
+    color: #333333;
+    font-size: 2.6rem;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.news-mod-body-summary {
+    margin-top: 0.4rem;
+    color: #666666;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+.news-mod-body-date {
+    color: #666666;
+    font-size: 2rem;
+    text-align: right;
+    line-height: 1;
+}
+
+.footer {
+    background-color: #999999;
+    padding: 5rem 0;
+}
+.shool-name-wrap {
+    text-align: center;
+}
+.shool-name {
+    display: inline-block;
+    padding: 0 2rem 2rem 2rem;
+    color: #fafafa;
+    font-size: 3.2rem;
+    line-height: 1;
+    border-bottom: dashed 0.1rem #cccccc;
+}
+.copyright {
+    font-size: 2rem;
+    color: #d9d9d9;
+    line-height: 1;
+    margin-top: 1.2rem;
+    text-align: center;
+}
 
 
