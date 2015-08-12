@@ -39,98 +39,37 @@ body { /*min-width: 640px;*/ }
 
 
 /* 新闻列表 */
-.header {
-    width: 100%;
-}
-.header img {
-    width: 100%;
-}
-.main {
-    padding-bottom: 2rem;
-}
-.news-list {
-    margin: 0 2rem;
-}
-.news-list-item {
-    border-bottom: dashed 0.1rem #dbdbdb;
-}
+.header { width: 100%; position: relative; }
+.header-bg { display: block; }
+.func-btns { position: absolute; height: 40px; width: 100%; top: 25%; left: 0rem; }
+.func-btns img { width: 100%; display: block; }
+.func-btns .goback,
+.func-btns .gohome { width: 4rem; height: 4rem; }
+.func-btns .goback { float: left; margin-left: 2rem; }
+.func-btns .gohome { float: right; margin-right: 2rem; }
+.header img { width: 100%; display: block; }
 
-.news-mod {
-    overflow: hidden;
-    padding: 1rem 0;
-}
-.news-mod-imgbox {
-    float: left;
-    width: 30%;
-}
-.news-mod-imgbox img {
-    width: 100%;
-}
-.news-mod-body {
-    float: right;
-    width: 65.8%;
-}
-.news-mod-body-title {
-    color: #333333;
-    font-size: 2.6rem;
-    line-height: 1.5;
-    white-space: nowrap;
-}
-.news-mod-body-summary {
-    margin-top: 0.4rem;
-    color: #666666;
-    font-size: 2.2rem;
-    line-height: 1.2;
-}
-.news-mod-body-date {
-    color: #666666;
-    font-size: 2rem;
-    text-align: right;
-    line-height: 1;
-}
+html,body { height: 100%; }
+.main { padding-bottom: 2rem; min-height: 50%; }
+.news-list { margin: 0 2rem; }
+.news-list-item { border-bottom: dashed 0.1rem #dbdbdb; }
 
-.footer {
-    background-color: #999999;
-    padding: 5rem 0;
-}
-.shool-name-wrap {
-    text-align: center;
-}
-.shool-name {
-    display: inline-block;
-    padding: 0 2rem 2rem 2rem;
-    color: #fafafa;
-    font-size: 3.2rem;
-    line-height: 1;
-    border-bottom: dashed 0.1rem #cccccc;
-}
-.copyright {
-    font-size: 2rem;
-    color: #d9d9d9;
-    line-height: 1;
-    margin-top: 1.2rem;
-    text-align: center;
-}
+.news-mod { overflow: hidden; padding: 1rem 0; }
+.news-mod-imgbox { float: left; width: 30%; }
+.news-mod-imgbox img { width: 100%; }
+.news-mod-body { float: right; width: 65.8%; }
+.news-mod-body-title { color: #333333; font-size: 2.6rem; line-height: 1.5; white-space: nowrap; }
+.news-mod-body-summary { margin-top: 0.4rem; color: #666666; font-size: 2.2rem; line-height: 1.2; }
+.news-mod-body-date { color: #666666; font-size: 2rem; text-align: right; line-height: 1; }
+
+.footer { background-color: #999999; padding: 5rem 0; }
+.shool-name-wrap { text-align: center; }
+.shool-name { display: inline-block; padding: 0 2rem 2rem 2rem; color: #fafafa; font-size: 3.2rem; line-height: 1; border-bottom: dashed 0.1rem #cccccc; }
+.copyright { font-size: 2rem; color: #d9d9d9; line-height: 1; margin-top: 1.2rem; text-align: center; }
 
 /* 新闻详情 */
-.newsdetail {
-    padding: 2rem;
-}
-.news-title {
-    font-size: 3.2rem;
-    color: #333333;
-    line-height: 1.4;
-}
-.news-date  {
-    font-size: 2.4rem;
-    line-height: 1;
-    color: #666666;
-    margin-top: 2rem;
-    padding-bottom: 1.6rem;
-}
-.news-body {
-    color: #666666;
-    font-size: 2.4rem;
-    line-height: 1.4;
-}
+.newsdetail { padding: 2rem; }
+.news-title { font-size: 3.2rem; color: #333333; line-height: 1.4; }
+.news-date  { font-size: 2.4rem; line-height: 1; color: #666666; margin-top: 2rem; padding-bottom: 1.6rem; }
+.news-body { color: #666666; font-size: 2.4rem; line-height: 1.4; }
 

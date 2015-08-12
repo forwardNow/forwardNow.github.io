@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+
+    <style>
+
+/* reset */
+    * { margin: 0; padding: 0;}
+    li { list-style: none; }
+    img { border: none 0; }
+    a { text-decoration: none; }
+    html { font-size: 62.5%; }
+/* opacity */
+    .opacity60{
+        filter:alpha(opacity=60); /*IE滤镜，透明度50%*/
+        -moz-opacity:0.6; /*Firefox私有，透明度50%*/
+        opacity:0.6;/*其他*/
+    }
+/* position */
+    .relative { position: relative; }
+    .absolute { position: absolute; }
+
+/* web */
+    .web {
+        width: 100%;
+        margin: 0 auto;
+        /*border: solid 1px gray;*/
+    }
+
+/* main */
+
+/* list */
+    .list {
+        overflow: hidden;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+
+/* list > li */
+    .list li {
+        float: left;
+        border: solid 1px #35b558;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+
+    }
+/* list > li > img */
+    .list img {
+        width: 28rem;
+    }
+
+/* list > li > desc */
+    .list .desc {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 4.8rem;
+
+        left: 0;
+        bottom: 0;
+    }
+/* list > li > desc > h1 */
+    .list h1 {
+        font-size: 2rem;
+        line-height: 4.8rem;
+    }
+
+/* list > li > desc > p */
+    .list p {
+        font-size: 1.4rem;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="web">
+        
+        <div class="header"></div>
+
+        <div class="main">
+            
+            <ul class="list">
+                
+                <li class="relative" onclick="location='./LanGu/201508/11/web/index.html'">
+                    <img src="./images/item_1.jpg">
+                    <div class="desc opacity60 absolute">
+                        <h1>阳光文化艺术教育培训学校</h1>
+                        <p>阳光文化艺术教育培训学校</p>
+                    </div>
+                </li>
+                <li class="relative">
+                    <img src="./images/git.png">
+                    <div class="desc opacity60 absolute">
+                        <h1>Git</h1>
+                        <p>免费、开源的分布式版本控制系统</p>
+                    </div>
+                </li>
+                <li class="relative">
+                    <img src="./images/git.png">
+                    <div class="desc opacity60 absolute">
+                        <h1>Git</h1>
+                        <p>免费、开源的分布式版本控制系统</p>
+                    </div>
+                </li>
+                <li class="relative">
+                    <img src="./images/git.png">
+                    <div class="desc opacity60 absolute">
+                        <h1>Git</h1>
+                        <p>免费、开源的分布式版本控制系统</p>
+                    </div>
+                </li>
+                <li class="relative">
+                    <img src="./images/git.png">
+                    <div class="desc opacity60 absolute">
+                        <h1>Git</h1>
+                        <p>免费、开源的分布式版本控制系统</p>
+                    </div>
+                </li>
+                <li class="relative">
+                    <img src="./images/git.png">
+                    <div class="desc opacity60 absolute">
+                        <h1>Git</h1>
+                        <p>免费、开源的分布式版本控制系统</p>
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>
+
+        $( ".list li" ).hover(
+            function () {
+                var $desc = $( this ).find( ".desc" );
+                var $descTitle = $( this ).find( ".desc h1" );
+                if ( ! $desc[0].originHeight ) {
+                    $desc[0].originHeight = $desc.css( "height" );
+                }
+                $desc.stop().animate( { "height": "100%" }, 300 );
+                $descTitle.stop().animate( { "paddingTop": "80px" }, 300 );
+
+            },
+            function () {
+                var $desc = $( this ).find( ".desc" );
+                var $descTitle = $( this ).find( ".desc h1" );
+                $desc.stop().animate( { "height": $desc[0].originHeight }, 300 );
+                $descTitle.stop().animate( { "paddingTop": "0px" }, 300 );
+            }
+        );
+
+    </script>
+
+</body>
+</html>
