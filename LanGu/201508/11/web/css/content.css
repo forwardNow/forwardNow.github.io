@@ -83,6 +83,9 @@ html,body { height: 100%; }
     .news-title { font-size: 2.4rem; }
     .news-date,
     .news-body { font-size: 1.8rem; }
+
+        .shool-name { font-size: 2.4rem; }
+    .copyright { font-size: 1.5rem; } 
     
 }
 @media screen and (max-width: 414px) { 
@@ -95,6 +98,9 @@ html,body { height: 100%; }
     .news-title { font-size: 2.0rem; }
     .news-date,
     .news-body { font-size: 1.6rem; }        
+
+        .shool-name { font-size: 2.1rem; }
+    .copyright { font-size: 1.3rem; }
 }
 @media screen and (max-width: 320px) { 
     .nav-wrap .line1, .nav-wrap .line3 {height: 10rem; }
@@ -106,5 +112,8 @@ html,body { height: 100%; }
 
     .news-title { font-size: 1.6rem; }
     .news-date,
-    .news-body { font-size: 1.2rem; }         
+    .news-body { font-size: 1.3rem; }    
+
+        .shool-name { font-size: 1.6rem; }
+    .copyright { font-size: 1.3rem; }     
 }
