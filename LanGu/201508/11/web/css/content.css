@@ -6,7 +6,7 @@
 
 .nav-wrap { }
 .nav-wrap .line { width: 100%; margin-top: 1rem; overflow: hidden; }
-.nav-wrap .line a { float: left; height: 100%; background: url(about:blank) no-repeat center center; background-size: 75%; }
+.nav-wrap .line a { float: left; height: 100%; background-position: center center; background-repeat: no-repeat; background-size: 75%; }
 .nav-wrap .line1,
 .nav-wrap .line3 { height: 20.4rem; }
 .nav-wrap .line2 a,
@@ -31,7 +31,7 @@
 /* 新闻列表 */
 .header { width: 100%; position: relative; }
 .header-bg { display: block; }
-.func-btns { position: absolute; height: 40px; width: 100%; top: 16%; left: 0rem; }
+.func-btns { position: absolute; height: 4rem; width: 100%; top: 16%; left: 0rem; }
 .func-btns img { width: 100%; display: block; }
 .func-btns .goback,
 .func-btns .gohome { width: 4rem; height: 4rem; }
@@ -65,6 +65,9 @@ html,body { height: 100%; }
 .news-body { color: #666666; font-size: 2.4rem; line-height: 1.4; }
 
 @media screen and (max-width: 639px) {
+    .func-btns .goback,
+    .func-btns .gohome { width: 2rem; height: 2rem; }
+
     .nav-wrap .line1, .nav-wrap .line3 {height: 16rem; }
     .nav-wrap .line2 a, .nav-wrap .line4 a {height: 8rem; }
 
