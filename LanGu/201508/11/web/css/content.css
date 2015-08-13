@@ -42,7 +42,8 @@
 html,body { height: 100%; }
 .main { padding-bottom: 2rem; min-height: 50%; }
 .news-list { margin: 0 2rem; }
-.news-list-item { border-bottom: dashed 0.1rem #dbdbdb; }
+.news-list-item { border-top: dashed 0.1rem #dbdbdb; margin-top: 1rem;}
+.news-list-item:first-child { border: none 0; }
 
 .news-mod { overflow: hidden; padding: 0.5rem 0; margin-top: 1rem; height: 16rem;}
 .news-mod-imgbox { float: left; width: 30%; }
