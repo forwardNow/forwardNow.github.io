@@ -31,7 +31,7 @@
 /* 新闻列表 */
 .header { width: 100%; position: relative; }
 .header-bg { display: block; }
-.func-btns { position: absolute; height: 40px; width: 100%; top: 25%; left: 0rem; }
+.func-btns { position: absolute; height: 40px; width: 100%; top: 16%; left: 0rem; }
 .func-btns img { width: 100%; display: block; }
 .func-btns .goback,
 .func-btns .gohome { width: 4rem; height: 4rem; }
@@ -40,7 +40,7 @@
 .header img { width: 100%; display: block; }
 
 html,body { height: 100%; }
-.main { padding-bottom: 2rem; min-height: 50%; }
+.main { padding-bottom: 2rem; min-height: 60%; }
 .news-list { margin: 0 2rem; }
 .news-list-item { border-top: dashed 0.1rem #dbdbdb; margin-top: 1rem;}
 .news-list-item:first-child { border: none 0; }
