@@ -254,7 +254,8 @@ body {
 
 /* 服务介绍 */
 .servicearea {
-    
+    padding-bottom: 112px;
+    border-bottom: dashed 1px #999999;
 }
 .servicearea-list {
     overflow: hidden;

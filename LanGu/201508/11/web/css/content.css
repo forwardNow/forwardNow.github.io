@@ -1,42 +1,131 @@
 .col1of3 { width: 33.333333%; }
 .col2of3 { width: 66.666666%; }
 
-
-body { /*min-width: 640px;*/ }
-.site-banner { }
-.site-banner-inner { /*height: 40rem;*/ width: 100%; overflow: hidden; /*background: url("../images/banner.jpg") no-repeat center center;*/ background-color: #52cccb; }
-.site-banner-inner img { width: 100%; }
-
-.nav-wrap { }
-.nav-list { overflow: hidden; }
-.nav-list-item { float: left; width: 33.333333%; text-align: center; vertical-align: middle; }
-.nav-list-item:hover { opacity: 0.8; }
-.nav-list-item-link { display: inline-block; width: 100%; height: 100%; overflow: hidden; text-shadow: 0.1rem 0.1rem 0.2rem rgba(9,5,7,0.23); font-size: 2.4rem; color: #FFFFFF; background-color: #3dcccc; }
-
-.nav-list-item.item-img { width: 66.666666%; overflow:hidden; }
-.nav-list-item.item-img  img { height: 100%; display: block;}
-.nav-list .row-1 , .nav-list .row-3 { height: 20.4rem; line-height: 20.4rem; }
-.nav-list .row-2, .nav-list .row-4 { height: 14rem; line-height: 14rem; }
-.bg-1 { background-color: #40d698; }
-.bg-2 { background-color: #cca83d; }
-
-/* > 350px 时，图片 */
-@media screen and (min-width: 350px) {
-    .nav-list-item.item-img  img { height: auto; width: 100%;}
-
+.site-banner {
+    background-color: #7acccc;
 }
-/* < 480px 时，文字 */
-@media screen and (max-width: 479px) {
-    .nav-list .row-1 , .nav-list .row-3 { height: 15.4rem; line-height: 15.4rem; }
-    .nav-list .row-2, .nav-list .row-4 { height: 9rem; line-height: 9rem; }
-}
-/* < 480px 时，文字 */
-@media screen and (max-width: 320px) {
-    .nav-list .row-1 , .nav-list .row-3 { height: 15.4rem; line-height: 15.4rem; }
-    .nav-list .row-2, .nav-list .row-4 { height: 9rem; line-height: 9rem; }
+.site-banner-img {
+    width: 100%;
 }
 
+.nav-wrap {
 
+}
+.nav-wrap .line {
+    width: 100%;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.nav-wrap .line a {
+    float: left;
+    height: 100%;
+    background: url(about:blank) no-repeat center center;
+    background-size: 75%;
+}
+.nav-wrap .line1,
+.nav-wrap .line3 {
+    height: 20.4rem;
+}
+.nav-wrap .line2 a,
+.nav-wrap .line4 a {
+    height: 10rem;
+    width: 33.333333%;
+}
+
+.nav-wrap .line1 .about-us {
+    background-image: url("../images/nav_title_1.png");
+    background-color: #cc7a80;
+    width: 33%;
+}
+.nav-wrap .line .pic img {
+    width: 100%;
+}
+.nav-wrap .line1 .pic {
+    width: 65%; 
+    /*margin-left: 2%;*/
+    position: relative;
+    left: 1rem;
+}
+.nav-wrap .line3 .pic {
+    width: 65%;
+    margin: 0;
+} 
+.nav-wrap .line3 .pic-normal {
+    width: 33%;
+    position: relative;
+    left: 1rem;
+}
+
+
+.nav-wrap .line2 .yg-english {
+    background-image: url("../images/nav_title_2.png");
+    background-color: #ccc48f;
+} 
+.nav-wrap .line2 .yg-dance {
+    background-image: url("../images/nav_title_3.png");
+    background-color: #8fcc99;    
+} 
+.nav-wrap .line2 .yg-paint {
+    background-image: url("../images/nav_title_4.png");
+    background-color: #7abacc;
+}
+.nav-wrap .line4 .yg-house {
+    background-image: url("../images/nav_title_5.png");
+    background-color: #adcca3;
+} 
+.nav-wrap .line4 .yg-news {
+    background-image: url("../images/nav_title_6.png");
+    background-color: #7acccc;    
+} 
+.nav-wrap .line4 .yg-consult {
+    background-image: url("../images/nav_title_7.png");
+    background-color: #cc977a;
+} 
+
+@media screen and (max-width: 639px) {
+    .nav-wrap .line .pic img {
+        /*width: auto;*/
+        /*height: 100%;*/
+    }    
+    .nav-wrap .line1,
+    .nav-wrap .line3 {
+        height: 16rem;
+        
+    }
+    .nav-wrap .line2 a,
+    .nav-wrap .line4 a {
+        height: 8rem;
+    }
+
+}
+@media screen and (max-width: 480px) { 
+    .nav-wrap .line1,
+    .nav-wrap .line3 {
+        height: 11.4rem;
+        
+    }
+    .nav-wrap .line2 a,
+    .nav-wrap .line4 a {
+        height: 7rem;
+    }
+}
+@media screen and (max-width: 414px) { 
+    .nav-wrap .line2 a,
+    .nav-wrap .line4 a {
+        height: 9rem;
+    }
+}
+@media screen and (max-width: 320px) { 
+    .nav-wrap .line1,
+    .nav-wrap .line3 {
+        height: 10rem;
+        
+    }
+    .nav-wrap .line2 a,
+    .nav-wrap .line4 a {
+        height: 5.6rem;
+    }
+}
 
 /* 新闻列表 */
 .header { width: 100%; position: relative; }
