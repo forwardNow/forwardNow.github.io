@@ -1,0 +1,114 @@
+body {
+    font: 14px/1.5em tahoma, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    padding-top: 70px;
+    background-color: #F2F2F2;
+}
+*:link, *:visited, *:hover, *:active, *:focus {transition: color .20s linear, background-color .20s linear, border-color .20s linear; }
+a {color: #999; text-decoration: none; }
+
+.clear-fix { zoom: 1; }
+.clear-fix:before, .clear-fix:after { content: "."; display: block; height: 0; visibility: hidden; }
+.clear-fix:after { clear: both; }    
+
+/* container */
+.container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.container:after {content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* top */
+.top-fix { background-color: #212121; height: 50px; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background-image: url(../images/topfixed_bg.png); background-repeat: repeat-x; background-position: 0 bottom; }
+.logo-wrap { position: absolute; left: 10px; top: 9px; }
+.logo { background-image: url(../images/logo.png); background-repeat: no-repeat; background-size: auto 100%; width: 100px; height: 32px; display: block; text-indent: -999em; overflow: hidden; }
+.header { }
+/* menu */
+.menu-menumain { margin-left: 6rem; }   
+.menu-menumain .menumain-item { float: left; text-transform: uppercase; position: relative; margin: 0 24px; }
+.menu-menumain .menumain-item a { color: #999; display: block; text-decoration: none; font-size: 14px; font-family: Arial,Helvetica Narrow; line-height: 44px; height: 44px; text-align: center; letter-spacing: 1px; /*padding: 0 12px; */}
+.menu-menumain a:hover { color: #fff; text-shadow: 1px 0 20px #fff; }
+.menumain-item .sub-indicator { margin-left: 4px; vertical-align: -4px; width: 0; height: 0; overflow: hidden; font-size: 0; display: inline-block; border-width: 5px; border-color:  #9F9F9F transparent transparent transparent; border-style: solid; }
+.menumain-item a:hover .sub-indicator { border-color:  #fff transparent transparent transparent; }
+.menumain-item:hover .sub-menu { /*display: block; */}
+.sub-menu .submenu-item { background-color: #212121; }
+.sub-menu { display: none; position: absolute; top: 44px; left: -26px; padding-top: 3px; }
+.sub-menu a { width: 120px; }
+.sub-menu .submenu-item:hover { background-color: #000; }
+.sub-menu a::before { font-family: Arial; width: 28px; display: inline-block; text-align: center; }
+.sub-menu .menu-mw a::before { content: "MW"; color: #FA0; }
+.sub-menu .menu-pw a::before { content: "PW"; color: #00D0FF; }
+
+/* menu-control */
+.menu_control {
+    display: none;
+}
+
+
+.list-wrap {overflow: hidden; }
+
+/*homecontent*/
+#homecontent {margin-top: 10px; width: 990px; }
+
+#homecontent .column {margin-bottom: 30px; }
+
+.container .one-third.column, 
+.container .one-third.column .post {width: 300px; height: 360px; overflow: hidden; margin-right: 30px }
+.column, .columns {float: left; }
+#homecontent .post {background-color: #FFFFFF; height: 360px; position: relative; box-shadow: 0 0 2px #f5f5f5;}
+
+.container .one-third.column, 
+.container .one-third.column .post {width: 300px; height: 360px; overflow: hidden; margin-right: 30px; }
+
+
+#homecontent .post a img, 
+#homecontent .post a img {-webkit-transition: opacity 0.15s linear; -moz-transition: opacity 0.15s linear; transition: opacity 0.15s linear; }
+#homecontent .post a:hover img, 
+#homecontent .post:hover a img {filter: alpha(opacity = 65); -moz-opacity: 0.65; -khtml-opacity: 0.65; opacity: 0.65; }
+.one-third a img.attachment-thumbnail {height: 220px; width: 385px; margin-left: -42.5px; }
+.column img {height: auto; vertical-align: middle; }
+
+.post-detail {padding-top: 13px; }
+.btitle {height: 95px; }
+.btitle {padding: 0 12px 0 15px; position: relative; }
+.author {color: #777; padding: 2px 5px 2px 0px; /* font-weight: bold; */ }
+.home .comment-avatar-wrap {width: 20px; height: 20px; float: none; display: inline-block; vertical-align: middle; position: relative; top: -5px; margin-right: 6px; }
+.author img {width: 20px; height: 20px; vertical-align: middle; border-radius: 20px; }
+.btitle h2 { font-size: 19px; padding-top: 4px; line-height: 1.4; color: #333; /* font-weight: bold; */ }
+.btitle h2 a:link, .btitle h2 a:visited {text-decoration: none; color: #333333; word-wrap: break-word; word-break: normal; }
+.post-data {position: absolute; left: 0; bottom: 10px; margin: 0 12px; }
+.post-data a {cursor: default; color: #666; line-height: 25px; height: 25px; display: inline-block; }
+.post-data i {font-size: 20px; display: inline-block; vertical-align: bottom; }
+.icon-like:before {content: url("../images/icon_like.png"); }
+
+.icon-date:before {content: url("../images/icon_date.png"); }
+
+[class^="icon-"]:before, [class*=" icon-"]:before { speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: 0.2em; opacity: 0.8; line-height: 1em; margin-left: 0.2em; }
+.post-data a, .post-data a:visited { color: #666; }
+.post-data a span { display: block; display: inline-block; }
+.post-category { position: absolute; bottom: 0; right: 0; }
+.post-category img { vertical-align: middle; height: 40px; }
+#homecontent .post a img { -webkit-transition: opacity 0.15s linear; -moz-transition: opacity 0.15s linear; transition: opacity 0.15s linear; }
+#homecontent .post .post-category a:hover img, 
+#homecontent .post:hover .post-category a img { filter: alpha(opacity = 100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; }
+
+
+@media only screen and (min-width: 960px) {
+    .top-fix .menu-control {display: none; }
+    .list-wrap {width: 960px; }
+}
+
+
+/* footer */
+#footer { color: #666666; font-size: 12px; position: relative; overflow: hidden; }
+#footer .mod-links { border-top: 1px solid #CBCBCB; padding: 14px 0 5px; padding-bottom: 14px; }
+#footer .mod-links a { margin-right: 17px; font-family: Verdana; }
+#footer a:link, #footer a:visited { color: #666666; text-decoration: none; }
+#footer .links-site { overflow: hidden; }
+#footer .mod-links h4 { font-size: 12px; float: left; line-height: 1.5; }
+#footer .mod-links ul { float: left; overflow: hidden; }
+#footer .mod-links li { float: left; }
+
+.fcred { border-top: 1px solid #CBCBCB; margin: 0px auto 30px; line-height: 16px; padding-top: 18px; }
+
+.footer_menu { margin-left: 18px; color: #CCCCCC; font-family: Verdana; }
+.footer_menu a { margin: 0 3px; }

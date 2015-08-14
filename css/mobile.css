@@ -1,0 +1,43 @@
+
+@media only screen and (max-width: 959px) {
+    .top-fix .menu-control {position: absolute; top: 13px; right: 18px; display: block; text-align: center; }
+    .top-fix .menu-control a {display: block; border: none; padding: 0; background-color: transparent; cursor: pointer; width: 21px; height: 20px; color: rgba(0, 0, 0, 0); line-height: 200px; overflow: hidden; background-image: url(../images/menu_control.png); background-repeat: no-repeat; }
+    .top-fix .menu-control-h a {background-image: url(../images/menu_control_h.png); }
+    .header {display: none; position: absolute; top: 50px; left: 0; background: #333; padding-top: 12px; }
+    .menu-menumain {margin: 0; }
+    .menu-menumain .menumain-item {margin: 0; width: 100%; border-bottom: 1px solid #444; }
+    .menu-menumain .menumain-item a {text-align: left; display: inline-block; margin-left: 20px; }
+    .menumain-item .sub-indicator{display: none; }
+    .sub-menu {display: block; position: static; overflow: hidden; background-color: #212121; padding-left: 48px; }
+    .sub-menu .submenu-item {float: left; }
+    .top-fix .container .top-fix-wrap {position: relative; margin: 0 auto; }
+    .top-fix .header, 
+    .top-fix .container {width: 100%!important; }
+}
+@media only screen and (max-width: 959px) and (min-width: 630px) {
+    .top-fix .container .top-fix-wrap {width: 650px!important; }
+    .container, .list-wrap { width: 630px; } 
+}
+@media only screen and (max-width: 629px) and (min-width: 479px) {
+    .container, #homecontent {width: 385px; }
+    .container .one-third.column,
+    .container .one-third.column .post {width: 385px; }
+    .one-third a img.attachment-thumbnail {margin-left: 0; }
+}
+@media only screen and (max-width: 479px) and (min-width: 385px) {
+    .container, #homecontent {width: 100%; }
+    .container .one-third.column, 
+    .container .one-third.column .post {width: 100%; }
+    /*.one-third a img.attachment-thumbnail {height: 220px; width: 100%; margin-left: 0; }*/
+    .one-third  .img-wrap { display: block; height: 220px; overflow: hidden;}
+    .one-third a img.attachment-thumbnail {height: auto; width: 100%; margin-left: 0; }
+}
+@media only screen and (max-width: 384px) {
+    .container, #homecontent {width: 100%; }
+    .container .one-third.column, 
+    .container .one-third.column .post {margin-right: 0; width: 100%; }
+
+    #homecontent .img-wrap {display: block; width: 100%; overflow: hidden; }
+    .one-third a img.attachment-thumbnail {margin-left: 0; }
+
+}

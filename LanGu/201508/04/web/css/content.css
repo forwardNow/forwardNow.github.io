@@ -195,6 +195,7 @@ body { background: url("../images/site_top_bg.jpg") no-repeat center top; backgr
 .footer .links a { font-family: "宋体"; font-size: 12px; color: #ffffff; margin: 0px 10px; }
 .footer .tail { color: #4c4c4c; font-family: "宋体"; font-size: 12px; line-height: 28px; overflow: hidden; }
 .footer .record-num { padding-right: 6px; }
+.tail { padding-bottom: 110px; }
 .tail .visit-record { float: left; width: 30%; }
 .tail .copyright { float: left; width: 40%; text-align: center; }
 .tail .resolution { float: left; width: 30%; text-align: right; }
@@ -358,4 +359,19 @@ body { background: url("../images/site_top_bg.jpg") no-repeat center top; backgr
 .meeting-notice-footer .notice-input { border: none 0; width: 172px; height: 36px; background-color: #dbdbdb; border-radius: 4px; margin-right: 20px; font-size: 16px; padding-left: 8px; }
 .meeting-notice-footer .notice-btn { border: none 0; width: 90px; height: 36px; line-height: 36px; text-align: center; background-color: #999999; color: #1a1a1a; border-radius: 4px; font-size: 14px; cursor: pointer; }
 
+/* 【修改-20150814】---开始 */
 
+.mod-fixheight-1 .list, 
+.ps-news .mod.news .list {
+    min-height: 288px;
+}
+.mod-fixheight-2 .list,
+.left-column .mod .list {
+    min-height: 192px;
+}
+
+.othersites-list {
+    width: 105%;
+}
+
+/* 【修改-20150814】---结束 */
