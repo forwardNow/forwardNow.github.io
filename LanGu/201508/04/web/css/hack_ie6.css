@@ -1,0 +1,50 @@
+
+.nav-list  {
+    height: 40px;
+}
+.site-logo a { display: block; text-align: left;}
+.site-logo .slogan { margin-top: 12px; text-align: right; }
+
+.focus .page-index {
+    padding: 0 4px;
+}
+.focus .page-title-wrapper .page-title {
+    background-color: transparent;
+}
+
+.mod-fixheight-1 .list, 
+.ps-news .mod.news .list {
+    height: 288px;
+}
+.mod-fixheight-2 .list,
+.left-column .mod .list {
+    height: 206px;
+}
+
+
+.right-mod, .mod  {
+    display: inline-block;
+}
+.right-mod .list {
+    background-color: #FFF;
+}
+
+.rank-list-item {
+    padding-top: 11px;
+}
+
+.rank-list-title {
+    background-image: url("../images/rank_list_style.gif");
+}
+.dept-tel-tab {
+    width: 100%;
+    margin-left: 0px;
+}
+.send-list-head-title {
+
+}
+
+.paging-btn  {
+    width: 24px;
+}
+
