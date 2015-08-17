@@ -170,7 +170,7 @@ body { background: url("../images/site_top_bg.jpg") no-repeat center top; backgr
 .mod-video .video-list-item { float: left; margin-left: 10px; }
 .mod-video .video-list-item-link { display: block; position: relative; }
 .mod-video .video-list-item-link:hover { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* ie8  */filter:alpha(opacity=80); /* ie5-7  */opacity: 0.8; }
-.mod-video .video-pic { display: block; width: 100%; height:;}
+.mod-video .video-pic { display: block; width: 100%; }
 .mod-video .video-title { display: block; text-indent: 10px; background: url("../images/transparent_bg_1.png") repeat; color: #d1d1d1; font-family: "Microsoft Yahei"; font-size: 14px; height: 28px; line-height: 28px; position: absolute; left: 0px; bottom: 0px; width: 100%; }
 
 .video-suggest { float: left; width: 100%; margin-top: 20px; }
@@ -375,3 +375,18 @@ body { background: url("../images/site_top_bg.jpg") no-repeat center top; backgr
 }
 
 /* 【修改-20150814】---结束 */
+
+
+/* 【修改-20150817】---开始 */
+.mod-video .video-list-item {
+    width: 138px;
+    height: 164px;
+}
+.mod-video .video-list-item-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 【修改-20150817】---结束 */
