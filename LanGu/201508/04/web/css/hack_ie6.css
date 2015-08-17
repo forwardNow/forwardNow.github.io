@@ -44,7 +44,17 @@
 
 }
 
+/* paging */
 .paging-btn  {
     width: 24px;
 }
 
+
+/* top bg */
+.site-logo  * {
+    visibility: hidden;
+}
+
+body {
+    background-image: url("../images/site_top_bg_ie6.jpg");
+}
