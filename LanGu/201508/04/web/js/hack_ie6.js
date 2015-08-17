@@ -1,13 +1,16 @@
 $( function () {
 
   // fix <img>
-  $( "img" ).attr( "style", function ( index, value ) {
-    value = value || "";
-    var filter = value + ';filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+this.src+'")';
-    this.src = "./images/transparent.gif";
-    return filter;
-  } );
+  window.setTimeout( function() {
+    
+    $( "img" ).attr( "style", function ( index, value ) {
+      value = value || "";
+      var filter = value + ';filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+this.src+'")';
+      this.src = "./images/transparent.gif";
+      return filter;
+    } );
 
+  }, 3000 );
 
 
 
