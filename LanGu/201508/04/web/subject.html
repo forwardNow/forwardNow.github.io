@@ -7,7 +7,7 @@
     <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/base.css">
     <link rel="stylesheet" type="text/css" href="./css/content.css">    
-    <!--[if IE 6 ]>
+    <!--[if it IE 8 ]>
 
     <link rel="stylesheet" type="text/css" href="./css/hack_ie6.css">   
     <script type="text/javascript" src="./js/jquery.min.js"></script> 
@@ -49,7 +49,10 @@
     /* 更换专题页的背景和口号 */
         body { 
             background-image: url("./images/site_subject_top_bg.jpg");
+            *background-image: url("./images/site_subject_top_bg_ie6.jpg");
+            _background-image: url("./images/site_subject_top_bg_ie6.jpg");
         }    
+
         .site-logo .slogan {
             margin-top: 40px;
         }

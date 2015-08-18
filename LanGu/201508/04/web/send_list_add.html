@@ -7,6 +7,16 @@
     <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/base.css">
     <link rel="stylesheet" type="text/css" href="./css/content.css">    
+    <script type="text/javascript" src="./js/jquery.min.js"></script> 
+
+<!--[if it IE 8 ]>
+
+    <link rel="stylesheet" type="text/css" href="./css/hack_ie6.css">   
+    <script type="text/javascript" src="./js/hack_ie6.js"></script>
+    <script type="text/javascript" src="./js/firebug-lite/content/firebug-lite-dev.js"></script>
+
+    <![endif]-->  
+
 </head>
 <body>
     
@@ -78,16 +88,20 @@
                 <script>
 
                     function changeTab( index ) {
-                        var tabLinks = document.querySelectorAll( ".send-tabs a" );
-                        var tabs = document.querySelectorAll( ".send-tabbody" );
+                        $( ".send-tabs a" ).removeClass( "active" ).eq( index ).addClass( "active" );
+                        $( ".send-tabbody" ).hide().eq( index ).show();
+                        /*
+                        var tabLinks = $( ".send-tabs a" );
+                        var tabs = $( ".send-tabbody" );
                         for ( var i =0; i < tabLinks.length; i++ ) {
-                            tabLinks[ i ].setAttribute( "class", tabLinks[ i ].className.replace("active", "") );
+                            tabLinks.eq( i ).attr( "class", tabLinks[ i ].className.replace("active", "") );
                             tabs[ i ].style.display = "none";
                             if ( i === index) {
                                 tabLinks[ i ].setAttribute( "class", tabLinks[ i ].className + " active" );
                                 tabs[ i ].style.display = "block";
                             }
                         }
+                        */
                     }
 
                 </script>                    
@@ -121,17 +135,26 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="send-tabbody tab-inner-pic" style="display:none;">
-                            <div class="tab-pic clearfix">
-                                <label class="tab-pic-label">缩略图：</label>
-                                <div class="tab-pic-cont"></div>
-                            </div>
-                            <div class="tab-pic clearfix">
-                                <label class="tab-pic-label">附　件：</label>
-                                <div class="tab-pic-cont"></div>
-                            </div>
-                            <input type="submit" class="tab-pic-submit" value="保 存">
-                        </div>
+                        <div class="send-tabbody tab-inner-article tab-inner-pic" style="display:none;">
+                            <table class="article-tab">
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label">缩略图：</td>
+                                    <td class="article-tab-cont"><div class="tab-pic-cont"></div></td>
+                                </tr>
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label">附　件：</td>
+                                    <td class="article-tab-cont"><div class="tab-pic-cont"></div></td>
+                                </tr>
+                                
+                                <tr class="article-tab-tr">
+                                    <td class="article-tab-label"></td>
+                                    <td class="article-tab-cont"><!-- 
+                                     --><input type="submit" class="tab-pic-submit" value="保 存">
+                                    </td>                                
+                                </tr>
+                            </table>
+                        </div>                        
+                        
                     </div>
                 </div>    
                 

@@ -5,6 +5,7 @@
 .site-logo a { display: block; text-align: left;}
 .site-logo .slogan { margin-top: 12px; text-align: right; }
 
+/* 焦点图 */
 .focus .page-index {
     padding: 0 4px;
 }
@@ -12,6 +13,7 @@
     background-color: transparent;
 }
 
+/* 首页栏目 */
 .mod-fixheight-1 .list, 
 .ps-news .mod.news .list {
     height: 288px;
@@ -29,13 +31,17 @@
     background-color: #FFF;
 }
 
+/* 排名 */
 .rank-list-item {
     padding-top: 11px;
+    *padding-top: 0px;
 }
 
 .rank-list-title {
     background-image: url("../images/rank_list_style.gif");
 }
+
+/* 电话 */
 .dept-tel-tab {
     width: 100%;
     margin-left: 0px;
@@ -57,4 +63,10 @@
 
 body {
     background-image: url("../images/site_top_bg_ie6.jpg");
+}
+
+
+/*  */
+.tab-pic {
+    *overflow: hidden;
 }
