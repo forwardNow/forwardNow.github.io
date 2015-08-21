@@ -26,7 +26,7 @@ body {line-height:1.5;background-color:#FFFFFF;}
 body,h1,h2,h3,h4,h5,h6,input,button,select,textarea {font-size: 18px;} /* 设置字体大小 */
 input[type="button"],
 input[type="submit"],
-input[type="reset"] {font-size: 16px;} /* 设置字体大小，这部分跟前面写在一起，IE6中会无效 */
+input[type="reset"] {/*font-size: 16px;*/} /* 设置字体大小，这部分跟前面写在一起，IE6中会无效 */
 
 /*===== 字体控制 =====*/
 body,

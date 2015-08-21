@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>帝斯力体育健康</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script>
+    $( function () {
+        var timerId = null;
+        $( ".nav-list .list-item" ).hover( 
+            function () {
+                var submenu = $( this ).find( ".list-item-link" ).attr("submenu");
+                if ( submenu ) {
+                    clearTimeout( timerId );
+                    showSubmenu( submenu );
+                }
+                $( this ).addClass( "active" ).siblings().removeClass("active");
+            },
+            function () {
+                var self = this;
+                $( this ).removeClass("active");
+                if ( $( ".submenu-container" ).css( "display" ) != "block" ) {
+                    return;
+                }
+                $( this ).addClass("active");
+                timerId = setTimeout( hideSubmenu , 50 );
+            }
+        );
+        $( ".submenu-container" ).hover(
+            function () {
+                clearTimeout( timerId );
+            },
+            function () {
+                hideSubmenu();
+            }
+        );
+
+        function showSubmenu( submenu ) {
+            if ( ! submenu ) {
+                return;
+            }
+            $( ".nav-list .triangle-down" ).show();
+            $( ".submenu-container" ).show();
+        }
+        function hideSubmenu() {
+            $( ".submenu-container" ).hide();
+            $( ".nav-list .triangle-down" ).hide();      
+            $( ".nav-list .list-item" ).removeClass( "active" );
+        }
+    } );
+    </script>
+</head>
+<body>
+    
+
+
+<!-- header -->
+    <div class="header" role="header">
+        <div class="header-inner wrap">
+            <h1 class="logo-wrap">
+                <a class="logo-link" href="./index.html"><img class="logo" src="./images/logo.png" alt="帝斯力体育健康"></a>
+            </h1>
+            <div class="nav" role="nav">
+                <ul class="nav-list clearfix">
+                    <li class="list-item"><a class="list-item-link" href="#">首　页</a></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item current"><a class="list-item-link" href="#">公司简介</a></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item"><a class="list-item-link" submenu="sub-bodybuilding" href="#">运动健身</a><i class="triangle-down"></i></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item"><a class="list-item-link" href="#">体育拓展</a></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item"><a class="list-item-link" href="#">健康培训</a></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item"><a class="list-item-link" href="#">体育咨询</a></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item"><a class="list-item-link" href="#">人力资源</a></li>
+                    <li class="list-item separator">|</li>
+                    <li class="list-item"><a class="list-item-link" href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="submenu-container">
+            <div class="submenu sub-bodybuilding">
+                <a class="submenu-item" href="#">帝斯力健身</a>
+                <a class="submenu-item" href="#">会所浏览</a>
+                <a class="submenu-item" href="#">团队风采</a>
+                <a class="submenu-item" href="#">精彩课程</a>
+                <a class="submenu-item" href="#">会员服务</a>
+                <a class="submenu-item" href="#">成功案例</a>
+                <a class="submenu-item" href="#">联系我们</a>
+            </div>    
+        </div>
+    </div>
+<!-- /header -->
+
+<!-- banner -->
+    <div class="page-banner" role="banner">
+        <div class="banner-inner wrap">
+            <h1 class="page-title"><img src="./images/innerpage_title_1_companyprofile.png" alt=""></h1>
+            <div class="search-wrap">
+                <input class="search-input" type="text" value="关键字搜索">
+                <input class="search-btn" type="button" value="搜索">
+            </div>
+        </div>
+    </div>
+    <script>
+    $(function () {
+        var placeholder = $( ".search-input" ).val();
+        $( ".search-input" )
+            .data( "value", placeholder )
+            .focus( function () {
+                if ( ! $( this ).val() || $( this ).val() == placeholder ) {
+                    $( this ).val("");
+                }
+            } )
+            .blur( function () {
+                if ( $( this ).val() == "" ) {
+                    $( this ).val( $( this ).data( "value" ) );
+                }
+            } );
+    });
+    </script>
+<!-- /banner -->
+
+<!-- content -->
+    <div class="content" role="main">
+       
+       <div class="content-inner wrap">
+           
+       </div>
+
+    </div>
+<!-- /content -->
+
+<!-- footer -->
+    <div class="footer-wrap">
+        <div class="footer wrap" role="footer">
+            <dl class="list-contactus">
+                <dt class="list-title">联系我们</dt>
+                <dd class="list-item address">武汉市汉口建设大道538号同城广场A栋2单元404室</dd>
+                <dd class="list-item email">nxug@163.com</dd>
+                <dd class="list-item tel">027-87423474234</dd>
+            </dl>
+            <p class="copyright">Copyright &copy; 2015 武汉帝斯力体育健康管理有限公司</p>
+        </div>
+    </div>
+<!-- /footer -->
+
+
+
+</body>
+</html>
