@@ -112,3 +112,50 @@ a {color: #999; text-decoration: none; }
 
 .footer_menu { margin-left: 18px; color: #CCCCCC; font-family: Verdana; }
 .footer_menu a { margin: 0 3px; }
+
+
+/* go-top */
+.go-top { position: fixed; display: none; right: 45px; bottom: 38px; z-index: 9999; }
+.go-top a {
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANBAMAAAA6ZnEvAAAAA3NCSVQICAjb4U/gAAAAKlBMVEX///+ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZk4FLA7AAAADnRSTlMAESIzRFV3iKq7zN3u/7+mKzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMjgvMTMQU+aJAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAAH9JREFUCJljYIAAzUkMKIDt7J0EZD7T3Lt3byogCeTcvXP27nEE3+ru3UaJu3cXw/jsd+9uZWCIvnu3AMJnXnv3ugADA2Pt3VsGID6QcdsBxGDZC5Zg8L57txCiVPzu3S1gcjGS4YUMc+9eQ1iXe/cmgy/EJJj5VxjYUZzMVgAALtkwayjxUjMAAAAASUVORK5CYII=);
+    background-repeat: no-repeat; background-position: center 15px; width: 50px; height: 50px; text-decoration: none; border-radius: 3px; 
+}
+.go-top a:hover {
+    border-radius: 3px;
+    background-color: #999;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANBAMAAAA6ZnEvAAAAA3NCSVQICAjb4U/gAAAAKlBMVEX///////////////////////////////////////////////////////9q+00tAAAADnRSTlMAESIzRFV3iKq7zN3u/7+mKzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMjgvMTMQU+aJAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAAH9JREFUCJljYIAAzUkMKIDt7J0EZD7T3Lt3byogCdTcvXP27nEE3+ru3UaJu3cXw/jsd+9uZWCIvnu3AMJnXnv3ugADA2Pt3VsGID6QcdsBxGDZC5Zg8L57txCiVPzu3S1gcjGS4YUMc+9eQ1iXe/cmgy/EJJj5VxjYUZzMVgAAORkwe22lclEAAAAASUVORK5CYII=);
+}
+
+/* loading */
+#infscr-loading { text-align: center; z-index: 100; width: 200px; padding: 0 0 30px; color: #999; width: 100%; }
+#infscr-loading img { vertical-align: -2px; margin-right: 5px; }
+
+
+/* tools */
+.innercontent {
+
+}
+.tools-card {
+    float: left;
+    box-size: border-box;
+    width: 160px;
+    height: 200px;
+    border: 1px solid #E4E4E4;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.tools-card .img-wrap {
+    height: 60%;
+    padding: 2px;
+    overflow: hidden;
+    text-align: center;
+}
+.tools-card .img-wrap img {
+    width: auto;
+    height: 100%;
+}
+.tools-card .card-cont {
+    padding: 8px;
+    word-break: break-word;
+}

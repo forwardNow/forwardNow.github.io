@@ -31,10 +31,10 @@
     background-color: #FFF;
 }
 
+
 /* 排名 */
 .rank-list-item {
-    padding-top: 11px;
-    *padding-top: 0px;
+    _padding-top: 11px;
 }
 
 .rank-list-title {

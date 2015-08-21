@@ -14,220 +14,205 @@
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 959px)" href="./css/mobile.css" />
 
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
     <script>
-        $( function () {
-            /*
-            $( ".menumain-item" ).hover( function () {
-                $( ".sub-menu", this ).stop().slideDown(300);
-            } ,function () {
-                $( ".sub-menu", this ).stop().slideUp(300);
-            } );
-            */
-            $( ".menumain-item" ).bind({
-                mouseover: function () {
-                    $( ".sub-menu", this ).stop().slideDown(300);
-                },
-                mouseout: function () {
-                    $( ".sub-menu", this ).stop().slideUp(300);
-                }
-            });
-            
-            $( ".menu-control" ).click( function () {
-                $( this ).toggleClass( "menu-control-h" );
-                if ( $( this ).hasClass( "menu-control-h" ) ) {
-                    $( ".header" ).slideDown(300);
-                } else {
-                    $( ".header" ).slideUp(300);
-                }
-
-                $( ".menumain-item" ).unbind( "mouseover" ).unbind( "mouseout" );
-
-            } );
+        jQuery( function () {
+            submenu();
+            scrollToTop();
+            pageMore();
         } );
     </script>
 
 </head>
 <body class="home">
-        <div class="top-fix" role="banner">
-            <div class="container">
-                <div class="top-fix-wrap">
-                    <h1 class="logo-wrap">
-                        <a href="/index.html" class="logo">forwardNow的个人主页</a>
-                    </h1>
-                    <div class="menu-control">
-                        <a href="#"><span>菜单</span></a>
-                    </div>
-                    <div class="header menu-menumain-wrap">
-                        <ul class="menu-menumain clear-fix">
-                            <li class="menumain-item"><a class="menumain-item-link" href="./index.html">HOME</a></li>
-                            <li class="menumain-item">
-                                <a href="./index.html">READ<span class="sub-indicator"> »</span></a>
-                                <ul class="sub-menu" >
-                                    <li class="submenu-item menu-mw"><a href="#">移动端Web</a></li>
-                                    <li class="submenu-item menu-pw"><a href="#">电脑端Web</a></li>
-                                </ul>
-                            </li>
-                            <li class="menumain-item"><a href="./index.html">TOOLS</a></li>
-                            <li class="menumain-item"><a href="./index.html">ABOUT</a></li>
-                        </ul>
-                    </div>
+    <div class="top-fix" role="banner">
+        <div class="container">
+            <div class="top-fix-wrap">
+                <h1 class="logo-wrap">
+                    <a href="/index.html" class="logo">forwardNow的个人主页</a>
+                </h1>
+                <div class="menu-control">
+                    <a href="#"><span>菜单</span></a>
+                </div>
+                <div class="header menu-menumain-wrap">
+                    <ul class="menu-menumain clear-fix">
+                        <li class="menumain-item"><a class="menumain-item-link" href="./index.html">HOME</a></li>
+                        <li class="menumain-item">
+                            <a href="./index.html">READ<span class="sub-indicator"> »</span></a>
+                            <ul class="sub-menu" >
+                                <li class="submenu-item menu-mw"><a href="#">移动端Web</a></li>
+                                <li class="submenu-item menu-pw"><a href="#">电脑端Web</a></li>
+                            </ul>
+                        </li>
+                        <li class="menumain-item"><a href="./index.html">TOOLS</a></li>
+                        <li class="menumain-item"><a href="./index.html">ABOUT</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="container" role="main">
-            
-            <div class="list-wrap">
-                
-
-                <div id="homecontent" class="homecontent clear-fix" role="list">
-                    
-                    <div class="one-third column" role="listitem">
-                        
-                        <article class="post">
-                            
-                            <a class="img-wrap" href="./LanGu/201508/11/web/index.html">
-                                <img class="post-image attachment-thumbnail" src="./images/item_1.jpg" alt="">
-                            </a>
-                            <div class="post-detail">
-                                <div class="btitle">
-                                    <span class="author">
-                                        <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow
-                                    </span>
-                                    <h2 class="post-title"><a href="./LanGu/201508/11/web/index.html">武汉市阳逻文化艺术教育培训学校</a></h2>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
-                                    <a href="#" title="日期"><i class="icon-date"></i><span>2015-08-11</span></a>
-                                </div>
-                                <div class="post-category">
-                                    <a href="#"><img src="./images/menu_mw.png" alt=""></a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                    <div class="one-third column" role="listitem">
-                        
-                        <article class="post">
-                            
-                            <a class="img-wrap" href="./LanGu/201508/03/web/index.html">
-                                <img class="post-image attachment-thumbnail" src="./images/item_2.jpg" alt="">
-                            </a>
-                            <div class="post-detail">
-                                <div class="btitle">
-                                    <span class="author">
-                                        <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow
-                                    </span>
-                                    <h2 class="post-title"><a href="./LanGu/201508/03/web/index.html">力氏管理咨询有限公司</a></h2>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
-                                    <a href="#" title="日期"><i class="icon-date"></i><span>2015-08-03</span></a>
-                                </div>
-                                <div class="post-category">
-                                    <a href="./LanGu/201508/03/web/index.html"><img src="./images/menu_pw.png" alt=""></a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                    <div class="one-third column" role="listitem">
-                        
-                        <article class="post">
-                            
-                            <a class="img-wrap" href="./LanGu/201508/04/web/index.html">
-                                <img class="post-image attachment-thumbnail" src="./images/item_3.jpg" alt="">
-                            </a>
-                            <div class="post-detail">
-                                <div class="btitle">
-                                    <span class="author">
-                                        <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow
-                                    </span>
-                                    <h2 class="post-title"><a href="./LanGu/201507/29/web/index.html">蔡甸公安信息网</a></h2>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
-                                    <a href="#" title="日期"><i class="icon-date"></i><span>2015-08-04</span></a>
-                                </div>
-                                <div class="post-category">
-                                    <a href="./LanGu/201507/29/web/index.html"><img src="./images/menu_pw.png" alt=""></a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </div>
-                    <div class="one-third column" role="listitem">
-                        
-                        <article class="post">
-                            
-                            <a class="img-wrap" href="./LanGu/201508/04/web/index.html">
-                                <img class="post-image attachment-thumbnail" src="./images/item_4.jpg" alt="">
-                            </a>
-                            <div class="post-detail">
-                                <div class="btitle">
-                                    <span class="author">
-                                        <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow</span>
-                                    <h2 class="post-title"><a href="./LanGu/201507/29/web/index.html">武汉青年企业家创业协会</a></h2>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
-                                    <a href="#" title="日期"><i class="icon-date"></i><span>2015-07-29</span></a>
-                                </div>
-                                <div class="post-category">
-                                    <a href="./LanGu/201507/29/web/index.html"><img src="./images/menu_pw.png" alt=""></a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </div>
-                   
-
-
-                </div>
-
-            </div>
-
-        </div>
-        
-        <div id="footer" class="container" role="footer">
-            
-            <div class="container">
-                
-                <div class="mod-links clear-fix">
-                    
-                    <div class="links-site">
-                        <h4>友情链接：</h4>
-                        <ul>
-                            <li><a href="http://jdc.jd.com/" title="腾讯电商用户体验设计部，简称ecd（E-Commerce User Experience Design）" target="_blank">JDC</a></li>
-                            <li><a href="http://ifed.me" title="IFED 支付宝金融体验设计中心" target="_blank">IFED</a></li>
-                            <li><a href="http://www.uirss.com/" rel="acquaintance" title="UI聚合,聚合你我" target="_blank">UIRSS</a></li>
-                            <li><a href="http://www.baiduux.com/" rel="acquaintance" title="泛用户体验平台，是以‘用户体验’为核心的跨专业分享平台" target="_blank">百度UX</a></li>
-                            <li><a href="http://www.uisdc.com/" target="_blank">优秀网页设计</a></li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="fcred">
-                    Copyright © 2012-2015 <a href="./index.html" title="">forwardNow.</a> All Rights Reserved
-                    <span class="footer_menu">
-                        <a href="#">Home</a> | <a href="#">Contact</a> | <a href="#">About</a>
-                    </span>
-                </div>
-            </div>
-
         </div>
     </div>
+
+    <div class="container" role="main">
+        
+        <div class="list-wrap">
+            
+
+            <div id="homecontent" class="homecontent clear-fix" role="list">
+                
+                <div class="one-third column" role="listitem">
+                    
+                    <article class="post">
+                        
+                        <a class="img-wrap" href="./LanGu/201508/11/web/index.html">
+                            <img class="post-image attachment-thumbnail" src="./images/item_1.jpg" alt="">
+                        </a>
+                        <div class="post-detail">
+                            <div class="btitle">
+                                <span class="author">
+                                    <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow
+                                </span>
+                                <h2 class="post-title"><a href="./LanGu/201508/11/web/index.html">武汉市阳逻文化艺术教育培训学校</a></h2>
+                            </div>
+                            <div class="post-data">
+                                <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
+                                <a href="#" title="日期"><i class="icon-date"></i><span>2015-08-11</span></a>
+                            </div>
+                            <div class="post-category">
+                                <a href="#"><img src="./images/menu_mw.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+                <div class="one-third column" role="listitem">
+                    
+                    <article class="post">
+                        
+                        <a class="img-wrap" href="./LanGu/201508/03/web/index.html">
+                            <img class="post-image attachment-thumbnail" src="./images/item_2.jpg" alt="">
+                        </a>
+                        <div class="post-detail">
+                            <div class="btitle">
+                                <span class="author">
+                                    <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow
+                                </span>
+                                <h2 class="post-title"><a href="./LanGu/201508/03/web/index.html">力氏管理咨询有限公司</a></h2>
+                            </div>
+                            <div class="post-data">
+                                <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
+                                <a href="#" title="日期"><i class="icon-date"></i><span>2015-08-03</span></a>
+                            </div>
+                            <div class="post-category">
+                                <a href="./LanGu/201508/03/web/index.html"><img src="./images/menu_pw.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="one-third column" role="listitem">
+                    
+                    <article class="post">
+                        
+                        <a class="img-wrap" href="./LanGu/201508/04/web/index.html">
+                            <img class="post-image attachment-thumbnail" src="./images/item_3.jpg" alt="">
+                        </a>
+                        <div class="post-detail">
+                            <div class="btitle">
+                                <span class="author">
+                                    <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow
+                                </span>
+                                <h2 class="post-title"><a href="./LanGu/201507/29/web/index.html">蔡甸公安信息网</a></h2>
+                            </div>
+                            <div class="post-data">
+                                <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
+                                <a href="#" title="日期"><i class="icon-date"></i><span>2015-08-04</span></a>
+                            </div>
+                            <div class="post-category">
+                                <a href="./LanGu/201507/29/web/index.html"><img src="./images/menu_pw.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+                <div class="one-third column" role="listitem">
+                    
+                    <article class="post">
+                        
+                        <a class="img-wrap" href="./LanGu/201508/04/web/index.html">
+                            <img class="post-image attachment-thumbnail" src="./images/item_4.jpg" alt="">
+                        </a>
+                        <div class="post-detail">
+                            <div class="btitle">
+                                <span class="author">
+                                    <span class="comment-avatar-wrap"><img src="./images/logo.jpg" alt="" class="avatar"></span>forwardNow</span>
+                                <h2 class="post-title"><a href="./LanGu/201507/29/web/index.html">武汉青年企业家创业协会</a></h2>
+                            </div>
+                            <div class="post-data">
+                                <a href="#" title="赞"><i class="icon-like"></i><span>3</span></a>
+                                <a href="#" title="日期"><i class="icon-date"></i><span>2015-07-29</span></a>
+                            </div>
+                            <div class="post-category">
+                                <a href="./LanGu/201507/29/web/index.html"><img src="./images/menu_pw.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+               
+
+
+            </div>
+
+            <div id="infscr-loading"><img alt="Loading..." src="./images/loading.gif"></div>
+
+        </div>
+
+    </div>
     
+    <div id="footer" class="container" role="footer">
+        
+        <div class="container">
+            
+            <div class="mod-links clear-fix">
+                
+                <div class="links-site">
+                    <h4>友情链接：</h4>
+                    <ul>
+                        <li><a href="http://jdc.jd.com/" title="腾讯电商用户体验设计部，简称ecd（E-Commerce User Experience Design）" target="_blank">JDC</a></li>
+                        <li><a href="http://ifed.me" title="IFED 支付宝金融体验设计中心" target="_blank">IFED</a></li>
+                        <li><a href="http://www.uirss.com/" rel="acquaintance" title="UI聚合,聚合你我" target="_blank">UIRSS</a></li>
+                        <li><a href="http://www.baiduux.com/" rel="acquaintance" title="泛用户体验平台，是以‘用户体验’为核心的跨专业分享平台" target="_blank">百度UX</a></li>
+                        <li><a href="http://www.uisdc.com/" target="_blank">优秀网页设计</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="fcred">
+                Copyright © 2012-2015 <a href="./index.html" title="">forwardNow.</a> All Rights Reserved
+                <span class="footer_menu">
+                    <a href="#">Home</a> | <a href="#">Contact</a> | <a href="#">About</a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div id="go-top" class="go-top">
+        <a href="javascript:void(0)"></a>
+    </div>
+
 
 
 </body>

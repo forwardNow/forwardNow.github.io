@@ -402,3 +402,24 @@ body { background: url("../images/site_top_bg.jpg") no-repeat center top; backgr
 /* 【修改-20150818】---结束 */
 
 
+/* 【修改-20150819】---开始 */
+.search-input {
+    margin-right: 0;
+}
+.search-btn {
+    width: 41px;
+}
+.search-link {
+    float: left;
+    display: block;
+    width: 60px;
+    height: 23px;
+    line-height: 23px;
+    color: #fafafa;
+    font-size: 12px;
+    text-align: center;
+    background: url("../images/nav_functions.png") no-repeat 0 -81px;
+    margin-left: 18px;
+}
+/* 【修改-20150819】---结束 */
+

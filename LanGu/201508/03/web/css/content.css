@@ -237,7 +237,7 @@ body {
 .jobrec-companylisted { }
 .jobrec-list-item-tab .row3 { background-color: #f5f5f5; height: 47px; }
 .jobrec-slogan { font-size: 16px; color: #525252; }
-.jobrec-benefit { color: #934787; background-color: #f5f5f5; line-height: 26px; text-align: center; display: inline-block; width: 78px; height: 26px; border: solid 1px #cccccc; margin-right: 20px; }
+.jobrec-benefit { color: #934787; background-color: #f5f5f5; line-height: 26px; text-align: center; display: inline-block; width: auto; height: 26px; border: solid 1px #cccccc; margin-right: 20px; /* margin: 12px; */ padding: 0 12px; margin: 6px 12px 6px 0px;}
 
 
 /* 职位详情 */
@@ -253,71 +253,22 @@ body {
 .jobdetail-wrap .article-links { padding-top: 60px; padding-bottom: 100px; }
 
 /* 服务介绍 */
-.servicearea {
-    padding-bottom: 112px;
-    border-bottom: dashed 1px #999999;
-}
-.servicearea-list {
-    overflow: hidden;
-    width: 790px;
-}
-.servicearea-list-item {
-    float: left;
-}
-.servicearea-list-item-pic {
-    float: left;
-    width: 196px;
-    position: relative;
-}
-.servicearea-list-item-pic img {
-    width: 100%;
-    display: block;
-}
-.servicearea-list-item-pic .arrow {
-    position: absolute;
-    width: 14px;
-    height: 28px;
-    top: 45%;
-    right: 0px;
-    background: url("../images/list_style_arrow_2.png") 0px -31px;
-}
-.servicearea-list-item-info {
-    float: left;
-    width: 196px;
-    background-color: #fffefc;
-}
-.servicearea-list-item-info-title {
-    width: 196px;
-    height: 174px;
-    box-sizing: border-box;
-    font-size: 24px;
-    line-height: 24px;
-    color: #3d3d3d;
-    text-align: center;
-}
-.servicearea-building  .servicearea-list-item-info-title {
-    background: url("../images/service_symbol_1.png") no-repeat center 33px;
-    padding-top: 128px;
-}
-.servicearea-finance  .servicearea-list-item-info-title {
-    background: url("../images/service_symbol_2.png") no-repeat center 36px;
-    padding-top: 111px;
-}
-.servicearea-manufacture  .servicearea-list-item-info-title {
-    background: url("../images/service_symbol_3.png") no-repeat center 40px;
-    padding-top: 119px;
-}
-.servicearea-list-item-info-title-cont {
-    font-family: "宋体";
-    line-height: 24px;
-    color: #808080;
-    padding: 10px 20px 10px 20px;
-    box-sizing: border-box;
-    height: 174px;
-}
-.servicearea-manufacture .arrow {
-    right: auto;
-    left: 0px;
-    background-position: 0px 0px;
-}
+.servicearea { padding-bottom: 112px; border-bottom: dashed 1px #999999; }
+.servicearea-list { overflow: hidden; width: 790px; }
+.servicearea-list-item { float: left; }
+.servicearea-list-item-pic { float: left; width: 196px; position: relative; }
+.servicearea-list-item-pic img { width: 100%; display: block; }
+.servicearea-list-item-pic .arrow { position: absolute; width: 14px; height: 28px; top: 45%; right: 0px; background: url("../images/list_style_arrow_2.png") 0px -31px; }
+.servicearea-list-item-info { float: left; width: 196px; background-color: #fffefc; }
+.servicearea-list-item-info-title { width: 196px; height: 174px; box-sizing: border-box; font-size: 24px; line-height: 24px; color: #3d3d3d; text-align: center; }
+.servicearea-building  .servicearea-list-item-info-title { background: url("../images/service_symbol_1.png") no-repeat center 33px; padding-top: 128px; }
+.servicearea-finance  .servicearea-list-item-info-title { background: url("../images/service_symbol_2.png") no-repeat center 36px; padding-top: 111px; }
+.servicearea-manufacture  .servicearea-list-item-info-title { background: url("../images/service_symbol_3.png") no-repeat center 40px; padding-top: 119px; }
+.servicearea-list-item-info-title-cont { font-family: "宋体"; line-height: 24px; color: #808080; padding: 10px 20px 10px 20px; box-sizing: border-box; height: 174px; }
+.servicearea-manufacture .arrow { right: auto; left: 0px; background-position: 0px 0px; }
 
+
+/* 2015-08-21 修改banner图片 */
+.banner-inner .banner-btn {
+    background-image: url("../images/banner_btn.png");
+}
