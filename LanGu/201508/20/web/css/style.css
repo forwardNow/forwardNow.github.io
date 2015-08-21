@@ -1,0 +1,65 @@
+@charset "utf-8";
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.triangle-down {display:inline-block;width:0;height:0;overflow:hidden;line-height:0;font-size:0; vertical-align:middle;
+    border-top:7px solid #030303;
+    border-bottom:0 none;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent; 
+    _color:#030303;
+    _filter:chroma(color=#030303);
+}
+a, a:hover { text-decoration: none; }
+body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei", "宋体"; }
+.wrap { width: 1000px; margin: 0 auto;}
+.page { }
+
+/* header */
+.header { border-bottom: 4px solid #3e2712; position: relative; background-color: #020202;}
+.header-inner { box-sizing: border-box; height: 104px; padding-top: 22px; }
+.logo-wrap { float: left; }
+.logo-link { }
+.logo { }
+.nav { float: right; margin-top: 33px; }
+.nav-list { }
+.nav-list .list-item { float: left; line-height: 29px; padding-bottom: 20px; position: relative; }
+.nav-list .list-item.separator { color: #585b5c; padding: 0 9px; }
+.nav-list .list-item .list-item-link { box-sizing: border-box; color: #999999; display: block; height: 29px; }
+.nav-list .list-item.active .list-item-link { color: #fc9e4c; border-top: 1px solid #996334; border-bottom: 1px solid #996334; line-height: 27px; background: url("../images/nav_item_bg.png") no-repeat right top; }
+.nav-list .triangle-down { display: none; position: absolute; z-index: 2; bottom: -7px; left: 21px; }
+.submenu-container { filter\0:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#D1D2873F', endColorstr='#D1D2873F'); filter\9:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#D1D2873F', endColorstr='#D1D2873F'); background-color:rgba(210,135,63,0.82); position: absolute; width: 100%; bottom: -32px; left: 0; display: none; }
+.submenu { height: 32px; line-height: 32px; text-align: center; }
+.submenu .submenu-item { display: inline-block; color: #1a1a1a; margin: 0 8px; }
+.submenu .submenu-item:hover { color: #FFF; }
+
+/* banner */
+.banner { height: 654px; background: url("../images/banner_home.jpg") no-repeat 18px 25px; }
+
+/* main */
+.home-mod { }
+.home-mod .mod-head { box-sizing: border-box; height: 132px; padding-top: 46px; }
+.home-mod .head-title { width: 600px; float: left; height: 85px; background: url("../images/css_sprite_home.png") no-repeat; }
+
+.home-mod .head-more { margin-top: 47px; display: block; float: right; background: url("../images/css_sprite_home.png") no-repeat; }
+.home-mod .head-more:hover { opacity: 0.8; }
+.home-mod .mod-body { }
+
+/* home-shealth */
+.home-shealth { background-color: #1a1a1a; height: 546px; }
+.home-shealth .home-mod .head-title { background-position: 0 0; }
+.home-shealth .home-mod .head-more { width: 120px; height: 30px; background-position: 0 -110px; }
+.shealth-list { overflow: hidden; width: 110%; margin-top: 80px; }
+.shealth-list .list-item { float: left; margin-right: 80px; }
+
+.shealth-list .pic-wrap { width: 160px; height: 160px; border: 1px dashed #505050; border-radius: 180px; padding: 9px; }
+.shealth-list .pic { display: block; width: 100%; height: 100%; border-radius: 160px; background: url("../images/sport_health_pic_1.jpg") no-repeat center center; }
+.shealth-list .pic-2th { background-image: url("../images/sport_health_pic_2.jpg"); }
+.shealth-list .pic-3th { background-image: url("../images/sport_health_pic_3.jpg"); }
+.shealth-list .pic-4th { background: url("../images/sport_health_pic_4.jpg") center -30px; }
+.shealth-list .item-title { color: #b2b2b2; text-align: center; font-size: 20px; line-height: 20px; margin-top: 32px; }
+.shealth-list .list-item:hover .pic-wrap { border-style: solid; border-color: #de6a30; }
+.shealth-list .list-item:hover .item-title { color: #e89146; }
+
+/* home-ourteam */
+.home-ourteam { background: url("../images/ourteam_colum_bg.jpg") no-repeat center center;  height: 920px;}
+.home-ourteam .home-mod .head-title { background-position: 0 -170px; }
+.home-ourteam .home-mod .head-more { width: 93px; height: 27px; background-position: -231px -112px; }

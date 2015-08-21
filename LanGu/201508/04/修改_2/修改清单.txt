@@ -1,0 +1,49 @@
+搜索-HTML
+
+<div class="functions">
+    <div class="functions-onduty">
+        <dl class="onduty-list">
+            <dt class="onduty-titile">今日值班</dt>
+            <dd class="onduty-item"><label class="label">局领导</label>：李坚</dd>
+            <dd class="onduty-item"><label class="label">警务指挥室</label>：李怡</dd>
+            <dd class="onduty-item"><label class="label">法制大队</label>：曾轶</dd>
+        </dl>
+    </div>
+    <div class="functions-search">
+        <label class="search-label">站内搜索</label>
+        <input class="search-input" type="text" value="请输入关键字">
+        <button class="search-btn">搜索</button>
+        <a href="#" class="search-link">全网搜索</a>
+    </div>
+</div>
+
+搜索-CSS
+
+/* 【修改-20150819】---开始 */
+.search-input {
+    margin-right: 0;
+}
+.search-btn {
+    width: 41px;
+}
+.search-link {
+    float: left;
+    display: block;
+    width: 60px;
+    height: 23px;
+    line-height: 23px;
+    color: #fafafa;
+    font-size: 12px;
+    text-align: center;
+    background: url("../images/nav_functions.png") no-repeat 0 -81px;
+    margin-left: 18px;
+}
+/* 【修改-20150819】---结束 */
+
+
+hack_ie6.css
+
+/* 排名 */
+.rank-list-item {
+    _padding-top: 11px;
+}
