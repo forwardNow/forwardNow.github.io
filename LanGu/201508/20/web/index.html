@@ -7,6 +7,7 @@
     <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
     <script src="./js/jquery.min.js"></script>
     <script>
     $( function () {
@@ -98,7 +99,7 @@
             
         </div>
         <div class="content" role="main">
-
+            <!-- 体育健康 -->
             <div class="home-shealth">
                 
                 <div class="home-mod wrap">
@@ -109,27 +110,38 @@
                     <div class="mod-body">
                         <ul class="shealth-list">
                             <li class="list-item">
-                                <h2 class="pic-wrap"><a class="pic" href="#"></a></h2>
+                                <h2 class="pic-wrap"><a class="pic" href="#" style='background-image: url("./images/sport_health_pic_1.jpg");'></a></h2>
                                 <p class="item-title" href="#">运动健身</p>
                             </li>
                             <li class="list-item">
-                                <h2 class="pic-wrap"><a class="pic pic-2th" href="#"></a></h2>
+                                <h2 class="pic-wrap"><a class="pic pic-2th" href="#" style='background-image: url("./images/sport_health_pic_2.jpg");'></a></h2>
                                 <p class="item-title" href="#">体育拓展</p>
                             </li>
                             <li class="list-item">
-                                <h2 class="pic-wrap"><a class="pic pic-3th" href="#"></a></h2>
+                                <h2 class="pic-wrap"><a class="pic pic-3th" href="#" style='background-image: url("./images/sport_health_pic_3.jpg");'></a></h2>
                                 <p class="item-title" href="#">健康培训</p>
                             </li>
                             <li class="list-item">
-                                <h2 class="pic-wrap"><a class="pic pic-4th" href="#"></a></h2>
+                                <h2 class="pic-wrap"><a class="pic pic-4th" href="#" style='background-image: url("./images/sport_health_pic_4.jpg");'></a></h2>
                                 <p class="item-title" href="#">体育咨询</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+            <script>
+                $( ".home-shealth .list-item" ).hover(
+                    function (){
+                        $( this ).addClass("active").find(".pic-wrap").addClass( "flipInX animated" )
+                    },
+                    function () {
+                        $( this ).removeClass("active").find(".pic-wrap").removeClass( "flipInX animated" )
+                    }
+                );
+            </script>
             </div>
 
+            
+            <!-- 团队成员 -->
             <div class="home-ourteam">
                 
                 <div class="home-mod wrap">
@@ -138,14 +150,164 @@
                         <a class="head-more" href="#"></a>
                     </div>
                     <div class="mod-body">
-                        
+                        <!--  图片尺寸推荐： 300 * 260   -->
+                        <div class="ourteam-list">
+                            <div class="list-item" onclick="location='#'">
+                                <h2 class="member-pic container-sexangle">
+                                    <div class="s-first sexangle-border"> 
+                                        <div class="s-second sexangle-border"> 
+                                            <div class="s-third sexangle-border">
+                                                <div class="sexangle-cont-box">
+                                                    <div class="s-first sexangle-cont"> 
+                                                        <div class="s-second sexangle-cont"> 
+                                                            <div class="s-third sexangle-cont" style="background-image:url('./images/team_member_pic_1.jpg')"></div> 
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </h2>
+                                <p class="member-name">明星教练</p>
+                            </div>
+                            <div class="list-item" onclick="location='#'">
+                                <h2 class="member-pic container-sexangle">
+                                    <div class="s-first sexangle-border"> 
+                                        <div class="s-second sexangle-border"> 
+                                            <div class="s-third sexangle-border">
+                                                <div class="sexangle-cont-box">
+                                                    <div class="s-first sexangle-cont"> 
+                                                        <div class="s-second sexangle-cont"> 
+                                                            <div class="s-third sexangle-cont" style="background-image:url('./images/team_member_pic_2.jpg')"></div> 
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </h2>
+                                <p class="member-name">明星教练</p>
+                            </div>
+                            <div class="list-item" onclick="location='#'">
+                                <h2 class="member-pic container-sexangle">
+                                    <div class="s-first sexangle-border"> 
+                                        <div class="s-second sexangle-border"> 
+                                            <div class="s-third sexangle-border">
+                                                <div class="sexangle-cont-box">
+                                                    <div class="s-first sexangle-cont"> 
+                                                        <div class="s-second sexangle-cont"> 
+                                                            <div class="s-third sexangle-cont" style="background-image:url('./images/team_member_pic_3.jpg')"></div> 
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </h2>
+                                <p class="member-name">明星教练</p>
+                            </div>
+                            <div class="list-item item-forth" onclick="location='#'">
+                                <h2 class="member-pic container-sexangle">
+                                    <div class="s-first sexangle-border"> 
+                                        <div class="s-second sexangle-border"> 
+                                            <div class="s-third sexangle-border">
+                                                <div class="sexangle-cont-box">
+                                                    <div class="s-first sexangle-cont"> 
+                                                        <div class="s-second sexangle-cont"> 
+                                                            <div class="s-third sexangle-cont" style="background-image:url('./images/team_member_pic_4.jpg')"></div> 
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </h2>
+                                <p class="member-name">明星教练</p>
+                            </div>
+                            <div class="list-item" onclick="location='#'">
+                                <h2 class="member-pic container-sexangle">
+                                    <div class="s-first sexangle-border"> 
+                                        <div class="s-second sexangle-border"> 
+                                            <div class="s-third sexangle-border">
+                                                <div class="sexangle-cont-box">
+                                                    <div class="s-first sexangle-cont"> 
+                                                        <div class="s-second sexangle-cont"> 
+                                                            <div class="s-third sexangle-cont" style="background-image:url('./images/team_member_pic_5.jpg')"></div> 
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </h2>
+                                <p class="member-name">明星教练</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+                <script>
+                    $( ".home-ourteam .list-item" ).hover(
+                        function (){
+                            $( this ).addClass("active").find(".member-pic").addClass("rotateIn animated" )
+                        },
+                        function () {
+                            $( this ).removeClass("active").find(".member-pic").removeClass("rotateIn animated" )
+                        }
+                    );
+                </script>
+            </div>
 
+            <!-- 会员风采 -->
+            <div class="home-student">
+                
+                <div class="home-mod wrap">
+                    <div class="mod-head">
+                        <h1 class="head-title"><!-- 会员风采 --></h1>
+                        <a class="head-more" href="#"></a>
+                    </div>
+                    <div class="mod-body">
+                        <ul class="student-list">
+                            <li class="list-item">
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_1.jpg"></h2>
+                                <p class="item-title" href="#">帝斯力会员风采--休息</p>
+                            </li>
+                            <li class="list-item">
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_2.jpg"></h2>
+                                <p class="item-title" href="#">帝斯力会员风采--休息</p>
+                            </li>
+                            <li class="list-item">
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_3.jpg"></h2>
+                                <p class="item-title" href="#">帝斯力会员风采--休息</p>
+                            </li>
+                            <li class="list-item">
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_4.jpg"></h2>
+                                <p class="item-title" href="#">帝斯力会员风采--休息</p>
+                            </li>
+                            <li class="list-item">
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_5.jpg"></h2>
+                                <p class="item-title" href="#">帝斯力会员风采--休息</p>
+                            </li>
+                            <li class="list-item">
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_6.jpg"></h2>
+                                <p class="item-title" href="#">帝斯力会员风采--休息</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
-        <div class="footer" role="footer"></div>
+        <div class="footer wrap" role="footer">
+            <dl class="list-contactus">
+                <dt class="list-title">联系我们</dt>
+                <dd class="list-item address">武汉市汉口建设大道538号同城广场A栋2单元404室</dd>
+                <dd class="list-item email">nxug@163.com</dd>
+                <dd class="list-item tel">027-87423474234</dd>
+            </dl>
+            <p class="copyright">Copyright &copy; 2015 武汉帝斯力体育健康管理有限公司</p>
+        </div>
     </div>
 
 </body>

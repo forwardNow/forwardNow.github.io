@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- sexangle -->
+    <div class="container-sexangle">
+        
+        <div class="s-first sexangle-border"> 
+            <div class="s-second sexangle-border"> 
+                <div class="s-third sexangle-border">
+                    <div class="sexangle-cont-box">
+                        <div class="s-first sexangle-cont"> 
+                            <div class="s-second sexangle-cont"> 
+                                <div class="s-third sexangle-cont"></div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+
+    </div>
+    
+    <style>
+body {
+    background-color: black;
+}
+.s-first,
+.s-second,
+.s-third { overflow: hidden; }
+
+.s-first,
+.s-second { visibility: hidden; }
+.s-third { visibility: visible; }
+
+.s-first { transform: rotate(120deg); -ms-transform: rotate(120deg); -moz-transform: rotate(120deg); -webkit-transform: rotate(120deg); display: inline-block; }
+.s-second { transform: rotate(-60deg); -ms-transform: rotate(-60deg); -moz-transform: rotate(-60deg); -webkit-transform: rotate(-60deg); }
+.s-third  { transform: rotate(-60deg); -ms-transform: rotate(-60deg); -moz-transform: rotate(-60deg); -webkit-transform: rotate(-60deg); background: url(1.jpg) no-repeat center center; background-size: 100% auto; }
+
+.container-sexangle { width: 302px; height: 262px; }
+.sexangle-border { width: 302px; height: 262px; }
+.sexangle-border.s-third { background: #b0b0b0; }
+.sexangle-border.s-third:hover { background: #da7443; }
+.sexangle-cont-box { width: 300px; height: 260px; position: relative; top: 1px; left: 1px; }
+.sexangle-cont { width: 300px; height: 260px; }
+
+
+    </style>
+
+</body>
+</html>

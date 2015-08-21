@@ -48,18 +48,89 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .home-shealth .home-mod .head-title { background-position: 0 0; }
 .home-shealth .home-mod .head-more { width: 120px; height: 30px; background-position: 0 -110px; }
 .shealth-list { overflow: hidden; width: 110%; margin-top: 80px; }
-.shealth-list .list-item { float: left; margin-right: 80px; }
+.shealth-list .list-item { float: left; margin-right: 80px; padding-top: 2px;}
 
 .shealth-list .pic-wrap { width: 160px; height: 160px; border: 1px dashed #505050; border-radius: 180px; padding: 9px; }
-.shealth-list .pic { display: block; width: 100%; height: 100%; border-radius: 160px; background: url("../images/sport_health_pic_1.jpg") no-repeat center center; }
-.shealth-list .pic-2th { background-image: url("../images/sport_health_pic_2.jpg"); }
-.shealth-list .pic-3th { background-image: url("../images/sport_health_pic_3.jpg"); }
-.shealth-list .pic-4th { background: url("../images/sport_health_pic_4.jpg") center -30px; }
+.shealth-list .pic { display: block; width: 100%; height: 100%; border-radius: 160px; background: url("../images/sport_health_pic_1.jpg") no-repeat center center; background-size: 100% auto;}
 .shealth-list .item-title { color: #b2b2b2; text-align: center; font-size: 20px; line-height: 20px; margin-top: 32px; }
-.shealth-list .list-item:hover .pic-wrap { border-style: solid; border-color: #de6a30; }
-.shealth-list .list-item:hover .item-title { color: #e89146; }
+.shealth-list .list-item.active .pic-wrap { border-style: solid; border-color: #de6a30; }
+.shealth-list .list-item.active .item-title { color: #e89146; }
 
 /* home-ourteam */
 .home-ourteam { background: url("../images/ourteam_colum_bg.jpg") no-repeat center center;  height: 920px;}
 .home-ourteam .home-mod .head-title { background-position: 0 -170px; }
 .home-ourteam .home-mod .head-more { width: 93px; height: 27px; background-position: -231px -112px; }
+.home-ourteam .ourteam-list { margin-top: 48px; width: 110%; }
+.ourteam-list .list-item { display: inline-block; cursor: pointer; margin-right: 40px; margin-bottom: 40px; }
+.ourteam-list .item-forth { margin-left: 176px; }
+.ourteam-list .member-pic { }
+.ourteam-list .member-name { text-align: center; color: #b2b2b2; font-size: 20px; line-height: 20px; margin-top: 30px; }
+.ourteam-list .list-item.active .member-name { color: #e89146; }
+.ourteam-list .list-item.active .sexangle-border.s-third { background: #da7443; }
+.s-first,
+.s-second,
+.s-third { overflow: hidden; }
+.s-first,
+.s-second { visibility: hidden; }
+.s-third { visibility: visible; }
+.s-first { transform: rotate(120deg); -ms-transform: rotate(120deg); -moz-transform: rotate(120deg); -webkit-transform: rotate(120deg); display: inline-block; }
+.s-second { transform: rotate(-60deg); -ms-transform: rotate(-60deg); -moz-transform: rotate(-60deg); -webkit-transform: rotate(-60deg); }
+.s-third  { transform: rotate(-60deg); -ms-transform: rotate(-60deg); -moz-transform: rotate(-60deg); -webkit-transform: rotate(-60deg); background: url(about:blank) no-repeat center center; background-size: 100% auto; }
+.container-sexangle { width: 302px; height: 262px; }
+.sexangle-border { width: 302px; height: 262px; }
+.sexangle-border.s-third { background: #b0b0b0; }
+.sexangle-cont-box { width: 300px; height: 260px; position: relative; top: 1px; left: 1px; }
+.sexangle-cont { width: 300px; height: 260px; }
+
+/* home-student */
+.home-student { background-color: #1a1a1a; height: 850px; }
+.home-student .home-mod .head-title { background-position: 0 -290px; }
+.home-student .home-mod .head-more { width: 93px; height: 27px; background-position: -231px -112px; }
+.student-list { overflow: hidden; width: 110%; margin-top: 50px; }
+.student-list .list-item { float: left; width: 316px; height: 270px; border-radius: 4px; overflow: hidden; position: relative; margin: 0 26px 26px 0; }
+.student-list .list-item .pic-wrap { width: 100%; height: 100%; overflow: hidden; }
+.student-list .list-item .pic-wrap .pic { height: 100%; width: auto; transition: all 500ms linear; }
+.student-list .list-item:hover .pic-wrap .pic { height: 110%; }
+.student-list .list-item:hover { opacity: 0.9; }
+.student-list .list-item .item-title { height: 60px; width: 100%; position: absolute; bottom: 0; left: 0; color: #cccccc; font-size: 20px; line-height: 60px; text-align: center; background-color: rgba(46,46,46,0.8); }
+
+/* footer */
+.footer { 
+    height: 240px;
+    background: url("../images/footer_bg.jpg") no-repeat;
+}
+.list-contactus { 
+    padding-top: 32px;
+    margin-left: 20px;
+}
+.footer .list-title {
+    font-size: 16px;
+    color: #999999;
+    line-height: 1;
+    padding-bottom: 24px;
+}
+.footer .list-item {
+    color: #3d3d3d;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+    margin-bottom: 12px;
+    background: url("../images/footer_contactus.png") no-repeat;
+}
+.footer .list-item.address {
+    background-position: 0 0px;
+}
+.footer .list-item.email { 
+    background-position: 0 -32px;
+}
+.footer .list-item.tel { 
+    background-position: 0 -67px;
+}
+.copyright { 
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #757575;
+}
