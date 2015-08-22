@@ -9,51 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
     <script src="./js/jquery.min.js"></script>
-    <script>
-    $( function () {
-        var timerId = null;
-        $( ".nav-list .list-item" ).hover( 
-            function () {
-                var submenu = $( this ).find( ".list-item-link" ).attr("submenu");
-                if ( submenu ) {
-                    clearTimeout( timerId );
-                    showSubmenu( submenu );
-                }
-                $( this ).addClass( "active" ).siblings().removeClass("active");
-            },
-            function () {
-                var self = this;
-                $( this ).removeClass("active");
-                if ( $( ".submenu-container" ).css( "display" ) != "block" ) {
-                    return;
-                }
-                $( this ).addClass("active");
-                timerId = setTimeout( hideSubmenu , 50 );
-            }
-        );
-        $( ".submenu-container" ).hover(
-            function () {
-                clearTimeout( timerId );
-            },
-            function () {
-                hideSubmenu();
-            }
-        );
-
-        function showSubmenu( submenu ) {
-            if ( ! submenu ) {
-                return;
-            }
-            $( ".nav-list .triangle-down" ).show();
-            $( ".submenu-container" ).show();
-        }
-        function hideSubmenu() {
-            $( ".submenu-container" ).hide();
-            $( ".nav-list .triangle-down" ).hide();      
-            $( ".nav-list .list-item" ).removeClass( "active" );
-        }
-    } );
-    </script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
     
@@ -67,21 +23,21 @@
             </h1>
             <div class="nav" role="nav">
                 <ul class="nav-list clearfix">
-                    <li class="list-item"><a class="list-item-link" href="#">首　页</a></li>
+                    <li class="list-item current"><a class="list-item-link" href="#">首　页</a></li>
                     <li class="list-item separator">|</li>
-                    <li class="list-item"><a class="list-item-link" href="#">公司简介</a></li>
+                    <li class="list-item"><a class="list-item-link" submenu="sub-companyprofile" href="company_profile.html">公司简介</a><i class="triangle-down"></i></li>
                     <li class="list-item separator">|</li>
                     <li class="list-item"><a class="list-item-link" submenu="sub-bodybuilding" href="#">运动健身</a><i class="triangle-down"></i></li>
                     <li class="list-item separator">|</li>
-                    <li class="list-item"><a class="list-item-link" href="#">体育拓展</a></li>
+                    <li class="list-item"><a class="list-item-link" submenu="sub-sportextends" href="#">体育拓展</a><i class="triangle-down"></i></li>
                     <li class="list-item separator">|</li>
-                    <li class="list-item"><a class="list-item-link" href="#">健康培训</a></li>
+                    <li class="list-item"><a class="list-item-link" submenu="sub-healthtrain" href="#">健康培训</a><i class="triangle-down"></i></li>
                     <li class="list-item separator">|</li>
-                    <li class="list-item"><a class="list-item-link" href="#">体育咨询</a></li>
+                    <li class="list-item"><a class="list-item-link" submenu="sub-sportconsult" href="#">体育咨询</a><i class="triangle-down"></i></li>
                     <li class="list-item separator">|</li>
                     <li class="list-item"><a class="list-item-link" href="#">人力资源</a></li>
                     <li class="list-item separator">|</li>
-                    <li class="list-item"><a class="list-item-link" href="#">联系我们</a></li>
+                    <li class="list-item"><a class="list-item-link" href="contact_us.html">联系我们</a></li>
                 </ul>
             </div>
         </div>
@@ -94,7 +50,43 @@
                 <a class="submenu-item" href="#">会员服务</a>
                 <a class="submenu-item" href="#">成功案例</a>
                 <a class="submenu-item" href="#">联系我们</a>
+            </div>   
+            <div class="submenu sub-companyprofile">
+                <a class="submenu-item" href="#">公司简介</a>
+                <a class="submenu-item" href="#">企业文化</a>
+            </div>                
+            <div class="submenu sub-sportextends">
+                <a class="submenu-item" href="#">帝斯力拓展</a>
+                <a class="submenu-item" href="#">拓展课程</a>
+                <a class="submenu-item" href="#">项目介绍</a>
+                <a class="submenu-item" href="#">团队风采</a>
+                <a class="submenu-item" href="#">经典相册</a>
+                <a class="submenu-item" href="#">创新理念</a>
+                <a class="submenu-item" href="#">联系我们</a>
+            </div>                 
+            <div class="submenu sub-healthtrain">
+                <a class="submenu-item" href="#">健康培训简介</a>
+                <a class="submenu-item" href="#">体育企业文化</a>
+                <a class="submenu-item" href="#">亚健康的改善</a>
+                <a class="submenu-item" href="#">职业病的康复</a>
+                <a class="submenu-item" href="#">完美体型打造</a>
+                <a class="submenu-item" href="#">健康营养培训</a>
+                <a class="submenu-item" href="#">讲师资格认证</a>
+                <a class="submenu-item" href="#">经典案例</a>
+                <a class="submenu-item" href="#">联系我们</a>
+            </div>               
+            <div class="submenu sub-sportconsult">
+                <a class="submenu-item" href="#">关于我们</a>
+                <a class="submenu-item" href="#">机械导购</a>
+                <a class="submenu-item" href="#">健身服装饮品推荐</a>
+                <a class="submenu-item" href="#">商业演出</a>
+                <a class="submenu-item" href="#">家庭健身房设计</a>
+                <a class="submenu-item" href="#">单位健身房改造</a>
+                <a class="submenu-item" href="#">体育赛事组织</a>
+                <a class="submenu-item" href="#">企业形象策划</a>
+                <a class="submenu-item" href="#">联系我们</a>
             </div>    
+                            
         </div>
     </div>
 <!-- /header -->

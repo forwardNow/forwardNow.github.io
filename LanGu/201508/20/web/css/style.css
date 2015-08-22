@@ -100,7 +100,7 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .footer { height: 240px; }
 .list-contactus { padding-top: 32px; margin-left: 20px; }
 .footer .list-title { font-size: 16px; color: #999999; line-height: 1; padding-bottom: 24px; }
-.footer .list-item { color: #3d3d3d; font-size: 12px; height: 24px; line-height: 24px; padding-left: 34px; margin-bottom: 12px; background: url("../images/footer_contactus.png") no-repeat; }
+.footer .list-item { color: #8a8a8a; font-size: 12px; height: 24px; line-height: 24px; padding-left: 34px; margin-bottom: 12px; background: url("../images/footer_contactus.png") no-repeat; }
 .footer .list-item.address { background-position: 0 0px; }
 .footer .list-item.email { background-position: 0 -32px; }
 .footer .list-item.tel { background-position: 0 -67px; }
@@ -109,50 +109,71 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 
 
 /* 公司简介 */
-.page-banner {
-    background: url("../images/banner_innerpage.jpg") no-repeat center center;
-    height: 160px;
-}
-.banner-inner {
+.innerpage-banner { background: url("../images/banner_innerpage.jpg") no-repeat center center; height: 160px; }
+.banner-inner { }
+.page-title { float: left; margin-top: 60px; }
+.search-wrap { float: right; margin-top: 66px; overflow: hidden; box-shadow: 0px 0px 10px rgba(232,145,70,0.4); }
+.search-input { outline: none 0; float: left; border: none 0; box-sizing: border-box; width: 179px; height: 28px; line-height: 28px; padding-left: 40px; background: url("../images/search_input.png") no-repeat; color: #cccccc; font-size: 12px; font-family: "宋体"; }
+.search-btn { border: none 0; outline: none 0; float: left; color: #1a1a1a; font-size: 14px; background: url("../images/search_btn.png") no-repeat; width: 48px; height: 28px; line-height: 28px; text-align: center; }
+.content.innerpage { min-height: 1000px; background: url("../images/innerpage_bg.jpg") no-repeat center 200px; background-color: #1a1a1a; }
 
+.content-inner { overflow: hidden; }
+.content-container { float: left; width: 820px; }
+.content-head { padding-top: 40px; padding-bottom: 20px; }
+.content-head-title { box-sizing: border-box; display: inline-block; background-color: #454444; height: 40px; line-height: 40px; font-size: 20px; color: #cccccc; border-left: 6px solid #e89146; padding-left: 16px; padding-right: 42px; }
+.content-body { font-family: "宋体"; color: #999999; padding-bottom: 100px; }
+.content-body .p { text-indent: 28px; line-height: 32px; margin-top: 28px; }
+.content-body .logo-title { font-size: 16px; margin-top: 80px; }
+.content-body .logo-box { text-align: center; margin-top: 40px; }
+.content-body .logo-box .img { }
+.content-body .logo-box .title { font-family: "Microsoft Yahei"; font-size: 18px; line-height: 1; margin-top: 18px; margin-bottom: 24px; }
+.content-body .logo-p { padding-left: 24px; line-height: 28px; position: relative; }
+.content-body .p-num { width: 24px; position: absolute; left: 0; top: 0; }
+
+.content-outline { float: right; font-size: 16px;}
+.outline-list { padding: 32px 14px 1px 0; border-left: 1px solid #808080; margin-top: 68px; }
+.outline-item { margin-bottom: 32px; margin-left: -9px; padding-left: 37px; background: url("../images/outline_symbol.png") no-repeat 0 -45px; }
+.outline-item a { color: #8a8a8a; line-height: 1; }
+.outline-item.active a { color: #e89146; }
+.outline-item.active { background-position: 0 3px; }
+
+/* 联系我们 */
+.page-contactus .content-container {
+    width: 100%;
 }
-.page-title {
-    float: left;
-    margin-top: 60px;
-}
-.search-wrap {
-    float: right;
-    margin-top: 66px;
+.page-contactus .content-body {
+    position: relative;
     overflow: hidden;
+    font-family: "Microsoft Yahei";
 }
-.search-input {
-    outline: none 0;
-    float: left;
-    border: none 0;
-    box-sizing: border-box;
-    width: 179px;
-    height: 28px;
-    line-height: 28px;
-    padding-left: 40px;
-    background: url("../images/search_input.png") no-repeat;
-    color: #cccccc;
-    font-size: 12px;
-    font-family: "宋体";
+.QRcode-wrap {
+    position: absolute;
+    top: 9px;
+    right: 0px  ;
 }
-.search-btn {
-    border: none 0;
-    outline: none 0;
-    float: left;
-    color: #1a1a1a;
-    font-size: 14px;
-    background: url("../images/search_btn.png") no-repeat;
-    width: 48px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
+.addressinfo-list {
+    margin-top: 20px;
 }
-.content {
-    min-height: 1000px;
-    background: url("../images/innerpage_bg.jpg") no-repeat center 200px;
-    background-color: #1a1a1a;
+.addressinfo-list .list-title {
+    color: #e89146;
+    font-size: 18px;
+    padding-bottom: 16px;
 }
+.addressinfo-list .list-item {
+    font-size: 16px;
+    color: #8a8a8a;
+    line-height: 1;
+    margin-top: 28px;
+}
+.addressinfo-list .item-label {
+    color: #6b6b6b;
+}
+.addressmap-wrap {
+    margin: 56px auto 0 auto;
+    width: 996px;
+    height: 460px;
+    overflow: hidden;
+    border: solid 2px #676666;
+}
+
+
