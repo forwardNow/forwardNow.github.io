@@ -3,7 +3,9 @@
 var ns = {}; // namespace
 
 $( function () {
-    ns.isHasHomeBanner = $( ".banner-home" );
+
+    
+    ns.isHasHomeBanner = $( ".banner-home" ).size() > 0;
     ns.isHasNavList = $( ".header .nav .nav-list" ).size() > 0;
     ns.isHasSearch = $( ".innerpage-banner .search-wrap .search-input" ).size() > 0;
     ns.isHasOutline = $( ".content-outline .outline-list .outline-item" ).size() > 0;
@@ -22,6 +24,8 @@ $( function () {
         $( ".banner-text-bottom" ).load( function () {
             $( this ).addClass( " animated  bounceInUp" );
         } );
+
+        doAnimateColumnPictures();
     }
 
     if ( ns.isHasNavList ) {
@@ -49,7 +53,47 @@ $( function () {
     }
 } );
         
+function doAnimateColumnPictures() {
 
+    $( ".home-mod .head-more" ).hover(
+        function () {
+            $( this ).addClass( "jello animated" );
+        },
+        function () {
+            $( this ).removeClass( "jello animated" );
+        }
+    );
+    $( ".home-ourteam .list-item" ).hover(
+        function (){
+            $( this ).addClass("active").find(".member-pic").addClass("rotateIn animated" )
+        },
+        function () {
+            $( this ).removeClass("active").find(".member-pic").removeClass("rotateIn animated" )
+        }
+    );    
+    $( ".home-shealth .list-item" ).hover(
+        function (){
+            $( this ).addClass("active").find(".pic-wrap").addClass( "flipInX animated" )
+        },
+        function () {
+            $( this ).removeClass("active").find(".pic-wrap").removeClass( "flipInX animated" )
+        }
+    );    
+
+    // 栏目标题动画
+    $( window ).scroll( function () {
+        var scrollTop = $( this ).scrollTop();
+        var viewportHeight = $( window ).height();
+        $( ".home-mod .head-title" ).each( function ( index, elt ) {
+            var viewportTop = $( this ).offset().top - scrollTop;
+            if ( viewportTop > 0 && viewportTop < viewportHeight ) {
+                $( this ).addClass( "animated bounceInLeft" );
+            } else {
+                $( this ).removeClass( "animated bounceInLeft" );
+            }
+        } );
+    } );
+}
 
 function doGoTop () {
 
