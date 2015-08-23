@@ -3,7 +3,7 @@
 var ns = {}; // namespace
 
 $( function () {
-
+    ns.isHasHomeBanner = $( ".banner-home" );
     ns.isHasNavList = $( ".header .nav .nav-list" ).size() > 0;
     ns.isHasSearch = $( ".innerpage-banner .search-wrap .search-input" ).size() > 0;
     ns.isHasOutline = $( ".content-outline .outline-list .outline-item" ).size() > 0;
@@ -11,6 +11,12 @@ $( function () {
     ns.isHasInnerpageBanner = $( ".innerpage-banner .page-title" ).size() > 0;
     // ns.isHasInnerpageSearch = $( ".innerpage-banner .search-wrap" ).size() > 0;
     // ns.isHasInnerpageHeadTitle = $( ".content-inner .content-head-title" ).size() > 0;
+
+    if ( ns.isHasHomeBanner ) {
+        $( ".banner-text-left" ).addClass( " animated  bounceInLeft" );
+        $( ".banner-text-right" ).addClass( " animated  bounceInRight" );
+        $( ".banner-text-bottom" ).addClass( " animated  bounceInUp" );
+    }
 
     if ( ns.isHasNavList ) {
         doNavList();   

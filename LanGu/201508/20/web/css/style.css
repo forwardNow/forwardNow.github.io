@@ -26,14 +26,19 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .nav-list .list-item .list-item-link { box-sizing: border-box; color: #999999; display: block; height: 29px; }
 .nav-list .list-item.active .list-item-link { color: #fc9e4c; border-top: 1px solid #996334; border-bottom: 1px solid #996334; line-height: 27px; background: url("../images/nav_item_bg.png") no-repeat right top; }
 .nav-list .list-item.current .list-item-link { color: #fc9e4c; }
-.nav-list .triangle-down { display: none; position: absolute; z-index: 2; bottom: -7px; left: 21px; }
-.submenu-container { filter\0:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#D1D2873F', endColorstr='#D1D2873F'); filter\9:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#D1D2873F', endColorstr='#D1D2873F'); background-color:rgba(210,135,63,0.82); position: absolute; width: 100%; bottom: -32px; left: 0; display: none; }
+.nav-list .triangle-down { display: none; position: absolute; z-index: 4; bottom: -7px; left: 21px; }
+.submenu-container { filter\0:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#D1D2873F', endColorstr='#D1D2873F'); filter\9:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#D1D2873F', endColorstr='#D1D2873F'); background-color:rgba(210,135,63,0.82); position: absolute; z-index: 3; width: 100%; bottom: -32px; left: 0; display: none; }
 .submenu { height: 32px; line-height: 32px; text-align: center; }
 .submenu .submenu-item { display: inline-block; color: #1a1a1a; margin: 0 8px; }
 .submenu .submenu-item:hover { color: #FFF; }
 
 /* banner */
-.banner { height: 654px; background: url("../images/banner_home.jpg") no-repeat 18px 25px; }
+/*.banner { height: 654px; background: url("../images/banner_home.jpg") no-repeat 18px 25px; }*/
+.banner-home { height: 640px; background: url("../images/banner_bg.jpg") no-repeat center bottom;background-color: #000; position: relative; padding-top: 16px; }
+.banner-home img { position: absolute; }
+.banner-text-left { left: 18px; bottom: 91px; }
+.banner-text-right { right: 41px; bottom: 282px; }
+.banner-text-bottom { left: 61px; bottom: 36px; }
 
 /* main */
 .home-mod { }
