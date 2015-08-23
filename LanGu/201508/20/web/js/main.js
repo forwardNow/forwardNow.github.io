@@ -13,9 +13,15 @@ $( function () {
     // ns.isHasInnerpageHeadTitle = $( ".content-inner .content-head-title" ).size() > 0;
 
     if ( ns.isHasHomeBanner ) {
-        $( ".banner-text-left" ).addClass( " animated  bounceInLeft" );
-        $( ".banner-text-right" ).addClass( " animated  bounceInRight" );
-        $( ".banner-text-bottom" ).addClass( " animated  bounceInUp" );
+        $( ".banner-text-left" ).load( function () {
+            $( this ).addClass( " animated  bounceInLeft" );
+        } );
+        $( ".banner-text-right" ).load( function () {
+            $( this ).addClass( " animated  bounceInRight" );
+        } );
+        $( ".banner-text-bottom" ).load( function () {
+            $( this ).addClass( " animated  bounceInUp" );
+        } );
     }
 
     if ( ns.isHasNavList ) {
