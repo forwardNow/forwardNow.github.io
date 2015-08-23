@@ -105,7 +105,18 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .footer .list-item.email { background-position: 0 -32px; }
 .footer .list-item.tel { background-position: 0 -67px; }
 .copyright { margin-left: 20px; margin-top: 30px; font-family: "宋体"; font-size: 12px; color: #757575; }
-
+/* go-top */
+.go-top { position: fixed; display: none; right: 45px; bottom: 38px; z-index: 9999; }
+.go-top a {
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANBAMAAAA6ZnEvAAAAA3NCSVQICAjb4U/gAAAAKlBMVEX///+ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZk4FLA7AAAADnRSTlMAESIzRFV3iKq7zN3u/7+mKzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMjgvMTMQU+aJAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAAH9JREFUCJljYIAAzUkMKIDt7J0EZD7T3Lt3byogCeTcvXP27nEE3+ru3UaJu3cXw/jsd+9uZWCIvnu3AMJnXnv3ugADA2Pt3VsGID6QcdsBxGDZC5Zg8L57txCiVPzu3S1gcjGS4YUMc+9eQ1iXe/cmgy/EJJj5VxjYUZzMVgAALtkwayjxUjMAAAAASUVORK5CYII=);
+    background-repeat: no-repeat; background-position: center 15px; width: 50px; height: 50px; text-decoration: none; border-radius: 3px; 
+}
+.go-top a:hover {
+    border-radius: 3px;
+    background-color: #999;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANBAMAAAA6ZnEvAAAAA3NCSVQICAjb4U/gAAAAKlBMVEX///////////////////////////////////////////////////////9q+00tAAAADnRSTlMAESIzRFV3iKq7zN3u/7+mKzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMjgvMTMQU+aJAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAAH9JREFUCJljYIAAzUkMKIDt7J0EZD7T3Lt3byogCdTcvXP27nEE3+ru3UaJu3cXw/jsd+9uZWCIvnu3AMJnXnv3ugADA2Pt3VsGID6QcdsBxGDZC5Zg8L57txCiVPzu3S1gcjGS4YUMc+9eQ1iXe/cmgy/EJJj5VxjYUZzMVgAAORkwe22lclEAAAAASUVORK5CYII=);
+}
 
 
 /* 公司简介 */
@@ -115,7 +126,7 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .search-wrap { float: right; margin-top: 66px; overflow: hidden; box-shadow: 0px 0px 10px rgba(232,145,70,0.4); }
 .search-input { outline: none 0; float: left; border: none 0; box-sizing: border-box; width: 179px; height: 28px; line-height: 28px; padding-left: 40px; background: url("../images/search_input.png") no-repeat; color: #cccccc; font-size: 12px; font-family: "宋体"; }
 .search-btn { border: none 0; outline: none 0; float: left; color: #1a1a1a; font-size: 14px; background: url("../images/search_btn.png") no-repeat; width: 48px; height: 28px; line-height: 28px; text-align: center; }
-.content.innerpage { min-height: 1000px; background: url("../images/innerpage_bg.jpg") no-repeat center 200px; background-color: #1a1a1a; }
+.content.innerpage { min-height: 600px; background: url("../images/innerpage_bg.jpg") no-repeat center 200px; background-color: #1a1a1a; }
 
 .content-inner { overflow: hidden; }
 .content-container { float: left; width: 820px; }
@@ -135,6 +146,7 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .outline-item { margin-bottom: 32px; margin-left: -9px; padding-left: 37px; background: url("../images/outline_symbol.png") no-repeat 0 -45px; }
 .outline-item a { color: #8a8a8a; line-height: 1; }
 .outline-item.active a { color: #e89146; }
+.outline-item a.active { color: #e89146; }
 .outline-item.active { background-position: 0 3px; }
 
 /* 联系我们 */

@@ -7,6 +7,10 @@ $( function () {
     ns.isHasNavList = $( ".header .nav .nav-list" ).size() > 0;
     ns.isHasSearch = $( ".innerpage-banner .search-wrap .search-input" ).size() > 0;
     ns.isHasOutline = $( ".content-outline .outline-list .outline-item" ).size() > 0;
+    ns.isHasGoToTop = $( "#go-top" ).size() > 0;
+    ns.isHasInnerpageBanner = $( ".innerpage-banner .page-title" ).size() > 0;
+    // ns.isHasInnerpageSearch = $( ".innerpage-banner .search-wrap" ).size() > 0;
+    // ns.isHasInnerpageHeadTitle = $( ".content-inner .content-head-title" ).size() > 0;
 
     if ( ns.isHasNavList ) {
         doNavList();   
@@ -17,10 +21,57 @@ $( function () {
     if ( ns.isHasOutline ) {
         doOutline();
     }
+    if ( ns.isHasGoToTop ) {
+        doGoTop();
+    }
 
+    if ( ns.isHasInnerpageBanner ) {
+        $( ".innerpage-banner .page-title" ).addClass( "bounceInLeft animated" );
+    }
+
+    if ( ns.isHasInnerpageSearch ) {
+        $( ".innerpage-banner .search-wrap" ).addClass( "bounceInRight animated" );
+    }
+    if ( ns.isHasInnerpageHeadTitle ) {
+        $( ".content-inner .content-head-title" ).addClass( "bounceInLeft animated" );;
+    }
 } );
+        
+
+
+function doGoTop () {
+
+    $( window ).bind( "scroll", function () {
+        var scrollTop = parseInt( $( this ).scrollTop() );
+        var windowHeight = parseInt( $( this ).height() ) / 2;
+        if ( scrollTop > windowHeight ) {
+            $( "#go-top" ).fadeIn();
+        } else {
+            $( "#go-top" ).fadeOut();
+        }
+    } );
+    $( "#go-top a" ).bind( "click", function () {
+        $('html, body').animate( { scrollTop: 0 }, 300 ); 
+    } );
+
+}
 
 function doOutline() {
+
+    // 给栏目大纲设置CSS动画
+    $( ".content-outline .outline-item a" ).hover(
+        function() {
+            var self = this;
+            $( this ).addClass( "bounceOutRight animated active" );
+            setTimeout( function () {
+                $( self ).removeClass( "bounceOutRight animated" );
+            }, 600 )
+        },  
+        function () {
+            $( this ).removeClass( "active" );
+        }
+    );
+
     // 让栏目大纲随页面滚动
     var originOffsetTop = $( ".content-outline" ).offset().top;
     $( window ).scroll( function () {
@@ -29,7 +80,7 @@ function doOutline() {
         // 重定位大纲
         if ( scrollHeight > originOffsetTop ) {
             $( ".content-outline" ).offset( { 
-                top: scrollHeight,
+                top: scrollHeight - 60,
                 left: outlineOffset.left
             } );
         } else {
@@ -38,7 +89,8 @@ function doOutline() {
                 left: outlineOffset.left
             } );                        
         }
-        // 设置当前栏目为active
+/*        
+        // 滚动过程中设置当前栏目为active
         $( ".content-outline .outline-item" ).each( function ( index, elt ) {
             var contentColumn = $( ".content-container .o_anchor" ).eq( index );
             var viewportTop = contentColumn.offset().top - scrollHeight;
@@ -47,14 +99,15 @@ function doOutline() {
                 return false;   // break
             }
         } );
-
+*/
     } );
-
+/*
     // 点击文档内链接后滚动到相应栏目
     $( ".outline-item .o_anchor" ).click( function () {
         var index = $( ".outline-item .o_anchor" ).index( this );
         var targetContent = $( ".content-container .o_anchor" ).eq( index );
         var item = this.parentNode;
+        // 
         $( "body,html" ).stop().animate( 
             { scrollTop: targetContent.offset().top + "px" }, 300,
             function () {
@@ -63,6 +116,7 @@ function doOutline() {
         );
         return false;
     } );    
+*/    
 }
 
 function doSearch() {
