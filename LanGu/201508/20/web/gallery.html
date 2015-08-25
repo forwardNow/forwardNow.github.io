@@ -217,6 +217,26 @@
 <!-- /footer -->
 
 
+<!-- 照片详情 -->
+<div class="picture-detail mask-layer">
+    <div class="pic-wrap"><!-- 
+     --><span class="hook"></span><!-- 
+     --><img src="./images/picture_detail_1.jpg" alt=""><!-- 
+     --><a href="javascript:void(0)" class="close-btn"></a>
+    </div>
+</div>
+<script>
+    $( function () {
+        $( ".pic-wrap, .picture-detail .pic-wrap .close-btn" ).click( function () {
+            $( ".picture-detail" ).hide(300);
+        } );
+        $( ".i-gallery .student-list .list-item" ).click( function () {
+            var imgsrc = $( this ).find( ".pic" ).attr( "src" );
+            $( ".picture-detail" ).show(100);
+            $( ".picture-detail img" ).attr( "src", imgsrc );
+        } );
+    } );
+</script>
 
 </body>
 </html>

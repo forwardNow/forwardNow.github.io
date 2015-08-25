@@ -199,24 +199,19 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .sc-vs .desc p { color: #999999; line-height: 36px; margin-bottom: 36px; text-indent: 28px; }
 
 /* 经典相册 */
-.i-gallery {
-    
-}
-.i-gallery .student-list {
-    font-family: "Microsoft Yahei";
-}
-.i-gallery .student-list .list-item {
-    width: 250px;
-    height: 214px;
-    cursor: pointer;
-}
-.i-gallery .student-list .list-item .item-title {
-    height: 48px;
-    line-height: 48px;
-    font-size: 16px;
-}
-.student-list .list-item:hover .item-title {
-    color: #fc9e4c;
-}
+.i-gallery { }
+.i-gallery .student-list { font-family: "Microsoft Yahei"; }
+.i-gallery .student-list .list-item { width: 250px; height: 214px; cursor: pointer; }
+.i-gallery .student-list .list-item .item-title { height: 48px; line-height: 48px; font-size: 16px; }
+.student-list .list-item:hover .item-title { color: #fc9e4c; }
+
+
+/* 照片详情 */
+.mask-layer { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/transparent_1.png"); }
+.picture-detail { display: none; }
+.picture-detail .pic-wrap { box-sizing: border-box; position: absolute; width: 700px; height: 466px; border: 2px solid rgba(255, 255, 255, 0.5); border-radius: 8px; top: 50%; left: 50%; margin-left: -350px; margin-top: -233px; overflow: hidden; text-align: center; }    
+.picture-detail .pic-wrap .hook { display:inline-block; width:0; height:100%; overflow:hidden; margin-left:-1px; font-size:0; line-height:0; vertical-align:middle; }
+.picture-detail .pic-wrap img { max-width: 100%; vertical-align: middle; }
+.picture-detail .pic-wrap .close-btn { position: absolute; right: 16px; top: 16px; width: 36px; height: 36px; background: url("../images/close_btn.png") no-repeat center center; background-color: #cccccc; border-radius: 36px; }
 
 
