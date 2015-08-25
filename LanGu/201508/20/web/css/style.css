@@ -165,7 +165,10 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .addressmap-wrap { margin: 56px auto 0 auto; width: 996px; height: 460px; overflow: hidden; border: solid 2px #676666; }
 
 /* 成功案例 */
-.innerpage.s-case { background: url("../images/successful_case_bg.jpg") center 80px no-repeat; background-color: #1a1a1a; }
+.innerpage.s-case { background: none; background-color: #1a1a1a; }
+.s-case .content-container {
+    background: url("../images/successful_case_bg.jpg") no-repeat  -219px 87px;
+}
 .s-case { }
 .sc-list { overflow: hidden; }
 .sc-list .item { float: left; box-sizing: border-box; position: relative; width: 180px; height: 240px; margin: 0 23px 30px 0; text-align: center; background-color: #000; }
@@ -183,4 +186,37 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .s-paging .hellip { vertical-align: bottom; }
 .s-paging .item:hover .btn,
 .s-paging .item.active .btn { background-color: #333333; color: #f5f5f5; }
+
+/* 成功案例-详情 */
+.sc-vs { background: url("../images/sc_detail_info.png") no-repeat 0px 15px; padding-top: 235px; }
+.sc-vs .list { overflow: hidden; }
+.sc-vs .item { float: left; }
+.sc-vs .pic-wrap { display: table-cell; width: 280px; height: 450px; border: solid 1px #99602e; border-radius: 8px; overflow: hidden; background-color: #000; vertical-align: middle; }
+.sc-vs .pic { width: 100%; }
+.sc-vs .title { text-align: center; font-size: 20px; color: #999999; font-weight: normal; line-height: 1; margin-top: 26px; font-family: "Microsoft YaHei"; }
+.sc-vs .vs-symbol { width: 182px; height: 450px; background: url("../images/sc_detail_vs.png") no-repeat center center; }
+.sc-vs .desc { margin-top: 42px; }
+.sc-vs .desc p { color: #999999; line-height: 36px; margin-bottom: 36px; text-indent: 28px; }
+
+/* 经典相册 */
+.i-gallery {
+    
+}
+.i-gallery .student-list {
+    font-family: "Microsoft Yahei";
+}
+.i-gallery .student-list .list-item {
+    width: 250px;
+    height: 214px;
+    cursor: pointer;
+}
+.i-gallery .student-list .list-item .item-title {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+}
+.student-list .list-item:hover .item-title {
+    color: #fc9e4c;
+}
+
 
