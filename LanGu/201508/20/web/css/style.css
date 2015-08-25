@@ -133,7 +133,7 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .search-btn { border: none 0; outline: none 0; float: left; color: #1a1a1a; font-size: 14px; background: url("../images/search_btn.png") no-repeat; width: 48px; height: 28px; line-height: 28px; text-align: center; }
 .content.innerpage { min-height: 600px; background: url("../images/innerpage_bg.jpg") no-repeat center 200px; background-color: #1a1a1a; }
 
-.content-inner { overflow: hidden; }
+.content-inner { /*overflow: hidden;*/ }
 .content-container { float: left; width: 820px; }
 .content-head { padding-top: 40px; padding-bottom: 20px; }
 .content-head-title { box-sizing: border-box; display: inline-block; background-color: #454444; height: 40px; line-height: 40px; font-size: 20px; color: #cccccc; border-left: 6px solid #e89146; padding-left: 16px; padding-right: 42px; }
@@ -155,42 +155,32 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .outline-item.active { background-position: 0 3px; }
 
 /* 联系我们 */
-.page-contactus .content-container {
-    width: 100%;
-}
-.page-contactus .content-body {
-    position: relative;
-    overflow: hidden;
-    font-family: "Microsoft Yahei";
-}
-.QRcode-wrap {
-    position: absolute;
-    top: 9px;
-    right: 0px  ;
-}
-.addressinfo-list {
-    margin-top: 20px;
-}
-.addressinfo-list .list-title {
-    color: #e89146;
-    font-size: 18px;
-    padding-bottom: 16px;
-}
-.addressinfo-list .list-item {
-    font-size: 16px;
-    color: #8a8a8a;
-    line-height: 1;
-    margin-top: 28px;
-}
-.addressinfo-list .item-label {
-    color: #6b6b6b;
-}
-.addressmap-wrap {
-    margin: 56px auto 0 auto;
-    width: 996px;
-    height: 460px;
-    overflow: hidden;
-    border: solid 2px #676666;
-}
+.page-contactus .content-container { width: 100%; }
+.page-contactus .content-body { position: relative; overflow: hidden; font-family: "Microsoft Yahei"; }
+.QRcode-wrap { position: absolute; top: 9px; right: 0px; }
+.addressinfo-list { margin-top: 20px; }
+.addressinfo-list .list-title { color: #e89146; font-size: 18px; padding-bottom: 16px; }
+.addressinfo-list .list-item { font-size: 16px; color: #8a8a8a; line-height: 1; margin-top: 28px; }
+.addressinfo-list .item-label { color: #6b6b6b; }
+.addressmap-wrap { margin: 56px auto 0 auto; width: 996px; height: 460px; overflow: hidden; border: solid 2px #676666; }
 
+/* 成功案例 */
+.innerpage.s-case { background: url("../images/successful_case_bg.jpg") center 80px no-repeat; background-color: #1a1a1a; }
+.s-case { }
+.sc-list { overflow: hidden; }
+.sc-list .item { float: left; box-sizing: border-box; position: relative; width: 180px; height: 240px; margin: 0 23px 30px 0; text-align: center; background-color: #000; }
+.sc-list .imglink { display: inline-block; height: 100%; width: 100%; vertical-align: middle; overflow: hidden; }
+.sc-list .img { height: 100%; }
+.sc-list .item-title { visibility: hidden; position: absolute; bottom: 0; left: 0; height: 36px; line-height: 36px; width: 100%; font-size: 16px; color: #999999; background-color: rgba(0,0,0,0.73); }
+.sc-list .item:hover .item-title { visibility: visible; }
+.sc-list .item:hover { border: solid 2px #996436; border-radius: 2px; }
+
+.s-paging { margin-top: 22px; }
+.s-paging .list { overflow: hidden; font-family: "Arial"; line-height: 30px; }
+.s-paging .item { float: left; margin-right: 10px; }
+
+.s-paging .btn { box-sizing: border-box; display: block; height: 30px; width: 30px; text-align: center; color: #999999; background-color: #292929; border: solid 1px #333333; border-radius: 3px; }
+.s-paging .hellip { vertical-align: bottom; }
+.s-paging .item:hover .btn,
+.s-paging .item.active .btn { background-color: #333333; color: #f5f5f5; }
 

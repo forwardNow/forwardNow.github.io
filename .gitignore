@@ -1,3 +1,6 @@
 *.psd
 *.zip
 *.rar
+.svn
+.project
+jjl_svn

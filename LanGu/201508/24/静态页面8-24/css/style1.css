@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*author zjf*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.wrap { width: 1200px; margin: 0 auto;}
+
+
+/*我要贷款*/
+.mod_loan_banner{ height:650px; padding:30px 0 0 0; background:url(../images/loan_banner.jpg) 50% 0 no-repeat;}
+.mod_loan_banner_form{width:466px; height:620px; background:rgba(255,255,255,0.2);box-shadow:0 0 6px rgba(0,0,0,0.2); float:right;}
+.mod_loan_banner_form_head{ height:42px; line-height:36px; text-indent:40px; color:#fff;font-size:18px;font-weight:bold; width:478px; background:url(../images/mod_loan_banner_form_head.png) no-repeat; margin:20px 0 0 -6px;}
+.mod_loan_banner_form table{ margin:10px 0 0 20px;}
+.mod_loan_banner_form table td{padding:5px;}
+.mod_loan_banner_form table td input{ width:280px; height:30px; line-height:30px; padding:0 5px;border:none;}
+.mod_loan_banner_form table td textarea{padding:5px;border:none;width:280px; height:40px;}
+.mod_loan_banner_form table td .note{ font-size:12px; color:#666;}
+.mod_loan_banner_form table td .note a{ color:#bf8b53;}
+.mod_loan_banner_form table td input.submit{ width:280px; height:40px; background:#c8a063;border-bottom:#997949 2px solid;border-radius:4px; color:#fff; font-size:16px; font-weight:bold;}
+
+.mod_loan_001{ height:40px; background:url(../images/mod_loan_001.png) #fff 0 bottom repeat-x; width:100%;}
+.mod_loan_001 ul{ float:left;}
+.mod_loan_001 ul li{ float:left; margin:0 0 0 -1px; position:relative;}
+.mod_loan_001 ul li a{ display:inline-block; padding:0 30px; height:38px; line-height:38px; border:#ddd 1px solid;border-bottom:none;text-decoration:none; font-size:16px; cursor:pointer;}
+.mod_loan_001 ul li a:hover{ text-decoration:none; color:#000;}
+.mod_loan_001 ul li.on a{height:38px; line-height:38px;border:#c59f65 2px solid;border-bottom:none; background:#fff;}
+
+.com_loan_head{ height:26px; line-height:26px;border-left:#c8a063 4px solid; font-size:18px; color:#c8a063; font-weight:bold; text-indent:15px;}
+
+.mod_loan_002{ margin:60px 0 0 0;}
+.mod_loan_002 .item_1{ height:50px; line-height:50px; background:url(../images/mod_loan_002_item_1.png) 50% 50% no-repeat; font-size:28px; text-align:center;}
+.mod_loan_002 .item_1 .inner{ display:inline-block; padding:0 30px; height:50px; background:#fff; color:#666;}
+.mod_loan_002 .item_1 span{ color:#c8a063;}
+.mod_loan_002 .item_2{ text-align:center;}
+
+.mod_loan_003{ margin:60px 0 0 0;}
+.mod_loan_003_con{ overflow:hidden; margin:20px 0 0 0;}
+.mod_loan_003_con ul{ float:left; width:1500px;}
+.mod_loan_003_con ul li{ float:left; width:345px; height:375px; background:#f9f9f9; position:relative; margin:60px 38px 0 30px;}
+.mod_loan_003_con ul li span.icon{ display:block; width:90px; height:90px; position:absolute; left:-30px; top:-40px;}
+.mod_loan_003_con ul li span.icon_1{background:url(../images/mod_loan_003_icon.png) no-repeat;}
+.mod_loan_003_con ul li span.icon_2{background:url(../images/mod_loan_003_icon.png) -90px 0 no-repeat;}
+.mod_loan_003_con ul li span.icon_3{background:url(../images/mod_loan_003_icon.png) -180px 0 no-repeat;}
+.mod_loan_003_con ul li span.icon_4{background:url(../images/mod_loan_003_icon.png) -270px 0 no-repeat;}
+.mod_loan_003_con ul li span.icon_5{background:url(../images/mod_loan_003_icon.png) -360px 0 no-repeat;}
+.mod_loan_003_con ul li span.icon_6{background:url(../images/mod_loan_003_icon.png) -450px 0 no-repeat;}
+.mod_loan_003_con ul li .title_1{ font-size:24px; color:#555; font-weight:bold; padding:0 30px; margin:60px 0 0 0;}
+.mod_loan_003_con ul li .title_2{ font-size:18px;color:#555;padding:0 30px; margin:10px 0 0 0;}
+.mod_loan_003_con ul li p{padding:0 30px; margin:15px 0 0 0;color:#555; font-size:16px;}
+.mod_loan_003_con ul li a.btn{ display:block; width:170px; height:40px; line-height:40px; text-align:center; color:#fff; background:#c8a063; text-decoration:none; font-size:16px; font-weight:bold; position:absolute; left:88px; bottom:30px;border-radius:3px;}
+.mod_loan_003_con ul li a.btn:hover{ background:#b18645;}
+
+.mod_loan_004{ margin:60px 0 0 0;}
+.mod_loan_004_con1{ border:#c8a063 2px solid; width:580px; height:210px; float:left; margin:50px 0 0 0; background:url(../images/mod_loan_004_con1.png) right 20px no-repeat;}
+.mod_loan_004_con1 .head{ width:130px; height:40px; line-height:40px;margin:-21px 0 0 40px; background:#c8a063; color:#fff; font-size:20px; text-align:center;border-radius:4px;}
+.mod_loan_004_con1 ul{ padding:0 40px; margin:20px 0 0 0;}
+.mod_loan_004_con1 ul li{ line-height:28px; color:#666;padding:0 0 0 20px; background:url(../images/li_01.png) 0 5px no-repeat;}
+
+.mod_loan_004_con2{ border:#c8a063 2px solid; width:580px; height:210px; float:right; margin:50px 0 0 0;background:url(../images/mod_loan_004_con2.png) right 20px no-repeat;}
+.mod_loan_004_con2 .head{ width:130px; height:40px; line-height:40px;margin:-21px 0 0 40px; background:#c8a063; color:#fff; font-size:20px; text-align:center;border-radius:4px;}
+.mod_loan_004_con2 ul{ padding:0 40px; margin:20px 0 0 0;}
+.mod_loan_004_con2 ul li{ line-height:28px; color:#666;padding:0 0 0 20px; background:url(../images/li_01.png) 0 5px no-repeat;}
+
+.mod_loan_005{ margin:60px 0 0 0;}
+.mod_loan_005_con{ overflow:hidden; margin:30px 0 0 0;}
+.mod_loan_005_con ul{ float:left; width:1500px;}
+.mod_loan_005_con ul li{ float:left; width:350px; height:85px; margin:0 75px 0 0;}
+.mod_loan_005_con ul li .left{ width:80px; height:60px; float:left;}
+.mod_loan_005_con ul li .left_1{ background:url(../images/mod_loan_005_iocn.png) no-repeat;}
+.mod_loan_005_con ul li .left_2{ background:url(../images/mod_loan_005_iocn.png) 0 -60px no-repeat;}
+.mod_loan_005_con ul li .left_3{ background:url(../images/mod_loan_005_iocn.png) 0 -120px no-repeat;}
+.mod_loan_005_con ul li .left_4{ background:url(../images/mod_loan_005_iocn.png) 0 -180px no-repeat;}
+.mod_loan_005_con ul li .left_5{ background:url(../images/mod_loan_005_iocn.png) 0 -240px no-repeat;}
+.mod_loan_005_con ul li .left_6{ background:url(../images/mod_loan_005_iocn.png) 0 -300px no-repeat;}
+.mod_loan_005_con ul li .right{ width:270px; float:left;}
+.mod_loan_005_con ul li .right .title{ font-size:24px;color:#bf8b53;}
+.mod_loan_005_con ul li .right p{ color:#bf8b53;}

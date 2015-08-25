@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+i { font-style: normal; }
+h1, h2, h3, h4 { font-weight: normal; }
+body { line-height: 1; background-color: #fcfcfc;}
+/* =main */
+.main { padding-bottom: 100px; }
+
+/* home-feature */
+.home-feature { overflow: hidden; position: relative; z-index: 10; margin-top: -52px; line-height: 1; font-family: "Microsoft YaHei"; color: #fff; }
+.home-feature-item { box-sizing: border-box; float: left; width: 400px; height: 190px; background-repeat: no-repeat; padding-left: 24px; padding-top: 30px; }
+.home-feature-item.item-1 { background-image: url("../images/feature_1.jpg"); }
+.home-feature-item.item-2 { background-image: url("../images/feature_2.jpg"); }
+.home-feature-item.item-3 { background-image: url("../images/feature_3.jpg"); }
+.home-feature-item .title{ font-size: 24px; font-weight: normal; }
+.home-feature-item .body{ font-size: 24px; margin-top: 28px; }
+.home-feature-item .link{ display: block; font-size: 18px; color: #fff; height: 30px; line-height: 30px; padding-left: 40px; margin-top: 40px; background: url("../images/feature_list_style.png") no-repeat 0 center; }
+.home-feature-item:hover,
+.home-feature-item:hover .link {color: #2e2e2e; }
+
+/* columns */
+.columns-container { overflow: hidden; }
+.columns-left { float: left; width: 815px; }
+.columns-right { float: right; width: 360px; }
+
+/* column-info */
+.column-info { overflow: hidden; margin-top: 40px; }
+
+/* 最新公告 */
+.column-info-notice { box-sizing: border-box; float: left; width: 396px; border-top: 2px solid #eb5f5e; background-color: #fff;}
+.column-info-notice .column-head { border-left: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; font-family: "Microsoft YaHei"; height: 41px; }
+.column-info-notice .head-title { float: left; line-height: 40px; padding-left: 18px; font-size: 18px; color: #8b8b8b; width: 60%; }
+.column-info-notice .more { float: right; width: 42px; height: 19px; line-height: 19px; text-align: center; border: solid 1px #dcdcdc; font-size: 12px; color: #8f8f8f; margin: 9px 14px 0 0; }
+.column-info .column-body { border: 1px solid #dcdcdc; border-top: 0 none; height: 92px; padding-top: 10px; }
+.column-info .list { font-size: 12px; line-height: 26px; }
+.column-info .item { padding-left: 24px; padding-right: 18px; background: url("../images/list_style_square.png") no-repeat 14px center; }
+.column-info .item:hover a,
+.column-info .item:hover i { color: #c8a063; }
+.column-info .summary { color: #2e2e2e; }
+.column-info .pubtime { color: #8f8f8f; float: right; }
+
+.colunm-info-information { box-sizing: border-box; float: right; width: 396px;background-color: #fff; }
+
+.colunm-info-information .column-head { font-family: "Microsoft YaHei"; height: 43px; font-size: 18px; font-weight: bold; color: #8b8b8b; }
+.colunm-info-information .head-title { box-sizing: border-box; height: 43px; line-height: 41px; width: 50%; float: left; font-size: 16px; font-weight: normal; color: #7f7e7e; text-align: center; border-top: solid 1px #dcdcdc; border-bottom: solid 1px #dcdcdc; background-color: #f5f5f5; cursor: pointer; }
+.colunm-info-information .head-title.first { border-left: solid 1px #dcdcdc; }
+.colunm-info-information .head-title.second { border-left: solid 1px #dcdcdc; border-right: solid 1px #dcdcdc; }
+.colunm-info-information .head-title.active { background-color: transparent; font-size: 18px; font-weight: bold; color: #8c8c8c; border-top: solid 2px #b582d6; border-bottom: none 0; }
+.colunm-info-information .column-body { }
+.colunm-info-information .list { }
+
+/* 大家都在抢着投 */
+.column-invest { box-sizing: border-box; width: 100%; height: 378px; border: solid 1px #dcdcdc; margin-top: 40px; font-family: "Microsoft YaHei"; background-color: #fff;}
+.column-invest .column-head { height: 42px; line-height: 42px; }
+.column-invest .head-title { color: #4f4f4f; font-size: 16px; padding-left: 16px; }
+.column-invest .column-body { padding-top: 24px; }
+.column-invest .list { padding-left: 22px; padding-right: 28px; }
+.column-invest .item { height: 32px; padding-left: 40px; margin-bottom: 28px; background: url("../images/invest_list_style.png") no-repeat 0 center; overflow: hidden; }
+.column-invest .investinfo { float: left; width: 220px; }
+.column-invest .product { color: #464847; display: block; margin-bottom: 4px; }
+.column-invest .purchaser { color: #98989a; font-size: 12px; }
+.column-invest .buytime { color: #999896; font-size: 12px; float: right; }
+
+
+/* 广告位 */
+.column-ad { width: 100%; height: 142px; border-radius: 16px; overflow: hidden; margin-top: 16px; }
+.column-ad img { width: 100%; }
+
+/* 理财风云榜 manage finances rank */
+.column-mfrank { font-family: "Microsoft Yahei"; margin-top: 30px; color: #4f4d4e; font-size: 12px; background-color: #fff;}
+.column-mfrank .column-head { height: 30px; overflow: hidden; }
+.column-mfrank .head-title { color: #4f4f4f; font-size: 16px; float: left; margin: 2px 0 0 14px; }
+.column-mfrank .more { float: right; width: 52px; height: 20px; line-height: 20px; border: solid 1px #b5b5b5; text-align: center; color: #b5b5b5; font-family: "宋体"; border-radius: 4px; margin-right: 16px; }
+.column-mfrank .column-body { height: 220px; border: solid 1px #dcdcdc; }
+.column-mfrank .tab { width: 300px; margin: 8px auto 0 auto; }
+
+.column-mfrank .tab td { text-align: center; height: 32px; }
+.column-mfrank .tab th { font-size: 12px; color: #969495; height: 40px; }
+.column-mfrank .num { display: inline-block; width: 20px; height: 20px; line-height: 20px; text-align: center; color: #fff; background-color: #999999; border-radius: 4px; }
+.column-mfrank .first { display: inline-block; width: 20px; height: 28px; background: url("../images/rank_list_style.png") no-repeat 0 0; }
+.column-mfrank .second { background-color: #ffa763; }
+
+/* column-banner */
+.column-banner { height: 90px; overflow: hidden; margin-top: 40px; }
+.column-banner img { width: 100%; }
+
+/* 债权项目 */
+.column-projects { height: 588px; border: solid 1px #dcdcdc; margin-top: 48px; font-family: "Microsoft YaHei"; background-color: #fff; }
+.column-projects .tab {margin: 0 auto; font-size: 14px; color: #7c7c7c; margin-top: 36px; }
+.column-projects .tab tr { height: 67px; }
+.column-projects .tab td { border-bottom: dashed 1px #dddddd; }
+.column-projects .projtype { width: 45px; }
+.column-projects .projtype i { position: relative; left: -11px; display: inline-block; width: 30px; height: 30px; line-height: 30px; font-size: 16px; color: #fff; text-align: center; border-radius: 4px; }
+.column-projects .projtype i.company { background-color: #1faeff; }
+.column-projects .projtype i.house { background-color: #f39800; }
+.column-projects .projcode { width: 188px; font-size: 16px; color: #363636; }
+.column-projects .projcode span { vertical-align: -4px; }
+
+.column-projects .earnings { width: 199px; }
+
+.column-projects .earnings i { font-size: 18px; color: #be8a43; }
+.column-projects .loantype { width: 194px; }
+.column-projects .loantype span { }
+.column-projects .investtime { width: 184px; }
+.column-projects .investtime i { color: #434343; font-size: 18px; font-weight: bold; }
+.column-projects .investtime i.complete { color: #f39800; }
+.column-projects .investprogress { width: 203px; }
+.progress { display: inline-block; width: 100px; height: 6px; background-color: #f0f0f0; vertical-align: middle; }
+.progress-cur { background-color: #fe953e; height: 100%; }
+.column-projects .ope { width: 100px; }
+.column-projects .ope input,
+.column-projects .moreproducts .more { width: 98px; height: 28px; border-width: 1px; border-style: solid; color: #fff; line-height: 26px; text-align: center; position: relative; left: 4px; }
+.column-projects .ope .invest-btn,
+.column-projects .moreproducts .more { background-color: #1faeff; border-color: #0478ba; }
+.column-projects .ope .detail-btn { background-color: #aaaaaa; border-color: #959595; }
+
+.moreproducts { box-sizing: border-box; width: 1164px; height: 110px; background-color: #f7f7f7; margin: 13px auto 0 auto; position: relative; padding: 35px 0 0 26px; }
+.column-projects .moreproducts p { white-space: pre; color: #666666; font-size: 12px; margin-bottom: 20px; }
+.column-projects .moreproducts p label { font-size: 13px; color: #555555; font-weight: bold; }
+.column-projects .moreproducts p a { color: #ef5a50; }
+.column-projects .moreproducts { }
+.column-projects .moreproducts .more { position: absolute; top: 39px; right: 24px; left: auto; }
+
+.otherinformation {
+    background-color: #fff;
+    font-family: "Microsoft Yahei";
+}
+.otherinformation-inner {
+    height: 428px;
+    width: 1114px;
+}
+.oi-mediareports {}
+.oi-head { 
+    overflow: hidden;
+} 
+.oi-head-title { 
+    font-size: 20px;
+    font-weight: bold;
+    color: #484745;
+    float: left;
+} 
+.oi-more { 
+    font-size: 12px;
+    font-family: "宋体";
+    color: #969696;
+    float: right;
+} 
+.oi-body { } 
+.oi-body .list { 
+    overflow: hidden;
+    width: 110%;
+} 
+.oi-body .item {
+    float: left;
+    width: 176px;
+    height: 54px;
+    border: solid 1px #dcdcdc;
+    border-radius: 2px;
+    margin-right: 56px;
+    margin-bottom: 24px;
+}
+.oi-body .link { } 
+
+.oi-parters { }

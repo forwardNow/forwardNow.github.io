@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>京金联</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>    
+</head>
+<body>
+
+<!-- top -->
+    <div class="top">
+
+        <div class="wrap">
+            <div class="top-text">
+                <label class="top-tel-label">欢迎致电：</label><span class="top-tel-cont">400-888-6688</span><!-- 
+             --><label class="top-stime-label">服务时间：</label><span class="top-stime-cont">9:00 - 21:00</span>
+            </div>
+            <div class="top-icon">
+                <a class="top-icon-sina" href="#"><!-- 新浪微博 --></a><a class="top-icon-wechat" href="#"><!-- 微信 --></a>
+            </div>
+            <div class="top-menu">
+                <a class="top-menu-item" href="#">预置板块</a>
+                <a class="top-menu-item" href="#">预置板块</a>
+                <a class="top-menu-item" href="#">下载客户端</a>
+                <a class="top-menu-item" href="#">登录</a>
+                <a class="top-menu-item top-reg" href="#">免费注册</a>
+            </div>
+			<div class="clearfix"></div>
+        </div>
+
+    </div>
+<!-- /top -->    
+
+<!-- header -->
+    <div class="header" role="header">
+        <div class="header-inner wrap">
+            
+            <h1 class="sitelogo-wrap"><a class="sitelogo" href="index.html"></a></h1>
+            
+            <div class="home-nav" role="nav">
+                <ul class="nav-list clearfix">
+                    <li class="list-item"><a href="#">我要理财</a><i class="sub-indicator"></i></li>
+                    <li class="list-item"><a href="#">我要借款</a><i class="sub-indicator"></i></li>
+                    <li class="list-item"><a href="#">新手指引</a></li>
+                    <li class="list-item"><a href="#">京金币介绍</a></li>
+                </ul>
+            </div>
+
+            <a class="header-more" href="#">更多</a>
+
+        </div>
+
+    </div>
+<!-- /header -->
+    
+<!-- home banner -->    
+    <div class="banner" role="banner">
+        
+        <div class="focus" id="focus">
+            <!-- 焦点图内容开始 -->
+            <div class="focus-info-inner"> <!-- 展示一个焦点图 -->
+                <ul>
+                    <li>
+                    	<a href="#" style="background:url('images/banner_page_2.jpg') 50% 0 no-repeat;"></a>
+                    </li>
+                    <li>
+                    	<a href="#" style="background:url('images/banner_page_2.jpg') 50% 0 no-repeat;"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 焦点图内容结束 -->
+            <!-- banner开始 -->
+            <div class="focus-banner">
+                <!-- 左侧按钮 -->
+                <a class="focus-left-btn"></a>
+                <!-- 右侧按钮 -->
+                <a class="focus-right-btn"></a>
+                
+            </div>
+            <!-- banner结束 -->
+            <script>
+			$(function(){
+				(function(){
+					var w = $(window).width();
+					$(".focus-info-inner li a").css({width:w});
+					
+					function go_left(){
+						$(".focus-info-inner li").last().css({width:0}).prependTo(".focus-info-inner ul").animate({width:w},300);
+						return false;	
+					}
+					function go_right(){
+						$(".focus-info-inner li").first().animate({width:0},300,function(){
+							$(this).appendTo('.focus-info-inner ul').css({width:w});;	
+						})
+						return false;
+					}
+					var inter = setInterval(go_left,5000);
+					$(".focus-banner a.focus-left-btn").click(function(){
+						clearInterval(inter);
+						go_left();	
+						inter = setInterval(go_left,5000);
+					});
+					$(".focus-banner a.focus-right-btn").click(function(){
+						clearInterval(inter);
+						go_right();	
+						inter = setInterval(go_right,5000);
+					});
+				})();
+				
+				
+			});
+            	
+            </script>
+            
+        </div>
+
+        <div class="banner-login-wrap">
+            <div class="banner-login">
+                <div class="login-head">
+                    <a class="head-title" href="#">登陆</a>
+                    <a class="head-title another" href="#">快速注册</a>
+                </div>
+                <div class="login-body">
+                    <div class="login-body-inner">
+                        <input class="username" type="text" placeholder="您的手机号码">
+                        <input class="password" type="password" placeholder="登陆密码">
+                        <p class="forgetpasswd"><a href="#">忘记密码？</a></p>
+                        <input class="submitbtn" type="submit" value="登陆">
+                    </div>
+                </div>
+            </div>
+        </div>    
+            
+    </div>
+<!-- /home banner -->
+    
+<!-- main --> 
+    <div class="main" style=" background:#fcfcfc;">
+    	<!--三色快-->
+    	<div class="mod_index_001">
+        	<ul>
+            	<li class="li_01">
+                	<div class="title_1">理财投资</div>
+                    <div class="title_2">自由理财获取高收益</div>
+                    <a class="btn" href="#">开始投资</a>
+                </li>
+                <li class="li_02">
+                	<div class="title_1">财富成就</div>
+                    <div class="title_2">投资人理财排行榜</div>
+                    <a class="btn" href="#">查看成就</a>
+                </li>
+                <li class="li_03">
+                	<div class="title_1">安全保障</div>
+                    <div class="title_2">100%适用本金保障</div>
+                    <a class="btn" href="#">了解更多</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    
+    	<div class="wrap">
+    	<div class="lay_index_left">
+        	<!--新闻1-->
+            <div class="mod_index_002">
+            	<div class="mod_index_002_head">
+                	<span class="title">最新公告</span>
+                    <a class="more" href="#">更多</a>
+                </div>
+                <div class="mod_index_002_con">
+                	<ul>
+                    	<li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                        <li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                        <li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!--/新闻1-->
+            
+            <!--新闻2-->
+            <div class="mod_index_003">
+            	<div class="mod_index_003_head">
+                	<ul>
+                    	<li class="on"><span>官方资讯</span></li>
+                        <li class="last"><span>媒体资讯</span></li>
+                    </ul>
+					<div class="clear"></div> 
+                </div>
+                <div class="mod_index_003_con">
+                	<ul>
+                    	<li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                        <li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                        <li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="mod_index_003_con">
+                	<ul>
+                    	<li>
+                        	<h5><a href="#">盛夏礼遇：理财更益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                        <li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                        <li>
+                        	<h5><a href="#">盛夏礼遇：理财更得“益”——8月理财活动</a></h5>
+                            <span>2015-06-03</span>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <script>
+            (function(){
+				$(".mod_index_003_con").hide().eq(0).show();
+				$(".mod_index_003_head ul li").hover(function(){
+					var num = $(".mod_index_003_head ul li").index(this);
+					$(this).addClass('on').siblings().removeClass('on');
+					$(".mod_index_003_con").hide().eq(num).show();
+				});	
+			})();
+            </script>
+            <!--/新闻2-->
+            <div class="clearfix"></div>
+            
+            <div class="mod_index_004">
+            	<ul>
+                	<li>
+                    	<div class="left left_1">
+                        	<a class="btn" href="#">更多企业贷</a>
+                        </div>
+                        <div class="right">
+                        	<h1>企业贷15073003</h1>
+                            <div class="numbers">
+                            	<div class="percent">
+                                	<div class="percent_1"><span>11.1</span>%</div>
+                                    <div class="percent_2">预计年化收益率</div>
+                                </div>
+                                <div class="total">
+                                	<div class="total_1"><span>5,00</span>万</div>
+                                    <div class="total_2">本期总额</div>
+                                </div>
+                            </div>
+                            <div class="count">
+                            	<div class="unlogin">账户余额 <a href="#">登录</a> 后可见</div>
+                                <div class="input">
+                                	<input class="text" type="text" placeholder="输入您的投资金额" />
+                                    <span>元</span>
+                                </div>
+                                <div class="do_count">计算您的预期收益</div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="tags">
+                            	<span class="item item_1">借款期限20个月</span>
+                                <span class="item item_2">20,000元起投</span>
+                                <span class="item item_3">2015-09-03还款</span>
+                            </div>
+                            <div class="programe">
+                            	<div class="programe_1">投标进度</div>
+                                <div class="programe_2"><span style="width:12%;"></span></div>
+                                <div class="programe_3"><span>0.00</span>%</div>
+                                <a class="btn" href="#">投标中</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="left left_2">
+                        	<a class="btn" href="#">更多企业贷</a>
+                        </div>
+                        <div class="right">
+                        	<h1>企业贷15073003</h1>
+                            <div class="numbers">
+                            	<div class="percent">
+                                	<div class="percent_1"><span>11.1</span>%</div>
+                                    <div class="percent_2">预计年化收益率</div>
+                                </div>
+                                <div class="total">
+                                	<div class="total_1"><span>5,00</span>万</div>
+                                    <div class="total_2">本期总额</div>
+                                </div>
+                            </div>
+                            <div class="count">
+                            	<div class="unlogin">账户余额<a href="#">登录</a>后可见</div>
+                                <div class="input">
+                                	<input class="text" type="text" placeholder="输入您的投资金额" />
+                                    <span>元</span>
+                                </div>
+                                <div class="do_count">计算您的预期收益</div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="tags">
+                            	<span class="item item_1">借款期限20个月</span>
+                                <span class="item item_2">20,000元起投</span>
+                                <span class="item item_3">2015-09-03还款</span>
+                            </div>
+                            <div class="programe">
+                            	<div class="programe_1">投标进度</div>
+                                <div class="programe_2"><span></span></div>
+                                <div class="programe_3"><span>0.00</span>%</div>
+                                <a class="btn" href="#">投标中</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="lay_index_right">
+        	<!--大家都在投-->
+            <div class="mod_index_005">
+            	<div class="mod_index_005_head">大家都在抢着投</div>
+                <div class="mod_index_005_con">
+                	<ul>
+                    	<li>
+                        	<div class="icon"></div>
+                            <div class="center">
+                            	<div class="title">车金融C236756765</div>
+                                <div class="title_1">138****2423购买了此产品</div>
+                            </div>
+                            <div class="right">1小时前</div>
+                        </li>
+                        <li>
+                        	<div class="icon"></div>
+                            <div class="center">
+                            	<div class="title">车金融C236756765</div>
+                                <div class="title_1">138****2423购买了此产品</div>
+                            </div>
+                            <div class="right">1小时前</div>
+                        </li>
+                        <li>
+                        	<div class="icon"></div>
+                            <div class="center">
+                            	<div class="title">车金融C236756765</div>
+                                <div class="title_1">138****2423购买了此产品</div>
+                            </div>
+                            <div class="right">1小时前</div>
+                        </li>
+                        <li>
+                        	<div class="icon"></div>
+                            <div class="center">
+                            	<div class="title">车金融C236756765</div>
+                                <div class="title_1">138****2423购买了此产品</div>
+                            </div>
+                            <div class="right">1小时前</div>
+                        </li>
+                        <li>
+                        	<div class="icon"></div>
+                            <div class="center">
+                            	<div class="title">车金融C236756765</div>
+                                <div class="title_1">138****2423购买了此产品</div>
+                            </div>
+                            <div class="right">1小时前</div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <!--右侧广告-->
+            <div class="mod_index_006">
+            	<a href="#"><img src="images/index_ad.png" /></a>
+            </div>
+            
+            <!--理财风云榜-->
+            <div class="mod_index_007">
+                <div class="mod_index_007_head">
+                	<span class="title">理财风云榜</span>
+                    <a class="more" href="#">更多</a>
+                </div>
+                <div class="mod_index_007_con">
+                	<table>
+                    	<tr>
+                        	<th>排名</th>
+                            <th>会员</th>
+                            <th>投资金额</th>
+                        </tr>
+                        <tr>
+                        	<td><span class="no1"></span></td>
+                            <td>138*****233</td>
+                            <td>￥12,222,455</td>
+                        </tr>
+                        <tr>
+                        	<td><span class="no no2">2</span></td>
+                            <td>138*****233</td>
+                            <td>￥12,222,455</td>
+                        </tr>
+                        <tr>
+                        	<td><span class="no no2">3</span></td>
+                            <td>138*****233</td>
+                            <td>￥12,222,455</td>
+                        </tr>
+                        <tr>
+                        	<td><span class="no">4</span></td>
+                            <td>138*****233</td>
+                            <td>￥12,222,455</td>
+                        </tr>
+                        <tr>
+                        	<td><span class="no">5</span></td>
+                            <td>138*****233</td>
+                            <td>￥12,222,455</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="clearfix"></div>
+        
+        <!--中部广告-->
+        <div class="mod_index_008">
+        	<a href="#"><img src="images/index_ad_01.jpg" /></a>
+        </div>
+        
+        <!--标的主列表-->
+        <div class="mod_index_009">
+        	<table>
+            	<tr>
+                	<td><div class="icon icon_q">企</div></td>
+                    <td><div class="title">企业贷C34356008</div></td>
+                    <td><div>年化收益：<span class="percent">15.8%</span></div></td>
+                    <td><div>按月付息，到期还本</div></td>
+                    <td><div>投资期限：<b class="days">325</b>天</div></td>
+                    <td>
+                    	<div class="programe_text">投资进度</div>
+                        <div class="programe"><span style="width:15%;"></span></div>
+                    </td>
+                    <td><a class="btn" href="#">投资</a></td>
+                </tr>
+                <tr>
+                	<td><div class="icon icon_f">房</div></td>
+                    <td><div class="title">房贷宝C34356008</div></td>
+                    <td><div>年化收益：<span class="percent">15.8%</span></div></td>
+                    <td><div>按月付息，到期还本</div></td>
+                    <td><div>投资期限：<span class="done">已经完成</span></div></td>
+                    <td>
+                    	<div class="programe_text">投资进度</div>
+                        <div class="programe"><span style="width:15%;"></span></div>
+                    </td>
+                    <td><a class="btn btn_none" href="#">投资</a></td>
+                </tr>
+                <tr>
+                	<td><div class="icon icon_q">企</div></td>
+                    <td><div class="title">企业贷C34356008</div></td>
+                    <td><div>年化收益：<span class="percent">15.8%</span></div></td>
+                    <td><div>按月付息，到期还本</div></td>
+                    <td><div>投资期限：<b class="days">325</b>天</div></td>
+                    <td>
+                    	<div class="programe_text">投资进度</div>
+                        <div class="programe"><span style="width:15%;"></span></div>
+                    </td>
+                    <td><a class="btn" href="#">投资</a></td>
+                </tr>
+                <tr>
+                	<td><div class="icon icon_f">房</div></td>
+                    <td><div class="title">房贷宝C34356008</div></td>
+                    <td><div>年化收益：<span class="percent">15.8%</span></div></td>
+                    <td><div>按月付息，到期还本</div></td>
+                    <td><div>投资期限：<span class="done">已经完成</span></div></td>
+                    <td>
+                    	<div class="programe_text">投资进度</div>
+                        <div class="programe"><span style="width:15%;"></span></div>
+                    </td>
+                    <td><a class="btn btn_none" href="#">投资</a></td>
+                </tr>
+                <tr>
+                	<td><div class="icon icon_q">企</div></td>
+                    <td><div class="title">企业贷C34356008</div></td>
+                    <td><div>年化收益：<span class="percent">15.8%</span></div></td>
+                    <td><div>按月付息，到期还本</div></td>
+                    <td><div>投资期限：<b class="days">325</b>天</div></td>
+                    <td>
+                    	<div class="programe_text">投资进度</div>
+                        <div class="programe"><span style="width:15%;"></span></div>
+                    </td>
+                    <td><a class="btn" href="#">投资</a></td>
+                </tr>
+                <tr>
+                	<td><div class="icon icon_f">房</div></td>
+                    <td><div class="title">房贷宝C34356008</div></td>
+                    <td><div>年化收益：<span class="percent">15.8%</span></div></td>
+                    <td><div>按月付息，到期还本</div></td>
+                    <td><div>投资期限：<span class="done">已经完成</span></div></td>
+                    <td>
+                    	<div class="programe_text">投资进度</div>
+                        <div class="programe"><span style="width:15%;"></span></div>
+                    </td>
+                    <td><a class="btn btn_none" href="#">投资</a></td>
+                </tr>
+            </table>
+            <div class="note"><b>更多投资产品：</b>可将已投产品转让，以便提前收回资金，提高流动性，还可根据偏好的投资期限、利率，认购他人转让债权。<a href="#">查看详细模式介绍&gt;&gt;</a><br />
+            	·随你转&nbsp;-&nbsp;份额可整可零&nbsp;&nbsp;&nbsp;&nbsp;·随你赚&nbsp;-&nbsp;成交立即到账&nbsp;&nbsp;&nbsp;&nbsp;·随你定&nbsp;-&nbsp;价格由你来定&nbsp;&nbsp;&nbsp;&nbsp;·随你变&nbsp;-&nbsp;随时可以取消
+            </div>
+        </div>
+        
+        <!--媒体报道-->
+        <div class="mod_index_010">
+        	<div class="mod_index_010_head">
+                	<span class="title">媒体报道</span>
+                    <a class="more" href="#">更多...</a>
+                </div>
+                <div class="mod_index_010_con">
+                	<ul>
+                    	<li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li><li><a href="#"><img src="images/links.jpg" width="180" height="56" /></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+        </div>
+        
+        <!--媒体报道-->
+        <div class="mod_index_011">
+        	<div class="mod_index_011_head">
+                	<span class="title">合作伙伴</span>
+                    <a class="more" href="#">更多...</a>
+                </div>
+                <div class="mod_index_011_con">
+                	<ul>
+                    	<li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li>
+                        <li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li><li><a href="#"><img src="images/links.jpg" width="150" height="52" /></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+        </div>
+        
+        
+        </div>
+    </div>
+    
+    <div style=" height:40px;"></div>
+<!-- /main --> 
+
+<!-- footer -->     
+    <div class="footer" role="footer">
+        
+        <div class="footer-inner wrap">
+            
+            <div class="link-groups">
+
+                <dl class="link-group">
+                    <dt class="link-title">帮助中心</dt>
+                    <dd class="link-item"><a href="#">投资原理</a></dd>
+                    <dd class="link-item"><a href="#">融资发布</a></dd>
+                    <dd class="link-item"><a href="#">常见问题</a></dd>
+                </dl>
+                <dl class="link-group">
+                    <dt class="link-title">网贷学堂</dt>
+                    <dd class="link-item"><a href="#">网贷知识</a></dd>
+                    <dd class="link-item"><a href="#">理财攻略</a></dd>
+                    <dd class="link-item"><a href="#">名词解释</a></dd>
+                </dl>
+                <dl class="link-group">
+                    <dt class="link-title">新手指引</dt>
+                    <dd class="link-item"><a href="#">投资流程</a></dd>
+                    <dd class="link-item"><a href="#">资费说明</a></dd>
+                    <dd class="link-item"><a href="#">平台活动</a></dd>
+                </dl>
+                <dl class="link-group">
+                    <dt class="link-title">关于我们</dt>
+                    <dd class="link-item"><a href="#">公司介绍</a></dd>
+                    <dd class="link-item"><a href="#">管理团队</a></dd>
+                    <dd class="link-item"><a href="#">联系我们</a></dd>
+                </dl>
+                
+                <dl class="client-service">
+                    <dt class="cs-title">客户服务</dt>
+                    <dd class="cs-item cs-wechat"><a href="#"><img src="./images/footer_cs_1.png"></a></dd>
+                    <dd class="cs-item cs-sina"><a href="#"><img src="./images/footer_cs_2.png"></a></dd>
+                    <dd class="cs-item cs-weibo"><a href="#"><img src="./images/footer_cs_3.png"></a></dd>
+                </dl>
+
+            </div>
+
+            <div class="authentication">
+                <a href="#"><img src="./images/authentication_1.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_2.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_3.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_4.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_5.png" alt=""></a>
+            </div>
+            
+            <div class="copyright">
+                <p>湖北xxxxxxxxxxxxx有限公司</p>
+                <p>湖北省武汉市东湖高新技术开发区xxxxxxxxxxx</p>
+                <p>鄂CP备010101011010号</p>
+            </div>
+        </div>
+
+    </div>
+<!-- /footer --> 
+
+</body>
+</html>
