@@ -32,6 +32,14 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .submenu .submenu-item { display: inline-block; color: #1a1a1a; margin: 0 8px; }
 .submenu .submenu-item:hover { color: #FFF; }
 
+/* 调整子菜单位置 */
+.submenu { box-sizing: border-box; width: 1000px; margin: 0 auto; }
+.sub-companyprofile { padding-left: 11px; }
+.sub-bodybuilding { padding-left: 153px; }
+.sub-sportextends { padding-left: 310px; }
+.sub-healthtrain { text-align: right; } 
+.sub-sportconsult { text-align: right; }
+
 /* banner */
 /*.banner { height: 654px; background: url("../images/banner_home.jpg") no-repeat 18px 25px; }*/
 .banner-home { overflow: hidden; height: 640px; background: url("../images/banner_bg.jpg") no-repeat center bottom;background-color: #000; position: relative; padding-top: 16px; }
