@@ -118,19 +118,19 @@
                     <div class="mod-body">
                         <ul class="student-list">
                             <li class="list-item">
-                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_1.jpg"></h2>
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_1.jpg" bigsrc="./images/student_pic_1_big.jpg"></h2>
                                 <p class="item-title" href="#">帝斯力会员风采--休息</p>
                             </li>
                             <li class="list-item">
-                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_2.jpg"></h2>
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_2.jpg" bigsrc="./images/student_pic_1_big.jpg"></h2>
                                 <p class="item-title" href="#">帝斯力会员风采--休息</p>
                             </li>
                             <li class="list-item">
-                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_3.jpg"></h2>
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_3.jpg" bigsrc="./images/student_pic_1_big.jpg"></h2>
                                 <p class="item-title" href="#">帝斯力会员风采--休息</p>
                             </li>
                             <li class="list-item">
-                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_4.jpg"></h2>
+                                <h2 class="pic-wrap"><img class="pic" src="./images/student_pic_4.jpg" bigsrc="./images/student_pic_1_big.jpg"></h2>
                                 <p class="item-title" href="#">帝斯力会员风采--休息</p>
                             </li>
                             <li class="list-item">
@@ -176,7 +176,7 @@
                             <li class="item"><a href="#" class="btn">4</a></li>
                             <li class="item"><a href="#" class="btn">5</a></li>
                             <li class="item hellip">&hellip;</li>
-                            <li class="item"><a href="#" class="btn">&gt;&gt;</a></li>
+                            <li class="item"><a href="#" class="btn"><span style="font-family:'宋体'">&gt;&gt;</span></a></li>
                             <li class="item"><a href="#" class="btn">尾</a></li>
                         </ul>
                     </div>
@@ -231,7 +231,7 @@
             $( ".picture-detail" ).hide(300);
         } );
         $( ".i-gallery .student-list .list-item" ).click( function () {
-            var imgsrc = $( this ).find( ".pic" ).attr( "src" );
+            var imgsrc = $( this ).find( ".pic" ).attr( "bigsrc" );
             $( ".picture-detail" ).show(100);
             $( ".picture-detail img" ).attr( "src", imgsrc );
         } );
