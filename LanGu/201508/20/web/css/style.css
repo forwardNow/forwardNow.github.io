@@ -34,7 +34,7 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 
 /* 调整子菜单位置 */
 .submenu { box-sizing: border-box; width: 1000px; margin: 0 auto; }
-.sub-companyprofile { padding-left: 11px; }
+.sub-companyprofile { padding-left: 9px; }
 .sub-bodybuilding { padding-left: 153px; }
 .sub-sportextends { padding-left: 310px; }
 .sub-healthtrain { text-align: right; } 

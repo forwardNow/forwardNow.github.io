@@ -9,8 +9,9 @@
     <title>京金联</title>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js"></script>    
-    <!--  小工具 -->
+    <!--  财富成就-->
     <link rel="stylesheet" type="text/css" href="./css/style2.css">
+
 </head>
 <body>
     
@@ -32,7 +33,7 @@
                 <a class="top-menu-item" href="#">登录</a>
                 <a class="top-menu-item top-reg" href="#">免费注册</a>
             </div>
-            <div class="clearfix"></div>
+			<div class="clearfix"></div>
         </div>
 
     </div>
@@ -46,7 +47,7 @@
             
             <div class="home-nav" role="nav">
                 <ul class="nav-list clearfix">
-                    <li class="list-item"><a href="#">我要理财</a><i class="sub-indicator"></i></li>
+                    <li class="list-item active"><a href="#">我要理财</a><i class="sub-indicator"></i></li>
                     <li class="list-item"><a href="#">我要借款</a><i class="sub-indicator"></i></li>
                     <li class="list-item"><a href="#">新手指引</a></li>
                     <li class="list-item"><a href="#">京金币介绍</a></li>
@@ -61,23 +62,53 @@
 <!-- /header -->
     
 <!-- inner page banner -->    
-    <div class="page-banner" style="background-image:url('images/page_banner_policy.jpg');">
-        <div class="wrap">
-            <div class="position">
-                首页<span>&gt;</span>更多<span>&gt;</span>法律保障
+    <div class="page-banner" style=" background-image:url(images/page_banner_cfcj.jpg);">
+    	<div class="wrap">
+        	<div class="position">
+                首页<span>&gt;</span>财富成就
             </div>
         </div>
     </div>
 <!-- /inner page banner -->
     
-    
 <!-- main --> 
-    <div class="main" role="main">
+    <div class="main wealth-a" role="main">
     
-    
-
-    
-    
+        <div class="earnings-text">
+            <table class="earnings-text-tab">
+                <col width="386">
+                <col width="462">
+                <tr>
+                    <th>累计为投资人赚取收益（元）</th><th>交易总额（元）</th><th>风险准备金（元）</th>
+                </tr>
+                <tr>
+                    <td class="key">130,764,601.21</td><td>3,671,187,180</td><td>10,000,000.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="earnings-graph">
+            <dl class="earnings-graph-list">
+                <dt class="title">
+                    <h3 class="average">17.51%</h3>
+                    <p class="desc">平均收益率</p>
+                </dt>
+                <dd class="item first">
+                    <h3 class="multiple"><i>50</i>倍</h3>
+                    <p class="desc">活期存款收益(0.35%)</p>
+                </dd>
+                <dd class="item second">
+                    <h3 class="multiple"><i>8.76</i>倍</h3>
+                    <p class="desc">定期存款收益(2.00%)</p>
+                </dd>
+                <dd class="item third">
+                    <h3 class="multiple"><i>5.30</i>倍</h3>
+                    <p class="desc">余额宝收益(3.30%)</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="go2reg">
+            <a href="#" class="reg-btn">立即注册</a>
+        </div>
     </div>
 <!-- /main --> 
 
@@ -147,5 +178,6 @@
         <a href="#" class="aside-tools-go2top"></a>
     </div>
 <!-- /aside-tools -->
+
 </body>
 </html>
