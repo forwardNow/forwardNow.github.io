@@ -8,38 +8,257 @@
     <link rel="stylesheet" type="text/css" href="./css/public.css">
     <title>京金联</title>
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/main.js"></script>    
-    <!--  京金币介绍.psd
-	    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    -->
+    <script src="./js/main.js"></script> 
+    <!-- 京金币介绍    -->
+    <link rel="stylesheet" type="text/css" href="./css/style2.css">
 </head>
 <body>
-
+    
 <!-- top -->
-    <div class="top" role="top"></div>
+    <div class="top">
+
+        <div class="wrap">
+            <div class="top-text">
+                <label class="top-tel-label">欢迎致电：</label><span class="top-tel-cont">400-888-6688</span><!-- 
+             --><label class="top-stime-label">服务时间：</label><span class="top-stime-cont">9:00 - 21:00</span>
+            </div>
+            <div class="top-icon">
+                <a class="top-icon-sina" href="#"><!-- 新浪微博 --></a><a class="top-icon-wechat" href="#"><!-- 微信 --></a>
+            </div>
+            <div class="top-menu">
+                <a class="top-menu-item" href="#">预置板块</a>
+                <a class="top-menu-item" href="#">预置板块</a>
+                <a class="top-menu-item" href="#">下载客户端</a>
+                <a class="top-menu-item" href="#">登录</a>
+                <a class="top-menu-item top-reg" href="#">免费注册</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
 <!-- /top -->    
 
 <!-- header -->
-    <div class="header" role="header"></div>
+    <div class="header" role="header">
+        <div class="header-inner wrap">
+            
+            <h1 class="sitelogo-wrap"><a class="sitelogo" href="index.html"></a></h1>
+            
+            <div class="home-nav" role="nav">
+                <ul class="nav-list clearfix">
+                    <li class="list-item"><a href="#">我要理财</a><i class="sub-indicator"></i></li>
+                    <li class="list-item"><a href="#">我要借款</a><i class="sub-indicator"></i></li>
+                    <li class="list-item"><a href="#">新手指引</a></li>
+                    <li class="list-item"><a href="#">京金币介绍</a></li>
+                </ul>
+            </div>
+
+            <a class="header-more" href="#">更多</a>
+
+        </div>
+
+    </div>
 <!-- /header -->
     
 <!-- inner page banner -->    
-    <div class="page-banner" role="banner"></div>
+    <div class="page-banner" style="background-image:url('images/page_banner_goldintro.jpg');">
+        <div class="wrap">
+            <div class="page-banner-text">
+                <h1 class="page-banner-text-title">京金币介绍</h1>
+                <p class="page-banner-text-p" style="font-style:normal;">公开透明、本息保障、多重认证、高效稳定</p>
+            </div>
+        </div>
+    </div>
 <!-- /inner page banner -->
     
+    
 <!-- main --> 
-    <div class="main" role="main">
+    <div class="main main-goldintro" role="main">
     
+        <div class="gold-rules">
+            <dl class="gold-rules__list">
+                <dt class="list__title">京金币使用规则</dt>
+                <dd class="list__item">
+                    <a class="item__num" href="javascript:void(0)">1</a>
+                    <div class="item__msg item__msg_right"><i class="msg__arrow msg__arrow_left"></i>京金币为京金联向投资用户发放的一种投资体验金,满标后将发放至用户账户</div>
+                </dd>
+                <dd class="list__item">
+                    <a class="item__num" href="javascript:void(0)">2</a>
+                    <div class="item__msg item__msg_left align-center"><i class="msg__arrow msg__arrow_right"></i>京金币标每份投资金额为<em class="msg__keyword">20000</em>元,按分数进行投资</div>
+                </dd>
+                <dd class="list__item">
+                    <a class="item__num" href="javascript:void(0)">3</a>
+                    <div class="item__msg item__msg_right"><i class="msg__arrow msg__arrow_left"></i>京金币按“<em class="msg__keyword">20000送100</em>”(1月标、2月标、3月标)及“20000送200”(6月标、12月标)标准发放,具体金额以投资分数换算获得，以此类推，上不封顶</div>
+                </dd>
+                <dd class="list__item">
+                    <a class="item__num" href="javascript:void(0)">4</a>
+                    <div class="item__msg item__msg_left"><i class="msg__arrow msg__arrow_right"></i>京金产生的收益将根据投资标的收益率、期限进行换算,由<em class="msg__keyword">环迅</em>支付后台在第一个月获取利息收益后一周内一次性发放至用户投资收益账户,用户可以随时提现；该收益部分不收取利息管理费</div>
+                </dd>
+                <dd class="list__item">
+                    <a class="item__num" href="javascript:void(0)">5</a>
+                    <div class="item__msg item__msg_right"><i class="msg__arrow msg__arrow_left"></i>用户可以在首页-我的账户中查看获赠的京金币数额；并可以通过“我的投资”列表查看投资标的获赠京金币的具体金额</div>
+                </dd>
+                <dd class="list__item">
+                    <a class="item__num" href="javascript:void(0)">6</a>
+                    <div class="item__msg item__msg_left align-center"><i class="msg__arrow msg__arrow_right"></i>京金币不可拆分,不可提现</div>
+                </dd>
+            </dl>
+        </div>
+        <script>
+        $( function () {
+            // 根据高度定位元素
+            $(".gold-rules__list .list__item .item__msg").css( "top", function () {
+                return $( this ).outerHeight() * ( -0.5) + 23;
+            } );
+        } );
+        </script>
     
-    <!-- 你的代码  -->
-    
-    
+
+        <div class="gold-display">
+            
+            <div class="gold-display__item gold-display__item_what">
+                <div class="wrap">
+                    <div class="item__desc">
+                        <h2 class="desc__title">什么是京金币？</h2>
+                        <p class="desc__cont">京金币为京金联向投资用户发放的<br>一种投资体验金,满标后将发放至用户账户</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gold-display__item gold-display__item_get">
+                <div class="wrap">
+                    <div class="item__desc">
+                        <h2 class="desc__title">如何获得京金币？</h2>
+                        <p class="desc__cont">用户投资京金币标(标的项目前面注明“金”)<br>即可参与京金币奖励活动<br>京金币标每份投资金额为20000元,按照份<br>数进行投资</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="gold-display__item gold-display__item_grant">
+                <div class="wrap">
+                    <div class="item__desc">
+                        <h2 class="desc__title">京金币<br>的发放标准</h2>
+                        <p class="desc__cont">“20000送100”<br>(1月标、2月标、3月标)<br>“20000送200”<br>(6月标、12月标) </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="gold-display__item gold-display__item_time">
+                <div class="wrap">
+                    <div class="item__desc">
+                        <h2 class="desc__title">京金币的发放时间</h2>
+                        <p class="desc__cont">京金产生的收益将根据投资标的收益率、期限进行<br>换算,由环迅支付后台在第一个月获取利息收益后一<br>周内一次性发放至用户投资收益账户,用户可以随时<br>提现；该收益部分不收取利息管理费</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="gold-tips">
+            <div class="gold-tips__wrap">
+                <div class="gold-tips__head">京金币小贴士</div>
+                <div class="gold-tips__body ">
+                    <div class="gold-tips__item" style="display: block;">
+                        <h1 class="body__ask">如何查看京金币数量?</h1>
+                        <p class="body__answer">用户可以在首页-我的账户中查看获赠的京金币数额；并可以通过“我的投资”列表查看投资标的获赠京金币的具体金额</p>
+                    </div>
+                    <div class="gold-tips__item">
+                        <h1 class="body__ask">如何查看京金币数量2?</h1>
+                        <p class="body__answer">2用户可以在首页-我的账户中查看获赠的京金币数额；并可以通过“我的投资”列表查看投资标的获赠京金币的具体金额</p>
+                    </div>
+                    <div class="gold-tips__item">
+                        <h1 class="body__ask">如何查看京金币数量3?</h1>
+                        <p class="body__answer">3用户可以在首页-我的账户中查看获赠的京金币数额；并可以通过“我的投资”列表查看投资标的获赠京金币的具体金额</p>
+                    </div>
+                    <div class="gold-tips__item">
+                        <h1 class="body__ask">如何查看京金币数量4?</h1>
+                        <p class="body__answer">4用户可以在首页-我的账户中查看获赠的京金币数额；并可以通过“我的投资”列表查看投资标的获赠京金币的具体金额</p>
+                    </div>
+                </div>
+                <div class="gold-tips__foot">
+                    <a class="gold-tips__index gold-tips__index_active" href="javascript:void(0)"></a><!-- 
+                 --><a class="gold-tips__index" href="javascript:void(0)"></a><!-- 
+                 --><a class="gold-tips__index" href="javascript:void(0)"></a><!-- 
+                 --><a class="gold-tips__index" href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div>
+        <script>
+        $( function () {
+            $( ".gold-tips__index" ).click( function () {
+                var $self = $( this );
+                var index = $self.index();
+                $self.addClass( "gold-tips__index_active" ).siblings().removeClass( "gold-tips__index_active" );
+                $( ".gold-tips__item " ).hide().eq( index ).stop().slideDown();
+            } );
+        } );
+        </script>
     </div>
 <!-- /main --> 
 
-<!-- footer -->     
-    <div class="footer" role="footer"></div>
-<!-- /footer -->     
 
+<!-- footer -->     
+    <div class="footer" role="footer">
+        
+        <div class="footer-inner wrap">
+            
+            <div class="link-groups">
+
+                <dl class="link-group">
+                    <dt class="link-title">帮助中心</dt>
+                    <dd class="link-item"><a href="#">投资原理</a></dd>
+                    <dd class="link-item"><a href="#">融资发布</a></dd>
+                    <dd class="link-item"><a href="#">常见问题</a></dd>
+                </dl>
+                <dl class="link-group">
+                    <dt class="link-title">网贷学堂</dt>
+                    <dd class="link-item"><a href="#">网贷知识</a></dd>
+                    <dd class="link-item"><a href="#">理财攻略</a></dd>
+                    <dd class="link-item"><a href="#">名词解释</a></dd>
+                </dl>
+                <dl class="link-group">
+                    <dt class="link-title">新手指引</dt>
+                    <dd class="link-item"><a href="#">投资流程</a></dd>
+                    <dd class="link-item"><a href="#">资费说明</a></dd>
+                    <dd class="link-item"><a href="#">平台活动</a></dd>
+                </dl>
+                <dl class="link-group">
+                    <dt class="link-title">关于我们</dt>
+                    <dd class="link-item"><a href="#">公司介绍</a></dd>
+                    <dd class="link-item"><a href="#">管理团队</a></dd>
+                    <dd class="link-item"><a href="#">联系我们</a></dd>
+                </dl>
+                
+                <dl class="client-service">
+                    <dt class="cs-title">客户服务</dt>
+                    <dd class="cs-item cs-wechat"><a href="#"><img src="./images/footer_cs_1.png"></a></dd>
+                    <dd class="cs-item cs-sina"><a href="#"><img src="./images/footer_cs_2.png"></a></dd>
+                    <dd class="cs-item cs-weibo"><a href="#"><img src="./images/footer_cs_3.png"></a></dd>
+                </dl>
+
+            </div>
+
+            <div class="authentication">
+                <a href="#"><img src="./images/authentication_1.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_2.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_3.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_4.png" alt=""></a><!-- 
+             --><a href="#"><img src="./images/authentication_5.png" alt=""></a>
+            </div>
+            
+            <div class="copyright">
+                <p>湖北xxxxxxxxxxxxx有限公司</p>
+                <p>湖北省武汉市东湖高新技术开发区xxxxxxxxxxx</p>
+                <p>鄂CP备010101011010号</p>
+            </div>
+        </div>
+
+    </div>
+<!-- /footer --> 
+
+<!-- aside-tools -->
+    <div class="aside-tools">
+        <a href="#" class="aside-tools-qq"></a>
+        <a href="#" class="aside-tools-qqzone"></a>
+        <a href="#" class="aside-tools-go2top"></a>
+    </div>
+<!-- /aside-tools -->
 </body>
 </html>

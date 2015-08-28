@@ -268,7 +268,57 @@ body {
 .servicearea-manufacture .arrow { right: auto; left: 0px; background-position: 0px 0px; }
 
 
-/* 2015-08-21 修改banner图片 */
+/* 2015-08-21 修改banner 图片 */
 .banner-inner .banner-btn {
     background-image: url("../images/banner_btn.png");
+}
+
+/* 2015-08-28 修改banner */
+.banner-inner { background: none; }
+.banner { background-image: url("../images/banner_bg.jpg"); background-repeat: no-repeat; background-position: center center; }
+.banner-inner .banner-info { top: 169px; }
+.banner-inner .banner-btn { height: 46px; }
+ /* 修改 "核心优势" */
+.core-advantage-list {
+    margin: 0;
+    line-height: 1;
+    padding-left: 20px;
+    padding-top: 26px;
+    padding-bottom: 40px;
+    border-left: solid 1px #e6e6e6;
+    position: relative;
+    top: -19px;
+    margin-left: 4px;
+}
+.core-advantage-list .list__item {
+    position: relative;
+    margin-bottom: 24px;
+}
+.core-advantage-list .list__item_last {
+    margin-bottom: 0px;
+}
+.core-advantage-list .item__symbol {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #dbdbdb;
+    color: #934787;
+    left: -29px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    font-family: Arial;
+}
+.core-advantage-list .list-style_arrow {
+    z-index: 3;
+    position: absolute;
+    display:inline-block;width:0;height:0;overflow:hidden;line-height:0;font-size:0;
+    vertical-align:middle;
+    border-top: 13px solid #e6e6e6;
+    border-bottom: 0 none;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    bottom: -6px;
+    left: -7px;
 }

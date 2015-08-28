@@ -1,0 +1,21 @@
+完成情况：（ 7/10 ）
+
+	1. 主页（index.html）								√（已完成）
+	
+	2. 京金币介绍（gold_introduce.html）				√（已完成）
+	
+	3. 小工具（tools.html）							√（已完成）
+	
+	4. 法律政策（policy.html）							√（已完成）
+	
+	5. 财富成就（wealth_achievement.html）				√（已完成）
+	
+	6. 我要贷款（loan.html）							√（已完成）
+	
+	7. 我要理财-计算器样式1（wealth_management.html）	×【未完成】
+	
+	8. 新手指引（gold_introduce.html）              	√（已完成）
+	
+	9. 项目详情-审核记录（proj_detail_audit.html）		×【未完成】
+	
+	10.项目详情（proj_detail.html）					×【未完成】

@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 h1,h2,h3 { font-weight: normal; }
-i { font-style: normal; }
+i,em { font-style: normal; }
+.align-left { text-align: left!important; }
+.align-right { text-align: right!important; }
+.align-center { text-align: center!important; }
 /* 法规政策 */
 .FAQ-list { font-family: "Microsoft Yahei"; width: 760px; margin: 0 auto; padding: 40px 0 80px 0; }
 .FAQ-list .item { border-bottom: solid 1px #dddddd; padding-left: 38px; }
@@ -61,10 +64,11 @@ i { font-style: normal; }
 /* 小工具-计算器 */
 .tools-tab-calculator .c-table { margin-top: 52px; margin-left: 182px; color: #292929; }
 .tools-tab-calculator .c-table tr { height: 60px; }
-.tools-tab-calculator .c-table td { }
+.tools-tab-calculator .c-table td {}
 .tools-tab-calculator .c-table .label { font-size: 14px; color: #292929; padding-right: 6px; }
 .tools-tab-calculator .c-table i { color: #69737b; padding-left: 10px; }
-.tools-tab-calculator .c-table .input { width: 250px; height: 42px; border: solid 1px #b4b9bd; border-radius: 2px; }
+.tools-tab-calculator .c-table .input { width: 242px; height: 42px;line-height: 42px; font-size: 16px;padding-left: 8px;border: solid 1px #b4b9bd; border-radius: 2px; }
+.tools-tab-calculator .c-table .input select { width: 242px;  border: none 0;}
 .tools-tab-calculator .c-table .submit,
 .tools-tab-calculator .c-table .reset { border: none 0; width: 76px; height: 30px; line-height: 30px; font-size: 12px; border-radius: 2px; }
 .tools-tab-calculator .c-table .submit { margin-right: 18px; background-color: #c8b063; color: #fff; }
@@ -89,7 +93,7 @@ i { font-style: normal; }
 .tools-tab .query-ope { margin-top: 35px; margin-left: 95px; }
 .tools-tab .q-tips { font-size: 12px; color: #909090; }
 .tools-tab .q-input-wrap { margin-top: 23px; }
-.tools-tab  .q-input { width: 242px; height: 40px; border: solid 1px #b4b9bd; border-radius: 2px; font-size: 16px; padding-left: 8px; }
+.tools-tab .q-input { width: 242px; height: 40px; line-height: 40px; font-size: 16px; border: solid 1px #b4b9bd; border-radius: 2px; font-size: 16px; padding-left: 8px; }
 .tools-tab .q-btns { margin-top: 20px; }
 .tools-tab .q-commit,
 .tools-tab .q-reset { width: 76px; height: 30px; line-height: 30px; text-align: center; border-radius: 2px; font-size: 12px; border: none 0; }
@@ -109,3 +113,120 @@ i { font-style: normal; }
 .tools-tab .query-history .q-ip { font-size: 16px; font-family: "Microsoft Yahei"; font-weight: bold; }
 .tools-tab .query-history .q-src { font-size: 12px; margin-left: 20px;}
 .tools-tab .query-history .q-src i { margin-right: 14px;}
+
+/* 小工具-借款协议范本 */
+.tools-tab-agreement .body { text-align: center; padding: 24px 0 52px 0; }
+
+
+
+/* 京金币介绍 */
+.gold-rules { background-color: #fcfcfc; line-height: 1; padding-top: 18px; border-bottom: solid 2px #a0a0a0; }
+.gold-rules__list { font-family: "Microsoft Yahei"; width: 249px; margin: 0 auto; background: url("../images/line_1.png") repeat-y center 0; padding-bottom: 58px; }
+.gold-rules__list .list__title { width: 247px; height: 53px; border: solid 2px #a0a0a0; font-size: 30px; color: #515151; line-height: 53px; text-align: center; background-color: #fcfcfc; margin-bottom: 39px; }
+.gold-rules__list .list__item { position: relative; text-align: center; height: 81px; vertical-align: middle; }
+.gold-rules__list .list__item .item__num { display:inline-block; width: 57px; height: 57px; background-color: #c8a063; border-radius: 57px; line-height: 57px; text-align: center; font-size: 30px; color: #ffffff; }
+.gold-rules__list .list__item .item__msg { position: absolute; top: -0px; width: 464px; padding: 17px 17px 13px 19px; border: solid 1px #d2d2d2; border-radius: 10px; font-size: 16px; color: #4f4f4f; line-height: 20px; text-align: left; }
+.gold-rules__list .list__item .item__msg .msg__keyword { color: #c8a063; }
+.gold-rules__list .list__item .item__msg_right { left: 172px; }
+.gold-rules__list .list__item .item__msg_left { right: 172px; }
+.gold-rules__list .list__item .item__msg .msg__arrow { width: 18px; height: 26px; position: absolute; top: 50%; margin-top: -13px; }
+.gold-rules__list .list__item .item__msg .msg__arrow_left { background: url("../images/msg_arrow_left.png") no-repeat 0 0; left: -18px; }
+.gold-rules__list .list__item .item__msg .msg__arrow_right { background: url("../images/msg_arrow_right.png") no-repeat 0 0; right: -18px; }
+
+
+.gold-display { }
+.gold-display__item { height: 460px; }
+.gold-display__item .wrap { width: 1086px; height: 100%; }
+.gold-display__item .item__desc { font-family: "Microsoft YaHei"; line-height: 1; margin-top: 160px; }
+.gold-display__item .desc__title { font-size: 30px; color: #6f6f6f; }
+.gold-display__item .desc__cont { font-size: 24px; color: #929292; line-height: 30px; margin-top: 28px; }
+.gold-display__item_what { text-align: right; }
+.gold-display__item_what .wrap { background: url("../images/gold_what.png") no-repeat 98px 100px; }
+
+.gold-display__item_what .item__desc { float: right; }
+.gold-display__item_get { text-align: left; background-color: #fafafa; }
+.gold-display__item_get .wrap { background: url("../images/gold_get.png") no-repeat 788px 100px; }
+.gold-display__item_get .item__desc { float: left; }
+
+.gold-display__item_grant { background-color: #ffffff; text-align: center; }
+.gold-display__item_grant .wrap { background: url("../images/gold_grant.png") no-repeat center center; }
+.gold-display__item_grant .desc__title { float: left; margin-left: 60px; margin-top: 192px; line-height: 36px; }
+.gold-display__item_grant .desc__cont { float: right; margin-top: 174px; margin-right: 0px; }
+
+.gold-display__item_time { background-color: #225060; }
+.gold-display__item_time .wrap { padding: 0 59px 0 55px; background: url("../images/gold_time.png") no-repeat 0 118px; }
+.gold-display__item_time .item__desc { width: 476px; float: right; margin-top: 134px; }
+.gold-display__item_time .desc__title { color: #ffffff; }
+.gold-display__item_time .desc__cont { color: #e9e9e9; font-size: 20px; margin-top: 60px; }
+
+.gold-tips { height: 504px; background: url("../images/gold_other.jpg") no-repeat center center; font-family: "Microsoft Yahei"; line-height: 1; text-align: center; }
+.gold-tips__wrap { width: 1086px; height: 100%; overflow: hidden; margin: 0 auto; position: relative;}
+.gold-tips__head { color: #5f5f5f; font-size: 38px; margin-top: 126px; }
+.gold-tips__body { overflow: hidden; }
+.gold-tips__body .body__ask { font-size: 30px; color: #919191; margin-top: 60px; }
+.gold-tips__body .body__answer { font-size: 24px; color: #4f4f4f; margin-top: 40px; line-height: 28px; }
+.gold-tips__foot { width: 100%; position: absolute; left: 0; bottom: 90px; }
+.gold-tips__index { display: inline-block; width: 10px; height: 10px; border-radius: 10px; background-color: #b5b5b5; margin: 0 6px; }
+.gold-tips__item { display: none; }
+.gold-tips__index_active { background-color: #c8a063; }
+
+
+/* 新手指引 */
+.main-loanguide { font-family: "Microsoft YaHei"; line-height: 1; }
+.loan-guide__process { height: 750px; background-color: #fff; }
+.process__inner { width: 1100px; margin: 0 auto; text-align: center; overflow: hidden; }
+.process__head { font-size: 32px; color: #5f5f5f; margin-top: 96px; }
+.process__body { margin-top: 68px; }
+.process__body .body__cont { font-size: 18px; color: #7a7a7a; line-height: 30px; }
+.process__body .body__graph { margin-top: 48px; }
+.process__body .graph__img { }
+
+.loan-guide__how2loan { background: url("../images/loan_how2loan.jpg") no-repeat center center; height: 446px; }
+.how2loan__inner { height: 100%; }
+.how2loan__data { position: relative; width: 742px; height: 446px; float: left; }
+.data__item { position: absolute; color: #c8a063; font-size: 72px; }
+.data__item_percent { top: 88px; left: 32px; }
+.data__item_regs { top: 88px; right: 110px; }
+.data__item_total { left: 32px; top: 296px; }
+.data__item_avg { top: 296px; right: 110px; }
+.how2loan__how { float: left; width: 450px; color: #fff; }
+.how__head { font-size: 24px; line-height: 51px; padding-left: 16px; border-left: solid 5px #fff; margin-top: 57px; margin-left: 36px; }
+.how__body { margin: 20px 10px 0 24px; }
+.how__body .body__cont { font-size: 16px; line-height: 24px; margin-bottom: 78px; }
+.go-reg-btn { display: block; color: #fff; font-size: 24px; text-align: center; height: 48px; width: 193px; line-height: 48px; letter-spacing: 6px; border-radius: 48px; border: solid 2px #fff; }
+.body__go-reg:hover { background-color: #c8a063; border-color: #c8a063; }
+
+.loan-guide__invest { height: 924px; background-color: #f5f6fa; text-align: center; }
+.invest__inner { height: 100%; overflow: hidden; }
+.invest__head { padding-top: 96px; font-size: 30px; color: #5f5f5f; background: url("../images/loan_invest_logo.png") no-repeat center 0; margin-top: 80px; }
+.invest__body { width: 950px; margin: 0 auto; margin-top: 58px; }
+.invest__body .body__tab { }
+.focus { }
+.focus-tab { overflow: hidden; }
+.tab__item { float: left; font-size: 22px; color: #475766; background-image: url("../images/focus_tab_btn.png"); background-repeat: no-repeat; background-position: -221px 0; width: 190px; height: 54px; line-height: 54px; }
+.tab__item_first { background-position-x: 0; width: 179px; }
+.tab__item_active { background-position-y: -69px; color: #fff; }
+.body__display { margin-top: 54px; }
+.focus-display { position: relative; }
+.focus-display__inner { width: 802px; height: 469px; overflow: hidden; background-color: #e5e5e5; border-radius: 28px; margin: 0 auto; }
+.focus_page { vertical-align:middle; border:0 none; display: none; }
+.focus_page_active { display:inline-block; }
+.hook { display:inline-block; width:0; height:100%; overflow:hidden; margin-left:-1px; font-size:0; line-height:0; vertical-align:middle; }
+.focus-display__control { }
+.control__btn { position: absolute; width: 31px; height: 61px; background: url("../images/focus_scroll_btn.png") no-repeat 0 0; top: 190px; }
+.control__btn_left { background-position-y: 0; left: 0; }
+.control__btn_right { background-position-y: -120px; right: 0; }
+
+.loan-guide__faq { background-color: #ffffff; line-height: 1; }
+.faq_inner { overflow: hidden; }
+.faq__head { padding-top: 98px; color: #5f5f5f; font-size: 30px; text-align: center; background: url("../images/more.png") no-repeat center 0; margin-top: 42px; }
+.faq__body { margin-top: 56px; width: 900px; margin-left: 200px; padding-bottom: 48px; }
+.faq__list { }
+.faq__item { color: #475766; font-size: 16px; margin-bottom: 26px; padding-left: 28px; }
+.faq__item .item__question { font-size: 16px; font-weight: bold; position: relative; }
+.faq__item .item__answer { line-height: 30px; margin-top: 8px; position: relative; }
+.item__question:before,.item__answer:before { position: absolute; left: -28px; top: 0; }
+.item__question:before { content: "Q："; }
+.item__answer:before { content: "A："; }
+.faq-body__go-reg { color: #c8a063; border-color: #c8a063; margin-left: 280px; margin-top: 45px; }
+.faq-body__go-reg:hover { background-color: #c8a063; color: #fff; }

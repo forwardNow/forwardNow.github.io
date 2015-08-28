@@ -61,10 +61,14 @@
 <!-- /header -->
     
 <!-- inner page banner -->    
-    <div class="page-banner" style="background-image:url('images/page_banner_tools.jpg');">
+    <div class="page-banner" style="background-image:url('images/page_banner_tools_2.jpg');">
         <div class="wrap">
+            <div class="page-banner-text">
+                <h1 class="page-banner-text-title">小工具</h1>
+                <p class="page-banner-text-p">京金联提供安全、有保障、高收益的<br>互联网理财服务</p>
+            </div>
             <div class="position">
-                首页<span>&gt;</span>我要理财<span>&gt;</span>小工具
+                <a href="#">首页</a><span>&gt;</span><a href="#">我要理财</a><span>&gt;</span>小工具
             </div>
         </div>
     </div>
@@ -77,14 +81,14 @@
         <div class="tools-tabs wrap">
             
             <ul class="tools-tab-title">
-                <li class="item tab-title-calculator"></li>
+                <li class="item tab-title-calculator active"></li>
                 <li class="item tab-title-ip "></li>
-                <li class="item tab-title-tel active"></li>
+                <li class="item tab-title-tel "></li>
                 <li class="item tab-title-agreement"></li>
             </ul>    
             
             <div class="tools-tab-container">
-                <div class="tools-tab tools-tab-calculator" style="display: none;">
+                <div class="tools-tab tools-tab-calculator" style="display: block;">
                     
                     <div class="head">
                         <h1 class="head-title">收益计算器</h1>
@@ -102,7 +106,16 @@
                                 <td class="label">年化利率：</td><td><input class="input" type="text"><i>%</i></td>
                             </tr>
                             <tr>
-                                <td class="label">还款方式：</td><td><input class="input" type="text"></td>
+                                <td class="label">还款方式：</td>
+                                <td>
+                                    <div class="input">
+                                        <select name="" id="">
+                                            <option>等额本息</option>
+                                            <option>等额本息2</option>
+                                            <option>等额本息3</option>
+                                        </select>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
@@ -176,7 +189,7 @@
                     </div>
 
                 </div>
-                <div class="tools-tab tools-tab-tel" style="display: block;">
+                <div class="tools-tab tools-tab-tel" style="display: none;">
                     
                     <div class="head">
                         <h1 class="head-title">手机号码查询</h1>
@@ -212,7 +225,14 @@
                     </div>
 
                 </div>
-
+                <div class="tools-tab tools-tab-agreement" style="display: none;">
+                    <div class="head">
+                        <h1 class="head-title">借款协议范本</h1>
+                    </div>
+                    <div class="body">                    
+                        <img src="./images/agreement_demo.png" alt="借款协议范本">
+                    </div>                        
+                </div>
             </div>
 
         </div>

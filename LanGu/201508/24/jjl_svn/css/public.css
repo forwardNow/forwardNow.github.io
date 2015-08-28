@@ -48,7 +48,11 @@ a { text-decoration: none; }
 .page-banner{ height:225px; background-repeat: no-repeat; background-position: center center;}
 .page-banner .wrap{ height:225px; position:relative;}
 .page-banner .position{ height:20px; line-height:20px; position:absolute; right:110px; top:100px; color:#fff; text-shadow: 2px 2px 5px rgba(0,0,4, 0.75);}
-.page-banner .position span{ color:#fff; padding:0 10px;}
+.page-banner .position span,
+.page-banner .position a { color:#fff; padding:0 10px;}
+.page-banner-text { font-family: "Microsoft Yahei"; color: #fff; letter-spacing: 1px; position: absolute; top: 65px; left: 109px; }
+.page-banner-text-title { display:inline-block; font-size: 24px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); line-height: 1; padding: 0 21px 13px 4px; border-bottom: solid 3px #c8a063; }
+.page-banner-text-p { font-size: 14px; font-style: italic; line-height: 24px; margin-top: 12px; }
 
 /* =banner */
 .banner { height: 450px; position: relative;}
