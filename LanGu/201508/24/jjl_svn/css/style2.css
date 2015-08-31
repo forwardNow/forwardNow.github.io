@@ -19,7 +19,7 @@ i,em { font-style: normal; }
 .wealth-a { font-family: "Microsoft YaHei"; line-height: 1; }
 .earnings-text { background-color: #fcfcfc; height: 134px; padding-top: 54px; }
 .earnings-text-tab { width: 1160px; margin: 0 auto; text-align: left; color: #666666; }
-.earnings-text-tab th { font-size: 16px; }
+.earnings-text-tab th { font-size: 16px; padding-left: 2px;}
 .earnings-text-tab td { font-size: 48px; vertical-align: bottom; height: 68px; }
 .earnings-text-tab td.key { color: #c8a063; }
 .earnings-graph { height: 368px; width: 1200px; margin: 0 auto; padding-top: 60px; }
@@ -30,7 +30,7 @@ i,em { font-style: normal; }
 .earnings-graph .title .average { font-size: 48px; color: #c8a063; margin-bottom: 20px; }
 .earnings-graph .item { float: left; width: 234px; height: 300px; margin-right: 57px; }
 .earnings-graph .multiple { height: 234px; background-repeat: no-repeat; background-position: center center; color: #666666; font-style: 16px; padding-top: 90px; margin-bottom: 35px; }
-.earnings-graph .multiple i { font-size: 52px; }
+.earnings-graph .multiple i { font-size: 55px; }
 .earnings-graph .average { }
 .earnings-graph .desc { font-size: 16px; color: #666666; }
 .earnings-graph .first .multiple i { color: #ec6941; }
