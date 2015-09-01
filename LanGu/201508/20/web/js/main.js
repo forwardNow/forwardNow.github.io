@@ -116,6 +116,7 @@ function doOutline() {
 
     // 给栏目大纲设置CSS动画
     $( ".content-outline .outline-item a" ).hover(
+        /*
         function() {
             var self = this;
             $( this ).addClass( "bounceOutRight animated active" );
@@ -126,6 +127,14 @@ function doOutline() {
         function () {
             $( this ).removeClass( "active" );
         }
+        */
+        function() {
+            $( this ).addClass( "jello animated active" );
+        },  
+        function () {
+            $( this ).removeClass( "jello animated active" );
+        }        
+
     );
 
     // 让栏目大纲随页面滚动

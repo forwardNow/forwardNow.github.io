@@ -289,3 +289,20 @@ body {
 .banner-inner .banner-btn,
 .banner-inner .banner-info { left: 72px; }
 .contact-us-address-text { line-height: inherit; }
+
+.successful-case-list-item {
+    padding: 0 8px;
+}
+.successful-case-list-item.pd-line1 {
+    padding: 0 18px;
+}
+.successful-case-list-item.pd-line3 {
+    padding: 0 28px;
+
+}
+
+/* 2015-09-01 */
+.servicearea-list-item-info-title {
+    font-size: 20px;
+}
+
