@@ -43,7 +43,7 @@
   width: 14rem;
   height: 2.2rem;
   border-radius: 0.2rem;
-  border: solid 0.1rem #664b3d;
+  border: solid 1px #664b3d;
   background-color: #2e2e2e;
   font-size: 1.1rem;
   line-height: 2.2rem;
@@ -60,7 +60,8 @@
 .tb_normal .tr_remark .textarea {
   width: 19.6rem;
   height: 8.2rem;
-  border: solid 0.1rem #664b3d;
+  border: solid 1px #664b3d;
+  border-radius: 0.2rem;
   background-color: #2e2e2e;
   font-size: 1.1rem;
   padding: 0.9rem;
