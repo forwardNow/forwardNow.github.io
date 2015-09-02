@@ -62,6 +62,9 @@
   height: 8.2rem;
   border: solid 0.1rem #664b3d;
   background-color: #2e2e2e;
+  font-size: 1.1rem;
+  padding: 0.9rem;
+  color: #999999;
 }
 .tb_normal .tb__submit-btn {
   border: none 0;
