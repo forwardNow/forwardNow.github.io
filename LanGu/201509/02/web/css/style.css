@@ -18,62 +18,81 @@
 .footer__copyright { color: #474747; font-size: 1rem; }
 
 /* =免费预约 */
-.main_order {
-  overflow: hidden;
-  padding-bottom: 6rem;
+.main_order { overflow: hidden; padding-bottom: 6rem; }
+.tb { }
+.tb_normal { margin-left: 1rem; margin-top: 1rem; }
+.tb_normal .tb__label { color: #6b6b6b; font-size: 1.3rem; width: 7.4rem; }
+.tb_normal .tb__cont { padding: 1.3rem 0; color: #999999; }
+.tb_normal .tb__input { width: 14rem; height: 2.2rem; border-radius: 0.2rem; border: solid 1px #664b3d; background-color: #2e2e2e; font-size: 1.1rem; line-height: 2.2rem; padding-left: 0.9rem; }
+.tb_normal .label_gender { margin-right: 1.4rem; margin-left: 0.4rem; }
+.tb_normal .tr_remark .tb__label { vertical-align: top; padding-top: 1.3rem; }
+.tb_normal .tr_remark .textarea { width: 19.6rem; height: 8.2rem; border: solid 1px #664b3d; border-radius: 0.2rem; background-color: #2e2e2e; font-size: 1.1rem; padding: 0.9rem; color: #999999; }
+.tb_normal .tr_remark .textarea::-webkit-input-placeholder { color: #808080; }
+.tb_normal .tb__submit-btn { border: none 0; width: 15.5rem; height: 3.2rem; background-color: #e89146; border-radius: 0.2rem; font-size: 1.6rem; color: #fcfcfc; margin-top: 2.3rem; }
+
+
+/* =关于我们 */
+.main_about-us {
+  padding: 1.6rem 1rem 6rem 1rem;
 }
-.tb {
+.article {
 
 }
-.tb_normal {
-  margin-left: 1rem;
+.about-us__article_brief {
+
+}
+.article__title {
+  color: #cccccc;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  border-left: solid 0.3rem #e89146;
+  padding-left: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.article__p {
+  color: #999999;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  text-indent: 2.4rem;
+  margin-bottom: 1.9rem;
+}
+.about-us__article_logo {
+  margin-top: 2.4rem;
+}
+.article__logo_wrap {
+  width: 5.3rem;
+  margin: 3.6rem auto 4rem auto;
+  text-align: center;
+}
+.article__logo {
+  width: 100%;
+}
+.article__logo-desc {
+  font-size: 1rem;
+  color: #999999;
   margin-top: 1rem;
+  line-height: 1;
 }
-.tb_normal .tb__label {
-  color: #6b6b6b;
-  font-size: 1.3rem;
-  width: 7.4rem;
-}
-.tb_normal .tb__cont {
-  /*height: 4.8rem;*/
-  padding: 1.3rem 0;
+.article__list {
   color: #999999;
+  font-size: 1.2rem;
+  padding-left: 2rem;
 }
-.tb_normal .tb__input {
-  width: 14rem;
-  height: 2.2rem;
-  border-radius: 0.2rem;
-  border: solid 1px #664b3d;
-  background-color: #2e2e2e;
-  font-size: 1.1rem;
-  line-height: 2.2rem;
-  padding-left: 0.9rem;
+.article__list .list__item {
+  line-height: 1.8rem;
+  position: relative;
 }
-.tb_normal .label_gender {
-  margin-right: 1.4rem;
-  margin-left: 0.4rem;
+.article__list .list__item::before {
+  position: absolute;
+  top: 0rem;
+  left: -2rem;
 }
-.tb_normal .tr_remark .tb__label {
-  vertical-align: top;
-  padding-top: 1.3rem;
-}
-.tb_normal .tr_remark .textarea {
-  width: 19.6rem;
-  height: 8.2rem;
-  border: solid 1px #664b3d;
-  border-radius: 0.2rem;
-  background-color: #2e2e2e;
-  font-size: 1.1rem;
-  padding: 0.9rem;
-  color: #999999;
-}
-.tb_normal .tb__submit-btn {
-  border: none 0;
-  width: 15.5rem;
-  height: 3.2rem;
-  background-color: #e89146;
-  border-radius: 0.2rem;
-  font-size: 1.6rem;
-  color: #fcfcfc;
-  margin-top: 2.3rem;
-}
+.article__list .list__item:nth-of-type(1)::before {content: "1、"; }
+.article__list .list__item:nth-of-type(2)::before {content: "2、"; }
+.article__list .list__item:nth-of-type(3)::before {content: "3、"; }
+.article__list .list__item:nth-of-type(4)::before {content: "4、"; }
+.article__list .list__item:nth-of-type(5)::before {content: "5、"; }
+.article__list .list__item:nth-of-type(6)::before {content: "6、"; }
+.article__list .list__item:nth-of-type(7)::before {content: "7、"; }
+.article__list .list__item:nth-of-type(8)::before {content: "8、"; }
+
