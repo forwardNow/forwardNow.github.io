@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* =header */
+.header { position: relative; height: 8rem; background: url("../images/top_banner.jpg") no-repeat; background-size: auto 100%; }
+.goback { width: 2rem; height: 2rem; background: url("../images/btn_goback.png") no-repeat; background-size: 2rem 2rem; position: absolute; top: 4.6rem; left: 1rem; }
+.page-title { width: 16rem; height: 2rem; background-repeat: no-repeat; background-position: 0 0; background-size: 100% auto; position: absolute; top: 4.6rem; left: 4rem; }
+
+/* =main */
+.main { min-height: 40rem; background: url("../images/body_bg.jpg") no-repeat; background-color: #1c1c1c; background-size: 100% auto; background-position: center 8.5rem; background-attachment: fixed; }
+
+/* =footer */
+.footer { height: 12rem; background: url("../images/footer_bg.jpg") no-repeat; background-size: auto 100%; padding-left: 1.4rem; overflow: hidden; }
+.footer__contactus { margin-top: 1.4rem; margin-bottom: 1rem; }
+.contactus__title { font-size: 1.6rem; color: #666666; line-height: 1; margin-bottom: 1.2rem; }
+.contactus__item { font-size: 1rem; color: #3d3d3d; line-height: 1.6rem; padding-left: 1.8rem; background-repeat: no-repeat; background-position: 0.1rem center; background-size: auto 81%; }
+.contactus__addrress { background-image: url("../images/icon_map.png"); }
+.contactus__email { background-image: url("../images/icon_email.png"); }
+.contactus__tel { background-image: url("../images/icon_tel.png"); }
+.footer__copyright { color: #474747; font-size: 1rem; }
+
+/* =免费预约 */
+.main_order {
+  overflow: hidden;
+  padding-bottom: 6rem;
+}
+.tb {
+
+}
+.tb_normal {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.tb_normal .tb__label {
+  color: #6b6b6b;
+  font-size: 1.3rem;
+  width: 7.4rem;
+}
+.tb_normal .tb__cont {
+  /*height: 4.8rem;*/
+  padding: 1.3rem 0;
+  color: #999999;
+}
+.tb_normal .tb__input {
+  width: 14rem;
+  height: 2.2rem;
+  border-radius: 0.2rem;
+  border: solid 0.1rem #664b3d;
+  background-color: #2e2e2e;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  padding-left: 0.9rem;
+}
+.tb_normal .label_gender {
+  margin-right: 1.4rem;
+  margin-left: 0.4rem;
+}
+.tb_normal .tr_remark .tb__label {
+  vertical-align: top;
+  padding-top: 1.3rem;
+}
+.tb_normal .tr_remark .textarea {
+  width: 19.6rem;
+  height: 8.2rem;
+  border: solid 0.1rem #664b3d;
+  background-color: #2e2e2e;
+}
+.tb_normal .tb__submit-btn {
+  border: none 0;
+  width: 15.5rem;
+  height: 3.2rem;
+  background-color: #e89146;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  color: #fcfcfc;
+  margin-top: 2.3rem;
+}

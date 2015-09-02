@@ -306,3 +306,13 @@ body {
     font-size: 20px;
 }
 
+/* 2015-09-01 pm */
+.outline-item {
+  /*background-position: 0px 2px;*/
+  padding-left: 0;
+}
+.outline-anchor {
+  padding-left: 29px;
+}
+
+

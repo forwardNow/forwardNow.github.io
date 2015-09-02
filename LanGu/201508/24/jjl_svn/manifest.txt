@@ -18,4 +18,4 @@
 	
 	9. 项目详情-审核记录（proj_detail_audit.html）		×【未完成】
 	
-	10.项目详情（proj_detail.html）					×【未完成】
+	10.项目详情（proj_detail.html）					“√”【完成80%】

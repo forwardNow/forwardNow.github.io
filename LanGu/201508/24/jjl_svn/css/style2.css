@@ -2,6 +2,7 @@
 
 h1,h2,h3 { font-weight: normal; }
 i,em { font-style: normal; }
+.color_main { color: #c8a063!important; }
 .align-left { text-align: left!important; }
 .align-right { text-align: right!important; }
 .align-center { text-align: center!important; }
@@ -230,3 +231,99 @@ i,em { font-style: normal; }
 .item__answer:before { content: "A："; }
 .faq-body__go-reg { color: #c8a063; border-color: #c8a063; margin-left: 280px; margin-top: 45px; }
 .faq-body__go-reg:hover { background-color: #c8a063; color: #fff; }
+
+
+/* 项目详情 */
+.main_proj { background-color: #fcfcfc; line-height: 1; padding-bottom: 47px;}
+.main_proj__inner { width: 1170px; margin: 15px auto 0px auto; min-height: 1000px; }
+.proj__info { box-sizing: border-box; height: 353px; border: solid 1px #e5e5e5; padding: 14px 0px 8px 29px; }
+.info__params { float: left; margin-top: 8px; }
+
+.info__params .params__title { font-family: "Microsoft Yahei"; font-size: 25px; vertical-align: middle; line-height: 1; }
+.info__params .params__title:before { color: #fff; font-size: 18px; display: inline-block; width: 30px; height: 30px; border-radius: 4px; text-align: center; line-height: 30px; vertical-align: 2px; margin-right: 9px; }
+.info__params .params__title_company:before { content: "企"; background-color: #1fadff; }
+.info__params .params__title_house:before { content: "房"; background-color: #f39800; }
+.info__params .params__cont { }
+.info__params .params__tb_key { margin-top: 17px; font-family: "Microsoft Yahei"; }
+.info__params .tb_key__label { color: #595959; font-size: 14px; }
+.info__params .tb_key__cont { display: block; font-size: 36px; margin-left: -4px; margin-top: 14px; }
+
+.info__params .params__tb_normal { font-family: "宋体"; margin-top: 32px; }
+.info__params .params__tb_normal td { height: 30px; }
+
+.info__params .tb_normal__label { color: #a1a1a1; padding-right: 22px; }
+.info__params .tb_normal__cont { color: #2a2a2a; width: 250px; }
+.info__params .tb_normal__aside { color: #b8b8b8; }
+.tb_normal__aside .aside__amount { display: inline-block; margin-right: 30px; height: 20px; line-height: 20px; background: url("../images/icon_01.png") no-repeat; }
+.tb_normal__aside .aside__amount-invest { padding-left: 19px; background-position: -5px 0px; }
+.tb_normal__aside .aside__amount-visited { padding-left: 24px; background-position: -1px -41px; }
+.tb_normal__aside .amount__label { padding-right: 10px; }
+.info__params .params__summary  { margin-top: 25px; color: #ff727d; font-family: "宋体"; }
+
+.info__balance { box-sizing: border-box; float: right; width: 337px; height: 331px; border-left: solid 1px #e6e6e6; font-family: "Microsoft Yahei"; padding: 17px 0px 0px 20px; }
+
+.info__balance_line1 { }
+.line1__myacount-btn { float: right; width: 80px; height: 30px; line-height: 30px; color: #fff; text-align: center; background-color: #c8a063; margin-right: 30px; margin-top: 33px; }
+.balance__label { color: #595959; }
+.balance__cont { color: #535353; font-size: 18px; margin: 13px 0 0 -1px; }
+.balance__cont-num { font-size: 36px; }
+
+.info__balance_line2 { margin-top: 23px; }
+.info__balance_line2 .balance__cont { margin-left: 0; font-size: 14px; color: #777777; }
+.info__balance_line3 { color: #a1a1a1; line-height: 18px; margin-top: 16px; }
+.info__balance_line4 { margin-top: 26px; }
+.balance__input { width: 270px; height: 40px; border: solid 1px #c3c3c3; line-height: 40px; padding-left: 8px; font-size: 20px; border-radius: 1px; }
+.balance__btn { border: none 0; width: 280px; height: 40px; background-color: #2ea7e0; color: #fff; font-size: 20px; margin-top: 20px; }
+
+
+.proj__detail { margin-top: 46px; overflow: hidden; }
+.proj__tab-panel { width: 827px; float: left; }
+.tab-panel__tabs { float: left; border-top: solid 1px #e6e6e6; height: 40px; line-height: 40px; position: relative; top: 1px; margin-left: 28px; font-family: "Microsoft YaHei"; }
+.tab-panel__tabs .tabs__item { box-sizing: border-box; width: 134px; height: 40px; float: left; background-color: #f5f5f5; text-align: center; font-size: 16px; color: #666666; cursor: pointer; }
+
+.tab-panel__tabs .tabs__item_active { border-top: solid 2px #c8a063; line-height: 36px; border-left: solid 1px #e6e6e6; border-right: solid 1px #e6e6e6; background-color: #ffffff; color: #c8a063; font-weight: bold; }
+.tab-panel__tabs .tabs__item_first { border-left: solid 1px #e6e6e6; }
+.tab-panel__tabs .tabs__item_last { border-right: solid 1px #e6e6e6; }
+
+.tab-panel__body { clear: both; height: 800px; border: solid 1px #e5e5e5; font-family: "Microsoft YaHei"; background-color: #fff; }
+.tab-panel__body .body_item { }
+
+.body_item__rel-info { overflow: hidden; padding: 28px 0 0 61px; }
+.rel-info__title { border-left: solid 2px #c8a063; padding-left: 11px; color: #666666; margin-left: 6px; }
+.rel-info__cont { }
+.rel-info__tips { line-height: 24px; color: #302e2f; padding: 9px 20px 9px 20px; background-color: #fffcf7; margin-right: 67px; margin-top: 20px; }
+.rel-info__tb { font-size: 12px; color: #555; margin-top: 27px; }
+.rel-info__tb td { width: 210px; height: 32px; }
+.rel-info__tb .tb__title { color: #2a2a2a; text-align: left; border-bottom: dotted 1px #cbcbcb; padding-bottom: 9px; margin-bottom: 4px; }
+.rel-info__tb .tb__label { padding-right: 4px; }
+.rel-info__tb .tb__cont { }
+.rel-info__tb_1th .tb__cont { font-size: 13px; color: #c8a063; }
+
+.proj__sidebar {
+  float: right;
+  font-family: "Microsoft Yahei";
+}
+.sidebar__invest-suggest {
+  height: 442px;
+}
+.invest-suggest__head {
+  font-size: 22px;
+  color: #38332d;
+  line-height: 42px;
+}
+.invest-suggest__body {
+
+}
+
+/*大家都在投*/
+.mod_index_005{ line-height: 1.5;width:321px; height:372px; border:#ddd 1px solid; margin:27px 0 0 0;background:#fff;}
+.mod_index_005_head{ height:40px; line-height:40px; color:#666;font-weight:bold; font-size:16px; text-indent:20px; margin-bottom: 14px;}
+.mod_index_005_con{ padding:0 20px;}
+.mod_index_005_con ul{ float:left; width:100%;}
+.mod_index_005_con ul li{ float:left; width:100%; padding:8px 0;}
+.mod_index_005_con ul li .icon{ float:left; width:38px; height:38px; background:url(../images/mod_index_005_icon.png) 0 50% no-repeat;}
+.mod_index_005_con ul li .center{ float:left; width:180px; margin:0 0 0 5px;}
+.mod_index_005_con ul li .center .title{ font-size:14px; height:20px; line-height:20px; overflow:hidden;}
+.mod_index_005_con ul li .center .title_1{ font-size:14px; color:#666;}
+.mod_index_005_con ul li .right{ float:right; color:#666;}
+
