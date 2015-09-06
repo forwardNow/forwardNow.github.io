@@ -1,4 +1,12 @@
 
+$( function () {
+    $(".post__front").click( function () {
+        $(this).slideUp(300, function () {
+            $(this).siblings(".post__back").slideDown();
+        });
+    } );
+} );
+
 function submenu() {
 
     /* 子菜单显示与隐藏 */ 

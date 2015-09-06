@@ -2,7 +2,7 @@
 /* =header */
 .header { position: relative; height: 8rem; background: url("../images/top_banner.jpg") no-repeat; background-size: auto 100%; }
 .goback { width: 2rem; height: 2rem; background: url("../images/btn_goback.png") no-repeat; background-size: 2rem 2rem; position: absolute; top: 4.6rem; left: 1rem; }
-.page-title { width: 16rem; height: 2rem; background-repeat: no-repeat; background-position: 0 0; background-size: 100% auto; position: absolute; top: 4.6rem; left: 4rem; }
+.page-title { width: 16rem; height: 2rem; background-repeat: no-repeat; background-position: 0 0; background-size: auto 100%; position: absolute; top: 4.6rem; left: 4rem; }
 
 /* =main */
 .main { min-height: 40rem; background: url("../images/body_bg.jpg") no-repeat; background-color: #1c1c1c; background-size: 100% auto; background-position: center 8.5rem; background-attachment: fixed; }
@@ -32,61 +32,18 @@
 
 
 /* =关于我们 */
-.main_about-us {
-  padding: 1.6rem 1rem 6rem 1rem;
-}
-.article {
-
-}
-.about-us__article_brief {
-
-}
-.article__title {
-  color: #cccccc;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  border-left: solid 0.3rem #e89146;
-  padding-left: 0.5rem;
-  margin-bottom: 1.2rem;
-}
-.article__p {
-  color: #999999;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  text-indent: 2.4rem;
-  margin-bottom: 1.9rem;
-}
-.about-us__article_logo {
-  margin-top: 2.4rem;
-}
-.article__logo_wrap {
-  width: 5.3rem;
-  margin: 3.6rem auto 4rem auto;
-  text-align: center;
-}
-.article__logo {
-  width: 100%;
-}
-.article__logo-desc {
-  font-size: 1rem;
-  color: #999999;
-  margin-top: 1rem;
-  line-height: 1;
-}
-.article__list {
-  color: #999999;
-  font-size: 1.2rem;
-  padding-left: 2rem;
-}
-.article__list .list__item {
-  line-height: 1.8rem;
-  position: relative;
-}
-.article__list .list__item::before {
-  position: absolute;
-  top: 0rem;
-  left: -2rem;
-}
+.main_about-us { padding: 1.6rem 1rem 6rem 1rem; }
+.article { }
+.about-us__article_brief { }
+.article__title { color: #cccccc; font-size: 1.4rem; line-height: 1.6rem; border-left: solid 0.3rem #e89146; padding-left: 0.5rem; margin-bottom: 1.2rem; }
+.article__p { color: #999999; font-size: 1.2rem; line-height: 1.9rem; text-indent: 2.4rem; margin-bottom: 1.9rem; }
+.about-us__article_logo { margin-top: 2.4rem; }
+.article__logo_wrap { width: 5.3rem; margin: 3.6rem auto 4rem auto; text-align: center; }
+.article__logo { width: 100%; }
+.article__logo-desc { font-size: 1rem; color: #999999; margin-top: 1rem; line-height: 1; }
+.article__list { color: #999999; font-size: 1.2rem; padding-left: 2rem; }
+.article__list .list__item { line-height: 1.8rem; position: relative; }
+.article__list .list__item::before { position: absolute; top: 0rem; left: -2rem; }
 .article__list .list__item:nth-of-type(1)::before {content: "1、"; }
 .article__list .list__item:nth-of-type(2)::before {content: "2、"; }
 .article__list .list__item:nth-of-type(3)::before {content: "3、"; }
@@ -95,4 +52,46 @@
 .article__list .list__item:nth-of-type(6)::before {content: "6、"; }
 .article__list .list__item:nth-of-type(7)::before {content: "7、"; }
 .article__list .list__item:nth-of-type(8)::before {content: "8、"; }
+
+
+/* =逆袭案例 */
+.main_cases { }
+.pic-list_cases { }
+.pic-list { overflow: hidden; }
+.pic-list__item { float: left; position: relative; width: 13.7rem; height: 18.3rem; border-radius: 0.2rem; overflow: hidden; border: solid 2px rgba(223,145,70,0.02); margin-left: 1.5rem; margin-top: 1.4rem; }
+.pic-list__item .item__img { height: 100%; background-position: center center; background-repeat: no-repeat; background-size: auto 100%; background-color: #000; }
+.pic-list__item .item__title { position: absolute; left: 0; bottom: 0rem; width: 100%; height: 3.2rem; text-align: center; color: #999999; font-size: 1.3rem; line-height: 3.2rem; background-color: rgba(0,0,0,0.73); }
+
+/* =逆袭案例-详情  */
+.main_cases-detail { background-attachment: scroll; background-image: url("../images/body_bg_casedetail.jpg"); background-position: 0 0; background-color: #1c1c1c; background-size: 100% auto; overflow: hidden; padding: 0 1rem; }
+.cases-detail__vs-pic { margin-top: 16.6rem; overflow: hidden; position: relative; }
+.vs-pic__symbol { width: 7.2rem; height: 7.2rem; position: absolute; top: 8.2rem; left: 50%; margin-left: -3.6rem; }
+.vs-pic__item { float: left; width: 14rem; }
+.vs-pic__item:nth-of-type(2) { float: right; }
+.vs-pic__item .item__img { height: 22.5rem; background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #333333; border: solid 1px #99602e; border-radius: 0.4rem; overflow: hidden; }
+.vs-pic__item .item__title { font-size: 1.6rem; color: #808080; text-align: center; line-height: 1; margin-top: 2.2rem; }
+.cases-detail__vs-desc { font-size: 1.2rem; color: #999999; line-height: 1.8rem; padding-top: 2rem; }
+.cases-detail__vs-desc p { text-indent: 2.4rem; margin-bottom: 2.1rem; }
+
+/* =帝斯力风采 */
+.main_team {
+  background-image: url("../images/body_bg_team.jpg");
+}
+
+.pic-list_team {
+  padding-bottom: 2rem;
+}
+.pic-list_team .pic-list__item {
+  height: 11.8rem;
+}
+
+/* =帝斯力风采-照片详情 */
+.mask-layer { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/transparent_1.png"); }
+.picture-detail { display: none; }
+.picture-detail .pic-wrap { box-sizing: border-box; position: absolute; width: 29rem; height: 19.4rem; border: 2px solid rgba(255, 255, 255, 0.5); border-radius: 0.4rem; top: 50%; left: 50%; margin-left: -14.5rem; margin-top: -9.7rem; overflow: hidden; text-align: center; }    
+.picture-detail .pic-wrap .hook { display:inline-block; width:0; height:100%; overflow:hidden; margin-left:-1px; font-size:0; line-height:0; vertical-align:middle; }
+.picture-detail .pic-wrap img { max-width: 100%; vertical-align: middle; }
+.picture-detail .pic-wrap .close-btn { position: absolute; right: 0.6rem; top: 0.6rem; width: 1.8rem; height: 1.8rem; background: url("../images/close_btn.png") no-repeat center center; background-size: 50% 50%; background-color: #cccccc; border-radius: 3.6rem; }
+
+
 
