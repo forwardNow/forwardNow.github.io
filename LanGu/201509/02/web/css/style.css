@@ -93,5 +93,13 @@
 .picture-detail .pic-wrap img { max-width: 100%; vertical-align: middle; }
 .picture-detail .pic-wrap .close-btn { position: absolute; right: 0.6rem; top: 0.6rem; width: 1.8rem; height: 1.8rem; background: url("../images/close_btn.png") no-repeat center center; background-size: 50% 50%; background-color: #cccccc; border-radius: 3.6rem; }
 
-
-
+/* 文章-模板 */
+.main_news {
+  padding: 2rem 1rem 2rem 1rem;
+}
+.news__article p { color: #999999; font-size: 1.2rem; line-height: 1.9rem; text-indent: 2.4rem; margin-bottom: 1.9rem; }
+.news__article .article__pic, .news__article img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+}
