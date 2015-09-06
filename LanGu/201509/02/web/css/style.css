@@ -97,3 +97,16 @@
 .main_news { padding: 2rem 1rem 2rem 1rem; }
 .news__article p { color: #999999; font-size: 1.2rem; line-height: 1.9rem; text-indent: 2.4rem; margin-bottom: 1.9rem; }
 .news__article .article__pic, .news__article img { display: block; max-width: 100%; margin: 2rem auto; }
+
+
+/* 加载更多 */
+#load-more {
+  text-align: center;
+  z-index: 100;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+#load-more img {
+  vertical-align: -0.2rem;
+  margin-right: 0.5rem;
+}

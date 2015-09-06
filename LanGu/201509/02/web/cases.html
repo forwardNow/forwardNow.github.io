@@ -55,7 +55,7 @@
                 </a>
             </article>
         </div>
-        
+        <div id="load-more"><img alt="Loading..." src="./images/loading.gif"></div>
     </div>
 <!-- /main -->
 
@@ -70,7 +70,72 @@
     <p class="footer__copyright">Copyright &copy; 2015 武汉帝斯力体育健康管理有限公司</p>
 </div>
 <!-- /footer -->
+<script>
+// 滚动加载
+    $( function () {
+        var loadingFlag = false;
+        var counter = 1;
 
+        function scrollListen(){
+            $(document).scroll(function(){
+                var bottomPadding = $(document).height() - $(document).scrollTop() - $(window).height();
+                // console.info(bottomPadding);
+                if( bottomPadding < 50 && !loadingFlag ){
+                    loadingFlag = true;
+                    pageShow();
+                }
+            });
+        }
+
+        function pageShow() {
+            
+            var _url = "";
+            $.ajax({
+                url: _url, type: 'GET', dataType: 'json', timeout: 200, 
+                error: function(){ 
+                    loadMore ();
+                },
+                success: function( feedback ) {
+                    loadingFlag = false;
+                    $('.pic-list').append(feedback);
+                    $('#load-more').hide();
+                }
+            });
+            function loadMore () {
+
+                if ( counter-- < 0 ) {
+                    $('#load-more').hide();
+                    return;
+                }
+                var json = [
+                    { "link": "#", "url": "./images/team_pic_1.jpg", "title": "体育拓展--休息" + counter++ },
+                    { "link": "#", "url": "./images/team_pic_2.jpg", "title": "体育拓展--休息" + counter++ },
+                    { "link": "#", "url": "./images/team_pic_3.jpg", "title": "体育拓展--休息" + counter++ },
+                    { "link": "#", "url": "./images/team_pic_4.jpg", "title": "体育拓展--休息" + counter++ }
+                ];
+                var html = "";
+
+                for ( var i = 0; i < json.length; i++ ) {
+                    html += '\
+                        <article class="pic-list__item" role="list-item">\
+                            <a href="' + json[ i ].link + '">\
+                                <div class="item__img" style="background-image:url(' + json[ i ].url + ')"></div>\
+                                <h2  class="item__title">' + json[ i ].title + '</h2>\
+                            </a>\
+                        </article>\
+                    ';
+                }
+
+                $('.pic-list').append( $( html ) );   
+                $('#load-more').hide();   
+                loadingFlag = false;  
+            }
+
+        }
+
+        scrollListen();
+    } );
+</script>
 </body>
 
 </html>
