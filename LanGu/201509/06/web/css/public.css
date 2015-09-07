@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.wrap { width: 1000px; margin: 0 auto; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+body { background-color: #fff; min-width: 1000px; }
+.color_key { color: #db2c35; }
+
+/* =top */
+.top { height: 30px; border-bottom: solid 1px #d9d9d9; }
+.top__welcome { float: left; color: #8f8f8f; line-height: 30px; }
+.top__links { float: right; font-size: 12px; line-height: 1; margin-top: 9px; }
+.top__links .links__item { float: left; }
+.top__links .links__item_separator { float: left; font-family: Arial; color: #8f8f8f; margin: 0 10px; }
+.top__links .item__link { font-family: "宋体"; color: #8f8f8f; }
+.top__links .item__link:hover { color: #db2c35; }
+.top__links .item__link:hover .sub-indicator { transform: rotate(180deg); transform-origin: center 2px; border-color: #db2c35 transparent transparent transparent; }
+.top__links .sub-indicator { margin-left: 6px; vertical-align: -2px; width: 0; height: 0; overflow: hidden; font-size: 0; display: inline-block; border-width: 4px; border-color: #9F9F9F transparent transparent transparent; border-style: solid; transition: all 150ms linear; }
+
+/* =header */
+.header { }
+.header__inner { }
+.header__site-logo { float: left; margin-top: 33px; }
+.header__site-search { float: left; margin-top: 31px; margin-left: 70px; }
+.site-search { }
+.site-search__input-area { position: relative; }
+.input-area__input { box-sizing: border-box; float: left; height: 36px; width: 330px; color: #8f8f8f; font-family: "宋体"; font-size: 12px; line-height: 1; border: solid 2px #db2c35; border-right: none 0; border-top-left-radius: 2px; border-bottom-left-radius: 2px; padding: 10px 0 10px 39px; outline: none 0; }
+.input-area__btn { float: left; width: 90px; height: 36px; font-size: 16px; color: #fafafa; line-height: 32px; border: none 0; border-top-right-radius: 2px; border-bottom-right-radius: 2px; background-color: #db2c35; outline: none 0; }
+.input-area__icon { position: absolute; left: 10px; top: 8px; width: 18px; height: 20px; background: url("../images/icon_search.png") no-repeat; }
+.site-search__hot-words { font-size: 12px; margin-top: 7px; line-height: 12px; color: #8f8f8f; font-family: Arial; }
+.hot-words__item { font-family: "宋体"; margin: 0 6px; color: #8f8f8f; }
+.hot-words__item_key { color: #db2c35; }
+
+.header__btns { float: right; margin-top: 31px; }
+.btn_shopping-cart, 
+.btn_my-order { display: inline-block; height: 36px; border-radius: 2px; background-color: #f5f5f5; color: #666666; font-family: "宋体"; font-size: 12px; line-height: 36px; }
+/*
+.btn_shopping-cart:hover, 
+.btn_my-order:hover { background-color: #db2c35; color: #fff; background-position-y: -52px; }
+*/
+.btn_shopping-cart { box-sizing: border-box; width: 110px; padding-left: 54px; background: url(../images/icon_shopping_cart.png) no-repeat 10px 9px #f5f5f5; position: relative; }
+.shopping-cart__amount { position: absolute; top: -7px; left: 32px; width: 20px; height: 20px; background-color: #db2c35; color: #fafafa; font-family: "宋体"; font-size: 12px; line-height: 20px; text-align: center; border-radius: 20px; }
+.btn_my-order { width: 76px; margin-left: 16px; text-align: center; }
+
+/* =nav */
+.nav {
+  margin-top: 26px;
+  border-bottom: solid 2px #cc040e;
+}
+.nav__inner {
+  height: 32px;
+}
+.nav__sidebar {
+  float: left;
+  width: 240px;
+}
+.nav__sidebar .sidebar__title {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  background-color: #1a1a1a;
+}
+.nav__list {
+  float: left;
+  font-family: "宋体";
+  overflow: hidden;
+}
+.nav__list .list__item {
+  float: left;
+  color: #3b3d3d;
+  line-height: 32px;
+  width: 95px;
+  text-align: center;
+}
+.nav__list .list__item_active,
+.nav__list .list__item:hover {
+  color: #db2c35;
+}
+
+/* =banner */
+.banner {}
+.banner__focus {}
+.focus__inner {}
+.focus__page-list {}
+.focus__page-list .page-list__item {}
+.focus__page-list .item__link {}
+.focus__index {}
+.focus__index .index__item {}
+.focus__index .index__item_active {}
+
