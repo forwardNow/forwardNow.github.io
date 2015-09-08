@@ -62,10 +62,48 @@
     <div class="nav__inner wrap clearfix">
       <div class="nav__sidebar">
         <h1 class="sidebar__title">全部商品分类</h1>
-        <ul class="sidebar__list" style="display: none;">
+        <ul class="sidebar__list" style="display: block;">
           <li class="list__item">
-            <h2 class="item__title">家居用品</h2>
-            <p class="item_links"></p>
+            <h2 class="item__title">家居用品</h2>      
+            <p class="item_links">
+              <a class="link" href="#">厨卫用品</a><a class="link" href="#">家纺</a><a class="link" href="#">生活用品</a>
+            </p>
+          </li>
+          <li class="list__item">
+            <h2 class="item__title">食品保健</h2>      
+            <p class="item_links">
+              <a class="link" href="#">茶叶</a><a class="link" href="#">酒水</a><a class="link" href="#">保健品</a>
+            </p>
+          </li>
+          <li class="list__item">
+            <h2 class="item__title">化妆品</h2>      
+            <p class="item_links">    
+              <a class="link" href="#">美妆护肤品</a><a class="link" href="#">美发用品</a>
+            </p>
+          </li>
+          <li class="list__item">
+            <h2 class="item__title">箱包用品</h2>      
+            <p class="item_links">
+              <a class="link" href="#">女包</a><a class="link" href="#">男包</a><a class="link" href="#">功能箱包</a>
+            </p>
+          </li>
+          <li class="list__item">
+            <h2 class="item__title">小家电</h2>      
+            <p class="item_links">
+              <a class="link" href="#">小家电</a><a class="link" href="#">健身器材</a>
+            </p>
+          </li>
+          <li class="list__item">
+            <h2 class="item__title">儿童用品</h2>      
+            <p class="item_links">
+              <a class="link" href="#">儿童用品</a><a class="link" href="#">儿童玩具</a>
+            </p>
+          </li>
+          <li class="list__item">
+            <h2 class="item__title">饰品</h2>      
+            <p class="item_links">
+              <a class="link" href="#">饰品</a>
+            </p>
           </li>
         </ul>
       </div>
@@ -89,7 +127,7 @@
       <div class="banner__focus focus" id="focus">
           <div class="focus__inner">
               <ul class="focus__page-list">
-                  <li class="page-list__item" style="background-image:url(./images/banner_page_1.jpg)">
+                  <li class="page-list__item" style="background-image:url(./images/banner_page_1.jpg);display:block;">
                     <a href="#" class="item__link"></a>
                   </li>
                   <li class="page-list__item" style="background-image:url(./images/banner_page_2.jpg)">
@@ -100,16 +138,40 @@
                   </li>
               </ul>
           </div>
- 
-          <div class="focus__index wrap">
-              <a href="#" class="index__item index__item_active"></a>
-              <a href="#" class="index__item"></a>
-              <a href="#" class="index__item"></a>
+          <div class="focus__index_wrap">
+            <div class="focus__index">
+                <a href="#" class="index__item index__item_active"></a><!-- 
+             --><a href="#" class="index__item"></a><!-- 
+             --><a href="#" class="index__item"></a>
+            </div>
+            
           </div>
-
       </div>
  
   </div>
+  <script>
+  (function () {
+
+    var options = {
+        selectors: {
+          focus: "#focus",  // 整个焦点图
+          pages: "#focus .page-list__item",   // 所有的包含轮播图的<LI>
+          indexs: "#focus .focus__index .index__item", // 轮播图的索引
+          prevBtn: "#focus .prev", // 前一张
+          nextBtn: "#focus .next" // 后一张
+        },
+        activeIndexClass: "index__item_active",
+        autoPlay: {
+          enable: true, 
+          interval: 5000
+        }
+    };
+    
+    var focus = new Focus( options );
+    focus.autoPlay( false );
+
+  }) ();
+  </script>
 <!-- /banner -->
 
 <!-- main -->

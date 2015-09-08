@@ -223,3 +223,8 @@ body { background-color: #000000; font-size: 14px; font-family: "Microsoft Yahei
 .picture-detail .pic-wrap .close-btn { position: absolute; right: 16px; top: 16px; width: 36px; height: 36px; background: url("../images/close_btn.png") no-repeat center center; background-color: #cccccc; border-radius: 36px; }
 
 
+
+/* 2015-09-08 */
+.s-case .content-container {
+    min-height: 1000px;
+}

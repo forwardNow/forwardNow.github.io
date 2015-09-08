@@ -49,18 +49,7 @@ body { background-color: #fff; min-width: 1000px; }
 .nav__inner {
   height: 32px;
 }
-.nav__sidebar {
-  float: left;
-  width: 240px;
-}
-.nav__sidebar .sidebar__title {
-  font-size: 16px;
-  color: #ffffff;
-  text-align: center;
-  height: 32px;
-  line-height: 32px;
-  background-color: #1a1a1a;
-}
+
 .nav__list {
   float: left;
   font-family: "宋体";
@@ -78,14 +67,28 @@ body { background-color: #fff; min-width: 1000px; }
   color: #db2c35;
 }
 
-/* =banner */
-.banner {}
-.banner__focus {}
-.focus__inner {}
-.focus__page-list {}
-.focus__page-list .page-list__item {}
-.focus__page-list .item__link {}
-.focus__index {}
-.focus__index .index__item {}
-.focus__index .index__item_active {}
+.nav__sidebar {
+  float: left;
+  width: 240px;
+}
+.nav__sidebar .sidebar__title {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  background-color: #1a1a1a;
+}
+.sidebar__list { 
+  background-color: #ffffff;
+}
+.sidebar__list .list__item { }
+.sidebar__list .item__title { 
+  color: #333333;
+  font-size: 16px;
+}
+.sidebar__list .item_links { 
+  color: #5c5c5c;
+}
+.sidebar__list .link { }
 
