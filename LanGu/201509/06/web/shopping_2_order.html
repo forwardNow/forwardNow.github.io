@@ -34,51 +34,31 @@
   
       <form action="#">
 
-        <div class="login-container reg-container">
-          <h2 class="login__caption">手机注册</h2>
-          <div class="reg__tel">
-            <input type="text" class="reg__input tel__input" required="required">     
-            <label class="reg__input_label">手机号码：</label>
+        <div class="login-container">
+          <h2 class="login__caption">登陆</h2>
+          <div class="login__username">
+            <input type="text" class="login__input username__input" placeholder="请在此处输入账号" required="required">     
+            <label class="login__input_icon"></label>
           </div>
-          <div class="reg__authcode">
-            <input type="text" class="reg__input authcode__input" required="required">    
-            <a href="javascript:void(0)" class="authcode__btn">获取验证码</a>
+          <div class="login__password">
+            <input type="password" class="login__input password__input" placeholder="请在此处输入密码" required="required">    
+            <label class="login__input_icon"></label> 
           </div>
-          <div class="reg__password">
-            <input type="password" class="reg__input password__input" required="required" placeholder="6-20个英文字母或数字"
-            pattern="^[0-9a-zA-z]{6,20}$" title="6-20个英文字母或数字"
-            >
-            <label class="reg__input_label">设置密码：</label>
+          <div class="login__authcode">
+            <input type="text" class="login__input authcode__input" placeholder="请在此处输入验证码" required="required">    
+            <a href="javascript:void(0)" class="authcode__img_wrap"><img class="authcode__img" src="./images/authcode_pic.jpg" alt=""></a>
+            <p class="authcode__change_wrap">看不清？<a class="authcode__change" href="javscript:void(0)">换一张</a></p>
           </div>
-          <div class="reg__password reg__password_repeat">
-            <input type="password" class="reg__input password__input" required="required" placeholder="请再次输入密码"
-            pattern="^[0-9a-zA-z]{6,20}$" title="6-20个英文字母或数字">     
-            <label class="reg__input_label">确认密码：</label>
+          <div class="login__record-passwd">
+            <p class="record-passwd_wrap"><input class="record-passwd" type="checkbox"><label class="record-passwd_label">记住密码</label></p>
           </div>
-          <p class="reg__aside">点击注册，表示已经同意送物天下<a class="service-items" href="#">《服务条款》</a></p>
-          <input class="login__submit reg__submit" type="submit" value="立即注册">
+          <input class="login__submit" type="submit" value="立即登陆">
+          <p class="login__aside">没有账号？<a class="go-reg" href="#">立即注册<i class="indicator">&gt;&gt;</i></a></p>
         </div>
 
 
       </form>
-      <script>
-        ( function () {
 
-          var options = {
-            selectors: {
-              "target": ".authcode__btn"
-            },
-            cssClass: {
-              "disabled": "authcode__btn_disabled"
-            },
-            time: 3,
-            tips: "0s以后重发"
-          };
-
-          var authByTel = new AuthByTel( options );
-
-        } )();
-      </script>
     </div>
 
   </div>

@@ -110,5 +110,67 @@ Focus.prototype.autoPlay = function ( isEnable ) {
       }, 
       focus.options.autoPlay.interval || 3000
     );
+  }
+
 }
+
+/** 手机短信验证（仅包含按钮禁用部分）
+  var options = {
+    selectors: {
+      "target": ".authcode__btn"
+    },
+    cssClass: {
+      "disabled": "authcode__btn_disabled"
+    },
+    time: 3,
+    tips: "0s以后重发"
+  };
+*/
+function AuthByTel ( options ) {
+  this.options = options;
+  this.$target = $( options.selectors.target );
+  this.originText = this.$target.text();
+  this.init();
 }
+AuthByTel.prototype.init = function () {
+  var authByTel = this;
+  this.$target.click( function () {
+    var $this = $( this ),
+        time = authByTel.options.time;
+
+    if ( ! authByTel.isEnable() ) {
+      return;
+    }
+
+    // $this.addClass( "authcode__btn_disabled" ).text( hint.replace( /[0-9]*/, time) );
+
+    authByTel.setEnable( false ).displayTips( time );
+
+    intervalId = setInterval( function () {
+      time--;
+      if ( time < 0) {
+        clearInterval( intervalId );
+        authByTel.setEnable( true ).$target.text( authByTel.originText );
+        return;
+      }
+      authByTel.displayTips( time );
+    }, 1000 );    
+  } );
+};
+// 是否可用
+AuthByTel.prototype.isEnable = function () {
+  return ! this.$target.hasClass( this.options.cssClass.disabled );
+};
+// 设置按钮是否可用
+AuthByTel.prototype.setEnable = function ( flag ) {
+  if ( flag ) {
+    this.$target.removeClass( this.options.cssClass.disabled );
+  } else {
+    this.$target.addClass( this.options.cssClass.disabled );
+  }
+  return this;
+};
+// 显示提示信息（剩余多少时间）
+AuthByTel.prototype.displayTips = function ( time ) {
+  this.$target.text( this.options.tips.replace( /[0-9]*/, time) );
+};

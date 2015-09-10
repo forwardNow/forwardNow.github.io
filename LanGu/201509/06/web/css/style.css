@@ -147,3 +147,97 @@
 .reg__password_repeat .password__input { border-top: none 0; }
 .reg__aside { margin: 11px 0 0 7px; }
 .reg__aside .service-items { color: #4598c8; }
+
+
+/* =购物流程-购物车*/
+.top_shopping {
+  background-color: #f7f7f7;
+}
+.top_shopping .top__welcome_link {
+  color: #8f8f8f;
+  font-size: 12px;
+  font-family: "宋体";
+  padding: 10px 0 0 27px;
+  line-height: 1.2;
+  background: url(../images/icon_home.png) no-repeat 0 4px;
+}
+.top_shopping .top__welcome_link:hover {
+  color: #db2c35;
+}
+.header_shopping { 
+  border-bottom: solid 2px #cc040e;
+}
+.header_shopping__inner { 
+  height: 145px;
+}
+.header_shopping__site-logo { 
+  float: left;
+  margin-top: 33px;
+}
+.header_shopping__process-list { 
+  float: right;
+  background: url(../images/shopping_process.png) no-repeat 0 0;
+  margin-top: 39px;
+  margin-right: -6px;
+}
+.header_shopping__process-list .list__item { 
+  float: left;
+  width: 190px;
+  height: 32px;
+  text-align: center;
+  font-size: 16px;
+  color: #808080;
+  line-height: 32px;
+}
+.header_shopping__process-list .list__item_active { 
+  color: #fcfcfc; 
+}
+.header_shopping__process_1th { 
+  background-position: 0 0;
+}
+.header_shopping__process_2th { 
+  background-position: 0 -33px;
+}
+.header_shopping__process_3th { 
+  background-position: 0 -66px;
+}
+
+.main_shopping .main_wrap {
+  min-height: 600px;
+}
+
+.header__page-title { 
+  height: 40px;
+  margin-top: 21px;
+}
+.page-title__name { 
+  float: left;
+  font-size: 20px;
+  text-align: center;
+  color: #f7f7f7;
+  height: 36px;
+  line-height: 35px;
+  padding: 0 9px 0 11px;
+  background-color: #333333;
+  border-radius: 2px;
+}
+.page-title__go-pay { 
+  float: right;
+  color: #666666;
+  margin-top: 6px;
+}
+.page-title__go-pay .go-pay__btn { 
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+  line-height: 28px;
+  color: #f7f7f7;
+  background-color: #db2c35;
+  border-radius: 2px;
+  text-align: center;
+  margin-left: 8px;
+}
+.page-title__go-pay .indicator { 
+  font-family: "宋体";
+  margin-left: 6px;
+}
