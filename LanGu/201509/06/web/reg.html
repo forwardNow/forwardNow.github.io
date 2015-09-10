@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="送物天下">
+  <meta name="description" content="送物天下">
+  <title>送物天下</title>
+  <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/public.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+
+</head>
+
+<body>
+
+<!-- header -->
+  <div class="header_login" role="header">
+    <div class="header_login__inner wrap clearfix">
+      <h1 class="header_login__site-logo"><a href="index.html"><img src="./images/site_logo.png" alt="送物天下"></a></h1>
+      <p class="header_login__welcome">您好，欢迎光临送物天下！ <a class="welcome__loin" href="#">请登陆</a> </p>
+    </div>
+  </div>
+<!-- /header -->
+
+<!-- main -->
+  <div class="main main_login" role="main">
+    
+    <div class="main_wrap wrap">
+  
+      <form action="#">
+
+        <div class="login-container reg-container">
+          <h2 class="login__caption">手机注册</h2>
+          <div class="reg__tel">
+            <input type="text" class="reg__input tel__input" required="required">     
+            <label class="reg__input_label">手机号码：</label>
+          </div>
+          <div class="reg__authcode">
+            <input type="text" class="reg__input authcode__input" required="required">    
+            <a href="javascript:void(0)" class="authcode__btn">获取验证码</a>
+          </div>
+          <div class="reg__password">
+            <input type="password" class="reg__input password__input" required="required" placeholder="6-20个英文字母或数字">
+            <label class="reg__input_label">设置密码：</label>
+          </div>
+          <div class="reg__password reg__password_repeat">
+            <input type="password" class="reg__input password__input" required="required" placeholder="请再次输入密码">     
+            <label class="reg__input_label">确认密码：</label>
+          </div>
+          <p class="reg__aside">点击注册，表示已经同意送物天下<a class="service-items" href="#">《服务条款》</a></p>
+          <input class="login__submit reg__submit" type="submit" value="立即注册">
+        </div>
+
+
+      </form>
+      <script>
+        ( function () {
+          var initTime = 3;
+          var intervalId = null;
+          var hint = "0s以后重发";
+          var originText = $( ".authcode__btn" ).text();
+          $( ".authcode__btn" ).click( function () {
+            var $this = $( this ),
+                time = initTime;
+                
+            if ( $this.hasClass( "authcode__btn_disabled" ) ) {
+              return;
+            }
+
+            $this.addClass( "authcode__btn_disabled" ).text( hint.replace( /[0-9]*/, time) );
+
+            intervalId = setInterval( function () {
+              time--;
+              if ( time < 0) {
+                clearInterval( intervalId );
+                $this.removeClass( "authcode__btn_disabled" ).text( originText );
+                return;
+              }
+              $this.text( hint.replace( /[0-9]*/, time) );
+            }, 1000 );
+
+          } );
+
+
+        } )();
+      </script>
+    </div>
+
+  </div>
+<!-- /main -->
+
+<!-- footer -->
+  <div class="footer footer_login" role="footer">
+      <div class="footer__aside">
+        <p class="copyright">Copyright &copy; 1998-2015  街上公司  <a href="#">jies.com</a> 版权所有湖北省通管局增值电信业务经营许可证B2-20140307</p>
+        <div class="authentication">
+          <a class="authentication__item" href="#"><img src="./images/authentication__pic_1.jpg" alt=""></a><!-- 
+       --><a class="authentication__item" href="#"><img src="./images/authentication__pic_2.jpg" alt=""></a><!-- 
+       --><a class="authentication__item" href="#"><img src="./images/authentication__pic_3.jpg" alt=""></a><!-- 
+       --><a class="authentication__item" href="#"><img src="./images/authentication__pic_4.jpg" alt=""></a>
+        </div>
+      </div>
+  </div>
+<!-- /footer -->
+
+</body>
+
+</html>
