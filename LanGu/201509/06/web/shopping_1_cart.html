@@ -241,7 +241,7 @@
     </div>
 
   </div>
-  
+
   <script>
   $( function () {
     new Select( ".js__select", ".js__select_all" );
@@ -296,6 +296,7 @@
       }
       target.parents( ".table_cart__row" ).fadeOut( 500, function() {
         $( this ).remove();
+        calcSum();
       });
     }
   } );
