@@ -174,3 +174,111 @@ AuthByTel.prototype.setEnable = function ( flag ) {
 AuthByTel.prototype.displayTips = function ( time ) {
   this.$target.text( this.options.tips.replace( /[0-9]*/, time) );
 };
+
+
+function Select( selectSingle, selectAll ) {
+  this.$selectSingle = $( selectSingle );
+  this.$selectAll = $( selectAll );
+  this.$all = $( selectSingle + "," + selectAll );
+  this.init();
+}
+Select.prototype.init =  function () {
+  var self = this;
+  // 点击全选-选中所有
+  this.$selectAll.click( function () {
+    var checked = $( this ).attr( "checked" );
+    self.$all.attr( "checked", !! checked );
+  } );
+  // 点击单选-如果是取消选中，则同时取消掉全选的选中状态
+  this.$selectSingle.click( function () {
+    if ( ! this.checked ) {
+      self.$selectAll.attr( "checked", false );
+    }
+  } );
+}
+
+var options = {
+  selectors: {
+    reduce: ".product-amount__item_reduce",
+    input: ".product-amount__item_input .input",
+    add: ".product-amount__item_add"
+  },
+  htmlClass: {
+    disabledOperator: "product-amount__item_disabled"
+  },
+  pattern: {
+    input: /^[0-9]{0,4}$/
+  }
+};
+function ProductAmount( options ) {
+  this.options = options;
+  this.$reduce = $( options.selectors.reduce );
+  this.$input = $( options.selectors.input );
+  this.$add = $( options.selectors.add );
+  this.init();
+}
+ProductAmount.prototype.init = function () {
+  // 限制 input 
+  var self = this;
+  this.$input.keypress( function ( e ) {
+    var pressedKey = String.fromCharCode( e.charCode || e.keyCode );
+    var value = this.value + pressedKey;
+    return self.validateInput( value );
+  } );
+  this.$input.blur( function () {
+    if ( ! self.validateInput( this.value ) ) {
+      this.value = 1;
+    }
+  } );
+  // 减少
+  this.$reduce.click( function () {
+    var index = self.$reduce.index( this );
+    var reduce = this;
+    self.$input.eq(index).val( function ( index, value ) {
+      var newValue = parseInt( value ) - 1;
+      if ( self.validateInput( newValue ) ) {
+        self.setStatus( $( reduce ), true ); 
+        if ( ! self.validateInput( newValue - 1 ) ) {
+          self.setStatus( $( reduce ), false );
+        }
+        return newValue;
+      }
+      self.setStatus( $( reduce ), false ); 
+      return value;
+    } );
+  } );
+
+  // 增加
+  this.$add.click( function () {
+    var index = self.$add.index( this );
+    var add = this;
+    var reduce = self.$reduce.get( index );
+    self.$input.eq(index).val( function ( index, value ) {
+      var newValue = parseInt( value ) + 1;
+      if ( self.validateInput( newValue ) ) {
+        self.setStatus( $( add ), true ); 
+        self.setStatus( $( reduce ), true ); 
+        return newValue;
+      }
+      self.setStatus( $( add ), false ); 
+      return value;
+    } );
+  } );
+
+
+};
+ProductAmount.prototype.validateInput = function ( value ) {
+  var value = ( value || this.$input.val() ).toString();
+  if ( value.match( this.options.pattern.input ) ) {
+    return true;
+  }
+  return false;
+};
+ProductAmount.prototype.setStatus = function ( $target, isEnable ) {
+  if ( isEnable ) { 
+    $target.removeClass( this.options.htmlClass.disabledOperator );
+  } else {
+    $target.addClass( this.options.htmlClass.disabledOperator );
+  }
+
+};

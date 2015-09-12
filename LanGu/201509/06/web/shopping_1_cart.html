@@ -52,13 +52,254 @@
 <!-- /header -->
 
 <!-- main -->
-  <div class="main main_shopping" role="main">
+  <div class="main main_shopping main_shopping-cart" role="main">
     
     <div class="main_wrap wrap">
-    
+      
+      <table class="table_cart">
+        <col width="64"><!-- 1.全选 -->
+        <col width="266"><!-- 2.商品 -->
+        <col width="200"><!-- 3.商品信息 -->
+        <col width="100"><!-- 4.单价（点劵） -->
+        <col width="140"><!-- 5.数量 -->
+        <col width="100"><!-- 6.小计（点劵） -->
+        <col width=""><!-- 7.操作 -->
+        <tr class="table_cart__head">
+          <th class="th"><input class="select js__select_all" type="checkbox"><label class="label">全选</label></th>
+          <th class="th align_center">商品</th>
+          <th class="th">商品信息</th>
+          <th class="th">单价（点劵）</th>
+          <th class="th align_center">数量</th>
+          <th class="th">小计（点劵）</th>
+          <th class="th align_center">操作</th>
+        </tr>
+        <tr class="table_cart__row">
+          <td class="select_td"><input class="select js__select" type="checkbox"></td><!-- 1.复选框 -->
+          <td><!-- 2.商品 -->
+            <div class="product_table clearfix">
+              <a href="#" class="product__pic"><!-- 
+              --><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+              <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包</a></p>
+            </div>
+          </td>
+          <td><!-- 3.商品信息 -->
+            <ul class="product-info">
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">颜色：</label><span class="item__cont">黑色</span></li>
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">尺码：</label><span class="item__cont">宽 20  高 14</span></li>
+            </ul>
+          </td>
+          <td><!-- 4.单价（点劵） -->
+            <ul class="product-price">
+              <li class="product-price__old"><del>65.00</del></li>
+              <li class="product-price__now">46.00</li>
+              <li class="product-price__discount">优惠 19.00</li>
+            </ul>
+          </td>
+          <td><!-- 5.数量 -->
+            <ul class="product-amount">
+              <li class="product-amount__item product-amount__item_reduce product-amount__item_ope">-</li>
+              <li class="product-amount__item product-amount__item_input"><input class="input" type="text" value="1"></li>
+              <li class="product-amount__item product-amount__item_add product-amount__item_ope">+</li>
+            </ul>
+          </td>
+          <td><!-- 6.小计（点劵） -->
+            <span class="product-total">46.00</span>
+          </td>
+          <td class="align_center"><!-- 7.操作 -->
+            <a href="javascript:void(0)" class="product-ope">删除</a>
+          </td>
+        </tr>
+        <tr class="table_cart__row">
+          <td class="select_td"><input class="select js__select" type="checkbox"></td><!-- 1.复选框 -->
+          <td><!-- 2.商品 -->
+            <div class="product_table clearfix">
+              <a href="#" class="product__pic"><!-- 
+              --><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+              <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包</a></p>
+            </div>
+          </td>
+          <td><!-- 3.商品信息 -->
+            <ul class="product-info">
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">颜色：</label><span class="item__cont">黑色</span></li>
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">尺码：</label><span class="item__cont">宽 20  高 14</span></li>
+            </ul>
+          </td>
+          <td><!-- 4.单价（点劵） -->
+            <ul class="product-price">
+              <li class="product-price__old"><del>65.00</del></li>
+              <li class="product-price__now">46.00</li>
+              <li class="product-price__discount">优惠 19.00</li>
+            </ul>
+          </td>
+          <td><!-- 5.数量 -->
+            <ul class="product-amount">
+              <li class="product-amount__item product-amount__item_reduce product-amount__item_ope ">-</li>
+              <li class="product-amount__item product-amount__item_input"><input class="input" type="text" value="1"></li>
+              <li class="product-amount__item product-amount__item_add product-amount__item_ope">+</li>
+            </ul>
+          </td>
+          <td><!-- 6.小计（点劵） -->
+            <span class="product-total">46.00</span>
+          </td>
+          <td class="align_center"><!-- 7.操作 -->
+            <a href="javascript:void(0)" class="product-ope">删除</a>
+          </td>
+        </tr>
+        <tr class="table_cart__row">
+          <td class="select_td"><input class="select js__select" type="checkbox"></td><!-- 1.复选框 -->
+          <td><!-- 2.商品 -->
+            <div class="product_table clearfix">
+              <a href="#" class="product__pic"><!-- 
+              --><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+              <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包</a></p>
+            </div>
+          </td>
+          <td><!-- 3.商品信息 -->
+            <ul class="product-info">
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">颜色：</label><span class="item__cont">黑色</span></li>
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">尺码：</label><span class="item__cont">宽 20  高 14</span></li>
+            </ul>
+          </td>
+          <td><!-- 4.单价（点劵） -->
+            <ul class="product-price">
+              <li class="product-price__old"><del>65.00</del></li>
+              <li class="product-price__now">46.00</li>
+              <li class="product-price__discount">优惠 19.00</li>
+            </ul>
+          </td>
+          <td><!-- 5.数量 -->
+            <ul class="product-amount">
+              <li class="product-amount__item product-amount__item_reduce product-amount__item_ope ">-</li>
+              <li class="product-amount__item product-amount__item_input"><input class="input" type="text" value="1"></li>
+              <li class="product-amount__item product-amount__item_add product-amount__item_ope">+</li>
+            </ul>
+          </td>
+          <td><!-- 6.小计（点劵） -->
+            <span class="product-total">46.00</span>
+          </td>
+          <td class="align_center"><!-- 7.操作 -->
+            <a href="javascript:void(0)" class="product-ope">删除</a>
+          </td>
+        </tr>
+        <tr class="table_cart__row">
+          <td class="select_td"><input class="select js__select" type="checkbox"></td><!-- 1.复选框 -->
+          <td><!-- 2.商品 -->
+            <div class="product_table clearfix">
+              <a href="#" class="product__pic"><!-- 
+              --><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+              <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包</a></p>
+            </div>
+          </td>
+          <td><!-- 3.商品信息 -->
+            <ul class="product-info">
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">颜色：</label><span class="item__cont">黑色</span></li>
+              <li class="product-info__item"><!-- 
+               --><label class="item__label">尺码：</label><span class="item__cont">宽 20  高 14</span></li>
+            </ul>
+          </td>
+          <td><!-- 4.单价（点劵） -->
+            <ul class="product-price">
+              <li class="product-price__old"><del>65.00</del></li>
+              <li class="product-price__now">46.00</li>
+              <li class="product-price__discount">优惠 19.00</li>
+            </ul>
+          </td>
+          <td><!-- 5.数量 -->
+            <ul class="product-amount">
+              <li class="product-amount__item product-amount__item_reduce product-amount__item_ope">-</li>
+              <li class="product-amount__item product-amount__item_input"><input class="input" type="text" value="1"></li>
+              <li class="product-amount__item product-amount__item_add product-amount__item_ope">+</li>
+            </ul>
+          </td>
+          <td><!-- 6.小计（点劵） -->
+            <span class="product-total">46.00</span>
+          </td>
+          <td class="align_center"><!-- 7.操作 -->
+            <a href="javascript:void(0)" class="product-ope">删除</a>
+          </td>
+        </tr>
+      </table>
+
+      <div class="main_shopping-cart__summary">
+        <div class="summary__ope"><!-- 
+       --><input class="ope__select js__select_all" type="checkbox"><label class="ope__label">全选</label><!-- 
+       --><a href="javascript:void(0)" class="ope__delete">删除</a>
+        </div>
+        <div class="summary__sum">
+          共有<i class="sum__acount">0</i>件商品，总计：<i class="sum__money"><span class="money">0.00</span>&nbsp;点劵</i><!-- 
+       --><a class="sum__go-pay" href="#">去付款<i class="indicator">&gt;</i></a>
+        </div>
+      </div>
+
     </div>
 
   </div>
+  
+  <script>
+  $( function () {
+    new Select( ".js__select", ".js__select_all" );
+    new ProductAmount( options );
+    // 计算总价
+    $( ".js__select,.js__select_all" ).click( function () {
+      calcSum();
+    } );
+    // 数量更改时，计算单类商品的总价
+    $( ".product-amount__item_input .input" ).change( function () {
+      calcSingleTotal( this);
+      calcSum();
+    } );
+    $( ".product-amount" ).click( function () {
+      calcSingleTotal( this );
+      calcSum();
+    } );
+
+    // 删除当前行
+    $( ".product-ope" ).click( function () {
+      deleteRow( this );
+      return false;
+    } );
+
+    // 删除选中行
+    $( ".summary__ope .ope__delete" ).click( function () {
+      deleteRow( $( ".js__select:checked" ) );
+    } );
+
+    function calcSingleTotal( target ) {
+      var $row = $( target ).parents( ".table_cart__row" );
+      var $total = $row.find( ".product-total" );
+      var $num = $row.find( ".product-amount__item_input .input" );
+      var $price = $row.find( ".product-price__now" );
+      var total = ( parseInt( $num.val() ) * parseInt( $price.text() ) ).toFixed( 2 );
+      $total.text( total );
+      return total;
+    }
+    function calcSum() {
+      var sum = 0;
+      $( ".js__select:checked" )
+        .parents( ".table_cart__row" ).find( ".product-total" )
+        .map( function() { return $(this).text() } ).each( function () {
+          sum += parseFloat( this );
+        } );    
+      $( ".sum__money .money" ).text( sum.toFixed( 2 ) );
+      return sum;  
+    }
+    function deleteRow( target ) {
+      if ( ! target.jquery ) { 
+        target = $( target );
+      }
+      target.parents( ".table_cart__row" ).fadeOut( 500, function() {
+        $( this ).remove();
+      });
+    }
+  } );
+  </script>
 <!-- /main -->
 
 <!-- footer -->
