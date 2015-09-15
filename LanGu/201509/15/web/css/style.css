@@ -29,12 +29,41 @@ body { line-height: 1; background-color: #fafafa; }
 .banner_innerpage .page-title { float: left; width: 330px; height: 100px; background-repeat: no-repeat; background-position: 0 0; margin-top: 56px; }
 
 /* =footer */
-.footer {
-  background-color: #27968d;
+.footer { background-color: #27968d; }
+.footer_inner { height: 240px; }
+
+.footer__link-list { float: left; min-width: 190px; margin-top: 30px; }
+.footer .list__item { color: #f5f5f5; }
+.footer .item__link { color: #f5f5f5; font-size: 16px; line-height: 40px; }
+.footer .item__link:hover { text-decoration: underline; }
+.footer .list__item_address,
+.footer .list__item_email,
+.footer .list__item_tel { color: #e6e6e6; line-height: 32px; background: url(../images/footer_icon.png) no-repeat; padding-left: 34px; }
+.footer .list__item_address { background-position: 0 0px; margin-top: 10px; }
+.footer .list__item_email { background-position: 0 -33px; }
+.footer .list__item_tel { background-position: 0 -68px; }
+.footer .list__item_copyright { color: #e6e6e6; margin-top: 28px; }
+.footer .footer__map { float: right; margin-top: 36px; font-family: "宋体"; }
+
+/* 联系我们 */
+.contact-us__address-list {
+  padding-top: 76px;
 }
-.footer_inner {
-  height: 240px;
+.contact-us__address-list .list__title {
+  color: #27968d;
+  font-size: 20px;
+  margin-bottom: 45px;
 }
-
-
-
+.contact-us__address-list .list__item {
+  color: #8a8a8a;
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+.contact-us__address-list .item__label {}
+.contact-us__address-map {
+  width: 996px;
+  height: 460px;
+  border: solid 2px #3ea199;
+  margin-top: 57px;
+  margin-bottom: 120px;
+}
