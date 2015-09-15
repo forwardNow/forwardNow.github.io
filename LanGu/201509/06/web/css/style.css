@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 /* =banner */
 .banner { height: 462px; }
 .banner__focus { }
@@ -225,8 +227,56 @@
 
 
 /* =购物流程-确认订单 */
-.main_shopping-order .main_wrap {
-  min-height: 600px;
-  background-color: #ffffff;
-  margin-top: 1px;
-}
+.main_shopping-order {padding-bottom: 67px;} 
+.main_shopping-order .main_wrap { min-height: 600px; background-color: #ffffff; margin-top: 1px;}
+.main_shopping-order__address { color: #333333; padding-top: 38px; padding-left: 20px; line-height: 1;}
+.address__head { font-size: 16px; }
+.address__body { }
+.address__bread { margin-top: 28px; }
+.address__bread .bread_head { }
+.address__bread .bread_node { color: #3d3d3d; }
+.address__table { font-family: "宋体"; color: #808080; font-size: 12px; margin-top: 30px; }
+.address__table .input { border: solid 1px #dadada; border-radius: 1px; height: 23px; }
+.address__table .input_textarea { width: 600px; height: 54px; }
+.address__table .table__row { }
+.address__table .row__label { width: 100px; text-align: right; }
+.address__table .row__cont { padding: 10px 0px 10px 6px; }
+.address__table .row__cont .input_tips { display: block; margin-top: 18px; }
+.address__table .row__cont select { font-size: 12px; }
+.address__table .row__cont .label { padding: 0 10px 0 20px; }
+.address__table .label_required:after { content:"*"; font-family: "Microsoft YaHei"; color: #db2c35; vertical-align: -3px; }
+.address__table .button_cancel { margin-left: 10px; }
+.button_ok { border: none 0; width: 96px; height: 30px; background-color: #e6742e; color: #fcfcfc; }
+.button_cancel { border: solid 1px #dadada; color: #5c5c5c; width: 60px; height: 30px; background-color: #ffffff; box-sizing: border-box; }
+
+.main_shopping-order__confirm { }
+.main_shopping-order__confirm .confirm__head { color: #333333; font-size: 16px; margin: 54px 0px 24px 20px; }
+.main_shopping-order__confirm .table_cart { }
+.main_shopping-order__confirm .table_cart .product_table { margin-left: 10px; }
+.main_shopping-order__confirm .table_cart .product-total { padding-right: 30px; }
+.main_shopping-order__confirm .table_cart  td{ background-color: #f8f8f8; }
+.table_cart__row_aside { color: #666666; font-size: 12px; font-family: "宋体"; }
+.table_cart__row_aside td { vertical-align: middle; padding: 0; height: 54px; border-bottom: solid 1px #f0f0f0; }
+.table_cart__row_aside .input { width: 314px; height: 25px; border: solid 1px #f0f0f0; border-radius: 2px; font-size: 12px; padding-left: 6px; }
+.table_cart__row_aside .send-pay { text-align: right; padding-right: 32px; }
+.table_cart__row_aside .remark { padding-left: 10px; }
+.table_cart__row_aside .total { text-align: right; padding-right: 30px; font-size: 14px; font-family: "Microsoft YaHei; "}
+.table_cart__row_aside .total .color_key { font-size: 16px; }
+.confirm__summary  { float: none; text-align: right; border-top: solid 1px #e8e8e8; margin-top: 42px; }
+.confirm__summary .go-back { float: left; font-size: 12px; font-family: "宋体"; color: #666666; padding-left: 15px; line-height: 1; background: url(../images/icon_goback.png) no-repeat 0 0; margin: 20px 0 0 31px; }
+.confirm__summary .sum__go-pay { line-height: 50px; }
+
+
+/* =购物流程-确认订单 */
+.main_shopping-success { }
+.main_shopping-success .main_wrap { height: 420px; margin-top: 1px; background-color: #ffffff; margin-bottom: 80px; }
+.main_shopping-success_inner { width: 500px; margin: 0 auto; padding-top: 68px; line-height: 1; }
+.main_shopping-success__result { padding-bottom: 21px; background: url(../images/line.png) no-repeat 0 bottom; }
+.main_shopping-success__result .result__title { font-size: 42px; color: #db2c35; line-height: 76px; padding-left: 100px; margin-left: 78px; background: url(../images/success.png) no-repeat 0 center; }
+.main_shopping-success__result .result__order { color: #666666; margin-top: 50px; text-align: center; }
+.main_shopping-success__result .item { margin-right: 24px; }
+.main_shopping-success__result .item:nth-of-type(3) { margin-right: 0; }
+.main_shopping-success__result .code { color: #e6742e; }
+.main_shopping-success__aside { text-align: center; margin-top: 46px; }
+.main_shopping-success__aside .aside__go-shopping { display: inline-block; width: 116px; height: 42px; line-height: 42px; font-size: 18px; text-align: center; color: #fff; background-color: #e6742e; border-radius: 3px; }
+.main_shopping-success__aside .aside__order-detail { color: #707070; margin-left: 20px; }

@@ -59,13 +59,13 @@
       <div class="main_shopping-order__address">
         <h1 class="address__head">选择收货地址</h1>
         <div class="address__body">
-          <h2 class="address__bread"><a class="bread_head bread_node">管理收货地址</a><a class="bread_node">使用新地址</a></h2>
+          <h2 class="address__bread"><a class="bread_head bread_node">· 管理收货地址</a><a class="bread_node">· 使用新地址</a></h2>
           <table class="address__table">
             <tr class="table__row">
               <td class="row__label label_required">省：</td>
               <td class="row__cont"><select><option>湖北省</option><option>湖南省</option></select>
-                <label>市</label><select><option>武汉市</option></select>
-                <label>区</label><select><option>硚口区</option></select>
+                <label class="label">市</label><select><option>武汉市</option></select>
+                <label class="label">区</label><select><option>硚口区</option></select>
               </td>
             </tr>
             <tr class="address__table">
@@ -73,20 +73,23 @@
               <td class="row__cont"><input class="input input_text" type="text"></td>
             </tr>
             <tr class="address__table">
-              <td class="row__label label_required">街道地址：</td>
-              <td class="row__cont"><textarea class="input input_textarea"></textarea><label class="input_tips">请填写街道地址，最少5个字，最多不能超过100个字</label></td>
+              <td class="row__label valign_top label_required" style="padding-top: 14px;">街道地址：</td>
+              <td class="row__cont "><textarea class="input input_textarea"></textarea><label class="input_tips">请填写街道地址，最少5个字，最多不能超过100个字</label></td>
             </tr>
             <tr class="address__table">
-              <td>收货人地址：</td>
-              <td><input type="text"></td>
+              <td class="row__label label_required">收货人地址：</td>
+              <td class="row__cont"><input class="input input_text" type="text"></td>
             </tr>
-            <tr>
-              <td>手机：</td>
-              <td><input type="text"></td>
+            <tr class="address__table">
+              <td class="row__label label_required">手机：</td>
+              <td class="row__cont"><input class="input input_text" type="text"></td>
             </tr>
-            <tr>
+            <tr class="address__table">
               <td></td>
-              <td><input type="button" value="确认地址"></td>
+              <td class="row__cont">
+                <input class="button_ok" type="button" value="确认地址"><!-- 
+             --><input class="button_cancel" type="button" value="取消">
+              </td>
             </tr>
           </table>    
         </div>
@@ -94,7 +97,61 @@
       <!-- /选择收货地址 -->
       
       <div class="main_shopping-order__confirm">
+          <h1 class="confirm__head">选择收货地址</h1>
+          <table class="confirm_table table_cart">
+            <col width="300"><!-- 1.商品 -->
+            <col width="180"><!-- 2.商品信息 -->
+            <col width="140"><!-- 3.单价（点劵） -->
+            <col width="120"><!-- 4.数量 -->
+            <col width="100"><!-- 5.优惠 -->
+            <col width=""><!-- 6.小计 -->
+            <tr class="table_cart__head">
+              <th class="th align_center">商品</th>
+              <th class="th">商品信息</th>
+              <th class="th">单价（点劵）</th>
+              <th class="th">数量</th>
+              <th class="th">优惠</th>
+              <th class="th align_right" style="padding-right: 30px;">小计</th>
+            </tr>
+            <tr class="table_cart__row">
+              <td><!-- 1.商品 -->
+                <div class="product_table clearfix">
+                  <a href="#" class="product__pic"><!-- 
+                  --><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+                  <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包</a></p>
+                </div>
+              </td>
+              <td><!-- 2.商品信息 -->
+                <ul class="product-info">
+                  <li class="product-info__item"><!-- 
+                   --><label class="item__label">颜色：</label><span class="item__cont">黑色</span></li>
+                  <li class="product-info__item"><!-- 
+                   --><label class="item__label">尺码：</label><span class="item__cont">宽 20  高 14</span></li>
+                </ul>
+              </td>
+              <td><!-- 3.单价（点劵） --><span class="product-price__now">46.00</span></td>
+              <td><!-- 4.数量 --><span class="product-amount">1</span></td>
+              <td><!-- 5.优惠 --><span class="product-price__discount">46.00</span></td>
+              <td class="align_right"><!-- 6.小计 --><span class="product-total">9999946.00</span></td>
+            </tr>
+            <tr class="table_cart__row_aside">
+              <td class="remark" colspan="4">备注：<input class="input" type="text" placeholder="补充填写其他信息，如快递不到请留言备注"></td>
+              <td class="send-pay" colspan="2">快递运费：<i>8</i>元</td>
+            </tr>
+            <tr class="table_cart__row_aside">
+              <td class="total" colspan="6">合计：<i class="color_key">54.00点劵</i></td>
+            </tr>
+            
+          </table>      
+
         
+        
+          <div class="confirm__summary summary__sum">
+            <a href="#" class="go-back">返回购物车</a>
+            共有<i class="sum__acount">0</i>件商品，总计：<i class="sum__money"><span class="money">0.00</span>&nbsp;点劵</i><!-- 
+         --><a class="sum__go-pay" href="#">去付款<i class="indicator">&gt;</i></a>
+          </div>
+      
       </div>
 
   
@@ -105,7 +162,40 @@
 <!-- /main -->
 
 <!-- footer -->
-  <div class="footer footer_login" role="footer">
+  <div class="footer" role="footer">
+      <div class="footer__nav wrap">
+        <dl class="nav__link-list">
+          <dt class="link-list__title">新手指南</dt>
+          <dd class="link-list__item"><a class="item__link" href="#">常见问题</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">新会员注册</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">用户登录</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">找回密码</a></dd>
+        </dl>
+        <dl class="nav__link-list">
+          <dt class="link-list__title">兑换指南</dt>
+          <dd class="link-list__item"><a class="item__link" href="#">兑换流程</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">订单状态说明</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">隐私声明</a></dd>
+        </dl>
+        <dl class="nav__link-list">
+          <dt class="link-list__title">配送与支付</dt>
+          <dd class="link-list__item"><a class="item__link" href="#">商品验货及签收</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">配送时间及范围</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">运费说明</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">支付方式说明</a></dd>
+        </dl>
+        <dl class="nav__link-list">
+          <dt class="link-list__title">会员中心</dt>
+          <dd class="link-list__item"><a class="item__link" href="#">我的收藏</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">我的订单</a></dd>
+          <dd class="link-list__item"><a class="item__link" href="#">资金管理</a></dd>
+        </dl>
+        <div class="nav__working-info working-info">
+          <p class="working-info__tel">4006-235-216</p>
+          <p class="working-info__workday">周一至周日 9:00-22:00<br>客服电话  免长途费 </p>
+          <a class="working-info__contactus" href="#">联系我们</a>
+        </div>
+      </div>
       <div class="footer__aside">
         <p class="copyright">Copyright &copy; 1998-2015  街上公司  <a href="#">jies.com</a> 版权所有湖北省通管局增值电信业务经营许可证B2-20140307</p>
         <div class="authentication">
@@ -117,6 +207,7 @@
       </div>
   </div>
 <!-- /footer -->
+
 
 </body>
 
