@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>全屏滚动</title>
+<link rel="stylesheet" href="css/onepage-scroll.css" />
+<style>
+.page { background: url(about:blank) no-repeat center center; }
+.onepage-pagination { margin-top: -96px; padding-right: 3px; background-color: rgba(255,255,255,0.2); border-radius: 2px; }
+.onepage-pagination li a:before{ background: rgba(255,255,255,0.85); }
+.onepage-pagination li a.active:before{ border: 1px solid rgba(255,255,255,0.85); }
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.onepage-scroll.min.js"></script>
+<script>
+$(function(){
+	$('.main').onepage_scroll({
+		sectionContainer: '.page'
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+	<div class="page page1" style="background-image:url(./images/1.png)">
+		<!-- <p class="title">第1屏</p> -->
+	</div>
+	<div class="page page2" style="background-image:url(./images/2.png)" >
+		<!-- <p class="title">第2屏</p> -->
+	</div>
+	<div class="page page3" style="background-image:url(./images/3.png)">
+		<!-- <p class="title">第3屏</p> -->
+	</div>
+	<div class="page page4" style="background-image:url(./images/4.png)">
+		<!-- <p class="title">第4屏</p> -->
+	</div>
+	<div class="page page5" style="background-image:url(./images/5.png)">
+		<!-- <p class="title">第5屏</p> -->
+	</div>
+	<div class="page page6" style="background-image:url(./images/6.png)">
+		<!-- <p class="title">第6屏</p> -->
+	</div>
+	<div class="page page7" style="background-image:url(./images/7.png)">
+		<!-- <p class="title">第7屏</p> -->
+	</div>
+	<div class="page page8" style="background-image:url(./images/8.png)">
+		<!-- <p class="title">第8屏</p> -->
+	</div>
+</div>
+
+
+</body>
+</html>

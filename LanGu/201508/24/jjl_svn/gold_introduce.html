@@ -182,12 +182,51 @@
         </div>
         <script>
         $( function () {
+            var intervalId = null;
+            var index = 0; 
+            var intervalTime = 4000;
+            var pageSize = $( ".gold-tips__index" ).length;
+            var isAutoPlay = true;
+            var indexsContainer = $( ".gold-tips__index" ).parent().get(0);
+
             $( ".gold-tips__index" ).click( function () {
                 var $self = $( this );
                 var index = $self.index();
-                $self.addClass( "gold-tips__index_active" ).siblings().removeClass( "gold-tips__index_active" );
-                $( ".gold-tips__item " ).hide().eq( index ).stop().slideDown();
+                play( index );
             } );
+            
+            function setAutoPlay( isAutoPlay ) {
+                if ( isAutoPlay ) {
+                    autoPlay();
+                    return;
+                }
+                disableAutoPlay();
+                indexsContainer.onmouseover = null;
+                indexsContainer.onmouseout = null;                      
+            }
+
+            function play( index ) {
+                $( ".gold-tips__index" ).removeClass( "gold-tips__index_active" )
+                    .eq(index).addClass( "gold-tips__index_active" );
+                $( ".gold-tips__item " ).hide().eq( index ).stop().slideDown();
+            }
+            function autoPlay() {
+                intervalId = setInterval( function () {
+                    index++;
+                    index %= pageSize;
+                    play(index);
+                }, intervalTime );      
+                indexsContainer.onmouseover = disableAutoPlay;
+                indexsContainer.onmouseout = autoPlay;                          
+            }
+            function disableAutoPlay() {
+                intervalId && clearInterval( intervalId );
+                // indexsContainer.onmouseover = null;
+                // indexsContainer.onmouseout = null;                  
+            }
+
+            setAutoPlay( true );
+
         } );
         </script>
     </div>

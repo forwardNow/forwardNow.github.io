@@ -150,7 +150,7 @@
 
 
 /* =购物流程-购物车*/
-.main_shopping { background-color: #f7f7f7; overflow: hidden;}
+.main_shopping { background-color: #f7f7f7; overflow: hidden; min-height: 400px;}
 .main_shopping-cart .main_wrap { background-color: #ffffff; margin-bottom: 60px;}
 .top_shopping { background-color: #f7f7f7; }
 .top_shopping .top__welcome_link { color: #8f8f8f; font-size: 12px; font-family: "宋体"; padding: 10px 0 0 27px; line-height: 1.2; background: url(../images/icon_home.png) no-repeat 0 4px; }
@@ -222,3 +222,11 @@
 .summary__sum .sum__go-pay { display: inline-block; width: 150px; height: 50px; background-color: #d8d8d8; text-align: center; font-size: 20px; color: #ffffff; margin-left: 22px; }
 .summary__sum .indicator { font-family: "宋体"; margin-left: 14px; }
 .summary__sum .sum__go-pay:hover { background-color: #db2c35; }
+
+
+/* =购物流程-确认订单 */
+.main_shopping-order .main_wrap {
+  min-height: 600px;
+  background-color: #ffffff;
+  margin-top: 1px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3、首页登陆界面的修改</title>
+  <link rel="stylesheet" href="__private/__reset.css">
+  <link rel="stylesheet" href="__private/__style.css">
+  <link rel="stylesheet" href="__private/__style.css">
+  <script src="__private/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+        <div class="banner-login-wrap">
+            <div class="banner-login">
+                <div class="login-head">
+                    <a class="head-title" href="#">登陆</a>
+                    <a class="head-title another" href="#">快速注册</a>
+                </div>
+                <div class="login-body">
+                    <div class="login-body-inner">
+                        <input class="username" type="text" placeholder="您的手机号码">
+                        <input class="password" type="password" placeholder="登陆密码">
+
+<!-- 新增的HTML部分 -->                        
+                        <div class="authcode clearfix">
+                            <input class="authcode-input username" type="text" placeholder="验证码">
+                            <img class="authcode-img" src="#" alt="验证码">
+                            <a class="authcode-next" href="javascript:void(0)">换一换</a>
+                        </div>    
+<!-- /新增的HTML部分 -->
+
+                        <p class="forgetpasswd"><a href="#">忘记密码？</a></p>
+                        <input class="submitbtn" type="submit" value="登陆">
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+<!-- 新增的CSS部分 （建议追加到 public.css ） -->
+    <style>
+        /* 2015-09-14 修改 */
+        .banner-login-wrap { top: 29px; }
+        .banner-login .login-body { height: auto; padding-bottom: 27px; }
+        .banner-login .forgetpasswd { line-height: 50px; }
+        .banner-login .authcode { margin-top: 13px; }
+        .banner-login .authcode-input { float: left; width: 106px; }
+        .banner-login .authcode-img { float: left; height: 38px; width: 90px; margin-left: 16px; }
+        .banner-login .authcode-next { float: left; font-size: 12px; line-height: 38px; color: #fff; margin-left: 6px; }
+    </style>
+<!-- /新增的CSS部分  -->
+</body>
+</html>

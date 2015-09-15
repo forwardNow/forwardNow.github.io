@@ -1,0 +1,38 @@
+onepage scorll全屏滚动插件，它能够很方便、很轻松的制作出单页/全屏滚动页面。兼容主流浏览器，懒人图库推荐下载！
+
+使用方法：
+1、head区域引用文件onepage-scroll.css，jquery.min.js，jquery.onepage-scroll.min.js及以下样式
+.page1 { background-color: #1bbc9b;}
+.page2 { background-color: #FF7F50;}
+.page3 { background-color: #4BBFC3;}
+.page4 { background-color: #f90;}
+p.title { position: relative; top: 35%; font: 700 40px "Microsoft Yahei"; color: #fff; text-align: center;}
+2、在文件中加入以下代码
+
+<div class="main">
+	<div class="page page1">
+		<p class="title">第一屏</p>
+	</div>
+	<div class="page page2">
+		<p class="title">第二屏</p>
+	</div>
+	<div class="page page3">
+		<p class="title">第三屏</p>
+	</div>
+	<div class="page page4">
+		<p class="title">第四屏</p>
+	</div>
+</div>
+3 引入以下js代码
+<script>
+$(function(){
+	$('.main').onepage_scroll({
+		sectionContainer: '.page'
+	});
+});
+</script>
+
+4 可设置属性，调整效果。具体参考index2.html等文件
+
+
+*更多代码请访问：懒人图库 www.lanrentuku.com/js/

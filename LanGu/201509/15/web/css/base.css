@@ -1,0 +1,10 @@
+
+/* <h1 class="logo-site"><a href="index.html">林音建材</a></h1> */
+.logo-site {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(about:blank);
+  background-size: auto 100%;
+  overflow: hidden;
+  text-indent: -999em;  
+}

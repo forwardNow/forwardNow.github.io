@@ -45,8 +45,28 @@
             
             <div class="home-nav" role="nav">
                 <ul class="nav-list clearfix">
-                    <li class="list-item"><a href="#">我要理财</a><i class="sub-indicator"></i></li>
-                    <li class="list-item"><a href="#">我要借款</a><i class="sub-indicator"></i></li>
+                    <li class="list-item"><a href="#">我要理财</a><i class="sub-indicator"></i>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">企业经营贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">房贷宝</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">惠龙贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">汽车产业贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">抵押贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">圈链会联保贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">债权类产品</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="#">我要借款</a><i class="sub-indicator"></i>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">企业经营贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">房贷宝</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">惠龙贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">汽车产业贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">抵押贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">圈链会联保贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">债权类产品</a></li>
+                        </ul>
+                    </li>
                     <li class="list-item"><a href="#">新手指引</a></li>
                     <li class="list-item"><a href="#">京金币介绍</a></li>
                 </ul>
@@ -57,6 +77,31 @@
         </div>
 
     </div>
+
+    <style>
+        .home-nav .list-item { position: relative; }
+        .home-nav .submenu { display: none; position: absolute; z-index: 10; top: 26px; left: 0px; width: 110px; text-align: left;background-color: rgba(201,161,99,0.45);  
+        filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#72C9A163', endColorstr='#72C9A163');}
+        .home-nav .submenu-item { height: 34px; line-height: 34px; padding-left: 13px; }
+        .home-nav .submenu-item-link { display: block; height: 100%; font-size: 14px; color: #1a1b1d!important; }
+        .home-nav .submenu-item:hover { background-color: rgba(201,161,99,0.6); border-color: transparent!important; 
+        filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99C9A163', endColorstr='#99C9A163');}
+    </style>
+    <script>
+        $( function () {
+            $( ".home-nav .list-item" ).hover( 
+                function () { // over
+                    var submenu = $( this ).css( "border-color", "#c8a063" ).find( ".submenu" );
+                    submenu.stop().slideDown();
+                    submenu.size() && $( this ).css( "border-color", "transparent" );
+                },
+                function () { // out
+                    $( this ).css( "border-color", "transparent" ).find( ".submenu" ).stop().hide();
+                }
+            );
+        } );
+    </script>
+
 <!-- /header -->
     
 <!-- home banner -->    
@@ -130,13 +175,26 @@
                     <div class="login-body-inner">
                         <input class="username" type="text" placeholder="您的手机号码">
                         <input class="password" type="password" placeholder="登陆密码">
+                        <div class="authcode clearfix">
+                            <input class="authcode-input username" type="text" placeholder="验证码">
+                            <img class="authcode-img" src="#" alt="验证码">
+                            <a class="authcode-next" href="javascript:void(0)">换一换</a>
+                        </div>    
                         <p class="forgetpasswd"><a href="#">忘记密码？</a></p>
                         <input class="submitbtn" type="submit" value="登陆">
                     </div>
                 </div>
             </div>
         </div>    
-            
+        <style>
+        .banner-login-wrap { top: 29px; }
+        .banner-login .login-body { height: auto; padding-bottom: 27px; }
+        .banner-login .forgetpasswd { line-height: 50px; }
+        .banner-login .authcode { margin-top: 13px; }
+        .banner-login .authcode-input { float: left; width: 106px; }
+        .banner-login .authcode-img { float: left; height: 38px; width: 90px; margin-left: 16px; }
+        .banner-login .authcode-next { float: left; font-size: 12px; line-height: 38px; color: #fff; margin-left: 6px; }
+        </style>
     </div>
 <!-- /home banner -->
     

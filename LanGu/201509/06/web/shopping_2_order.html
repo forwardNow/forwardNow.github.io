@@ -17,51 +17,91 @@
 </head>
 
 <body>
+<!-- top -->
+  <div class="top top_shopping" role="top">
+    <div class="wrap clearfix">
+      <p class="top__welcome"><a class="top__welcome_link" href="index.html">送物天下首页</a></p>
+      <ul class="top__links">
+        <li class="links__item"><a href="#" class="item__link">qq _6455dfw554564<i class="sub-indicator"> »</i></a></li>
+        <li class="links__item_separator">|</li>
+        <li class="links__item"><a href="#" class="item__link">我的订单</a></li>
+        <li class="links__item_separator">|</li>
+        <li class="links__item"><a href="#" class="item__link">帮助中心</a></li>
+      </ul>
+    </div>
+  </div>
+<!-- /top -->
 
 <!-- header -->
-  <div class="header_login" role="header">
-    <div class="header_login__inner wrap clearfix">
-      <h1 class="header_login__site-logo"><a href="index.html"><img src="./images/site_logo.png" alt="送物天下"></a></h1>
-      <p class="header_login__welcome">您好，欢迎光临送物天下！ <a class="welcome__loin" href="#">请登陆</a> </p>
+  <div class="header_shopping" role="header">
+    <div class="header_shopping__inner wrap clearfix">
+      <div class="clearfix">
+        <h1 class="header_shopping__site-logo"><a href="index.html"><img src="./images/site_logo.png" alt="送物天下"></a></h1>
+        <ul class="header_shopping__process-list header_shopping__process_2th">
+          <li class="list__item list__item_active">1.我的购物车</li>
+          <li class="list__item list__item_active">2.填写核对订单信息</li>
+          <li class="list__item">3.成功提交订单</li>
+        </ul>
+      </div>
+      <div class="header__page-title">
+        <h1 class="page-title__name">填写核对订单信息</h1>
+      </div>
     </div>
   </div>
 <!-- /header -->
 
 <!-- main -->
-  <div class="main main_login" role="main">
+  <div class="main main_shopping main_shopping-order" role="main">
     
     <div class="main_wrap wrap">
-  
-      <form action="#">
 
-        <div class="login-container">
-          <h2 class="login__caption">登陆</h2>
-          <div class="login__username">
-            <input type="text" class="login__input username__input" placeholder="请在此处输入账号" required="required">     
-            <label class="login__input_icon"></label>
-          </div>
-          <div class="login__password">
-            <input type="password" class="login__input password__input" placeholder="请在此处输入密码" required="required">    
-            <label class="login__input_icon"></label> 
-          </div>
-          <div class="login__authcode">
-            <input type="text" class="login__input authcode__input" placeholder="请在此处输入验证码" required="required">    
-            <a href="javascript:void(0)" class="authcode__img_wrap"><img class="authcode__img" src="./images/authcode_pic.jpg" alt=""></a>
-            <p class="authcode__change_wrap">看不清？<a class="authcode__change" href="javscript:void(0)">换一张</a></p>
-          </div>
-          <div class="login__record-passwd">
-            <p class="record-passwd_wrap"><input class="record-passwd" type="checkbox"><label class="record-passwd_label">记住密码</label></p>
-          </div>
-          <input class="login__submit" type="submit" value="立即登陆">
-          <p class="login__aside">没有账号？<a class="go-reg" href="#">立即注册<i class="indicator">&gt;&gt;</i></a></p>
+      <!-- 选择收货地址 -->
+      <div class="main_shopping-order__address">
+        <h1 class="address__head">选择收货地址</h1>
+        <div class="address__body">
+          <h2 class="address__bread"><a class="bread_head bread_node">管理收货地址</a><a class="bread_node">使用新地址</a></h2>
+          <table class="address__table">
+            <tr class="table__row">
+              <td class="row__label label_required">省：</td>
+              <td class="row__cont"><select><option>湖北省</option><option>湖南省</option></select>
+                <label>市</label><select><option>武汉市</option></select>
+                <label>区</label><select><option>硚口区</option></select>
+              </td>
+            </tr>
+            <tr class="address__table">
+              <td class="row__label label_required">邮政编码：</td>
+              <td class="row__cont"><input class="input input_text" type="text"></td>
+            </tr>
+            <tr class="address__table">
+              <td class="row__label label_required">街道地址：</td>
+              <td class="row__cont"><textarea class="input input_textarea"></textarea><label class="input_tips">请填写街道地址，最少5个字，最多不能超过100个字</label></td>
+            </tr>
+            <tr class="address__table">
+              <td>收货人地址：</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td>手机：</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="button" value="确认地址"></td>
+            </tr>
+          </table>    
         </div>
+      </div>
+      <!-- /选择收货地址 -->
+      
+      <div class="main_shopping-order__confirm">
+        
+      </div>
 
-
-      </form>
-
+  
     </div>
 
   </div>
+
 <!-- /main -->
 
 <!-- footer -->

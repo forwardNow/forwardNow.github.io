@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2、给主导航添加下拉子菜单</title>
+  <link rel="stylesheet" href="__private/__reset.css">
+  <link rel="stylesheet" href="__private/__style.css">
+  <script src="__private/jquery.min.js"></script>
+</head>
+<body>
+
+
+  <!-- header -->
+    <div class="header" role="header">
+        <div class="header-inner wrap">
+            
+            <h1 class="sitelogo-wrap"><a class="sitelogo" href="index.html"></a></h1>
+            
+            <div class="home-nav" role="nav">
+                <ul class="nav-list clearfix">
+                    <li class="list-item"><a href="#">我要理财</a><i class="sub-indicator"></i>
+
+<!-- 新增的HTML部分 -->
+                        <ul class="submenu">
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">企业经营贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">房贷宝</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">惠龙贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">汽车产业贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">抵押贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">圈链会联保贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">债权类产品</a></li>
+                        </ul>
+<!-- /新增的HTML部分 -->
+
+
+
+                    </li>
+                    <li class="list-item"><a href="#">我要借款</a><i class="sub-indicator"></i>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">企业经营贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">房贷宝</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">惠龙贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">汽车产业贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">抵押贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">圈链会联保贷</a></li>
+                            <li class="submenu-item"><a class="submenu-item-link" href="#">债权类产品</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a href="#">新手指引</a></li>
+                    <li class="list-item"><a href="#">京金币介绍</a></li>
+                </ul>
+            </div>
+
+            <a class="header-more" href="#">更多</a>
+
+        </div>
+
+    </div>
+
+<!-- 新增的CSS部分 （建议追加到 public.css ） -->
+    <style>
+        /* 2015-09-14 修改 */
+        .home-nav .list-item { position: relative; }
+        .home-nav .submenu { display: none; position: absolute; z-index: 10; top: 26px; left: 0px; width: 110px; text-align: left;background-color: rgba(201,161,99,0.45);  
+        filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#72C9A163', endColorstr='#72C9A163');}
+        .home-nav .submenu-item { height: 34px; line-height: 34px; padding-left: 13px; }
+        .home-nav .submenu-item-link { display: block; height: 100%; font-size: 14px; color: #1a1b1d!important; }
+        .home-nav .submenu-item:hover { background-color: rgba(201,161,99,0.6); border-color: transparent!important; 
+        filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99C9A163', endColorstr='#99C9A163');}
+    </style>
+<!-- /新增的CSS部分 -->    
+
+<!-- 新增的JS部分 （ 建议抽取到到js文件或直接置于HTML文件中 ） -->
+    <script>
+        $( function () {
+            $( ".home-nav .list-item" ).hover( 
+                function () { // over
+                    var submenu = $( this ).css( "border-color", "#c8a063" ).find( ".submenu" );
+                    submenu.stop().slideDown();
+                    submenu.size() && $( this ).css( "border-color", "transparent" );
+                },
+                function () { // out
+                    $( this ).css( "border-color", "transparent" ).find( ".submenu" ).stop().hide();
+                }
+            );
+        } );
+    </script>
+<!-- /新增的JS部分 -->    
+
+<!-- /header -->
+  
+
+
+</body>
+</html>
