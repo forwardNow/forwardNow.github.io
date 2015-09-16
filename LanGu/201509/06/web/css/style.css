@@ -187,7 +187,7 @@
 .table_cart__row .product__pic { float: left; width: 78px; height: 78px; border: solid 1px #cccccc; overflow: hidden; }
 .table_cart__row .product_table .product__pic:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; }
 .table_cart__row .product_table .product__pic .img { width: 100%; height: auto; vertical-align: middle; }
-.table_cart__row .product_table .product__name { float: left; margin-left: 16px; }
+.table_cart__row .product_table .product__name { float: left; margin-left: 16px; width: 160px; }
 .table_cart__row .product_table .product__name .link { color: #666666; }
 .table_cart__row .product_table .product__name .link:hover { color: #db2c35; }
 
@@ -323,6 +323,8 @@
   padding-bottom: 100px;
 }
 
+/* =个人中心-账号安全 */
+
 .table_account { margin-top: 20px; width: 100%; }
 .table_account .label { width: 84px; color: #4c4c4c; text-align: right;}
 .table_account .label:before { content: "*"; color: #d0040d; margin-right: 6px; vertical-align: -1px;}
@@ -341,3 +343,36 @@
 .account__faq .faq__item { padding-left: 16px; background: url(../images/list_style_square_1.png) no-repeat 8px center; }
 .account__faq .item__link { color: #a3a3a3; line-height: 22px; }
 .account__faq .item__link:hover { color: #db2c35; }
+
+/* =个人中心-订单管理 */
+.main_mycenter .maycenter__container_order { padding: 0; width: 860px; padding-bottom: 100px; }
+.maycenter__container_order .container__head { border: none 0; padding-left: 40px; }
+
+.table_order { font-family: "Microsoft YaHei"; font-size: 14px; color: #666666; width: 100%; }
+.table_order .table__head { }
+.table_order .table__head th { color: #333333; background-color: #e6e6e6; height: 40px; }
+.table_order .table__row { }
+.table_order .table__row td { text-align: center; vertical-align: top; padding-top: 20px; padding-bottom: 20px; }
+.order__product { overflow: hidden; padding: 0 20px; }
+.order__product .product__pic { float: left; width: 78px; height: 78px; border: solid 1px #cccccc; overflow: hidden; text-align: center; }
+.order__product .product__pic:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; }
+.order__product .img { width: 100%; height: auto; vertical-align: middle; }
+.order__product .product__name { float: left; margin-left: 16px; width: 140px; text-align: left; }
+.order__product .product__name .link { color: #666666; }
+.order__product-price { }
+.order__product-price .product-price__old { color: #999999; }
+.order__product-price .product-price__now { }
+.order__pay { }
+.order__pay_aside { color: #808080; }
+
+.order_ope { color: #4598c8; }
+
+.table__row_aside { vertical-align: top; line-height: 28px; }
+.table__row_aside td { }
+.aside_container { width: 820px; border-top: solid 1px #f4f2f2; border-bottom: solid 1px #f0f0f0; margin: 0 auto; padding: 10px 0 50px 0; }
+
+.aside__order-num { vertical-align: middle; }
+.aside__order-cancel { font-family: "宋体"; color: #4598c8; font-size: 12px; margin-left: 24px; vertical-align: -1px; }
+.aside__order-total { float: right; }
+.aside__order-btn { display: inline-block; width: 80px; height: 28px; line-height: 28px; text-align: center; border-radius: 2px; color: #ffffff; background-color: #db2c35; margin-left: 28px; }
+.aside__order-btn_disable { background-color: #666666; cursor: not-allowed; }

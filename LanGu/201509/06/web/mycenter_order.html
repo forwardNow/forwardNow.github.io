@@ -44,7 +44,7 @@
 <!-- /top -->
 
 <!-- header -->
-  <div class="header header_mycenter" role="header">
+  <div class="header header_mycenter header_mycenter-account" role="header">
     <div class="header__inner wrap clearfix">
       
       <h1 class="header__site-logo"><a href="index.html"><img src="./images/site_logo.png" alt="送物天下"></a></h1>
@@ -76,67 +76,151 @@
       <div class="mycenter__sidebar">
         <dl class="sidebar__list">
           <dt class="list__title">用户资料</dt>
-          <dd class="list__item list__item_active"><a class="item__link" href="mycenter_baseinfo.html">基本资料</a></dd>
+          <dd class="list__item"><a class="item__link" href="mycenter_baseinfo.html">基本资料</a></dd>
           <dd class="list__item"><a class="item__link" href="mycenter_account.html">账号安全</a></dd>
         </dl>  
         <dl class="sidebar__list">
           <dt class="list__title">我的交易</dt>
-          <dd class="list__item"><a class="item__link" href="#">订单管理</a></dd>
+          <dd class="list__item list__item_active"><a class="item__link" href="#">订单管理</a></dd>
           <dd class="list__item"><a class="item__link" href="#">收货地址</a></dd>
         </dl>  
       </div>
 
-      <div class="maycenter__container maycenter__container_baseinfo">
-          <p class="container__head">你好，欢迎加入够物天下！今天是  <span id="currentTime"></span></p>
+      <div class="maycenter__container maycenter__container_order">
+          <p class="container__head">你好，欢迎加入够物天下！今天是 <span id="currentTime"></span></p>
           <div class="container__body">
-            <table class="table_baseinfo">
-              <tr>
-                <td class="label">用户昵称：</td><td class="cont">送物天下</td>
+            
+            <table class="table_order">
+              <col width="280"><!-- 1.商品  -->
+              <col width="100"><!-- 2.单价（点劵）  -->
+              <col width="100"><!-- 3.数量  -->
+              <col width="100"><!-- 4.实付（点劵）  -->
+              <col width="140"><!-- 5.交易状态  -->
+              <col width=""><!-- 6.操作  -->
+              <tr class="table__head">
+                <th>商品</th>
+                <th>单价（点劵）</th>
+                <th>数量</th>
+                <th>实付（点劵）</th>
+                <th>交易状态</th>
+                <th>操作</th>
               </tr>
-              <tr>
-                <td class="cont cont_tips" colspan="2"><span class="text">请完善以下用户信息，以便我们更好的为你服务。</span></td>
-              </tr>
-              <tr>
-                <td class="label">姓　　名：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>  
-              <tr>
-                <td class="label">生　　日：</td>
-                <td class="cont">
-                  <select class="select">
-                    <option value="2015">2015年</option>
-                  </select><select class="select">
-                    <option value="01">01月</option>
-                  </select><select class="select">
-                    <option value="12">12日</option>
-                  </select>
-                  <label class="cont__label">仅自己可见</label>
+              <tr class="table__row">
+                <td><!-- 1.商品  -->
+                  <div class="order__product clearfix">
+                    <a href="#" class="product__pic"><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+                    <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包克拉恋人丝绒链条包克拉恋人丝绒链条包</a></p>
+                  </div>                  
+                </td>
+                <td><!-- 2.单价（点劵）  -->
+                  <div class="order__product-price">
+                    <p class="product-price__old"><del>65.00</del></p>
+                    <p class="product-price__now">46.00</p>
+                  </div>                
+                </td>
+                <td><!-- 3.数量  -->
+                  <span class="order__product-amount">1</span>
+                </td>
+                <td><!-- 4.实付（点劵）  -->
+                  <p class="order__pay">46.00</p>
+                  <p class="order__pay_aside">(包邮)</p>
+                </td>
+                <td><!-- 5.交易状态  -->
+                  <p class="order__status">等待付款</p>
+                </td>
+                <td><!-- 6.操作  -->
+                  
                 </td>
               </tr>
-              <tr>
-                <td class="label">性　　别：</td>
-                <td class="cont">
-                  <input type="radio"><label class="label_radio">男</label><!-- 
-               --><input type="radio"><label class="label_radio">女</label><!-- 
-               --><input type="radio" checked><label class="label_radio">保密</label>
+              <tr class="table__row_aside">
+                <td colspan="6">
+                  <div class="aside_container">
+                    <span class="aside__order-num">订单编号：<i>534954284</i></span>
+                    <a class="aside__order-cancel" href="javascript:void(0)">取消订单</a>
+                    <p class="aside__order-total">总计：<i>46.00</i>点劵<a class="aside__order-btn" href="#">付款</a></p>
+                  </div>
                 </td>
               </tr>
-              <tr>
-                <td class="label">手　　机：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>  
-              <tr>
-                <td class="label">Q　　Q：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>    
-              <tr>
-                <td class="label">旺　　旺：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>     
-              <tr>
-                <td class="label label_area">收货地址：</td><td class="cont"><textarea class="input input_textarea"></textarea></td>
-              </tr>    
-              <tr>
-                <td>&nbsp;</td>
-                <td><input class="submit" type="submit" value="保   存"></td>
-              </tr>            
-            </table>
+
+
+              <tr class="table__row">
+                <td><!-- 1.商品  -->
+                  <div class="order__product clearfix">
+                    <a href="#" class="product__pic"><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+                    <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包克拉恋人丝绒链条包克拉恋人丝绒链条包</a></p>
+                  </div>                  
+                </td>
+                <td><!-- 2.单价（点劵）  -->
+                  <div class="order__product-price">
+                    <p class="product-price__old"><del>65.00</del></p>
+                    <p class="product-price__now">46.00</p>
+                  </div>                
+                </td>
+                <td><!-- 3.数量  -->
+                  <span class="order__product-amount">1</span>
+                </td>
+                <td><!-- 4.实付（点劵）  -->
+                  <p class="order__pay">46.00</p>
+                  <p class="order__pay_aside">(包邮)</p>
+                </td>
+                <td><!-- 5.交易状态  -->
+                  <p class="order__status">等待签收</p>
+                </td>
+                <td><!-- 6.操作  -->
+                  
+                </td>
+              </tr>
+              <tr class="table__row_aside">
+                <td colspan="6">
+                  <div class="aside_container">
+                    <span class="aside__order-num">订单编号：<i>534954284</i></span>
+                    <p class="aside__order-total">总计：<i>46.00</i>点劵<a class="aside__order-btn aside__order-btn_disable" href="javascript:void(0)">付款</a></p>
+                  </div>
+                </td>
+              </tr>
+
+
+
+              <tr class="table__row">
+                <td><!-- 1.商品  -->
+                  <div class="order__product clearfix">
+                    <a href="#" class="product__pic"><img class="img" src="./images/product_pic_small_8.jpg" alt=""></a>
+                    <p class="product__name"><a class="link" href="#">克拉恋人丝绒链条包克拉恋人丝绒链条包克拉恋人丝绒链条包</a></p>
+                  </div>                  
+                </td>
+                <td><!-- 2.单价（点劵）  -->
+                  <div class="order__product-price">
+                    <p class="product-price__old"><del>65.00</del></p>
+                    <p class="product-price__now">46.00</p>
+                  </div>                
+                </td>
+                <td><!-- 3.数量  -->
+                  <span class="order__product-amount">1</span>
+                </td>
+                <td><!-- 4.实付（点劵）  -->
+                  <p class="order__pay">46.00</p>
+                  <p class="order__pay_aside">(包邮)</p>
+                </td>
+                <td><!-- 5.交易状态  -->
+                  <p class="order__status">交易成功</p>
+                </td>
+                <td><!-- 6.操作  -->
+                  <a class="order_ope" href="#">删除</a>
+                </td>
+              </tr>
+              <tr class="table__row_aside">
+                <td colspan="6">
+                  <div class="aside_container">
+                    <span class="aside__order-num">订单编号：<i>534954284</i></span>
+                    <p class="aside__order-total">总计：<i>46.00</i>点劵<a class="aside__order-btn aside__order-btn_disable" href="javascript:void(0)">付款</a></p>
+                  </div>
+                </td>
+              </tr>
+
+
+
+              
+            </table> 
           </div>
       </div>
     </div>
