@@ -59,18 +59,18 @@ body { background-color: #fff; min-width: 1000px; }
 
 .nav__sidebar { float: left; width: 240px; position: relative; }
 .nav__sidebar .sidebar__title { font-size: 16px; color: #ffffff; text-align: center; height: 32px; line-height: 32px; background-color: #1a1a1a; }
-.sidebar__list { z-index: 10; position: absolute; background-color: #ffffff; height: 462px; width: 100%; top: 34px; left: 0; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+.nav__sidebar .sidebar__list { z-index: 10; position: absolute; background-color: #ffffff; height: 462px; width: 100%; top: 34px; left: 0; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
  }
-.sidebar__list .list__item { line-height: 1; box-sizing: border-box; height: 66px; border-bottom: dashed 1px #dcdcdc; padding: 12px 0px 0px 20px; position: relative; }
-.sidebar__list .list__item:nth-last-of-type(1) { border: none 0; }
-.sidebar__list .item__title { }
-.sidebar__list .item__title .title__link { font-size: 16px; color: #333333; }
-.sidebar__list .item_links { margin-top: 10px; }
-.sidebar__list .item_links .link { color: #5c5c5c; margin-right: 16px; }
-.sidebar__list .item__title .title__link:hover, 
-.sidebar__list .item_links .link:hover { color: #db2c35; }
-.sidebar__list .item_links .link_hot { color: #db2c35; }
-.sidebar__list .item__indicator { position: absolute; bottom: 13px; right: 20px; font-family: "宋体"; font-size: 12px; line-height: 1; color: #a8a8a8; }
+.nav__sidebar.sidebar__list .list__item { line-height: 1; box-sizing: border-box; height: 66px; border-bottom: dashed 1px #dcdcdc; padding: 12px 0px 0px 20px; position: relative; }
+.nav__sidebar.sidebar__list .list__item:nth-last-of-type(1) { border: none 0; }
+.nav__sidebar.sidebar__list .item__title { }
+.nav__sidebar.sidebar__list .item__title .title__link { font-size: 16px; color: #333333; }
+.nav__sidebar.sidebar__list .item_links { margin-top: 10px; }
+.nav__sidebar.sidebar__list .item_links .link { color: #5c5c5c; margin-right: 16px; }
+.nav__sidebar.sidebar__list .item__title .title__link:hover, 
+.nav__sidebar.sidebar__list .item_links .link:hover { color: #db2c35; }
+.nav__sidebar.sidebar__list .item_links .link_hot { color: #db2c35; }
+.nav__sidebar.sidebar__list .item__indicator { position: absolute; bottom: 13px; right: 20px; font-family: "宋体"; font-size: 12px; line-height: 1; color: #a8a8a8; }
 
 
 /* =footer */

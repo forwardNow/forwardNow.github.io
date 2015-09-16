@@ -52,7 +52,7 @@ button,
 input.ie6 {overflow:visible;padding:.1em .25em;cursor:pointer;} /* 尽量统一按钮的大小，鉴于IE6不支持【属性选择符】，所以使用一个类名来控制 */
 input[type="button"],
 input[type="submit"],
-input[type="reset"] {overflow:visible;padding:.1em .25em;cursor:pointer;} /* 尽量同意按钮的大小，如果采用input方式做的按钮 */
+input[type="reset"] {overflow:visible;/*padding:.1em .25em;*/cursor:pointer;} /* 尽量同意按钮的大小，如果采用input方式做的按钮 */
 input[type="text"],
 select,
 textarea {background-color:#FFFFFF;} /* 统一文本输入框、下拉、文本框的背景色，避免被用户设置系统颜色而破坏页面色彩 */
