@@ -90,7 +90,51 @@
           <p class="container__head">你好，欢迎加入够物天下！今天是 <span id="currentTime"></span></p>
           <div class="container__body">
 
-            <button class="addr__btn_add" onclick="location='mycenter_addr_add.html'">+ 添加新地址</button>
+            <!-- <button class="addr__btn_add">+ 添加新地址</button> -->
+            <div class="container">
+              
+              <table class="table_address-add">
+                <tr>
+                  <td class="label">姓名：</td>
+                  <td class="cont"><input class="input" type="text"></td>
+                </tr>
+                <tr>
+                  <td class="label valign_top">地址：</td>
+                  <td class="cont">
+                    <select class="select">
+                      <option value="">请选择</option>
+                    </select>  
+                    <select class="select">
+                      <option value="">请选择</option>
+                    </select>  
+                    <select class="select">
+                      <option value="">请选择</option>
+                    </select><br>
+                    <textarea class="textarea input" placeholder="请填写详细地址信息"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">电话：</td>
+                  <td class="cont"><input class="input" type="text"></td>
+                </tr>
+                <tr>
+                  <td class="label">邮编：</td>
+                  <td class="cont"><input class="input" type="text"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="cont"><input type="checkbox"><i class="checkbox_label">设置为默认地址</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="cont">
+                    <input class="button" type="submit" value="保  存"><!-- 
+                 --><input class="button button_reset" type="submit" value="取  消">
+                  </td>
+                </tr>
+              </table>
+            
+            </div>
 
             <table class="table_address">
               <col width="260"><!-- 1.收货地址 -->

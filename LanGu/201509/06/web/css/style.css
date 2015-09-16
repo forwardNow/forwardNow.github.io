@@ -378,8 +378,8 @@
 .aside__order-btn_disable { background-color: #666666; cursor: not-allowed; }
 
 
-/* =个人中心-收货地址 */
-.main_mycenter  .maycenter__container_addr { font-family: "Microsoft YaHei"; font-size: 14px; color: #4c4c4c; min-height: 600px; padding-bottom: 100px; }
+/* =个人中心-收货地址(列表) */
+.maycenter__container_addr .container__body { font-family: "Microsoft YaHei"; font-size: 14px; color: #4c4c4c; min-height: 600px; padding-bottom: 100px; }
 .addr__btn_add { width: 100px; height: 32px; color: #808080; background-color: #f0f0f0; border: solid 1px #d6d6d6; margin-top: 20px; }
 .table_address { width: 100%; margin-top: 20px; border-left: solid 1px #f0f0f0; border-right: solid 1px #f0f0f0; }
 .table_address__head { }
@@ -390,3 +390,18 @@
 .table_address__row .address__ope { color: #317dcb; margin: 0 6px; }
 .table_address__row:nth-of-type(odd) td { background-color: #fafafa; }
 .table_address__row:hover td { background-color: #dbdbdb; }
+
+/* =个人中心-收货地址(新增) */
+.maycenter__container_addr .container { background-color: #fafafa; padding: 32px 0 40px 0; margin: 20px 0; }
+.table_address-add { width: 100%; font-family: "宋体"; color: #4c4c4c; font-size: 12px; }
+.table_address-add td { padding: 10px 0; }
+.table_address-add .label { text-align: right; width: 84px; }
+.table_address-add .label:before { content: "*"; color: #d0040d; }
+.table_address-add .label.valign_top { padding-top: 13px; }
+.table_address-add .cont { }
+.table_address-add .input { width: 160px; height: 28px; line-height: 28px; background-color: #fcfcfc; padding-left: 8px; border: solid 1px #e6e6e6; }
+.table_address-add .select { margin-right: 12px; }
+.table_address-add .textarea { width: 500px; height: 90px; margin-top: 20px; padding: 8px; line-height: 1.5; }
+.table_address-add .checkbox_label { color: #808080; }
+.table_address-add .button { border: none 0; width: 122px; height: 38px; background-color: #db2c35; border-radius: 2px; font-family: "Microsoft Yahei"; font-size: 16px; color: #fff; margin-right: 20px; }
+.table_address-add .button_reset { background-color: #b3b3b3; }
