@@ -12,14 +12,22 @@
     <link rel="stylesheet" type="text/css" href="./css/base.css">
     <link rel="stylesheet" type="text/css" href="./css/content.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 959px)" href="./css/mobile.css" />
-
+    <!--  
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    -->
+    <script src="./js/jquery.js"></script>
     <script src="./js/main.js" charset="utf-8"></script>
     <script>
         jQuery( function () {
             submenu();
             scrollToTop();
             // pageMore();
+
+            // 给每个条目添加编号
+            var postTotal = $( ".post" ).size();
+            $( ".post .post-data .icon-like" ).siblings( "span" ).each( function ( index ) {
+                $( this ).text( postTotal - index );
+            } );
         } );
     </script>
 
@@ -86,7 +94,6 @@
 
 
                 </div>
-
                 
                 <div class="one-third column" role="listitem">
                     
