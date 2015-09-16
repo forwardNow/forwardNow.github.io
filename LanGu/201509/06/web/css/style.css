@@ -280,3 +280,12 @@
 .main_shopping-success__aside { text-align: center; margin-top: 46px; }
 .main_shopping-success__aside .aside__go-shopping { display: inline-block; width: 116px; height: 42px; line-height: 42px; font-size: 18px; text-align: center; color: #fff; background-color: #e6742e; border-radius: 3px; }
 .main_shopping-success__aside .aside__order-detail { color: #707070; margin-left: 20px; }
+
+/* =文字详情-隐私保护*/
+.header_article-detail { padding-bottom: 34px; border-bottom: solid 2px #cc040e; }
+.main_article-detail { }
+
+.main_article-detail .article__title { font-size: 24px; color: #474747; line-height: 1; text-align: center; padding: 42px 0 32px 0; border-bottom: solid 1px #e6e6e6; }
+.main_article-detail .article__body { font-family: "宋体"; color: #808080; padding: 40px; line-height: 2; }
+.main_article-detail .article__body .title { font-family: "Microsoft Yahei"; font-size: 16px; color: #4c4c4c; line-height: 3; }
+.main_article-detail p { margin-bottom: 40px; }
