@@ -44,7 +44,7 @@
 <!-- /top -->
 
 <!-- header -->
-  <div class="header header_mycenter" role="header">
+  <div class="header header_mycenter header_mycenter-account" role="header">
     <div class="header__inner wrap clearfix">
       
       <h1 class="header__site-logo"><a href="index.html"><img src="./images/site_logo.png" alt="送物天下"></a></h1>
@@ -76,67 +76,72 @@
       <div class="mycenter__sidebar">
         <dl class="sidebar__list">
           <dt class="list__title">用户资料</dt>
-          <dd class="list__item list__item_active"><a class="item__link" href="mycenter_baseinfo.html">基本资料</a></dd>
+          <dd class="list__item"><a class="item__link" href="mycenter_baseinfo.html">基本资料</a></dd>
           <dd class="list__item"><a class="item__link" href="mycenter_account.html">账号安全</a></dd>
         </dl>  
         <dl class="sidebar__list">
           <dt class="list__title">我的交易</dt>
           <dd class="list__item"><a class="item__link" href="mycenter_order.html">订单管理</a></dd>
-          <dd class="list__item"><a class="item__link" href="mycenter_addr_list.html">收货地址</a></dd>
+          <dd class="list__item list__item_active"><a class="item__link" href="mycenter_addr_list.html">收货地址</a></dd>
         </dl>  
       </div>
 
-      <div class="maycenter__container maycenter__container_baseinfo">
-          <p class="container__head">你好，欢迎加入够物天下！今天是  <span id="currentTime"></span></p>
+      <div class="maycenter__container maycenter__container_addr">
+          <p class="container__head">你好，欢迎加入够物天下！今天是 <span id="currentTime"></span></p>
           <div class="container__body">
-            <table class="table_baseinfo">
-              <tr>
-                <td class="label">用户昵称：</td><td class="cont">送物天下</td>
-              </tr>
-              <tr>
-                <td class="cont cont_tips" colspan="2"><span class="text">请完善以下用户信息，以便我们更好的为你服务。</span></td>
-              </tr>
-              <tr>
-                <td class="label">姓　　名：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>  
-              <tr>
-                <td class="label">生　　日：</td>
-                <td class="cont">
-                  <select class="select">
-                    <option value="2015">2015年</option>
-                  </select><select class="select">
-                    <option value="01">01月</option>
-                  </select><select class="select">
-                    <option value="12">12日</option>
-                  </select>
-                  <label class="cont__label">仅自己可见</label>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">性　　别：</td>
-                <td class="cont">
-                  <input type="radio"><label class="label_radio">男</label><!-- 
-               --><input type="radio"><label class="label_radio">女</label><!-- 
-               --><input type="radio" checked><label class="label_radio">保密</label>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">手　　机：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>  
-              <tr>
-                <td class="label">Q　　Q：</td><td class="cont"><input class="input" type="text"></td>
+
+            <button class="addr__btn_add">+ 使用新地址</button>
+
+            <table class="table_address">
+              <col width="260"><!-- 1.收货地址 -->
+              <col width="140"><!-- 2.收货人 -->
+              <col width="140"><!-- 3.电话 -->
+              <col width="100"><!-- 4.默认地址 -->
+              <col width=""><!-- 5.操作 -->
+              <tr class="table_address__head">
+                <th>收货地址</th>
+                <th>收货人</th>
+                <th>电话</th>
+                <th><!-- 默认地址 --></th>
+                <th>操作</th>
               </tr>    
-              <tr>
-                <td class="label">旺　　旺：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>     
-              <tr>
-                <td class="label label_area">收货地址：</td><td class="cont"><textarea class="input input_textarea"></textarea></td>
-              </tr>    
-              <tr>
-                <td>&nbsp;</td>
-                <td><input class="submit" type="submit" value="保   存"></td>
-              </tr>            
+              <tr class="table_address__row">
+                <td class="align_left">湖北 武汉 江夏 武大园路路<i class="extra">（430000）</i></td>
+                <td>湖北武</td>
+                <td>18671763000</td>
+                <td>【默认地址】</td>
+                <td><a class="address__ope" href="#">修改</a></td>
+              </tr>
+              <tr class="table_address__row">
+                <td class="align_left">湖北 武汉 江夏 武大园路路<i class="extra">（430000）</i></td>
+                <td>湖北武</td>
+                <td>18671763000</td>
+                <td></td>
+                <td><a class="address__ope" href="#">修改</a><a class="address__ope" href="#">删除</a></td>
+              </tr>
+              <tr class="table_address__row">
+                <td class="align_left">湖北 武汉 江夏 武大园路路<i class="extra">（430000）</i></td>
+                <td>湖北武</td>
+                <td>18671763000</td>
+                <td></td>
+                <td><a class="address__ope" href="#">修改</a><a class="address__ope" href="#">删除</a></td>
+              </tr>
+              <tr class="table_address__row">
+                <td class="align_left">湖北 武汉 江夏 武大园路路<i class="extra">（430000）</i></td>
+                <td>湖北武</td>
+                <td>18671763000</td>
+                <td></td>
+                <td><a class="address__ope" href="#">修改</a><a class="address__ope" href="#">删除</a></td>
+              </tr>
+              <tr class="table_address__row">
+                <td class="align_left">湖北 武汉 江夏 武大园路路<i class="extra">（430000）</i></td>
+                <td>湖北武</td>
+                <td>18671763000</td>
+                <td></td>
+                <td><a class="address__ope" href="#">修改</a><a class="address__ope" href="#">删除</a></td>
+              </tr>
             </table>
+            
           </div>
       </div>
     </div>

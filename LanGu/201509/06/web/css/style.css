@@ -376,3 +376,17 @@
 .aside__order-total { float: right; }
 .aside__order-btn { display: inline-block; width: 80px; height: 28px; line-height: 28px; text-align: center; border-radius: 2px; color: #ffffff; background-color: #db2c35; margin-left: 28px; }
 .aside__order-btn_disable { background-color: #666666; cursor: not-allowed; }
+
+
+/* =个人中心-收货地址 */
+.main_mycenter  .maycenter__container_addr { font-family: "Microsoft YaHei"; font-size: 14px; color: #4c4c4c; min-height: 600px; padding-bottom: 100px; }
+.addr__btn_add { width: 100px; height: 32px; color: #808080; background-color: #f0f0f0; border: solid 1px #d6d6d6; margin-top: 20px; }
+.table_address { width: 100%; margin-top: 20px; border-left: solid 1px #f0f0f0; border-right: solid 1px #f0f0f0; }
+.table_address__head { }
+.table_address__head th { background-color: #f0f0f0; height: 40px; }
+.table_address__row { }
+.table_address__row td { padding: 12px 6px; text-align: center; border-bottom: solid 1px #f0f0f0; }
+.table_address__row .extra { color: #999999; }
+.table_address__row .address__ope { color: #317dcb; margin: 0 6px; }
+.table_address__row:nth-of-type(odd) td { background-color: #fafafa; }
+.table_address__row:hover td { background-color: #dbdbdb; }
