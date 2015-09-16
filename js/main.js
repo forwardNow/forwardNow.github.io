@@ -117,7 +117,7 @@ var item =
             back6_img: "./images/item_6_back_6.jpg",
             back6_title: "免费预约",
         }
-Generator.template[ "mobile" ] = '
+Generator.template[ "mobile" ] = '\
     <div class="one-third column" role="listitem">\
         <article class="post">\
             <div class="post__front">\
