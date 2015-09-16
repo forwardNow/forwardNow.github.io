@@ -44,7 +44,7 @@
 <!-- /top -->
 
 <!-- header -->
-  <div class="header header_mycenter" role="header">
+  <div class="header header_mycenter header_mycenter-account" role="header">
     <div class="header__inner wrap clearfix">
       
       <h1 class="header__site-logo"><a href="index.html"><img src="./images/site_logo.png" alt="送物天下"></a></h1>
@@ -76,8 +76,8 @@
       <div class="mycenter__sidebar">
         <dl class="sidebar__list">
           <dt class="list__title">用户资料</dt>
-          <dd class="list__item list__item_active"><a class="item__link" href="#">基本资料</a></dd>
-          <dd class="list__item"><a class="item__link" href="#">账号安全</a></dd>
+          <dd class="list__item"><a class="item__link" href="#">基本资料</a></dd>
+          <dd class="list__item list__item_active"><a class="item__link" href="#">账号安全</a></dd>
         </dl>  
         <dl class="sidebar__list">
           <dt class="list__title">我的交易</dt>
@@ -86,57 +86,42 @@
         </dl>  
       </div>
 
-      <div class="maycenter__container maycenter__container_baseinfo">
-          <p class="container__head">你好，欢迎加入够物天下！今天是  <span id="currentTime"></span></p>
+      <div class="maycenter__container maycenter__container_account">
+          <p class="container__head">你好，欢迎加入够物天下！今天是 <span id="currentTime"></span></p>
           <div class="container__body">
-            <table class="table_baseinfo">
+            <table class="table_account">
               <tr>
-                <td class="label">用户昵称：</td><td class="cont">送物天下</td>
+                <td class="label">当前密码：</td>
+                <td class="cont"><input class="input" type="text"><label class="cont__label">请输入旧密码</label></td>
+              </tr>   
+              <tr>
+                <td class="label">新密码：</td>
+                <td class="cont"><input class="input" type="password"><label class="cont__label">密码由6-16个字符组成</label></td>
               </tr>
               <tr>
-                <td class="cont cont_tips" colspan="2"><span class="text">请完善以下用户信息，以便我们更好的为你服务。</span></td>
-              </tr>
-              <tr>
-                <td class="label">姓　　名：</td><td class="cont"><input class="input" type="text"></td>
+                <td class="label">确认新密码：</td>
+                <td class="cont"><input class="input" type="password"><label class="cont__label">请输入新密码</label></td>
               </tr>  
               <tr>
-                <td class="label">生　　日：</td>
+                <td class="label valign_top">验证码：</td>
                 <td class="cont">
-                  <select class="select">
-                    <option value="2015">2015年</option>
-                  </select><select class="select">
-                    <option value="01">01月</option>
-                  </select><select class="select">
-                    <option value="12">12日</option>
-                  </select>
-                  <label class="cont__label">仅自己可见</label>
+                  <input class="input" type="text"><label class="cont__label">请输入图中字符，不区分大小写</label>
+                  <p class="authcode">
+                    <img class="authcode__pic" src="./images/authcode_pic_2.png" alt="">
+                    <a class="authcode__change" href="javascript:void(0)">看不清，换一张</a>
+                  </p>
                 </td>
-              </tr>
-              <tr>
-                <td class="label">性　　别：</td>
-                <td class="cont">
-                  <input type="radio"><label class="label_radio">男</label><!-- 
-               --><input type="radio"><label class="label_radio">女</label><!-- 
-               --><input type="radio" checked><label class="label_radio">保密</label>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">手　　机：</td><td class="cont"><input class="input" type="text"></td>
               </tr>  
               <tr>
-                <td class="label">Q　　Q：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>    
-              <tr>
-                <td class="label">旺　　旺：</td><td class="cont"><input class="input" type="text"></td>
-              </tr>     
-              <tr>
-                <td class="label label_area">收货地址：</td><td class="cont"><textarea class="input input_textarea"></textarea></td>
-              </tr>    
-              <tr>
-                <td>&nbsp;</td>
-                <td><input class="submit" type="submit" value="保   存"></td>
-              </tr>            
+                <td class="">&nbsp;</td>
+                <td class="cont"><input class="submit" type="submit" value="确  定"></td>
+              </tr>                
             </table>
+            <dl class="account__faq">
+              <dt class="faq__title"><a href="#">常见问题</a></dt>
+              <dd class="faq__item"><a class="item__link" href="#">为什么新密码不要与曾用过的密码相同？</a></dd>
+              <dd class="faq__item"><a class="item__link" href="#">为什么新密码不要与曾用过的密密码不要与曾用过的密码码相同？</a></dd>
+            </dl>
           </div>
       </div>
     </div>

@@ -282,3 +282,47 @@ ProductAmount.prototype.setStatus = function ( $target, isEnable ) {
   }
 
 };
+
+function Calendar( date ) {
+  if ( date instanceof Date ) {
+    this.date = date;
+  }
+}
+Calendar.prototype.setDate = function ( date ) {
+  this.date = date;
+  return this;
+}
+/*
+    var time1 = new Date().Format("yyyy-MM-dd");
+    var time2 = new Date().Format("yyyy-MM-dd hh:mm:ss");
+    console.info( time1, time2 ); //=> 2015-09-13 2015-09-13 11:29:36
+*/
+Calendar.prototype.format = function ( patternString ) {
+  var fmt = patternString;
+  var o = {
+      "M+": this.date.getMonth() + 1, //月份 
+      "d+": this.date.getDate(), //日 
+      "h+": this.date.getHours(), //小时 
+      "m+": this.date.getMinutes(), //分 
+      "s+": this.date.getSeconds(), //秒 
+      "q+": Math.floor((this.date.getMonth() + 3) / 3), //季度 
+      "S": this.date.getMilliseconds() //毫秒 
+  };
+
+  if ( /(y+)/.test( fmt ) ) { 
+    var year = ( this.date.getFullYear() + "" ).substr( 4 - RegExp.$1.length ); 
+    fmt = fmt.replace( RegExp.$1 , year ); 
+  };
+  for ( var k in o ) {
+    
+    if ( new RegExp( "(" + k + ")") .test( fmt ) ) { 
+      var temp = ( RegExp.$1.length == 1 ) ? 
+                 ( o[ k ] ) 
+                 : 
+                 ( ( "00" + o[k] ).substr( ( "" + o[k] ).length ) ); 
+      fmt = fmt.replace( RegExp.$1, temp )
+    };
+  }
+  return fmt;  
+}
+

@@ -304,15 +304,40 @@
 .mycenter__sidebar .list__item_active .item__link { color: #d0040d; }
 .maycenter__container_baseinfo { min-height: 860px; }
 .maycenter__container .container__head { height: 46px; line-height: 46px; border-bottom: dashed 1px #dadada; }
+
 .table_baseinfo { margin-top: 20px; width: 100%; }
 .table_baseinfo .label { width: 80px; }
 .table_baseinfo .cont { padding: 12px 0; }
 .table_baseinfo .label_area { vertical-align: top; padding-top: 14px; }
 .table_baseinfo .cont_tips { }
 .table_baseinfo .cont_tips .text{ display: inline-block; background-color: #f5f5f5; text-indent: 12px; height: 40px; width: 100%; line-height: 40px; }
-.table_baseinfo .cont .input{ width: 167px; height: 28px; line-height: 28px; border: solid 1px #e6e6e6; background-color: #fcfcfc; }
-.table_baseinfo .cont .input_textarea{ width: 360px; height: 76px; }
+.table_baseinfo .cont .input{ width: 167px; height: 28px; line-height: 28px; border: solid 1px #e6e6e6; background-color: #fcfcfc;  padding-left: 4px; }
+.table_baseinfo .cont .input_textarea{ width: 360px; height: 76px;  padding-right: 4px;}
 .table_baseinfo .cont .select{ border: solid 1px #abadb3; margin-right: 10px; font-size: 12px; width: 80px; }
 .table_baseinfo .cont .cont__label { color: #b2b2b2; margin-left: 20px; }
 .table_baseinfo .cont .label_radio { margin-right: 12px; }
 .table_baseinfo .submit { border: none 0; padding: 0; background-color: #db2c35; width: 122px; height: 38px; font-size: 16px; color: #fff; font-family: "Microsoft Yahei"; margin-top: 10px; }
+
+/* =个人中心-账号安全 */
+.main_mycenter .maycenter__container_account { 
+  padding-bottom: 100px;
+}
+
+.table_account { margin-top: 20px; width: 100%; }
+.table_account .label { width: 84px; color: #4c4c4c; text-align: right;}
+.table_account .label:before { content: "*"; color: #d0040d; margin-right: 6px; vertical-align: -1px;}
+.table_account .label.valign_top { padding-top: 20px;}
+.table_account .cont { padding: 12px 0; }
+.table_account .cont .input{ width: 163px; height: 28px; line-height: 28px; border: solid 1px #e6e6e6; background-color: #fcfcfc; padding-left: 4px;}
+.table_account .cont .cont__label { color: #8f8f8f; margin-left: 20px; }
+.table_account .submit { border: none 0; padding: 0; background-color: #db2c35; width: 122px; height: 38px; font-size: 16px; color: #fff; font-family: "Microsoft Yahei"; margin-top: 10px; }
+.table_account .authcode { margin-top: 12px; }
+.table_account .authcode__pic { width: 105px; height: 44px;}
+.table_account .authcode__change { color: #8f8f8f; margin-left: 10px; vertical-align: bottom;}
+
+.account__faq { margin-top: 72px; }
+.account__faq .faq__title { font-family: "Microsoft YaHei"; font-size: 14px; color: #4598c8; margin-bottom: 10px; }
+.account__faq .faq__title a { color: #4598c8; }
+.account__faq .faq__item { padding-left: 16px; background: url(../images/list_style_square_1.png) no-repeat 8px center; }
+.account__faq .item__link { color: #a3a3a3; line-height: 22px; }
+.account__faq .item__link:hover { color: #db2c35; }
