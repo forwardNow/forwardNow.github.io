@@ -423,3 +423,109 @@ body { background: url("../images/site_top_bg.jpg") no-repeat center top; backgr
 }
 /* 【修改-20150819】---结束 */
 
+
+/* 【修改-20150917】 */
+.header .site-logo img {
+  position: relative;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.nav-list {
+  background-color: #fcfcfc;
+  border-bottom: solid 2px #3291c0;
+}
+
+.nav-list-item-link {
+  font-size: 14px;
+  color: #333333;
+}
+.current-page, .nav-list-item-link:hover {
+  background-color: transparent;
+  color: #236a8d;
+}
+.nav-list-item-link {
+  background: url(../images/icon_nav.jpg) no-repeat;
+}
+.nav-list-item.item1 .nav-list-item-link { background-position: 11px 0px; }
+.nav-list-item.item2 .nav-list-item-link { background-position: 0px -40px; }
+.nav-list-item.item3 .nav-list-item-link { background-position: 0px -80px; }
+.nav-list-item.item4 .nav-list-item-link { background-position: 0px -120px; }
+.nav-list-item.item5 .nav-list-item-link { background-position: 0px -160px; }
+.nav-list-item.item6 .nav-list-item-link { background-position: 0px -200px; }
+.nav-list-item.item7 .nav-list-item-link { background-position: 0px -240px; }
+.nav-list-item.item8 .nav-list-item-link { background-position: 0px -280px; }
+.nav-list-item.item9 .nav-list-item-link { background-position: 0px -320px; }
+
+.functions {
+  margin-top: 0
+}
+
+.othersites-list-item-link {
+  display: block;
+  border: none 0;
+  width: 118px;
+  height: 35px;
+  line-height: 34px;
+  text-align: center;
+  color: #333333;
+  box-shadow: none;
+  background: url(../images/button_sites.png) no-repeat 0 0;
+}
+.hover .othersites-list-item-link {
+  color: #fafafa;
+  background-position: 0 -37px;
+  line-height: 34px;
+  width: 118px;
+  height: 35px;
+}
+.othersites-list-item {
+  margin-right: 8px;
+}
+
+.func-btns .meeting-inform, 
+.func-btns .fax,
+.func-btns .mailbox {
+  background-image: url(../images/func-btns.png);
+}
+.func-btns .fax {
+  background-position: 0 -64px;
+}
+.func-btns .mailbox {
+  display: block;
+  width: 100%;
+  height: 54px;
+  margin-bottom: 10px;
+  background-position: 0 -128px;
+}
+
+.footer .links {
+  background-color: #3291c0;
+}
+
+.ranks .rank-list .rank-list-title {
+  background: url(../images/rang_list_title.png) no-repeat;
+}
+.ranks .dept-rank .rank-list-title {
+  background-position: 0 0;
+}
+.ranks .pcs-rank .rank-list-title {
+  background-position: 0 -50px;
+}
+.rank-num {
+  border-radius: 2px;
+}
+.dept-rank .rank-num {
+  background-color: #36b28e;
+}
+.pcs-rank .rank-num {
+  background-color: #36a6b3;
+}
+
+.video-list-item {
+  display: inline;
+}
+.mod-video .video-list {
+  overflow: hidden;
+  padding: 24px 0px 32px 0px;
+}

@@ -433,3 +433,120 @@
 .statistic__query .item_symbol { width: 110px; height: 24px; text-align: center; padding-top: 24px; font-size: 16px; color: #808080; background: url(../images/arrow_right.png) no-repeat center bottom; }
 .statistic__query .item_btn { margin-left: 70px; padding-top: 24px; }
 .statistic__query .button { width: 120px; height: 28px; background-color: #e6742e; border: none 0; font-size: 16px; color: #ffffff; }
+
+/* =商品列表 */
+.nav_list {}
+.nav_list .sidebar__title {
+  position: relative;
+  cursor: pointer;
+}
+.nav_list .sidebar__title .indicator {
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  background: url(../images/indicator_sidebar.png) no-repeat 0 0;
+  top: 13px;
+  right: 19px;
+}
+.nav_list .sidebar__title.hover .indicator {
+  background-position: 0 -7px;
+}
+.main_list {
+  background-color: #f7f7f7;
+}
+.main_list .main_wrap {
+  overflow: hidden;
+}
+.main_list__top { 
+  padding-top: 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+.main_list__top .top__symbol {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 39px;
+  height: 74px;
+  background: url(../images/symbol_01.png) no-repeat;
+}
+.top__list { 
+  background-color: #f1f1f1;
+  height: 135px;
+  padding-left: 82px;
+  width: 103%;
+  padding-top: 13px;
+}
+.top__list .list__item { 
+  box-sizing: border-box;
+  font-size: 12px;
+  float: left;
+  width: 280px;
+  height: 120px;
+  background-color: #ffffff;
+  margin-right: 26px;
+  padding: 10px;
+}
+.top__list .list__item_goods { 
+  overflow: hidden;
+  line-height: 1;
+}
+.top__list .goods__pic_wrap { 
+  float: left;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+.top__list .goods__pic_wrap:before {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.top__list .goods__pic { 
+  max-width: 100%;
+  vertical-align: middle;
+}
+.top__list .goods__data { 
+  float: right;
+  width: 148px;
+}
+.top__list .data__name { 
+  color: #424242;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 4px;
+}
+.top__list .data__price { 
+  color: #757575;
+  margin-top: 10px;
+}
+.top__list .data__price .key { 
+  color: #db2c35;
+}
+.top__list .data__button { 
+  display: block;
+  width: 72px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #f0f0f0;
+  border: solid 1px #e0e0e0;
+  border-radius: 2px;
+  text-align: center;
+  color: #757575;
+  margin-top: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
