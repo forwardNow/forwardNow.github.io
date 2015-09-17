@@ -405,3 +405,31 @@
 .table_address-add .checkbox_label { color: #808080; }
 .table_address-add .button { border: none 0; width: 122px; height: 38px; background-color: #db2c35; border-radius: 2px; font-family: "Microsoft Yahei"; font-size: 16px; color: #fff; margin-right: 20px; }
 .table_address-add .button_reset { background-color: #b3b3b3; }
+
+/* =后台管理-订单管理 */
+
+/* =后台管理-销售统计 */
+.maycenter__container.admin__container { font-family: "Microsoft Yahei"; padding-bottom: 160px; }
+.admin__shop-name { height: 50px; line-height: 50px; margin-top: 10px; }
+.admin__statistic { border-top: dashed 1px #dadada; }
+.admin__statistic_total { }
+.admin__statistic .statistic__title { font-size: 16px; line-height: 1; padding-top: 24px; }
+.admin__statistic .statistic__title .small { font-size: 12px; color: #808080; }
+.admin__statistic .statistic__list { overflow: hidden; margin-top: 32px; }
+.statistic__list .list__item { box-sizing: border-box; float: left; width: 250px; height: 180px; background-color: #fafafa; margin-right: 98px; padding-left: 36px; padding-top: 24px; line-height: 1; }
+.statistic__list .label { font-size: 20px; }
+.statistic__list .result { font-size: 28px; color: #db2c35; margin-top: 28px; }
+.statistic__list .aside { color: #8f8f8f; font-family: "宋体"; font-size: 12px; margin-top: 22px; line-height: 1.8; }
+.statistic__list .key { color: #ed9874; }
+.admin__statistic_query { margin-top: 48px; }
+.admin__statistic_query .list__item { height: 120px; }
+.admin__statistic_query .result { color: #e6742e; }
+
+.statistic__query { margin-top: 28px; margin-bottom: 46px; }
+.statistic__query .item { float: left; }
+.statistic__query .item_input { }
+.statistic__query .item_input .label { font-family: "宋体"; color: #666666; line-height: 1; }
+.statistic__query .input_date { border: solid 1px #e6e6e6; padding: 0; display: block; width: 118px; height: 26px; font-size: 14px; color: #757575; line-height: 26px; text-align: center; background-color: #fcfcfc; margin-top: 6px; }
+.statistic__query .item_symbol { width: 110px; height: 24px; text-align: center; padding-top: 24px; font-size: 16px; color: #808080; background: url(../images/arrow_right.png) no-repeat center bottom; }
+.statistic__query .item_btn { margin-left: 70px; padding-top: 24px; }
+.statistic__query .button { width: 120px; height: 28px; background-color: #e6742e; border: none 0; font-size: 16px; color: #ffffff; }
