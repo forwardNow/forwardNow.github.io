@@ -515,7 +515,7 @@
 .pic__thumbnail .thumbnail__item.active { border-color: #db2c35; }
 .pic__thumbnail .thumbnail__item:nth-last-of-type(1) { margin-right: 0; }
 .pic__thumbnail .thumbnail__item:before { content: ""; display: inline-block; height: 100%; vertical-align: middle; }
-.pic__thumbnail .pic { vertical-align: middle; max-width: 100%; max-height: 100%:; }
+.pic__thumbnail .pic { vertical-align: middle; max-width: 100%; max-height: 100%; }
 
 .property__data_container { float: left; width: 500px; line-height: 1; color: #333333; margin-top: 36px; margin-left: 74px; }
 .data__head { font-size: 28px; }
