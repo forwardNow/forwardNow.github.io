@@ -4,4 +4,4 @@
 .svn
 .project
 .idea
-**/java/.metadata
+.metadata
