@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*===== 清除默认的margin的属性值 =====*/
+body, dd, dl, form, p, pre, h1, h2, h3, h4, h5, h6 {
+  margin : 0;
+}
+
+/*===== 统一设置列表的margin和padding，以及列表表形式 =====*/
+menu, ul, ol {
+  list-style : none;
+  margin     : 0;
+  padding    : 0;
+}
+
+/*===== 去除个别浏览器iframe底部的几个像素 =====*/
+iframe {
+  vertical-align : middle;
+}
+
+/*===== 设置文本链接样式 =====*/
+a {
+  text-decoration : none;
+}
+
+/*===== 设置标题样式 =====*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight : normal;
+  font-size: 100%;
+}
+
+/*===== 去除个别浏览器图片底部的几个像素，以及设置图片形式链接无边框 =====*/
+img {
+  vertical-align : middle;
+}
+
+a img {
+  border : 0 none;
+}
+
+/*===== 文本区域，与周边的元素对齐方式，resize为上下可拉动，避免左右拉动破坏页面布局 =====*/
+textarea {
+  overflow        : auto;
+  resize          : vertical;
+  vertical-align  : text-bottom;
+  *vertical-align : auto;
+}
+
+/*===== 设置表格元素的样式，合并表格的间隙，去掉单元格之间的间距，合并单元格为细线表格 =====*/
+/*   */
+table {
+  border-spacing  : 0;
+  border-collapse : collapse;
+}
+
+td, th, caption {
+  padding : 0;
+}
+

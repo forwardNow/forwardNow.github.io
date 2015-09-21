@@ -1,0 +1,75 @@
+@import "reset";
+
+$baseFontSize : 14px;
+$baseFontFamily : 'Microsoft YaHei', Arial, Roboto, 'Droid Sans', 'Hiragino Sans GB', 'Simsun', STXihei, 'sans-serif';
+$baseLineHeight : 1 !default;
+$baseBackground : #ffffff;
+
+/**
+ *  .demo{ @include center-block;  }
+ */
+@mixin center-block {
+    margin-left:auto;
+    margin-right:auto;
+}
+/**
+.opacity{
+    @include opacity; //参数使用默认值
+}
+.opacity-80{
+    @include opacity(80); //传递参数
+}
+*/
+@mixin opacity($opacity:50) {
+    opacity: $opacity / 100;
+    filter: alpha(opacity=$opacity);
+}
+
+body {
+    line-height      : $baseLineHeight;
+    font-family      : $baseFontSize;
+    background-color : $baseBackground;
+}
+
+/**
+ *  图片预览：放大效果
+ */
+.preview {
+    position: relative;
+    width: 400px;
+
+    margin: 100px 0 0 100px;
+
+    .zoom_main { // 图片-主区域
+        position: relative;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+
+        .img {
+            vertical-align: middle;
+        }
+        .cursor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAGUExURT1uzv///62t27cAAAACdFJOU/8A5bcwSgAAABBJREFUeNpiYGBkYGQECDAAAA0ABMZIs2EAAAAASUVORK5CYII=);
+            cursor: move;
+            z-index: 2;
+        }
+
+    }
+    .thumbnail { // 缩略图
+
+    }
+    .zoom_detail { // 图片-详情区域
+        .img {
+
+        }
+    }
+
+}
+
+
