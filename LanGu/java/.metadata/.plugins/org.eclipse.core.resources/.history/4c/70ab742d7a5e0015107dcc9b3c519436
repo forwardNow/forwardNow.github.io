@@ -1,0 +1,11 @@
+package io.github.forwardnow.pic;
+
+public final class PictureUtils {
+
+	private PictureUtils() {  
+		// do nothins		
+	}
+	
+	
+	
+}
