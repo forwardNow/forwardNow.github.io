@@ -3,5 +3,5 @@
 *.rar
 .svn
 .project
-.idea
+.idea/*
 .metadata
