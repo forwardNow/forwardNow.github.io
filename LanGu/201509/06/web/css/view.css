@@ -1,0 +1,128 @@
+.preview {
+    /*
+    width  : 400px;
+    height : 465px;
+    */
+    width: 100%;
+    height: 100%;
+}
+
+/* smallImg */
+
+.smallImg {
+    position         : relative;
+    height           : 100px;
+    margin-top       : 1px;
+    /*background-color : #f1f0f0;*/
+    padding          : 6px 0px;
+    overflow         : hidden;
+    float            : left;
+}
+
+.scrollbutton {
+    width    : 14px;
+    height   : 50px;
+    overflow : hidden;
+    position : relative;
+    float    : left;
+    cursor   : pointer;
+}
+
+.scrollbutton.smallImgUp,
+.scrollbutton.smallImgUp.disabled {
+    background : url(../images/view/d_08.png) no-repeat;
+}
+
+.scrollbutton.smallImgDown,
+.scrollbutton.smallImgDown.disabled {
+    background  : url(../images/view/d_09.png) no-repeat;
+
+}
+
+
+#imageMenu {
+    height      : 100px;
+    overflow    : hidden;
+    margin-left : 0;
+    float       : left;
+}
+.imageMenuList {
+    overflow : hidden;
+    height: 74px;
+    padding-top: 10px;
+    width: 110%;
+}
+#imageMenu li {
+    width  : 62px;
+    height : 72px;
+    overflow   : hidden;
+    float      : left;
+    text-align : center;
+    overflow : hidden;
+    margin-right: 24px;
+    /*border: solid 1px #cccccc;*/
+    border: solid 1px transparent;
+}
+#imageMenu li:before {
+    content: "";
+    display: inline-block;
+    height : 100%;
+    vertical-align: middle;
+}
+#imageMenu li img {
+    width  : 100%;
+    height : auto;
+    cursor : pointer;
+}
+
+#imageMenu li#onlickImg,
+#imageMenu li:hover {
+    border: 1px solid #db2c35;
+}
+
+/* bigImg */
+
+.bigImg {
+    position : relative;
+    /*width    : 100%;*/
+    height   : 82%;
+    overflow : hidden;
+    text-align : center;
+    vertical-align: middle;
+    border: solid 1px #cccccc;
+}
+
+
+.bigImg #midimg {
+    width  : auto;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.bigImg #winSelector {
+    width  : 235px;
+    height : 210px;
+}
+
+#winSelector {
+    z-index: 2;
+    position         : absolute;
+    cursor           : crosshair;
+    filter           : alpha(opacity=15);
+    -moz-opacity     : 0.15;
+    opacity          : 0.15;
+    background-color : #000000;
+    border           : 1px solid #ffffff;
+}
+
+/* bigView */
+
+#bigView {
+    position : absolute;
+    overflow : hidden;
+    z-index  : 999;
+}
+
+#bigView img {
+    position : absolute;
+}

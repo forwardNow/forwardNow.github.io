@@ -2,103 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/big/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/mid/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/small/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/big/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/mid/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/small/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/big/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/mid/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/small/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/big/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/mid/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/small/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/big/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/mid/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/small/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/c3/70283b0d7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/Tools/.indexes/af/history.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/Tools/.indexes/e4/26/1d/f1/8a/history.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.indexes/properties.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/Tools/.indexes/properties.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.mylyn/.taskListIndex/segments.gen" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.mylyn/.taskListIndex/segments_1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/Tools/org.eclipse.jdt.core/state.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rel/plugin/yuicompressor-2.4.8.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/Tools/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/Tools/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.rse.core/.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/35/208f98117a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/c7/30e680677a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/a0/406417577a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/be/40d289ab7c5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/5/505d4ab17a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/9/50bfaa447a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/82/605d251c7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/14/60af265f7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/e4/702bad2e7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/4c/70ab742d7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/64/70eaae2c7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/82/806513977a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/aa/8097a4387a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/org.eclipse.egit.core/GitProjectData.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.projects/Tools/org.eclipse.egit.core/GitProjectData.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/Tools/src/io/github/forwardnow/pic/PictureUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/ce/a025cb107d5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/c3/e021d7df795e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/fe/e067751e7a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/0/f01ba7407b5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/8c/f05d07447b5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/19/f07d28137a5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.resources/.history/da/f0cff9517c5e0015107dcc9b3c519436" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.0.20140606-0033.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.172-1-8-118_0/node.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.172-1-8-118_0/H.local_16/node.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/Tools/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.j2ee.webservice.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.api.tools.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.cvs.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.svn.core.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.ws.service.policy.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Tools/2015/9/38/refactorings.history" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Tools/2015/9/38/refactorings.index" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/version.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LanGu/java/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201509/06/web/detail.html" afterPath="$PROJECT_DIR$/LanGu/201509/06/web/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/forwardNow.github.io.iml" afterPath="$PROJECT_DIR$/.idea/forwardNow.github.io.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/index.html" afterPath="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201509/06/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201509/06/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="forwardNow.github.io.iws" />
@@ -119,18 +27,85 @@
     <favorites_list name="forwardNow.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33442622">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.42145923">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.39891696">
+                  <caret line="196" column="33" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/js/view.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="view.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/view.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="505" column="21" selection-start-line="505" selection-start-column="21" selection-end-line="505" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.29422382">
+                  <caret line="235" column="7" selection-start-line="235" selection-start-column="7" selection-end-line="235" selection-end-column="7" />
+                  <folding>
+                    <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,11 +115,15 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201509/06/web/index.html" />
-        <option value="$PROJECT_DIR$/LanGu/201509/06/web/css/style.css" />
         <option value="$PROJECT_DIR$/LanGu/201509/06/web/css/1.css" />
         <option value="$PROJECT_DIR$/1.css" />
         <option value="$PROJECT_DIR$/LanGu/201509/06/web/css/public.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/index.html" />
+        <option value="$PROJECT_DIR$/LanGu/201509/06/web/css/style.css" />
+        <option value="$PROJECT_DIR$/LanGu/201509/06/web/js/view.js" />
+        <option value="$PROJECT_DIR$/LanGu/201509/06/web/css/view.css" />
+        <option value="$PROJECT_DIR$/LanGu/201509/06/web/detail.html" />
       </list>
     </option>
   </component>
@@ -217,6 +196,14 @@
               <option name="myItemId" value="forwardNow.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jQuery-2.0.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -239,6 +226,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LanGu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanGu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aside" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_ViewBigPic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,6 +266,92 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="201509" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanGu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201509" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanGu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201509" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanGu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201509" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,6 +412,14 @@
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="ToolWindowSVN Repositories.ShowToolbar" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LanGu/201509/06/web/images/view" />
+      <recent name="$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/js" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -381,7 +484,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442799451906</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="忽略 .metadata">
+      <created>1442799513831</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1442799513832</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -406,30 +515,53 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1186" height="726" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45230263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45230263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5115132" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24806868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5115132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.72861844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Assets" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.72861844" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Assets" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="75" y="286" width="1049" height="200" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="75" y="286" width="1049" height="200" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.72861844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Assets" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45230263" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5115132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" x="75" y="286" width="1049" height="200" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24806868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -445,11 +577,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="忽略 .idea" />
     <MESSAGE value="忽略 java/.metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="忽略 java/.metadata" />
+    <MESSAGE value="忽略 .metadata" />
+    <option name="LAST_COMMIT_MESSAGE" value="忽略 .metadata" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.8112745" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -464,6 +601,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -514,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3989455">
-          <caret line="516" column="89" selection-start-line="516" selection-start-column="89" selection-end-line="516" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -532,6 +663,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6895943">
           <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -547,6 +679,57 @@
         <state vertical-scroll-proportion="0.33442622">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="505" column="21" selection-start-line="505" selection-start-column="21" selection-end-line="505" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/view.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/js/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.39891696">
+          <caret line="196" column="33" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/aside/01_ViewBigPic/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29422382">
+          <caret line="235" column="7" selection-start-line="235" selection-start-column="7" selection-end-line="235" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

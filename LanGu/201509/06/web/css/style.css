@@ -502,7 +502,8 @@
 /* =产品详情 */
 .main_detail { background-color: #f7f7f7; padding-bottom: 60px;}
 .detail__property { height: 500px; background-color: #ffffff; }
-.property__pic_container { float: left; width: 328px; margin-top: 22px; }
+.property__pic_container { float: left; width: 328px; margin-top: 22px; height: 460px;
+  margin-left : 26px;}
 .pic__show_wrap { border: solid 1px #cccccc; height: 374px; }
 .symbol_new { position: relative; }
 .symbol_new:after { content: ""; position: absolute; width: 38px; height: 42px; background: url(../images/symbol_new.png) no-repeat; top: -1px; right: 15px; }
