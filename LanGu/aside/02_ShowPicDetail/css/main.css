@@ -58,7 +58,7 @@ td, th, caption {
 */
 body {
   line-height: 1;
-  font-family: 14px;
+  font-size: 14px;
   background-color: #ffffff; }
 
 /**
@@ -66,23 +66,75 @@ body {
  */
 .preview {
   position: relative;
-  width: 400px;
+  width: 328px;
   margin: 100px 0 0 100px; }
   .preview .zoom_main {
     position: relative;
-    width: 400px;
-    height: 400px;
-    overflow: hidden; }
+    width: 326px;
+    height: 376px;
+    overflow: hidden;
+    border: solid 1px #cccccc; }
     .preview .zoom_main .img {
       vertical-align: middle; }
     .preview .zoom_main .cursor {
+      display: none;
       position: absolute;
       top: 0;
       left: 0;
-      width: 200px;
-      height: 200px;
+      width: 163px;
+      height: 188px;
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAGUExURT1uzv///62t27cAAAACdFJOU/8A5bcwSgAAABBJREFUeNpiYGBkYGQECDAAAA0ABMZIs2EAAAAASUVORK5CYII=);
       cursor: move;
       z-index: 2; }
+    .preview .zoom_main .icon {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      right: 0;
+      bottom: 0;
+      background: no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJGQTY4NjVCNThGRDExRTU4ODY0QkNBQkUxODkwODg1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJGQTY4NjVDNThGRDExRTU4ODY0QkNBQkUxODkwODg1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkZBNjg2NTk1OEZEMTFFNTg4NjRCQ0FCRTE4OTA4ODUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkZBNjg2NUE1OEZEMTFFNTg4NjRCQ0FCRTE4OTA4ODUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7mxatwAAABV0lEQVR42syUsYqDQBCGo56pQgQVJGARAqliE/ARBEs7wdbKIo9jZZVHMOWBjU+QKpVgJUgaQUkVUe8nC16IGu+SJlPNLrPfzsw/u1TTNJP3jJ68bZ+B+OpuoTuHw+F0OpEly7K2bYuiOISgHtqJk77vd+NWq5VpmgzDjCDa86qq6rpONvM83+/3l8tliPLbC4QGQQBHv1m7z3HcbrfjeT6O4+Px+KydSZKQq7bb7UMQbjYMA04YhtfrtR+BcqIogrNer3sLliQJiVRVVRTFiKiI6xefpheLRVmW44gsy3oRdV2naQqB5/N5P4KiKJQAB+Ug2y7ifD6DjhoHETBZlmezWW/bAcWwwVEUZTqdDiIgnqZpcL5vdi+267qkQJLpi9PZGkYGg/cM0X0jMMuyBEEgM9qlUH//ctARz/NIRfeUfzx2yOE4zmazgbTL5fKVLD771/oRYAAxqqyBwYWNEAAAAABJRU5ErkJggg==);
+      opacity: 0.8; }
+    .preview .zoom_main:hover .icon {
+      display: none; }
+    .preview .zoom_main:hover .cursor {
+      display: block; }
+  .preview .thumbnail .list {
+    margin-top: 15px;
+    width: 352px;
+    height: 74px;
+    overflow: hidden; }
+    .preview .thumbnail .list .item {
+      display: inline;
+      float: left;
+      margin-right: 24px;
+      width: 62px;
+      height: 72px;
+      border: 1px solid #cccccc; }
+    .preview .thumbnail .list .item:hover,
+    .preview .thumbnail .list .item_selected {
+      border-color: #db2c35; }
+    .preview .thumbnail .list .item__wrap {
+      width: 62px;
+      height: 72px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+    .preview .thumbnail .list .img {
+      max-width: 62px;
+      max-height: 72px;
+      vertical-align: middle; }
+  .preview .zoom_detail {
+    display: none;
+    position: absolute;
+    left: 338px;
+    top: -1px;
+    width: 326px;
+    height: 376px;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99; }
+    .preview .zoom_detail .img {
+      position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
