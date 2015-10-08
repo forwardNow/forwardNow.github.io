@@ -291,6 +291,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #666666;
     font-size: 1.1rem;
     margin-top: 1rem; }
+    .main_news-detail .news-detail__hd .news-detail__aside .pubauthor {
+      margin-left: 1rem; }
 .main_news-detail .news-detail__bd {
   padding: 1rem 0;
   font-size: 1.1rem;
