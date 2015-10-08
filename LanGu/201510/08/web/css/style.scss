@@ -30,26 +30,24 @@ $background-color : #fcfcfc !default;
             width : 100%;
         }
         .focus-page-title {
-            width    : 32rem;
-            height   : 3.2rem;
-            position : absolute;
-            left     : 0;
-            bottom   : 0;
-            background-color: rgba(0,0,0,0.5);
-            color: #ffffff;
-            font-size: 1.4rem;
-            padding-left: 1rem;
-            line-height : 3.2rem;
+            width            : 32rem;
+            height           : 3.2rem;
+            position         : absolute;
+            left             : 0;
+            bottom           : 0;
+            background-color : rgba(0, 0, 0, 0.5);
+            color            : #ffffff;
+            font-size        : 1.4rem;
+            padding-left     : 1rem;
+            line-height      : 3.2rem;
         }
         .swiper-pagination {
-            text-align: right;
+            text-align : right;
             .swiper-pagination-bullet {
-                background-color: #cccccc;
-                width: 0.6rem;
-                height: 0.6rem;
+                background-color : #cccccc;
             }
             .swiper-pagination-bullet-active {
-                background-color: #ffffff;
+                background-color : #ffffff;
             }
         }
     }
@@ -121,7 +119,7 @@ $background-color : #fcfcfc !default;
                         font-size   : 1.1rem;
                         line-height : 1.5rem;
                         color       : $color-aside;
-                        height      : 3rem;
+                        height      : 2.8rem;
                         @extend %text-overflow;
                     }
                 }
@@ -130,3 +128,42 @@ $background-color : #fcfcfc !default;
     }
 }
 
+.main_news-detail {
+    .news-detail {
+        padding : 1rem;
+    }
+    .news-detail__hd {
+        padding-bottom : 1rem;
+        border-bottom  : solid 1px #cccccc;
+        .news-detail__title {
+            color       : $color;
+            line-height : 1.5;
+            font-size   : 1.6rem;
+        }
+        .news-detail__aside {
+            color      : $color-aside;
+            font-size  : 1.1rem;
+            margin-top : 1rem;
+            .pubtime {
+
+            }
+            .pubauthor {
+
+            }
+        }
+    }
+
+    .news-detail__bd {
+        padding   : 1rem 0;
+        font-size : 1.1rem;
+        color     : $color-aside;
+        img {
+            max-width : 90%;
+        }
+        p {
+            text-indent : 2.2rem;
+            margin      : 1rem 0;
+        }
+    }
+
+}
