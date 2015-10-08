@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin:0 auto;}
+body {font-size:12px;color:#333;font-family:"宋体"; background:url("../images/index_r14_c1.jpg")/*tpa=http://www.whuzs.cn/images/index_r14_c1.jpg*/;}
+ul,li {margin:0; padding:0; list-style:none;}
+h4 {font-size:14px;}
+img {border:0;}
+a {color:#333; text-decoration:none;}
+a:hover {color:#F60; text-decoration:underline}
+.h {clear:both; height:10px; overflow:hidden;}
+.fl {float:left;}
+.fr {float:right;}
+
+/*header*/
+.header { width:100%; margin:0 auto; overflow:hidden; clear:both; background:url("../images/xg_r1_c1.jpg")/*tpa=http://www.whuzs.cn/images/xg_r1_c1.jpg*/ repeat-x left top; height:110px;margin-top:10px;}
+.top { width:1100px; margin:0 auto; overflow:hidden; clear:both; height:90px;}
+.top h1 { float:left; width:562px; height:70px; padding-top:10px;}
+.topss { float:right; width:202px; text-align:right; padding-top:25px;}
+.text01 { color:#666; height:20px; line-height:20px;}
+.text01 a { padding:0 5px; color:#666;}
+.soso { width:202px; overflow:hidden;}
+.button { width:172px; height:16px; background:#F4F4F4; border:1px solid #E2E2E2; float:left;}
+.soso img { width:23px; height:20px;}
+
+.nav01 { width:1000px; height:45px; line-height:45px; margin:0 auto; overflow:hidden;}
+.nav01 a { padding-left:20px; float:left; font-family:"微软雅黑"; font-size:14px; font-weight:bold; width:90px; }
+
+.menu{
+   background:#880000; 
+   height:40px;
+   width:100%;
+   }
+.menu ul{ 
+   width:1000px; 
+   margin:0 auto;
+   font-size:14px;
+   color:#fff;
+   font-weight:bold;
+   text-align:center;
+   }
+.menu ul li{ width:110px; height:40px; line-height:40px; float:left; text-align:center;
+   }
+.menu ul li a{ color:#fff; float:left; text-align:center; width:110px;}
+.menu ul li a:hover{ width:110px; height:40px; line-height:40px; float:left; background:#5e0000; display:block; text-align:center;}
+
+.info_span{margin-top:10px;}
+
+.qnzx{ background: #fff;width:315px; border-right:1px solid #e1e1e1; height:260px; border-bottom:0px solid #e1e1e1; margin-top:0px;}
+.qnzx ul{ width:280px; margin:15px;}
+.qnzx ul li{ margin-bottom:10px;}
+.qnzx dl{width:280px;height:45px; background:#989898; line-height:45px; color:#fff; margin-left:15px;}
+.qnzx dl dt{ background:#8a0000; width:120px;float:left; text-align:center; font-size:16px;}
+.qnzx dl dd{ float:left; width:79px; font-size:15px;text-align:center; border-right:1px solid #aaaaaa;}
+.qnzx dl dd a{ color:#fff;}
+
+.dqwz { width:100%; background:url("../images/xg_r7_c5.jpg")/*tpa=http://www.whuzs.cn/images/xg_r7_c5.jpg*/ repeat-x left bottom; height:35px; line-height:35px; margin:0 auto 5px auto;}
+.dqwz01 { width:1000px; height:35px; line-height:35px;}
+.dqwz01 h4 { background:url("../images/index_r10_c9.jpg")/*tpa=http://www.whuzs.cn/images/index_r10_c9.jpg*/ no-repeat left center; padding-left:20px; font-size:12px; width:65px; float:left;}
+.dqwz01 ul { float:left; width:895px;}
+.dqwz01 ul li { float:left; white-space:inherit; width:auto; padding-right:10px; color:#999;}
+#whdemo {overflow:hidden;width:910px;}
+#inwhdemo {float: left;width: 800%;}
+#whdemo1 {float: left;}
+#whdemo2 {float: left;}
+/*中间幻灯*/
+#v_focus{ width:654px; height:243px; overflow:hidden; float:left;}
+#zzjs{ height:243px; width:654px; background: url("bg.png")/*tpa=http://www.whuzs.cn/css/bg.png*/ no-repeat;}
+#zzjs .zswhcm {float: left; overflow: hidden; width:510px; height:243px; margin:6px 0 0 6px;_margin:6px 0 0 3px; position:relative;}
+#zzjs .zswhcm .whcm{ position:absolute}
+#zzjs .zswhcm .whcm li{zoom:1; overflow:hidden;height:243px; vertical-align:text-top}
+#zzjs .zswhcm .whcm li img {width:510px; height:243px; display:block}
+#zzjs .JQ-slide-nav {display: block; float: right; width:138px;height:243px; overflow:hidden; margin:6px 0 0 0px;}
+#zzjs .JQ-slide-nav li {display: inline; float: left; padding-left:7px;padding-bottom:5px;width: 130px; height:46px; padding-top: 6px; margin-bottom:3px; background:url("../images/nom.png")/*tpa=http://www.whuzs.cn/images/nom.png*/}
+#zzjs .JQ-slide-nav li.on {display:inline; float: left; padding-left:7px;padding-bottom:5px;width: 130px; height:46px; padding-top: 6px; margin-bottom:3px; background:url("../images/on_box.png")/*tpa=http://www.whuzs.cn/images/on_box.png*/}
+#zzjs .JQ-slide-nav li img {width:122px; height:45px; display:block}
+/*main*/
+.main { width:1000px; margin:0 auto; overflow:hidden; clear:both;margin-top: 6px;}
+.side01 { width:317px;}
+.side02 { width:675px;}
+.side01box01 { width:317px; clear:both; background:url("../images/ty_r1_c1.jpg")/*tpa=http://www.whuzs.cn/images/ty_r1_c1.jpg*/ repepat-y #fff; height:240px;}
+.side01foot { background:url("../images/ty_r13_c5.jpg")/*tpa=http://www.whuzs.cn/images/ty_r13_c5.jpg*/ no-repeat; clear:both; height:4px;}
+
+.side01box02 { width:317px; clear:both; background:url("../images/ty_r1_c1.jpg")/*tpa=http://www.whuzs.cn/images/ty_r1_c1.jpg*/ repeat-y #fff; height:213px; padding-top:10px;}
+.side01box02top { background:url("../images/index_r32_c11.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c11.jpg*/ no-repeat; width:285px; height:29px; line-height:29px; color:#fff;}
+.side01box02top h4 { padding-left:10px; font-size:12px;}
+.shipin { width:269px; height:162px;overflow:hidden; margin:10px auto auto auto;}
+
+.box01 { width:659px; background:url("../images/ty_r1_c1.jpg")/*tpa=http://www.whuzs.cn/images/ty_r1_c1.jpg*/ #fff repeat-y right; height:246px; clear:both; padding:8px;}
+.side01foot01 { background:url("../images/ty_r12_c7.jpg")/*tpa=http://www.whuzs.cn/images/ty_r12_c7.jpg*/ no-repeat; width:675px; height:4px; clear:both;}
+.pic_xh img{max-width:225px;width:expression(this.width > 225 ? "225px" : this.width);height:expression(this.height > 150? "150px" : this.height);overflow:hidden;}
+
+/*选项&#65533;01*/
+.newsbox { width:340px;}
+.news {width:340px; background:url("../images/ty_r1_c1.jpg")/*tpa=http://www.whuzs.cn/images/ty_r1_c1.jpg*/ #fff repeat-y right; height:203px; padding:10px;}
+.side01foot02 {background:url("../images/ty_r20_c8.jpg")/*tpa=http://www.whuzs.cn/images/ty_r20_c8.jpg*/ no-repeat; width:360px; height:4px; clear:both;}
+.side01foot03 {background:url("../images/ty_r20_c16.jpg")/*tpa=http://www.whuzs.cn/images/ty_r20_c16.jpg*/ no-repeat; width:305px; height:4px; clear:both;}
+
+.Menubox {clear:both; height:29px; line-height:29px; background:url("../images/index_r32_c31.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c31.jpg*/ repeat-x;}
+.Menubox li.hover{ cursor:pointer;width:83px; height:28px; text-align:center; background:url("../images/index_r32_c25.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c25.jpg*/ no-repeat; float:left; font-size:12px; color:#fff; margin-right:3px;}
+.Menubox li{ cursor:pointer;width:83px; height:28px; text-align:center;float:left; font-size:12px; background:url("../images/index_r32_c28.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c28.jpg*/ no-repeat; color:#fff; margin-right:3px;}
+.Contentbox  { clear:both; width:332px; margin:0 auto;}
+
+.newslist { clear:both; padding-top:8px;}
+.newslist ul li { height:25px; line-height:25px; vertical-align:bottom; width:322px; background:url("../images/line.jpg")/*tpa=http://www.whuzs.cn/images/line.jpg*/ no-repeat left center; padding-left:10px;}
+.newslist ul li a { width:280px; overflow:hidden; float:left;}
+.newslist ul li span { float:right; width:35px; color:#999;}
+
+
+/*选项&#65533;02*/
+.newsbox01 { width:305px;}
+.news01 {width:285px; background:url("../images/ty_r1_c1.jpg")/*tpa=http://www.whuzs.cn/images/ty_r1_c1.jpg*/ #fff repeat-y right; height:201px; padding:10px; overflow:hidden;}
+.Menubox01 {clear:both; height:29px; line-height:29px; background:url("../images/index_r32_c31.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c31.jpg*/ repeat-x;}
+.Menubox01 li.hover{ cursor:pointer;width:83px; height:28px; text-align:center; background:url("../images/index_r32_c25.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c25.jpg*/ no-repeat; float:left; font-size:12px; color:#fff; margin-right:3px;}
+.Menubox01 li{ cursor:pointer;width:83px; height:28px; text-align:center;float:left; font-size:12px; background:url("../images/index_r32_c28.jpg")/*tpa=http://www.whuzs.cn/images/index_r32_c28.jpg*/ no-repeat; color:#fff; margin-right:3px;}
+.Contentbox01  { clear:both; width:332px; margin:0 auto;}
+
+/*环境*/
+.box02_pic { width:270px; overflow:hidden; clear:both; padding-top:10px; margin-left:10px;}
+.pic_no img { width:225px; height:149px;}
+.pic_no { width:225px; line-height:20px; padding-left:10px;}
+
+.baoming { padding-top:10px;}
+.text03 { border:1px solid #ccc; height:18px; width:155px;}
+
+/*友情链接*/
+.links { width:1000px; margin:0 auto; overflow:hidden; clear:both; height:25px; line-height:25px; border-bottom:1px dashed #ccc; padding-top:10px;}
+.links h4 { font-size:12px; float:left; width:70px;}
+.links a { padding-right:10px;}
+.links li{padding:0px;margin:0px;float:left;}
+/*footer*/
+.footer { width:100%; background:url("../images/index_r41_c5.jpg")/*tpa=http://www.whuzs.cn/images/index_r41_c5.jpg*/ repeat-x; height:105px; clear:both; overflow:hidden; margin:10px auto auto auto;}
+.foot { width:1000px;height:105px; clear:both; overflow:hidden; margin:0 auto;}
+.logo { width:433px; height:80px;margin-top:12px; float:left;}
+.text { width:545px; float:right; color:#A3A3A3; text-align:right;}
+.footlinks { padding:8px 0; clear:both;}
+.footlinks a { color:#fff; padding:0 5px;}
+.foottext { height:18px; line-height:18px; clear:both;}
+
+
+/************************列表&#65533;*****************************************/
+.side03 { width:645px; background:#fff; padding:15px;}
+.side03top { height:25px; line-height:25px; border-bottom:1px dashed #ccc; clear:both; overflow:hidden; margin:0 auto;}
+.side03top h4 { width:auto; white-space:inherit; float:left; background:url("../images/line01.jpg")/*tpa=http://www.whuzs.cn/images/line01.jpg*/ no-repeat left center; padding-left:20px;}
+.side03top span { float:right; padding-right:10px;}
+.side_bao { width:465px; background:#fff; padding:10px 15px 5px 15px;margin:5px auto;}
+.side_bao h2{font-size:26px;font-weight:bold;font-family:'Microsoft YaHei',Arial,'SimSun',Verdana,SunSans-Regular,Sans-Serif;}
+.side_bao h2 img{margin:0px;padding:0px;}
+.newslist01 { clear:both; padding-top:10px; padding-left:20px;}
+.newslist01 ul li { height:30px; line-height:30px; vertical-align:bottom; width:580px; background:url("../images/line.jpg")/*tpa=http://www.whuzs.cn/images/line.jpg*/ no-repeat left center; padding-left:10px;}
+.newslist01 ul li a { width:530px; overflow:hidden; float:left; font-size:14px;}
+.newslist01 ul li span { float:right; width:35px; color:#999;}
+
+/*分页*/
+.pages { margin:0 auto; height:22px; width:330px; margin:18px auto 6px auto; clear:both; overflow:hidden;}
+.pages li { float:left; width:auto; margin-left:4px; padding:2px 5px; color:#ccc; background:#fff; border:1px solid #ccc;}
+.pages li.thisclass { border:0; color:#fff; font-weight:800; background:#900; border:1px solid #900;}
+.pages li a { color:#333;}
+
+.newslist02 { clear:both; padding-left:20px; padding-top:5px;}
+.newslist02 ul li { height:25px; line-height:25px; vertical-align:bottom; width:280px; background:url("../images/line.jpg")/*tpa=http://www.whuzs.cn/images/line.jpg*/ no-repeat left center; padding-left:10px;}
+
+/**********************在线报名**************************/
+.button02{ width:260px; height:80px;}
+.bmbox { padding-top:20px;}
+
+/******************内容&#65533;******************/
+.side03top01 { height:25px; line-height:25px; border-bottom:1px dashed #ccc; clear:both; overflow:hidden; margin:0 auto;}
+.side03top01 span { float:left; background:url("../images/line02.jpg")/*tpa=http://www.whuzs.cn/images/line02.jpg*/ no-repeat left center; padding-left:20px;}
+
+.contl { width:625px; padding-top:20px;}
+.title { font-size:22px;font-family:'Microsoft YaHei',Arial,'SimSun',Verdana,SunSans-Regular,Sans-Serif;font-weight:bold; text-align:center; line-height:30px; clear:both; overflow:hidden;}
+.title h1 { font-size:25px; font-weight:bold; text-align:center; line-height:30px; clear:both; overflow:hidden;}
+.text05 { text-align:center; border-bottom:1px solid #D9D9D9; height:30px; line-height:30px;}
+.text05 span { padding-right:20px;}
+.cont01 { padding:10px; line-height:30px; font-size:14px; }
+.cont01 a { color:#0000CC; text-decoration:underline;}
+.page { border-top:1px dashed #CCC;padding-top:8px; height:30px; line-height:20px; color:#666; clear:both;}
+
+.news02 { clear:both; width:585px; margin:10px auto;}
+.news02 h4 {border-bottom:1px solid #CCC;font-size:14px; margin-top:20px;height:25px; line-height:25px; clear:both;}
+.news02 ul li { height:25px; line-height:25px; vertical-align:bottom; width:240px; background:url("../images/line.jpg")/*tpa=http://www.whuzs.cn/images/line.jpg*/ no-repeat left center; padding-left:10px; float:left;}
