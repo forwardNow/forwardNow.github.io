@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/08/web/news_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/08/web/news_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/08/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/08/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/08/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/08/web/css/style.scss" />
     </list>
     <ignored path="forwardNow.github.io.iws" />
@@ -23,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanGu/201510/08/web/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63309354">
-              <caret line="150" column="35" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
+            <state vertical-scroll-proportion="-44.26923">
+              <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="news_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LanGu/201510/08/web/news_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.769231">
-              <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.44244605">
+              <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,9 +93,9 @@
         <option value="$PROJECT_DIR$/LanGu/201509/02/web/news.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/08/web/js/main.js" />
         <option value="$PROJECT_DIR$/LanGu/201510/08/web/news.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/08/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/08/web/news_detail.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/08/web/css/style.scss" />
+        <option value="$PROJECT_DIR$/LanGu/201510/08/web/news_list.html" />
       </list>
     </option>
   </component>
@@ -109,7 +111,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="353" />
+    <option name="x" value="220" />
     <option name="y" value="42" />
     <option name="width" value="835" />
     <option name="height" value="726" />
@@ -630,7 +632,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="353" y="42" width="835" height="726" extended-state="0" />
+    <frame x="220" y="42" width="835" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45230263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1099,14 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/08/web/news_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.769231">
-          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/08/web/news_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308">
@@ -1117,8 +1111,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/08/web/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63309354">
-          <caret line="150" column="35" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
+        <state vertical-scroll-proportion="-44.26923">
+          <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/08/web/news_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44244605">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
