@@ -1,0 +1,204 @@
+@charset"utf-8";
+body{font-size:14px;font-family:Microsoft Yahei;color:#000;}
+*,ul{padding:0;margin:0;}
+li{ list-style:none;}
+a{text-decoration:none;color:#000;}
+a:hover{color:#303030;text-decoration:none;}
+img{border:0;}
+
+.clear{clear:both;}
+.mgpd{margin:0;padding:0;}
+.mt1{margin-top:10px!important;}
+.mt2{margin-top:20px!important;}
+.mt3{margin-top:40px!important;}
+.mb1{margin-bottom:10px!important;}
+.mb2{margin-bottom:20px!important;}
+.mb3{margin-bottom:40px!important;}
+.mr1{margin-right:10px!important;}
+.mr2{margin-right:20px!important;}
+.mr4{margin-right:40px!important;}
+.pt1{padding-top:10px!important;}
+.pt2{padding-top:20px!important;}
+.pt3{padding-top:40px!important;}
+.pb1{padding-bottom:10px!important;}
+.pb2{padding-bottom:20px!important;}
+.fl{float:left;}
+.fr{float:right;}
+.of{overflow:hidden;}
+.lh1{line-height:30px;}
+.lh2{line-height:40px;}
+.lh3{line-height:70px;}
+.wd{width:1000px;margin:0 auto;}
+.wd2{width:100%;margin:0 auto;}
+.mg{margin:0 auto;}
+
+/* 引导页 begin */
+.pics{height:684px;overflow:hidden;position:relative;}
+.pics .bd ul li a{display:block;height:684px;}
+.pics .bu{position: absolute;bottom: 4px;z-index: 2;left: 50%;text-align: center;margin-left: -192px;width: 384px;}
+.pics .bu li{width:124px;height:8px;background:#fffc00;float:left;margin-right:4px;}
+.pics .bu a{display:block;width:124px;height:8px;}
+	/* .pics .bu a{display:block;width:124px;height:8px;background:#fffc00;float:left;margin-right:4px;} */
+.pics .bu .on{background:#026a0e;}
+
+.dnav{width:980px;overflow: hidden;}
+.dnav a{display:block;width:200px;height:253px;float:left;margin-left:160px;}
+.dnav a:first-child{margin-left:0px;}
+.dbu{height:98px;background:url("../images/debubg.jpg")/*tpa=http://www.jxbwzhs.com/images/debubg.jpg*/ no-repeat center 0;text-align:center;color:#fff;}
+/* 引导页 end */
+
+.page{text-align:center;}
+.page a{border:1px solid #ccc;padding:4px 12px;}
+.page b{border:1px solid #ccc;padding:4px 12px;background:#039226;color:#fff;}
+.page a b{border:0;background:none;padding:0;color:#1e1e1e;}
+
+
+/* header begin */
+.header{background:#039226;height: 125px;}
+.header .hder{margin-top:8px;background:url("../images/navbg.png")/*tpa=http://www.jxbwzhs.com/images/navbg.png*/ repeat-x 0 0;}
+.hl{height:74px;}
+.hl img{float:left;}
+.hl p{float: right;color: #fff;line-height: 31px;padding-right: 15px;}
+.hl p a{color: #fff;}
+.hder .nav{}
+.hder .nav li{float:left;height:43px;text-align:center;margin-left: 32px;}
+.hder .nav li:first-child{margin-left:0px;}
+.hder .nav li a{display:block;width:97px;height:100%;line-height: 43px;color:#fff;font-size:16px;font-weight:bold;}
+.hder .nav li a:hover{background:#ffd301;color:#039226;}
+.header .wd{position:relative;}
+.call{position: absolute;
+width: 180px;
+top: 33px;
+right: 44px;}
+/* header end */
+
+
+/* banner begin */
+.banner{position:relative;height:608px;}
+.banner .hd{position: relative;top: 584px;left: 50%;z-index:2;margin-left:-52.5px;}
+.banner .hd li{width:15px;height:15px;float:left;margin:0 10px;background:#fffc00;border-radius:14px;}
+.banner .hd .on{background:#197b30;}
+.banner .bd a{display:block;height:608px;}
+.banner .bd .tempWrap{width:100%!important;}
+/* banner end */
+
+
+/* box begin */
+.box{}
+.box .about{text-align:center;height:460px;}
+.box .about a{padding:8px 10px;border:1px solid #979797;color:#1e1e1e;}
+.box .about a:hover{border:1px solid #9b460e;color:#9b460e;}
+.b2{background:#fff799;}
+.b2 .back{text-align:center;height:770px;}
+.back .hd {padding:10px 40px;position: relative;}
+.back .hd li{float:left;margin:8px 12px;}
+.back .hd li a{font-weight:bold;font-size:18px;display:block;padding:4px 14px;border-radius:10px;}
+.back .hd li a:hover,.back .hd .on{background:#039226;border-radius:10px;}
+.back .hd .on a{color:#ffa101;}
+.back .bd ul li{float:left;padding: 7px 8px;}
+.back .bd ul li img{width: 180px;
+height: 160px;}
+.b3 .xx{}
+.b3 .xx .news{width:500px;margin-right:64px;}
+.b3 .xx .news ul li{overflow:hidden;clear:both;margin:11px 0;}
+.b3 .xx .news .fl{display:block;height:100%;font-size: 57px;color: #ccc;}
+.b3 .xx .news .fr{width: 410px;padding-top: 14px;}
+.b3 .xx .news .fr a{font-weight:bold;}
+.b3 .xx .news .fr p{color:#575757;}
+.b3 .xx .news h3 span{float:right;color: #ccc;line-height:100px;}
+.b3 .xx .content{width:435px;}
+/* box end */
+
+
+/* footer end */
+.footer{background:#464646;height:230px;color:#aeaeae;font-size:13px;}
+.footer .ft1{width:450px;}
+.footer .ft1>p>a{font-size:18px;color:#aeaeae;line-height:50px;font-weight:bold;margin-right:12px;}
+.footer .ft2{width:310px;}
+.footer .ft2 p{}
+/* footer end */
+
+
+.dban{height:215px;background:url("../images/banner_2.png")/*tpa=http://www.jxbwzhs.com/images/banner_2.png*/ no-repeat center 0;}
+
+/* box2left */
+.box2{overflow:hidden;min-height:400px;}
+.box2 .br,.box2 .bl{float:left;}
+.box2 .bl{width:220px;margin-right:20px;}
+.box2 .bl h3{background:url("../images/lmbg.png")/*tpa=http://www.jxbwzhs.com/images/lmbg.png*/ no-repeat 0 0;display:block;color:#fff;text-align: left;}
+.box2 .bl .nv h3{text-indent:1.5em;padding-top: 11px;height:59px;}
+.box2 .bl .nv li{background:url("../images/ltl_bg.png")/*tpa=http://www.jxbwzhs.com/images/ltl_bg.png*/ no-repeat 0 0;height: 42px;text-indent:1.5em;}
+.box2 .bl .nv li:hover{background:url("../images/ltl_bghover.png")/*tpa=http://www.jxbwzhs.com/images/ltl_bghover.png*/ no-repeat 0 0;}
+.box2 .bl .nv li a{display:block;height:100%;line-height:42px;}
+.box2 .bl .nv li a:hover{color:#fff;}
+.box2 .bl .lx{height: 244px;
+background: url("../images/lxbg.jpg")/*tpa=http://www.jxbwzhs.com/images/lxbg.jpg*/ no-repeat center 0;
+color: #4B4848;
+text-indent: 17px;
+line-height: 21px;
+font-weight: bold;
+padding-top: 50px;}
+.box2 .bl .rm li{background: url("../images/butjt.png")/*tpa=http://www.jxbwzhs.com/images/butjt.png*/ no-repeat 11px 16px;text-indent: 1em;padding: 2px 0;padding-left: 10px;line-height: 30px;}
+.box2 .bl{background: #eeeeee;}
+/* box2left */
+
+/* box2right */
+.box2 .br{width: 758px;}
+.box2 .br .minnav {font-size: 18px;background: url("../images/minnavbg.png")/*tpa=http://www.jxbwzhs.com/images/minnavbg.png*/ no-repeat 0px -6px;height: 46px;text-indent: 13px;}
+.box2 .br .minnav span{float:right;font-size:14px;line-height: 38px;}
+	/*新闻列表 */
+.box2 .br .newslist{padding:0px 20px;}
+.box2 .br .newslist li{line-height:40px;margin-bottom:4px;border-bottom:1px dashed #ccc;}
+.box2 .br .newslist span{float:right;color:#ccc;}
+	/*新闻列表 */
+	
+	
+	/* 图片列表 */
+.box2 .br .newslist2 ul{overflow:hidden;}	
+.box2 .br .newslist2 li{float:left;margin:6px 3px;border:1px solid #ccc;padding:2px;width: 177px;text-align: center;height:198px;overflow: hidden;}	
+.box2 .br .newslist2 li:hover{border:1px solid #039226;}
+.box2 .br .newslist2 li a p:hover{background:#039226;color:#fff;}
+.box2 .br .newslist2 li img{height: 160px;/* *min-width: 240px; */}	
+.box2 .br .newslist2 li p{text-align:center;line-height:28px;}	
+	/* 图片列表 */
+
+	/* 信息反馈 */
+.minas{color: #DA2424;clear:both;margin-bottom:10px;overflow:hidden;margin-left: 80px;}
+.minas span{float:left;}
+.minas span:first-child{display: block;width: 96px;font-size: 15px;font-weight: bold;color: #747373;}
+.minas span input{width:302px;height:30px;}
+.minas textarea{width:300px;height:60px;}
+.minas2 input{width: 86px;
+height: 30px;
+margin: 10px 180px;}
+.minas2{clear: both;margin-left: 80px;}
+	/* 信息反馈 */
+	
+.sx{line-height:25px;border-bottom:1px dashed #ccc;overflow:hidden;}
+.sx span a{text-indent:8px;}
+.title{text-align:center;color: #039226;}
+.tt2{text-align:center;line-height:40px;border-bottom:1px dashed #ccc;margin-bottom:20px;}
+
+.hds{width: 118px;height: 44px;position: absolute;bottom: 102px;left: 43%;z-index: 2;background:none!important;}
+.hds:hover{background:none!important;}
+.hds a{display:block;width: 118px;height: 44px;}
+.hds a:hover{background:none!important;}
+
+.ewm{width: 82px;
+margin-top: 10px;
+float: left;}
+.bdsharebuttonbox{float: left;
+margin-left: 20px;
+margin-top: 62px;}
+/* #multipleColumn .picList ul{width:392px!important;}
+#multipleColumn{width:1000px;} */
+
+.newstext{line-height:2;}
+.qq a{font-size: 13px;}
+.ss{text-indent: 8em;
+line-height: 4px;
+position: relative;
+top: 32px;}
+.w{text-align:center;}
+.q{position: relative;left: 118px;}
+.q img{width: 66px;}
