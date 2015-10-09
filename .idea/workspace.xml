@@ -4,6 +4,7 @@
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/images/mod_news_title.jpg" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/images/mod_news_title.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/images/mod_news_title_2.jpg" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/images/mod_news_title_2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/index.html" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" />
     </list>
@@ -26,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7692308">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.42805755">
+              <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1528777">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state vertical-scroll-proportion="-36.423077">
+              <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -87,7 +88,6 @@
         <option value="$PROJECT_DIR$/LanGu/201510/08/web/css/style.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/08/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/_reset.scss" />
-        <option value="$PROJECT_DIR$/LanGu/201510/06/web/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/_base.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/_vars.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_vars.scss" />
@@ -100,6 +100,7 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" />
+        <option value="$PROJECT_DIR$/LanGu/201510/06/web/index.html" />
       </list>
     </option>
   </component>
@@ -823,6 +824,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.0017183">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -947,18 +949,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/index.html">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7692308">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state vertical-scroll-proportion="-36.423077">
+          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1528777">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.42805755">
+          <caret line="55" column="113" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="113" />
           <folding />
         </state>
       </provider>

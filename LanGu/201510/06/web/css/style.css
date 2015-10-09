@@ -151,7 +151,7 @@ body {
     vertical-align: middle;
     height: 100%; }
 .header .nav-wrap {
-  background-color: #3F4DD8; }
+  background-color: #3f4dd8; }
   .nav .nav__item {
     float: left; }
     .nav .nav__item .item__link {
@@ -246,7 +246,7 @@ body {
   .tools .login {
     padding: 4px 8px;
     float: right;
-    background: #3F4DD8;
+    background: #3f4dd8;
     color: #f1f1f1; }
     .tools .login * {
       float: left; }
@@ -321,7 +321,7 @@ body {
       width: 100%; }
   .main .contact {
     height: 245px;
-    background: #fff; }
+    background: #ffffff; }
     .main .contact .contact__tel {
       height: 76px;
       background: url(../images/tel.png) no-repeat 12px center; }
@@ -352,13 +352,13 @@ body {
         background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
         background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
         background-image: linear-gradient(top, #eeeeee, #cccccc);
-        border: 1px solid #ccc;
-        border-bottom: 1px solid #bbb;
+        border: 1px solid #cccccc;
+        border-bottom: 1px solid #bbbbbb;
         border-radius: 3px;
-        color: #333;
+        color: #333333;
         padding: 6px 0;
         text-align: center;
-        text-shadow: 0 1px 0 #eee;
+        text-shadow: 0 1px 0 #eeeeee;
         width: 120px; }
         .main .contact .contact__btns .btn:hover {
           background-color: #dddddd;
@@ -368,18 +368,18 @@ body {
           background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
           background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
           background-image: linear-gradient(top, #dddddd, #bbbbbb);
-          border: 1px solid #bbb;
-          border-bottom: 1px solid #999;
+          border: 1px solid #bbbbbb;
+          border-bottom: 1px solid #999999;
           cursor: pointer;
-          text-shadow: 0 1px 0 #ddd; }
+          text-shadow: 0 1px 0 #dddddd; }
 
 .footer {
   height: auto;
   padding: 10px 0;
-  background: #3F4DD8;
+  background: #3f4dd8;
   text-align: left; }
   .footer .links {
-    color: #999; }
+    color: #999999; }
     .footer .links a {
       line-height: 32px;
       color: #f1f1f1; }
