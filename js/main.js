@@ -52,7 +52,7 @@ function Generator( list ) {
 Generator.prototype.init = function () {
     var $homecontent = $( "#homecontent" );
     for ( var i = 0; i < this.list.length; i++ ) {
-        var listitem = $( Generator.template.resolve( "default", this.list[ i ]) );
+        var listitem = $( Generator.template.resolve( this.list[ i ].template, this.list[ i ]) );
         $homecontent.append( listitem );
     }
     

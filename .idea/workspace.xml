@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/focus_page_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/focus_page_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/focus_page_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/images/loading.gif" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/js/swiper.3.1.2.min.css" afterPath="$PROJECT_DIR$/LanGu/201510/09/web/css/swiper.3.1.2.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/news_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/css/_reset.scss" afterPath="$PROJECT_DIR$/LanGu/201510/09/web/css/_reset.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.css.map" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/css/style.css.map" afterPath="$PROJECT_DIR$/LanGu/201510/09/web/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/09/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="forwardNow.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,85 +23,70 @@
     <favorites_list name="forwardNow.github.io" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="vote_text.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.1923075">
-                  <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="vote_pic.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_pic.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.6219512">
-                  <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_reset.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.6153846">
-                  <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_vars.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_vars.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.6153846">
-                  <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_base.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.3846154">
-                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.17741935">
-                  <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44964027">
+              <caret line="106" column="91" selection-start-line="106" selection-start-column="91" selection-end-line="106" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+              <folding>
+                <marker date="1444377112000" expanded="true" signature="2110:3130" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2142:3118" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2190:2297" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2336:3098" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2374:2669" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2417:2566" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2710:2923" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="2968:3078" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4360:7546" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4392:7534" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4431:5495" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4495:4610" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4653:5475" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4695:5014" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="4742:4899" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5059:5284" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5333:5451" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5533:7514" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5574:7494" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5619:5868" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5668:5841" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5913:6189" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="5985:6162" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="6234:6507" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="6303:6480" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="6552:6835" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="6628:6808" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="6880:7152" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="6948:7125" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="7197:7471" placeholder="..." />
+                <marker date="1444377112000" expanded="true" signature="7265:7444" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,7 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201509/06/web/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201509/06/web/css/1.css" />
         <option value="$PROJECT_DIR$/1.css" />
@@ -170,6 +138,8 @@
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/vote_pic.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -185,9 +155,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="489" />
+    <option name="x" value="43" />
     <option name="y" value="23" />
-    <option name="width" value="1107" />
+    <option name="width" value="1155" />
     <option name="height" value="726" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -306,8 +276,26 @@
               <option name="myItemId" value="201510" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="09" />
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forwardNow.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanGu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201510" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,7 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="09" />
+              <option name="myItemId" value="06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -344,138 +332,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LanGu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201510" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="09" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LanGu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201510" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="09" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LanGu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201510" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="09" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LanGu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201510" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="09" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style.scss" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forwardNow.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LanGu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201510" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -620,14 +480,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="489" y="23" width="1107" height="726" extended-state="0" />
+    <frame x="43" y="23" width="1155" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45230263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2679558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26719576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -696,13 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/view.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201509/06/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -897,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201509/02/web/news.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21402878">
@@ -975,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/css/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57194245">
@@ -1012,14 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1028,17 +859,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_base.scss">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_pic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3846154">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.101626016">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1923075">
+        <state vertical-scroll-proportion="0.6544715">
           <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1053,26 +884,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07913669">
+          <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58093524">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12230216">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6153846">
+        <state vertical-scroll-proportion="0.81654674">
           <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_pic.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6219512">
-          <caret line="74" column="38" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+          <folding>
+            <marker date="1444377112000" expanded="true" signature="2110:3130" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2142:3118" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2190:2297" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2336:3098" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2374:2669" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2417:2566" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2710:2923" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="2968:3078" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4360:7546" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4392:7534" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4431:5495" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4495:4610" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4653:5475" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4695:5014" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="4742:4899" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5059:5284" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5333:5451" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5533:7514" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5574:7494" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5619:5868" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5668:5841" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5913:6189" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="5985:6162" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="6234:6507" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="6303:6480" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="6552:6835" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="6628:6808" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="6880:7152" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="6948:7125" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="7197:7471" placeholder="..." />
+            <marker date="1444377112000" expanded="true" signature="7265:7444" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/06/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17741935">
-          <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.44964027">
+          <caret line="106" column="91" selection-start-line="106" selection-start-column="91" selection-end-line="106" selection-end-column="91" />
           <folding />
         </state>
       </provider>
