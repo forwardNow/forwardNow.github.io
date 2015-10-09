@@ -46,7 +46,7 @@ body {
         }
     }
     .nav-wrap {
-        background-color : #880000;
+        background-color : #89a2d9;
         @at-root .nav {
             @extend %clearfix;
             .nav__item {
@@ -59,7 +59,7 @@ body {
                     line-height : 40px;
                     color       : #ffffff;
                     &:hover {
-                        background-color : #5e0000;
+                        background-color : #5675b8;
                     }
                 }
             }
@@ -160,7 +160,7 @@ body {
             margin-left : 12px;
             .bd {
                 ul {
-                    width : 180px;
+                    width : 168px;
                 }
                 .item {
                     @extend %text-overflow;

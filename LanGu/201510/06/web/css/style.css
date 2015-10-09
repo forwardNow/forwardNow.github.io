@@ -150,7 +150,7 @@ body {
     vertical-align: middle;
     height: 100%; }
 .header .nav-wrap {
-  background-color: #880000; }
+  background-color: #89a2d9; }
   .nav .nav__item {
     float: left; }
     .nav .nav__item .item__link {
@@ -161,7 +161,7 @@ body {
       line-height: 40px;
       color: #ffffff; }
       .nav .nav__item .item__link:hover {
-        background-color: #5e0000; }
+        background-color: #5675b8; }
 
 .banner .banner-inner {
   height: 400px; }
@@ -238,7 +238,7 @@ body {
       float: left;
       margin-left: 12px; }
       .tools .notice .notice__bd .bd ul {
-        width: 180px; }
+        width: 168px; }
       .tools .notice .notice__bd .bd .item {
         margin-right: 10px;
         color: #666666; }
