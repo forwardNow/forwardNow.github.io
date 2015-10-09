@@ -1,0 +1,875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>湖北青年职业学院招生网,湖北青年职业学院光机电与建筑工程学院-湖北高考招生-湖北青年职业学院2015高考志愿填报网上报名系统</title>
+<meta name="description" content="湖北青年职业学院光机电与建筑工程学院招生网由湖北青年职业学院主办,内容包括高考招生计划,招生简章,录取专业分数线查询,2015年湖北青年职业学院高考招生现以全面启动,招生咨询:027-87309786！" />
+<meta name="keywords" content="湖北青年职业学院,湖北青年职业学院招生网,湖北光机电与建筑工程学院,湖北高考招生,湖北青年职业学院高考招生,湖北青年职业学院招生简章,湖北青年职业学院招生计划,湖北青年职业学院分数线,湖北青年职业学院录取结果,2015高考志愿填报,湖北青年职业学院录取分数线" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="css/style.css" tppabs="http://www.whuzs.cn/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/ppt.css" tppabs="http://www.whuzs.cn/css/ppt.css" />
+<link rel=stylesheet type=text/css href="css/main.css" tppabs="http://www.whuzs.cn/css/main.css">
+<script src="js/jquery.js" tppabs="http://www.whuzs.cn/js/jquery.js" type="text/javascript"></script>
+<script src="js/vanadium.js" tppabs="http://www.whuzs.cn/js/vanadium.js"></script>
+</head>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(name,cursel,n){
+for(i=1;i<=n;i++){
+var menu=document.getElementById(name+i);
+var con=document.getElementById("con_"+name+"_"+i);
+menu.className=i==cursel?"hover":"";
+con.style.display=i==cursel?"block":"none";
+}
+}
+//-->
+</script>
+<script>
+$(function(){
+	//必填项加红*,Mr.Think添加,原插件无
+    //$("input[class*=:required]").after("<span> *</span>")
+});
+ //弹出信息样式设置
+Vanadium.config = {
+    valid_class: 'rightformcss',//验证正确时表单样式
+    invalid_class: 'failformcss',//验证失败时该表单样式
+    message_value_class: 'msgvaluecss',//这个样式是弹出信息中调用值的样式
+    advice_class: 'failmsg',//验证失败时文字信息的样式
+    prefix: ':',
+    separator: ';',
+    //reset_defer_timeout: 100s
+}
+//验证类型及弹出信息设置
+Vanadium.Type = function(className, validationFunction, error_message, message, init) {
+  this.initialize(className, validationFunction, error_message, message, init);
+};
+Vanadium.Type.prototype = {
+  initialize: function(className, validationFunction, error_message, message, init) {
+    this.className = className;
+    this.message = message;
+    this.error_message = error_message;
+    this.validationFunction = validationFunction;
+    this.init = init;
+  },
+  test: function(value) {
+    return this.validationFunction.call(this, value);
+  },
+  validMessage: function() {
+    return this.message;
+  },
+  invalidMessage: function() {
+    return this.error_message;
+  },
+  toString: function() {
+    return "className:" + this.className + " message:" + this.message + " error_message:" + this.error_message
+  },
+  init: function(parameter) {
+    if (this.init) {
+      this.init(parameter);
+    }
+  }
+};
+Vanadium.setupValidatorTypes = function() {
+Vanadium.addValidatorType('empty', function(v) {
+    return  ((v == null) || (v.length == 0));
+  });
+//***************************************以下为验证方法,使用时可仅保留用到的判断
+Vanadium.addValidatorTypes([
+	//匹配大小写的等值
+    ['equal', function(v, p) {
+      return v == p;
+    }, function (_v, p) {
+      return '输入的值必须与<span class="' + Vanadium.config.message_value_class + '">' + p + '相符\(区分大小写\)</span>.'
+    }],
+    //不匹配大小写的等值
+    ['equal_ignore_case', function(v, p) {
+      return v.toLowerCase() == p.toLowerCase();
+    }, function (_v, p) {
+      return '输入的值必须与<span class="' + Vanadium.config.message_value_class + '">' + p + '相符\(不区分大小写\)</span>.'
+    }],
+    //是否为空
+    ['required', function(v) {
+      return !Vanadium.validators_types['empty'].test(v);
+    }, '*'],
+    //强制选中 
+    ['accept', function(v, _p, e) {
+      return e.element.checked;
+    }, '必须接受!'],
+    //
+    ['integer', function(v) {
+      if (Vanadium.validators_types['empty'].test(v)) return true;
+      var f = parseFloat(v);
+      return (!isNaN(f) && f.toString() == v && Math.round(f) == f);
+    }, '请输入一个正确的整数值.'],
+    //数字
+    ['number', function(v) {
+      return Vanadium.validators_types['empty'].test(v) || (!isNaN(v) && !/^\s+$/.test(v));
+    }, '*'],
+    //
+    ['digits', function(v) {
+      return Vanadium.validators_types['empty'].test(v) || !/[^\d]/.test(v);
+    }, '请输入一个非负整数'],
+    //只能输入英文字母
+    ['alpha', function (v) {
+      return Vanadium.validators_types['empty'].test(v) || /^[a-zA-Z\u00C0-\u00FF\u0100-\u017E\u0391-\u03D6]+$/.test(v)   //% C0 - FF (? - ?); 100 - 17E (? - ?); 391 - 3D6 (? - ?)
+    }, '请输入英文字母.'],
+    //仅限ASCII编码模式下输入英文字母
+    ['asciialpha', function (v) {
+      return Vanadium.validators_types['empty'].test(v) || /^[a-zA-Z]+$/.test(v)   //% C0 - FF (? - ?); 100 - 17E (? - ?); 391 - 3D6 (? - ?)
+    }, '请在ASCII下输入英文字母.'],
+	//英文字母或正数
+    ['alphanum', function(v) {
+      return Vanadium.validators_types['empty'].test(v) || !/\W/.test(v)
+    }, '请输入英文字母或正数.'],
+	//邮箱验证
+    ['email', function (v) {
+      return (Vanadium.validators_types['empty'].test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v))
+    }, '邮箱格式不正确,请检查.正确格式例如mrthink@gmail.com'],
+    //网址
+    ['url', function (v) {
+      return Vanadium.validators_types['empty'].test(v) || /^(http|https|ftp):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)(:(\d+))?\/?/i.test(v)
+    }, '请输入正确的网址,比如:http://www.mrthink.net'],
+    //日期格式
+    ['date_au', function(v) {
+      if (Vanadium.validators_types['empty'].test(v)) return true;
+      var regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
+      if (!regex.test(v)) return false;
+      var d = new Date(v.replace(regex, '$2/$1/$3'));
+      return ( parseInt(RegExp.$2, 10) == (1 + d.getMonth()) ) && (parseInt(RegExp.$1, 10) == d.getDate()) && (parseInt(RegExp.$3, 10) == d.getFullYear() );
+    }, '请输入正确的日期格式,比如:28/05/2010.'],
+    //输入固定长度字符串
+    ['length',
+      function (v, p) {
+        if (p === undefined) {
+          return true
+        } else {
+          return v.length == parseInt(p)
+        }
+        ;
+      },
+      function (_v, p) {
+        return '输入字符长度等于<span class="' + Vanadium.config.message_value_class + '">' + p + '</span>个.'
+      }
+    ],
+    //
+    ['min_length',
+      function (v, p) {
+        if (p === undefined) {
+          return true
+        } else {
+          return v.length >= parseInt(p)
+        }
+        ;
+      },
+      function (_v, p) {
+        return '输入字符长度不低于<span class="' + Vanadium.config.message_value_class + '">' + p + '</span>个.'
+      }
+    ],
+    ['max_length',
+      function (v, p) {
+        if (p === undefined) {
+          return true
+        } else {
+          return v.length <= parseInt(p)
+        }
+        ;
+      },
+      function (_v, p) {
+        return '输入字符长度不大于<span class="' + Vanadium.config.message_value_class + '">' + p + '</span>个.'
+      }
+    ],
+	//判断密码是相同
+    ['same_as',
+      function (v, p) {
+        if (p === undefined) {
+          return true
+        } else {
+          var exemplar = document.getElementById(p);
+          if (exemplar)
+            return v == exemplar.value;
+          else
+            return false;
+        }
+        ;
+      },
+      function (_v, p) {
+        var exemplar = document.getElementById(p);
+        if (exemplar)
+          return '两次密码输入不相同.';
+        else
+          return '没有可参考值!'
+      },
+      "",
+      function(validation_instance) {
+        var exemplar = document.getElementById(validation_instance.param);
+        if (exemplar){
+          jQuery(exemplar).bind('validate', function(){
+            jQuery(validation_instance.element).trigger('validate');
+          });
+        }
+      }
+    ],
+	//ajax判断是否存在值
+    ['ajax',
+      function (v, p, validation_instance, decoration_context, decoration_callback) {
+        if (Vanadium.validators_types['empty'].test(v)) return true;
+        if (decoration_context && decoration_callback) {
+          jQuery.getJSON(p, {value: v, id: validation_instance.element.id}, function(data) {
+            decoration_callback.apply(decoration_context, [[data], true]);
+          });
+        }
+        return true;
+      }]
+    ,
+	//正则匹配,此用法不甚理解
+    ['format',
+      function(v, p) {
+        var params = p.match(/^\/(((\\\/)|[^\/])*)\/(((\\\/)|[^\/])*)$/);        
+        if (params.length == 7) {
+          var pattern = params[1];
+          var attributes = params[4];
+          try
+          {
+            var exp = new RegExp(pattern, attributes);
+            return exp.test(v);
+          }
+          catch(err)
+          {
+            return false
+          }
+        } else {
+          return false
+        }
+      },
+      function (_v, p) {
+        var params = p.split('/');
+        if (params.length == 3 && params[0] == "") {
+          return '输入的值必须与 <span class="' + Vanadium.config.message_value_class + '">' + p.toString() + '</span> 相匹配.';
+        } else {
+          return '提供的值与<span class="' + Vanadium.config.message_value_class + '">' + p.toString() + '</span>不匹配.';
+        }
+      }
+    ]
+  ])
+  if (typeof(VanadiumCustomValidationTypes) !== "undefined" && VanadiumCustomValidationTypes) Vanadium.addValidatorTypes(VanadiumCustomValidationTypes);
+};
+$(function(){
+$("#unrember").click(function(){
+  
+  $("#ticket").remove();
+  
+});
+
+});
+</script>
+<script>
+
+function checkCardId(socialNo){  
+
+      if(socialNo == "")  
+      {  
+        alert("输入身份证号码不能为空!");  
+		document.getElementById("passport").focus();
+        return (false);  
+      }  
+  
+      if (socialNo.length != 15 && socialNo.length != 18)  
+      {  
+        alert("输入身份证号码格式不正确!");  
+		document.getElementById("passport").focus();
+        return (false);  
+      }  
+          
+     var area={11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"};   
+         
+       if(area[parseInt(socialNo.substr(0,2))]==null) {  
+        alert("身份证号码不正确(地区非法)!"); 
+		document.getElementById("passport").focus(); 
+            return (false);  
+       }   
+              
+      if (socialNo.length == 15)  
+      {  
+         pattern= /^\d{15}$/;  
+         if (pattern.exec(socialNo)==null){  
+            alert("15位身份证号码必须为数字！"); 
+			document.getElementById("passport").focus(); 
+            return (false);  
+        }  
+        var birth = parseInt("19" + socialNo.substr(6,2));  
+        var month = socialNo.substr(8,2);  
+        var day = parseInt(socialNo.substr(10,2));  
+        switch(month) {  
+            case '01':  
+            case '03':  
+            case '05':  
+            case '07':  
+            case '08':  
+            case '10':  
+            case '12':  
+                if(day>31) {  
+                    alert('输入身份证号码不格式正确!'); 
+					document.getElementById("passport").focus(); 
+                    return false;  
+                }  
+                break;  
+            case '04':  
+            case '06':  
+            case '09':  
+            case '11':  
+                if(day>30) {  
+                    alert('输入身份证号码不格式正确!'); 
+					document.getElementById("passport").focus(); 
+                    return false;  
+                }  
+                break;  
+            case '02':  
+                if((birth % 4 == 0 && birth % 100 != 0) || birth % 400 == 0) {  
+                    if(day>29) {  
+                        alert('输入身份证号码不格式正确!');  
+						document.getElementById("passport").focus();
+                        return false;  
+                    }  
+                } else {  
+                    if(day>28) {  
+                        alert('输入身份证号码不格式正确!');  
+						document.getElementById("passport").focus();
+                        return false;  
+                    }  
+                }  
+                break;  
+            default:  
+                alert('输入身份证号码不格式正确!'); 
+				document.getElementById("passport").focus(); 
+                return false;  
+        }  
+        var nowYear = new Date().getYear();  
+        if(nowYear - parseInt(birth)<15 || nowYear - parseInt(birth)>100) {  
+            alert('输入身份证号码不格式正确!'); 
+			document.getElementById("passport").focus(); 
+            return false;  
+        }  
+        return (true);  
+      }  
+        
+      var Wi = new Array(  
+                7,9,10,5,8,4,2,1,6,  
+                3,7,9,10,5,8,4,2,1  
+                );  
+      var   lSum        = 0;  
+      var   nNum        = 0;  
+      var   nCheckSum   = 0;  
+        
+        for (i = 0; i < 17; ++i)  
+        {  
+              
+  
+            if ( socialNo.charAt(i) < '0' || socialNo.charAt(i) > '9' )  
+            {  
+                alert("输入身份证号码格式不正确!"); 
+				document.getElementById("passport").focus(); 
+                return (false);  
+            }  
+            else  
+            {  
+                nNum = socialNo.charAt(i) - '0';  
+            }  
+             lSum += nNum * Wi[i];  
+        }  
+  
+        
+        if( socialNo.charAt(17) == 'X' || socialNo.charAt(17) == 'x')  
+        {  
+            lSum += 10*Wi[17];  
+        }  
+        else if ( socialNo.charAt(17) < '0' || socialNo.charAt(17) > '9' )  
+        {  
+            alert("输入身份证号码格式不正确!");
+			document.getElementById("passport").focus();  
+            return (false);  
+        }  
+        else  
+        {  
+            lSum += ( socialNo.charAt(17) - '0' ) * Wi[17];  
+        }  
+  
+          
+          
+        if ( (lSum % 11) == 1 )  
+        {  
+            return true;  
+        }  
+        else  
+        {  
+            alert("输入身份证号码格式不正确!");
+			document.getElementById("passport").focus();  
+            return (false);  
+        }  
+          
+}  
+</script>
+<style>
+input.rightformcss, select.rightformcss, textarea.rightformcss {
+	border:1px solid green;
+	padding:1px;
+}
+.failmsg {
+	color:#a40000;
+}
+.msgvaluecss {
+	font-style:italic;
+}
+input.failformcss, select.failformcss, textarea.failformcss {
+	border:1px solid #a40000;
+	padding:1px;
+}
+</style>
+<body>
+<div class="header">
+  <div class="top">
+    <h1><img src="images/xg_r2_c3.jpg" tppabs="http://www.whuzs.cn/images/xg_r2_c3.jpg" /></h1>
+    <div class="phone" style="
+    margin: 15px auto auto 74px;  width: 210px;  height: 50px;  float: right;  };
+"><img title="招生热线" src="images/phone.jpg" tppabs="http://www.whuzs.cn/images/phone.jpg"></div>
+    
+  </div>
+</div>
+<div class="menu">
+  <ul>
+    <li id="btn"><a href="index.htm" tppabs="http://www.whuzs.cn/">网站首页</a></li>
+    <li><a href="tzgg/index.htm" tppabs="http://www.whuzs.cn/tzgg">通知公告</a></li>
+    <li><a href="zskx/index.htm" tppabs="http://www.whuzs.cn/zskx">招生快讯</a></li>
+    <li><a href="mtjj/index.htm" tppabs="http://www.whuzs.cn/mtjj">媒体聚焦</a> </li>
+    <li><a href="xggl/index.htm" tppabs="http://www.whuzs.cn/xggl/">学工管理</a></li>
+    <li><a href="zsjh/index.htm" tppabs="http://www.whuzs.cn/zsjh">招生计划</a></li>
+    <li><a href="zysz/index.htm" tppabs="http://www.whuzs.cn/zysz">专业设置</a></li>
+    <li><a href="sxsx/index.htm" tppabs="http://www.whuzs.cn/sxsx">实训就业</a></li>
+    <li><a href="online.html" tppabs="http://www.whuzs.cn/online.html">在线报名</a></li>
+  </ul>
+</div>
+<script type="text/javascript"> 
+$(document).ready( function(){								 
+		var d = document.getElementById("nav").getElementsByTagName("li");
+		//alert(d.length);
+		var l;
+		for(var i=0,l=d.length;i<l;i++){
+			d[i].style.width=document.body.clientWidth + "px";
+			d[i].style.height="45px";
+		} 
+});
+</script> 
+<!-- ppt代码 开始 -->
+<div class="banner">
+  <div id="banner-box">
+    <ul id="banner-comtent">
+      <a href="zskx/index.htm" tppabs="http://www.whuzs.cn/zskx/" target="_blank">
+      <li class="bg1"></li>
+      </a> <a href="xggl/index.htm" tppabs="http://www.whuzs.cn/xggl/" target="_blank">
+      <li class="bg2 li-hide"></li>
+      </a> <a href="sxsx/index.htm" tppabs="http://www.whuzs.cn/sxsx/" target="_blank">
+      <li class="bg3 li-hide"></li>
+      </a> <a href="xxjj/index.htm" tppabs="http://www.whuzs.cn/xxjj/" target="_blank">
+      <li class="bg4 li-hide"></li>
+      </a>
+    </ul>
+  </div>
+  <ul id="banner-id">
+    <li class="active"></li>
+    <li class=""></li>
+    <li class=""></li>
+    <li class=""></li>
+  </ul>
+  <script type="text/javascript">
+    var flag = true;
+    $(
+
+$("#banner-id li").hover(function () {
+    flag = false;
+    var idx = $(this).index()
+    pb(idx);
+}, function () { flag = true; })
+);
+
+
+
+    $("#banner-comtent li").hover(function () {
+        flag = false;
+    }, function () {
+        flag = true;
+    });
+
+    function pb(idx) {
+
+        $("#banner-id li").removeClass("active");
+        $("#banner-id li").eq(idx).addClass("active");
+        $("#banner-comtent li").fadeOut("slow");
+        $("#banner-comtent li").eq(idx).fadeIn("slow");
+    }
+    function lb() {
+        var idx = $("#banner-id li[class='active']").index() + 1;
+        if (idx >= $("#banner-id li").length) { idx = 0; };
+        if (flag) {
+            pb(idx);
+        }
+    }
+
+    setInterval(lb, "5000");
+</script> 
+</div>
+<!-- ppt代码 结束 -->
+
+<div class="dqwz">
+  <div class="dqwz01">
+    <h4>通知公告:</h4>
+    <ul>
+      <div id="whdemo">
+        <div id="inwhdemo">
+          <div id="whdemo1"> <li>·<a href="tzgg/1125.html" tppabs="http://www.whuzs.cn/tzgg/1125.html">2015年报名方式</a></li>
+<li>·<a href="tzgg/1124.html" tppabs="http://www.whuzs.cn/tzgg/1124.html">2015年新生入学须知</a></li>
+<li>·<a href="tzgg/1123.html" tppabs="http://www.whuzs.cn/tzgg/1123.html">上海通用汽车有限公司校企共建汽车技术服务与营销专业</a></li>
+ </div>
+          <div id="whdemo2"></div>
+        </div>
+      </div>
+    </ul>
+    <script>
+<!--
+var speed=50;
+var tab=document.getElementById("whdemo");
+var tab1=document.getElementById("whdemo1");
+var tab2=document.getElementById("whdemo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script> 
+  </div>
+</div>
+<div class="main">
+  <div class="side01 fl"> <div class="qnzx">
+      <div style="width:100%;height:150px;margin-top:0px;margin-bottom:5px;">
+        <span  height="100" style="display:block;"><img style="text-align: center;
+display: block;" src="templets/default/images/index_r13_c12.jpg" tppabs="http://www.whuzs.cn/templets/default/images/index_r13_c12.jpg" height="74" width="251"></span>
+        <span  style="width: 100%;height: 50px;display:block;font-size:23px;margin-top:10px;text-align: center;line-height: 59px;"><img class="goqq" style="text-align: center;
+display: block;" src="templets/default/images/index_qqzx.jpg" tppabs="http://www.whuzs.cn/templets/default/images/index_qqzx.jpg" usemap="#Map2"><!---->
+        <map name="Map2" id="Map2">
+        <area shape="rect" coords="99,29,172,116" href="tencent://message/?uin=1770054266&Site=点击这里给我发消息&Menu=yes">
+        <area shape="rect" coords="177,29,362,113" href="tencent://message/?uin=1227066832&Site=点击这里给我发消息&Menu=yes">
+       <!----></span>
+       
+      </div>
+      <div class="info_span">
+        <span align="left" style="margin-left: 17px;" height="50" valign="middle">
+		 <a href="zskx/1031.html" tppabs="http://www.whuzs.cn/zskx/1031.html" target="_blank"><img src="templets/default/images/index_r18_c12.jpg" tppabs="http://www.whuzs.cn/templets/default/images/index_r18_c12.jpg" height="42" width="135"></a>
+		</span>
+        <span align="right" style="margin-left: 5px;" height="50" valign="middle"><a href="xxjj/1117.html" tppabs="http://www.whuzs.cn/xxjj/1117.html" target="_blank"><img src="templets/default/images/index_r17_c17.jpg" tppabs="http://www.whuzs.cn/templets/default/images/index_r17_c17.jpg" height="42" width="132"></a></span>
+        <span align="left" style="margin-left: 20px;" height="50" valign="middle"><a href="zysz/index.htm" tppabs="http://www.whuzs.cn/zysz" target="_blank"><img src="templets/default/images/index_r22_c17.jpg" tppabs="http://www.whuzs.cn/templets/default/images/index_r22_c17.jpg" height="42" width="132"></a></span>
+        <span align="right" style="margin-left: 5px;" height="50" valign="middle"><a href="rdwt/index.htm" tppabs="http://www.whuzs.cn/rdwt/" target="_blank"><img src="templets/default/images/index_r27_c18.jpg" tppabs="http://www.whuzs.cn/templets/default/images/index_r27_c18.jpg" height="42" width="132"></a></span>
+      </div>
+   </div>
+    <div class="side01foot"></div>
+    <div class="h"></div>
+    <div class="side01box02">
+    <div class="side01box02top"><h4>媒体聚焦</h4></div>
+    <div class="newslist" style="margin-left:16px;">
+<embed src="../static.youku.com/v/swf/qplayer.swf-VideoIDS=XOTMwMDAxMjM2&winType=adshow&isAutoPlay=true" tppabs="http://static.youku.com/v/swf/qplayer.swf?VideoIDS=XOTMwMDAxMjM2&winType=adshow&isAutoPlay=true" quality="high" width="285" height="165" align="middle" allowscriptaccess="sameDomain" allowfullscreen="true" type="application/x-shockwave-flash" wmode="transparent">
+	</div>
+   </div>
+    <div class="side01foot"></div>
+  </div>
+  <div class="side02 fr">
+    <div class="box01">
+      <div id="v_focus"> 
+        <script type="text/javascript">
+$(function(){
+    $("#zzjs").Slide({
+		effect : "scroolY",
+    	speed : "normal",
+		timer : 3000
+	});
+});
+</script> 
+        <script type="text/javascript" src="js/jq.Slide_zzjs_net.js" tppabs="http://www.whuzs.cn/js/jq.Slide_zzjs_net.js"></script>
+        <div id="zzjs">
+          <div class="zswhcm">
+            <ul class="whcm">
+              <li><a  target="_blank"><img height="243" src="images/1a.jpg" tppabs="http://www.whuzs.cn/images/1a.jpg" width="510" /></a></li>
+              <li style="display:none;"><a target="_blank"><img height="243" src="images/2a.jpg" tppabs="http://www.whuzs.cn/images/2a.jpg" width="510"></a></li>
+              <li style="display:none;"><a target="_blank"><img height="243" src="images/3a.jpg" tppabs="http://www.whuzs.cn/images/3a.jpg" width="510"></a></li>
+              <li style="display:none;"><a target="_blank"><img height="243" src="images/4a.jpg" tppabs="http://www.whuzs.cn/images/4a.jpg" width="510"></a></li>
+            </ul>
+          </div>
+          <ul class="JQ-slide-nav">
+            <li class="on"><a href="index.htm" tppabs="http://www.whuzs.cn/" class="next"><img src="images/a1.jpg" tppabs="http://www.whuzs.cn/images/a1.jpg"></a></li>
+            <li><a href="index.htm" tppabs="http://www.whuzs.cn/"><img src="images/a2.jpg" tppabs="http://www.whuzs.cn/images/a2.jpg"></a></li>
+            <li><a href="index.htm" tppabs="http://www.whuzs.cn/"><img src="images/a3.jpg" tppabs="http://www.whuzs.cn/images/a3.jpg"></a></li>
+            <li><a href="index.htm" tppabs="http://www.whuzs.cn/"><img src="images/a4.jpg" tppabs="http://www.whuzs.cn/images/a4.jpg"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(".JQ-slide-nav li").hover(function(){
+	    $(this).addClass("on").siblings().removeClass("on");
+        var show= $(this).index();
+        $(".whcm li").eq(show).show().siblings().hide();
+	});
+</script>
+    <div class="side01foot01"></div>
+    <div class="h"></div>
+    <div class="box02">
+      <div class="newsbox fl">
+        <div class="news">
+          <div class="Menubox">
+            <ul>
+              <a href="javascript:if(confirm('http://www.whuzs.cn/plus/list.php?tid=3  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告访问的文件是隐藏的。  \n\n你想在服务器上打开它?'))window.location='http://www.whuzs.cn/plus/list.php?tid=3'" tppabs="http://www.whuzs.cn/plus/list.php?tid=3" target="_blank">
+              <li id="b1" onmousemove="setTab('b',1,3)" class="hover">招生快讯</li>
+              </a> <a href="javascript:if(confirm('http://www.whuzs.cn/plus/list.php?tid=7  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告访问的文件是隐藏的。  \n\n你想在服务器上打开它?'))window.location='http://www.whuzs.cn/plus/list.php?tid=7'" tppabs="http://www.whuzs.cn/plus/list.php?tid=7" target="_blank">
+              <li id="b2" onmousemove="setTab('b',2,3)">专业设置</li>
+              </a> <a href="javascript:if(confirm('http://www.whuzs.cn/plus/list.php?tid=6  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告访问的文件是隐藏的。  \n\n你想在服务器上打开它?'))window.location='http://www.whuzs.cn/plus/list.php?tid=6'" tppabs="http://www.whuzs.cn/plus/list.php?tid=6" target="_blank">
+              <li id="b3" onmousemove="setTab('b',3,3)">招生计划</li>
+              </a>
+            </ul>
+          </div>
+          <div class="Contentbox" >
+            <div id="con_b_1">
+              <div class="newslist">
+                <ul>
+                  <li><a href="zskx/1032.html" tppabs="http://www.whuzs.cn/zskx/1032.html" target="_blank" title="湖北2015年高考志愿填报指南">湖北2015年高考志愿填报指南</a><span>06-18</span></li>
+<li><a href="zskx/1038.html" tppabs="http://www.whuzs.cn/zskx/1038.html" target="_blank" title="2015年湖北省高考志愿填报时间确定">2015年湖北省高考志愿填报时间确定</a><span>06-18</span></li>
+<li><a href="zskx/1039.html" tppabs="http://www.whuzs.cn/zskx/1039.html" target="_blank" title="湖北青年职业学院2015年招生简章">湖北青年职业学院2015年招生简章</a><span>06-12</span></li>
+<li><a href="zskx/1041.html" tppabs="http://www.whuzs.cn/zskx/1041.html" target="_blank" title="光机电与建筑工程学院教学特色">光机电与建筑工程学院教学特色</a><span>06-12</span></li>
+<li><a href="zskx/1040.html" tppabs="http://www.whuzs.cn/zskx/1040.html" target="_blank" title="湖北青年职业学院办学优势">湖北青年职业学院办学优势</a><span>06-12</span></li>
+<li><a href="zskx/1159.html" tppabs="http://www.whuzs.cn/zskx/1159.html" target="_blank" title="订单培养就业协议书">订单培养就业协议书</a><span>06-12</span></li>
+
+                </ul>
+                <a href="zskx/index.htm" tppabs="http://www.whuzs.cn/zskx/" target="_blank" rel="nofollow"><span style="float:right;"> >> 更多</span></a> </div>
+            </div>
+            <div id="con_b_2" style="display:none;">
+              <div class="newslist">
+                <ul>
+                  <li><a href="zysz/1186.html" tppabs="http://www.whuzs.cn/zysz/1186.html" target="_blank" title="光机电与建筑工程学院的师资力量">光机电与建筑工程学院的师资力量</a><span>05-06</span></li>
+<li><a href="zysz/1145.html" tppabs="http://www.whuzs.cn/zysz/1145.html" target="_blank" title="汽车技术服务与营销（新能源汽车工程技术方向）">汽车技术服务与营销（新能源汽车工程技术方</a><span>04-27</span></li>
+<li><a href="zysz/1144.html" tppabs="http://www.whuzs.cn/zysz/1144.html" target="_blank" title="汽车技术服务与营销（汽车技术服务与营销）">汽车技术服务与营销（汽车技术服务与营销）</a><span>04-27</span></li>
+<li><a href="zysz/1143.html" tppabs="http://www.whuzs.cn/zysz/1143.html" target="_blank" title="汽车技术服务与营销（汽车检测与维修技术）">汽车技术服务与营销（汽车检测与维修技术）</a><span>04-27</span></li>
+<li><a href="zysz/1142.html" tppabs="http://www.whuzs.cn/zysz/1142.html" target="_blank" title="建筑工程技术专业（建筑工程管理方向）">建筑工程技术专业（建筑工程管理方向）</a><span>04-27</span></li>
+<li><a href="zysz/1141.html" tppabs="http://www.whuzs.cn/zysz/1141.html" target="_blank" title="建筑工程技术专业（建筑装饰设计方向）">建筑工程技术专业（建筑装饰设计方向）</a><span>04-27</span></li>
+
+                </ul>
+                <a href="zysz/index.htm" tppabs="http://www.whuzs.cn/zysz/" target="_blank" rel='nofollow'><span style="float:right;"> >> 更多</span></a> </div>
+            </div>
+            <div id="con_b_3" style="display:none">
+              <div class="newslist">
+                <ul>
+                  <li><a href="zsjh/1158.html" tppabs="http://www.whuzs.cn/zsjh/1158.html" target="_blank" title="2015年湖北青年职业学院职院填报指南">2015年湖北青年职业学院职院填报指南</a><span>06-18</span></li>
+<li><a href="zsjh/1146.html" tppabs="http://www.whuzs.cn/zsjh/1146.html" target="_blank" title="2015招生计划">2015招生计划</a><span>05-12</span></li>
+
+                </ul>
+                <a href="zsjh/index.htm" tppabs="http://www.whuzs.cn/zsjh/" target="_blank" rel='nofollow'><span style="float:right;"> >> 更多</span></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="side01foot02"></div>
+      </div>
+      <div class="newsbox01 fr">
+        <div class="news01">
+          <div class="Menubox01">
+            <ul>
+              <li id="a1" onmousemove="setTab('a',1,2)" class="hover">实践活动</li>
+              <li id="a2" onmousemove="setTab('a',2,2)">考生登记</li>
+            </ul>
+          </div>
+          <div class="Contentbox01">
+            <div id="con_a_1">
+              <div id="colee_right" class="box02_pic"> 
+                <!--下面是向右滚动代码-->
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td id="colee_right1" valign="top" align="center"><table cellpadding="2" cellspacing="0" border="0" class="pic_xh">
+                        <tr align="center"> <td><div class="pic_no"><a href="sjhd/1138.html" tppabs="http://www.whuzs.cn/sjhd/1138.html" target="_blank"><img src="uploads/allimg/150426/7-150426220609108-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-150426220609108-lp.jpg" alt="上海通用凯迪拉克营销-刘亦菲" />上海通用凯迪拉克营销-刘亦菲</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1137.html" tppabs="http://www.whuzs.cn/sjhd/1137.html" target="_blank"><img src="uploads/allimg/150426/7-15042622051MJ-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-15042622051MJ-lp.jpg" alt="凯迪拉克营销-徐静蕾" />凯迪拉克营销-徐静蕾</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1136.html" tppabs="http://www.whuzs.cn/sjhd/1136.html" target="_blank"><img src="uploads/allimg/150426/7-1504262204043B-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-1504262204043B-lp.jpg" alt="汽车装配" />汽车装配</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1135.html" tppabs="http://www.whuzs.cn/sjhd/1135.html" target="_blank"><img src="uploads/allimg/150426/7-15042622030D64-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-15042622030D64-lp.jpg" alt="汽车检测实训" />汽车检测实训</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1134.html" tppabs="http://www.whuzs.cn/sjhd/1134.html" target="_blank"><img src="uploads/allimg/150426/7-150426220214556-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-150426220214556-lp.jpg" alt="汽车实训车间" />汽车实训车间</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1133.html" tppabs="http://www.whuzs.cn/sjhd/1133.html" target="_blank"><img src="uploads/allimg/150426/7-150426215921535-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-150426215921535-lp.jpg" alt="爱心资助学子" />爱心资助学子</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1132.html" tppabs="http://www.whuzs.cn/sjhd/1132.html" target="_blank"><img src="uploads/allimg/150426/7-150426215K9515-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-150426215K9515-lp.jpg" alt="图书馆" />图书馆</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1131.html" tppabs="http://www.whuzs.cn/sjhd/1131.html" target="_blank"><img src="uploads/allimg/150426/7-150426215643P2-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-150426215643P2-lp.jpg" alt="建筑工地实训" />建筑工地实训</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1130.html" tppabs="http://www.whuzs.cn/sjhd/1130.html" target="_blank"><img src="uploads/allimg/150426/7-1504262155544O-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-1504262155544O-lp.jpg" alt="五四文艺晚会" />五四文艺晚会</a></div></td>
+<td><div class="pic_no"><a href="sjhd/1129.html" tppabs="http://www.whuzs.cn/sjhd/1129.html" target="_blank"><img src="uploads/allimg/150426/7-150426215455262-lp.jpg" tppabs="http://www.whuzs.cn/uploads/allimg/150426/7-150426215455262-lp.jpg" alt="学生公寓" />学生公寓</a></div></td>
+ </tr>
+                      </table></td>
+                    <td id="colee_right2" valign="top"></td>
+                  </tr>
+                </table>
+                <script>
+var speed=30//速度数值越大速度越慢
+var colee_right2=document.getElementById("colee_right2");
+var colee_right1=document.getElementById("colee_right1");
+var colee_right=document.getElementById("colee_right");
+colee_right2.innerHTML=colee_right1.innerHTML
+function Marquee4(){
+if(colee_right.scrollLeft<=0)
+colee_right.scrollLeft+=colee_right2.offsetWidth
+else{
+colee_right.scrollLeft--
+}
+}
+var MyMar4=setInterval(Marquee4,speed)
+colee_right.onmouseover=function() {clearInterval(MyMar4)}
+colee_right.onmouseout=function() {MyMar4=setInterval(Marquee4,speed)}
+</script> 
+                <script>
+function idcardUtil(UUserCard){
+	
+		if (parseInt(UUserCard.substr(16, 1)) % 2 == 1) { 
+			document.getElementById('sex').value = "男";
+		} else { 
+			document.getElementById('sex').value  = "女";
+		} 
+		
+	
+}
+
+window.onload = function(){
+var nowDate = new Date();
+var str = nowDate.getFullYear()+"-"+(nowDate.getMonth() + 1)+"-"+nowDate.getDate()+" "+nowDate.getHours()+":"+nowDate.getMinutes()+":"+nowDate.getSeconds();
+document.getElementById("date").value=str;
+}
+
+</script> 
+                <!--向右滚动代码结束--> 
+              </div>
+            </div>
+            <div id="con_a_2" style="display:none">
+              <div class="baoming">
+                <form action="http://www.whuzs.cn/plus/diy.php" enctype="multipart/form-data" method="post" id="iform" name="iform">
+                  <input type="hidden" name="action" value="post" />
+                  <input type="hidden" name="diyid" value="1" />
+                  <input type="hidden" name="do" value="2" />
+                  <table style="width:97%;" cellpadding="0" cellspacing="1">
+                    <tr>
+                      <td align="right" height="25">姓 名：</td>
+                      <td><input id="checkempty" class=":required" name="name" style='width:150px' /></td>
+                    </tr>
+                    <tr>
+                      <td align="right" height="25">身份证号：</td>
+                      <td><input type='text' name='passport'  style='width:150px'   value='' id="passport" class=""  /></td>
+                    </tr>
+                    <input name="date" value="" type="hidden" id="date"  />
+                    <tr>
+                      <td align="right" height="25">高考报名号：</td>
+                      <td><input type='text' name='ticket_num'  style='width:150px'   value='' id="checkempty" class=":required :number" onClick="checkCardId(document.getElementById('passport').value)" /></td>
+                    <tr>
+                      <td align="right" valign="top">联系电话：</td>
+                      <td><input type='text' name='phone_num' id='phone_num' class=":required :number"  style='width:150px'   value='' onblur="idcardUtil(document.getElementById('passport').value)" /></td>
+                    </tr>
+                    <input type="hidden" id="sex" name="sex" />
+                    <tr>
+                      <td align="right" height="25">家庭住址：</td>
+                      <td><input type='text' name='address' id='address' style='width:150px'  class=":required" /></td>
+                    </tr>
+                    <input type="hidden" name="dede_fields" value="name,text;sex,select;passport,text;ticket_num,text;gra_school,text;address,text;discript,multitext;phone_num,text;date,datetime" />
+                    <input type="hidden" name="dede_fieldshash" value="52e79a7cfe109b71d961833761f225e2" />
+                  </table>
+                  <div align='center' style='height:30px;padding-top:10px;'>
+                    <input type="submit" name="submit" value="提交" class='' />
+                    <input type="reset" name="reset" value="重置" class='' />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side01foot03"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="links">
+  <h4>友情链接：</h4>
+  <p><li><a href="javascript:if(confirm('http://www.hbqnxy.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.hbqnxy.com/'" tppabs="http://www.hbqnxy.com/" target='_blank'>湖北青年职业学院</a> </li><li><a href="index.htm" tppabs="http://www.whuzs.cn/" target='_blank'>湖北青年职业学院光机电与</a> </li><li><a href="index.htm" tppabs="http://www.whuzs.cn/" target='_blank'>湖北青年职业学院招生网</a> </li><li><a href="index.htm" tppabs="http://www.whuzs.cn/" target='_blank'>光机电与建筑工程学院</a> </li><li><a href="javascript:if(confirm('http://www.youth.cn/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.youth.cn/'" tppabs="http://www.youth.cn/" target='_blank'>中国青年网</a> </li></p>
+</div>
+<script type="text/javascript" language="javascript"> 
+    //加入收藏 
+        function AddFavorite(sURL, sTitle) { 
+            sURL = encodeURI(sURL); 
+        try{   
+             window.external.addFavorite(sURL, sTitle);   
+         }catch(e) {   
+             try{   
+                 window.sidebar.addPanel(sTitle, sURL, "");   
+             }catch (e) {   
+                 alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+             }   
+         }
+     }
+     //设为首页
+     function SetHome(url){
+         if (document.all) {
+             document.body.style.behavior='url(#default#homepage)';
+                document.body.setHomePage(url);
+         }else{
+             alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+         }
+     }
+ </script><div class="footer">
+ <div class="foot">
+  <div class="logo"><img src="images/index_r41_c7.jpg" tppabs="http://www.whuzs.cn/images/index_r41_c7.jpg" /></div>
+  <div class="text">
+   <div class="footlinks"><a href="tzgg/index.htm" tppabs="http://www.whuzs.cn/tzgg">通知公告</a> | <a href="zskx/index.htm" tppabs="http://www.whuzs.cn/zskx">招生快讯</a> | <a href="mtjj/index.htm" tppabs="http://www.whuzs.cn/mtjj">媒体聚焦</a> | <a href="xggl/index.htm" tppabs="http://www.whuzs.cn/xggl/">学工管理</a> | <a href="zsjh/index.htm" tppabs="http://www.whuzs.cn/zsjh" >招生计划</a> | <a href="zysz/index.htm" tppabs="http://www.whuzs.cn/zysz">专业设置</a> | <a href="sxsx/index.htm" tppabs="http://www.whuzs.cn/sxsx">实习实训</a></div>
+   <div class="foottext">Copyright &copy; 2015 湖北青年职业学院光机电与建筑工程学院招生网 教改示范专业 版权所有<br/>
+报考咨询电话：027-87309786 027-87307796 027-51839981 <br/>
+联系人：刘老师 QQ咨询：1227066832 1770054266 微信：youthvc<br/>
+学院地址：武汉市武昌区雄楚大道415号 邮编：430079</div>
+  </div>
+ </div>
+</div>
+
+<!---在线客服---->
+<link rel=stylesheet type=text/css href="templets/default/style/common.css" tppabs="http://www.whuzs.cn/templets/default/style/common.css">
+<!--<SCRIPT type=text/javascript src="/templets/default/js/jquery.js"></SCRIPT>-->
+<SCRIPT type=text/javascript src="templets/default/js/kefu.js" tppabs="http://www.whuzs.cn/templets/default/js/kefu.js"></SCRIPT>
+<DIV id=floatTools class=float0831>
+  <DIV class=floatL><A style="DISPLAY: none" id=aFloatTools_Show class=btnOpen 
+title=查看在线客服 
+onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', '/'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');" 
+href="javascript:void(0);">展开</A> <A id=aFloatTools_Hide class=btnCtn 
+title=关闭在线客服 
+onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', '/'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');" 
+href="javascript:void(0);">收缩</A> </DIV>
+  <DIV id=divFloatToolsView class=floatR>
+    <DIV class=tp></DIV>
+    <DIV class=cn>
+      <UL>
+        <LI class=top>
+          <H3 class=titZx>QQ咨询</H3>
+        </LI>
+        
+        <LI><SPAN class=icoZx>在线咨询</SPAN> </LI>
+        <LI><A class="icoTc" href="tencent://message/?uin=1227066832&Site=点击这里给我发消息&Menu=yes">QQ咨询 余老师</A> </LI>
+        <LI><A class="icoTc" href="tencent://message/?uin=1770054266&Site=点击这里给我发消息&Menu=yes">QQ咨询 刘老师</A> </LI>		
+      </UL>
+      <UL>
+        <LI>
+          <H3 class=titDh>电话咨询</H3>
+        </LI>
+        <LI><SPAN class=icoTl style="padding-left:18px;font-size:12px;">027-87309786</SPAN> </LI>
+		<LI><SPAN class=icoTl style="padding-left:18px;font-size:12px;">027-87307796</SPAN> </LI>		
+      </UL>
+	  <div style="text-align:center;"><LI><img src="images/weixin_code.jpg" tppabs="http://www.whuzs.cn/images/weixin_code.jpg"></LI>
+		<LI>扫描二维码直接找老师</A> </LI></div>
+    </DIV>
+  </DIV>
+</DIV>
+<div style=display:none><script src="../s4.cnzz.com/stat.php-id=1255302994&web_id=1255302994" tppabs="http://s4.cnzz.com/stat.php?id=1255302994&web_id=1255302994" language="JavaScript"></script><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1a924eaf170082598c591c9cb901572f' type='text/javascript'%3E%3C/script%3E")) </script></div>
+</body>
+</html>

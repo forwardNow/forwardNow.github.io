@@ -1,0 +1,12 @@
+/*banner*/
+.banner{clear:both;width:100%;height:300px;position:relative;overflow:hidden;zoom:1;margin:0px auto;}
+#banner-box{ height:300px; overflow:hidden;}
+#banner-box li{width:100%;height:300px; background-position:50% 50%; background-size:cover;}
+#banner-box li.bg1{ background-image:url("../images/abc1.jpg")/*tpa=http://www.whuzs.cn/images/abc1.jpg*/;}
+#banner-box li.bg2{background-image:url("../images/abc2.jpg")/*tpa=http://www.whuzs.cn/images/abc2.jpg*/;}
+#banner-box li.bg3{background-image:url("../images/abc3.jpg")/*tpa=http://www.whuzs.cn/images/abc3.jpg*/;}
+#banner-box li.bg4{background-image:url("../images/abc4.jpg")/*tpa=http://www.whuzs.cn/images/abc4.jpg*/;}
+#banner-id{position:absolute;left:46%;bottom:8px;}
+#banner-comtent li{ cursor:pointer;}
+#banner-id li{float:left;width:10px;height:10px;line-height:0;margin:0 10px;display:inline;background:url("../images/flash.gif")/*tpa=http://www.whuzs.cn/images/flash.gif*/ no-repeat;cursor :pointer;font-size:0px;}
+#banner-id li:hover,#banner-id li.active{background-position:0px -10px;}

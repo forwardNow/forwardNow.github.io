@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+.lof-slidecontent, .lof-slidecontent a {
+	color:#FFF;	
+}
+.lof-slidecontent a.readmore{
+	color:#58B1EA;
+	font-size:95%;
+	
+}
+.lof-slidecontent{	
+	
+}
+.lof-slidecontent .preload{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	text-align:center;
+	background:#FFF
+}
+.lof-slidecontent .preload div{
+	height:100%;
+	width:100%;
+	background:transparent url("../images/load-indicator.gif")/*tpa=http://www.whuzs.cn/images/load-indicator.gif*/ no-repeat scroll 50% 50%;
+}
+.lof-main-outer{
+	position:relative;
+	height:100%;
+	width:100%;
+	z-index:3px;
+	overflow:hidden;
+}
+
+
+/*******************************************************/
+.lof-main-item-desc{
+	z-index:10;
+	position:absolute;
+	bottom:50px;
+	left:0px;
+	width:350px;
+	background:url("../images/bg_trans.png")/*tpa=http://www.whuzs.cn/images/bg_trans.png*/;
+	height:100px;
+	/* filter:0.7(opacity:60) */
+	padding:10px;
+}
+.lof-main-item-desc p{
+	margin:0 8px;
+	padding:8px 0
+}
+.lof-main-item-desc h3{
+	padding:0;
+	margin:0
+}
+.lof-main-item-desc h2{
+	padding:0;
+	margin:15px 0 0 0px;
+}
+.lof-main-item-desc h3 a{	
+	margin:0;
+	background:#C01F25;
+	font-size:75%;
+	padding:2px 3px;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+	text-transform:uppercase;
+	text-decoration:none
+}
+.lof-main-item-desc h3 a:hover{
+
+	text-decoration:underline;
+}
+.lof-main-item-desc h3 i {
+	font-size:70%;
+}
+
+/* main flash */
+ul.lof-main-wapper{
+	/* margin-right:auto; */
+	overflow:hidden;
+	background:transparent url("../images/load-indicator.gif")/*tpa=http://www.whuzs.cn/images/load-indicator.gif*/ no-repeat scroll 50% 50%;
+	padding:0px;
+	margin:0;
+	position:absolute;
+	overflow:hidden;
+}
+
+ul.lof-main-wapper li{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	float:left;
+	position:relative;
+	width:100%;
+	height:401px;
+}
+ul.lof-main-wapper li h1{position:absolute;top:0;right:0;}
+.lof-opacity  li{
+	position:absolute;
+	top:0;
+	left:0;
+	float:inherit;
+}
+
+ul.lof-main-wapper li img{
+	padding:0px;	
+}
+
+/* item navigator */
+.lof-navigator-wapper {
+	position:absolute;
+	bottom:5px;
+	right:10px;
+	_bottom:-85px;
+}
+.lof-navigator-outer{
+	position:relative;
+	z-index:100;
+	height:20px;
+	width:100px;
+	overflow:hidden;
+	color:#FFF;
+	float:left
+}
+ul.lof-navigator{
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+	width:100%;
+	padding-top:10px;
+}
+ul.lof-navigator li{
+	cursor:hand; 
+	cursor:pointer;
+	list-style:none;
+	padding:0;
+	margin-left:0px;
+	overflow:hidden;
+	float:left;
+	display:block;
+	background:url("../images/img_bg.jpg")/*tpa=http://www.whuzs.cn/images/img_bg.jpg*/ no-repeat 0 0;
+
+}
+.lof-navigator span{display:block;}
+.lof-opacity {
+	overflow:visible  !important;;
+	position:absolute !important;
+}
+.lof-opacity  li{
+	position:absolute  !important;;
+	top:0;
+	left:0;
+	float:inherit  !important;
+}
+ul.lof-navigator li img{width:94px;height:60px;margin:9px 0 0 9px;}
+.lof-navigator-wapper .lof-next,  .lof-navigator-wapper .lof-previous{
+	display:block;
+	width:16px;
+	height:25px;
+	color:#FFF;
+	cursor:pointer;
+	margin-top:35px;
+}
+.lof-navigator-wapper .lof-next {
+	float:left;	
+	text-indent:-999999px;
+	margin-right:5px;
+	background:url("../images/b_lbtn.jpg")/*tpa=http://www.whuzs.cn/images/b_lbtn.jpg*/ no-repeat left top;
+}
+.lof-navigator-wapper .lof-previous {
+	float:left;	
+	text-indent:-999999px;
+	margin-left:5px;
+	background:url("../images/b_rbtn.jpg")/*tpa=http://www.whuzs.cn/images/b_rbtn.jpg*/ no-repeat left top;
+}
+
+
+/**修改**/
+.lof-navigator-wapper{z-index:100;height:24px;}
+.lof-navigator-wapper ul{float:right;z-index:1000;}
+.lof-navigator-wapper ul li{background:url("../images/dotted.png")/*tpa=http://www.whuzs.cn/images/dotted.png*/ no-repeat 0 0;width:16px;height:16px;float:left;text-indent:-99999px;cursor:pointer;}
+.lof-navigator-wapper ul .active{background:url("../images/dotted_on.png")/*tpa=http://www.whuzs.cn/images/dotted_on.png*/ no-repeat 0 0;}
+ul.lof-navigator{padding:0;float:right;z-index:1000;}
+.lof-navigator-wapper{top:400px;}
+
