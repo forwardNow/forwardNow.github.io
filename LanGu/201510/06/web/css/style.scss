@@ -3,7 +3,7 @@
 @import "base";
 
 $page-width : 1000px;
-$color-main: #277fd7;
+$color-main: #3F4DD8;
 
 .wrap {
     width        : $page-width;
@@ -155,9 +155,10 @@ body {
         }
     }
     .login {
-        padding      : 4px 0;
+        padding      : 4px 8px;
         float        : right;
-        margin-right : 4px;
+        background: $color-main;
+        color: #f1f1f1;
         * {
             float : left;
         }

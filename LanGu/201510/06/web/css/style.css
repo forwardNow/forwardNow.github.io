@@ -151,7 +151,7 @@ body {
     vertical-align: middle;
     height: 100%; }
 .header .nav-wrap {
-  background-color: #277fd7; }
+  background-color: #3F4DD8; }
   .nav .nav__item {
     float: left; }
     .nav .nav__item .item__link {
@@ -244,9 +244,10 @@ body {
         margin-right: 10px;
         color: #666666; }
   .tools .login {
-    padding: 4px 0;
+    padding: 4px 8px;
     float: right;
-    margin-right: 4px; }
+    background: #3F4DD8;
+    color: #f1f1f1; }
     .tools .login * {
       float: left; }
     .tools .login label {
@@ -375,7 +376,7 @@ body {
 .footer {
   height: auto;
   padding: 10px 0;
-  background: #277fd7;
+  background: #3F4DD8;
   text-align: left; }
   .footer .links {
     color: #999; }
