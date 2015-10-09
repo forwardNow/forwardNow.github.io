@@ -126,6 +126,7 @@ h1, h2, h3, h4, h5 {
 .nav:after, .tools:after, .row:after, .mod_news .bd .news__list .news__item:after {
   clear: both; }
 
+/* one line */
 .tools .notice .notice__bd .bd .item {
   overflow: hidden;
   white-space: nowrap;

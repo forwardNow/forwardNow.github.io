@@ -1,25 +1,8 @@
 @charset "UTF-8";
 @import "reset";
+@import "base";
 
 $page-width : 1000px;
-
-%clearfix {
-    &:before,
-    &:after {
-        content : "";
-        display : table;
-        font    : 0/0 a;
-    }
-    &:after {
-        clear : both;
-    }
-}
-
-%text-overflow {
-    overflow      : hidden;
-    white-space   : nowrap;
-    text-overflow : ellipsis;
-}
 
 .wrap {
     width        : $page-width;
