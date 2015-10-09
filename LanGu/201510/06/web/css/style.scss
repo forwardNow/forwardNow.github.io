@@ -3,6 +3,7 @@
 @import "base";
 
 $page-width : 1000px;
+$color-main: #277fd7;
 
 .wrap {
     width        : $page-width;
@@ -29,7 +30,7 @@ body {
         }
     }
     .nav-wrap {
-        background-color : #3d42dc;
+        background-color : $color-main;
         @at-root .nav {
             @extend %clearfix;
             .nav__item {
@@ -327,7 +328,7 @@ body {
 .footer {
     height: auto;
     padding: 10px 0;
-    background: #3d42dc;
+    background: $color-main;
     text-align: left;
     .footer_inner {
 

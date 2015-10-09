@@ -151,7 +151,7 @@ body {
     vertical-align: middle;
     height: 100%; }
 .header .nav-wrap {
-  background-color: #3d42dc; }
+  background-color: #277fd7; }
   .nav .nav__item {
     float: left; }
     .nav .nav__item .item__link {
@@ -375,7 +375,7 @@ body {
 .footer {
   height: auto;
   padding: 10px 0;
-  background: #3d42dc;
+  background: #277fd7;
   text-align: left; }
   .footer .links {
     color: #999; }
