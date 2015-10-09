@@ -367,7 +367,7 @@ body {
         margin-left: 0.8rem; }
       .list_pic .list__item .num {
         position: absolute;
-        right: 0.15rem;
+        left: 0.15rem;
         top: 0.15rem;
         width: 3.5rem;
         height: 1.9rem;
