@@ -284,7 +284,8 @@ body {
   .list_text {
     background-color: #ffffff; }
     .list_text .list__item {
-      padding: 1rem;
+      position: relative;
+      padding: 1rem 1rem 2rem 1rem;
       margin-bottom: 0.6rem; }
       .list_text .list__item .num {
         float: left;
@@ -351,6 +352,30 @@ body {
               margin-left: -2rem; }
               .list_text .list__item .amount .progress_wrap .progress p span {
                 color: #f5655a; }
+      .list_text .list__item .desc {
+        clear: both;
+        color: #666666;
+        height: 5rem;
+        overflow: hidden;
+        line-height: 1.4;
+        transition: height 0.3s linear; }
+        .list_text .list__item .desc .detail-wrap .detail {
+          padding-top: 1rem; }
+          .list_text .list__item .desc .detail-wrap .detail p {
+            text-indent: 2rem; }
+        .list_text .list__item .desc .indicator {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -1rem;
+          height: 2rem;
+          width: 2rem;
+          background: url(../images/icon_arrow.png) no-repeat center center;
+          background-size: auto 50%;
+          cursor: pointer;
+          transition: all 0.3s linear; }
+          .list_text .list__item .desc .indicator.up {
+            transform: rotate(180deg); }
   .list_pic {
     background-color: #ffffff;
     padding: 1rem 0 1rem 0.8rem; }

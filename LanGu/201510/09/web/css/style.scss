@@ -99,7 +99,8 @@ body {
     @at-root .list_text {
         background-color : #ffffff;
         .list__item {
-            padding       : 1rem;
+            position: relative;
+            padding       : 1rem 1rem 2rem 1rem;
             margin-bottom : 0.6rem;
             @extend %clearfix;
             @extend %box-shadow-default;
@@ -176,6 +177,37 @@ body {
                                 color : $color-hot;
                             }
                         }
+                    }
+                }
+            }
+            .desc {
+                clear: both;
+                color: $color-aside;
+                height: 5rem;
+                overflow: hidden;
+                line-height : 1.4;
+                transition: height 0.3s linear;
+                .detail-wrap {
+                    .detail {
+                        padding-top: 1rem;
+                        p {
+                            text-indent: 2rem;
+                        }
+                    }
+                }
+                .indicator {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -1rem;
+                    height: 2rem;
+                    width: 2rem;
+                    background: url(../images/icon_arrow.png) no-repeat center center;
+                    background-size: auto 50%;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    &.up {
+                        transform: rotate(180deg);
                     }
                 }
             }
