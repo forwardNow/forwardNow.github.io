@@ -32,8 +32,8 @@
           <file leaf-file-name="vote_text.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37804878">
-                  <caret line="138" column="62" selection-start-line="138" selection-start-column="62" selection-end-line="138" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.58536583">
+                  <caret line="144" column="30" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -46,8 +46,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.58870965">
-                  <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.4516129">
+                  <caret line="153" column="55" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -107,8 +107,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/index.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss" />
+        <option value="$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html" />
       </list>
     </option>
   </component>
@@ -900,18 +900,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37804878">
-          <caret line="138" column="62" selection-start-line="138" selection-start-column="62" selection-end-line="138" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.4516129">
+          <caret line="153" column="55" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_text.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58870965">
-          <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.58536583">
+          <caret line="144" column="30" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
           <folding />
         </state>
       </provider>

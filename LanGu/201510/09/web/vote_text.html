@@ -55,7 +55,7 @@
         <div class="desc">
             <div class="detail-wrap">
                 <div class="detail">
-                    <p>诺贝尔文学奖于北京时间10月9日傍晚17时公布。据诺贝尔奖官网(http://www.nobelprize.org/)最新消息，2015诺贝尔和平奖授予突尼斯全国对话大会。</p>
+                    <p>(http://www.nobelprize.org/)最新消息，2015诺贝尔和平奖授予突尼斯全国对话大会。</p>
                 </div>
             </div>
             <div class="indicator"></div>
@@ -131,8 +131,9 @@
         var descOriginHeight = "5rem";
         $( ".list_text .indicator" ).click( function () {
             var desc = $( this ).parent( ".desc" ),
-                    detailHeight = desc.find( ".detail" ).outerHeight(),
+                    detailHeight = desc.find( ".detail-wrap" ).height(),
                     $this = $( this );
+
             if ( $this.hasClass( "up" ) ) {
                 detailHeight = descOriginHeight;
             }
@@ -140,6 +141,16 @@
                 $this.toggleClass( "up" );
             } );
         } );
+
+        // 当 desc 没有超出时，去掉向下箭头
+        $( ".list_text .list__item" ).each(function () {
+            var desc = $(this ).find(".desc" ),
+                detailWrap = $(this ).find(".detail-wrap" );
+            if ( desc.height() > detailWrap.height() ) {
+                desc.height( detailWrap.height() );
+                $(this ).css( "padding-bottom", "1rem" ).find(".indicator" ).remove();
+            }
+        })
     } );
 </script>
 
