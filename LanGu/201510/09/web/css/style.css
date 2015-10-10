@@ -373,7 +373,7 @@ body {
           background: url(../images/icon_arrow.png) no-repeat center center;
           background-size: auto 50%;
           cursor: pointer;
-          transition: all 0.3s linear; }
+          transition: all 0.1s linear; }
           .list_text .list__item .desc .indicator.up {
             transform: rotate(180deg); }
   .list_pic {

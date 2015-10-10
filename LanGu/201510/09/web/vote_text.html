@@ -56,7 +56,7 @@
             <div class="detail-wrap">
                 <div class="detail">
                     <p>诺贝尔文学奖于北京时间10月9日傍晚17时公布。据诺贝尔奖官网(http://www.nobelprize.org/)最新消息，2015诺贝尔和平奖授予突尼斯全国对话大会。</p>
-                    <p>根据诺贝尔的遗嘱，该奖项颁发给“为促进民族团结友好、取消或裁减常备军队以及为和平会议的组织和宣传尽到最大努力或作出最大贡献的人”。挪威诺贝尔委员会表示，今年的诺贝尔和平奖有273名候选，其中包括68家组织和205名个人。</p></div>
+                </div>
             </div>
             <div class="indicator"></div>
         </div>
@@ -136,7 +136,7 @@
             if ( $this.hasClass( "up" ) ) {
                 detailHeight = descOriginHeight;
             }
-            desc.stop().animate( { "height": detailHeight }, 300, function () {
+            desc.stop().animate( { "height": detailHeight }, 100, function () {
                 $this.toggleClass( "up" );
             } );
         } );
