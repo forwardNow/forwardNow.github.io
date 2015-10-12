@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import "vars";
+@import "reset";
+@import "base";
+
+body {
+    background-color : $page_bg;
+    color            : $color-default;
+}
+
+.header {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    height   : 110px;
+    width    : 100%;
+    @include opacityBg(rgba(252, 248, 242, 0.7), '#B2FCF8F2');
+    .header_inner {
+        position    : relative;
+        @extend %wrap;
+        padding-top : 1px;
+    }
+    .logo {
+        position    : absolute;
+        left        : 50%;
+        top         : 9px;
+        margin-left : -62px;
+    }
+    .tel {
+        position  : absolute;
+        top       : 12px;
+        right     : 0;
+        color     : $color_aside;
+        font-size : 18px;
+    }
+    .nav {
+        line-height : 1;
+        margin-top  : 68px;
+        .list {
+            @extend %clearfix;
+            width : 102%;
+        }
+        .item_space {
+            float  : left;
+            width  : 237px;
+            height : 1px;
+        }
+        .item {
+            position     : relative;
+            float        : left;
+            margin-right : 12px;
+            &.current,
+            &.active {
+                .link {
+                    color : #1a1a1a;
+                    &:after {
+                        content       : "";
+                        display       : block;
+                        height        : 6px;
+                        border-bottom : solid 2px $color_hot;
+                    }
+                }
+                &.has-submenu {
+                    @include opacityBg(rgba(229, 229, 229, 0.76), '#C1E5E5E5');
+                    border        : solid 1px $color_hot;
+                    border-bottom : none 0;
+                    margin-left   : -2px;
+                }
+            }
+        }
+        .link {
+            display : block;
+            color   : #525252;
+            padding : 9px 5px 0 5px;
+        }
+        .submenu {
+            display    : none;
+            position   : absolute;
+            top        : 31px;
+            left       : -1px;
+            padding    : 0 5px 5px 5px;
+            border     : solid 1px $color_hot;
+            border-top : none 0;
+            @include opacityBg(rgba(229, 229, 229, 0.76), '#C1E5E5E5');
+            .submenu__item {
+                padding       : 4px 0;
+                border-bottom : solid 1px $color_hot;
+                &:nth-last-of-type(1) {
+                    border-bottom : none 0;
+                }
+            }
+            .submenu__link {
+                display     : block;
+                width       : 56px;
+                height      : 20px;
+                line-height : 20px;
+                text-align  : center;
+                color       : #3d3d3d;
+                font-size   : 12px;
+                &:hover {
+                    @include opacityBg(rgba(251, 249, 250, 0.8), '#CCFBF9FA');
+                    border-radius : 4px;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    height : 820px;
+    @at-root .slideContainer {
+        .page-list-wrap {
+            width    : 100%;
+            height   : 100%;
+            overflow : hidden;
+            .page-list {
+                @extend %clearfix;
+                height : 100%;
+                width  : 1000%;
+                .page {
+                    float      : left;
+                    width      : 10%;
+                    height     : 100%;
+                    background : no-repeat center center;
+                }
+            }
+        }
+
+        .tab {
+            position : relative;
+            @extend %wrap;
+            .index-list {
+                position : absolute;
+                bottom   : 0;
+                left     : 0;
+                .index {
+                    display          : inline-block;
+                    width            : 56px;
+                    height           : 2px;
+                    background-color : #ffffff;
+                    &.active {
+                        background-color : #d95990;
+                    }
+                }
+            }
+        }
+
+        .info {
+            .title {
+
+            }
+            p {
+
+            }
+        }
+    }
+}

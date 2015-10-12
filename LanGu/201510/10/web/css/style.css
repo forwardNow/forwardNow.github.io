@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*===== 清除默认的margin的属性值 =====*/
+body,
+blockquote,
+dd,
+dl,
+figure,
+form,
+p,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+/*===== 统一设置列表的margin和padding，以及列表表形式 =====*/
+menu,
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*===== 全局定义字体以及页面背景 =====*/
+body {
+  line-height: 1.5;
+  background-color: #FFFFFF; }
+
+body, h1, h2, h3, h4, h5, h6, input, button, select, textarea {
+  font-size: 14px; }
+
+/* 设置字体大小 */
+/*===== 字体控制 =====*/
+body,
+input,
+button,
+select,
+optgroup,
+option,
+textarea,
+pre {
+  font-family: "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif"; }
+
+/*===== 设置iframe的背景色以及去除个别浏览器iframe底部的几个像素 =====*/
+iframe {
+  background-color: #FFFFFF;
+  vertical-align: middle; }
+
+/*===== 去除文本链接样式 =====*/
+a {
+  text-decoration: none; }
+
+/*===== 去除个别浏览器图片底部的几个像素，以及设置图片形式链接无边框 =====*/
+img {
+  vertical-align: middle; }
+
+a img {
+  border: 0 none; }
+
+/*===== 设置表单元素的样式 =====*/
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  overflow: visible;
+  cursor: pointer; }
+
+/* 尽量同意按钮的大小，如果采用input方式做的按钮 */
+select {
+  border: 1px inset; }
+
+/* 统一下拉的边框 */
+textarea {
+  overflow: auto;
+  vertical-align: text-bottom;
+  *vertical-align: auto;
+  border: 1px solid;
+  resize: vertical; }
+
+/* 滚动条为auto，与周边的元素对齐方式，其中hack部分是IE6&7中vertical-align影响范围清除，resize为上下可拉动，避免左右拉动破坏页面布局，如有需要可以设置为none */
+/*===== 设置表格元素的样式 =====*/
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+/* 合并表格的间隙，去掉单元格之间的间距，如有需要合并单元格为细线表格，可增加 border-collapse:collapse; */
+td, th, caption {
+  padding: 0; }
+
+/* 去除单元格以及caption表头的padding值 */
+/*===== 清除样式 =====*/
+i {
+  font-style: normal; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal; }
+
+.header .nav .list:before, .slideContainer .page-list-wrap .page-list:before, .header .nav .list:after, .slideContainer .page-list-wrap .page-list:after {
+  content: "";
+  display: table;
+  font: 0/0 a; }
+.header .nav .list:after, .slideContainer .page-list-wrap .page-list:after {
+  clear: both; }
+
+.header .header_inner, .slideContainer .tab {
+  width: 1000px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+body {
+  background-color: #fafaf5;
+  color: #333333; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 110px;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#B2FCF8F2, endColorstr=#B2FCF8F2);
+  background-color: rgba(252, 248, 242, 0.7); }
+  .header .header_inner {
+    position: relative;
+    padding-top: 1px; }
+  .header .logo {
+    position: absolute;
+    left: 50%;
+    top: 9px;
+    margin-left: -62px; }
+  .header .tel {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    color: #666666;
+    font-size: 18px; }
+  .header .nav {
+    line-height: 1;
+    margin-top: 68px; }
+    .header .nav .list {
+      width: 102%; }
+    .header .nav .item_space {
+      float: left;
+      width: 237px;
+      height: 1px; }
+    .header .nav .item {
+      position: relative;
+      float: left;
+      margin-right: 12px; }
+      .header .nav .item.current .link, .header .nav .item.active .link {
+        color: #1a1a1a; }
+        .header .nav .item.current .link:after, .header .nav .item.active .link:after {
+          content: "";
+          display: block;
+          height: 6px;
+          border-bottom: solid 2px #d95990; }
+      .header .nav .item.current.has-submenu, .header .nav .item.active.has-submenu {
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#C1E5E5E5, endColorstr=#C1E5E5E5);
+        background-color: rgba(229, 229, 229, 0.76);
+        border: solid 1px #d95990;
+        border-bottom: none 0;
+        margin-left: -2px; }
+    .header .nav .link {
+      display: block;
+      color: #525252;
+      padding: 9px 5px 0 5px; }
+    .header .nav .submenu {
+      display: none;
+      position: absolute;
+      top: 31px;
+      left: -1px;
+      padding: 0 5px 5px 5px;
+      border: solid 1px #d95990;
+      border-top: none 0;
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#C1E5E5E5, endColorstr=#C1E5E5E5);
+      background-color: rgba(229, 229, 229, 0.76); }
+      .header .nav .submenu .submenu__item {
+        padding: 4px 0;
+        border-bottom: solid 1px #d95990; }
+        .header .nav .submenu .submenu__item:nth-last-of-type(1) {
+          border-bottom: none 0; }
+      .header .nav .submenu .submenu__link {
+        display: block;
+        width: 56px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #3d3d3d;
+        font-size: 12px; }
+        .header .nav .submenu .submenu__link:hover {
+          filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#CCFBF9FA, endColorstr=#CCFBF9FA);
+          background-color: rgba(251, 249, 250, 0.8);
+          border-radius: 4px; }
+
+.banner {
+  height: 820px; }
+  .slideContainer .page-list-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .slideContainer .page-list-wrap .page-list {
+      height: 100%;
+      width: 1000%; }
+      .slideContainer .page-list-wrap .page-list .page {
+        float: left;
+        width: 10%;
+        height: 100%;
+        background: no-repeat center center; }
+  .slideContainer .tab {
+    position: relative; }
+    .slideContainer .tab .index-list {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      .slideContainer .tab .index-list .index {
+        display: inline-block;
+        width: 56px;
+        height: 2px;
+        background-color: #ffffff; }
+        .slideContainer .tab .index-list .index.active {
+          background-color: #d95990; }
+
+/*# sourceMappingURL=style.css.map */
