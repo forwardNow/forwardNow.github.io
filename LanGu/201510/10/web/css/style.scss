@@ -8,6 +8,10 @@ body {
     color            : $color-default;
 }
 
+.wrap {
+    @extend %wrap;
+}
+
 .header {
     position : absolute;
     top      : 0;
@@ -38,11 +42,12 @@ body {
         margin-top  : 68px;
         .list {
             @extend %clearfix;
-            width : 102%;
+            width       : 103%;
+            margin-left : -5px;
         }
         .item_space {
             float  : left;
-            width  : 237px;
+            width  : 242px;
             height : 1px;
         }
         .item {
@@ -66,6 +71,9 @@ body {
                     border-bottom : none 0;
                     margin-left   : -2px;
                 }
+            }
+            &:nth-last-of-type(1) {
+                margin-right : 0;
             }
         }
         .link {
@@ -130,28 +138,160 @@ body {
             position : relative;
             @extend %wrap;
             .index-list {
-                position : absolute;
-                bottom   : 0;
-                left     : 0;
+                position   : absolute;
+                bottom     : 60px;
+                left       : 0;
+                width      : 100%;
+                font-size  : 0;
+                text-align : center;
                 .index {
                     display          : inline-block;
                     width            : 56px;
                     height           : 2px;
                     background-color : #ffffff;
+                    margin           : 0 4px;
                     &.active {
                         background-color : #d95990;
                     }
                 }
             }
+            .control {
+                position : absolute;
+                top      : 0;
+                left     : 0;
+                width    : 100%;
+                .btn {
+                    position   : absolute;
+                    bottom     : 347px;
+                    width      : 51px;
+                    height     : 51px;
+                    background : url(../images/icon_scroll.png) no-repeat;
+                    @include opacity(30);
+                    &:hover {
+                        @include opacity(100);
+                    }
+                }
+                .btn-prev {
+                    left : -61px;
+                }
+                .btn-next {
+                    right               : -61px;
+                    background-position : 0 -53px;
+                }
+            }
+
         }
 
         .info {
+            position : relative;
+            @extend %wrap;
+            color    : #ffffff;
+            .info-inner {
+                position : absolute;
+                top      : 110px;
+                left     : 0;
+                width    : 100%;
+            }
             .title {
-
+                font-size  : 18px;
+                margin-top : 110px;
             }
-            p {
-
+            .content {
+                line-height : 2;
+                margin-top  : 18px;
+                &:before, &:after {
+                    content       : "";
+                    display       : block;
+                    width         : 36px;
+                    border-bottom : solid 2px #ffffff;
+                    margin        : 12px 0;
+                }
             }
+        }
+    }
+}
+
+.main {
+    @at-root .row {
+        @extend %clearfix;
+        .col-4 {
+            float : left;
+            width : 33.333333%;
+        }
+    }
+    @at-root .main_home {
+        background-color : #fafaf5;
+        .floor_1 {
+            margin-top : 62px;
+            @at-root .mod_news {
+                .hd {
+                    line-height : 1;
+                    .title {
+                        float : left;
+                        .cn, .en {
+                            display : block;
+                        }
+                        .cn {
+                            font-size : 24px;
+                            color     : $color_aside;
+                            clear     : both;
+                        }
+                        .en {
+                            font-size  : 22px;
+                            color      : #7a7a7a;
+                            margin-top : 8px;
+                            clear      : both;
+                        }
+                    }
+                    .symbol {
+                        float            : left;
+                        content          : "";
+                        width            : 70px;
+                        height           : 50px;
+                        border-bottom    : solid 1px #c2c2c2;
+                        transform        : rotate(-45deg);
+                        transform-origin : left bottom;
+                        margin           : 0 0 0 10px;
+                    }
+                    &:after {
+                        content       : "";
+                        clear         : both;
+                        display       : block;
+                        height        : 32px;
+                        width         : 30px;
+                        border-bottom : solid 4px $color_hot;
+                    }
+                }
+
+                .bd {
+                    height : 100px;
+                }
+
+                .ft {
+                    .more {
+                        box-sizing   : border-box;
+                        display      : block;
+                        width        : 60px;
+                        height       : 48px;
+                        line-height  : 48px;
+                        color        : #5c5c5c;
+                        font-size    : 20px;
+                        text-indent  : -80px;
+                        border       : solid 1px $color_hot;
+                        padding-left : 23px;
+                        background   : url(../images/icon_arrow_1.png) no-repeat -60px center $color_hot;
+                        transition   : all 0.3s linear;
+                        overflow     : hidden;
+                        &:hover, &.hover {
+                            width               : 120px;
+                            text-indent         : 0;
+                            background-color    : transparent;
+                            background-position : 80px center;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

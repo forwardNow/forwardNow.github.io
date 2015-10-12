@@ -4,6 +4,7 @@
 
 $page-width : 1000px;
 $color-main : #3f4dd8;
+$color_aside : #666666;
 
 .wrap {
     width        : $page-width;
@@ -219,7 +220,7 @@ body {
 
         .bd {
             height : 200px;
-            .news__list {
+            @at-root .news__list {
                 padding-top : 4px;
                 .news__item {
                     @extend %clearfix;
@@ -274,6 +275,12 @@ body {
         .contact__tel {
             height     : 76px;
             background : url(../images/tel.png) no-repeat 12px center;
+            .tel {
+                float       : left;
+                font-size   : 16px;
+                font-weight : bold;
+                margin      : 27px 0 0 113px
+            }
         }
         .contact__qq {
             position   : relative;
@@ -325,6 +332,125 @@ body {
                     border-bottom    : 1px solid #999999;
                     cursor           : pointer;
                     text-shadow      : 0 1px 0 #dddddd;
+                }
+            }
+        }
+    }
+    @at-root .main_list {
+        @extend %clearfix;
+        .main__sidebar {
+            width : 320px;
+            float : left;
+            .mod_news {
+                margin-top : 20px;
+            }
+        }
+
+        .main__cont {
+            width            : 636px;
+            float            : right;
+            background-color : #ffffff;
+            padding          : 0 12px 20px 12px;
+            .hd {
+                height        : 40px;
+                line-height   : 40px;
+                border-bottom : solid 1px #cccccc;
+                margin        : 0 -12px 0 -12px;
+                padding       : 0 12px;
+                @extend %clearfix;
+                .title {
+                    float       : left;
+                    font-size   : 18px;
+                    font-weight : bold;
+                }
+                .bread {
+                    float : right;
+                    color : #333333;
+                    label {
+                        color : $color_aside;
+                    }
+                    .node {
+                        color : #333333;
+                        &:after {
+                            content : ">";
+                            margin  : 0 6px;
+                        }
+                        &:hover {
+                            color : $color-main;
+                        }
+                    }
+                }
+            }
+            .bd {
+                padding-top : 10px;
+                min-height  : 440px;
+                .news__list {
+                    .news__item {
+                        line-height : 32px;
+                    }
+                }
+                @at-root .paging {
+                    .list {
+                        float       : right;
+                        overflow    : hidden;
+                        line-height : 30px;
+                        margin-top  : 30px;
+                        .item {
+                            float        : left;
+                            margin-right : 10px;
+                            &.active, &:hover {
+                                .btn {
+                                    background-color : #808080;
+                                    color            : #dddddd;
+                                    border-color     : #808080;
+                                }
+                            }
+                            .btn {
+                                box-sizing       : border-box;
+                                display          : block;
+                                height           : 30px;
+                                width            : 30px;
+                                text-align       : center;
+                                color            : #999999;
+                                background-color : #fcfcfc;
+                                border           : solid 1px #cccccc;
+                                border-radius    : 3px;
+                            }
+                            &:nth-last-of-type(1) {
+                                margin-right : 0;
+                            }
+                        }
+                        .hellip {
+                            vertical-align : bottom;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @at-root .main_detail {
+        .main__cont {
+            .bd {
+                .article__hd {
+                    text-align : center;
+                    .title {
+                        line-height : 36px;
+                        font-size   : 22px;
+                        font-weight : bold;
+                        padding-top : 10px;
+                    }
+                    .aside {
+                        font-size : 12px;
+                        label {
+                            color : $color_aside;
+                        }
+                        .src, .author {
+                            margin-right : 24px;
+                        }
+                    }
+                }
+                .article_bd {
+                    padding : 20px 0;
                 }
             }
         }
