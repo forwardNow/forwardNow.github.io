@@ -26,7 +26,9 @@
 <div class="main main_train-detail">
 
     <h2 class="title">深圳聚融培训中心 </h2>
-    <div class="map"><img src="images/map_demo.png" alt=""/></div>
+    <div class="map">
+        <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    </div>
     <div class="desc">
         通过爱心大使杨恭如、曹轩宾的公益讲述展示了贫 困山区学生对希望厨房的渴求。小学生诗歌朗诵《爱的 味道》，生动展示了贫困山区学生对爱的呼唤，让现场 观众潸然泪下。著名音乐创作人曹轩宾倾力创作，现场 演绎为盛.
     </div>
@@ -35,12 +37,75 @@
         <p class="cont">武汉市武昌区中北路车家岭尚城国际 27 层 5、6、7号</p>
     </div>
     <div class="contact">
-        <a href="#" class="btn btn_qq">15671221768</a>
-        <a href="#" class="btn btn_tel">027-65384434</a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=493993319&site=qq&menu=yes" class="btn btn_qq">493993319<!-- qq号对于uin参数 --></a>
+        <a href="tel://18707127626" class="btn btn_tel">027-65384434<!-- 此处号码对于href里的号码 --></a>
     </div>
 
 </div>
 <!--/main-->
 
+<!--baidu map-->
+<!--引用百度地图API-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(114.35772,30.571409),14);
+    }
+    function setMapEvent(){
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay(){
+        var markers = [
+            {content:"武汉市武昌区中北路车家岭尚城国际 27 层 5、6、7号",title:"深圳聚融",imageOffset: {width:0,height:-21},position:{lat:30.571879,lng:114.35821}}
+        ];
+        for(var index = 0; index < markers.length; index++ ){
+            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+            })});
+            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+            marker.setLabel(label);
+            addClickHandler(marker,infoWindow);
+            map.addOverlay(marker);
+
+            //
+            marker.openInfoWindow(infoWindow);
+        };
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>
 </body>
 </html>
