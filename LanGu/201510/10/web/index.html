@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script src="./My97DatePicker/WdatePicker.js"></script>
+
 </head>
 <body>
 
@@ -97,6 +99,7 @@
 <!-- main -->
 <div class="main main_home">
 
+    <!-- floor_1 -->
     <div class="floor_1">
 
         <div class="row wrap">
@@ -109,7 +112,8 @@
                         <i class="symbol"></i>
                     </div>
                     <div class="bd">
-
+                        <div class="pic-wrap"><img class="pic" src="images/news_pic.jpg" alt=""/></div>
+                        <p class="abstract">武汉怡月佳母婴健康管理有限公司设立的家好月圆月子会所是现代医学与传统相结合的酒店式 武汉怡月佳母婴健康管理有限公司设立的家好月圆月子会所是现代医学与传统相结合的酒店式</p>
                     </div>
                     <div class="ft">
                         <a class="more" href="#">更多</a>
@@ -125,12 +129,49 @@
                         <i class="symbol"></i>
                     </div>
                     <div class="bd">
-
+                        <ul class="list">
+                            <li class="item active">
+                                <a href="#">
+                                    <h3 class="title">中国政法大学前院长孙选中博士论文被疑抄袭(图)</h3>
+                                    <p class="abstract">近日，有举报者向澎湃新闻（www.thepaper.cn）透露，中国政法大学教授、商学院前院长孙选中2008年4月完成的博士学位论文《服务型政府及其行政机制研究》涉嫌抄袭剽窃。</p>
+                                    <span class="pubdate">2015-10-13</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <h3 class="title">屠呦呦宁波旧居被物业公司24小时巡逻安保</h3>
+                                    <p class="abstract">中新网10月13日电 莫言之后，又一位中国人获得了诺奖。瑞典斯德哥尔摩当地时间10月5日中午11时30分，中国药学家屠呦呦与爱尔兰医学研究者威廉•坎贝尔、日本学者大村智共同获得了2015年诺贝尔生理学或医学奖。</p>
+                                    <span class="pubdate">2015-10-12</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <h3 class="title">广西扶贫黑幕：3000名“贫困户”中2400人有车</h3>
+                                    <p class="abstract">这个数字来源于审计署10月8日发布的2015年第30号公告。公告显示，这3119名造假扶贫对象中，有343人属于财政供养人员，有2454人购买了2645辆汽车，43人在县城购买商品房或自建住房，439人为个体工商户或经营公司。</p>
+                                    <span class="pubdate">2015-10-10</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <h3 class="title">新中国大厦最早控制者潘维曦被指非法吸资110亿</h3>
+                                    <p class="abstract">新中国大厦，48层楼，位于荔湾区十三行路1号，近20年来，围绕这栋大厦，上演了许多盘根错节的纠纷、官司、武斗甚至“涉黑”。作为大厦最初的控制者潘维曦，因卷入非法集资案一度逃到香港，但却在七八年内遥控指挥，非法卷走大厦的收益3亿多元。</p>
+                                    <span class="pubdate">2015-10-09</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <h3 class="title">陈金彪履新浙江省委秘书长 曾接受冰桶挑战</h3>
+                                    <p class="abstract">据绍兴网络电视台10月12日晚间报道，当天下午，绍兴市举行干部大会，浙江省委组织部副部长姚志文宣布省委决定：现任绍兴市委书记陈金彪调任省委秘书长，彭佳学任绍兴市委书记。省委常委、组织部长廖国勋讲话。</p>
+                                    <span class="pubdate">2015-10-07</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="ft">
                         <a class="more" href="#">更多</a>
                     </div>
                 </div>
+
             </div>
             <div class="col-4">
                 <div class="mod mod_news floor_1__reg">
@@ -141,18 +182,163 @@
                         <i class="symbol"></i>
                     </div>
                     <div class="bd">
-
+                        <div class="form">
+                            <form action="#" id="regForm">
+                                <p class="name"><label>姓名</label><input class="form-control" type="text"/>
+                                    <span class="gender" onclick="changeGender(this)"><i class="text">先生</i><input type="hidden" name="gender" value="0"/></span>
+                                </p>
+                                <p class="birth"><label>宝宝出生时间</label><input class="form-control" type="text" onClick="WdatePicker({ dateFmt:'yyyy-MM-dd', skin:'twoer'})" readonly/></p>
+                                <p><label>电话</label><input class="form-control" type="text"/></p>
+                                <p><label>QQ</label><input class="form-control" type="text"/></p>
+                                <p><label>地址</label><input class="form-control" type="text"/></p>
+                            </form>
+                        </div>
                     </div>
                     <div class="ft">
-                        <a class="more" href="#">报名</a>
+                        <a class="more" href="javascript:$('#regForm').submit();">报名</a>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+    <script>
+        $(function () {
 
+            // 新闻模块 floor_1__news
+            $( ".floor_1__news .list .item" ).bind( "mouseenter", function () {
+                $( this ).addClass( "active" ).siblings().removeClass( "active" );
+            } ).bind( "mouseleave", function () {
+                $( this ).removeClass( "active" );
+                $( ".floor_1__news .list .item:eq(0)" ).addClass( "active" );
+            } );
+            //
+        })
+        // 在线报名 floor_1_reg
+        function changeGender( elt ) {
+            // 0: 男；1: 女
+
+            var o = {
+                        "0": "先生",
+                        "1": "女士"
+                    },
+                    gender = $( elt ),
+                    input = gender.find( "input[type='hidden']" ),
+                    flag = "0";
+            if ( input.val() == "0" ) {
+                flag = "1";
+            } else {
+                flag = "0";
+            }
+
+            gender.find( ".text" ).text( o[flag] );
+            input.val( flag )
+        }
+    </script>
+    <!-- floor_1 -->
+
+    <!-- floor_2 会所环境-->
+    <div class="floor_2">
+
+        <div class="floor_2__inner wrap mod_column">
+
+            <div class="hd">
+                <div class="inner">
+                    <h2 class="title">会所环境</h2>
+                    <a class="more" href="#">更多</a>
+                </div>
+            </div>
+            <div class="bd">
+                <div class="slideContainer">
+
+                    <div class="page-list-wrap">
+                        <ul class="page-list"  style="left: -153%;">
+                            <li class="page" style="background-image: url(images/page_d_3.jpg)"></li>
+                            <li class="page" style="background-image: url(images/page_d_4.jpg)"></li>
+                            <li class="page" style="background-image: url(images/page_d_5.jpg)"></li>
+                            <li class="page active" style="background-image: url(images/page_d_1.jpg)"></li>
+                            <li class="page active" style="background-image: url(images/page_d_2.jpg)"></li>
+                            <li class="page" style="background-image: url(images/page_d_6.jpg)"></li>
+                            <li class="page" style="background-image: url(images/page_d_7.jpg)"></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab">
+                        <div class="index-list">
+                            <a href="javascript:void(0)" class="index"><!-- 1 --></a>
+                            <a href="javascript:void(0)" class="index"><!-- 2 --></a>
+                            <a href="javascript:void(0)" class="index"><!-- 3 --></a>
+                            <a href="javascript:void(0)" class="index active"><!-- 4 --></a>
+                            <a href="javascript:void(0)" class="index"><!-- 5 --></a>
+                            <a href="javascript:void(0)" class="index"><!-- 6 --></a>
+                            <a href="javascript:void(0)" class="index"><!-- 7 --></a>
+                        </div>
+                        <div class="control">
+                            <a class="btn btn-prev" href="javascript:void(0)"><!-- prev --></a>
+                            <a class="btn btn-next" href="javascript:void(0)"><!-- next --></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /floor_2 会所环境-->
+
+    <!-- floor_3 我们的服务-->
+    <div class="floor_3">
+        <div class="mod_news floor_3__inner">
+            <div class="hd">
+                <h2 class="title">
+                    <span class="cn">我们的服务</span><span class="en">OUR SERVICE</span>
+                </h2>
+                <i class="symbol"></i>
+            </div>
+            <div class="bd">
+                <div class="row">
+                    <div class="col-6 col-service">
+                        <div class="pic-wrap"><img src="images/service_pic_1.jpg" alt="" class="pic"/></div>
+                        <div class="desc">
+                            <h2 class="title">专业团队</h2>
+                            <p class="text">专业的团队提供专业的服务为您和你的宝宝撑起一片只属于你们的天地。</p>
+                        </div>
+                        <i class="symbol"></i>
+                    </div>
+                    <div class="col-6 col-service">
+                        <div class="pic-wrap"><img src="images/service_pic_2.jpg" alt="" class="pic"/></div>
+                        <div class="desc">
+                            <h2 class="title">宝宝护理</h2>
+                            <p class="text">宝宝出生后的28天内为危险期，家好月圆月子会所为您的宝宝提供专业的护理服务。。</p>
+                        </div>
+                        <i class="symbol"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-service">
+                        <div class="desc">
+                            <h2 class="title">专业团队</h2>
+                            <p class="text">专业的团队提供专业的服务为您和你的宝宝撑起一片只属于你们的天地。</p>
+                        </div>
+                        <div class="pic-wrap"><img src="images/service_pic_3.jpg" alt="" class="pic"/></div>
+                        <i class="symbol"></i>
+                    </div>
+                    <div class="col-6 col-service">
+                        <div class="desc">
+                            <h2 class="title">宝宝护理</h2>
+                            <p class="text">宝宝出生后的28天内为危险期，家好月圆月子会所为您的宝宝提供专业的护理服务。。</p>
+                        </div>
+                        <div class="pic-wrap"><img src="images/service_pic_4.jpg" alt="" class="pic"/></div>
+                        <i class="symbol"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /floor_3 我们的服务-->
 </div>
+
+
 <!-- /main -->
 
 

@@ -1,7 +1,7 @@
 $baseFontSize : 10px;
 
 @mixin centerBlock($blockWidth: $page_width) {
-    width: $blockWidth;
+    width        : $blockWidth;
     margin-left  : auto;
     margin-right : auto;
 }
@@ -10,10 +10,12 @@ $baseFontSize : 10px;
     opacity : $opacity / 100;
     filter  : alpha(opacity=$opacity);
 }
+
 @mixin opacityBg($rgbaColor:rgba(252, 248, 242, 0.7), $filterColor: '#B2FCF8F2') {
     filter           : progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#{$filterColor}, endColorstr=#{$filterColor});
     background-color : $rgbaColor;
 }
+
 // pixels to rems
 @function pxToRem($px) {
     @return $px / $baseFontSize * 1rem;
@@ -40,7 +42,15 @@ $baseFontSize : 10px;
 
 // wrap
 %wrap {
-    width : $page_width;
-    @include centerBlock;
+    @include centerBlock($page_width);
 }
 
+%text_unselect {
+    moz-user-select     : -moz-none;
+    -moz-user-select    : none;
+    -o-user-select      : none;
+    -khtml-user-select  : none;
+    -webkit-user-select : none;
+    -ms-user-select     : none;
+    user-select         : none;
+}

@@ -15,6 +15,7 @@ $color_aside : #666666;
 body {
     background-color : #f8f8f8;
     color            : #333333;
+    min-width        : 1000px;
 }
 
 .header {
@@ -31,20 +32,24 @@ body {
         }
     }
     .nav-wrap {
-        background-color : $color-main;
+        background : url(../images/nav_bg.png) repeat-x $color-main;
         @at-root .nav {
             @extend %clearfix;
             .nav__item {
                 float : left;
                 .item__link {
-                    display     : block;
-                    width       : 111px;
-                    height      : 40px;
-                    text-align  : center;
-                    line-height : 40px;
-                    color       : #ffffff;
+                    display       : block;
+                    width         : 111px;
+                    height        : 40px;
+                    text-align    : center;
+                    line-height   : 40px;
+                    color         : #ffffff;
+                    transition    : all 0.3s ease;
+                    border-radius : 4px;
                     &:hover {
-                        background-color : #5675b8;
+                        background-color : #5f61df;
+                        margin-top       : -4px;
+                        box-shadow       : 0 0 3px rgba(0, 0, 0, 0.25);
                     }
                 }
             }
@@ -53,12 +58,10 @@ body {
 }
 
 .banner {
-    .banner-inner {
-        height : 400px;
-
-    }
+    height : 400px;
     .slideBox {
-        position : relative;
+        position         : relative;
+        background-color : #eeeeee;
         .hd {
             z-index  : 99999;
             position : absolute;
@@ -91,25 +94,43 @@ body {
 
             }
         }
+        .bd {
+            ul {
+                li {
+                    background : no-repeat center center;
+                    height     : 400px;
+                }
+            }
+        }
         .prev, .next {
-            position   : absolute;
-            left       : 3%;
-            top        : 50%;
-            margin-top : -25px;
-            display    : block;
-            width      : 32px;
-            height     : 40px;
-            background : url(../images/slider-arrow.png) -110px 5px no-repeat;
-            filter     : alpha(opacity=50);
-            opacity    : 0.5;
+            position      : absolute;
+            left          : 3%;
+            top           : 50%;
+            margin-top    : -25px;
+            display       : block;
+            width         : 32px;
+            height        : 60px;
+            background    : url(../images/slider-arrow.png) -110px 14px no-repeat rgba(0, 0, 0, 0.25);
+            filter        : alpha(opacity=50);
+            opacity       : 0.5;
+            border-radius : 3px;
+            transition    : all 0.3s ease;
+            &:hover {
+                opacity : 1;
+            }
         }
         .prev {
-
+            &:hover {
+                background-position : -170px 14px;
+            }
         }
         .next {
             left                : auto;
             right               : 3%;
-            background-position : 8px 5px;
+            background-position : -50px 14px;
+            &:hover {
+                background-position : 8px 14px;
+            }
         }
     }
 }
@@ -132,8 +153,12 @@ body {
 }
 
 .tools {
-    background  : #eeeeee;
-    line-height : 26px;
+    position      : relative;
+    top           : 2px;
+    background    : #eeeeee;
+    line-height   : 26px;
+    border-bottom : solid 1px #b6b6b6;
+    box-shadow    : 0 1px 4px #b6b6b6;
     @extend %clearfix;
     .notice {
         padding  : 4px 0;
@@ -149,7 +174,7 @@ body {
             margin-left : 12px;
             .bd {
                 ul {
-                    width : 168px;
+                    width : 200px;
                 }
                 .item {
                     @extend %text-overflow;
@@ -160,23 +185,26 @@ body {
         }
     }
     .login {
-        padding    : 4px 8px;
-        float      : right;
+        position   : absolute;
+        top        : 0;
+        right      : 0;
+        padding    : 4px 12px;
         background : $color-main;
         color      : #f1f1f1;
         * {
             float : left;
         }
         label {
-            margin-right : 4px;
+            margin-right : 8px;
         }
         .form-control {
-            width        : 100px;
+            width        : 120px;
             height       : 24px;
-            margin-right : 8px;
+            margin-right : 18px;
         }
         .btn {
             height           : 26px;
+            padding          : 0 6px;
             color            : #333333;
             background-color : #ffffff;
             border           : 1px solid #cccccc;

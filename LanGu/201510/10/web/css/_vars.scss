@@ -1,7 +1,10 @@
 // color
 $color_default : #333333 !default;
 $color_aside : #666666;
+$color_small : #8a8a8a;
 $color_hot : #d95990;
+$color_pagebg : #fafaf5;
+$color_title : #5c5c5c;
 
 // font
 $fontSize_default : 14px;
@@ -11,5 +14,5 @@ $fontFamily_Song : "宋体", Arial, 'Microsoft YaHei';
 $fontFamily_Yahei : 'Microsoft YaHei', "宋体", Arial;
 
 // page
-$page_width: 1000px;
-$page_bg: #fafaf5;
+$page_width : 1000px;
+$page_bg : $color_pagebg;

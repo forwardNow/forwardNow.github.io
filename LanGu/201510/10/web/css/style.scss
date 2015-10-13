@@ -214,9 +214,17 @@ body {
 .main {
     @at-root .row {
         @extend %clearfix;
-        .col-4 {
+        .col-4, .col-6 {
             float : left;
+            float : left;
+        }
+
+        .col-4 {
             width : 33.333333%;
+        }
+
+        .col-6 {
+            width : 50%;
         }
     }
     @at-root .main_home {
@@ -227,17 +235,18 @@ body {
                 .hd {
                     line-height : 1;
                     .title {
-                        float : left;
+                        float      : left;
+                        text-align : right;
                         .cn, .en {
                             display : block;
                         }
                         .cn {
                             font-size : 24px;
-                            color     : $color_aside;
+                            color     : $color_title;
                             clear     : both;
                         }
                         .en {
-                            font-size  : 22px;
+                            font-size  : 24px;
                             color      : #7a7a7a;
                             margin-top : 8px;
                             clear      : both;
@@ -264,7 +273,9 @@ body {
                 }
 
                 .bd {
-                    height : 100px;
+                    box-sizing  : border-box;
+                    height      : 248px;
+                    padding-top : 24px;
                 }
 
                 .ft {
@@ -291,7 +302,304 @@ body {
                     }
                 }
             }
-
+            .floor_1__about {
+                .bd {
+                    width : 256px;
+                    .pic-wrap {
+                        width    : 256px;
+                        height   : 120px;
+                        overflow : hidden;
+                        .pic {
+                            height : auto;
+                        }
+                    }
+                    .abstract {
+                        text-indent : 2em;
+                        line-height : 1.67;
+                        height      : 66px;
+                        color       : $color_aside;
+                        overflow    : hidden;
+                        margin-top  : 4px;
+                    }
+                }
+            }
+            .floor_1__news {
+                .bd {
+                    width : 256px;
+                    .list {
+                        margin-top : -8px;
+                        a {
+                            display : block;
+                            @extend %clearfix;
+                        }
+                        .item {
+                            line-height : 24px;
+                            /*&:hover, */
+                            &.active {
+                                border-bottom : 1px dashed #e4e4e2;
+                                .abstract {
+                                    display    : block;
+                                    clear      : both;
+                                    word-break : break-all;
+                                }
+                                .title {
+                                    width : 100%;
+                                }
+                                .pubdate {
+                                    top : 0;
+                                }
+                            }
+                        }
+                        .title {
+                            float : left;
+                            width : 180px;
+                            color : $color_default;
+                            @extend %text_overflow;
+                        }
+                        .abstract {
+                            display     : none;
+                            color       : $color_aside;
+                            text-indent : 2em;
+                            line-height : 1.5;
+                            font-size   : 12px;
+                            height      : 56px;
+                            overflow    : hidden;
+                        }
+                        .pubdate {
+                            float     : right;
+                            color     : $color_small;
+                            font-size : 12px;
+                            position  : relative;
+                            top       : 2px;
+                        }
+                    }
+                }
+            }
+            .floor_1__reg {
+                .bd {
+                    width      : 300px;
+                    background : url(../images/reg_text.png) no-repeat 0px 188px;
+                    .form {
+                        margin-top : -4px;
+                        p {
+                            margin-bottom : 12px;
+                            label {
+                                display   : inline-block;
+                                color     : $color_aside;
+                                min-width : 50px;
+                                &:after {
+                                    content : "：";
+                                    float   : right;
+                                }
+                            }
+                            .form-control {
+                                width         : 240px;
+                                border        : none 0;
+                                border-bottom : solid 1px #a2a7a8;
+                                padding-left  : 6px;
+                                background    : 0;
+                                outline       : none;
+                            }
+                            &.birth {
+                                & label {
+                                    width : 100px;
+                                }
+                                & .form-control {
+                                    width : 190px;
+                                }
+                            }
+                            &.name {
+                                position : relative;
+                                .gender {
+                                    position       : absolute;
+                                    top            : 0;
+                                    right          : 3px;
+                                    color          : $color_small;
+                                    height         : 20px;
+                                    width          : 64px;
+                                    letter-spacing : 6px;
+                                    background     : url(../images/icon_select.png) no-repeat right center;
+                                    cursor         : pointer;
+                                    @extend %text_unselect;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
+
+        .floor_2 {
+            background : url(../images/column_bg_1.jpg) no-repeat center center;
+            margin-top : 100px;
+            overflow   : hidden;
+            .floor_2__inner {
+                height : 480px;
+            }
+            .mod_column {
+                .hd {
+                    height        : 69px;
+                    border-bottom : solid 1px #fafafa;
+                    .inner {
+                        width         : 250px;
+                        height        : 69px;
+                        line-height   : 1;
+                        border-bottom : solid 1px #fa96c1;
+                    }
+                    .title {
+                        float      : left;
+                        font-size  : 24px;
+                        color      : $color_title;
+                        margin-top : 32px;
+                    }
+                    .more {
+                        float       : right;
+                        color       : $color_aside;
+                        padding     : 2px 0 0 22px;
+                        border-left : solid 1px $color_aside;
+                        margin      : 38px 80px 0 0;
+                        transition  : margin 0.3s ease;
+                        &:hover {
+                            margin-right : 72px;
+                        }
+                    }
+                }
+                .bd {
+                    height : 410px;
+                    .slideContainer {
+                        height : 100%;
+                        .page-list-wrap {
+                            position   : relative;
+                            box-sizing : border-box;
+                            top        : 30px;
+                            overflow   : visible;
+                            .page-list {
+                                position : absolute;
+                                left     : 0;
+                                top      : 0;
+                                .page {
+                                    width           : 490px;
+                                    height          : 300px;
+                                    margin-right    : 20px;
+                                    background-size : 420px 256px;
+                                    &.active {
+                                        background-size : 100% auto;
+                                        &:before {
+                                            display : none;
+                                        }
+                                    }
+                                    &:before {
+                                        content     : "";
+                                        display     : block;
+                                        width       : 420px;
+                                        height      : 256px;
+                                        margin-left : ((490px - 420px) / 2);
+                                        margin-top  : ((300px - 256px) / 2);
+                                        @include opacityBg(rgba(0, 0, 0, 0.45), '#72000000');
+                                    }
+                                }
+                            }
+                        }
+                        .tab {
+                            .index-list {
+                                bottom : 34px;
+                                .index {
+                                    width            : 4px;
+                                    height           : 4px;
+                                    border-radius    : 10px;
+                                    background-color : $color_hot;
+                                    vertical-align   : middle;
+                                    &.active {
+                                        width  : 10px;
+                                        height : 10px;
+                                    }
+                                }
+                            }
+                            .control {
+                                .btn {
+                                    bottom : 208px;
+                                }
+                                .btn-prev {
+                                    left : 10px;
+                                }
+                                .btn-next {
+                                    right : 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .floor_3 {
+            .floor_3__inner {
+                @extend %wrap;
+                .hd {
+                    @include centerBlock(300px);
+                    margin-top    : 62px;
+                    margin-bottom : 42px;
+                    &:after {
+                        border : none 0;
+                        height : 0;
+                        width  : 0;
+                    }
+                    @extend %clearfix;
+                    .title {
+                        .cn, .en {
+                            color : #7a5e6a;
+                        }
+                    }
+                }
+                .bd {
+                    height           : 500px;
+                    background-color : #ffffff;
+                    padding          : 0;
+                    .col-service {
+                        position : relative;
+                        height   : 50%;
+                        .symbol {
+                            position   : absolute;
+                            top        : 50%;
+                            left       : 50%;
+                            width      : 20px;
+                            height     : 20px;
+                            border     : solid 1px #fae555;
+                            margin     : -11px 0 0 -11px;
+                            text-align : center;
+                            &:before {
+                                content     : "";
+                                display     : inline-block;
+                                width       : 12px;
+                                height      : 12px;
+                                border      : solid 1px #fae555;
+                                margin-top : 3px;
+                            }
+                        }
+                        .pic-wrap {
+                            float    : left;
+                            width    : 50%;
+                            height   : 100%;
+                            overflow : hidden;
+                            .pic {
+                                width : 100%;
+                            }
+                        }
+                        .desc {
+                            float  : left;
+                            width  : 50%;
+                            height : 100%;
+                            .title {
+
+                            }
+                            .text {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
