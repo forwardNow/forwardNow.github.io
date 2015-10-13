@@ -472,13 +472,14 @@ body {
       font-weight: bold;
       padding-top: 10px; }
     .main_detail .main__cont .bd .article__hd .aside {
-      font-size: 12px; }
+      font-size: 12px;
+      margin-top: 4px; }
       .main_detail .main__cont .bd .article__hd .aside label {
         color: #666666; }
       .main_detail .main__cont .bd .article__hd .aside .src, .main_detail .main__cont .bd .article__hd .aside .author {
         margin-right: 24px; }
   .main_detail .main__cont .bd .article_bd {
-    padding: 20px 0; }
+    padding: 20px 10px; }
 
 .footer {
   height: auto;

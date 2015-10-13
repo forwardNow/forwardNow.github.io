@@ -469,6 +469,7 @@ body {
                     }
                     .aside {
                         font-size : 12px;
+                        margin-top: 4px;
                         label {
                             color : $color_aside;
                         }
@@ -478,7 +479,7 @@ body {
                     }
                 }
                 .article_bd {
-                    padding : 20px 0;
+                    padding : 20px 10px;
                 }
             }
         }
