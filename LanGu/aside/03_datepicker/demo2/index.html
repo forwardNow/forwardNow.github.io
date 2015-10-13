@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span5 col-md-5" id="sandbox-container">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <script>
+    $('#sandbox-container input').datetimepicker({
+        format: "yyyy-mm-dd",
+        language: "zh-CN",
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    </script>
+</body>
+
+</html>
