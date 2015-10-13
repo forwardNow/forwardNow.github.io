@@ -468,8 +468,8 @@ body {
                         padding-top : 10px;
                     }
                     .aside {
-                        font-size : 12px;
-                        margin-top: 4px;
+                        font-size  : 12px;
+                        margin-top : 4px;
                         label {
                             color : $color_aside;
                         }
@@ -480,6 +480,10 @@ body {
                 }
                 .article_bd {
                     padding : 20px 10px;
+                    .p {
+                        text-indent : 2em;
+                        margin      : 1em 0;
+                    }
                 }
             }
         }

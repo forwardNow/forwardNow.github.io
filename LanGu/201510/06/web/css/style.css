@@ -480,6 +480,9 @@ body {
         margin-right: 24px; }
   .main_detail .main__cont .bd .article_bd {
     padding: 20px 10px; }
+    .main_detail .main__cont .bd .article_bd .p {
+      text-indent: 2em;
+      margin: 1em 0; }
 
 .footer {
   height: auto;
