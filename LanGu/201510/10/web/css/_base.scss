@@ -54,3 +54,45 @@ $baseFontSize : 10px;
     -ms-user-select     : none;
     user-select         : none;
 }
+
+// animate
+%rotate3D-Y {
+    animation         : rotate3D-Y 1s infinite;
+    -webkit-animation : rotate3D-Y 1s infinite;
+}
+
+@-webkit-keyframes rotate3D-Y {
+    from {
+        -webkit-transform : rotateY(0deg)
+    }
+    to {
+        -webkit-transform : rotateY(360deg)
+    }
+}
+
+@-moz-keyframes rotate3D-Y {
+    from {
+        -moz-transform : rotateY(0deg)
+    }
+    to {
+        -moz-transform : rotateY(360deg)
+    }
+}
+
+@-ms-keyframes rotate3D-Y {
+    from {
+        -ms-transform : rotateY(0deg)
+    }
+    to {
+        -ms-transform : rotateY(360deg)
+    }
+}
+
+@-o-keyframes rotate3D-Y {
+    from {
+        -o-transform : rotateY(0deg)
+    }
+    to {
+        -o-transform : rotateY(360deg)
+    }
+}
