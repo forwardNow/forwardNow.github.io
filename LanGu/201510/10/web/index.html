@@ -26,7 +26,7 @@
 
         <div class="nav js__nav">
             <ul class="list">
-                <li class="item current"><a class="link" href="#">首页</a></li>
+                <li class="item active"><a class="link" href="#">首页</a></li>
                 <li class="item"><a class="link" href="#">休养环境</a></li>
                 <li class="item"><a class="link" href="#">宝宝护理</a></li>
                 <li class="item"><a class="link" href="#">专业团队</a></li>
@@ -195,20 +195,20 @@
                     <div class="bd">
                         <div class="form">
                             <form action="#" id="regForm">
-                                <p class="name"><label>姓名</label><input class="form-control" type="text"/>
+                                <p class="name"><label for="_name">姓名</label><input class="form-control" id="_name" type="text"/>
                                     <span class="gender" onclick="changeGender(this)"><i class="text">先生</i><input
                                             type="hidden" name="gender" value="0"/></span>
                                 </p>
 
-                                <p class="birth"><label>宝宝出生时间</label><input class="form-control" type="text"
-                                                                             onClick="WdatePicker({ dateFmt:'yyyy-MM-dd', skin:'twoer'})"
-                                                                             readonly/></p>
+                                <p class="birth"><label for="_birth">宝宝出生时间</label><input class="form-control" id="_birth" type="text"
+                                                                                          onClick="WdatePicker({ dateFmt:'yyyy-MM-dd', skin:'twoer'})"
+                                                                                          readonly/></p>
 
-                                <p><label>电话</label><input class="form-control" type="text"/></p>
+                                <p><label for="_tel">电话</label><input class="form-control" id="_tel" type="text"/></p>
 
-                                <p><label>QQ</label><input class="form-control" type="text"/></p>
+                                <p><label for="_qq">QQ</label><input class="form-control" id="_qq" type="text"/></p>
 
-                                <p><label>地址</label><input class="form-control" type="text"/></p>
+                                <p><label for="_addr">地址</label><input class="form-control" id="_addr" type="text"/></p>
                             </form>
                         </div>
                     </div>

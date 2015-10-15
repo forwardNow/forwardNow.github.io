@@ -51,7 +51,11 @@ $( function () {
     } );
 } );
 
-
+/**
+ * Slide
+ * @param options
+ * @constructor
+ */
 function Slide( options ) {
     this.options = options;
     this.init();
@@ -122,72 +126,73 @@ Slide.prototype.animate = {
 };
 
 (function () {
+
+    var options_banner = {
+        type: "scroll",
+        scroll: {
+            distance: "100%",
+            amount: 1,
+            duration: 300, // 滚动所需时间
+            delay: 3000    // 自动播放时的延迟
+        },
+        slideContainer: $( ".js--slideContainer_banner" ),
+        pageList: $( ".js--slideContainer_banner .page-list" ),
+        indexs: $( ".js--slideContainer_banner .tab .index" ),
+        prevBtn: $( ".js--slideContainer_banner .btn-prev" ),
+        nextBtn: $( ".js--slideContainer_banner .btn-next" )
+
+    };
+    var options_clubEnv = {
+        type: "scroll",
+        scroll: {
+            distance: "490px",
+            amount: 1,
+            duration: 300, // 滚动所需时间
+            delay: 3000    // 自动播放时的延迟
+        },
+        slideContainer: $( ".js--slideContainer_ClubEnv" ),
+        pageList: $( ".js--slideContainer_clubEnv .page-list" ),
+        indexs: $( ".js--slideContainer_clubEnv .tab .index" ),
+        prevBtn: $( ".js--slideContainer_clubEnv .btn-prev" ),
+        nextBtn: $( ".js--slideContainer_clubEnv .btn-next" )
+
+    };
+    var options_case = {
+        type: "scroll",
+        scroll: {
+            distance: "102%",
+            amount: 1,
+            duration: 300, // 滚动所需时间
+            delay: 3000    // 自动播放时的延迟
+        },
+        slideContainer: $( ".js--slideContainer_case" ),
+        pageList: $( ".js--slideContainer_case .page-list" ),
+        indexs: $( ".js--slideContainer_case .tab .index" ),
+        prevBtn: $( ".js--slideContainer_case .btn-prev" ),
+        nextBtn: $( ".js--slideContainer_case .btn-next" )
+
+    };
+
+    new Slide( options_banner );
+    new Slide( options_case );
+
+    var clubEnvSlide = new Slide( options_clubEnv ),
+        originPlay = clubEnvSlide.constructor.prototype.play;
+
+    clubEnvSlide.play = function ( type, index ) {
+        originPlay.apply( this, arguments );
+        var pages = this.pageList.find( ".page" ),
+            index = index + 1;
+
+        pages.removeClass( "active active_prev active_next" );
+        pages.eq( index ).addClass( "active" );
+        pages.eq( index - 1 ).addClass( "active_prev" );
+        pages.eq( index + 1 ).addClass( "active_next" );
+    };
+    clubEnvSlide.nextBtn.click();
+
+
 })();
-var options_banner = {
-    type: "scroll",
-    scroll: {
-        distance: "100%",
-        amount: 1,
-        duration: 300, // 滚动所需时间
-        delay: 3000    // 自动播放时的延迟
-    },
-    slideContainer: $( ".js--slideContainer_banner" ),
-    pageList: $( ".js--slideContainer_banner .page-list" ),
-    indexs: $( ".js--slideContainer_banner .tab .index" ),
-    prevBtn: $( ".js--slideContainer_banner .btn-prev" ),
-    nextBtn: $( ".js--slideContainer_banner .btn-next" )
-
-};
-var options_clubEnv = {
-    type: "scroll",
-    scroll: {
-        distance: "490px",
-        amount: 1,
-        duration: 300, // 滚动所需时间
-        delay: 3000    // 自动播放时的延迟
-    },
-    slideContainer: $( ".js--slideContainer_ClubEnv" ),
-    pageList: $( ".js--slideContainer_clubEnv .page-list" ),
-    indexs: $( ".js--slideContainer_clubEnv .tab .index" ),
-    prevBtn: $( ".js--slideContainer_clubEnv .btn-prev" ),
-    nextBtn: $( ".js--slideContainer_clubEnv .btn-next" )
-
-};
-var options_case = {
-    type: "scroll",
-    scroll: {
-        distance: "102%",
-        amount: 1,
-        duration: 300, // 滚动所需时间
-        delay: 3000    // 自动播放时的延迟
-    },
-    slideContainer: $( ".js--slideContainer_case" ),
-    pageList: $( ".js--slideContainer_case .page-list" ),
-    indexs: $( ".js--slideContainer_case .tab .index" ),
-    prevBtn: $( ".js--slideContainer_case .btn-prev" ),
-    nextBtn: $( ".js--slideContainer_case .btn-next" )
-
-};
-
-new Slide( options_banner );
-new Slide( options_case );
-
-var clubEnvSlide = new Slide( options_clubEnv ),
-    originPlay = clubEnvSlide.constructor.prototype.play;
-
-clubEnvSlide.play = function ( type, index ) {
-    originPlay.apply( this, arguments );
-    var pages = this.pageList.find( ".page" ),
-        index = index + 1;
-
-    pages.removeClass( "active active_prev active_next" );
-    pages.eq( index ).addClass( "active" );
-    pages.eq( index - 1 ).addClass( "active_prev" );
-    pages.eq( index + 1 ).addClass( "active_next" );
-};
-clubEnvSlide.nextBtn.click();
-
-
 
 
 

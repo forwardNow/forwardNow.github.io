@@ -1,0 +1,47 @@
+.text_center {
+    text-align : center;
+}
+
+.text_left {
+    text-align : left;
+}
+
+.text_right {
+    text-align : right;
+}
+
+@mixin opacity($opacity:50) {
+    opacity : $opacity / 100;
+    filter  : alpha(opacity=$opacity);
+}
+
+@mixin opacityBg($rgbaColor:rgba(252, 248, 242, 0.7), $filterColor: '#B2FCF8F2') {
+    filter           : progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#{$filterColor}, endColorstr=#{$filterColor});
+    background-color : $rgbaColor;
+}
+
+// pixels to rems
+@function pxToRem($px,$baseFontSize:20px) {
+    @return $px / $baseFontSize * 1rem;
+}
+
+%clearfix {
+    &:before,
+    &:after {
+        content : "";
+        display : table;
+        font    : 0/0 a;
+    }
+    &:after {
+        clear : both;
+    }
+}
+
+// one line
+%text_overflow {
+    overflow      : hidden;
+    white-space   : nowrap;
+    text-overflow : ellipsis;
+}
+
+

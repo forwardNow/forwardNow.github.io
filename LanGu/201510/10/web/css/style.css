@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'fz_dengxian';
+  src: url("../font/fz/FZXDXJW--GB1-0.eot");
+  src: url("../font/fz/FZXDXJW--GB1-0.woff") format("woff"), url("../font/fz/FZXDXJW--GB1-0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'rocket_script';
+  src: url("../font/rocket_script/fonts/rocket_script.eot");
+  src: url("../font/rocket_script/fonts/rocket_script.woff") format("woff"), url("../font/rocket_script/fonts/rocket_script.ttf") format("truetype"), url("../font/rocket_script/fonts/rocket_script.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*===== 清除默认的margin的属性值 =====*/
 body,
 blockquote,
@@ -148,6 +160,9 @@ h1, h2, h3, h4, h5 {
     -o-transform: rotateY(0deg); }
   to {
     -o-transform: rotateY(360deg); } }
+.banner_page .title .en {
+  font-family: "rocket_script", "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif"; }
+
 body {
   background-color: #fafaf5;
   color: #333333; }
@@ -312,7 +327,6 @@ body {
         margin: 12px 0; }
 
 .row .col-4, .row .col-6 {
-  float: left;
   float: left; }
 .row .col-4 {
   width: 33.333333%; }
@@ -431,7 +445,7 @@ body {
           top: 2px; }
     .main_home .floor_1 .floor_1__reg .bd {
       width: 300px;
-      background: url(../images/reg_text.png) no-repeat 0px 188px; }
+      background: url(../images/reg_text.png) no-repeat 0 188px; }
       .main_home .floor_1 .floor_1__reg .bd .form {
         margin-top: -4px; }
         .main_home .floor_1 .floor_1__reg .bd .form p {
@@ -476,7 +490,7 @@ body {
       overflow: hidden; }
       .main_home .floor_2 .mod_column .bd .slideContainer .page-list-wrap .page-list .page {
         margin: 0;
-        transition: margin 0.3s ease;
+        transition: all 1s ease;
         filter: alpha(opacity=10) \9; }
         .main_home .floor_2 .mod_column .bd .slideContainer .page-list-wrap .page-list .page.active {
           position: relative;
@@ -640,7 +654,8 @@ body {
         width: 240px;
         height: 300px;
         background: 0;
-        margin-right: 14px; }
+        margin-right: 14px;
+        transition: all 0.5s ease; }
         .main_home .floor_4 .slideContainer .page-list-wrap .page-list .page:before {
           display: none; }
         .main_home .floor_4 .slideContainer .page-list-wrap .page-list .page:hover {
@@ -657,6 +672,7 @@ body {
         line-height: 38px;
         color: #e5e5e5;
         text-align: center;
+        transition: all 0.5s ease;
         filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#7F000000, endColorstr=#7F000000);
         background-color: rgba(0, 0, 0, 0.5); }
     .main_home .floor_4 .slideContainer .tab .index-list {
@@ -744,14 +760,39 @@ body {
         display: inline-block;
         line-height: 24px;
         border-bottom: dotted 1px #d95990; }
-  .footer .QR-code {
+  .QR-code {
     float: right; }
-    .footer .QR-code .item {
+    .QR-code .item {
       float: left;
       margin-left: 20px; }
-      .footer .QR-code .item p {
+      .QR-code .item p {
         line-height: 40px;
         color: #666666;
         font-size: 16px; }
+
+.banner_page {
+  padding-top: 4px;
+  height: 270px;
+  line-height: 1;
+  background: url(../images/banner_page.jpg) no-repeat center center; }
+  .banner_page .title {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-size: 36px;
+    font-family: 'fz_dengxian';
+    margin-top: 166px; }
+    .banner_page .title .en {
+      font-size: 26px; }
+      .banner_page .title .en:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 24px;
+        border-right: solid 1px #fff;
+        transform: rotate(30deg);
+        transform-origin: right bottom;
+        margin-right: 24px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -96,3 +96,12 @@ $baseFontSize : 10px;
         -o-transform : rotateY(360deg)
     }
 }
+
+
+// font
+%font_fz {
+    font-family: "fz_dengxian", $fontFamily_default;
+}
+%font_rocket {
+    font-family: "rocket_script", $fontFamily_default;
+}

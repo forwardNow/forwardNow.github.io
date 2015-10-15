@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "vars";
+@import "font";
 @import "reset";
 @import "base";
 
@@ -219,7 +220,6 @@ body {
         @extend %clearfix;
         .col-4, .col-6 {
             float : left;
-            float : left;
         }
 
         .col-4 {
@@ -381,7 +381,7 @@ body {
             .floor_1__reg {
                 .bd {
                     width      : 300px;
-                    background : url(../images/reg_text.png) no-repeat 0px 188px;
+                    background : url(../images/reg_text.png) no-repeat 0 188px;
                     .form {
                         margin-top : -4px;
                         p {
@@ -443,12 +443,12 @@ body {
                 .bd {
                     .slideContainer {
                         .page-list-wrap {
-                            overflow: hidden;
+                            overflow : hidden;
                             .page-list {
                                 .page {
-                                    margin : 0;
-                                    transition: margin 0.3s ease;
-                                    filter : alpha(opacity=10) \9; //IE6、IE7、IE8
+                                    margin     : 0;
+                                    transition : all 1s ease;
+                                    filter     : alpha(opacity=10) \9; //IE6、IE7、IE8
                                     @extend %text_unselect;
                                     &.page_placeholder {
                                         &:before {
@@ -698,6 +698,7 @@ body {
                             height       : 300px;
                             background   : 0;
                             margin-right : 14px;
+                            transition   : all 0.5s ease;
                             &:before {
                                 display : none;
                             }
@@ -718,6 +719,7 @@ body {
                             line-height : 38px;
                             color       : #e5e5e5;
                             text-align  : center;
+                            transition  : all 0.5s ease;
                             @include opacityBg(rgba(0, 0, 0, 0.5), '#7F000000');
                         }
                     }
@@ -849,7 +851,7 @@ body {
             }
         }
     }
-    .QR-code {
+    @at-root .QR-code {
         float : right;
         .item {
             float       : left;
@@ -861,6 +863,34 @@ body {
                 line-height : 40px;
                 color       : $color_aside;
                 font-size   : 16px;
+            }
+        }
+    }
+}
+
+.banner_page {
+    padding-top : 4px;
+    height      : 270px;
+    line-height : 1;
+    background  : url(../images/banner_page.jpg) no-repeat center center;
+    .title {
+        @include centerBlock($page_width);
+        color       : #ffffff;
+        font-size   : 36px;
+        font-family : 'fz_dengxian';
+        margin-top: 166px;
+        .en {
+            font-size   : 26px;
+            @extend %font_rocket;
+            &:before {
+                content: "";
+                display: inline-block;
+                width:20px;
+                height: 24px;
+                border-right: solid 1px #fff;
+                transform: rotate(30deg);
+                transform-origin: right bottom;
+                margin-right: 24px;
             }
         }
     }
