@@ -265,6 +265,10 @@ body {
                 &[for="passwd"], &[for="repeat"], {
                     background-image : url(../images/icon_reg_key.png);
                 }
+                &[for="username"], {
+                    background-image    : url(../images/icon_reg_user.png);
+                    background-position : pxToRem(8px);
+                }
                 &[for="authcode"] {
                     background : 0;
                 }
@@ -296,7 +300,152 @@ body {
                 background-color : #c54946;
                 color            : #ffffff;
                 border-radius    : 2px;
-                margin-top: pxToRem(20px);
+                margin-top       : pxToRem(20px);
+            }
+        }
+    }
+
+    @at-root .main_coupon {
+        margin : 0;
+        .list_coupon {
+            .item {
+                border-radius    : pxToRem(8px);
+                background-color : #f65c58;
+                overflow         : hidden;
+                padding          : 0;
+                margin           : pxToRem(20px) 0 0 0;
+                .hd {
+                    padding-left    : 0;
+                    border          : none 0;
+                    font-size       : pxToRem(34px);
+                    height          : pxToRem(94px);
+                    background      : url(../images/title_bg.png) repeat-x 0 bottom;
+                    background-size : auto 100%;
+                    &:before {
+                        content       : "$";
+                        display       : inline-block;
+                        width         : pxToRem(38px);
+                        height        : pxToRem(38px);
+                        line-height   : pxToRem(38px);
+                        text-align    : center;
+                        color         : $color_default;
+                        border-radius : 10rem;
+                        border        : solid 1px $color_default;
+                        margin        : 0 pxToRem(14px) 0 pxToRem(10px);
+                    }
+                }
+                .bd {
+                    .money {
+                        color     : #ffffff;
+                        font-size : pxToRem(52px);
+                        &:before {
+                            font-size : pxToRem(48px);
+                        }
+                        &:after {
+                            content     : "优惠劵";
+                            font-size   : pxToRem(32px);
+                            margin-left : pxToRem(20px);
+                        }
+                    }
+                    .aside {
+                        color : #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    @at-root .main_mycenter {
+        .account {
+            height           : pxToRem(200px);
+            background-color : #ffffff;
+            .media-left {
+                height       : pxToRem(200px);
+                padding-left : pxToRem(28px);
+            }
+            .media-body {
+                height       : pxToRem(200px);
+                padding-left : pxToRem(24px);
+                color        : $color_aside;
+            }
+            @at-root .media {
+                .media-left {
+                    display : table-cell;
+                }
+
+                .media-middle {
+                    vertical-align : middle;
+                }
+
+                .media-body {
+                    display : table-cell;
+                }
+            }
+            .avatar-wrap {
+                display       : inline-block;
+                width         : pxToRem(140px);
+                height        : pxToRem(140px);
+                border-radius : 10rem;
+                overflow      : hidden;
+                .avatar {
+                    width : 100%;
+                }
+            }
+            .nickname {
+                font-size : pxToRem(32px);
+            }
+            .login-name {
+                font-size : pxToRem(26px);
+
+            }
+        }
+
+        .list {
+            .item {
+                position        : relative;
+                height          : pxToRem(80px);
+                line-height     : pxToRem(80px);
+                padding         : 0 0 0 pxToRem(74px);
+                margin-top      : pxToRem(20px);
+                background      : url(../images/icon_mycenter_1.png) no-repeat pxToRem(18px) center #ffffff;
+                background-size : auto 100%;
+                &.wechat {
+                    background-image : url(../images/icon_mycenter_2.png);
+                }
+                &.invest {
+                    background-image : url(../images/icon_mycenter_3.png);
+                }
+                &:after {
+                    position        : absolute;
+                    top             : 0;
+                    right           : 0;
+                    content         : "";
+                    width           : pxToRem(38px);
+                    height          : pxToRem(80px);
+                    background      : url(../images/icon_mycenter_4.png) no-repeat 0 center;
+                    background-size : auto 100%;
+                }
+                & > a {
+                    display : block;
+                    height  : 100%;
+                }
+                .text {
+                    float     : left;
+                    color     : $color_aside;
+                    font-size : pxToRem(32px);
+                }
+                .label {
+                    float            : left;
+                    width            : pxToRem(30px);
+                    height           : pxToRem(30px);
+                    line-height      : pxToRem(28px);
+                    font-size        : pxToRem(18px);
+                    color            : #f7f0f0;
+                    text-align       : center;
+                    border-radius    : 10rem;
+                    background-color : #cf686a;
+                    margin           : pxToRem(16px) 0 0 pxToRem(6px);
+                }
             }
         }
     }
