@@ -1052,6 +1052,94 @@ body {
             }
         }
 
+        @at-root .main_news-detail {
+            .nav_pills {
+                margin-top : 54px;
+            }
+
+            .article {
+                .hd {
+                    height           : 100px;
+                    background-color : #f0f0f0;
+                    border-top       : solid 1px #dbdbdb;
+                    margin-top       : 40px;
+                    text-align       : center;
+                    .title {
+                        font-size   : 22px;
+                        line-height : 1;
+                        margin-top  : 28px;
+                    }
+                    .aside {
+                        line-height : 34px;
+                        color       : $color_aside;
+                        font-size   : 12px;
+                        margin-top  : 12px;
+                        .src {
+
+                        }
+                        .pubdate {
+                            padding-left : 24px;
+                            background   : url(../images/icon_clock.png) no-repeat 0 center;
+                            margin-left  : 24px;
+                        }
+                        .view-count {
+                            @extend .pubdate;
+                            background-image : url(../images/icon_view.png);
+                        }
+                    }
+
+                }
+                .bd {
+                    padding : 40px 0;
+                    img {
+                        max-width : 100%;
+                    }
+                    p {
+                        line-height : 2;
+                        text-indent : 2em;
+                        margin      : 1em 0;
+                    }
+                }
+                .ft {
+                    & > a {
+                        color   : $color_aside;
+                        display : block;
+                        & + a {
+                            margin-top : 12px;
+                        }
+                        &:hover {
+                            color : $color_hot;
+                        }
+                    }
+                    padding-bottom : 36px;
+                    border-bottom  : dashed 1px #a09499;
+                }
+
+            }
+
+            .guess-prefer {
+                @extend %clearfix;
+                padding-bottom : 40px;
+                .title {
+                    font-size : 18px;
+                    color     : $color_title_o;
+                    margin    : 28px 0 10px 0;
+                }
+                .item {
+                    float : left;
+                    width : 50%;
+                    & > a {
+                        display     : block;
+                        color       : $color_aside;
+                        line-height : 2;
+                        @extend %text_overflow;
+                        &:hover {
+                            color : $color_hot;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
