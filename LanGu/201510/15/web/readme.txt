@@ -1,19 +1,38 @@
-about_us.html       公司简介.psd
 
-contact_us.html     联系我们.psd
+1. 文件清单
 
-coupon_list.html    优惠券.psd
+  web
 
-invest_bill.html    投资账单.psd
+    |-- images
 
-invest_list.html    投资项目.psd
+    |-- css
+        |-- style.css
 
-mycenter.html       个人中心.psd
+    |-- js
+        |-- jquery.js
+        |-- scale.js
 
-news_detail.html    文章.psd
+    |-- about_us.html       公司简介.psd
 
-news_list.html      新闻.psd
+    |-- contact_us.html     联系我们.psd
 
-reg.html            会员注册.psd
+    |-- coupon_list.html    优惠券.psd         【新增页面（2015-10-16）】
 
-wechat_bind.html    绑定微信号.psd
+    |-- invest_bill.html    投资账单.psd
+
+    |-- invest_list.html    投资项目.psd
+
+    |-- mycenter.html       个人中心.psd       【新增页面（2015-10-16）】
+
+    |-- news_detail.html    文章.psd
+
+    |-- news_list.html      新闻.psd
+
+    |-- reg.html            会员注册.psd
+
+    |-- wechat_bind.html    绑定微信号.psd       【新增页面（2015-10-16）】
+
+
+
+
+
