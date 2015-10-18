@@ -837,6 +837,14 @@ body {
     }
 
     @at-root .main_page {
+        .nav_pills {
+            margin-top    : 52px;
+            margin-bottom : 36px;
+        }
+        .pagination {
+            margin : 60px 0 120px 0;
+            float  : right;
+        }
         @extend %margin-overlap;
         @include centerBlock($page_width);
 
@@ -898,15 +906,6 @@ body {
 
         @at-root .main_news-list {
             @extend %clearfix;
-            .nav_pills {
-                margin-top    : 52px;
-                margin-bottom : 36px;
-            }
-
-            .pagination {
-                margin : 60px 0 120px 0;
-                float  : right;
-            }
 
             @at-root .nav_pills {
                 @extend %clearfix;
@@ -1053,16 +1052,12 @@ body {
         }
 
         @at-root .main_news-detail {
-            .nav_pills {
-                margin-top : 54px;
-            }
-
             .article {
                 .hd {
                     height           : 100px;
                     background-color : #f0f0f0;
                     border-top       : solid 1px #dbdbdb;
-                    margin-top       : 40px;
+                    //margin-top       : 40px;
                     text-align       : center;
                     .title {
                         font-size   : 22px;
@@ -1135,6 +1130,59 @@ body {
                         @extend %text_overflow;
                         &:hover {
                             color : $color_hot;
+                        }
+                    }
+                }
+            }
+        }
+
+        @at-root .main_case-list {
+            overflow : hidden;
+            @at-root .list_pic {
+                @extend %clearfix;
+                width : 110%;
+                .item {
+                    position : relative;
+                    float    : left;
+                    width    : 320px;
+                    height   : 400px;
+                    margin   : 0 20px 20px 0;
+                    overflow : hidden;
+                    &:hover {
+                        opacity    : 0.98;
+                        box-shadow : 0 0 8px rgba(0, 0, 0, 0.45);
+                        .title {
+                            color : $color_hot !important;
+                        }
+                    }
+                    a {
+                        position: relative;
+                        z-index : 10;
+                        display : block;
+                        height  : 100%;
+                    }
+                    .pic {
+                        height  : 100%;
+                    }
+                    .hover {
+                        //display  : none;
+                        position : absolute;
+                        left     : -100%;
+                        bottom   : 0;
+                        width    : 100%;
+                        height   : 100%;
+                        .title {
+                            z-index          : 20;
+                            position         : absolute;
+                            bottom           : 0;
+                            left             : 0;
+                            width            : 100%;
+                            line-height      : 38px;
+                            color            : #e5e5e5;
+                            text-align       : center;
+                            transition       : all 0.5s ease;
+                            filter           : progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#7f000000, endColorstr=#7f000000);
+                            background-color : rgba(0, 0, 0, 0.5);
                         }
                     }
                 }
