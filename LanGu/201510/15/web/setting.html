@@ -33,7 +33,16 @@
                 } );
             } );
 
-
+            $('#file').on('change', function(){
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    //options.imgSrc = e.target.result;
+                    //cropper = $('.imageBox').cropbox(options);
+                    $( '.cropimage' ).attr("src",  e.target.result);
+                }
+                reader.readAsDataURL(this.files[0]);
+                this.files = [];
+            })
         } );
     </script>
 </head>
