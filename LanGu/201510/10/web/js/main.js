@@ -125,7 +125,7 @@ Slide.prototype.animate = {
     }
 };
 
-(function () {
+$(function () {
 
     var options_banner = {
         type: "scroll",
@@ -181,8 +181,8 @@ Slide.prototype.animate = {
 
     clubEnvSlide.play = function ( type, index ) {
         originPlay.apply( this, arguments );
-        var pages = this.pageList.find( ".page" ),
-            index = index + 1;
+        var pages = this.pageList.find( ".page" );
+        index = index + 1;
 
         pages.removeClass( "active active_prev active_next" );
         pages.eq( index ).addClass( "active" );
@@ -192,7 +192,7 @@ Slide.prototype.animate = {
     clubEnvSlide.nextBtn.click();
 
 
-})();
+});
 
 
 

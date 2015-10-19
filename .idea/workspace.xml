@@ -2,6 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/contactus.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/My97DatePicker.htm" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/My97DatePicker.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/WdatePicker.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/WdatePicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/calendar.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/config.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/lang/en.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/lang/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/lang/zh-cn.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/lang/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/lang/zh-tw.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/lang/zh-tw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/WdatePicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/WdatePicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/datePicker.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/datePicker.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/default/datepicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/default/datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/default/img.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/default/img.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/twoer/datepicker-dev.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/twoer/datepicker-dev.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/twoer/datepicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/twoer/datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/twoer/img.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/twoer/img.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/twoer/img.png" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/twoer/img.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/whyGreen/bg.jpg" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/whyGreen/bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/whyGreen/datepicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/whyGreen/datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/skin/whyGreen/img.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/whyGreen/img.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/lang/en.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/lang/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/lang/zh-cn.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/lang/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/lang/zh-tw.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/lang/zh-tw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/readme.txt" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/readme.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/WdatePicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/WdatePicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/datePicker.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/datePicker.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/default/datepicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/default/datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/default/img.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/default/img.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/whyGreen/bg.jpg" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/whyGreen/bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/whyGreen/datepicker.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/开发包/skin/whyGreen/datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/开发包/skin/whyGreen/img.gif" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/skin/whyGreen/img.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/index.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css.map" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -24,17 +57,25 @@
     <favorites_list name="forwardNow.github.io" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.6377049">
+    <splitter split-orientation="vertical" split-proportion="0.595082">
       <split-first>
         <leaf>
-          <file leaf-file-name="case_list.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/case_list.html">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7933131">
-                  <caret line="189" column="10" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="10" />
-                  <folding>
-                    <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="-2.6153846">
+                  <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="about_us.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/about_us.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.1980198">
+                  <caret line="77" column="17" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="17" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -46,23 +87,36 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43636364">
-                  <caret line="1147" column="34" selection-start-line="1147" selection-start-column="34" selection-end-line="1147" selection-end-column="34" />
+                <state vertical-scroll-proportion="0.460733">
+                  <caret line="254" column="24" selection-start-line="254" selection-start-column="24" selection-end-line="254" selection-end-column="24" />
                   <folding>
+                    <element signature="e#204#3145#0" expanded="false" />
                     <element signature="e#3155#7343#0" expanded="false" />
                     <element signature="e#3206#6080#0" expanded="false" />
-                    <element signature="e#7371#7579#0" expanded="false" />
-                    <element signature="e#7605#30561#0" expanded="false" />
-                    <element signature="e#7660#15807#0" expanded="false" />
-                    <element signature="e#15826#22514#0" expanded="false" />
-                    <element signature="e#22533#26337#0" expanded="false" />
-                    <element signature="e#30896#32712#0" expanded="false" />
-                    <element signature="e#32813#33651#0" expanded="false" />
-                    <element signature="e#33686#37739#0" expanded="false" />
-                    <element signature="e#37774#38703#0" expanded="false" />
-                    <element signature="e#38750#41579#0" expanded="false" />
-                    <element signature="e#43714#45436#0" expanded="false" />
+                    <element signature="e#7396#7604#0" expanded="false" />
+                    <element signature="e#7630#30586#0" expanded="false" />
+                    <element signature="e#7685#15832#0" expanded="false" />
+                    <element signature="e#15851#22539#0" expanded="false" />
+                    <element signature="e#22558#26362#0" expanded="false" />
+                    <element signature="e#30923#32739#0" expanded="false" />
+                    <element signature="e#32774#38740#0" expanded="false" />
+                    <element signature="e#32840#33678#0" expanded="false" />
+                    <element signature="e#33713#37766#0" expanded="false" />
+                    <element signature="e#37801#38730#0" expanded="false" />
+                    <element signature="e#38777#41606#0" expanded="false" />
+                    <element signature="e#41641#43725#0" expanded="false" />
+                    <element signature="e#44350#46072#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -86,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/_reset.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/_base.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/_vars.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_vars.scss" />
@@ -115,7 +168,6 @@
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/css/style.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/06/web/readme.txt" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/_vars.scss" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/_font.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/about_us.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/news_detail.html" />
@@ -124,7 +176,6 @@
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/invest_bill.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/reg.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/contactus.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/_base.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/news_list.html" />
@@ -136,6 +187,9 @@
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/readme.txt" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/index.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/about_us.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" />
       </list>
     </option>
@@ -152,9 +206,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="112" />
-    <option name="y" value="23" />
-    <option name="width" value="1072" />
+    <option name="x" value="202" />
+    <option name="y" value="39" />
+    <option name="width" value="995" />
     <option name="height" value="726" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -202,6 +256,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,12 +446,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../course" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LanGu/201510/10/web/js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
@@ -437,13 +491,11 @@
       <recent name="$PROJECT_DIR$/LanGu/201510/10/web/font/fz" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LanGu/201510/10/web/js" />
       <recent name="$PROJECT_DIR$/LanGu/201510/09/web/css" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.news_detail.html">
-    <configuration default="false" name="reg.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forwardNow.github.io/LanGu/201510/15/web/reg.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forwardNow.github.io/index.html">
       <method />
     </configuration>
@@ -454,6 +506,9 @@
       <method />
     </configuration>
     <configuration default="false" name="news_detail.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forwardNow.github.io/LanGu/201510/10/web/news_detail.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forwardNow.github.io/LanGu/201510/10/web/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -495,19 +550,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.reg.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.mycenter.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.coupon_list.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.news_detail.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.mycenter.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.coupon_list.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.news_detail.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.news_detail.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.coupon_list.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.mycenter.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.reg.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.news_detail.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.coupon_list.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.mycenter.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -553,7 +608,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="112" y="23" width="1072" height="726" extended-state="0" />
+    <frame x="202" y="39" width="995" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45081967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -570,13 +625,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.72861844" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Assets" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="75" y="286" width="1049" height="200" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -597,9 +652,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26450998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -713,14 +768,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/WdatePicker.js">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/WdatePicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/My97DatePicker/config.js">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/My97DatePicker/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16393442">
           <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
@@ -884,20 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6219512">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/contactus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41463414">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6153846">
@@ -917,15 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5862069">
           <caret line="404" column="43" selection-start-line="404" selection-start-column="43" selection-end-line="404" selection-end-column="43" />
-          <folding>
-            <element signature="e#299#1438#0" expanded="false" />
-            <element signature="e#1471#2451#0" expanded="false" />
-            <element signature="e#2483#4555#0" expanded="false" />
-            <element signature="e#4583#7034#0" expanded="false" />
-            <element signature="e#7060#8163#0" expanded="false" />
-            <element signature="e#8188#10486#0" expanded="false" />
-            <element signature="e#10514#12430#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,9 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="67" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,42 +1011,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8880597">
-          <caret line="134" column="20" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/case_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7933131">
-          <caret line="189" column="10" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.09770115">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1980198">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43636364">
-          <caret line="1147" column="34" selection-start-line="1147" selection-start-column="34" selection-end-line="1147" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.460733">
+          <caret line="254" column="24" selection-start-line="254" selection-start-column="24" selection-end-line="254" selection-end-column="24" />
           <folding>
+            <element signature="e#204#3145#0" expanded="false" />
             <element signature="e#3155#7343#0" expanded="false" />
             <element signature="e#3206#6080#0" expanded="false" />
-            <element signature="e#7371#7579#0" expanded="false" />
-            <element signature="e#7605#30561#0" expanded="false" />
-            <element signature="e#7660#15807#0" expanded="false" />
-            <element signature="e#15826#22514#0" expanded="false" />
-            <element signature="e#22533#26337#0" expanded="false" />
-            <element signature="e#30896#32712#0" expanded="false" />
-            <element signature="e#32813#33651#0" expanded="false" />
-            <element signature="e#33686#37739#0" expanded="false" />
-            <element signature="e#37774#38703#0" expanded="false" />
-            <element signature="e#38750#41579#0" expanded="false" />
-            <element signature="e#43714#45436#0" expanded="false" />
+            <element signature="e#7396#7604#0" expanded="false" />
+            <element signature="e#7630#30586#0" expanded="false" />
+            <element signature="e#7685#15832#0" expanded="false" />
+            <element signature="e#15851#22539#0" expanded="false" />
+            <element signature="e#22558#26362#0" expanded="false" />
+            <element signature="e#30923#32739#0" expanded="false" />
+            <element signature="e#32774#38740#0" expanded="false" />
+            <element signature="e#32840#33678#0" expanded="false" />
+            <element signature="e#33713#37766#0" expanded="false" />
+            <element signature="e#37801#38730#0" expanded="false" />
+            <element signature="e#38777#41606#0" expanded="false" />
+            <element signature="e#41641#43725#0" expanded="false" />
+            <element signature="e#44350#46072#0" expanded="false" />
           </folding>
         </state>
       </provider>
