@@ -1,0 +1,26 @@
+{
+  "name": "jquery-mousewheel",
+  "version": "1.0.0",
+  "description": "jquery.fn.mousewheel 鼠标滚动事件",
+  "keywords": [
+    "jquery",
+    "yquery",
+    "ydr",
+    "mousewheel"
+  ],
+  "author": {
+    "name":"cloudcome",
+    "email":"cloudcome@163.com",
+    "url": "https://ydr.me/"
+  },
+  "homepage": "https://ydr.me/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudcome/jquery-mousewheel"
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "jquery-mousewheel.js",
+    "dependencies": {}
+  }
+}

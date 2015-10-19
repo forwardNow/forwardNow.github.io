@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery-cropbox</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="text/css" media="screen" rel="stylesheet" href="css/jquery.cropbox.css">
+    <script type="text/javascript" src="js/jquery.2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/hammer.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.cropbox.js"></script>
+    <script type="text/javascript" defer="">
+        $( function () {
+            $( '.cropimage' ).each( function () {
+                var image = $( this ),
+                        cropwidth = image.attr( 'cropwidth' ),
+                        cropheight = image.attr( 'cropheight' ),
+                        imgDemo = $("#imgDemo");
+
+                image.cropbox( {
+                    width: cropwidth,
+                    height: cropheight,
+                    showControls: 'auto'
+                } ).on( 'cropbox', function ( event, results, img ) {
+                    imgDemo.attr( 'src', img.getDataURL() );
+                } );
+            } );
+
+
+        } );
+    </script>
+</head>
+
+<body>
+<div class="cropFrame hover" style="width: 300px; height: 300px;">
+    <img class="cropimage" alt="" src="1.jpg" cropwidth="300" cropheight="300" draggable="false">
+</div>
+
+<div>
+    <img id="imgDemo" src="" alt=""/>
+</div>
+
+</body>
+
+</html>
