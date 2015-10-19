@@ -125,7 +125,7 @@ Slide.prototype.animate = {
     }
 };
 
-$(function () {
+$( function () {
 
     var options_banner = {
         type: "scroll",
@@ -192,8 +192,140 @@ $(function () {
     clubEnvSlide.nextBtn.click();
 
 
-});
+} );
 
+function getMoveDirection( target, e ) {
+    var w, h, x, y, direction;
+    w = $( target ).width();
+    h = $( target ).height();
+    x = (e.pageX - target.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+    y = (e.pageY - target.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
 
+    //direction的值为“0,1,2,3”分别对应着“上，右，下，左;
+    direction = Math.round( (((Math.atan2( y, x ) * (180 / Math.PI)) + 180) / 90) + 3 ) % 4;
+
+    return direction;
+}
+
+var hoverMove = {
+    options: {
+        hover: ".hover",
+        duration: 300
+    },
+    init: function () {
+        this.render();
+        this.bind();
+    },
+    render: function () {
+        this.target = $( ".js--list-pic .item" );
+    },
+    bind: function () {
+        var self = this;
+        this.target.bind( "mouseenter", function ( e ) {
+            var hover = $( this ).find( self.options.hover ),
+                duration = self.options.duration;
+            switch ( self.getMoveDirection( this, e ) ) {
+                case 0 :
+                { // 进【上】
+                    hover.css( {
+                        left: 0,
+                        top: "-100%",
+                        right: "auto",
+                        bottom: "auto"
+                    } ).stop().animate( { top: 0 }, duration );
+                    break;
+                }
+                case 1 :
+                { // 进【右】
+                    hover.css( {
+                        left: "auto",
+                        top: 0,
+                        right: "-100%",
+                        bottom: "auto"
+                    } ).stop().animate( { right: 0 }, duration );
+                    break;
+                }
+                case 2 :
+                { // 进【下】
+                    hover.css( {
+                        left: 0,
+                        top: "auto",
+                        right: "auto",
+                        bottom: "-100%"
+                    } ).stop().animate( { bottom: 0 }, duration );
+                    break;
+                }
+                case 3 :
+                { // 进【左】
+                    hover.css( {
+                        left: "-100%",
+                        top: 0,
+                        right: "auto",
+                        bottom: "auto"
+                    } ).stop().animate( { left: 0 }, duration );
+                    break;
+                }
+            }
+        } );
+        this.target.bind( "mouseleave", function ( e ) {
+            var hover = $( this ).find( self.options.hover ),
+                duration = self.options.duration;
+            switch ( self.getMoveDirection( this, e ) ) {
+                case 0 :
+                { // 出【上】
+                    hover.css( {
+                        left: 0,
+                        top: 0,
+                        right: "auto",
+                        bottom: "auto"
+                    } ).stop().animate( { top: "-100%" }, duration );
+                    break;
+                }
+                case 1 :
+                { // 出【右】
+                    hover.css( {
+                        left: "auto",
+                        top: 0,
+                        right: 0,
+                        bottom: "auto"
+                    } ).stop().animate( { right: "-100%" }, duration );
+                    break;
+                }
+                case 2 :
+                { // 出【下】
+                    hover.css( {
+                        left: 0,
+                        top: "auto",
+                        right: "auto",
+                        bottom: 0
+                    } ).stop().animate( { bottom: "-100%" }, duration );
+                    break;
+                }
+                case 3 :
+                { // 出【左】
+                    hover.css( {
+                        left: 0,
+                        top: 0,
+                        right: "auto",
+                        bottom: "auto"
+                    } ).stop().animate( { left: "-100%" }, duration );
+                    break;
+                }
+            }
+        } );
+    },
+    getMoveDirection: function getMoveDirection( target, e ) {
+        var w, h, x, y, direction;
+        w = $( target ).width();
+        h = $( target ).height();
+        x = (e.pageX - target.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+        y = (e.pageY - target.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+
+        //direction的值为“0,1,2,3”分别对应着“上，右，下，左;
+        direction = Math.round( (((Math.atan2( y, x ) * (180 / Math.PI)) + 180) / 90) + 3 ) % 4;
+
+        return direction;
+    }
+};
 
 

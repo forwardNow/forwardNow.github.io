@@ -998,11 +998,25 @@ body {
           height: 400px;
           margin: 0 20px 20px 0;
           overflow: hidden; }
+          .list_pic .item .title {
+            z-index: 20;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            line-height: 38px;
+            color: #e5e5e5;
+            text-align: center;
+            transition: all 0.5s ease;
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#7f000000, endColorstr=#7f000000);
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0.8; }
           .list_pic .item:hover {
             opacity: 0.98;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.45); }
             .list_pic .item:hover .title {
-              color: #d95990 !important; }
+              color: #d95990 !important;
+              opacity: 1; }
           .list_pic .item a {
             position: relative;
             z-index: 10;
@@ -1016,18 +1030,6 @@ body {
             bottom: 0;
             width: 100%;
             height: 100%; }
-            .list_pic .item .hover .title {
-              z-index: 20;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              line-height: 38px;
-              color: #e5e5e5;
-              text-align: center;
-              transition: all 0.5s ease;
-              filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#7f000000, endColorstr=#7f000000);
-              background-color: rgba(0, 0, 0, 0.5); }
     .main_about-us .title {
       font-size: 20px;
       padding-left: 30px;
@@ -1042,6 +1044,20 @@ body {
       margin: 2em 0; }
     .main_about-us .dl dd {
       text-indent: 6em; }
+    .main_environment-list .list_pic .item {
+      height: 232px; }
+      .main_environment-list .list_pic .item .pic {
+        width: 100%;
+        height: auto; }
+      .main_environment-list .list_pic .item .title {
+        background: #e6e6e6;
+        color: #4c4040;
+        filter: none;
+        opacity: 1; }
+    .main_environment-list .list_pic .hover .title {
+      background: #f5f5f5;
+      filter: none;
+      opacity: 1; }
 
 .footer {
   background-color: #e6e6e6; }
