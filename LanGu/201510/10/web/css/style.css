@@ -188,6 +188,134 @@ h1, h2, h3, h4, h5 {
   display: block;
   height: 1px; }
 
+#goToTop {
+  display: none;
+  position: fixed;
+  right: 90px;
+  bottom: 100px;
+  width: 66px;
+  height: 67px;
+  background: transparent url(../images/go_to_top.png) no-repeat 0 0;
+  z-index: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.2;
+  filter: alpha(opacity=20); }
+  #goToTop:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+#bodyMask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5; }
+.layerDiv {
+  position: fixed;
+  _position: absolute;
+  z-index: 9999999999999;
+  width: 730px;
+  height: 340px;
+  left: 50%;
+  top: 50%;
+  margin: -170px 0 0 -365px;
+  padding: 0px;
+  background: #fff;
+  border: 2px #808080 solid;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
+  .layerDiv h2 {
+    color: #000;
+    font-size: 24px;
+    margin: 30px 25px 10px 25px;
+    line-height: 1.2em;
+    clear: both; }
+  .layerDiv h3 {
+    color: #333;
+    font-size: 16px;
+    margin: 20px 25px;
+    clear: both; }
+  .layerDiv div {
+    color: #333;
+    font-size: 14px;
+    margin: 0 25px;
+    padding-top: 20px;
+    border-top: 1px #ccc dotted;
+    clear: both; }
+  .layerDiv div span {
+    color: #666;
+    font-size: 12px;
+    float: right; }
+  .layerDiv div span a {
+    color: #369; }
+  .layerDiv div span a:hover {
+    color: #0884CD; }
+  .layerDiv ul {
+    height: 100px;
+    width: 540px;
+    _width: 580px;
+    margin: 20px auto 0 auto;
+    clear: both; }
+  .layerDiv ul li {
+    float: left;
+    width: 105px;
+    height: 80px;
+    margin: 0 15px;
+    text-align: center; }
+  .layerDiv ul li a {
+    height: 80px;
+    display: block;
+    clear: both; }
+  .layerDiv .ico {
+    background: url(../images/icon.png) no-repeat 0px 0px; }
+  .layerDiv .icoGt {
+    background-position: -298px 0;
+    text-indent: 40px;
+    display: inline-block; }
+  .layerDiv .icoChrome {
+    background-position: 0 -228px;
+    height: 80px;
+    width: 105px;
+    display: inline-block;
+    margin-right: 20px; }
+  .layerDiv .icoOpera {
+    background-position: -115px -228px;
+    height: 80px;
+    width: 73px;
+    display: inline-block;
+    margin-right: 20px; }
+  .layerDiv .icoFirefox {
+    background-position: -197px -228px;
+    height: 80px;
+    width: 61px;
+    display: inline-block;
+    margin-right: 20px; }
+  .layerDiv .icoSafar {
+    background-position: -267px -228px;
+    height: 80px;
+    width: 69px;
+    display: inline-block; }
+  .layerDiv p {
+    border-top: 1px #ccc dotted;
+    padding-top: 15px;
+    position: relative;
+    margin: 0 25px;
+    text-align: center; }
+  .layerDiv p a {
+    color: #666;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px; }
+  .layerDiv p a:hover {
+    color: #0884CD; }
+
 body {
   background-color: #fafaf5;
   color: #333333; }
@@ -199,7 +327,7 @@ body {
   left: 0;
   height: 110px;
   width: 100%;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#B2FCF8F2, endColorstr=#B2FCF8F2);
+  background-color: #f0e5cc;
   background-color: rgba(252, 248, 242, 0.7); }
   .header .header_inner {
     position: relative;
@@ -251,6 +379,7 @@ body {
     .header .nav .submenu {
       display: none;
       position: absolute;
+      z-index: 40;
       top: 31px;
       left: -1px;
       padding: 0 5px 5px 5px;
@@ -552,7 +681,7 @@ body {
         overflow: hidden; }
         .main_home .floor_2 .mod_column .bd .slideContainer .page-list-wrap .page-list .page {
           margin: 0;
-          transition: all 1s ease;
+          transition: margin 1s ease;
           filter: alpha(opacity=10) \9; }
           .main_home .floor_2 .mod_column .bd .slideContainer .page-list-wrap .page-list .page.active {
             position: relative;
@@ -1125,22 +1254,5 @@ body {
         color: #666666;
         font-size: 16px;
         text-align: center; }
-
-#goToTop {
-  display: none;
-  position: fixed;
-  right: 90px;
-  bottom: 100px;
-  width: 66px;
-  height: 67px;
-  background: transparent url(../images/go_to_top.png) no-repeat 0 0;
-  z-index: 900;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  opacity: 0.2;
-  filter: alpha(opacity=20); }
-  #goToTop:hover {
-    opacity: 1;
-    filter: alpha(opacity=100); }
 
 /*# sourceMappingURL=style.css.map */

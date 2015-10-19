@@ -345,3 +345,36 @@ var goToTop = {
 $( function () {
     goToTop.init();
 } );
+
+
+/**
+ * 如果是IE浏览器，则弹出提示
+ */
+var handleIE = {
+    init: function () {
+        if ( !($.browser.msie && $.browser.version < 9) ) {
+            return;
+        }
+        this.render();
+        this.bind();
+    },
+    render: function () {
+        this.mask = $( '<div id="bodyMask"></div>' );
+        this.browser = $( '<div id="browser" class="layerDiv loaded">' );
+
+        this.mask.appendTo( document.body );
+        this.browser.appendTo( document.body );
+        this.browser.append( $( "#iebrowsertemp" ).html() );
+    },
+    bind: function() {
+        var self = this;
+        $("#closeBrowser" ).bind("click",function() {
+            self.mask.hide();
+            self.browser.hide();
+        });
+    }
+};
+$( function () {
+    handleIE.init();
+} );
+

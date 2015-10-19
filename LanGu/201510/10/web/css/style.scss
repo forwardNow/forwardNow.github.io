@@ -14,13 +14,14 @@ body {
 }
 
 .header {
-    position : absolute;
-    z-index  : 10;
-    top      : 0;
-    left     : 0;
-    height   : 110px;
-    width    : 100%;
-    @include opacityBg(rgba(252, 248, 242, 0.7), '#B2FCF8F2');
+    position         : absolute;
+    z-index          : 10;
+    top              : 0;
+    left             : 0;
+    height           : 110px;
+    width            : 100%;
+    background-color : #f0e5cc;
+    background-color : rgba(252, 248, 242, 0.7);
     .header_inner {
         position    : relative;
         @extend %wrap;
@@ -86,6 +87,7 @@ body {
         .submenu {
             display    : none;
             position   : absolute;
+            z-index    : 40;
             top        : 31px;
             left       : -1px;
             padding    : 0 5px 5px 5px;
@@ -490,7 +492,7 @@ body {
                             .page-list {
                                 .page {
                                     margin     : 0;
-                                    transition : all 1s ease;
+                                    transition : margin 1s ease;
                                     filter     : alpha(opacity=10) \9; //IE6、IE7、IE8
                                     @extend %text_unselect;
                                     &.page_placeholder {
@@ -1342,20 +1344,4 @@ body {
     }
 }
 
-#goToTop {
-    display    : none;
-    position   : fixed;
-    right      : 90px;
-    bottom     : 100px;
-    width      : 66px;
-    height     : 67px;
-    background : transparent url(../images/go_to_top.png) no-repeat 0 0;
-    z-index    : 900;
-    cursor     : pointer;
-    transition : all 0.3s ease;
-    @include opacity(20);
-    &:hover {
-        @include opacity(100);
-    }
-}
 
