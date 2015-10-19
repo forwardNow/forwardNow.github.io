@@ -1241,6 +1241,26 @@ body {
                 }
             }
         }
+
+        @at-root .main_environment-detail {
+            .title {
+                font-size: 24px;
+                line-height: 3;
+                border-bottom: dashed 1px #eee;
+                margin-bottom: 1em;
+            }
+            .pic {
+                text-align: center;
+                img {
+                    max-width: 100%;
+                }
+            }
+            p {
+                text-indent : 2em;
+                line-height : 1.8;
+                margin      : 2em 0;
+            }
+        }
     }
 
 }

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css.map" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="forwardNow.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +27,21 @@
     <splitter split-orientation="vertical" split-proportion="0.60819674">
       <split-first>
         <leaf>
-          <file leaf-file-name="environment_list.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="environment_list.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.54662377">
-                  <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
+                <state vertical-scroll-proportion="-4.576923">
+                  <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="environment_detail.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.12540193">
+                  <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -47,8 +54,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34972677">
-                  <caret line="1238" column="35" selection-start-line="1238" selection-start-column="35" selection-end-line="1238" selection-end-column="35" />
+                <state vertical-scroll-proportion="0.5355191">
+                  <caret line="1258" column="34" selection-start-line="1258" selection-start-column="34" selection-end-line="1258" selection-end-column="34" />
                   <folding>
                     <element signature="e#204#3145#0" expanded="false" />
                     <element signature="e#3155#7343#0" expanded="false" />
@@ -64,7 +71,8 @@
                     <element signature="e#38777#41606#0" expanded="false" />
                     <element signature="e#41641#43764#0" expanded="false" />
                     <element signature="e#43798#44369#0" expanded="false" />
-                    <element signature="e#45114#46836#0" expanded="false" />
+                    <element signature="e#44411#45095#0" expanded="false" />
+                    <element signature="e#45636#47358#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -109,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_vars.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_base.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/style.css" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_reset.scss" />
@@ -159,6 +166,7 @@
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/condition_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" />
       </list>
     </option>
@@ -578,7 +586,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="202" y="39" width="995" height="726" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45081967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -653,13 +661,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/09/web/vote_pic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18345323">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.00729927">
@@ -926,6 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -933,6 +935,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2823741">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -940,6 +943,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27517986">
           <caret line="18" column="31" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,16 +1013,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54662377">
-          <caret line="97" column="54" selection-start-line="97" selection-start-column="54" selection-end-line="97" selection-end-column="54" />
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34972677">
-          <caret line="1238" column="35" selection-start-line="1238" selection-start-column="35" selection-end-line="1238" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.5355191">
+          <caret line="1258" column="34" selection-start-line="1258" selection-start-column="34" selection-end-line="1258" selection-end-column="34" />
           <folding>
             <element signature="e#204#3145#0" expanded="false" />
             <element signature="e#3155#7343#0" expanded="false" />
@@ -1034,8 +1038,17 @@
             <element signature="e#38777#41606#0" expanded="false" />
             <element signature="e#41641#43764#0" expanded="false" />
             <element signature="e#43798#44369#0" expanded="false" />
-            <element signature="e#45114#46836#0" expanded="false" />
+            <element signature="e#44411#45095#0" expanded="false" />
+            <element signature="e#45636#47358#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12540193">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
