@@ -18,31 +18,36 @@
     <script type="text/javascript" src="js/jquery.cropbox.js"></script>
     <script type="text/javascript" defer>
         $( function () {
+            var options = {};
             $( '.cropimage' ).each( function () {
-                var image = $( this ),
-                        cropwidth = image.attr( 'cropwidth' ),
-                        cropheight = image.attr( 'cropheight' ),
-                        imgDemo = $("#imgDemo");
+                var srcImage = $( this ),
+                    cropFrame = $(".cropFrame" ).eq(0),
+                    cropwidth = cropFrame.width(),
+                    cropheight = cropFrame.height(),
+                    targetImage = $( "#targetImage" );
 
-                image.cropbox( {
+                options = {
                     width: cropwidth,
                     height: cropheight,
                     showControls: 'auto'
-                } ).on( 'cropbox', function ( event, results, img ) {
-                    imgDemo.attr( 'src', img.getDataURL() );
+                }
+                srcImage.cropbox( options ).on( 'cropbox', function ( event, results, img ) {
+                    var dataURL = img.getDataURL();
+                    targetImage.attr( 'src', dataURL );
+                    $( '#avatarImg' ).val( dataURL );
+                    dataURL = null;
                 } );
             } );
 
-            $('#file').on('change', function(){
+            // 选择文件时，进行更新
+            $( '#file' ).on( 'change', function () {
                 var reader = new FileReader();
-                reader.onload = function(e) {
-                    //options.imgSrc = e.target.result;
-                    //cropper = $('.imageBox').cropbox(options);
-                    $( '.cropimage' ).attr("src",  e.target.result);
+                reader.onload = function ( e ) {
+                    $( '.cropimage' ).attr( "src", e.target.result ).cropbox( options );
                 }
-                reader.readAsDataURL(this.files[0]);
+                reader.readAsDataURL( this.files[ 0 ] );
                 this.files = [];
-            })
+            } )
         } );
     </script>
 </head>
@@ -59,23 +64,22 @@
             </tr>
             <tr class="row">
                 <td><label class="label" for="file">图像：</label></td>
-                <td><input class="form-input" id="file" type="file"/>
-                <input type="hidden" value=""/><!-- 用于存放 图像的 base64编码 --></td>
+                <td><input class="form-input" id="file" type="file"/><!-- <input type="file">不要添加name属性 -->
+                    <input id="avatarImg" name="__avatarImg" type="hidden" value=""/><!-- 用于存放 图像的 base64编码 --></td>
             </tr>
             <tr class="row">
                 <td colspan="2" style="padding: 1rem 0;">
-                    <div style="float: left;" class="cropFrame hover" style="width: 200px; height: 200px;">
-                        <img class="cropimage" alt="" src="images/img_placeholder.jpg" cropwidth="200" cropheight="200" draggable="false">
+                    <div class="cropFrame hover" style="width: 120px; height: 120px;">
+                        <img class="cropimage" alt="" src="images/img_placeholder.jpg" draggable="false">
                     </div>
 
-                    <div style="float: right;">
-                        <img id="imgDemo" src="" alt=""/>
-                    </div>
-
+                    <img id="targetImage" src="" alt="" style="border-radius: 200px; float: right;"/>
                 </td>
             </tr>
             <tr class="row">
-                <td colspan="2"><button class="btn_submit" type="submit">保存</button></td>
+                <td colspan="2">
+                    <button class="btn_submit" type="submit">保存</button>
+                </td>
             </tr>
         </table>
     </form>
