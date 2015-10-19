@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/about_us.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/about_us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/contact_us.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/contact_us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/index.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/news_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/news_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css.map" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" />
     </list>
@@ -30,19 +39,88 @@
           <file leaf-file-name="environment_list.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.576923">
-                  <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+                <state vertical-scroll-proportion="-3.9615386">
+                  <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="environment_detail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="environment_detail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.12540193">
-                  <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+                <state vertical-scroll-proportion="-3.9615386">
+                  <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="about_us.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/about_us.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.9615386">
+                  <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="case_list.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/case_list.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.9615386">
+                  <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+                  <folding>
+                    <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="contact_us.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/contact_us.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.9615386">
+                  <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="news_list.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/news_list.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.9615384">
+                  <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="news_detail.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.9615386">
+                  <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.562701">
+                  <caret line="483" column="0" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -54,25 +132,25 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5355191">
-                  <caret line="1258" column="34" selection-start-line="1258" selection-start-column="34" selection-end-line="1258" selection-end-column="34" />
+                <state vertical-scroll-proportion="0.35519126">
+                  <caret line="852" column="29" selection-start-line="852" selection-start-column="29" selection-end-line="852" selection-end-column="29" />
                   <folding>
                     <element signature="e#204#3145#0" expanded="false" />
-                    <element signature="e#3155#7343#0" expanded="false" />
-                    <element signature="e#3206#6080#0" expanded="false" />
-                    <element signature="e#7396#7604#0" expanded="false" />
-                    <element signature="e#15851#22539#0" expanded="false" />
-                    <element signature="e#22558#26362#0" expanded="false" />
-                    <element signature="e#30923#32739#0" expanded="false" />
-                    <element signature="e#32774#38740#0" expanded="false" />
-                    <element signature="e#32840#33678#0" expanded="false" />
-                    <element signature="e#33713#37766#0" expanded="false" />
-                    <element signature="e#37801#38730#0" expanded="false" />
-                    <element signature="e#38777#41606#0" expanded="false" />
-                    <element signature="e#41641#43764#0" expanded="false" />
-                    <element signature="e#43798#44369#0" expanded="false" />
-                    <element signature="e#44411#45095#0" expanded="false" />
-                    <element signature="e#45636#47358#0" expanded="false" />
+                    <element signature="e#3155#7510#0" expanded="false" />
+                    <element signature="e#7563#7771#0" expanded="false" />
+                    <element signature="e#7797#30753#0" expanded="false" />
+                    <element signature="e#16018#22706#0" expanded="false" />
+                    <element signature="e#22725#26529#0" expanded="false" />
+                    <element signature="e#31117#32933#0" expanded="false" />
+                    <element signature="e#32968#38934#0" expanded="false" />
+                    <element signature="e#33034#33872#0" expanded="false" />
+                    <element signature="e#33907#37960#0" expanded="false" />
+                    <element signature="e#37995#38924#0" expanded="false" />
+                    <element signature="e#38971#41800#0" expanded="false" />
+                    <element signature="e#41835#43958#0" expanded="false" />
+                    <element signature="e#43992#44563#0" expanded="false" />
+                    <element signature="e#44605#45308#0" expanded="false" />
+                    <element signature="e#45866#47588#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -81,8 +159,8 @@
           <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/_base.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.9230769">
-                  <caret line="10" column="10" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="10" />
+                <state vertical-scroll-proportion="-4.576923">
+                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -92,7 +170,7 @@
             <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="271" column="49" selection-start-line="271" selection-start-column="49" selection-end-line="271" selection-end-column="49" />
+                  <caret line="336" column="36" selection-start-line="336" selection-start-column="27" selection-end-line="336" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -117,7 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_base.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/style.css" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/css/_reset.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/09/web/vote_pic.html" />
@@ -152,21 +229,22 @@
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/reg.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/contactus.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/_base.scss" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/bind.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/coupon_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/mycenter.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/css/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/readme.txt" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/index.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/about_us.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/condition_list.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/about_us.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/contact_us.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/news_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/index.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/10/web/js/main.js" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss" />
       </list>
     </option>
@@ -183,9 +261,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="39" />
-    <option name="width" value="995" />
+    <option name="x" value="11" />
+    <option name="y" value="23" />
+    <option name="width" value="1186" />
     <option name="height" value="726" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -233,8 +311,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -585,15 +663,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="39" width="995" height="726" extended-state="0" />
-    <editor active="false" />
+    <frame x="11" y="23" width="1186" height="726" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45081967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24845996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36550307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -607,8 +685,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="75" y="286" width="1049" height="200" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -629,9 +707,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26450998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -661,13 +739,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.00729927">
-          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/12/web/score.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -927,7 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2823741">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27517986">
           <caret line="18" column="31" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,17 +1022,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/news_list.html">
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="67" selection-end-column="9" />
+        <state vertical-scroll-proportion="-3.9615386">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/case_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9615386">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding>
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/contact_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9615386">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9615386">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9615386">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/news_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        <state vertical-scroll-proportion="-3.9615386">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/news_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9615384">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.562701">
+          <caret line="483" column="0" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -972,83 +1106,33 @@
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="271" column="49" selection-start-line="271" selection-start-column="49" selection-end-line="271" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/case_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46666667">
-          <caret line="205" column="8" selection-start-line="205" selection-start-column="8" selection-end-line="205" selection-end-column="8" />
-          <folding>
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/about_us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53333336">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26666668">
-          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <caret line="336" column="36" selection-start-line="336" selection-start-column="27" selection-end-line="336" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5355191">
-          <caret line="1258" column="34" selection-start-line="1258" selection-start-column="34" selection-end-line="1258" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.35519126">
+          <caret line="852" column="29" selection-start-line="852" selection-start-column="29" selection-end-line="852" selection-end-column="29" />
           <folding>
             <element signature="e#204#3145#0" expanded="false" />
-            <element signature="e#3155#7343#0" expanded="false" />
-            <element signature="e#3206#6080#0" expanded="false" />
-            <element signature="e#7396#7604#0" expanded="false" />
-            <element signature="e#15851#22539#0" expanded="false" />
-            <element signature="e#22558#26362#0" expanded="false" />
-            <element signature="e#30923#32739#0" expanded="false" />
-            <element signature="e#32774#38740#0" expanded="false" />
-            <element signature="e#32840#33678#0" expanded="false" />
-            <element signature="e#33713#37766#0" expanded="false" />
-            <element signature="e#37801#38730#0" expanded="false" />
-            <element signature="e#38777#41606#0" expanded="false" />
-            <element signature="e#41641#43764#0" expanded="false" />
-            <element signature="e#43798#44369#0" expanded="false" />
-            <element signature="e#44411#45095#0" expanded="false" />
-            <element signature="e#45636#47358#0" expanded="false" />
+            <element signature="e#3155#7510#0" expanded="false" />
+            <element signature="e#7563#7771#0" expanded="false" />
+            <element signature="e#7797#30753#0" expanded="false" />
+            <element signature="e#16018#22706#0" expanded="false" />
+            <element signature="e#22725#26529#0" expanded="false" />
+            <element signature="e#31117#32933#0" expanded="false" />
+            <element signature="e#32968#38934#0" expanded="false" />
+            <element signature="e#33034#33872#0" expanded="false" />
+            <element signature="e#33907#37960#0" expanded="false" />
+            <element signature="e#37995#38924#0" expanded="false" />
+            <element signature="e#38971#41800#0" expanded="false" />
+            <element signature="e#41835#43958#0" expanded="false" />
+            <element signature="e#43992#44563#0" expanded="false" />
+            <element signature="e#44605#45308#0" expanded="false" />
+            <element signature="e#45866#47588#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/environment_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12540193">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>

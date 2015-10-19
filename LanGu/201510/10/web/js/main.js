@@ -194,19 +194,9 @@ $( function () {
 
 } );
 
-function getMoveDirection( target, e ) {
-    var w, h, x, y, direction;
-    w = $( target ).width();
-    h = $( target ).height();
-    x = (e.pageX - target.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
-    y = (e.pageY - target.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
-
-    //direction的值为“0,1,2,3”分别对应着“上，右，下，左;
-    direction = Math.round( (((Math.atan2( y, x ) * (180 / Math.PI)) + 180) / 90) + 3 ) % 4;
-
-    return direction;
-}
-
+/**
+ * 根据鼠标移动方向，处理 hover
+ */
 var hoverMove = {
     options: {
         hover: ".hover",
@@ -329,3 +319,29 @@ var hoverMove = {
 };
 
 
+var goToTop = {
+    init: function () {
+        this.render();
+        this.bind();
+    },
+    render: function () {
+        this.target = $( "<div id='goToTop'></div>" );
+        this.target.appendTo( document.body );
+    },
+    bind: function () {
+        var self = this;
+        this.target.bind( "click", function () {
+            $( "html,body" ).animate( { "scrollTop": 0 } );
+        } );
+        $( window ).bind( "scroll", function () {
+            if ( $( this ).scrollTop() > $( this ).height() ) {
+                self.target.fadeIn();
+            } else {
+                self.target.fadeOut();
+            }
+        } );
+    }
+};
+$( function () {
+    goToTop.init();
+} );
