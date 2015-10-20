@@ -17,7 +17,16 @@
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: normal; }
-/* Webfont: FZTJLSJW--GB1-0 */
+/* Webfont: RocketScript */
+@font-face {
+  font-family: 'RocketScript';
+  src: url("../font/RocketScript/RocketScript.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/RocketScript/RocketScript.eot?#iefix") format("embedded-opentype"), url("../font/RocketScript/RocketScript.woff") format("woff"), url("../font/RocketScript/RocketScript.ttf") format("truetype"), url("../font/RocketScript/RocketScript.svg#RocketScript") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+/* Webfont: FZTJLSJW--GB1-0 方正铁筋隶书简体 */
 @font-face {
   font-family: 'FZTieJinLiShu-S17S';
   src: url("../font/FZTieJinLiShu-S17S/FZTJLSJW--GB1-0.eot");
@@ -26,12 +35,21 @@
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: normal; }
-/* Webfont: FZZQJW--GB1-0 */
+/* Webfont: FZZQJW--GB1-0 方正中倩简体 */
 @font-face {
   font-family: 'FZZhongQian-M16S';
   src: url("../font/FZZhongQian-M16S/FZZQJW--GB1-0.eot");
   /* IE9 Compat Modes */
   src: url("../font/FZZhongQian-M16S/FZZQJW--GB1-0.eot?#iefix") format("embedded-opentype"), url("../font/FZZhongQian-M16S/FZZQJW--GB1-0.woff") format("woff"), url("../font/FZZhongQian-M16S/FZZQJW--GB1-0.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal; }
+/* Webfont: FZXDXJW--GB1-0 方正细等线简体 */
+@font-face {
+  font-family: 'FZXiDengXian-Z06S';
+  src: url("../font/FZXiDengXian-Z06S/FZXDXJW--GB1-0.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/FZXiDengXian-Z06S/FZXDXJW--GB1-0.eot?#iefix") format("embedded-opentype"), url("../font/FZXiDengXian-Z06S/FZXDXJW--GB1-0.woff") format("woff"), url("../font/FZXiDengXian-Z06S/FZXDXJW--GB1-0.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: normal; }
