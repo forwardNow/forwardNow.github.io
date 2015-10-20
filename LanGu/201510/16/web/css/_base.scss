@@ -1,0 +1,218 @@
+$baseFontSize : 10px;
+
+@mixin centerBlock($blockWidth: $page_width) {
+    width        : $blockWidth;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+@mixin opacity($opacity:50) {
+    opacity : $opacity / 100;
+    filter  : alpha(opacity=$opacity);
+}
+
+@mixin opacityBg($rgbaColor:rgba(252, 248, 242, 0.7), $filterColor: '#B2FCF8F2') {
+    filter           : progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#{$filterColor}, endColorstr=#{$filterColor});
+    background-color : $rgbaColor;
+}
+
+// pixels to rems
+@function pxToRem($px) {
+    @return $px / $baseFontSize * 1rem;
+}
+
+%clearfix {
+    &:before,
+    &:after {
+        content : "";
+        display : table;
+        font    : 0/0 a;
+    }
+    &:after {
+        clear : both;
+    }
+}
+
+// one line
+%text_overflow {
+    overflow      : hidden;
+    white-space   : nowrap;
+    text-overflow : ellipsis;
+}
+
+// wrap
+%wrap {
+    @include centerBlock($page_width);
+}
+
+%text_unselect {
+    moz-user-select     : -moz-none;
+    -moz-user-select    : none;
+    -o-user-select      : none;
+    -khtml-user-select  : none;
+    -webkit-user-select : none;
+    -ms-user-select     : none;
+    user-select         : none;
+}
+
+// animate
+%rotate3D-Y {
+    animation         : rotate3D-Y 1s infinite;
+    -webkit-animation : rotate3D-Y 1s infinite;
+}
+
+%rotate {
+    animation         : rotate 1s infinite;
+    -webkit-animation : rotate 1s infinite;
+}
+
+
+@-webkit-keyframes rotate3D-Y {
+    from {
+        -webkit-transform : rotateY(0deg)
+    }
+    to {
+        -webkit-transform : rotateY(360deg)
+    }
+}
+
+@-moz-keyframes rotate3D-Y {
+    from {
+        -moz-transform : rotateY(0deg)
+    }
+    to {
+        -moz-transform : rotateY(360deg)
+    }
+}
+
+@-ms-keyframes rotate3D-Y {
+    from {
+        -ms-transform : rotateY(0deg)
+    }
+    to {
+        -ms-transform : rotateY(360deg)
+    }
+}
+
+@-o-keyframes rotate3D-Y {
+    from {
+        -o-transform : rotateY(0deg)
+    }
+    to {
+        -o-transform : rotateY(360deg)
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform : rotate(0deg)
+    }
+    to {
+        -webkit-transform : rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform : rotate(0deg)
+    }
+    to {
+        -moz-transform : rotate(360deg)
+    }
+}
+
+@-ms-keyframes rotate {
+    from {
+        -ms-transform : rotate(0deg)
+    }
+    to {
+        -ms-transform : rotate(360deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform : rotate(0deg)
+    }
+    to {
+        -o-transform : rotate(360deg)
+    }
+}
+
+
+// font
+%font_fz {
+    font-family: "fz_dengxian", $fontFamily_default;
+}
+%font_rocket {
+    font-family: "rocket_script", $fontFamily_default;
+}
+
+// margin overlap
+%margin-overlap {
+    &:before {
+        content    : "";
+        display    : block;
+        height     : 1px;
+    }
+}
+
+
+
+.__utils {
+
+    @at-root #goToTop {
+        display    : none;
+        position   : fixed;
+        right      : 90px;
+        bottom     : 100px;
+        width      : 66px;
+        height     : 67px;
+        background : transparent url(../images/go_to_top.png) no-repeat 0 0;
+        z-index    : 900;
+        cursor     : pointer;
+        transition : all 0.3s ease;
+        @include opacity(20);
+        &:hover {
+            @include opacity(100);
+        }
+    }
+
+    @at-root #bodyMask {
+        position     : fixed;
+        left         : 0;
+        top          : 0;
+        z-index      : 999;
+        width        : 100%;
+        height       : 100%;
+        background   : #000000;
+        filter       : alpha(opacity=50);
+        -moz-opacity : 0.5;
+        opacity      : 0.5
+    }
+    @at-root .layerDiv {
+        position: fixed; _position: absolute; z-index: 9999999999999; width: 730px; height: 340px; left: 50%; top: 50%; margin: -170px 0 0 -365px; padding: 0px; background: #fff; border: 2px #808080 solid; -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px ;
+
+        h2 { color: #000; font-size: 24px; margin: 30px 25px 10px 25px; line-height: 1.2em; clear: both }
+        h3 { color: #333; font-size: 16px; margin: 20px 25px; clear: both }
+        div { color: #333; font-size: 14px; margin: 0 25px; padding-top: 20px; border-top: 1px #ccc dotted; clear: both }
+        div span { color: #666; font-size: 12px; float: right }
+        div span a { color: #369 }
+        div span a:hover { color: #0884CD }
+        ul { height: 100px; width: 540px; _width: 580px; margin: 20px auto 0 auto; clear: both }
+        ul li { float: left; width: 105px; height: 80px; margin: 0 15px; text-align: center }
+        ul li a { height: 80px; display: block; clear: both }
+        .ico {background: url(../images/icon.png) no-repeat 0px 0px;}
+        .icoGt {background-position: -298px 0; text-indent: 40px; display: inline-block;}
+        .icoChrome { background-position: 0 -228px; height: 80px; width: 105px; display: inline-block; margin-right: 20px }
+        .icoOpera { background-position: -115px -228px; height: 80px; width: 73px; display: inline-block; margin-right: 20px }
+        .icoFirefox { background-position: -197px -228px; height: 80px; width: 61px; display: inline-block; margin-right: 20px }
+        .icoSafar { background-position: -267px -228px; height: 80px; width: 69px; display: inline-block }
+        p { border-top: 1px #ccc dotted; padding-top: 15px; position: relative; margin: 0 25px;text-align: center; }
+        p a { color: #666; font-size: 16px; height: 32px; line-height: 32px }
+        p a:hover { color: #0884CD }
+
+    }
+}
+
