@@ -53,7 +53,7 @@ Generator.prototype.init = function () {
     var $homecontent = $( "#homecontent" );
     for ( var i = 0; i < this.list.length; i++ ) {
         var listitem = $( Generator.template.resolve( this.list[ i ].template, this.list[ i ]) );
-        $homecontent.append( listitem );
+        $homecontent.prepend( listitem );
     }
     
 }
@@ -83,7 +83,7 @@ Generator.template["default"] = '\
                     <a href="#" title="日期"><i class="icon-date"></i><span>${pubdate}</span></a>\
                 </div>\
                 <div class="post-category">\
-                    <a href="#"><img src="./images/menu_${category}.png" alt=""></a>\
+                    <a href="#"><img src="./images/menu_${category}.png" alt="${category}"></a>\
                 </div>\
             </div>\
         </article>\
