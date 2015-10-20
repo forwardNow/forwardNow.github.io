@@ -1,0 +1,153 @@
+$baseFontSize : 10px;
+
+@mixin centerBlock($blockWidth: $page_width) {
+    width        : $blockWidth;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+@mixin opacity($opacity:50) {
+    opacity : $opacity / 100;
+    filter  : alpha(opacity=$opacity);
+}
+
+@mixin opacityBg($rgbaColor:rgba(252, 248, 242, 0.7), $filterColor: '#B2FCF8F2') {
+    filter           : progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#{$filterColor}, endColorstr=#{$filterColor});
+    background-color : $rgbaColor;
+}
+
+// pixels to rems
+@function pxToRem($px) {
+    @return $px / $baseFontSize * 1rem;
+}
+
+%clearfix {
+    &:before,
+    &:after {
+        content : "";
+        display : table;
+        font    : 0/0 a;
+    }
+    &:after {
+        clear : both;
+    }
+}
+
+// one line
+%text_overflow {
+    overflow      : hidden;
+    white-space   : nowrap;
+    text-overflow : ellipsis;
+}
+
+// wrap
+%wrap {
+    @include centerBlock($page_width);
+}
+
+%text_unselect {
+    moz-user-select     : -moz-none;
+    -moz-user-select    : none;
+    -o-user-select      : none;
+    -khtml-user-select  : none;
+    -webkit-user-select : none;
+    -ms-user-select     : none;
+    user-select         : none;
+}
+
+// animate
+%rotate3D-Y {
+    animation         : rotate3D-Y 1s infinite;
+    -webkit-animation : rotate3D-Y 1s infinite;
+}
+
+%rotate {
+    animation         : rotate 1s infinite;
+    -webkit-animation : rotate 1s infinite;
+}
+
+
+@-webkit-keyframes rotate3D-Y {
+    from {
+        -webkit-transform : rotateY(0deg)
+    }
+    to {
+        -webkit-transform : rotateY(360deg)
+    }
+}
+
+@-moz-keyframes rotate3D-Y {
+    from {
+        -moz-transform : rotateY(0deg)
+    }
+    to {
+        -moz-transform : rotateY(360deg)
+    }
+}
+
+@-ms-keyframes rotate3D-Y {
+    from {
+        -ms-transform : rotateY(0deg)
+    }
+    to {
+        -ms-transform : rotateY(360deg)
+    }
+}
+
+@-o-keyframes rotate3D-Y {
+    from {
+        -o-transform : rotateY(0deg)
+    }
+    to {
+        -o-transform : rotateY(360deg)
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform : rotate(0deg)
+    }
+    to {
+        -webkit-transform : rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform : rotate(0deg)
+    }
+    to {
+        -moz-transform : rotate(360deg)
+    }
+}
+
+@-ms-keyframes rotate {
+    from {
+        -ms-transform : rotate(0deg)
+    }
+    to {
+        -ms-transform : rotate(360deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform : rotate(0deg)
+    }
+    to {
+        -o-transform : rotate(360deg)
+    }
+}
+
+// margin overlap
+%margin-overlap {
+    &:before {
+        content    : "";
+        display    : block;
+        height     : 1px;
+    }
+}
+
+
+

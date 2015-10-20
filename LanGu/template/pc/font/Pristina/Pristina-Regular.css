@@ -1,0 +1,12 @@
+/* Webfont: Pristina-Regular */@font-face {
+    font-family: 'Pristina';
+    src: url('Pristina-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Pristina-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Pristina-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Pristina-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Pristina-Regular.svg#Pristina-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,12 @@
+/* Webfont: FZTJLSJW--GB1-0 */@font-face {
+    font-family: 'FZTieJinLiShu-S17S';
+    src: url('FZTJLSJW--GB1-0.eot'); /* IE9 Compat Modes */
+    src: url('FZTJLSJW--GB1-0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FZTJLSJW--GB1-0.woff') format('woff'), /* Modern Browsers */
+         url('FZTJLSJW--GB1-0.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('FZTJLSJW--GB1-0.svg#FZTJLSJW--GB1-0') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
