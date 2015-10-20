@@ -9,7 +9,7 @@ var ns = {
 $( function () {
     ns.handleIE.init();
     ns.goToTop.init();
-    ns.font.init();
+    ns.font.init(['AovelSans','Pristina','RocketScript','FZTieJinLiShu-S17S','FZZhongQian-M16S','FZXiDengXian-Z06S']);
 } );
 
 (function () {
