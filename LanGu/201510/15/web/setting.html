@@ -50,6 +50,15 @@
             } )
         } );
     </script>
+    <style>
+        .cropFrame {
+            float: left;
+        }
+        .target-wrap {
+            float: left;
+            margin-left: 2rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -68,12 +77,14 @@
                     <input id="avatarImg" name="__avatarImg" type="hidden" value=""/><!-- 用于存放 图像的 base64编码 --></td>
             </tr>
             <tr class="row">
-                <td colspan="2" style="padding: 1rem 0;">
+                <td style="vertical-align: top; padding-top: 1.3rem;">调整：</td>
+                <td style="padding: 1rem 0;">
                     <div class="cropFrame hover" style="width: 120px; height: 120px;">
                         <img class="cropimage" alt="" src="images/img_placeholder.jpg" draggable="false">
                     </div>
-
-                    <img id="targetImage" src="" alt="" style="border-radius: 200px; float: right;"/>
+                    <div class="target-wrap" >
+                        <img id="targetImage" src="" alt="" />
+                    </div>
                 </td>
             </tr>
             <tr class="row">
