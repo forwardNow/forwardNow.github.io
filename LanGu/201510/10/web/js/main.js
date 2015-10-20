@@ -378,3 +378,27 @@ $( function () {
     handleIE.init();
 } );
 
+
+var font = {
+    init : function( fontFamilyArray ) {
+        this.fontFamilyArray = fontFamilyArray;
+        this.render();
+    },
+    render: function() {
+        /*
+         <div style="height:0;overflow: hidden;">
+             <span style="font-family: 'fz_dengxian'">fz_dengxian</span>
+             <span style="font-family: 'rocket_script'">rocket_script</span>
+         </div>
+        */
+        this.container = $( "<div>" ).css( { height: 0, overflow: "hidden" } ).appendTo( document.body );
+        for ( var i = 0; i < this.fontFamilyArray.length; i++ ) {
+            var font = this.fontFamilyArray[ i ];
+            this.container.append( $( "<span>" ).css( { "font-family": font } ).text( font ) );
+        }
+
+    }
+}
+$( function () {
+    font.init( [ "fz_dengxian", "rocket_script" ] );
+} );
