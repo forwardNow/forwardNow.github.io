@@ -4,6 +4,7 @@
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/15/web/mycenter.html" afterPath="$PROJECT_DIR$/LanGu/201510/15/web/mycenter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/15/web/readme.txt" afterPath="$PROJECT_DIR$/LanGu/201510/15/web/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="forwardNow.github.io.iws" />
@@ -25,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mycenter.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mycenter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanGu/201510/15/web/mycenter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16726619">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state vertical-scroll-proportion="-17.307692">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LanGu/201510/15/web/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.73513514">
+              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -83,7 +94,6 @@
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/contactus.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/bind.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/coupon_list.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/15/web/readme.txt" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/condition_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/about_us.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/10/web/case_list.html" />
@@ -103,6 +113,7 @@
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/setting.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/15/web/mycenter.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/15/web/readme.txt" />
       </list>
     </option>
   </component>
@@ -740,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/15/web/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14604811">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/10/web/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9615386">
@@ -959,8 +963,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/15/web/mycenter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16726619">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state vertical-scroll-proportion="-17.307692">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/15/web/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73513514">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
           <folding />
         </state>
       </provider>

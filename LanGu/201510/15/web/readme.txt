@@ -32,6 +32,8 @@
 
     |-- wechat_bind.html    绑定微信号.psd       【新增页面（2015-10-16）】
 
+    |-- setting.html        设置.psd       【新增页面（2015-10-20）】
+
 
 
 
