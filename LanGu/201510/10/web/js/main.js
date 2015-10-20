@@ -378,7 +378,9 @@ $( function () {
     handleIE.init();
 } );
 
-
+/**
+ * 字体
+ */
 var font = {
     init : function( fontFamilyArray ) {
         this.fontFamilyArray = fontFamilyArray;
