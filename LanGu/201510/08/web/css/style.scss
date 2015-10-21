@@ -54,7 +54,7 @@ $background-color : #fcfcfc !default;
 
 }
 
-.main {
+body {
     color            : $color;
     background-color : $background-color;
 }
@@ -124,6 +124,19 @@ $background-color : #fcfcfc !default;
                     }
                 }
             }
+
+            .list_share-category {
+                .item {
+                    border-bottom    : dashed 1px #e0e0e0;
+                    background: url(../images/icon_arrow.png) no-repeat right center;
+                    background-size: auto 100%;
+                    a {
+                        display: block;
+                        line-height : 3;
+                        color       : $color;
+                    }
+                }
+            }
         }
     }
 }
@@ -166,4 +179,12 @@ $background-color : #fcfcfc !default;
         }
     }
 
+}
+.main_share {
+    .hd {
+        .title {
+            padding: 1rem 0 0 1rem;
+            border-bottom    : solid 1px #e0e0e0;
+        }
+    }
 }

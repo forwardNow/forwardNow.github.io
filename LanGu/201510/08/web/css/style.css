@@ -228,7 +228,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     .header .banner .swiper-pagination .swiper-pagination-bullet-active {
       background-color: #ffffff; }
 
-.main {
+body {
   color: #242424;
   background-color: #fcfcfc; }
 
@@ -277,6 +277,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         line-height: 1.5rem;
         color: #666666;
         height: 2.8rem; }
+  .news .list_share-category .item {
+    border-bottom: dashed 1px #e0e0e0;
+    background: url(../images/icon_arrow.png) no-repeat right center;
+    background-size: auto 100%; }
+    .news .list_share-category .item a {
+      display: block;
+      line-height: 3;
+      color: #242424; }
 
 .main_news-detail .news-detail {
   padding: 1rem; }
@@ -302,5 +310,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   .main_news-detail .news-detail__bd p {
     text-indent: 2.2rem;
     margin: 1rem 0; }
+
+.main_share .hd .title {
+  padding: 1rem 0 0 1rem;
+  border-bottom: solid 1px #e0e0e0; }
 
 /*# sourceMappingURL=style.css.map */

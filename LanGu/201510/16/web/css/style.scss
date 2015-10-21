@@ -5,7 +5,6 @@
 @import "base";
 @import "public";
 
-
 body {
     background-color : $page_bg;
     color            : $color-default;
@@ -14,3 +13,45 @@ body {
 .wrap {
     @extend %wrap;
 }
+
+.header {
+    .header-inner {
+        @include centerBlock($page_width);
+        height : 120px;
+    }
+    .site-logo {
+        float      : left;
+        margin-top : 16px;
+    }
+    .hotline {
+
+    }
+    @at-root .hotline {
+        label {
+
+        }
+        span {
+
+        }
+    }
+    @at-root .nav_main {
+
+        .nav__item {
+            & > a {
+
+            }
+            &.current, &.active {
+
+            }
+            .submenu {
+                .submenu__item {
+                    & > a {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
