@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/scale.js"></script>
-    <style>
-        p > img {
-            margin-left: -2em!important;
-        }
-    </style>
+    <script>
+        // 修复 <p>的text-indent对子元素<img>的影响
+        $( function() {
+            $( "img" ).parent("p" ).css( "text-indent", 0 );
+        } );
+    </script>
 </head>
 <body>
 
