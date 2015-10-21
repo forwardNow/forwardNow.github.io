@@ -17,36 +17,99 @@ body {
 .header {
     .header-inner {
         @include centerBlock($page_width);
-        height : 120px;
+        position : relative;
+        height   : 120px;
     }
     .site-logo {
         float      : left;
         margin-top : 16px;
     }
     .hotline {
-
+        position : absolute;
+        top      : 12px;
+        right    : 0;
+    }
+    .nav_main {
+        float  : right;
+        margin : 72px -12px 0 0;
     }
     @at-root .hotline {
         label {
-
+            line-height  : 1.2;
+            float        : left;
+            margin-right : 10px;
         }
-        span {
 
+        span {
+            font-size   : 26px;
+            line-height : 32px;
+            color       : #3d3d3d;
         }
     }
     @at-root .nav_main {
+        @extend %clearfix;
+        * {
+            @include transition();
+        }
 
         .nav__item {
+            position    : relative;
+            float       : left;
+            font-family : $fontFamily_Song;
+            margin-left : 4px;
             & > a {
-
+                display : block;
+                color   : #1a1a1a;
+                padding : 0 12px 9px 12px;
             }
-            &.current, &.active {
-
+            &.current, &.active, &:hover {
+                border-bottom : solid 2px $color_hot;
+            }
+            &:hover {
+                .submenu {
+                    display : block;
+                }
             }
             .submenu {
+                display          : none;
+                box-sizing       : border-box;
+                position         : absolute;
+                left             : 0;
+                top              : 100%;
+                margin-top       : 2px;
+                width            : 100%;
+                background-color : #f5f2e9;
+                background-color : rgba(245, 242, 233, 0.9);
+                padding          : 12px 0 12px 12px;
                 .submenu__item {
+                    position     : relative;
+                    font-size    : 12px;
+                    line-height  : 2;
+                    padding-left : 12px;
+                    border-left  : solid 1px $color_hot;
+                    &:before {
+                        content          : "";
+                        position         : absolute;
+                        top              : 50%;
+                        left             : -5px;
+                        margin-top       : -5px;
+                        width            : 7px;
+                        height           : 7px;
+                        border           : solid 1px $color_hot;
+                        border-radius    : 10px;
+                        background-color : #f5f2e9;
+                    }
+                    &:hover {
+                        &:before {
+                            background-color : $color_hot;
+                            @extend %rotate3D-Y;
+                        }
+                        & > a {
+                            color : #5c5c5c;
+                        }
+                    }
                     & > a {
-
+                        color : #8f8f8f;
                     }
                 }
             }
@@ -54,4 +117,219 @@ body {
     }
 }
 
+.main {
+    min-height : 1000px;
+    padding-bottom: 80px;
+    @at-root .mod_column {
+        $color_titleBorder : #fad27c;
+        .hd {
+            height : 136px;
+            .title_cn {
+                font-size   : 42px;
+                color       : #3d3532;
+                line-height : 72px;
+                font-family : 'FZTieJinLiShu-S17S', $fontFamily_default;
+                .lead {
+                    position     : relative;
+                    box-sizing   : border-box;
+                    float        : left;
+                    width        : 88px;
+                    height       : 122px;
+                    color        : #332b1f;
+                    font-family  : 'FZZhongQian-M16S', $fontFamily_default;
+                    text-align   : center;
+                    line-height  : 1;
+                    border       : solid 3px $color_titleBorder;
+                    padding-top  : 14px;
+                    margin-right : 16px;
+                    &:before {
+                        content  : "";
+                        position : absolute;
+                        left     : -21px;
+                        bottom   : -12px;
+                        width    : 32px;
+                        height   : 44px;
+                        border   : solid 2px $color_titleBorder;
+                    }
+                    &:after {
+                        content  : "";
+                        position : absolute;
+                        left     : 282px;
+                        top      : 48px;
+                        width    : 22px;
+                        height   : 22px;
+                        border   : solid 1px $color_titleBorder;
+                    }
+                }
+            }
+            .title_en {
+                font-size      : 22px;
+                color          : #5c4b46;
+                font-family    : 'Pristina', $fontFamily_default;
+                letter-spacing : 2px;
+                word-spacing   : 6px;
+            }
+        }
 
+        .bd {
+            margin-top : 40px;
+
+            @at-root .thumbnail {
+                background-color : #f6f3ec;
+                &:hover {
+                    @include box-shadow();
+                }
+
+                .pic-wrap {
+                    overflow : hidden;
+                    & > img {
+                        width : 100%;
+                    }
+                }
+
+                .caption {
+                }
+            }
+        }
+    }
+
+    .product-display {
+        margin-top : 64px;
+        @include centerBlock($page_width);
+        &.mod_column {
+            .hd {
+                padding-left : 340px;
+            }
+            .bd {
+                .thumbnail-list {
+                    width : 1023px;
+                    @extend %clearfix;
+                    .thumbnail {
+                        float        : left;
+                        margin-right : 20px;
+                        width        : 320px;
+                        .pic-wrap {
+                            height : 240px;
+                        }
+
+                        .caption {
+                            height      : 74px;
+                            line-height : 74px;
+                            text-align  : center;
+                            .title {
+                                font-size : 22px;
+                                color     : #3d3d3d;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+    .product-process {
+        @include centerBlock($page_width);
+        .hd {
+            margin-top   : 68px;
+            padding-left : 340px;
+        }
+        .bd {
+            width      : 1030px;
+            height     : 930px;
+            background : url(../images/demo_product_process.jpg) no-repeat;
+        }
+    }
+
+    .qualification-display {
+        @include centerBlock($page_width);
+        .hd {
+            margin-top   : 68px;
+            padding-left : 340px;
+        }
+        .bd {
+            .thumbnail-list {
+                width: 1080px;
+                @extend %clearfix;
+                .thumbnail {
+                    float: left;
+                    width  : 235px;
+                    height : 370px;
+                    margin-right: 20px;
+                    .pic-wrap {
+                        height : 174px;
+                        @include box-shadow($y: 2px,$color:rgba(0,0,0,0.6));
+                    }
+                    .caption {
+                        padding: 12px;
+                        .title {
+                            color: #3d3d3d;
+                            font-size: 16px;
+                        }
+                        .desc {
+                            color: $color_aside;
+                            text-indent : 2em;
+                            font-size: 12px;
+                            line-height: 1.67;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.footer {
+    background-color: #e9e7e0;
+    & > .inner {
+        padding: 1px 0;
+        overflow: hidden;
+        @include centerBlock($page_width);
+    }
+    .link-group-list {
+        @extend %clearfix;
+        width: 1100px;
+        margin-left : 56px;
+        margin-top: 36px;
+        .link-group {
+            float: left;
+            margin-right: 100px;
+            .title {
+                & > a {
+                    color: $color_default;
+                }
+                margin-bottom: 4px;
+            }
+            .item {
+                color: #5c5c5c;
+                & > a {
+                    color: #5c5c5c;
+                    font-size: 12px;
+                }
+            }
+            &.contact-us {
+                .item {
+
+                }
+                .address {
+
+                }
+                .email {
+
+                }
+                .tel {
+
+                }
+            }
+        }
+    }
+    .copyright {
+        color: $color_aside;
+        line-height: 44px;
+        text-align: center;
+        border-top: solid 1px #d3d3d3;
+        margin-top: 32px;
+    }
+}

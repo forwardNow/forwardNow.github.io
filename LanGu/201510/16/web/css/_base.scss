@@ -16,6 +16,14 @@ $baseFontSize : 10px;
     background-color : $rgbaColor;
 }
 
+@mixin transition($time:0.3s) {
+    transition: all $time ease;
+}
+
+@mixin box-shadow($x:0,$y:0,$spread:5px,$color:rgba(0,0,0,0.3)) {
+    box-shadow: $x $y $spread $color;
+}
+
 // pixels to rems
 @function pxToRem($px) {
     @return $px / $baseFontSize * 1rem;
@@ -148,6 +156,5 @@ $baseFontSize : 10px;
         height     : 1px;
     }
 }
-
 
 
