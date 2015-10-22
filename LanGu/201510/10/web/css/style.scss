@@ -195,6 +195,7 @@ body {
 
         .info {
             position : relative;
+            z-index: 10;
             @extend %wrap;
             color    : #ffffff;
             .info-inner {

@@ -465,6 +465,7 @@ body {
         background-position: 0 -53px; }
   .slideContainer .info {
     position: relative;
+    z-index: 10;
     color: #ffffff; }
     .slideContainer .info .info-inner {
       position: absolute;

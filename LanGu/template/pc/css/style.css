@@ -162,41 +162,11 @@ h1, h2, h3, h4, h5 {
     -webkit-transform: rotateY(0deg); }
   to {
     -webkit-transform: rotateY(360deg); } }
-@-moz-keyframes rotate3D-Y {
-  from {
-    -moz-transform: rotateY(0deg); }
-  to {
-    -moz-transform: rotateY(360deg); } }
-@-ms-keyframes rotate3D-Y {
-  from {
-    -ms-transform: rotateY(0deg); }
-  to {
-    -ms-transform: rotateY(360deg); } }
-@-o-keyframes rotate3D-Y {
-  from {
-    -o-transform: rotateY(0deg); }
-  to {
-    -o-transform: rotateY(360deg); } }
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(360deg); } }
-@-moz-keyframes rotate {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-@-ms-keyframes rotate {
-  from {
-    -ms-transform: rotate(0deg); }
-  to {
-    -ms-transform: rotate(360deg); } }
-@-o-keyframes rotate {
-  from {
-    -o-transform: rotate(0deg); }
-  to {
-    -o-transform: rotate(360deg); } }
 #goToTop {
   display: none;
   position: fixed;
@@ -207,7 +177,8 @@ h1, h2, h3, h4, h5 {
   background: transparent url(../images/go_to_top.png) no-repeat 0 0;
   z-index: 900;
   cursor: pointer;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
   opacity: 0.2;
   filter: alpha(opacity=20); }
   #goToTop:hover {
@@ -236,9 +207,6 @@ h1, h2, h3, h4, h5 {
   padding: 0px;
   background: #fff;
   border: 2px #808080 solid;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
   border-radius: 8px; }
   .layerDiv h2 {
     color: #000;
@@ -327,5 +295,4 @@ h1, h2, h3, h4, h5 {
 body {
   background-color: #fafaf5;
   color: #333333; }
-
 /*# sourceMappingURL=style.css.map */
