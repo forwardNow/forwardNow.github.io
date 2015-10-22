@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        @-webkit-keyframes circle {
+            from { transform : rotate(0deg); }
+            to { transform : rotate(360deg); }
+        }
+
+        @-webkit-keyframes inner-circle {
+            from { transform : rotate(0deg); }
+            to { transform : rotate(-360deg); }
+        }
+
+        body > div {
+            width             : 100px;
+            height            : 100px;
+            margin            : 20px auto 0;
+            color             : orange;
+            font-size         : 100px;
+            line-height       : 1;
+            -webkit-animation : circle 5s linear infinite;
+            transform-origin  : 50% 200px;
+        }
+
+        div > div {
+            -webkit-animation : inner-circle 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>☻</div>
+</div>
+</body>
+</html>
