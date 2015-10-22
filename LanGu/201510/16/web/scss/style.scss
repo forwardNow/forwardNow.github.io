@@ -394,6 +394,7 @@ body {
         background: url(../images/process_bg.jpg) no-repeat center 100px fixed;
         .process-list {
             padding-top : 40px;
+            overflow: hidden;
             @include centerBlock($page_width);
         }
 

@@ -17,27 +17,27 @@
 <div class="header">
     <div class="header-inner">
 
-        <h1 class="site-logo"><img src="images/site_logo.png" alt="site-logo"/></h1>
+        <h1 class="site-logo"><a href="index.html"><img src="images/site_logo.png" alt="site-logo"/></a></h1>
         <p class="hotline"><label>服务<br/>热线</label><span>027-3625 2310</span></p>
         <ul class="nav nav_main">
-            <li class="nav__item"><a href="#">首页</a></li>
-            <li class="nav__item"><a href="#">关于赵家亿</a>
+            <li class="nav__item"><a href="index.html">首页</a>
+            <li class="nav__item"><a href="about_us.html">关于赵家亿</a>
                 <ul class="submenu">
                     <li class="submenu__item"><a href="#">公司简介</a></li>
-                    <li class="submenu__item"><a href="#">资质展示</a></li>
+                    <li class="submenu__item"><a href="about_us_auth.html">资质展示</a></li>
                     <li class="submenu__item"><a href="#">门面介绍</a></li>
                 </ul>
             </li>
-            <li class="nav__item"><a href="#">产品展示</a></li>
-            <li class="nav__item active"><a href="#">生产流程</a></li>
-            <li class="nav__item"><a href="#">新闻资讯</a>
+            <li class="nav__item"><a href="product_list.html">产品展示</a></li>
+            <li class="nav__item active"><a href="process.html">生产流程</a></li>
+            <li class="nav__item"><a href="news_list.html">新闻资讯</a>
                 <ul class="submenu">
                     <li class="submenu__item"><a href="#">行业资讯</a></li>
                     <li class="submenu__item"><a href="#">产品资讯</a></li>
                 </ul>
             </li>
             <li class="nav__item"><a href="#">招商加盟</a></li>
-            <li class="nav__item"><a href="#">联系我们</a></li>
+            <li class="nav__item"><a href="contact_us.html">联系我们</a></li>
         </ul>
 
     </div>
@@ -143,7 +143,20 @@
     </div>
 
 </div>
-
+<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+<script>
+    $(function(){
+        $(window ).scroll( function() {
+            $(".process" ).each( function() {
+                var top = this.getBoundingClientRect().top;
+                if ( top > 0 && top < $(window ).height()) {
+                    $(this ).addClass("animated slideInRight");
+                }
+            } );
+        } );
+        $("body,html" ).scrollTop(1);
+    });
+</script>
 <!-- /main -->
 
 <!-- footer -->
@@ -151,23 +164,23 @@
     <div class="inner">
         <div class="link-group-list">
             <dl class="link-group">
-                <dt class="title"><a href="#">关于赵家亿</a></dt>
+                <dt class="title"><a href="about_us.html">关于赵家亿</a></dt>
                 <dd class="item"><a href="#">公司简介</a></dd>
-                <dd class="item"><a href="#">资质展示</a></dd>
+                <dd class="item"><a href="about_us_auth.html">资质展示</a></dd>
                 <dd class="item"><a href="#">门面介绍</a></dd>
             </dl>
             <dl class="link-group">
-                <dt class="title"><a href="#">新闻资讯</a></dt>
+                <dt class="title"><a href="news_list.html">新闻资讯</a></dt>
                 <dd class="item"><a href="#">行业新闻</a></dd>
                 <dd class="item"><a href="#">产品资讯</a></dd>
             </dl>
             <dl class="link-group">
-                <dt class="title"><a href="#">生产流程</a></dt>
-                <dd class="item"><a href="#">产品展示</a></dd>
+                <dt class="title"><a href="process.html">生产流程</a></dt>
+                <dd class="item"><a href="product_list.html">产品展示</a></dd>
                 <dd class="item"><a href="#">招商加盟</a></dd>
             </dl>
             <dl class="link-group contact-us">
-                <dt class="title"><a href="#">联系我们</a></dt>
+                <dt class="title"><a href="contact_us.html">联系我们</a></dt>
                 <dd class="item address">武汉市汉口建设大道538号同城广场A栋2单元404室</dd>
                 <dd class="item email">job@nichechina.com</dd>
                 <dd class="item tel">027-85490104</dd>
