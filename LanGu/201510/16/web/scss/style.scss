@@ -133,12 +133,12 @@ body {
         width: 310px;
         height: 310px;
         background: url(../images/banner_circle_bg.png) no-repeat center center;
-        -webkit-animation : inner-circle 10s linear /*infinite*/;
+        animation : inner-circle 10s linear /*infinite*/;
         & > p {
             position: absolute;
-            //-webkit-animation : inner-circle 10s linear infinite;
+            //animation : inner-circle 10s linear infinite;
             & > img {
-                -webkit-animation : circle 10s linear /*infinite*/;
+                animation : circle 10s linear /*infinite*/;
             }
         }
         .bread-inner {
