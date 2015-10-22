@@ -633,6 +633,7 @@ body {
       display: none;
       box-sizing: border-box;
       position: absolute;
+      z-index: 100;
       left: 0;
       top: 100%;
       margin-top: 2px;
