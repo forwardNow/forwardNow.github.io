@@ -1,0 +1,155 @@
+
+
+.banner {
+  height: 600px;
+  background: url(../images/banner_bg_1.jpg) no-repeat center center; }
+  .banner .inner_animate {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: relative; }
+    .banner .inner_animate .text {
+      position: absolute;
+      left: 126px;
+      top: 95px;
+      color: #fff; }
+      .banner .inner_animate .text .lead {
+        font-size: 36px;
+        font-family: "FZXiDengXian-Z06S", "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif";
+        font-weight: 600;
+        letter-spacing: 4px; }
+        .banner .inner_animate .text .lead > i {
+          font-size: 50px;
+          color: #7d1b05;
+          vertical-align: 1px; }
+      .banner .inner_animate .text .en {
+        font-size: 24px;
+        font-family: "AardvarkCafe", "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif";
+        text-indent: 2.5em;
+        color: #f5f2e9;
+        margin-top: 29px; }
+    .banner .inner_animate .person {
+      position: absolute;
+      top: 160px;
+      left: -56px; }
+    .banner .inner_animate .taste {
+      position: absolute;
+      right: 120px;
+      bottom: 16px;
+      font-family: "KaiTi", "楷体", "楷体_GB2312", "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif";
+      font-size: 22px;
+      -webkit-transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
+              transform: rotate(-15deg); }
+      .banner .inner_animate .taste > p:nth-of-type(1) {
+        text-indent: -118px;
+        color: #fff; }
+      .banner .inner_animate .taste > p:nth-of-type(2) {
+        color: #7d1b05;
+        font-size: 28px;
+        text-align: right; }
+    .banner .inner_animate .bread-material {
+      position: absolute;
+      top: 145px;
+      right: 120px;
+      width: 310px;
+      height: 310px;
+      background: url(../images/banner_circle_bg.png) no-repeat center center; }
+      .banner .inner_animate .bread-material > p {
+        position: absolute; }
+      .banner .inner_animate .bread-material.moveCircle {
+        -webkit-animation: inner-circle 10s linear;
+                animation: inner-circle 10s linear; }
+        .banner .inner_animate .bread-material.moveCircle p > img {
+          -webkit-animation: circle 10s linear;
+                  animation: circle 10s linear; }
+      .banner .inner_animate .bread-material .bread-inner {
+        top: -118px;
+        left: 114px;
+        -webkit-transform-origin: 42px 275px;
+            -ms-transform-origin: 42px 275px;
+                transform-origin: 42px 275px; }
+      .banner .inner_animate .bread-material .circle {
+        top: 34px;
+        left: -54px;
+        -webkit-transform-origin: 210px 112px;
+            -ms-transform-origin: 210px 112px;
+                transform-origin: 210px 112px; }
+      .banner .inner_animate .bread-material .bread {
+        top: 190px;
+        left: -46px;
+        -webkit-transform-origin: 200px -33px;
+            -ms-transform-origin: 200px -33px;
+                transform-origin: 200px -33px; }
+      .banner .inner_animate .bread-material .wheat {
+        top: 168px;
+        left: 210px;
+        -webkit-transform-origin: -55px -13px;
+            -ms-transform-origin: -55px -13px;
+                transform-origin: -55px -13px; }
+  .banner_page {
+    line-height: 1;
+    background: url(../images/banner_page.jpg) no-repeat center center; }
+    .banner_page .inner {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 196px; }
+    .banner_page .title {
+      float: left;
+      color: #ffffff;
+      font-size: 36px;
+      font-family: "FZXiDengXian-Z06S", "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif";
+      margin-top: 70px; }
+      .banner_page .title:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #7d1b05;
+        margin-top: 20px; }
+      .banner_page .title .en {
+        font-size: 26px;
+        font-family: "RocketScript", "Microsoft YaHei", Arial, Roboto, "Droid Sans", "Hiragino Sans GB", "Simsun", STXihei, "sans-serif"; }
+        .banner_page .title .en:before {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 24px;
+          border-right: solid 1px #ffffff;
+          -webkit-transform: rotate(30deg);
+              -ms-transform: rotate(30deg);
+                  transform: rotate(30deg);
+          -webkit-transform-origin: right bottom;
+              -ms-transform-origin: right bottom;
+                  transform-origin: right bottom;
+          margin-right: 24px; }
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes inner-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@keyframes inner-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }

@@ -122,48 +122,7 @@ body {
 
 .banner {
     height     : 600px;
-    background : url(../images/banner_bg_1.jpg) no-repeat center center;
-    & > .inner {
-        @include centerBlock($page_width);
-        height   : 100%;
-        position : relative;
-    }
-    .bread-material {
-        position   : absolute;
-        top        : 145px;
-        right      : 120px;
-        width      : 310px;
-        height     : 310px;
-        background : url(../images/banner_circle_bg.png) no-repeat center center;
-        animation  : inner-circle 10s linear /*infinite*/;
-        & > p {
-            position : absolute;
-            //animation : inner-circle 10s linear infinite;
-            & > img {
-                animation : circle 10s linear /*infinite*/;
-            }
-        }
-        .bread-inner {
-            top              : -118px;
-            left             : 114px;
-            transform-origin : 42px 275px;
-        }
-        .circle {
-            top              : 34px;
-            left             : -54px;
-            transform-origin : 210px 112px;
-        }
-        .bread {
-            top              : 190px;
-            left             : -46px;
-            transform-origin : 200px -33px;
-        }
-        .wheat {
-            top              : 168px;
-            left             : 210px;
-            transform-origin : -55px -13px;
-        }
-    }
+    
     @at-root .banner_page {
         line-height : 1;
         background  : url(../images/banner_page.jpg) no-repeat center center;

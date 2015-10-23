@@ -26,6 +26,15 @@
   /* Legacy iOS */
   font-style: normal;
   font-weight: normal; }
+/* Webfont: AardvarkCafe */
+@font-face {
+  font-family: 'AardvarkCafe';
+  src: url("../font/AardvarkCafe/AardvarkCafe.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/AardvarkCafe/AardvarkCafe.eot?#iefix") format("embedded-opentype"), url("../font/AardvarkCafe/AardvarkCafe.woff") format("woff"), url("../font/AardvarkCafe/AardvarkCafe.ttf") format("truetype"), url("../font/AardvarkCafe/AardvarkCafe.svg#AardvarkCafe") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
 /* Webfont: FZTJLSJW--GB1-0 方正铁筋隶书简体 */
 @font-face {
   font-family: 'FZTieJinLiShu-S17S';
@@ -666,52 +675,7 @@ body {
           color: #8f8f8f; }
 
 .banner {
-  height: 600px;
-  background: url(../images/banner_bg_1.jpg) no-repeat center center; }
-  .banner > .inner {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    position: relative; }
-  .banner .bread-material {
-    position: absolute;
-    top: 145px;
-    right: 120px;
-    width: 310px;
-    height: 310px;
-    background: url(../images/banner_circle_bg.png) no-repeat center center;
-    -webkit-animation: inner-circle 10s linear;
-            animation: inner-circle 10s linear; }
-    .banner .bread-material > p {
-      position: absolute; }
-      .banner .bread-material > p > img {
-        -webkit-animation: circle 10s linear;
-                animation: circle 10s linear; }
-    .banner .bread-material .bread-inner {
-      top: -118px;
-      left: 114px;
-      -webkit-transform-origin: 42px 275px;
-          -ms-transform-origin: 42px 275px;
-              transform-origin: 42px 275px; }
-    .banner .bread-material .circle {
-      top: 34px;
-      left: -54px;
-      -webkit-transform-origin: 210px 112px;
-          -ms-transform-origin: 210px 112px;
-              transform-origin: 210px 112px; }
-    .banner .bread-material .bread {
-      top: 190px;
-      left: -46px;
-      -webkit-transform-origin: 200px -33px;
-          -ms-transform-origin: 200px -33px;
-              transform-origin: 200px -33px; }
-    .banner .bread-material .wheat {
-      top: 168px;
-      left: 210px;
-      -webkit-transform-origin: -55px -13px;
-          -ms-transform-origin: -55px -13px;
-              transform-origin: -55px -13px; }
+  height: 600px; }
   .banner_page {
     line-height: 1;
     background: url(../images/banner_page.jpg) no-repeat center center; }
