@@ -1,0 +1,12 @@
+/* Webfont: FZXDXJW--GB1-0 */@font-face {
+    font-family: 'FZXiDengXian-Z06S';
+    src: url('FZXDXJW--GB1-0.eot'); /* IE9 Compat Modes */
+    src: url('FZXDXJW--GB1-0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FZXDXJW--GB1-0.woff') format('woff'), /* Modern Browsers */
+         url('FZXDXJW--GB1-0.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('FZXDXJW--GB1-0.svg#FZXDXJW--GB1-0') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

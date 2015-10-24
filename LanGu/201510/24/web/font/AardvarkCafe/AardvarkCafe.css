@@ -1,0 +1,12 @@
+/* Webfont: AardvarkCafe */@font-face {
+    font-family: 'AardvarkCafe';
+    src: url('AardvarkCafe.eot'); /* IE9 Compat Modes */
+    src: url('AardvarkCafe.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AardvarkCafe.woff') format('woff'), /* Modern Browsers */
+         url('AardvarkCafe.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AardvarkCafe.svg#AardvarkCafe') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
