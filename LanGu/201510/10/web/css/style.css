@@ -379,7 +379,6 @@ body {
     .header .nav .submenu {
       display: none;
       position: absolute;
-      z-index: 40;
       top: 31px;
       left: -1px;
       padding: 0 5px 5px 5px;
@@ -465,7 +464,7 @@ body {
         background-position: 0 -53px; }
   .slideContainer .info {
     position: relative;
-    z-index: 10;
+    z-index: 1;
     color: #ffffff; }
     .slideContainer .info .info-inner {
       position: absolute;

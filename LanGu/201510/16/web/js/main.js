@@ -9,7 +9,7 @@ var ns = {
 $( function () {
     ns.handleIE.init();
     ns.goToTop.init();
-    ns.font.init(['AovelSans','Pristina','RocketScript','FZTieJinLiShu-S17S','FZZhongQian-M16S','FZXiDengXian-Z06S']);
+    ns.font.init( [ 'AovelSans', 'Pristina', 'RocketScript', 'FZTieJinLiShu-S17S', 'FZZhongQian-M16S', 'FZXiDengXian-Z06S' ] );
 } );
 
 (function () {
@@ -68,8 +68,18 @@ $( function () {
         this.prevBtn.bind( "click", clickPrevBtnHandler );
         this.nextBtn.bind( "click", clickNextBtnHandler );
 
+        // hover时对自动播放的处理
+        this.indexs.add(this.prevBtn ).add(this.nextBtn).hover(stopAutoPlayHandler, startAutoPlayHander);
+
         function indexHoverHandler() {
             doSlide( $( this ).index() );
+            self.autoPlay.stop && self.autoPlay.stop();
+        }
+        function startAutoPlayHander() {
+            self.autoPlay.isOn && self.autoPlay.start && self.autoPlay.start();
+        }
+        function stopAutoPlayHandler() {
+            self.autoPlay.stop && self.autoPlay.stop();
         }
 
         function clickPrevBtnHandler() {
@@ -90,6 +100,35 @@ $( function () {
         this.animate[ type ].call( this, index );
         this.indexs.eq( index ).addClass( "active" ).siblings().removeClass( "active" );
     };
+
+    Slide.prototype.autoPlay = function autoPlay( isOn, delay ) {
+        var self = this;
+        autoPlay.isOn = isOn;
+        if ( isOn ) {
+            start();
+        }
+        function handler() {
+            self.pageIndex = (self.pageIndex + 1) % self.pageSize;
+            self.play( self.options.type, self.pageIndex );
+        }
+
+        function start() {
+            if ( self.intervalId ) {
+                clearInterval( self.intervalId );
+                self.intervalId = null;
+            }
+            self.intervalId = setInterval( handler, self.options.scroll.delay );
+        }
+
+        function stop() {
+            clearInterval( self.intervalId );
+            self.intervalId = null;
+        }
+        this.autoPlay.start = start;
+        this.autoPlay.stop = stop;
+        return this;
+    };
+
 
     Slide.prototype.animate = {
         scroll: function ( index ) {

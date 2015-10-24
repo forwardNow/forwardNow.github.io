@@ -21,9 +21,10 @@ function changeGender( elt ) {
 
 $( function () {
     // 主页nav
-    $( ".js__nav .item" ).bind( "mouseenter", onHander ).bind( "mouseleave", offHandler );
+    //$( ".js__nav .item" ).bind( "mouseenter", onHander ).bind( "mouseleave", offHandler );
+    $( ".js__nav .item" ).hover(onHander,offHandler);
 
-    function onHander() {
+    function onHander(e) {
         var submenu = $( this ).find( ".submenu" );
         $( this ).addClass( "active" );
         if ( submenu.size() > 0 ) {
@@ -32,7 +33,7 @@ $( function () {
         }
     }
 
-    function offHandler() {
+    function offHandler(e) {
         var submenu = $( this ).find( ".submenu" );
         $( this ).removeClass( "active" );
         if ( submenu.size() > 0 ) {

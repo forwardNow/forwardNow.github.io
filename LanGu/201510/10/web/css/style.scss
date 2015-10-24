@@ -87,7 +87,6 @@ body {
         .submenu {
             display    : none;
             position   : absolute;
-            z-index    : 40;
             top        : 31px;
             left       : -1px;
             padding    : 0 5px 5px 5px;
@@ -195,7 +194,7 @@ body {
 
         .info {
             position : relative;
-            z-index: 10;
+            z-index: 1;
             @extend %wrap;
             color    : #ffffff;
             .info-inner {

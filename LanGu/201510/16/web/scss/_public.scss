@@ -6,7 +6,7 @@
     bottom     : 100px;
     width      : 66px;
     height     : 67px;
-    background : transparent url(../images/go_to_top.png) no-repeat 0 0;
+    background : transparent url(../images/__sys/go_to_top.png) no-repeat 0 0;
     z-index    : 900;
     cursor     : pointer;
     transition : all 0.3s ease;
@@ -30,27 +30,213 @@
 }
 
 .layerDiv {
-    position: fixed; _position: absolute; z-index: 9999999999999; width: 730px; height: 340px; left: 50%; top: 50%; margin: -170px 0 0 -365px; padding: 0px; background: #fff; border: 2px #808080 solid; -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px ;
+    position              : fixed;
+    _position             : absolute;
+    z-index               : 9999999999999;
+    width                 : 730px;
+    height                : 340px;
+    left                  : 50%;
+    top                   : 50%;
+    margin                : -170px 0 0 -365px;
+    padding               : 0px;
+    background            : #ffffff;
+    border                : 2px #808080 solid;
+    -moz-border-radius    : 8px;
+    -khtml-border-radius  : 8px;
+    -webkit-border-radius : 8px;
+    border-radius         : 8px;
 
-    h2 { color: #000; font-size: 24px; margin: 30px 25px 10px 25px; line-height: 1.2em; clear: both }
-    h3 { color: #333; font-size: 16px; margin: 20px 25px; clear: both }
-    div { color: #333; font-size: 14px; margin: 0 25px; padding-top: 20px; border-top: 1px #ccc dotted; clear: both }
-    div span { color: #666; font-size: 12px; float: right }
-    div span a { color: #369 }
-    div span a:hover { color: #0884CD }
-    ul { height: 100px; width: 540px; _width: 580px; margin: 20px auto 0 auto; clear: both }
-    ul li { float: left; width: 105px; height: 80px; margin: 0 15px; text-align: center }
-    ul li a { height: 80px; display: block; clear: both }
-    .ico {background: url(../images/icon.png) no-repeat 0px 0px;}
-    .icoGt {background-position: -298px 0; text-indent: 40px; display: inline-block;}
-    .icoChrome { background-position: 0 -228px; height: 80px; width: 105px; display: inline-block; margin-right: 20px }
-    .icoOpera { background-position: -115px -228px; height: 80px; width: 73px; display: inline-block; margin-right: 20px }
-    .icoFirefox { background-position: -197px -228px; height: 80px; width: 61px; display: inline-block; margin-right: 20px }
-    .icoSafar { background-position: -267px -228px; height: 80px; width: 69px; display: inline-block }
-    p { border-top: 1px #ccc dotted; padding-top: 15px; position: relative; margin: 0 25px;text-align: center; }
-    p a { color: #666; font-size: 16px; height: 32px; line-height: 32px }
-    p a:hover { color: #0884CD }
+    h2 {
+        color       : #000000;
+        font-size   : 24px;
+        margin      : 30px 25px 10px 25px;
+        line-height : 1.2em;
+        clear       : both
+    }
+    h3 {
+        color     : #333333;
+        font-size : 16px;
+        margin    : 20px 25px;
+        clear     : both
+    }
+    div {
+        color       : #333333;
+        font-size   : 14px;
+        margin      : 0 25px;
+        padding-top : 20px;
+        border-top  : 1px #cccccc dotted;
+        clear       : both
+    }
+    div span {
+        color     : #666666;
+        font-size : 12px;
+        float     : right
+    }
+    div span a {
+        color : #336699
+    }
+    div span a:hover {
+        color : #0884cd
+    }
+    ul {
+        height : 100px;
+        width  : 540px;
+        _width : 580px;
+        margin : 20px auto 0 auto;
+        clear  : both
+    }
+    ul li {
+        float      : left;
+        width      : 105px;
+        height     : 80px;
+        margin     : 0 15px;
+        text-align : center
+    }
+    ul li a {
+        height  : 80px;
+        display : block;
+        clear   : both
+    }
+    .ico {
+        background : url(../images/__sys/icon.png) no-repeat 0 0;
+    }
+    .icoGt {
+        background-position : -298px 0;
+        text-indent         : 40px;
+        display             : inline-block;
+    }
+    .icoChrome {
+        background-position : 0 -228px;
+        height              : 80px;
+        width               : 105px;
+        display             : inline-block;
+        margin-right        : 20px
+    }
+    .icoOpera {
+        background-position : -115px -228px;
+        height              : 80px;
+        width               : 73px;
+        display             : inline-block;
+        margin-right        : 20px
+    }
+    .icoFirefox {
+        background-position : -197px -228px;
+        height              : 80px;
+        width               : 61px;
+        display             : inline-block;
+        margin-right        : 20px
+    }
+    .icoSafar {
+        background-position : -267px -228px;
+        height              : 80px;
+        width               : 69px;
+        display             : inline-block
+    }
+    p {
+        border-top  : 1px #cccccc dotted;
+        padding-top : 15px;
+        position    : relative;
+        margin      : 0 25px;
+        text-align  : center;
+    }
+    p a {
+        color       : #666666;
+        font-size   : 16px;
+        height      : 32px;
+        line-height : 32px
+    }
+    p a:hover {
+        color : #0884cd
+    }
 
+}
+
+.slide {
+    .slide-inner {
+        position : relative;
+        height   : 100%;
+        width    : 100%;
+        overflow : hidden;
+    }
+    .slide__page-wrapper {
+        position : absolute;
+        width    : 10 * 100%;
+        height   : 100%;
+        .page {
+            float      : left;
+            width      : 10%;
+            height     : 100%;
+            background : no-repeat center center;
+            & > a {
+                display : block;
+                height  : 100%;
+            }
+        }
+    }
+    .slide__banner {
+        @include centerBlock($page_width);
+        & * {
+            @include transition();
+        }
+        position : relative;
+        height   : 100%;
+        .btn {
+            position         : absolute;
+            top              : 45%;
+            width            : 80px;
+            height           : 80px;
+            background-color : rgba(0, 0, 0, 0.6);
+            opacity          : 0.1;
+            &:hover {
+                opacity : 0.9;
+                &:before {
+                    left : 12px;
+                }
+            }
+            &:before {
+                content           : "";
+                position          : absolute;
+                top               : 23%;
+                left              : 35%;
+                width             : 50%;
+                height            : 50%;
+                border            : solid 3px transparent;
+                border-left-color : #ffffff;
+                border-top-color  : #ffffff;
+                transform         : rotate(-45deg);
+                @include transition();
+            }
+            &.btn_left {
+                left : -100px;
+            }
+            &.btn_right {
+                right     : -100px;
+                transform : rotate(180deg);
+            }
+        }
+        .tab {
+            position : absolute;
+            bottom   : 0;
+            left     : 0;
+            width    : 100%;
+            height   : 32px;
+            .slide-index {
+                text-align  : center;
+                line-height : 0;
+                font-size   : 0;
+                .page-index {
+                    display       : inline-block;
+                    width         : 60px;
+                    height        : 10px;
+                    border-bottom : solid 2px #ffffff;
+                    margin        : 0 4px;
+                    &.active {
+                        border-color : $color_hot;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @at-root .mod_column {
@@ -114,7 +300,7 @@
         @include box-shadow();
         .caption {
             .title {
-                color: $color_hot!important;
+                color : $color_hot !important;
             }
         }
     }
@@ -125,8 +311,9 @@
             width : 100%;
         }
     }
+
     .caption {
-        opacity: 0.8;
+        opacity          : 0.8;
         background-color : #f6f3ec;
     }
 }
@@ -246,11 +433,11 @@
             width    : 100%;
             height   : 100%;
             .caption {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                opacity: 1;
+                position : absolute;
+                bottom   : 0;
+                left     : 0;
+                width    : 100%;
+                opacity  : 1;
             }
         }
     }

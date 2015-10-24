@@ -46,9 +46,46 @@
 <!-- /header -->
 
 <!-- banner -->
-<div class="banner" >
+<div class="banner slide js--slide">
+    <div class="slide-inner">
 
+        <ul class="slide__page-wrapper">
+            <li class="page" style="background-image: url(images/focus_page_1.jpg)"><a href="#"></a></li>
+            <li class="page" style="background-image: url(images/focus_page_2.jpg)"><a href="#"></a></li>
+        </ul>
+
+        <div class="slide__banner">
+            <a href="javascript:void(0);" class="btn btn_left"></a>
+            <a href="javascript:void(0);" class="btn btn_right"></a>
+            <div class="tab">
+                <div class="slide-index">
+                    <a href="javascript:void(0);" class="page-index active"></a>
+                    <a href="javascript:void(0);" class="page-index "></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
+<script>
+    $( function() {
+        var options = {
+            type: "scroll",
+            scroll: {
+                distance: "100%",
+                amount: 1,
+                duration: 300, // 滚动所需时间
+                delay: 6000    // 自动播放时的延迟
+            },
+            slideContainer: $( ".js--slide" ),
+            pageList: $( ".js--slide .slide__page-wrapper" ),
+            indexs: $( ".js--slide .tab .page-index" ),
+            prevBtn: $( ".js--slide .btn_left" ),
+            nextBtn: $( ".js--slide .btn_right" )
+        };
+        (new ns.Slide( options )).autoPlay( true );
+    } )
+</script>
 <!-- /banner -->
 
 <!-- main -->
