@@ -37,41 +37,41 @@ body, html {
             }
         }
         &.age {
-            text-align: center;
-            height: 100%;
-            background: url(../images/age_bg_2.png) repeat-x left bottom ,
-                        url(../images/age_bg.jpg) no-repeat center center;
+            text-align : center;
+            height     : 100%;
+            background : url(../images/age_bg_2.png) repeat-x left bottom,
+            url(../images/age_bg.jpg) no-repeat center center;
             & > .inner {
                 @extend %margin-overlap;
                 @include centerBlock();
             }
             .text {
-                overflow: hidden;
+                overflow : hidden;
                 img {
-                    max-height: 100%;
+                    max-height : 100%;
                 }
             }
             .btns {
-                padding-right: 3%;
+                padding-right : 3%;
                 & > .btn {
-                    display: inline-block;
-                    width: 207px;
-                    height: 100%;
-                    background: no-repeat center center;
-                    background-size: auto 100%;
+                    display         : inline-block;
+                    width           : 207px;
+                    height          : 100%;
+                    background      : no-repeat center center;
+                    background-size : auto 100%;
                     @include transition();
                     &.btn_yes {
-                        background-image: url(../images/age_btn_left.png);
-                        background-position: right center;
-                        margin-right: 2%;
+                        background-image    : url(../images/age_btn_left.png);
+                        background-position : right center;
+                        margin-right        : 2%;
 
                     }
                     &.btn_no {
-                        background-image: url(../images/age_btn_right.png);
-                        background-position: left center;
+                        background-image    : url(../images/age_btn_right.png);
+                        background-position : left center;
                     }
                     &:hover {
-                        transform: translate(0, -2px);
+                        transform : translate(0, -2px);
                     }
                 }
             }
@@ -159,7 +159,7 @@ body, html {
         position : relative;
         z-index  : 1;
         height   : 100%;
-        overflow: hidden;
+        overflow : hidden;
         .home-text {
             position : absolute;
             top      : 38%;
@@ -270,7 +270,7 @@ body, html {
             .media-list {
                 .media {
                     &:hover {
-                        background-color: #f0ebec!important;
+                        background-color : #f0ebec !important;
                     }
                     .media-body {
                         .cont {
@@ -279,12 +279,47 @@ body, html {
                     }
                     .media-left {
                         & + .media-body {
-                            width: 870px;
+                            width : 870px;
                         }
                     }
                 }
             }
 
+        }
+
+        @at-root .main_about-us {
+            .article {
+                .bd {
+                    border-top: solid 1px #dbcece;
+                    padding-top: 32px;
+                    .section {
+                        margin-bottom: 60px;
+                    }
+                    .title {
+                        font-size: 24px;
+                        color: $color_hot;
+                        line-height: 1;
+                        border-left : solid 4px $color_hot;
+                        padding-left: 10px;
+                        margin: 20px 0 20px 0;
+                    }
+                    .list {
+                        @extend %clearfix;
+                        width: 105%;
+                        li {
+                            float: left;
+                            width: 375px;
+                            height: 250px;
+                            text-align: center;
+                            overflow: hidden;
+                            margin: 0 20px 20px 0;
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -340,7 +375,7 @@ body, html {
             background  : no-repeat center center;
             margin-left : 13px;
             &:hover {
-                transform: translate(0,-2px);
+                transform : translate(0, -2px);
             }
             &.qq {
                 background-image : url(../images/icon_share_1.png)
