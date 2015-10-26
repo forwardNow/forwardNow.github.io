@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/age.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/age.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/index.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" />
@@ -29,7 +28,7 @@
     <favorites_list name="forwardNow.github.io" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.4588816">
+    <splitter split-orientation="vertical" split-proportion="0.6809211">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -54,14 +53,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contact_us.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="contact_us.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.1538463">
-                  <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+                <state vertical-scroll-proportion="0.6666667">
+                  <caret line="112" column="48" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
                   <folding>
                     <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
@@ -81,11 +79,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="age.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="age.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/age.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38636363">
-                  <caret line="21" column="117" selection-start-line="21" selection-start-column="117" selection-end-line="21" selection-end-column="117" />
+                <state vertical-scroll-proportion="-2.5">
+                  <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -142,7 +140,7 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3970588">
+                <state vertical-scroll-proportion="0.7826087">
                   <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
                   <folding>
                     <element signature="e#4787#5143#0" expanded="false" />
@@ -218,12 +216,12 @@
         <option value="$PROJECT_DIR$/LanGu/201510/16/web/js/main.js" />
         <option value="$PROJECT_DIR$/LanGu/201510/16/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/scss/_vars.scss" />
-        <option value="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/age.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" />
       </list>
     </option>
   </component>
@@ -340,7 +338,7 @@
       <recent name="$PROJECT_DIR$/LanGu/201510/16/web" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
+  <component name="RunManager" selected="JavaScript Debug.age.html">
     <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forwardNow.github.io/LanGu/201510/10/web/index.html">
       <method />
     </configuration>
@@ -403,8 +401,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.age.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.age.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.banner.html" />
@@ -855,18 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1538463">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1538463">
@@ -898,7 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3970588">
+        <state vertical-scroll-proportion="0.7826087">
           <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
           <folding>
             <element signature="e#4787#5143#0" expanded="false" />
@@ -911,9 +897,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/age.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38636363">
-          <caret line="21" column="117" selection-start-line="21" selection-start-column="117" selection-end-line="21" selection-end-column="117" />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667">
+          <caret line="112" column="48" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
