@@ -15,6 +15,43 @@
 </head>
 <body>
 
+<div class="page inner age" id="js--age" style="display: none;">
+    <div class="inner">
+        <p class="text"><img src="images/age_text.png" alt=""/></p>
+        <p class="btns"><a class="btn btn_yes" href="javascript:close()"></a><a class="btn btn_no" href="http://www.baidu.com"></a></p>
+    </div>
+</div>
+<script>
+    function close () {
+        $("#js--age" ).hide();
+        if ( window.sessionStorage ) {
+            window.sessionStorage.setItem( "is18Age", "true");
+        }
+    }
+
+    (function() {
+        var result;
+        if ( window.sessionStorage ) {
+            result = window.sessionStorage.getItem( "is18Age");
+        }
+        if ( result ) { // 满18岁，或能取到
+            return;
+        }
+        $("#js--age" ).show();
+        var height = $(window).height();
+        $(".page.age .text" ).css({
+            "height": height * 0.45,
+            "margin-top": height * 0.12
+        } );
+        $(".page.age .btns" ).css({
+            "height": height * 0.06,
+            "margin-top": height * 0.09
+        } );
+    })();
+
+</script>
+
+
 <div class="page home">
 
     <!-- header    -->

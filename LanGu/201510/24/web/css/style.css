@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5 {
   margin-left: auto;
   margin-right: auto; }
 
-.article .bd:before, .page.inner.age > .inner:before, .main_page:before {
+.article .bd:before, .main_page:before, .page.age > .inner:before {
   content: "";
   display: block;
   height: 1px; }
@@ -690,39 +690,6 @@ body, html {
     background-color: rgba(0, 0, 0, 0.8); }
     .page.inner .footer .indicator {
       display: none; }
-  .page.inner.age {
-    text-align: center;
-    height: 100%;
-    background: url(../images/age_bg_2.png) repeat-x left bottom, url(../images/age_bg.jpg) no-repeat center center; }
-    .page.inner.age > .inner {
-      width: 1170px;
-      margin-left: auto;
-      margin-right: auto; }
-    .page.inner.age .text {
-      overflow: hidden; }
-      .page.inner.age .text img {
-        max-height: 100%; }
-    .page.inner.age .btns {
-      padding-right: 3%; }
-      .page.inner.age .btns > .btn {
-        display: inline-block;
-        width: 207px;
-        height: 100%;
-        background: no-repeat center center;
-        background-size: auto 100%;
-        -webkit-transition: all 0.3s ease;
-                transition: all 0.3s ease; }
-        .page.inner.age .btns > .btn.btn_yes {
-          background-image: url(../images/age_btn_left.png);
-          background-position: right center;
-          margin-right: 2%; }
-        .page.inner.age .btns > .btn.btn_no {
-          background-image: url(../images/age_btn_right.png);
-          background-position: left center; }
-        .page.inner.age .btns > .btn:hover {
-          -webkit-transform: translate(0, -2px);
-              -ms-transform: translate(0, -2px);
-                  transform: translate(0, -2px); }
 
 .header {
   position: fixed;
@@ -1014,4 +981,41 @@ body, html {
         background-image: url(../images/icon_share_5.png); }
       .footer .share > a.douban {
         background-image: url(../images/icon_share_6.png); }
+
+.page.age {
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url(../images/age_bg_2.png) repeat-x left bottom, url(../images/age_bg.jpg) no-repeat center center; }
+  .page.age > .inner {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto; }
+  .page.age .text {
+    overflow: hidden; }
+    .page.age .text img {
+      max-height: 100%; }
+  .page.age .btns {
+    padding-right: 3%; }
+    .page.age .btns > .btn {
+      display: inline-block;
+      width: 207px;
+      height: 100%;
+      background: no-repeat center center;
+      background-size: auto 100%;
+      -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease; }
+      .page.age .btns > .btn.btn_yes {
+        background-image: url(../images/age_btn_left.png);
+        background-position: right center;
+        margin-right: 2%; }
+      .page.age .btns > .btn.btn_no {
+        background-image: url(../images/age_btn_right.png);
+        background-position: left center; }
+      .page.age .btns > .btn:hover {
+        -webkit-transform: translate(0, -2px);
+            -ms-transform: translate(0, -2px);
+                transform: translate(0, -2px); }
 /*# sourceMappingURL=style.css.map */
