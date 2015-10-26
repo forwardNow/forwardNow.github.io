@@ -996,7 +996,8 @@ body, html {
       width: 34px;
       height: 34px;
       background: no-repeat center center;
-      margin-left: 13px; }
+      margin: 0 0 0 13px;
+      padding: 0; }
       .footer .share > a:hover {
         -webkit-transform: translate(0, -2px);
             -ms-transform: translate(0, -2px);

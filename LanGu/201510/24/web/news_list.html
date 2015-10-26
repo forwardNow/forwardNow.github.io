@@ -116,18 +116,36 @@
     <!-- footer -->
     <div class="footer">
         <div class="inner">
-            <a href="javascript:changeBg()" class="indicator js--indicator"></a>
+            <a href="javascript:void(0)" class="indicator js--indicator"></a>
             <p class="copyright">Copyright &copy; 2015  武汉金聚友贸易有限公司  |  技术支持 — <a href="#">兰谷科技</a></p>
-            <div class="share">
-                <a href="#" class="qq"></a>
-                <a href="#" class="baidu"></a>
-                <a href="#" class="sina"></a>
-                <a href="#" class="weibo"></a>
-                <a href="#" class="weixin"></a>
-                <a href="#" class="douban"></a>
+            <div class="share bdsharebuttonbox" data-tag="share_1">
+                <a href="#" onclick="return false;" class="qq" data-cmd="sqq"><!--QQ好友--></a>
+                <a href="#" onclick="return false;" class="baidu" data-cmd="bdhome"><!--百度新首页--></a>
+                <a href="#" onclick="return false;" class="sina" data-cmd="tsina"><!--新浪微博--></a>
+                <a href="#" onclick="return false;" class="weibo" data-cmd="tqq"><!--腾讯微博--></a>
+                <a href="#" onclick="return false;" class="weixin" data-cmd="weixin"><!--微信--></a>
+                <a href="#" onclick="return false;" class="douban" data-cmd="douban"><!--豆瓣网--></a>
             </div>
         </div>
     </div>
+    <script>
+        window._bd_share_config = {
+            "common": {
+                "bdSnsKey": {},
+                "bdText": "",
+                "bdMini": "2",
+                "bdPic": "",
+                "bdStyle": "0",
+                "bdSize": "16"
+            },
+            "share": {},
+            "selectShare": {
+                "bdContainerClass": null,
+                "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+            }
+        };
+        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
     <!-- /footer -->
 </div>
 </body>
