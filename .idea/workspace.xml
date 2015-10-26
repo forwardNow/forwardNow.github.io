@@ -68,11 +68,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="news_list.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="news_list.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/news_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.6153846">
-                  <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+                <state vertical-scroll-proportion="0.3104693">
+                  <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
                   <folding>
                     <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -81,11 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="product_list.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="product_list.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/product_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6787004">
-                  <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+                <state vertical-scroll-proportion="-6.576923">
+                  <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -162,8 +162,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6372093">
-                  <caret line="350" column="33" selection-start-line="350" selection-start-column="33" selection-end-line="350" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.4">
+                  <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
                   <folding>
                     <element signature="e#4127#4667#0" expanded="false" />
                     <element signature="e#4841#5197#0" expanded="false" />
@@ -244,9 +244,9 @@
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/product_list.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss" />
+        <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_list.html" />
       </list>
     </option>
   </component>
@@ -1163,29 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/news_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6153846">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/product_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6787004">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6372093">
-          <caret line="350" column="33" selection-start-line="350" selection-start-column="33" selection-end-line="350" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.4">
+          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
           <folding>
             <element signature="e#4127#4667#0" expanded="false" />
             <element signature="e#4841#5197#0" expanded="false" />
@@ -1194,6 +1175,25 @@
             <element signature="e#7301#7836#0" expanded="false" />
             <element signature="e#7870#9096#0" expanded="false" />
             <element signature="e#9160#9894#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/product_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.576923">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/news_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3104693">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
