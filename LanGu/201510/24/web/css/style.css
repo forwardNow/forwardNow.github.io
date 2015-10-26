@@ -161,12 +161,17 @@ i {
 h1, h2, h3, h4, h5 {
   font-weight: normal; }
 
-.media-list .media:before, .list-pic:before, .pagination:before, .nav_pills:before, .main_about-us .article .bd .list:before, .media-list .media:after, .list-pic:after, .pagination:after, .nav_pills:after, .main_about-us .article .bd .list:after {
+.media-list .media:before, .list-pic:before, .pagination:before, .nav_pills:before, .main_about-us .article .bd .list:before, .main_product-list .beer-list:before, .main_product-list .section .cont .info-list:before, .main_product-list .section .cont .pic-list:before, .media-list .media:after, .list-pic:after, .pagination:after, .nav_pills:after, .main_about-us .article .bd .list:after, .main_product-list .beer-list:after, .main_product-list .section .cont .info-list:after, .main_product-list .section .cont .pic-list:after {
   content: "";
   display: table;
   font: 0/0 a; }
-.media-list .media:after, .list-pic:after, .pagination:after, .nav_pills:after, .main_about-us .article .bd .list:after {
+.media-list .media:after, .list-pic:after, .pagination:after, .nav_pills:after, .main_about-us .article .bd .list:after, .main_product-list .beer-list:after, .main_product-list .section .cont .info-list:after, .main_product-list .section .cont .pic-list:after {
   clear: both; }
+
+.main_product-list .section .cont .info-list li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 .wrap {
   width: 1170px;
@@ -896,6 +901,54 @@ body, html {
         margin: 0 20px 20px 0; }
         .main_about-us .article .bd .list li img {
           max-width: 100%; }
+  .main_product-list .beer-list {
+    border-top: solid 1px #dbcece; }
+    .main_product-list .beer-list .item {
+      padding-top: 20px;
+      float: left;
+      width: 11.1%;
+      text-align: center;
+      overflow: hidden;
+      padding-bottom: 12px; }
+      .main_product-list .beer-list .item.active, .main_product-list .beer-list .item:hover {
+        background: url(../images/shadow.png) no-repeat center bottom; }
+      .main_product-list .beer-list .item > a {
+        display: block; }
+      .main_product-list .beer-list .item img {
+        max-width: 100%; }
+  .main_product-list .section {
+    margin-bottom: 60px;
+    overflow: hidden; }
+    .main_product-list .section .title {
+      font-size: 22px;
+      color: #31200b;
+      line-height: 1;
+      padding-left: 16px;
+      border-left: solid 4px #2a0302;
+      margin: 24px 0; }
+    .main_product-list .section .cont {
+      font-size: 18px;
+      color: #4c4d4d;
+      line-height: 1.8; }
+      .main_product-list .section .cont p {
+        text-indent: 2em; }
+      .main_product-list .section .cont img {
+        max-width: 100%; }
+      .main_product-list .section .cont .info-list li {
+        float: left;
+        width: 33.33%; }
+        .main_product-list .section .cont .info-list li label {
+          margin-right: 18px; }
+      .main_product-list .section .cont .pic-list {
+        width: 105%; }
+        .main_product-list .section .cont .pic-list li {
+          float: left;
+          width: 370px;
+          height: 248px;
+          overflow: hidden;
+          margin: 0 20px 20px 0; }
+          .main_product-list .section .cont .pic-list li img {
+            max-width: 100%; }
 
 .footer {
   position: fixed;

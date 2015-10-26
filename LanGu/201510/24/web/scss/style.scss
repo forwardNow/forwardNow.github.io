@@ -290,27 +290,101 @@ body, html {
         @at-root .main_about-us {
             .article {
                 .bd {
-                    border-top: solid 1px #dbcece;
-                    padding-top: 32px;
+                    border-top  : solid 1px #dbcece;
+                    padding-top : 32px;
                     .section {
-                        margin-bottom: 60px;
+                        margin-bottom : 60px;
                     }
                     .title {
-                        font-size: 24px;
-                        color: $color_hot;
-                        line-height: 1;
-                        border-left : solid 4px $color_hot;
-                        padding-left: 10px;
-                        margin: 20px 0 20px 0;
+                        font-size    : 24px;
+                        color        : $color_hot;
+                        line-height  : 1;
+                        border-left  : solid 4px $color_hot;
+                        padding-left : 10px;
+                        margin       : 20px 0 20px 0;
                     }
                     .list {
+                        @extend %clearfix;
+                        width : 105%;
+                        li {
+                            float      : left;
+                            width      : 375px;
+                            height     : 250px;
+                            text-align : center;
+                            overflow   : hidden;
+                            margin     : 0 20px 20px 0;
+                            img {
+                                max-width : 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @at-root .main_product-list {
+
+            .beer-list {
+                @extend %clearfix;
+                border-top : solid 1px #dbcece;
+                .item {
+                    padding-top    : 20px;
+                    float          : left;
+                    width          : 11.1%;
+                    text-align     : center;
+                    overflow       : hidden;
+                    padding-bottom : 12px;
+                    &.active, &:hover {
+                        background : url(../images/shadow.png) no-repeat center bottom;
+                    }
+                    & > a {
+                        display : block;
+                    }
+                    img {
+                        max-width : 100%;
+                    }
+                }
+            }
+
+            .section {
+                margin-bottom : 60px;
+                overflow: hidden;
+                .title {
+                    font-size    : 22px;
+                    color        : #31200b;
+                    line-height  : 1;
+                    padding-left : 16px;
+                    border-left  : solid 4px #2a0302;
+                    margin       : 24px 0;
+                }
+                .cont {
+                    font-size   : 18px;
+                    color       : #4c4d4d;
+                    line-height : 1.8;
+                    p {
+                        text-indent : 2em;
+                    }
+                    img {
+                        max-width : 100%;
+                    }
+                    .info-list {
+                        @extend %clearfix;
+                        li {
+                            float : left;
+                            width : 33.33%;
+                            @extend %text_overflow;
+                            label {
+                                margin-right : 18px;
+                            }
+                        }
+                    }
+                    .pic-list {
                         @extend %clearfix;
                         width: 105%;
                         li {
                             float: left;
-                            width: 375px;
-                            height: 250px;
-                            text-align: center;
+                            width: 370px;
+                            height: 248px;
                             overflow: hidden;
                             margin: 0 20px 20px 0;
                             img {
