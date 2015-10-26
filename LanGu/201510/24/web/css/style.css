@@ -931,7 +931,8 @@ body, html {
       color: #4c4d4d;
       line-height: 1.8; }
       .main_product-list .section .cont p {
-        text-indent: 2em; }
+        text-indent: 2em;
+        margin: 1em 0; }
       .main_product-list .section .cont img {
         max-width: 100%; }
       .main_product-list .section .cont .info-list li {

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa516a3d-db3b-4039-a778-f525e59893d2" name="Default" comment="忽略 .idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/about_us.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/about_us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/contact_us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/index.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/news_list.html" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/news_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/css/style.css.map" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/css/style.css" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss" afterPath="$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss" />
@@ -71,8 +66,8 @@
           <file leaf-file-name="news_list.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/news_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3104693">
-                  <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+                <state vertical-scroll-proportion="0.49458483">
+                  <caret line="62" column="68" selection-start-line="62" selection-start-column="68" selection-end-line="62" selection-end-column="68" />
                   <folding>
                     <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -162,8 +157,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4">
-                  <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.47906977">
+                  <caret line="365" column="38" selection-start-line="365" selection-start-column="38" selection-end-line="365" selection-end-column="38" />
                   <folding>
                     <element signature="e#4127#4667#0" expanded="false" />
                     <element signature="e#4841#5197#0" expanded="false" />
@@ -245,8 +240,8 @@
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/index.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_detail.html" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/product_list.html" />
-        <option value="$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss" />
         <option value="$PROJECT_DIR$/LanGu/201510/24/web/news_list.html" />
+        <option value="$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss" />
       </list>
     </option>
   </component>
@@ -1163,10 +1158,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/product_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.576923">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4">
-          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.47906977">
+          <caret line="365" column="38" selection-start-line="365" selection-start-column="38" selection-end-line="365" selection-end-column="38" />
           <folding>
             <element signature="e#4127#4667#0" expanded="false" />
             <element signature="e#4841#5197#0" expanded="false" />
@@ -1179,18 +1182,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/product_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.576923">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LanGu/201510/24/web/news_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3104693">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.49458483">
+          <caret line="62" column="68" selection-start-line="62" selection-start-column="68" selection-end-line="62" selection-end-column="68" />
           <folding>
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
