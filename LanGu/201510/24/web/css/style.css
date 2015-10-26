@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5 {
   margin-left: auto;
   margin-right: auto; }
 
-.article .bd:before {
+.article .bd:before, .page.inner.age > .inner:before, .main_page:before {
   content: "";
   display: block;
   height: 1px; }
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5 {
         border-bottom: solid 2px #ffffff;
         margin: 0 4px; }
         .slide .slide__banner .tab .slide-index .page-index.active {
-          border-color: #7d1b05; }
+          border-color: #5e4b53; }
 
 .mod_column .hd {
   height: 136px; }
@@ -488,7 +488,7 @@ h1, h2, h3, h4, h5 {
 .thumbnail:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
   .thumbnail:hover .caption .title {
-    color: #7d1b05 !important; }
+    color: #5e4b53 !important; }
 .thumbnail .pic-wrap {
   overflow: hidden; }
   .thumbnail .pic-wrap > img {
@@ -514,9 +514,9 @@ h1, h2, h3, h4, h5 {
       top: -1px;
       height: 182px;
       width: 0;
-      border-left: solid 4px #7d1b05; }
+      border-left: solid 4px #5e4b53; }
     .media-list .media:hover .more {
-      background-color: #7d1b05 !important;
+      background-color: #5e4b53 !important;
       text-indent: 0.5em; }
   .media-list .media .media-left {
     float: left;
@@ -608,15 +608,15 @@ h1, h2, h3, h4, h5 {
     margin-left: 10px; }
   .pagination li.active > span, .pagination li > span, .pagination li:hover > a {
     color: #fcfaf3;
-    background-color: #7d1b05;
-    border-color: #7d1b05; }
+    background-color: #5e4b53;
+    border-color: #5e4b53; }
 .nav_pills .nav-item {
   min-width: 120px;
   text-align: center;
   border-left: dotted 1px #dbdbdb;
   float: left; }
   .nav_pills .nav-item.active a, .nav_pills .nav-item:hover a {
-    background-color: #7d1b05;
+    background-color: #5e4b53;
     color: #ffffff; }
   .nav_pills .nav-item a {
     display: inline-block;
@@ -665,7 +665,7 @@ h1, h2, h3, h4, h5 {
     .article .ft > a + a {
       margin-top: 12px; }
     .article .ft > a:hover {
-      color: #7d1b05; }
+      color: #5e4b53; }
 body, html {
   height: 100%; }
 
@@ -685,6 +685,39 @@ body, html {
     background-color: rgba(0, 0, 0, 0.8); }
     .page.inner .footer .indicator {
       display: none; }
+  .page.inner.age {
+    text-align: center;
+    height: 100%;
+    background: url(../images/age_bg_2.png) repeat-x left bottom, url(../images/age_bg.jpg) no-repeat center center; }
+    .page.inner.age > .inner {
+      width: 1170px;
+      margin-left: auto;
+      margin-right: auto; }
+    .page.inner.age .text {
+      overflow: hidden; }
+      .page.inner.age .text img {
+        max-height: 100%; }
+    .page.inner.age .btns {
+      padding-right: 3%; }
+      .page.inner.age .btns > .btn {
+        display: inline-block;
+        width: 207px;
+        height: 100%;
+        background: no-repeat center center;
+        background-size: auto 100%;
+        -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease; }
+        .page.inner.age .btns > .btn.btn_yes {
+          background-image: url(../images/age_btn_left.png);
+          background-position: right center;
+          margin-right: 2%; }
+        .page.inner.age .btns > .btn.btn_no {
+          background-image: url(../images/age_btn_right.png);
+          background-position: left center; }
+        .page.inner.age .btns > .btn:hover {
+          -webkit-transform: translate(0, -2px);
+              -ms-transform: translate(0, -2px);
+                  transform: translate(0, -2px); }
 
 .header {
   position: fixed;
@@ -735,7 +768,7 @@ body, html {
       display: block;
       width: 30px;
       height: 4px;
-      background-color: #7d1b05;
+      background-color: #5e4b53;
       margin-top: 20px; }
     .banner_page .title .en {
       font-size: 26px;
@@ -770,13 +803,15 @@ body, html {
     top: 70%;
     width: 100%;
     text-align: center;
-    color: #fff; }
+    color: #ffffff; }
     .main_home .hotline > p:nth-of-type(2) {
       margin-top: 12px; }
 .main_page {
   width: 1170px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 100px;
+  min-height: 600px; }
   .main_page .slogan {
     position: relative;
     height: 108px; }
@@ -788,10 +823,55 @@ body, html {
       position: absolute;
       bottom: 22px;
       right: -12px; }
+  .main_page .pagination {
+    margin: 60px 0 0 0;
+    float: right; }
   .main_news-detail .article .hd {
     border-top: solid 1px #dbcece; }
   .main_news-detail .article .ft {
     border: none 0; }
+  .main_contact-us {
+    position: relative; }
+    .main_contact-us .contact {
+      margin-top: 68px; }
+      .main_contact-us .contact .title {
+        color: #664f59;
+        font-size: 24px;
+        margin-bottom: 16px;
+        padding-left: 11px;
+        border-left: solid 4px #2a0302;
+        line-height: 1; }
+      .main_contact-us .contact .item {
+        font-size: 16px;
+        line-height: 40px; }
+        .main_contact-us .contact .item label {
+          display: inline-block;
+          color: #664f59;
+          min-width: 74px;
+          margin-right: 8px; }
+          .main_contact-us .contact .item label:after {
+            content: ":";
+            float: right; }
+        .main_contact-us .contact .item .link {
+          color: #333333;
+          padding-bottom: 2px;
+          border-bottom: dashed 1px #666666; }
+          .main_contact-us .contact .item .link:hover, .main_contact-us .contact .item .link:focus {
+            color: #5e4b53;
+            border-color: #5e4b53; }
+    .main_contact-us .slogan-pic {
+      position: absolute;
+      top: 36px;
+      right: 1px; }
+    .main_contact-us .map_baidu {
+      border: solid 1px #6f5e65;
+      height: 460px;
+      overflow: hidden;
+      margin-top: 28px; }
+  .main_news-list .media-list .media:hover {
+    background-color: #f0ebec !important; }
+  .main_news-list .media-list .media .media-left + .media-body {
+    width: 870px; }
 
 .footer {
   position: fixed;
@@ -828,8 +908,8 @@ body, html {
       color: #767676;
       border-bottom: dotted 1px #767676; }
       .footer .copyright > a:hover {
-        color: #fff;
-        border-color: #fff; }
+        color: #ffffff;
+        border-color: #ffffff; }
   .footer .share {
     float: right;
     margin-top: 13px; }
@@ -839,6 +919,10 @@ body, html {
       height: 34px;
       background: no-repeat center center;
       margin-left: 13px; }
+      .footer .share > a:hover {
+        -webkit-transform: translate(0, -2px);
+            -ms-transform: translate(0, -2px);
+                transform: translate(0, -2px); }
       .footer .share > a.qq {
         background-image: url(../images/icon_share_1.png); }
       .footer .share > a.baidu {
