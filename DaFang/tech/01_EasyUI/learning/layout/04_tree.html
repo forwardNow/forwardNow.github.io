@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tree</title>
+    <link rel="stylesheet" type="text/css" href="../lib/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../lib/themes/icon.css">
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.easyui.min.js"></script>
+</head>
+
+<body class="easyui-layout">
+<div data-options="region:'north'" style="height:100px;"></div>
+<div data-options="region:'south'" style="height:100px;"></div>
+<div data-options="region:'west',title:'West'" style="width:100px;">
+    <ul id="tt" class="easyui-tree" data-options="animate:'true'">
+        <li>
+            <span>Sub Folder 1</span>
+            <ul>
+                <li>
+                    <span><a href="#">File 11</a></span>
+                </li>
+                <li>
+                    <span>File 12</span>
+                </li>
+                <li>
+                    <span>File 13</span>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span>File 2</span>
+        </li>
+        <li>
+            <span>File 3</span>
+        </li>
+    </ul>
+
+</div>
+<div data-options="region:'center',title:'center title'" style="padding:5px;background:#eeeeee;"></div>
+</body>
+
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>管理系统</title>
+    <link rel="stylesheet" type="text/css" href="./lib/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./lib/themes/icon.css">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/my_icon.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script type="text/javascript" src="./lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.easyui.min.js"></script>
+</head>
+
+
+<body class="easyui-layout">
+
+<!-- north -->
+<div data-options="region:'north'" style="height:116px; overflow: hidden;">
+    <!-- top -->
+    <div class="top">
+        <ul class="func-menu">
+            <li class="item"><a href="#"><i class="My-iconA5" style="margin-top: -4px"></i>张某某</a></li>
+            <li class="item"><a href="#"><i class="My-iconB8"></i>安全退出</a></li>
+        </ul>
+    </div>
+    <!-- /top -->
+    <!-- header -->
+    <div class="header">
+        <h1 class="site-logo"><img src="images/logo.png" alt=""/></h1>
+        <ul class="nav"></ul>
+    </div>
+    <!-- /header -->
+</div>
+<!-- /north -->
+
+<!-- center -->
+<div data-options="region:'center'">
+    <div class="easyui-layout" data-options="fit:true">
+        <div data-options="region:'west',collapsed:false, title: '导航', iconCls:'My-icon-sidebar'" style="width:180px">
+            <ul id="tt" class="easyui-tree" data-options="animate:'true'">
+                <li>
+                    <span>Sub Folder 1</span>
+                    <ul>
+                        <li>
+                            <span><a href="#">File 11</a></span>
+                        </li>
+                        <li>
+                            <span>File 12</span>
+                        </li>
+                        <li>
+                            <span>File 13</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span>File 2</span>
+                </li>
+                <li>
+                    <span>File 3</span>
+                </li>
+            </ul>
+        </div>
+        <div data-options="region:'center'"></div>
+    </div>
+</div>
+<!-- /center -->
+
+</body>
+
+
+</html>

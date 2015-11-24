@@ -1,0 +1,35 @@
+@keyframes rotate3D-Y {
+    from {
+        transform : rotateY(0deg)
+    }
+    to {
+        transform : rotateY(360deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform : rotate(0deg)
+    }
+    to {
+        transform : rotate(360deg)
+    }
+}
+
+@keyframes circle {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform : rotate(360deg);
+    }
+}
+
+@keyframes inner-circle {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform : rotate(-360deg);
+    }
+}

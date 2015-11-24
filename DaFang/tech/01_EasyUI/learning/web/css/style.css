@@ -1,0 +1,79 @@
+
+/*============== custom theme ==============*/
+.layout-panel-north .panel-body {
+    border: 0;
+}
+.layout-panel-west .panel-header {
+    color: #fff;
+    border-color: #393f4c;
+    background: #212530;
+}
+.layout-panel-west .panel-title {
+    color: #fff;
+}
+.layout-panel-west .panel-with-icon {
+    padding-left: 30px;
+}
+.layout-panel-west .panel-body {
+    border-color : #eee;
+}
+
+/*============== base ==============*/
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+/*============== icon ==============*/
+.My-icon-sidebar {
+    background-position:-30px -30px;
+    margin-top: -14px;
+}
+
+
+
+/*============== top ==============*/
+.top {
+    height: 35px;
+    background-color: #434854;
+    /*overflow: hidden;*/
+}
+.func-menu {
+    float: right;
+    font-size: 14px;
+}
+.func-menu .item {
+    float: left;
+    margin: 0 12px;
+}
+.func-menu [class^='My-icon'] {
+    vertical-align: middle;
+}
+.func-menu a {
+    display: block;
+    height: 34px;
+    line-height: 36px;
+    color: #fefefe;
+}
+.func-menu a:hover {
+    color: #7DB6D3;
+}
+
+/*============== header ==============*/
+.header {
+    height: 80px;
+    border-bottom: 1px solid #60a3c5;
+    background-color: #7db6d3;
+    overflow: hidden;
+}
+.header .site-logo {
+
+}
+.nav {
+
+}

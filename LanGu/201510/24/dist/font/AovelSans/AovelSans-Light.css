@@ -1,0 +1,11 @@
+/* Webfont: AovelSans-Light */@font-face {
+    font-family: 'AovelSans';
+    src: url('AovelSans-Light.eot'); /* IE9 Compat Modes */
+    src: url('AovelSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AovelSans-Light.woff') format('woff'), /* Modern Browsers */
+         url('AovelSans-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AovelSans-Light.svg#AovelSans-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+}
+

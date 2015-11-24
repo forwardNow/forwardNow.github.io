@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Layout whole page</title>
+    <link rel="stylesheet" type="text/css" href="../lib/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../lib/themes/icon.css">
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.easyui.min.js"></script>
+</head>
+
+
+<body class="easyui-layout">
+
+    <div data-options="region:'north'" style="height:100px"></div>
+    <div data-options="region:'center'">
+        <div class="easyui-layout" data-options="fit:true">
+            <div data-options="region:'west',collapsed:true, title: 'sidebar'" style="width:180px"></div>
+            <div data-options="region:'center'"></div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

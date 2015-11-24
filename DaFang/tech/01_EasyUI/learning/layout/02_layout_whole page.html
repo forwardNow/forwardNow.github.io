@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Layout whole page</title>
+    <link rel="stylesheet" type="text/css" href="../lib/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../lib/themes/icon.css">
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.easyui.min.js"></script>
+</head>
+<!--
+<body class="easyui-layout">
+    <div data-options="region:'north',title:'North Title',split:true" style="height:100px;"></div>
+    <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div>
+    <div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>
+    <div data-options="region:'west',title:'West',split:true" style="width:100px;"></div>
+    <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+</body>
+-->
+
+<!--
+<body>
+
+    <style>
+        html,body { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <div class="easyui-layout" style="width: 100%; height: 100%;">
+        <div data-options="region:'north',title:'North Title',split:true" style="height:100px;"></div>
+        <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div>
+        <div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>
+        <div data-options="region:'west',title:'West',split:true" style="width:100px;"></div>
+        <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+    </div>
+
+</body>
+-->
+
+<body class="easyui-layout">
+    <div data-options="region:'north'" style="height:100px;"></div>
+    <div data-options="region:'south'" style="height:100px;"></div>
+    <div data-options="region:'west',title:'West'" style="width:100px;"></div>
+    <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+</body>
+
+</html>

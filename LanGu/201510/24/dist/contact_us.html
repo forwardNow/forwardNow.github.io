@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="德国狼堡啤酒">
+    <meta name="description" content="德国狼堡啤酒">
+    <title>德国狼堡啤酒</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js" charset="UTF-8"></script>
+</head>
+<body>
+
+<div class="page inner">
+
+    <!-- header -->
+    <div class="header">
+        <div class="inner">
+
+            <h1 class="site-logo"><a href="#"><img src="images/site_logo_2.png" alt=""/></a></h1>
+
+            <ul class="nav">
+                <li class="nav__item"><a href="index.html">首页</a></li>
+                <li class="nav__item"><a href="about_us.html">走进沃尔夫斯</a></li>
+                <li class="nav__item"><a href="news_list.html">媒体纪事</a></li>
+                <li class="nav__item"><a href="#">品牌历史</a></li>
+                <li class="nav__item"><a href="product_list.html">产品展示</a></li>
+                <li class="nav__item"><a href="#">加盟狼堡</a></li>
+                <li class="nav__item active"><a href="contact_us.html">联系我们</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /header -->
+
+    <!-- banner -->
+    <div class="banner_page">
+        <div class="inner">
+            <h2 class="title">联系我们<small class="en">Contact Us</small></h2>
+        </div>
+    </div>
+    <!-- /banner -->
+
+    <!-- main -->
+    <div class="main main_page main_contact-us">
+
+        <dl class="contact">
+            <dt class="title">德国狼堡啤酒</dt>
+            <dd class="item"><label>预约电话</label><span>027-87193007</span></dd>
+            <dd class="item"><label>会所地址</label><span>武汉市经济技术开发区经开万达广场B1区14楼</span></dd>
+            <dd class="item"><label>官方网站</label><a class="link" href="http://www.baidu.com">www.baidu.com</a></dd>
+        </dl>
+
+        <p class="slogan-pic"><img src="images/slogan_2.png" alt=""/></p>
+
+        <div class="map_baidu" title="怡月佳家好月圆月子会所,武汉市经济技术开发区经开万达广场B1区14楼">
+            <!--百度地图容器-->
+            <div style="width:100%;height:100%;" id="dituContent"></div>
+        </div>
+
+    </div>
+
+    <!-- 百度地图 -->
+    <style>
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script>
+        $(function() {
+            //创建和初始化地图函数：
+            function initMap(){
+                createMap();//创建地图
+                setMapEvent();//设置地图事件
+                addMapControl();//向地图添加控件
+                addMarker();//向地图中添加marker
+            }
+
+            //创建地图函数：
+            function createMap(){
+                var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                var point = new BMap.Point(114.181214,30.513666);//定义一个中心点坐标
+                map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+                window.map = map;//将map变量存储在全局
+            }
+
+            //地图事件设置函数：
+            function setMapEvent(){
+                map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                map.enableKeyboard();//启用键盘上下左右键移动地图
+            }
+
+            //地图控件添加函数：
+            function addMapControl(){
+                //向地图中添加缩放控件
+                var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                map.addControl(ctrl_nav);
+                //向地图中添加缩略图控件
+                var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                map.addControl(ctrl_ove);
+                //向地图中添加比例尺控件
+                var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                map.addControl(ctrl_sca);
+            }
+
+            //标注点数组
+            var markerArr = [{title:"武汉金聚友贸易有限公司",content:"武汉市经济技术开发区经开万达广场B1区14楼",point:"114.180931|30.513246",isOpen:1,icon:{w:23,h:25,l:0,t:21,x:9,lb:12}}
+            ];
+            //创建marker
+            function addMarker(){
+                for(var i=0;i<markerArr.length;i++){
+                    var json = markerArr[i];
+                    var p0 = json.point.split("|")[0];
+                    var p1 = json.point.split("|")[1];
+                    var point = new BMap.Point(p0,p1);
+                    var iconImg = createIcon(json.icon);
+                    var marker = new BMap.Marker(point,{icon:iconImg});
+                    var iw = createInfoWindow(i);
+                    var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                    marker.setLabel(label);
+                    map.addOverlay(marker);
+                    label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+                    });
+
+                    (function(){
+                        var index = i;
+                        var _iw = createInfoWindow(i);
+                        var _marker = marker;
+                        _marker.addEventListener("click",function(){
+                            this.openInfoWindow(_iw);
+                        });
+                        _iw.addEventListener("open",function(){
+                            _marker.getLabel().hide();
+                        })
+                        _iw.addEventListener("close",function(){
+                            _marker.getLabel().show();
+                        })
+                        label.addEventListener("click",function(){
+                            _marker.openInfoWindow(_iw);
+                        })
+                        if(!!json.isOpen){
+                            label.hide();
+                            _marker.openInfoWindow(_iw);
+                        }
+                    })()
+                }
+            }
+            //创建InfoWindow
+            function createInfoWindow(i){
+                var json = markerArr[i];
+                var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                return iw;
+            }
+            //创建一个Icon
+            function createIcon(json){
+                var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                return icon;
+            }
+
+            initMap();//创建和初始化地图
+        });
+    </script>
+    <!-- /百度地图 -->
+    <!-- /main -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="inner">
+            <a href="javascript:void(0)" class="indicator js--indicator"></a>
+            <p class="copyright">Copyright &copy; 2015  武汉金聚友贸易有限公司  |  技术支持 — <a href="#">兰谷科技</a></p>
+            <div class="share bdsharebuttonbox" data-tag="share_1">
+                <a href="#" onclick="return false;" class="qq" data-cmd="sqq"><!--QQ好友--></a>
+                <a href="#" onclick="return false;" class="baidu" data-cmd="bdhome"><!--百度新首页--></a>
+                <a href="#" onclick="return false;" class="sina" data-cmd="tsina"><!--新浪微博--></a>
+                <a href="#" onclick="return false;" class="weibo" data-cmd="tqq"><!--腾讯微博--></a>
+                <a href="#" onclick="return false;" class="weixin" data-cmd="weixin"><!--微信--></a>
+                <a href="#" onclick="return false;" class="douban" data-cmd="douban"><!--豆瓣网--></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        window._bd_share_config = {
+            "common": {
+                "bdSnsKey": {},
+                "bdText": "",
+                "bdMini": "2",
+                "bdPic": "",
+                "bdStyle": "0",
+                "bdSize": "16"
+            },
+            "share": {},
+            "selectShare": {
+                "bdContainerClass": null,
+                "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+            }
+        };
+        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+    <!-- /footer -->
+</div>
+
+</body>
+</html>

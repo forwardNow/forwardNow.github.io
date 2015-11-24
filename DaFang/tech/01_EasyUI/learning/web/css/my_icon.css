@@ -1,0 +1,160 @@
+/*==============Menu样式==============*/
+[class^="Menu-"],[class*=" Menu-"] { display:block; width:40px; height:30px; margin:0 auto 5px; background-image:url(../Images/Background/NavBg.png); background-repeat:no-repeat; }
+.Menu-01 { background-position:0 0; }
+.Menu-02 { background-position:-40px 0; }
+.Menu-03 { background-position:-80px 0; }
+.Menu-04 { background-position:-120px 0; }
+.Menu-05 { background-position:-160px 0; }
+.Nav a:hover .Menu-01 { background-position:0 -30px; }
+.Nav a:hover .Menu-02 { background-position:-40px -30px; }
+.Nav a:hover .Menu-03 { background-position:-80px -30px; }
+.Nav a:hover .Menu-04 { background-position:-120px -30px; }
+.Nav a:hover .Menu-05 { background-position:-160px -30px; }
+
+
+
+/*==============My-icon样式==============*/
+[class^="My-icon"],[class*=" My-icon"] { display:inline-block; width:30px; height:30px; background-image:url(../images/my_icon.png); background-repeat:no-repeat; }
+/*My-iconA1 -- My-iconA10*/
+.My-iconA1 { background-position:-30px -30px; }
+.My-iconA2 { background-position:-30px -60px; }
+.My-iconA3 { background-position:-30px -90px; }
+.My-iconA4 { background-position:-30px -120px; }
+.My-iconA5 { background-position:-30px -150px; }
+.My-iconA6 { background-position:-30px -180px; }
+.My-iconA7 { background-position:-30px -210px; }
+.My-iconA8 { background-position:-30px -240px; }
+.My-iconA9 { background-position:-30px -270px; }
+.My-iconA10 { background-position:-30px -300px; }
+
+/*My-iconB1 -- My-iconB10*/
+.My-iconB1 { background-position:-60px -30px; }
+.My-iconB2 { background-position:-60px -60px; }
+.My-iconB3 { background-position:-60px -90px; }
+.My-iconB4 { background-position:-60px -120px; }
+.My-iconB5 { background-position:-60px -150px; }
+.My-iconB6 { background-position:-60px -180px; }
+a:hover .My-iconB5,.My-iconB7 { background-position:-60px -210px; }
+a:hover .My-iconB6,.My-iconB8 { background-position:-60px -240px; }
+.My-iconB9 { background-position:-60px -270px; }
+.My-iconB10 { background-position:-60px -300px; }
+
+/*My-iconC1 -- My-iconC10*/
+.My-iconC1 { background-position:-90px -30px; }
+.My-iconC2 { background-position:-90px -60px; }
+.My-iconC3 { background-position:-90px -90px; }
+.My-iconC4 { background-position:-90px -120px; }
+.My-iconC5 { background-position:-90px -150px; }
+.My-iconC6 { background-position:-90px -180px; }
+.My-iconC7 { background-position:-90px -210px; }
+.My-iconC8 { background-position:-90px -240px; }
+.My-iconC9 { background-position:-90px -270px; }
+.My-iconC10 { background-position:-90px -300px; }
+
+/*My-iconD1 -- My-iconD10*/
+.My-iconD1 { background-position:-120px -30px; }
+.My-iconD2 { background-position:-120px -60px; }
+.My-iconD3 { background-position:-120px -90px; }
+.My-iconD4 { background-position:-120px -120px; }
+.My-iconD5 { background-position:-120px -150px; }
+.My-iconD6 { background-position:-120px -180px; }
+.My-iconD7 { background-position:-120px -210px; }
+.My-iconD8 { background-position:-120px -240px; }
+.My-iconD9 { background-position:-120px -270px; }
+.My-iconD10 { background-position:-120px -300px; }
+
+/*My-iconE1 -- My-iconE10*/
+.My-iconE1 { background-position:-150px -30px; }
+.My-iconE2 { background-position:-150px -60px; }
+.My-iconE3 { background-position:-150px -90px; }
+.My-iconE4 { background-position:-150px -120px; }
+.My-iconE5 { background-position:-150px -150px; }
+.My-iconE6 { background-position:-150px -180px; }
+.My-iconE7 { background-position:-150px -210px; }
+.My-iconE8 { background-position:-150px -240px; }
+.My-iconE9 { background-position:-150px -270px; }
+.My-iconE10 { background-position:-150px -300px; }
+
+/*My-iconF1 -- My-iconF10*/
+.My-iconF1 { background-position:-180px -30px; }
+.My-iconF2 { background-position:-180px -60px; }
+.My-iconF3 { background-position:-180px -90px; }
+.My-iconF4 { background-position:-180px -120px; }
+.My-iconF5 { background-position:-180px -150px; }
+.My-iconF6 { background-position:-180px -180px; }
+.My-iconF7 { background-position:-180px -210px; }
+.My-iconF8 { background-position:-180px -240px; }
+.My-iconF9 { background-position:-180px -270px; }
+.My-iconF10 { background-position:-180px -300px; }
+
+/*My-iconG1 -- My-iconG10*/
+.My-iconG1 { background-position:-210px -30px; }
+.My-iconG2 { background-position:-210px -60px; }
+.My-iconG3 { background-position:-210px -90px; }
+.My-iconG4 { background-position:-210px -120px; }
+.My-iconG5 { background-position:-210px -150px; }
+.My-iconG6 { background-position:-210px -180px; }
+.My-iconG7 { background-position:-210px -210px; }
+.My-iconG8 { background-position:-210px -240px; }
+.My-iconG9 { background-position:-210px -270px; }
+.My-iconG10 { background-position:-210px -300px; }
+
+/*My-iconH1 -- My-iconH10*/
+.My-iconH1 { background-position:-240px -30px; }
+.My-iconH2 { background-position:-240px -60px; }
+.My-iconH3 { background-position:-240px -90px; }
+.My-iconH4 { background-position:-240px -120px; }
+.My-iconH5 { background-position:-240px -150px; }
+.My-iconH6 { background-position:-240px -180px; }
+.My-iconH7 { background-position:-240px -210px; }
+.My-iconH8 { background-position:-240px -240px; }
+.My-iconH9 { background-position:-240px -270px; }
+.My-iconH10 { background-position:-240px -300px; }
+
+/*My-iconI1 -- My-iconI10*/
+.My-iconI1 { background-position:-270px -30px; }
+.My-iconI2 { background-position:-270px -60px; }
+.My-iconI3 { background-position:-270px -90px; }
+.My-iconI4 { background-position:-270px -120px; }
+.My-iconI5 { background-position:-270px -150px; }
+.My-iconI6 { background-position:-270px -180px; }
+.My-iconI7 { background-position:-270px -210px; }
+.My-iconI8 { background-position:-270px -240px; }
+.My-iconI9 { background-position:-270px -270px; }
+.My-iconI10 { background-position:-270px -300px; }
+
+/*My-iconJ1 -- My-iconJ10*/
+.My-iconJ1 { background-position:-300px -30px; }
+.My-iconJ2 { background-position:-300px -60px; }
+.My-iconJ3 { background-position:-300px -90px; }
+.My-iconJ4 { background-position:-300px -120px; }
+.My-iconJ5 { background-position:-300px -150px; }
+.My-iconJ6 { background-position:-300px -180px; }
+.My-iconJ7 { background-position:-300px -210px; }
+.My-iconJ8 { background-position:-300px -240px; }
+.My-iconJ9 { background-position:-300px -270px; }
+.My-iconJ10 { background-position:-300px -300px; }
+
+/*My-iconK1 -- My-iconk10*/
+.My-iconK1 { background-position:-330px -30px; }
+.My-iconK2 { background-position:-330px -60px; }
+.My-iconK3 { background-position:-330px -90px; }
+.My-iconK4 { background-position:-330px -120px; }
+.My-iconK5 { background-position:-330px -150px; }
+.My-iconK6 { background-position:-330px -180px; }
+.My-iconK7 { background-position:-330px -210px; }
+.My-iconK8 { background-position:-330px -240px; }
+.My-iconK9 { background-position:-330px -270px; }
+.My-iconK10 { background-position:-330px -300px; }
+
+/*My-iconL1 -- My-iconL10*/
+.My-iconL1 { background-position:-360px -30px; }
+.My-iconL2 { background-position:-360px -60px; }
+.My-iconL3 { background-position:-360px -90px; }
+.My-iconL4 { background-position:-360px -120px; }
+.My-iconL5 { background-position:-360px -150px; }
+.My-iconL6 { background-position:-360px -180px; }
+.My-iconL7 { background-position:-360px -210px; }
+.My-iconL8 { background-position:-360px -240px; }
+.My-iconL9 { background-position:-360px -270px; }
+.My-iconL10 { background-position:-360px -300px; }
