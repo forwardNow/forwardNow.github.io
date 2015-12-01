@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5 {
     background-color: #fff;
 }
 .space-item .space-info .progress .progress-inner {
-    background: #0196af;
+    background: url(../images/proress_bg.png) repeat-x 0 0 #0196af;
     height: 100%;
     text-indent: 0.2em;
     font-size: 10px;
