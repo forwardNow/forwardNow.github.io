@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5 {
 
 }
 .goods-panel {
-    width: 800px;
+    width: 700px;
     border: solid 1px #eee;
     margin: 20px auto;
     font-family: "Microsoft Yahei";
@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5 {
 
 .goods-area .area-heading {
     font-size: 18px;
-    font-weight: bold;
     margin: 1em 0 0.5em 0.5em;
 }
 .goods-area .area-body {
@@ -64,16 +63,18 @@ h1, h2, h3, h4, h5 {
 }
 .space-list {
     overflow: hidden;
+    width: 104%;
 }
 .space-list .space-item {
     float: left;
-    width: 240px;
-    margin: 1em 1em 0 0;
+    width: 212px;
+    margin: 1em 4px 0 0;
     border: solid 1px transparent;
     cursor: pointer;
+    padding: 4px 0;
 }
 .space-list .space-item table {
-    width: 90%;
+    width: 100%;
 }
 .space-item .space-icon {
     width: 50px;
@@ -90,17 +91,25 @@ h1, h2, h3, h4, h5 {
 .space-item .space-info .progress {
     height: 16px;
     line-height: 16px;
-    border: solid 1px #E0E0E0;
-    margin: 3px 0;
-    background-color: #fff;
+    border: solid 1px #c9c9c9;
+    margin: 4px 0;
+    background: url(../images/progress.png) repeat-x 0 -23px #fafafa;
+    position: relative;
 }
 .space-item .space-info .progress .progress-inner {
-    background: url(../images/proress_bg.png) repeat-x 0 0 #0196af;
+    background: url(../images/progress.png) repeat-x 0 0 #61c9ef;
     height: 100%;
     text-indent: 0.2em;
     font-size: 10px;
     text-align: right;
     color: #e4e4e4;
+    border: solid 1px #63adca;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+.progress-inner.progress-empty {
+    border: none 0!important;
 }
 .space-item .space-info .brief {
     color: #6d6d6d;
