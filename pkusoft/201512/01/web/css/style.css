@@ -11,54 +11,73 @@ h1, h2, h3, h4, h5 {
     font-size: 100%;
 }
 
-.goods-container {
+
+/*  */
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 80%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle\9;
+    background-color: #777;
+    border-radius: 10px;
+    margin: 0 0.2em;
+}
+
+
+.property-container {
 
 }
-.goods-sidebar {
+.property-sidebar {
 
 }
-.goods-panel {
+.property-panel {
     width: 700px;
-    border: solid 1px #eee;
-    margin: 20px auto;
+    margin: 0 auto;
     font-family: "Microsoft Yahei";
     font-size: 12px;
     line-height: 1;
     color: #333;
+}
+
+.property-panel .property-center {
+    margin: 1em 0;
+    border: solid 1px #eee;
     background-color: #fcfcfc;
 }
 
-.goods-panel .goods-area {
-
-}
-
-.goods-area .area-heading {
+.property-center .center-heading {
     font-size: 18px;
     margin: 1em 0 0.5em 0.5em;
 }
-.goods-area .area-body {
+.property-center .center-body {
     padding: 10px;
 }
-.goods-category {
+.property-area {
     margin-bottom: 1em;
 }
-.goods-category .category-heading {
+.property-area .area-heading {
     font-size: 16px;
     color: #1e3287;
     background: url(../images/icon_arrow_off.png) no-repeat 0 center;
     padding-left: 12px;
     cursor: pointer;
 }
-.goods-category.active .category-heading {
+.property-area.active .area-heading {
     background: url(../images/icon_arrow_on.png) no-repeat 0 6px;   
 }
-.goods-category .space-list {
+.property-area .space-list {
     display: none;
 }
-.goods-category.active .space-list {
+.property-area.active .space-list {
     display: block;
 }
-.goods-category .category-body {
+.property-area .category-body {
 
 }
 .space-list {
@@ -114,7 +133,11 @@ h1, h2, h3, h4, h5 {
 .space-item .space-info .brief {
     color: #6d6d6d;
 }
-.space-item.active {
+.space-list .space-item.active {
     border-color: #7da2ce;
-    background: url(../images/goods_item_bg.png)  repeat-x 0 0 #dbeafc;
+    background: url(../images/property_item_bg.png)  repeat-x 0 0 #dbeafc;
+}
+.space-item:hover {
+    border-color: #b8d6fb;
+    background: url(../images/property_item_bg.png)  repeat-x 0 -140px #dbeafc;
 }
