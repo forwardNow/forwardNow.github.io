@@ -1,12 +1,14 @@
 /* reset */
-* {
+.property-panel * {
     padding: 0;
     margin: 0;
 }
-li {
+.property-panel li {
     list-style: none;
 }
-h1, h2, h3, h4, h5 {
+.property-panel h1, 
+.property-panel h2, 
+.property-panel h3{
     font-weight: normal;
     font-size: 100%;
 }

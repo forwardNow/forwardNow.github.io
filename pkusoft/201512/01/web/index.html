@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <title>财物管理系统</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- 临时数据 --><script src="js/data.js"></script><!-- /临时数据 -->
     <script src="js/external/sizzle.min.js"></script>
-    <!-- 临时数据 --> 
-        <script src="js/data.js"></script>
-    <!-- /临时数据 -->         
-    <script src="js/template.js"></script>
+    <script src="js/template.js"></script> <!-- 可与 property.js 合并 -->
     <script src="js/property.js"></script>
     <script>
         onLoad(function(){
-            $property.data.template = data;
+            $property.data.template = data; // data可通过Ajax获取数据，数据结构约定参考 js/data.js
             $property.init();
         });
     </script>
 </head>
 <body>
 
+<div class="property-panel js--container">
+</div>    
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- 
     <div class="property-container">
         
         <div class="property-sidebar"></div>    
-
         <div class="property-panel js--container">
-            <!-- 
+            
             <div class="property-center">
                 <h1 class="center-heading">青山分局涉案财物仓库1</h1>
                 <div class="center-body">
@@ -93,10 +97,10 @@
                 </div>
 
             </div>
-            -->
+            
         </div>
 
-    </div>
-    
+    </div> 
+-->
 </body>
 </html>

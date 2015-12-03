@@ -39,24 +39,31 @@
             forEach( centerList, function( index, center ) {
                 var centerTemp = template.center,
                     centerInner = "";
-                centerTemp = centerTemp.replace( new RegExp( "\\$\\{\\s*" + "center" + "\\s*\\}" ,"g"), center.center );
+                centerTemp = replace( centerTemp , "center", center.center )
 
                 // area
                 areaList = center.areaList;
                 forEach( areaList, function( index, area ) {
                     var areaTemp = template.area,
                         areaInner = "";
-                    areaTemp = areaTemp.replace( new RegExp( "\\$\\{\\s*" + "area" + "\\s*\\}" ,"g"), area.area );
+                    areaTemp = replace( areaTemp , "area", area.area ) 
+                    areaTemp = replace( areaTemp , "spaceAmount", area.spaceAmount ) 
 
                     // space
                     spaceList = area.spaceList;
                     forEach( spaceList, function( index, space ) {
                         var spaceTemp = template.space,
                             percent = Math.round( space.quantity / space.capacity * 100 );
-                        spaceTemp = spaceTemp.replace( new RegExp( "\\$\\{\\s*" + "space" + "\\s*\\}" ,"g"), space.space );                        
-                        spaceTemp = spaceTemp.replace( new RegExp( "\\$\\{\\s*" + "quantity" + "\\s*\\}" ,"g"), space.quantity );                        
-                        spaceTemp = spaceTemp.replace( new RegExp( "\\$\\{\\s*" + "capacity" + "\\s*\\}" ,"g"), space.capacity );                        
-                        spaceTemp = spaceTemp.replace( new RegExp( "\\$\\{\\s*" + "percent" + "\\s*\\}" ,"g"), percent );                        
+                        spaceTemp = replaceExt( {
+                            "target": spaceTemp,
+                            "pairs": {
+                                "space": space.space,
+                                "quantity": space.quantity,
+                                "capacity": space.capacity,
+                                "percent": percent,
+                                "icon": space.icon || "default"
+                            }                            
+                        });
 
                         if ( percent == 0 ) {
                             spaceTemp = spaceTemp.replace('class="progress-inner"', 'class="progress-inner progress-empty"');
@@ -64,17 +71,37 @@
 
                         areaInner += spaceTemp;
                     });
-                    areaTemp = areaTemp.replace( new RegExp( "\\$\\{\\s*" + "_data" + "\\s*\\}" ,"g"), areaInner );
+                    areaTemp = replace( areaTemp, "_data", areaInner );
                     centerInner += areaTemp;
                 } );
                 
-                centerTemp = centerTemp.replace( new RegExp( "\\$\\{\\s*" + "_data" + "\\s*\\}" ,"g"), centerInner );
+                centerTemp = replace( centerTemp, "_data", centerInner );
                 html += centerTemp;
 
             } );           
             
             self.container.innerHTML = html;
 
+            
+            function replace( target , placeholder, value ) {
+                return target.replace( new RegExp( "\\$\\{\\s*" + placeholder + "\\s*\\}" ,"g"), value );
+            }
+            /* options = {
+                    target: "",
+                    pairs: {
+                        placeholder1: val1,
+                        placeholder2: val2
+                    }
+               }
+            */
+            function replaceExt( options ) {
+                var target = options.target,
+                    pairs = options.pairs;
+                for ( var placeholder in pairs ) {
+                    target = replace( target, placeholder, pairs[ placeholder ] );
+                }
+                return target;
+            }
             return this;
         },
         bind: function() {
