@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>轮播</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/external/sizzle.min.js"></script>
+    <title></title>
     <script src="js/utils.js"></script>
+    <script src="js/ui.js"></script>
     <script src="js/slide.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
     <script>
         utils.onLoad( function() {
-            slide.options.showPageSize = 4;
             slide.init();
         } );
     </script>
@@ -36,39 +35,6 @@
     </div>
 
 </div>
-
-<!-- 照片详情 -->
-<div id="mask-layer" class="picture-detail mask-layer" style="display: none;">
-    <div id="pic-wrap" class="pic-wrap">
-        <img src="./images/1.jpg" alt="" id="bigPic"><span class="hook"></span>
-        <a href="javascript:void(0)" id="close-btn" class="close-btn"></a>
-    </div>
-</div>
-
-
-<script>
-
-</script>
-
-<script>
-    var closeBtn = document.getElementById("close-btn");
-    var bigPic = document.getElementById("bigPic");
-    var maskLayer = document.getElementById("mask-layer");
-    closeBtn.onclick = function () {
-        maskLayer.style.display = "none";
-    };
-    for (var i = 0; i < slide.pages.length; i++) {
-        (function(i){
-            slide.pages[i].onclick = function() {
-                var imgSrc = this.getElementsByTagName("img")[0].src
-                bigPic.src = imgSrc;
-                maskLayer.style.display = "block";           
-            }
-        }(i));
-    }    
-    top.document.body.appendChild(maskLayer);
-    dynamicLoad.css("./css/public.css", top.document);
-</script>
 
 </body>
 </html>

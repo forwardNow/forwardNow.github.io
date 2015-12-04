@@ -27,7 +27,7 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-    left: 1px;
+    /*left: 1px;*/
 }
 .slideContainer .page-list {
     overflow: hidden;
@@ -36,24 +36,27 @@
 }
 
 .slideContainer .page-list .page {
+    position: relative;
     float: left;
-    /*width: 2.5%;*/
-    /*height: 180px;*/
-    border-right: solid 1px #d9d9d9;
     display: inline-block;
     text-align: center;
-    position: relative;
+    overflow: hidden;
 }
 .slideContainer .page-list .page img {
-    width: 96%;
+    width: 98%;
     vertical-align: middle;
     cursor: pointer;
 }
+
 .slideContainer .page-list .page .hook {
-    height: 100%;
-    width: 0;
-    vertical-align: middle;
-    display: inline-block;
+    display        : inline-block;
+    width          : 0;
+    height         : 100%;
+    overflow       : hidden;
+    margin-left    : -1px;
+    font-size      : 0;
+    line-height    : 0;
+    vertical-align : middle;
 }
 .slideContainer .page-list .page:hover .view {
     display: block;
