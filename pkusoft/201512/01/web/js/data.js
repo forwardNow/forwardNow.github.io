@@ -66,7 +66,7 @@ var data =
                             "quantity": 22,
                             "capacity": 100,
                             "icon": "warning"
-                        },
+                        }
                     ]
                 },
 

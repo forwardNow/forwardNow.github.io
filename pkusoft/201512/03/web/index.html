@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/external/sizzle.min.js"></script>
+    
+</head>
+<body>
+<div class="slideContainer js--slideContainer">
+    <div class="page-list-wrap">
+        <ul class="page-list">
+            <li class="page"><img src="images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <div class="control">
+            <a class="btn btn-prev" href="javascript:void(0)">&lt;</a>
+            <a class="btn btn-next" href="javascript:void(0)">&gt;</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- 照片详情 -->
+<div id="mask-layer" class="picture-detail mask-layer" style="display: none;">
+    <div id="pic-wrap" class="pic-wrap">
+        <img src="./images/1.jpg" alt="" id="bigPic"><span class="hook"></span>
+        <a href="javascript:void(0)" id="close-btn" class="close-btn"></a>
+    </div>
+</div>
+
+<script>
+    var slide = {
+        options: {
+            showPageSize: 4
+        },
+        init: function() {
+            this.render()
+                .bind();
+
+        },
+        render: function() {
+            this.container = Sizzle(".js--slideContainer")[0];
+            this.pageList = Sizzle(".js--slideContainer .page-list")[0];
+            this.pages = Sizzle(".js--slideContainer .page-list .page");
+            this.prevBtn = Sizzle(".js--slideContainer .btn-prev")[0];
+            this.nextBtn = Sizzle(".js--slideContainer .btn-next")[0];
+            this.pageSize = Sizzle(".js--slideContainer .page-list .page").length;
+            this.curIndex = 0;
+
+            for ( var i = 0; i < this.pages.length; i++ ) {
+                var width = parseInt( this.container.clientWidth ) / this.options.showPageSize - 1 + "px",
+                    height = parseInt( this.container.clientHeight ) + "px";
+                this.pages[ i ].style.width = width;
+                this.pages[ i ].style.height = height;
+            }
+
+            return this;
+        },
+        bind: function() {
+            var self = this;
+            addEvent( this.prevBtn, "click", function() {
+                var index = self.curIndex - 1 ;
+                if ( index < 0) {
+                    return;
+                }
+                self.curIndex = index;
+                self.scroll();              
+            } );
+            addEvent( this.nextBtn, "click", function() {
+                var index = self.curIndex + 1 ;
+                if ( index > self.pageSize - self.options.showPageSize ) {
+                    return;
+                }
+                self.curIndex = index;
+                self.scroll();
+            } );
+
+            return this;
+
+            function addEvent(target, eventType, handler) {
+                if ( window.addEventListener ) {
+                    target.addEventListener( eventType, handler );
+                    return;
+                } 
+                if ( window.attachEvent ) {
+                    target.attachEvent( "on" + eventType, handler );
+                }  
+            }
+        },
+        scroll: function( index ) {
+            index = index || this.curIndex;
+            this.pageList.style.left = - (100 / this.options.showPageSize) * index + "%";
+        }
+    };
+    slide.init();
+</script>
+<script>
+    var dynamicLoading = {
+    css: function(path, document){
+        if(!path || path.length === 0){
+            throw new Error('argument "path" is required !');
+        }
+        var head = document.getElementsByTagName('head')[0];
+        var link = document.createElement('link');
+        link.href = path;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        head.appendChild(link);
+    },
+    js: function(path, document){
+        if(!path || path.length === 0){
+            throw new Error('argument "path" is required !');
+        }
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.src = path;
+        script.type = 'text/javascript';
+        head.appendChild(script);
+    }
+}
+</script>
+
+<script>
+    var closeBtn = document.getElementById("close-btn");
+    var bigPic = document.getElementById("bigPic");
+    var maskLayer = document.getElementById("mask-layer");
+    closeBtn.onclick = function () {
+        maskLayer.style.display = "none";
+    }
+    for (var i = 0; i < slide.pages.length; i++) {
+        (function(i){
+            slide.pages[i].onclick = function() {
+                var imgSrc = this.getElementsByTagName("img")[0].src
+                bigPic.src = imgSrc;
+                maskLayer.style.display = "block";           
+            }
+        }(i));
+    }    
+    top.document.body.appendChild(maskLayer);
+    dynamicLoading.css("./css/public.css", top.document);
+</script>
+
+</body>
+</html>
