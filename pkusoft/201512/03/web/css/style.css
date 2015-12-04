@@ -47,6 +47,7 @@
 .slideContainer .page-list .page img {
     width: 96%;
     vertical-align: middle;
+    cursor: pointer;
 }
 .slideContainer .page-list .page .hook {
     height: 100%;
