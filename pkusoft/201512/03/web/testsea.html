@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./modules/sea.js"></script>
+    <script>
+        // seajs 的简单配置
+        seajs.config({
+            base: "./modules/",
+            alias: {
+                "sizzle": "utils/sizzle.js"
+            }
+        });
+        // 加载入口模块
+        seajs.use("./main");
+    </script>
+</head>
+<body>
+
+    <p id="desc">1234</p>
+
+</body>
+</html>

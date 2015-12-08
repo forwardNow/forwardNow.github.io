@@ -56,7 +56,7 @@ var utils = {}; // 工具类名称空间
     /**
      * 文档载入完毕后执行函数f
      */
-    utils.onLoad = function onLoad ( f ) {
+    utils.onLoad = function onLoad( f ) {
         if ( onLoad.loaded )
             window.setTimeout( f, 0 );
         else if ( window.addEventListener )
@@ -92,7 +92,16 @@ var utils = {}; // 工具类名称空间
                     return handler.call( target, event );
                 } );
     };
-
+    utils.bind = function ( el, type, fn ) {
+        el.addEventListener ?
+            el.addEventListener( type, fn, false )
+            :
+            el.attachEvent ?
+                el.attachEvent( "on" + type, fn )
+                :
+                el[ 'on' + type ] = fn
+        ;
+    }
 
     /**
      * 方便地对元素的类名进行增删改查（针对IE10及以下版本不支持classList属性）
@@ -178,7 +187,7 @@ var utils = {}; // 工具类名称空间
 
         var parent = parent && document.getElementById( parent ) || document;
 
-        if ( ! parent ) {
+        if ( !parent ) {
             parent = document;
         } else if ( parent instanceof String ) {
             parent = document.getElementById( parent );

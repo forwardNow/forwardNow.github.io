@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script src="./require.js"></script>
+    <script>
+        require.config({
+            baseUrl: "./modules",
+            paths: {
+                "Sizzle": "utils/sizzle.min",
+                "utils": "utils/utils"
+            }
+        });
+        require( ["Sizzle"], function ( Sizzle ) {
+            console.info( Sizzle )
+        } );
+    </script>
+</head>
+<body>
+
+</body>
+</html>

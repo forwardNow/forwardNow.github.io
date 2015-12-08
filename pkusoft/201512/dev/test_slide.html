@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./require.js"></script>
+    <script>
+        require.config({
+            baseUrl: "./modules",
+            paths: {
+                "domReady": "domReady",
+                "Utils": "utils/utils",
+                "Slide": "slide/slide"
+            }
+        });
+        require(['domReady', "Slide"], function (domReady, slide) {
+            domReady(function () {
+                //This function is called once the DOM is ready.
+                //It will be safe to query the DOM and manipulate
+                //DOM nodes in this function.
+                slide.init( {
+                    showPageSize: 3,
+                    tempContainer: document.getElementById( "slide" ),
+                    imgUrls: [
+                        "modules/slide/images/1.jpg",
+                        "modules/slide/images/2.jpg",
+                        "modules/slide/images/3.jpg",
+                        "modules/slide/images/4.jpg",
+                        "modules/slide/images/1.jpg",
+                        "modules/slide/images/2.jpg",
+                        "modules/slide/images/3.jpg"
+                    ]
+                } );
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="slide" style="width: 700px; height: 180px;"></div>
+
+
+<!--
+
+<div class="slideContainer js&#45;&#45;slideContainer" style="width: 700px; height: 180px;">
+    <div class="page-list-wrap">
+        <ul class="page-list">
+            <li class="page"><img src="modules/slide/images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <div class="control">
+            <a class="btn btn-prev" href="javascript:void(0)">&lt;</a>
+            <a class="btn btn-next" href="javascript:void(0)">&gt;</a>
+        </div>
+    </div>
+
+</div>
+-->
+
+
+</body>
+</html>
