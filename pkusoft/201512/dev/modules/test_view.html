@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="view/style.css"/>
+    <script src="require/require.js"></script>
+    <script>
+        require.config( {
+            baseUrl: "../modules",
+            paths: {
+                "domReady": "require/domReady",
+                "utils": "utils/utils",
+                "maskLayer": "mask/script",
+                "view": "view/script"
+            }
+        } );
+        require( [ "domReady", "view" ], function ( domReady, view ) {
+            domReady( function () {
+                view.init({ doc: top.document }).setImgUrl("../modules/slide/images/1.jpg");
+                view.show();
+                //view.hide();
+                window.view = view;
+            } );
+        } );
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

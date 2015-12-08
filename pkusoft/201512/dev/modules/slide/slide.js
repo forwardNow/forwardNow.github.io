@@ -1,4 +1,4 @@
-define( [ "require", "Utils" ], function ( require, utils ) {
+define( [ "require", "utils" ], function ( require, utils ) {
     var slide = {
         tempContainer: null,
         cssUrl: require.toUrl( "./slide/style.css" ),
@@ -21,7 +21,12 @@ define( [ "require", "Utils" ], function ( require, utils ) {
             this.loadCss( this.cssUrl ).generateHtml().render().bind();
 
         },
+        beforeRender: null,
+        afterRender: null,
         render: function () {
+
+            this.beforeRender && this.beforeRender();
+
             var get = utils.getElementsByClassName,
                 pageWidth,
                 pageHeight;
@@ -40,6 +45,7 @@ define( [ "require", "Utils" ], function ( require, utils ) {
                 this.pages[ i ].style.height = pageHeight;
             }
 
+            this.afterRender && this.afterRender();
             return this;
         },
         bind: function () {
@@ -116,22 +122,55 @@ define( [ "require", "Utils" ], function ( require, utils ) {
                 self = this
                 ;
             utils.each( this.imgUrls, function ( index, e ) {
-                var pageHtml = replace( self.template.page, "imgUrl", e );
+                var pageHtml = self.template.replace( self.template.page, "imgUrl", e );
                 pagesHtml += pageHtml;
             } );
-            html = replace( this.template.simple, "_data", pagesHtml );
+            html = this.template.replace( this.template.simple, "_data", pagesHtml );
             utils.outerHTML( this.tempContainer, html );
 
-            function replace( target, placeholder, value ) {
-                return target.replace( new RegExp( "\\$\\{\\s*" + placeholder + "\\s*\\}", "g" ), value );
+            return this;
+        },
+        addPages: function ( imgUrls ) { // [imgUrl, imgUrl2]
+            var pagesHtml = "",
+                self = this,
+                tempDiv;
+            utils.each( imgUrls, function ( index, e ) {
+                var pageHtml = self.template.replace( self.template.page, "imgUrl", e );
+                pagesHtml += pageHtml;
+            } );
+            tempDiv = document.createElement("div");
+            tempDiv.innerHTML = pagesHtml;
+            while ( tempDiv.firstChild ) {
+                this.pageContainer.appendChild( tempDiv.firstChild );
+            }
+            this.render();
+            tempDiv = null;
+            return this;
+        },
+        removePages: function () { // 参数：index1,index2,... 或 [index1,index2,...]
+            var self = this;
+            if ( arguments.length > 1 ) {
+                utils.each( arguments, function( index ) {
+                    self.pageContainer.removeChild( self.pages[ index ] );
+                } );
+                return this.render();
+            }
+            if ( arguments.length === 1 &&  arguments[0] instanceof Array ) {
+                utils.each( arguments[0], function( index ) {
+                    self.pageContainer.removeChild( self.pages[ index ] );
+                } );
+                return this.render();
             }
 
-            return this;
+            self.pageContainer.removeChild( self.pages[ arguments[0] ] );
+            return this.render();
         }
     };
 
     slide.template = {};
-
+    slide.template.replace = function( target, placeholder, value ) {
+        return target.replace( new RegExp( "\\$\\{\\s*" + placeholder + "\\s*\\}", "g" ), value );
+    };
     slide.template.simple = '\
     <div class="slideContainer js--slideContainer">\
         <div class="page-list-wrap">\

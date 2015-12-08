@@ -109,8 +109,17 @@
 .slideContainer .tab .control .btn-next {
     right: 0;
 }
-
-
+.slide-page-add {
+    width: 150px;
+    height: 200px;
+    border: solid 1px #cdcdcd;
+    background: url(./images/icon_page_add.png) no-repeat center center;
+    float: left;
+    cursor: pointer;
+}
+.slide-page-add:hover {
+    background-color: #cdcdcd;
+}
 
 
 

@@ -142,64 +142,93 @@
         return this.e.className.match( /\b\w+\b/ ) || [];
     };
 
-    /*
-     * 可根据指定parent元素得到指定className的指定tagName的元素集合
-     * @param parent 父元素(Element或id字符串)，默认为document
-     * @tagName 子元素的标签名
-     * @className 用空格分开的className字符串
-     */
-    utils.getElementsByClassName = function ( className, parent, tagName ) {
-
-        parent = parent && document.getElementById( parent ) || document;
-
-        if ( !parent ) {
-            parent = document;
-        } else if ( parent instanceof String ) {
-            parent = document.getElementById( parent );
+    // 参考：http://www.cnblogs.com/rubylouvre/archive/2009/07/24/1529640.html
+    utils.getElementsByClassName = function ( searchClass, node, tag ) {
+        if ( document.getElementsByClassName ) {
+            //return document.getElementsByClassName( searchClass );
         }
-
-        tagName = tagName || "*";
-        className = className.split( " " );
-        var classNameLength = className.length;
-        for ( var i = 0, j = classNameLength; i < j; i++ ) {
-            //创建匹配类名的正则
-            className[ i ] = new RegExp( "(^|\\s)" + className[ i ].replace( /\-/g, "\\-" ) + "(\\s|$)" );
-        }
-        var elements = parent.getElementsByTagName( tagName );
-        var result = [];
-        for ( var i = 0, j = elements.length, k = 0; i < j; i++ ) {//缓存length属性
-            var element = elements[ i ];
-            while ( className[ k++ ].test( element.className ) ) {//优化循环
-                if ( k === classNameLength ) {
-                    result[ result.length ] = element;
-                    break;
-                }
+        node = node || document;
+        tag = tag || '*';
+        var returnElements = []
+        var els = (tag === "*" && node.all) ? node.all : node.getElementsByTagName( tag );
+        var i = els.length;
+        searchClass = searchClass.replace( /\-/g, "\\-" );
+        var pattern = new RegExp( "(^|\\s)" + searchClass + "(\\s|$)" );
+        while ( --i >= 0 ) {
+            if ( pattern.test( els[ i ].className ) ) {
+                returnElements.push( els[ i ] );
             }
-            k = 0;
         }
-        return result;
+        return returnElements;
     };
 
-    utils.outerHTML = function(elt, html) {
-        /*if (elt.outerHTML) {
-            var cssText = elt.style.cssText;
-            elt.outerHTML = html;
-            elt.style.cssText = cssText;
-            console.info(elt)
-            return;
-        }*/
-        var container = document.createElement("div");
+    utils.outerHTML = function ( elt, html ) {
+        var container = document.createElement( "div" );
         container.innerHTML = html;
-        while(container.firstChild) {
+        while ( container.firstChild ) {
             var firstChild = container.firstChild;
             if ( container.firstChild.nodeType == 1 ) {
-                firstChild.style.cssText  = elt.style.cssText;
+                firstChild.style.cssText = elt.style.cssText;
             }
-            elt.parentNode.insertBefore(container.firstChild, elt);
+            elt.parentNode.insertBefore( container.firstChild, elt );
         }
-        elt.parentNode.removeChild(elt);
+        elt.parentNode.removeChild( elt );
     };
 
+
+    /*
+     * Copy the enumerable properties of p to o, and return o.
+     * If o and p have a property by the same name, o's property is overwritten.
+     * This function does not handle getters and setters or copy attributes.
+     */
+    function extend( o, p ) {
+        for ( var prop in p ) { // For all props in p.
+            o[ prop ] = p[ prop ]; // Add the property to o.
+        }
+        return o;
+    }
+
+    utils.extend = extend;
+
+    /*
+     * Copy the enumerable properties of p to o, and return o.
+     * If o and p have a property by the same name, o's property is left alone.
+     * This function does not handle getters and setters or copy attributes.
+     */
+    function merge( o, p ) {
+        for ( var prop in p ) { // For all props in p.
+            if ( o.hasOwnProperty[ prop ] ) continue; // Except those already in o.
+            o[ prop ] = p[ prop ]; // Add the property to o.
+        }
+        return o;
+    }
+
+    utils.merge = merge;
+
+
+    function getComputedStyle( elt, cssProp, win ) {
+        win = win || window;
+        if ( win.getComputedStyle ) {
+            return win.getComputedStyle( elt, null )[ cssProp ];
+        }
+        if ( elt.currentStyle ) {
+            return elt.currentStyle[ cssProp ];
+        }
+        return "";
+    }
+    utils.getComputedStyle = getComputedStyle;
+
+    function getMaxZindex( win ) {
+        win = win || window;
+        var eltList = win.document.body.children,
+            maxZindex = 0;
+        utils.each( eltList, function( index, elt ) {
+            var zIndex = parseInt( getComputedStyle( elt, "z-index", win ) ) || 0;
+            maxZindex = maxZindex < zIndex ? zIndex : maxZindex;
+        } );
+        return maxZindex;
+    }
+    utils.getMaxZindex = getMaxZindex;
 
 // EXPOSE ---------------------------------------------------
     if ( typeof define === "function" && define.amd ) {
@@ -214,4 +243,5 @@
     }
 // EXPOSE
 
-})( window );
+})
+( window );
