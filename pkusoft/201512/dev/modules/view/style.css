@@ -22,7 +22,6 @@
     overflow: hidden;
     text-align: center;
     border-radius: 8px;
-    behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 .viewContainer .view-img {
     max-width: 100%;
@@ -35,7 +34,9 @@
     top: 8px;
     width: 36px;
     height: 36px;
-    background: url("./images/close_btn.png") no-repeat center center #cccccc;
+    background: url("./images/close_btn.png") no-repeat center center ;
     border-radius: 36px;
-    behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
+}
+.viewContainer .btn-view-close:hover {
+    background-color: #cccccc;
 }

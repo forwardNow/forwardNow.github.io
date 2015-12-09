@@ -21,12 +21,7 @@ define( [ "require", "utils" ], function ( require, utils ) {
             this.loadCss( this.cssUrl ).generateHtml().render().bind();
 
         },
-        beforeRender: null,
-        afterRender: null,
         render: function () {
-
-            this.beforeRender && this.beforeRender();
-
             var get = utils.getElementsByClassName,
                 pageWidth,
                 pageHeight;
@@ -44,8 +39,6 @@ define( [ "require", "utils" ], function ( require, utils ) {
                 this.pages[ i ].style.width = pageWidth;
                 this.pages[ i ].style.height = pageHeight;
             }
-
-            this.afterRender && this.afterRender();
             return this;
         },
         bind: function () {

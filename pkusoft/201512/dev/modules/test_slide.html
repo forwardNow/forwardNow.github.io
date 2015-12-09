@@ -12,12 +12,15 @@
                 "utils": "utils/utils",
                 "Slide": "slide/slide",
                 "maskLayer": "mask/script",
-                "view": "view/script"
+                "view": "view/script",
+                "aop": "aop/script"
             }
         } );
-        require( [ 'domReady', "Slide", "utils", "view" ], function ( domReady, slide, utils, view ) {
+        require( [ 'domReady', "Slide", "utils", "view", "aop" ], function ( domReady, slide, utils, view, aop ) {
             domReady( function () {
-                slide.afterRender = afterRender;
+
+                aop.addAfter(slide,"render", afterRender );
+
                 slide.init( {
                     showPageSize: 4,
                     tempContainer: document.getElementById( "slide" ),
@@ -30,6 +33,7 @@
                 } );
 
                 view.init( { doc: top.document } );
+
                 function afterRender() {
                     utils.each( slide.pages, function ( index, page ) {
                         var imgUrl = page.getElementsByTagName( "img" )[ 0 ].src;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="require/require.js"></script>
+    <script>
+        var slide = {
+            render: hello
+        };
+        require.config( {
+            baseUrl: "../modules",
+            paths: {
+                "aop": "aop/script"
+            }
+        } );
+        require( [ "aop" ], function ( aop ) {
+            aop.addBefore( slide, "render", before );
+            aop.addAfter( slide, "render", after );
+            slide.render();
+        } );
+
+
+        function hello() {
+            console.info( "hello" );
+        }
+        function before() {
+            console.info( "before---" );
+        }
+        function after() {
+            console.info( "after---" );
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
