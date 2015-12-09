@@ -230,6 +230,12 @@
     }
     utils.getMaxZindex = getMaxZindex;
 
+
+    function trim(str){ //删除左右两端的空格
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    }
+    utils.trim = trim;
+
 // EXPOSE ---------------------------------------------------
     if ( typeof define === "function" && define.amd ) {
         define( function () {
