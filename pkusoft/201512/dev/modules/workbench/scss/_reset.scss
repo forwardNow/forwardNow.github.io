@@ -1,0 +1,52 @@
+$color_hot : #74a0da;
+
+/*Reset*/
+html, body {
+    padding : 0;
+    margin  : 0;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, th, td {
+    padding : 0;
+    margin  : 0;
+}
+
+body, button, input, textarea {
+    font : 12px/1.5 Tahoma, Helvetica, Arial, 'Microsoft YaHei', sans-serif;
+}
+
+ol, ul {
+    list-style : none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size : 100%;
+}
+
+fieldset, img {
+    border         : 0;
+    vertical-align : top;
+}
+
+button, input, textarea {
+    vertical-align : middle;
+    outline        : 0;
+}
+
+table {
+    border-collapse : collapse;
+    border-spacing  : 0;
+}
+
+address, caption, cite, code, dfn, em, i, th, var {
+    font-weight : normal;
+    font-style  : normal;
+}
+
+a {
+    text-decoration : none;
+    cursor          : pointer;
+    color           : #7f7f7f;
+}
+
+

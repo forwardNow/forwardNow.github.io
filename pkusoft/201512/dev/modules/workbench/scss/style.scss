@@ -1,0 +1,274 @@
+$color_hot : #74a0da;
+@import "reset";
+
+html {
+    overflow : hidden;
+}
+
+body {
+    color : #666666;
+}
+
+body, html {
+    height   : 100%;
+    width    : 100%;
+    overflow : hidden;
+}
+
+.clearfix {
+    float   : none;
+    display : block;
+    height  : 0;
+    clear   : both;
+}
+
+// 垂直居中，参考：http://www.k68.org/?p=1711
+.hook {
+    display     : inline-block;
+    *display    : inline;
+    width       : 0;
+    height      : 100%;
+    overflow    : hidden;
+    margin-left : -1px;
+    font-size   : 0;
+    line-height : 0;
+}
+
+.hook, .block_render_to_inline-block_for_ie67 {
+    display        : inline-block;
+    vertical-align : middle;
+    *zoom          : 1;
+    *display       : inline;
+}
+
+.workbench-container {
+    overflow : hidden;
+    position : relative;
+    z-index  : 10;
+    width    : 100%;
+    height   : 100%;
+
+}
+
+.page-area {
+    position : relative;
+    overflow : hidden;
+    width    : 100%;
+    height   : 98%;
+    .page-list {
+        height : 100%;
+        .page {
+            width    : 100%;
+            height   : 100%;
+            position : absolute;
+            left     : -900%;
+            top      : 0;
+            @at-root .hidden {
+                visibility : hidden;
+            }
+        }
+    }
+}
+
+.sliders-nav {
+    position    : fixed;
+    z-index     : 2;
+    bottom      : 0;
+    left        : 0;
+    width       : 100%;
+    line-height : 1;
+    border-top  : solid 1px #d0d0d0;
+    background  : url(../images/slider_nav_bg.png) repeat-x 0 0;
+    text-align  : center;
+    .sliders {
+        //height: 35px;
+        line-height : 16px;
+        a {
+            position     : relative;
+            display      : inline-block;
+            line-height  : 16px;
+            width        : 120px;
+            border-left  : solid 1px #e1e1e1;
+            border-right : solid 1px #e1e1e1;;
+            padding      : 10px 0;
+            margin-left  : -1px;
+            i {
+                display          : none;
+                position         : absolute;
+                left             : 0;
+                bottom           : 0;
+                width            : 100%;
+                height           : 2px;
+                background-color : $color_hot;
+            }
+            &.selected {
+                background : url(../images/sliders_nav_item.png) repeat-x;
+                color      : $color_hot;
+                i {
+                    display : block;
+                }
+            }
+            &:hover {
+                background : url(../images/sliders_nav_item.png) repeat-x;
+            }
+        }
+    }
+
+}
+
+.sliders-control {
+    position       : fixed;
+    bottom         : 0;
+    width          : 54px;
+    height         : 100%;
+    cursor         : pointer;
+    pointer-events : auto;
+    display        : none;
+    .inner {
+        width  : 100%;
+        height : 100%;
+    }
+    &:hover {
+        background : url(../images/transparent_06.png);
+    }
+    &.active {
+        display : block;
+    }
+}
+
+.sliders-left {
+    left : 0;
+    .inner {
+        background : url(../images/slider_left.png) no-repeat center;
+    }
+    &:hover {
+        .inner {
+            background-image : url(../images/slider_left_hover.png);
+        }
+    }
+}
+
+.sliders-right {
+    right : 0;
+    .inner {
+        background : url(../images/slider_right.png) no-repeat center;
+    }
+    &:hover {
+        .inner {
+            background-image : url(../images/slider_right_hover.png);
+        }
+    }
+}
+
+.workbench {
+    height     : 100%;
+    width      : 100%;
+    text-align : center;
+    .workbench-body {
+        display    : inline-block;
+        *display   : inline;
+        width      : 90%;
+        height     : 80%;
+        border     : solid 2px #e2e2e2;
+        text-align : left;
+    }
+    .workbench-body {
+        display        : inline-block;
+        vertical-align : middle;
+        *zoom          : 1;
+        *display       : inline;
+    }
+
+    .page-links {
+        background : #f1f1f1 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAAB1JREFUCJlj/Pz5MwMDAwMDA8vv37+hLFZWVggLAIXaBeNx9bd+AAAAAElFTkSuQmCC);
+        .subsys-list {
+            height : 100%;
+        }
+        .subsys {
+            float         : left;
+            width         : 33.3%;
+            height        : 50%;
+            border-left   : 1px solid #dbdbdb;
+            border-bottom : 1px solid #dbdbdb;
+            margin-left   : -1px;
+            .subsys-heading {
+                font-size    : 14px;
+                border-left  : 3px solid $color_hot;
+                padding-left : 7px;
+                & > a {
+                    color : #727272;
+                }
+            }
+            .subsys-body {
+                *zoom: 1;
+                margin-top : 6px;
+                .link-item {
+                    *zoom: 1;
+                    position : relative;
+                    z-index: 1;
+                    padding  : 4px 6px;
+                    background-color: transparent;
+                    border-top: 1px solid transparent;
+                    border-bottom: 1px solid transparent;
+                    span {
+                        color : #016bce;
+                        i {
+                            font-style   : normal;
+                            margin-right : 10px;
+                        }
+                        a {
+                            color : #016bce;
+                        }
+
+                    }
+                    b {
+                        position: absolute;
+                        z-index: 10;
+                        top: 7px;
+                        *top: 5px;
+                        right: 14px;
+                        width: 4px;
+                        height: 14px;
+                        font: 400 12px/14px consolas;
+                    }
+                    .submenu {
+                        display: none;
+                        position: absolute;
+                        z-index: 1;
+                        left: 100%;
+                        top: -1px;
+                        width: 60%;
+                        padding-bottom: 10px;
+                        background-color: #f8f8f8;
+                        border: solid 1px #dbdbdb;
+                        border-left: none 0;
+                        .submenu-item {
+                            margin: 4px 6px 0 6px;
+                            &>a {
+                                color : #016bce;
+                                &:hover {
+                                 color: #ff5a00;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        background-color: #f8f8f8;
+                        z-index: 10;
+                        border-color: #dbdbdb;
+                        .submenu {
+                            display: block;
+                        }
+                        & span > a {
+                            color : #ff5a00;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+

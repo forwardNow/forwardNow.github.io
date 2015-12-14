@@ -2,7 +2,7 @@ define( [ "jquery", "doT", "utils" ], function ( jquery, doT,utils ) {
     var $ = jquery;
 
     var PageSlider = {
-        cssUrl: require.toUrl( "./workbench/style.css" ).replace("script/", ""),
+        cssUrl: require.toUrl( "./workbench/css/style.css" ).replace("script/", ""),
         current: -1,
         pageList: $( '.page-list' ),
         sliders: $( '.sliders-nav>.sliders' ),
