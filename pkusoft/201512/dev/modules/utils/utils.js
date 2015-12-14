@@ -47,14 +47,37 @@
      * 注册事件监听，IE中的handler内可以使用this引用target
      */
     utils.addEvent = function ( target, type, handler ) {
-        if ( target.addEventListener )
+        if ( target.addEventListener ) {
             target.addEventListener( type, handler, false );
-        else
-            target.attachEvent( "on" + type,
-                function ( event ) {
-                    return handler.call( target, event );
-                } );
+        } else {
+            var proxy = {
+                type: "click",
+                originHandler: handler,
+                wrappedHandler: function() { return handler.call( target, event ); }
+            };
+            target.__handlerProxy || ( target.__handlerProxy = [] );
+            target.__handlerProxy.push( proxy );
+            target.attachEvent( "on" + type, proxy.wrappedHandler );
+        }
     };
+    utils.removeEvent = function ( target, type, handler ) {
+        if ( target.removeEventListener ) {
+            target.removeEventListener( type, handler, false );
+        } else {
+            for ( var i = 0; i < target.__handlerProxy.length; i++ ) {
+                var proxy = target.__handlerProxy[ i ];
+                if ( proxy.type === type && proxy.originHandler == handler ) {
+                    target.detachEvent( "on" + type, proxy.wrappedHandler || handler );
+                    target.__handlerProxy.splice( i, 1 );
+                    i--;
+                    proxy.originHandler = null;
+                    proxy.wrappedHandler = null;
+                    proxy = null;
+                }
+            }
+        }
+    };
+
     /**
      * 注册事件监听
      */
@@ -66,6 +89,19 @@
                 el.attachEvent( "on" + type, fn )
                 :
                 el[ 'on' + type ] = fn
+        ;
+    };
+    /**
+     * 注销事件监听
+     */
+    utils.unbind = function ( el, type, fn ) {
+        el.removeEventListener ?
+            el.removeEventListener( type, fn, false )
+            :
+            el.detachEvent ?
+                el.detachEvent( "on" + type, fn )
+                :
+                el[ 'on' + type ] = null
         ;
     };
 

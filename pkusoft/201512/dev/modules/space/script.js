@@ -1,14 +1,13 @@
 define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
 
     var forEach = utils.each,
-        addEvent = utils.addEvent,
         classList = utils.classList;
 
 
     var property = {
         doc: document,
-        imgDir: require.toUrl( "./space/images" ).replace("script/", ""),
-        cssUrl: require.toUrl( "./space/style.css" ).replace("script/", ""),
+        imgDir: require.toUrl( "./space/images" ).replace( "script/", "" ),
+        cssUrl: require.toUrl( "./space/style.css" ).replace( "script/", "" ),
         options: {
             gap: "10px",
             spaceNum: 5,
@@ -17,6 +16,7 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
         data: {
             template: {
                 data: {},
+                text: ["已存 ", "最大存 "],
                 center: "",
                 area: "",
                 space: ""
@@ -40,58 +40,58 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
                 spaceWidth,
                 iconWidth
                 ;
-            this.container = Sizzle(".js--container")[0];
+            this.container = Sizzle( ".js--container" )[ 0 ];
             this.areaHeadings = Sizzle( ".js--area-heading" );
             this.spaces = Sizzle( ".js--space" );
-            this.spaceIcons = Sizzle(".js--container .space-icon");
-            this.spaceBriefs = Sizzle(".js--space .brief");
+            this.spaceIcons = Sizzle( ".js--container .space-icon" );
+            this.spaceBriefs = Sizzle( ".js--space .brief" );
 
-            gap = parseInt(gap) || 10;
-            spaceNum = parseInt(spaceNum) || 4;
-            contentWidth = parseInt(this.container.style.width) - 60 || 640;
+            gap = parseInt( gap ) || 10;
+            spaceNum = parseInt( spaceNum ) || 4;
+            contentWidth = parseInt( this.container.style.width ) - 60 || 640;
             spaceWidth = Math.floor( contentWidth / spaceNum - gap );
-            iconWidth = spaceWidth *  0.25;
+            iconWidth = spaceWidth * 0.25;
 
             if ( hasIcon === "false" ) {
-                utils.each(this.spaceIcons,function(index,elt){
+                utils.each( this.spaceIcons, function ( index, elt ) {
                     elt.style.display = "none";
-                });
+                } );
                 iconWidth = 0;
             }
 
-            utils.each( this.spaces, function(index, elt) {
+            utils.each( this.spaces, function ( index, elt ) {
                 elt.style.width = spaceWidth + "px";
                 elt.style.marginRight = (gap - 1) + "px";
             } );
-            utils.each( this.spaceBriefs, function(index, elt) {
+            utils.each( this.spaceBriefs, function ( index, elt ) {
                 elt.style.width = spaceWidth - iconWidth + "px";
             } );
 
             return this;
         },
-        getOptions: function() {
-            var optionString = this.container.getAttribute("data-options") + "",
+        getOptions: function () {
+            var optionString = this.container.getAttribute( "data-options" ) + "",
                 pairs,
                 prop,
                 value,
                 trim = utils.trim,
                 self = this;
 
-            pairs = optionString.split(";");
+            pairs = optionString.split( ";" );
 
-            utils.each(pairs, function(index, pair) {
-                pair = utils.trim(pair);
+            utils.each( pairs, function ( index, pair ) {
+                pair = utils.trim( pair );
                 if ( pair === "" ) {
                     return;
                 }
-                pair = pair.split(":");
-                if ( pair.length !== 2) {
+                pair = pair.split( ":" );
+                if ( pair.length !== 2 ) {
                     return;
                 }
-                prop = trim( pair[0] );
-                value = trim( pair[1] );
-                self.options[prop] = value;
-            });
+                prop = trim( pair[ 0 ] );
+                value = trim( pair[ 1 ] );
+                self.options[ prop ] = value;
+            } );
 
             return this;
         },
@@ -102,7 +102,8 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
                 html = "",
                 centerList,
                 areaList,
-                spaceList;
+                spaceList,
+                tempDiv;
 
 
             // center
@@ -111,6 +112,7 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
                 var centerTemp = template.center,
                     centerInner = "";
                 centerTemp = replace( centerTemp, "center", center.center );
+                centerTemp = replace( centerTemp, "centerId", center.centerId );
 
                 // area
                 areaList = center.areaList;
@@ -151,26 +153,35 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
 
             } );
 
-            self.container.innerHTML = html;
+            tempDiv = document.createElement( "div" );
+            tempDiv.innerHTML = html;
+            utils.each( tempDiv.childNodes, function ( index, node ) {
+                if ( node.nodeType != 1 ) {
+                    return;
+                }
+                self.container.appendChild( node );
+            } );
 
+            //self.container.innerHTML = html;
+            tempDiv = null;
 
             function replace( target, placeholder, value ) {
                 return target.replace( new RegExp( "\\$\\{\\s*" + placeholder + "\\s*\\}", "g" ), value );
             }
 
             /* options = {
-                 target: "",
-                 pairs: {
-                     placeholder1: val1,
-                     placeholder2: val2
-                 }
+             target: "",
+             pairs: {
+             placeholder1: val1,
+             placeholder2: val2
+             }
              }
              */
             function replaceExt( options ) {
                 var target = options.target,
                     pairs = options.pairs;
                 for ( var placeholder in pairs ) {
-                    if ( ! pairs.hasOwnProperty(placeholder) ) continue;
+                    if ( !pairs.hasOwnProperty( placeholder ) ) continue;
                     target = replace( target, placeholder, pairs[ placeholder ] );
                 }
                 return target;
@@ -178,37 +189,78 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
 
             return this;
         },
-        bind: function () {
-            var areaHeadings = this.areaHeadings,
-                spaces = this.spaces;
-
-            // 点击标题进行折叠
-            forEach( areaHeadings, function ( index, elt ) {
-                addEvent( elt, "click", function () {
-                    classList( this.parentNode ).toggle( "active" );
+        eventHandler: {
+            collapseClickHandler: function () {
+                return classList( this.parentNode ).toggle( "active" );
+            },
+            chooseSpaceClickHandler: function () {
+                forEach( property.spaces, function () {
+                    classList( this ).remove( "active" );
                 } );
+                classList( this ).add( "active" );
+            }
+
+        },
+        handleEvent: function ( isBind ) {
+            var __self = this
+                ,handle = isBind ? utils.addEvent : utils.removeEvent
+                ;
+            forEach( this.areaHeadings, function ( index, elt ) {
+                handle( elt, "click", __self.eventHandler.collapseClickHandler );
             } );
             // 只能选择一个条目
-            forEach( spaces, function ( index, elt ) {
-                addEvent( elt, "click", function () {
-                    forEach( spaces, function () {
-                        classList( this ).remove( "active" );
-                    } );
-                    classList( this ).add( "active" );
-                } );
+            forEach( this.spaces, function ( index, elt ) {
+                handle( elt, "click", __self.eventHandler.chooseSpaceClickHandler );
             } );
+
 
             return this;
         },
+        bind: function () {
+            return this.handleEvent( true );
+        },
+        unbind: function () {
+            return this.handleEvent( false );
+        },
         loadCss: function ( url ) {
+            if ( this.cssLoaded ) return this;
             utils.dynamicLoad.css( url || "style.css", this.doc );
+            this.cssLoaded = true;
+            return this;
+        },
+        clear: function () {
+            while ( this.container && this.container.firstChild ) {
+                this.container.removeChild( this.container.firstChild );
+            }
+            return this;
+        },
+        remove: function ( centerId ) {
+            var center = document.getElementById( centerId );
+            if ( !center ) throw "没有【centerId=" + centerId + "】的存放地点";
+            center.parentNode.removeChild( center );
+            return this;
+        },
+        setData: function ( data ) {
+            this.data.template.data = data;
+            return this;
+        },
+        appendData: function ( data ) {
+            return this.setData( data ).init().unbind().bind();
+        },
+        getBriefText: function () {
+            return this.data.template.text;
+        },
+        setBriefText: function ( text ) {
+            text = text || [ "已存 ", "最大存 " ];
+            this.data.template.text = text;
+            this.data.template.space = this.getSpaceTemp();
             return this;
         }
     };
 
-
+/*
     property.data.template.simple = '\
-    <div class="property-center">\
+    <div class="property-center" id="${centerId}">\
         <h1 class="center-heading">${center}</h1>\
         <div class="center-body">\
             <div class="property-area active js--area-heading">\
@@ -233,8 +285,9 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
         </div>\
     </div>\
     ';
+    */
     property.data.template.center = '\
-    <div class="property-center">\
+    <div class="property-center" id="${centerId}">\
         <h1 class="center-heading">${center}</h1>\
         <div class="center-body">${_data}</div>\
     </div>\
@@ -245,22 +298,23 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
         <ul class="space-list">${_data}</ul>\
     </div>\
     ';
-    property.data.template.space = '\
+    property.getSpaceTemp = function() { return '\
     <li class="space-item js--space">\
         <table>\
             <tr>\
-                <td class="space-icon"><img src="'+property.imgDir+'/icon_${icon}.png" alt=""></td>\
+                <td class="space-icon"><img src="' + property.imgDir + '/icon_${icon}.png" alt=""></td>\
                 <td class="space-info">\
                     <h3 class="name">${space}</h3>\
                     <div class="progress">\
                         <div class="progress-inner" style="width: ${percent}%;">${percent}%</div>\
                     </div>\
-                    <div class="brief">已存 ${quantity}，最大存 ${capacity}</div>\
+                    <div class="brief">'+property.getBriefText()[0]+'${quantity}，'+property.getBriefText()[1]+'${capacity}</div>\
                 </td>\
             </tr>\
         </table>\
     </li>\
-    ';
+    '; };
+    property.data.template.space = property.getSpaceTemp();
 
     return property;
 } );

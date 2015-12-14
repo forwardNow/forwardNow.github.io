@@ -9,7 +9,7 @@
     </script>
     <script>
         require.config( {
-            baseUrl: "../modules",
+            baseUrl: "../modules", // 指定modules所在目录（相对于当前文件）
             paths: {
                 "Sizzle": "utils/sizzle.min",
                 "space": "space/script",
@@ -18,12 +18,19 @@
             }
         } );
         require( [ "domReady", "space" ], function ( domReady, space ) {
-            space.data.template.data = data; // 获取数据
+            space.setData( data ); // 获取数据
             domReady( function () {
                 space.init();
-                // window.space = space;
+                window.space = space; // 暴露到全局作用域
             } );
         } );
+
+        // 删除指定 centerId 的存放地点
+        // space.remove( centerId );
+
+        // space.clear(); // 清空所有 center
+        // space.appendData( data2 ); // 追加center
+        // space.setBriefText(["已存-","最大存-"]).appendData(data2); // 重新设置 “已存 12，最大存 100”
 
     </script>
 </head>
@@ -42,6 +49,7 @@
 
         "centerList": [
             {
+                "centerId": "001",
                 "center": "青山分局涉案财物仓库1",  // 存放场所
                 "areaList": [          // 区域
                     {
@@ -82,6 +90,7 @@
             },
 
             {
+                "centerId": "002",
                 "center": "青山分局涉案财物仓库2",  // 存放场所
                 "areaList": [          // 区域
                     {
@@ -112,7 +121,7 @@
                         "area": "收纳箱C",
                         "spaceAmount": "2",
                         "spaceList": [ // 空间
-                            /*{
+                            {
                                 "space": "A001",
                                 "quantity": 0,
                                 "capacity": 100
@@ -122,8 +131,58 @@
                                 "quantity": 12,
                                 "capacity": 100,
                                 "icon": "default"
-                            }*/
+                            }
 
+                        ]
+                    }
+                ]
+            }
+        ]
+    };
+</script>
+
+<script>
+    var data2 =
+
+    {
+
+        "centerList": [
+            {
+                "centerId": "0012",
+                "center": "青山分局涉案财物仓库12",  // 存放场所
+                "areaList": [          // 区域
+                    {
+                        "area": "收纳箱A",
+                        "spaceAmount": "5",
+                        "spaceList": [ // 空间
+                            {
+                                "space": "A001",
+                                "quantity": 0,
+                                "capacity": 100
+                            },
+                            {
+                                "space": "A002",
+                                "quantity": 12,
+                                "capacity": 100,
+                                "icon": "default"
+                            },
+                            {
+                                "space": "A003",
+                                "quantity": 22,
+                                "capacity": 100,
+                                "icon": "warning"
+                            },
+                            {
+                                "space": "A004",
+                                "quantity": 32,
+                                "capacity": 100,
+                                "icon": "danger"
+                            },
+                            {
+                                "space": "A005",
+                                "quantity": 42,
+                                "capacity": 100
+                            }
                         ]
                     }
                 ]

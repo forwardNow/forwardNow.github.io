@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../require/require.min.js"></script>
+    <script>
+        require.config( {
+            baseUrl: "../../../modules",
+            paths: {
+                "workbench": "workbench/script",
+                "domReady": "require/domReady",
+                "jquery": "jquery/jquery-1.9.0.min.require",
+                "utils": "utils/utils",
+                "doT": "dot/doT.min"
+
+            }
+        } );
+        require( [ "workbench","utils" ], function ( workbench, utils ) {
+            utils.dynamicLoad.css(workbench.cssUrl);
+        } );
+    </script>
+</head>
+<body>
+
+<div class="workbench">
+    <div class="hook"></div>
+    <!-- 内容 -->
+    <div class="workbench-body" style="width: 90%; height: 80%;">
+        第 3 个工作台
+    </div>
+    <!-- /内容 -->
+</div>
+
+</body>
+</html>

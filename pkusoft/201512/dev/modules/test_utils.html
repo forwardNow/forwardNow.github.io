@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="require/require.js"></script>
+    <script>
+
+    </script>
+    <script>
+        require.config( {
+            baseUrl: "../modules", // 指定modules所在目录（相对于当前文件）
+            paths: {
+                "utils": "utils/utils",
+                "domReady": "require/domReady"
+            }
+        } );
+        require( [ "domReady", "utils" ], function ( domReady, utils ) {
+            domReady( function () {
+                window.utils = utils; // 暴露到全局作用域
+                window.anchor = document.getElementById("anchor");
+                utils.addEvent( anchor, "click", clickHandler1 );
+                utils.addEvent( anchor, "click", clickHandler2 );
+
+//                utils.removeEvent( anchor, "click", clickHandler1 );
+//                utils.removeEvent( anchor, "click", clickHandler2 );
+
+            } );
+        } );
+
+        function clickHandler1() {
+            alert("clickHandler1");
+        }
+        function clickHandler2() {
+            alert("clickHandler2");
+        }
+    </script>
+</head>
+<body>
+
+<a href="javascript:void(0)" id="anchor">click me</a>
+
+</body>
+</html>
