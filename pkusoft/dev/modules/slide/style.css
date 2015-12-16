@@ -1,0 +1,142 @@
+/* reset */
+.slideContainer * {
+    padding: 0;
+    margin: 0;
+}
+.slideContainer a {text-decoration: none; }
+.slideContainer img {vertical-align: middle; }
+.slideContainer a img {border: 0 none; }
+.slideContainer li {
+    list-style: none;
+}
+.slideContainer h1, 
+.slideContainer h2, 
+.slideContainer h3{
+    font-weight: normal;
+    font-size: 100%;
+}
+
+/* slide */
+.slideContainer {
+    /*width: 600px;*/
+    /*height: 180px;*/
+    border: solid 1px #d9d9d9;
+    position: relative;
+}
+.slideContainer .page-list-wrap {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    /*left: 1px;*/
+}
+.slideContainer .page-list {
+    overflow: hidden;
+    width: 1000%;
+    position: absolute;
+}
+
+.slideContainer .page-list .page {
+    position: relative;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+.slideContainer .page-list .page img {
+    width: 98%;
+    vertical-align: middle;
+}
+
+.slideContainer .page-list .page .hook {
+    display        : inline-block;
+    width          : 0;
+    height         : 100%;
+    overflow       : hidden;
+    margin-left    : -1px;
+    font-size      : 0;
+    line-height    : 0;
+    vertical-align : middle;
+}
+.slideContainer .page-list .page:hover .view,
+.slideContainer .page-list .page:hover .del {
+    display: block;
+}
+.slideContainer .page-list .page .view,
+.slideContainer .page-list .page .del {
+    display: none;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 32px;
+    height: 32px;
+    background: url(./images/view_normal.png) no-repeat center center;
+    cursor: pointer;
+}
+.slideContainer .page-list .page .del {
+    bottom: auto;
+    top: -1px;
+    background-image: url(./images/delete.png);
+}
+.slideContainer .page-list .page .view:hover {
+    background-image: url(./images/view_hover.png);
+}
+.slideContainer .page-list .page .del:hover {
+    background-color: #fff;
+}
+.slideContainer .tab {
+    position: relative;
+}
+.slideContainer .tab .control {
+    
+}
+.slideContainer .tab .control .btn {
+    position: absolute;
+    bottom: 80px;
+    z-index: 1;
+    display: none;
+    margin-bottom: -16px;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    background: url(./images/transparent_20.png);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: simsun;
+}
+.slideContainer:hover .tab .control .btn {
+    display: block;
+}
+.slideContainer .tab .control .btn:hover {
+    background: url(./images/transparent_40.png);
+}
+.slideContainer .tab .control .btn-prev {
+    left: 0;
+}
+.slideContainer .tab .control .btn-next {
+    right: 0;
+}
+.slide-page-add {
+    width: 150px;
+    height: 200px;
+    border: solid 1px #cdcdcd;
+    background: url(./images/icon_page_add.png) no-repeat center center;
+    float: left;
+    cursor: pointer;
+}
+.slide-page-add:hover {
+    background-color: #cdcdcd;
+}
+
+
+
+
+
+
+
+
+
+
+
+

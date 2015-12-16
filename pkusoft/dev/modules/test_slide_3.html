@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="require/require.js"></script>
+    <script>
+        require.config( {
+            baseUrl: "../modules",
+            paths: {
+                "domReady": "require/domReady",
+                "utils": "utils/utils",
+                "Slide": "slide/slide"
+            }
+        } );
+        require( [ 'domReady', "Slide" ], function ( domReady, slide ) {
+            domReady( function () {
+
+                slide.init( {
+                    showPageSize: 4,
+                    hasView: false,
+                    hasDelete: false,
+                    tempContainer: document.getElementById( "slide" ),
+                    imgUrls: [
+                         "../modules/slide/images/1.jpg",
+                         "../modules/slide/images/2.jpg",
+                        "../modules/slide/images/3.jpg",
+                        "../modules/slide/images/4.jpg"
+                    ]
+                } );
+
+                window.slide = slide;
+
+            } );
+        });
+
+
+    </script>
+    <script>
+//        slide.clear(); // clear
+//        slide.addPages([ "../modules/slide/images/1.jpg", "../modules/slide/images/2.jpg" ] );
+
+    </script>
+</head>
+<body>
+
+<!-- style里的属性都可更改 -->
+<div id="slide" style="width: 700px; height: 180px; float: left;"></div>
+
+<!-- ~~~~~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~~ -->
+<!--
+
+<div class="slideContainer js&#45;&#45;slideContainer" style="width: 700px; height: 180px;">
+    <div class="page-list-wrap">
+        <ul class="page-list">
+            <li class="page"><img src="modules/slide/images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <div class="control">
+            <a class="btn btn-prev" href="javascript:void(0)">&lt;</a>
+            <a class="btn btn-next" href="javascript:void(0)">&gt;</a>
+        </div>
+    </div>
+
+</div>
+-->
+
+
+</body>
+</html>

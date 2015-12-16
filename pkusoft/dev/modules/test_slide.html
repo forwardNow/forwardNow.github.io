@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="require/require.js"></script>
+    <script>
+        require.config( {
+            baseUrl: "../modules",
+            paths: {
+                "domReady": "require/domReady",
+                "utils": "utils/utils",
+                "Slide": "slide/slide",
+                "maskLayer": "mask/script",
+                "view": "view/script",
+                "aop": "aop/script"
+            }
+        } );
+        require( [ 'domReady', "Slide", "utils", "view", "aop" ], function ( domReady, slide, utils, view, aop ) {
+            domReady( function () {
+
+                aop.addAfter(slide,"render", afterRender );
+
+                slide.init( {
+                    showPageSize: 4,
+                    tempContainer: document.getElementById( "slide" ),
+                    imgUrls: [
+                        // "../modules/slide/images/1.jpg",
+                        // "../modules/slide/images/2.jpg",
+                        "../modules/slide/images/3.jpg",
+                        "../modules/slide/images/4.jpg"
+                    ]
+                } );
+
+                view.init( { doc: top.document } );
+
+                function afterRender() {
+                    utils.each( slide.pages, function ( index, page ) {
+                        var imgUrl = page.getElementsByTagName( "img" )[ 0 ].src;
+                        var viewBtn = utils.getElementsByClassName( "view", page, "b" )[ 0 ];
+                        var delBtn = utils.getElementsByClassName( "del", page, "b" )[ 0 ];
+
+                        viewBtn && ( viewBtn.onclick = function () {
+                            view.setImgUrl( imgUrl ).show();
+                        });
+
+                        delBtn && ( delBtn.onclick = function () {
+                            if ( ! console && console.info ) {
+                                console.info(delBtn.parentNode.getAttribute("imgId"));
+                            } else {
+                                alert( delBtn.parentNode.getAttribute("imgId") );
+                            }
+                            slide.removePages(index);
+                        });
+                    } );
+                }
+
+                window.slide = slide; // 暴露接口
+                addPage( slide );
+            } );
+        } );
+        function addPage( slide ) {
+            var addBtn = document.getElementById( "addBtn" );
+            addBtn.onclick = function () {
+                var imgUrls = [];
+                //addPage.getImg( imgUrls );
+                addPage.getImgObjs( imgUrls );
+                slide.addPages( imgUrls );
+                for ( var i = 0; i < imgUrls.length; i++ ) {
+                    slide.control.nextBtn.click();
+                }
+                // slide.page
+            };
+        }
+
+        // 获取图片路径（base64编码）
+        addPage.getImg = function ( imgUrls ) {
+            var imgUrl_1 = "../modules/slide/images/1.jpg",
+                    imgUrl_2 = "data:image/png;base64,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"
+                    ;
+            imgUrls.push( imgUrl_1 );
+            imgUrls.push( imgUrl_2 );
+        };
+
+        // 获取图片（base64编码+id）
+        addPage.getImgObjs = function ( imgUrls ) {
+            var imgUrl_1 = "../modules/slide/images/1.jpg",
+                imgId_1 = "01",
+                imgUrl_2 = "data:image/png;base64,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"
+                ;
+            var imgId_2 = "02";
+
+            imgUrls.push( {imgUrl: imgUrl_1, imgId: imgId_1} );
+            imgUrls.push( {imgUrl: imgUrl_2, imgId: imgId_2} );
+        }
+    </script>
+</head>
+<body>
+
+<!-- style里的属性都可更改 -->
+<div id="slide" style="width: 700px; height: 180px; float: left;"></div>
+<div id="addBtn" class="slide-page-add"
+     style="width:135px; height:180px; float: left; margin-left: 24px;" title="添加"></div>
+
+<!-- ~~~~~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~~ -->
+<!--
+
+<div class="slideContainer js&#45;&#45;slideContainer" style="width: 700px; height: 180px;">
+    <div class="page-list-wrap">
+        <ul class="page-list">
+            <li class="page"><img src="modules/slide/images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/1.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/2.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/3.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+            <li class="page"><img src="modules/slide/images/4.jpg" alt=""><i class="hook"></i><b class="view"></b></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <div class="control">
+            <a class="btn btn-prev" href="javascript:void(0)">&lt;</a>
+            <a class="btn btn-next" href="javascript:void(0)">&gt;</a>
+        </div>
+    </div>
+
+</div>
+-->
+<div id="testClick">111</div>
+<script>
+//    document.getElementById("testClick" ).addEventListener("click", handler, false);
+//    document.getElementById("testClick" ).addEventListener("click", handler, false);
+document.getElementById("testClick" ).attachEvent("onclick", handler);
+document.getElementById("testClick" ).attachEvent("onclick", handler);
+    function handler () {
+        alert(123);
+    }
+</script>
+
+</body>
+</html>
