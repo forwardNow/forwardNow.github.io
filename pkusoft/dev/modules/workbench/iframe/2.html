@@ -2,42 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>开始办理</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <title></title>
+    <base target="_parent" />
     <link rel="stylesheet" href="../css/style.css"/>
+    <script src="../../require/require.min.js"></script>
+    <script>
+        require.config( {
+            baseUrl: "../../../modules",
+            paths: {
+                "workbench": "workbench/script",
+                "domReady": "require/domReady",
+                "jquery": "jquery/jquery-1.9.0.min.require",
+                "utils": "utils/utils",
+                "doT": "dot/doT.min"
+
+            }
+        } );
+        require( [ "workbench","utils","jquery" ], function ( workbench, utils, jquery ) {
+            utils.dynamicLoad.css(workbench.cssUrl);
+            start.init( {
+                "$" : jquery,
+                "urlPrefix": "../images/",
+                "disabledLink": "links_04.png"
+            } );
+
+        } );
+
+    </script>
+    <script>
+        window.onload = function () {
+            setTimeout( function () {
+                document.body.style.opacity = "1";
+                document.body.style.filter = "alpha(opacity=100)";
+            }, 500 );
+        };
+        var start = {
+            $: null,
+            urlPrefix: null,
+            init: function(options) {
+                this._extends( options );
+                this.processImgs();
+                return this;
+            },
+            processImgs: function( urlPrefix, $imgs ) {
+                var $ = this.$;
+                urlPrefix = urlPrefix || this.urlPrefix;
+                $imgs = $imgs || $(".shortcut-item img");
+                $imgs.each(function(){
+                    var $this = $(this);
+                    $this.attr("src", urlPrefix + $this.attr("relsrc") );
+                });
+
+            },
+            _extends: function( obj ) {
+                for(var p in obj) {
+                    this[p] = obj[p];
+                }
+            }
+        };
+    </script>
 </head>
-<body>
+<body style="opacity: 0; filter: alpha(opacity=0)">
 
 <div class="workbench" style="background: #f5f5f5;">
     <div class="hook"></div>
     <!-- 内容 -->
-    <div class="workbench-body" style="width: 90%; height: 80%; border: none 0;">
+    <div class="workbench-body" style="width: 750px; height: auto; border: none 0;">
         <div class="shortcut-list">
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_sign-up.png" alt=""/></p><h3 class="inner">物品登记</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_search-good.png" alt=""/></p><h3 class="inner">条码查询</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_page_search.png" alt=""/></p><h3 class="inner">处理查询</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_taizhang.png" alt=""/></p><h3 class="inner">总台账</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_taizhang.png" alt=""/></p><h3 class="inner">处理台账</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_out.png" alt=""/></p><h3 class="inner">调用出库</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_page_search.png" alt=""/></p><h3 class="inner">综合查询</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_page_search.png" alt=""/></p><h3 class="inner">物品归属查询</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_taizhang.png" alt=""/></p><h3 class="inner">入库台账</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_statistics.png" alt=""/></p><h3 class="inner">统计</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_in.png" alt=""/></p><h3 class="inner">调用入库</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_alarm.png" alt=""/></p><h3 class="inner">保管延期</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_page_search.png" alt=""/></p><h3 class="inner">物品状态查询</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_taizhang.png" alt=""/></p><h3 class="inner">调用出库台账</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_analytics.png" alt=""/></p><h3 class="inner">分析</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_out.png" alt=""/></p><h3 class="inner">处理出库</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_alarm.png" alt=""/></p><h3 class="inner">调用延期</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_search.png" alt=""/></p><h3 class="inner">物品信息查询</h3> </a>
-            <a class="shortcut-item" href="#"> <p class="icon"><img src="../images/icon_taizhang.png" alt=""/></p><h3 class="inner">调用入库台账</h3> </a>
+            <a class="shortcut-item" href="#259"> <p class="icon"><img relsrc="icon_sign-up.png" alt=""/></p><h3 class="inner">物品登记</h3> </a>
+            <a class="shortcut-item" href="#284"> <p class="icon"><img relsrc="icon_search-good.png" alt=""/></p><h3 class="inner">条码查询</h3> </a>
+            <a class="shortcut-item" href="#413"> <p class="icon"><img relsrc="icon_search_3.png" alt=""/></p><h3 class="inner">处理查询</h3> </a>
+            <a class="shortcut-item" href="#337"> <p class="icon"><img relsrc="icon_taizhang_1.png" alt=""/></p><h3 class="inner">总台账</h3> </a>
+            <a class="shortcut-item" href="#387"> <p class="icon"><img relsrc="icon_taizhang.png" alt=""/></p><h3 class="inner">处理台账</h3> </a>
+            <a class="shortcut-item" href="#265"> <p class="icon"><img relsrc="icon_out.png" alt=""/></p><h3 class="inner">调用出库</h3> </a>
+            <a class="shortcut-item" href="#285"> <p class="icon"><img relsrc="icon_search_2.png" alt=""/></p><h3 class="inner">综合查询</h3> </a>
+            <a class="shortcut-item" href="#414"> <p class="icon"><img relsrc="icon_search_4.png" alt=""/></p><h3 class="inner">物品归属查询</h3> </a>
+            <a class="shortcut-item" href="#338"> <p class="icon"><img relsrc="icon_taizhang.png" alt=""/></p><h3 class="inner">入库台账</h3> </a>
+            <a class="shortcut-item" href="#340"> <p class="icon"><img relsrc="icon_statistics.png" alt=""/></p><h3 class="inner">统计</h3> </a>
+            <a class="shortcut-item" href="#268"> <p class="icon"><img relsrc="icon_in.png" alt=""/></p><h3 class="inner">调用入库</h3> </a>
+            <a class="shortcut-item" href="#271"> <p class="icon"><img relsrc="icon_alarm_2.png" alt=""/></p><h3 class="inner">保管延期</h3> </a>
+            <a class="shortcut-item" href="#415"> <p class="icon"><img relsrc="icon_status.png" alt=""/></p><h3 class="inner">物品状态查询</h3> </a>
+            <a class="shortcut-item" href="#385"> <p class="icon"><img relsrc="icon_taizhang_3.png" alt=""/></p><h3 class="inner">调用出库台账</h3> </a>
+            <a class="shortcut-item" href="#"> <p class="icon"><img relsrc="icon_analytics.png" alt=""/></p><h3 class="inner">分析</h3> </a>
+            <a class="shortcut-item" href="#381"> <p class="icon"><img relsrc="icon_process.png" alt=""/></p><h3 class="inner">处理出库</h3> </a>
+            <a class="shortcut-item" href="#410"> <p class="icon"><img relsrc="icon_alarm_3.png" alt=""/></p><h3 class="inner">调用延期</h3> </a>
+            <a class="shortcut-item" href="#416"> <p class="icon"><img relsrc="icon_search.png" alt=""/></p><h3 class="inner">物品信息查询</h3> </a>
+            <a class="shortcut-item" href="#386"> <p class="icon"><img relsrc="icon_taizhang_2.png" alt=""/></p><h3 class="inner">调用入库台账</h3> </a>
             <div class="clearfix"></div>
         </div>
     </div>
     <!-- /内容 -->
 </div>
+<script>
 
+</script>
 </body>
 </html>

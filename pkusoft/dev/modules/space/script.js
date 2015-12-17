@@ -130,6 +130,7 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
                         spaceTemp = replaceExt( {
                             "target": spaceTemp,
                             "pairs": {
+                                "spaceId": space.spaceId,
                                 "space": space.space,
                                 "quantity": space.quantity,
                                 "capacity": space.capacity,
@@ -189,6 +190,10 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
 
             return this;
         },
+        setSpaceClickCallback: function( callback ) {
+            this.eventHandler.chooseSpaceClickHandler.callback = callback;
+            return this;
+        },
         eventHandler: {
             collapseClickHandler: function () {
                 return classList( this.parentNode ).toggle( "active" );
@@ -198,6 +203,10 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
                     classList( this ).remove( "active" );
                 } );
                 classList( this ).add( "active" );
+                var callback = space.eventHandler.chooseSpaceClickHandler.callback;
+                if ( callback ) {
+                    callback.call(this, Sizzle(".name", this)[0 ].getAttribute("spaceId"));
+                }
             }
 
         },
@@ -304,7 +313,7 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
             <tr>\
                 <td class="space-icon"><img src="' + property.imgDir + '/icon_${icon}.png" alt=""></td>\
                 <td class="space-info">\
-                    <h3 class="name">${space}</h3>\
+                    <h3 class="name" spaceId="${spaceId}">${space}</h3>\
                     <div class="progress">\
                         <div class="progress-inner" style="width: ${percent}%;">${percent}%</div>\
                     </div>\
