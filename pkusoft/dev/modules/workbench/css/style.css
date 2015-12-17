@@ -262,10 +262,10 @@ body, html {
       color: #BDBDBD !important; }
   .shortcut-list .shortcut-item .icon {
     height: 40px;
-    line-height: 36px;
+    line-height: 40px;
     vertical-align: middle; }
     .shortcut-list .shortcut-item .icon img {
-      height: 32px;
+      height: 40px;
       vertical-align: middle; }
   .shortcut-list .shortcut-item .inner {
     height: 32px;
