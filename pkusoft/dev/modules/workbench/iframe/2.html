@@ -18,10 +18,10 @@
 
             }
         } );
-        require( [ "workbench","utils","jquery" ], function ( workbench, utils, jquery ) {
+        require( [ "domReady", "workbench","utils","jquery"  ], function (domReady,workbench, utils, $ ) {
             utils.dynamicLoad.css(workbench.cssUrl);
             start.init( {
-                "$" : jquery,
+                "$" : $,
                 "urlPrefix": "../images/",
                 "disabledLink": "links_04.png"
             } );
@@ -91,6 +91,7 @@
             <div class="clearfix"></div>
         </div>
     </div>
+    <div style="clear:both" id="msg"></div>
     <!-- /内容 -->
 </div>
 <script>

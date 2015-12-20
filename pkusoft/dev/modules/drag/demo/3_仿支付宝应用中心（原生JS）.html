@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+html,body,div,ul,li,h1,h2,h3,h4,h5,h6,p,span{ margin:0; padding:0;-moz-user-select:none; }
+body{ overflow:hidden;}
+ul,li{ list-style:none;}
+li{ float:left;}
+#appCenter{ width:750px; margin:30px auto;}
+#appCenter .appDiv{ margin-bottom:15px;_zoom:1;}
+#appCenter .appDiv h3{ padding:5px; border-bottom:1px #ccc dotted;}
+#appCenter ul{ overflow:hidden; margin-left:30px;}
+#appCenter ul li{ width:80px; height:80px; position:relative; margin-right:20px; margin-top:20px; border:1px #fff dashed; display:inline;}
+#appCenter ul li div{ height:68px; background-position:center center; background-repeat:no-repeat; cursor:move;}
+#appCenter ul li p{ height:12px; line-height:12px; font-size:12px; text-align:center; }
+#appCenter ul li span{ display:block; width:19px; height:19px; position:absolute; right:0; top:-2px; cursor:pointer;}
+.plus{ background:url(http://d.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=90c53662fd039245a5b5e207b7afd5ff/6a63f6246b600c33d44f1e671b4c510fd9f9a16f.jpg)}
+.minus{ background:url(http://e.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=c114b4ab960a304e5622a3f2e1f3d6bb/a1ec08fa513d269765e5c8f254fbb2fb4316d86f.jpg)}
+.js-newLi{ position:absolute; opacity:0.5; filter:alpha(opacity=50); width:80px; height:80px;}
+.js-newLi div{ height:68px; background-position:center center; background-repeat:no-repeat; cursor:move;}
+.js-newLi p{ height:12px; line-height:12px; font-size:12px; text-align:center; }
+.js-newLi span{ display:block; width:19px; height:19px; position:absolute; right:0; top:-2px; cursor:pointer;}
+#appCenter ul li.js-liBorderStyle{ border:1px #ccc dashed;}
+</style>
+
+<script type="text/javascript">
+//取元素
+var $=function(element){
+        return typeof element=="string"?document.getElementById(element):element;
+    },_$=function(oParent,nodeName){
+        return oParent.getElementsByTagName(nodeName);  
+    };
+//模拟报文数据
+var aMyApp=[{name:'应用1',src:'http://e.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=d7deff4e63d9f2d3241127e799d7fb2e/ca1349540923dd54fa6467c7d009b3de9c82480e.jpg'},
+            {name:'应用2',src:'http://d.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=bb9f24dcac4bd11300cdb43a6a94d532/b17eca8065380cd7e2296242a044ad345982816e.jpg'},
+            {name:'应用3',src:'http://b.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=33e12cacc995d143de76e72b43cbf33f/b3119313b07eca80147ef948902397dda1448322.jpg'},
+            {name:'应用4',src:'http://b.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=a8544684b151f819f5250042ea8f3bd0/9a504fc2d5628535749b128e91ef76c6a7ef6322.jpg'},
+            {name:'应用5',src:'http://g.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=a03c2f2b4bed2e73f8e98524b73ad0b6/e61190ef76c6a7ef585d6889fcfaaf51f3de6622.jpg'},
+            {name:'应用6',src:'http://e.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=62ed5270cf1b9d168ec79969c3e5c5b2/a8773912b31bb051ec327387377adab44aede00f.jpg'},
+            {name:'应用7',src:'http://c.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=a03df7977af40ad111e4c4eb671760e2/5fdf8db1cb134954a36528cb574e9258d1094a22.jpg'},
+            {name:'应用8',src:'http://b.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=9432f948902397ddd2799b0c69b9c38a/7a899e510fb30f24b3ad2cacc995d143ad4b036e.jpg'},
+            {name:'应用9',src:'http://b.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=29a8f96b30adcbef05347d0e9c945fe0/ac4bd11373f08202a3a551904afbfbedab641b6e.jpg'}];
+var aOtherApp=[{name:'应用10',src:'http://b.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=f4acc34cd439b60049ce0cbfd96b4417/0ff41bd5ad6eddc4b0b8745438dbb6fd536633c6.jpg'},
+            {name:'应用11',src:'http://a.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=e76ae440a8ec8a13101a54e8c738e0b2/574e9258d109b3de2cc424c7cdbf6c81800a4c22.jpg'},
+            {name:'应用12',src:'http://h.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=0dbdb6896c224f4a5399701b39cce16f/a9d3fd1f4134970a8f08d08094cad1c8a7865d22.jpg'},
+            {name:'应用13',src:'http://h.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=5f6487910df3d7ca08f63c7ec224cf34/a686c9177f3e67090e7b85503ac79f3df8dc5522.jpg'},
+            {name:'应用14',src:'http://h.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=da6970aae4dde711e3d240fe97d4bf26/8b82b9014a90f6037c865ce83812b31bb051ed6f.jpg'},
+            {name:'应用15',src:'http://b.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=5da0c34e2e2eb938e86d79fae559f408/eac4b74543a98226c6bbeb888b82b9014a90eb23.jpg'},
+            {name:'应用16',src:'http://g.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=ee58cfb62cf5e0feea188a096c5b4595/8ad4b31c8701a18b9991d2e09f2f07082838fe23.jpg'},
+            {name:'应用17',src:'http://g.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=831a87144610b912bbc1f5f6f3c68d3e/d6ca7bcb0a46f21ff0029efcf7246b600c33ae6f.jpg'},
+            {name:'应用18',src:'http://d.hiphotos.bdimg.com/album/s%3D680%3Bq%3D90/sign=838c8359a6efce1bee2bcbc29f6a82e3/728da9773912b31ba3320d868718367adbb4e1c7.jpg'}];
+            
+window.onload=function(){
+    new AppCenter('appCenter','myApp','otherApp',{
+        myAppList:aMyApp,
+        otherAppList:aOtherApp  
+    });
+}
+
+//应用中心类
+function AppCenter(){
+    this.init.apply(this,arguments);
+}
+//应用中心原型
+AppCenter.prototype={
+    //鼠标按下时的x坐标
+    _downX:0,
+    //鼠标按下时的y坐标
+    _downY:0,
+    //鼠标移动时的x坐标
+    _moveX:0,
+    //鼠标移动时的y坐标
+    _moveY:0,
+    //移动图标的下标
+    _index:0,
+    //初始化方法
+    // oMainDivId-主div的id sMyAppId-我的应用UL的id sOtherAppId-其他应用UL的id
+    //confing{object}-配置参数{myAppList:'我的应用数据{Array}',otherAppList:'其他应用数据{Array}'}
+    init:function(sMainDivId,sMyAppId,sOtherAppId,confing){
+        this.oMainDiv=$(sMainDivId);
+        this.oMyApp=$(sMyAppId);
+        this.oOtherApp=$(sOtherAppId);
+        this.aMyAppList=confing.myAppList;
+        this.aOtherAppList=confing.otherAppList;
+        
+        this._createAppCenter(this.oMyApp,this.aMyAppList,0);
+        this._createAppCenter(this.oOtherApp,this.aOtherAppList,1);
+        this._OnApp(this.oMainDiv);
+        this._addDeleteApp(this.oMyApp,this.oOtherApp);
+        this._addDeleteApp(this.oOtherApp,this.oMyApp);
+        this._moveApp(this.oMyApp,this.oOtherApp);
+        this._moveApp(this.oOtherApp,this.oMyApp);
+    },
+    //创建应用中心内容
+    _createAppCenter:function(oElement,aAppList,flag){
+        var sLiContent='',len=aAppList.length,sBtnClass='';
+        var aAppDivList=_$(oElement,'div'),aAppPList=_$(oElement,'p');
+        sBtnClass=flag==0?'minus':'plus';
+        for(var i=0;i<len;i++){
+            sLiContent+='<li><div></div><p></p><span class="'+sBtnClass+'"></span></li>';
+        }
+        oElement.innerHTML=sLiContent;
+        
+        for(var j=0;j<len;j++){
+            var div=aAppDivList[j],p=aAppPList[j],params=aAppList[j];
+            div.style.backgroundImage="url("+params.src+")";
+            p.innerHTML=params.name;
+        }
+    },
+    //鼠标移入移出图标
+    _OnApp:function(oMainDiv){
+        var _this=this;
+        oMainDiv.onmouseover=function(event){
+            var e=event||window.event,t=e.target||e.srcElement;
+            if(t.nodeName.toLowerCase()=='li'){
+                _this.addClass(t,'js-liBorderStyle');   
+            }else if(t.parentNode.nodeName.toLowerCase()=='li'){
+                _this.addClass(t.parentNode,'js-liBorderStyle');
+            }
+        }
+        oMainDiv.onmouseout=function(event){
+            var e=event||window.event,t=e.target||e.srcElement;
+            if(t.nodeName.toLowerCase()=='li'){
+                _this.removeClass(t,'js-liBorderStyle');    
+            }else if(t.parentNode.nodeName.toLowerCase()=='li'){
+                _this.removeClass(t.parentNode,'js-liBorderStyle');
+            }
+        }
+        
+    },
+    //拖动图标改变位置
+    _moveApp:function(oDragUl,oOtherUl){
+        var _this=this;
+        oDragUl.onmousedown=function(event){
+            var e=event||window.event,t=e.target||e.srcElement;
+            //class不是js-liBorderStyle的li元素集合
+            _this._aLiList=[];
+            if(t.nodeName.toLowerCase()=='div'&&t.className!='appDiv'){
+                var oLi=t.parentNode,oCopyLi=oLi.cloneNode(true),oNewLi1=document.createElement('li'),oSpan=_$(oCopyLi,'span')[0];
+                document.body.appendChild(oCopyLi);
+                _this.addClass(oCopyLi,'js-newLi');
+                oSpan.style.display="none";
+                oCopyLi.style.left=_this.offset(oLi).left+"px";
+                oCopyLi.style.top=_this.offset(oLi).top+"px";
+                oLi.parentNode.replaceChild(oNewLi1,oLi);
+                _this.addClass(oNewLi1,'js-liBorderStyle');
+                _this._downX=e.clientX;
+                _this._downY=e.clientY;
+                _this._offsetLeft=oCopyLi.offsetLeft;
+                _this._offsetTop=oCopyLi.offsetTop;
+                _this.aLiList=_$(_this.oMainDiv,'li');
+                //_this._aLiList集合
+                for(var i=0,len=_this.aLiList.length;i<len;i++){
+                    var li=_this.aLiList[i];
+                    if(li.className!='js-liBorderStyle'){
+                        _this._aLiList.push(li);    
+                    }
+                }
+                //鼠标按下时移动图标的位置
+                _this._getAppLocation(_this._offsetLeft+80,_this._offsetTop+80);
+                
+                document.onmousemove=function(event){
+                    var e=event||window.event,t=e.target||e.srcElement;
+                    var _X=e.clientX,_Y=e.clientY,_mLeft=_this._offsetLeft+_X-_this._downX,_mtop=_this._offsetTop+_Y-_this._downY;
+                    var oSize=_this._overBorder(_mLeft,_mtop);
+                    _mLeft=oSize.left?oSize.left:_mLeft;
+                    _mtop=oSize.top?oSize.top:_mtop;
+                    oCopyLi.style.left=_mLeft+"px";
+                    oCopyLi.style.top=_mtop+"px";
+                    var index=_this._getAppLocation(_mLeft,_mtop);
+                    _this._insertApp(_Y,_this._aLiList[index],oNewLi1,_this.oMyApp);
+                    _this._insertApp(_Y,_this._aLiList[index],oNewLi1,_this.oOtherApp);
+                }
+                document.onmouseup=function(event){
+                    var e=event||window.event,t=e.target||e.srcElement,left,top,oSpan2;
+                    left=_this.offset(oNewLi1).left;
+                    top=_this.offset(oNewLi1).top;
+                    _this.animate(oCopyLi,{left:left,top:top},100,function(){
+                        document.body.removeChild(oCopyLi);
+                        oNewLi1.innerHTML=oCopyLi.innerHTML;
+                        oSpan2=_$(oNewLi1,'span')[0];
+                        oSpan2.style.display="block";
+                        _this.removeClass(oNewLi1,'js-liBorderStyle');
+                        var oLiSpan=_$(oNewLi1,'span')[0];
+                        var oPBtn=oNewLi1.parentNode;
+                        oPBtn==_this.oMyApp?oLiSpan.className="minus":oLiSpan.className="plus";
+                    });
+                    document.onmousemove=null;
+                    document.onmouseup=null;    
+                }
+            }
+        }
+    },
+    //点击加减号增删图标 oDragUl-点击的加减号所在的UL元素 oAnotherUl-另一个UL元素
+    _addDeleteApp:function(oDragUl,oAnotherUl){
+        var aDelList=_$(oDragUl,'li'),oAddList=_$(oAnotherUl,'li'),_this=this;
+        oDragUl.onclick=function(event){
+            var e=event||window.event,t=e.target||e.srcElement; 
+            if(t.nodeName.toLowerCase()=='span'){
+                var sBtnClass=t.className,pNode=t.parentNode,oCopyLi=oCopyLi2=pNode.cloneNode(true);
+                var oNewLi1=document.createElement('li'),oNewLi2=document.createElement('li');
+                document.body.appendChild(oCopyLi);
+                _this.addClass(oCopyLi,'js-newLi');
+                oCopyLi.style.left=_this.offset(pNode).left+"px";
+                oCopyLi.style.top=_this.offset(pNode).top+"px";
+                oDragUl.replaceChild(oNewLi1,pNode);
+                oAnotherUl.appendChild(oNewLi2);
+                _this.addClass(oNewLi1,'js-liBorderStyle');
+                _this.addClass(oNewLi2,'js-liBorderStyle');
+                _this.animate(oCopyLi,{left:_this.offset(oNewLi2).left,top:_this.offset(oNewLi2).top},150,function(){
+                    oNewLi1.parentNode.removeChild(oNewLi1);
+                    document.body.removeChild(oCopyLi);
+                    oNewLi2.innerHTML=oCopyLi2.innerHTML;
+                    _this.removeClass(oNewLi2,'js-liBorderStyle');
+                    var oLiSpan=_$(oNewLi2,'span')[0];
+                    sBtnClass=='plus'?oLiSpan.className="minus":oLiSpan.className="plus";
+                });
+            }
+        }
+    },
+    //图标超出边界处理
+    _overBorder:function(left,top){
+        var x=0,y=0,oMainDiv=this.oMainDiv,oSize={};
+        if(left<oMainDiv.offsetLeft){
+            x=oMainDiv.offsetLeft;
+        }
+        if(left>oMainDiv.offsetLeft+oMainDiv.offsetWidth){
+            x=oMainDiv.offsetLeft+oMainDiv.offsetWidth;
+        }
+        if(top<oMainDiv.offsetTop){
+            y=oMainDiv.offsetTop;
+        }
+        if(top>oMainDiv.offsetTop+oMainDiv.offsetHeight){
+            y=oMainDiv.offsetTop+oMainDiv.offsetHeight;
+        }
+        oSize.left=x;
+        oSize.top=y;
+        return oSize;
+    },
+    //边框随鼠标移动改变位置
+    _insertApp:function(y,oOldElement,oNewElement,oParent){
+        var aLiList=_$(oParent,'li'),oLastLi=aLiList[aLiList.length-1];
+        if(y>this.offset(oParent).top&&y<this.offset(oParent).top+oParent.offsetHeight){
+            try{
+                oParent.insertBefore(oNewElement,oOldElement);  
+            }catch(error){
+                oParent.appendChild(oNewElement);
+            }
+            
+        }
+    },
+    //计算移动图标所处的位置
+    _getAppLocation:function(x,y){
+        var liList=this.aLiList,liW=liList[0].offsetWidth;
+        for(var i=0,len=liList.length;i<len;i++){
+            var li=liList[i],left=this.offset(li).left,top=this.offset(li).top;
+            if((x>left-liW+40&&x<left+liW-40)&&y>top-liW+20&&y<top+liW-20){
+                this._index=i;
+                break;
+            }
+        }
+        return this._index;
+    },
+    //添加class
+    addClass:function(node,_className){
+        if(!node.className){
+            node.className=_className;
+        }else{
+            node.className+=" "+_className; 
+        }
+    },
+    //删除class
+    removeClass:function(node,_className){
+        var string=node.className;
+        if(string.indexOf(_className)>0){
+            node.className=string.replace(' '+ _className,'');
+        }else if(string.indexOf(_className)==0){
+            if(string.indexOf(' ')<0){
+                node.className=string.replace(_className,'');
+            }else{
+                node.className=string.replace(_className+' ','');
+            }
+        }else{
+            return; 
+        }
+    },
+    //动画方法 obj-动画元素  params{object}-参数{left:'',top:''} time-时间 handler-回调函数
+    animate:function(obj,params,time,handler){
+        var node=$(obj),handlerFlag=true,_style=node.currentStyle?node.currentStyle:window.getComputedStyle(node,null);
+        time=document.all?time*0.6:time*0.9;
+        for(var p in params){
+            (function(n){
+            n=p;
+            if(n=="left"||n=="top"){
+                var _old=parseInt(_style[n]),_new=parseInt(params[n]),_length=0,_tt=10;
+                if(!isNaN(_old)){
+                    var count=_old,length=_old<=_new?(_new-_old):(_old-_new),speed=length/time*_tt,flag=0;
+                    var anim=setInterval(function(){
+                            node.style[n]=count+"px";
+                            count=_old<=_new?count+speed:count-speed;
+                            flag+=_tt;
+                            if(flag>=time){
+                                node.style[n]=_new+"px";
+                                clearInterval(anim);
+                            }
+                        },_tt);
+                }
+            }
+            })(p);
+        }
+        
+        var timeHandler=setTimeout(function(){
+            if(handler&&typeof handler=="function"){
+                handler();
+                clearTimeout(timeHandler);
+            }
+        },time+100);
+    },
+    //元素在文档中的位置
+    offset:function(obj){
+        var _offset={},node=$(obj);
+        var left=node.offsetLeft,top=node.offsetTop;
+        var parent = node.offsetParent; 
+        while(parent!=null){
+            left += parent.offsetLeft; 
+            top  += parent.offsetTop; 
+            parent = parent.offsetParent; 
+        }
+        
+        _offset.left=left;
+        _offset.top=top;
+        return _offset; 
+    },
+    //获取元素样式
+    getStyle:function(obj,_style){
+        var node=$(obj);
+        return node.currentStyle?node.currentStyle[_style]:window.getComputedStyle(node,null)[_style];  
+    }
+}
+
+</script>
+</head>
+
+<body onselectstart="return false">
+<div id="appCenter">
+    <div class="appDiv">
+        <h3>我的应用</h3>
+        <ul id="myApp"></ul>
+    </div>
+    
+    <div class="appDiv">
+        <h3>其他应用</h3>
+        <ul id="otherApp"></ul>
+    </div>
+</div>
+</body>
+</html>

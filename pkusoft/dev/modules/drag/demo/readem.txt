@@ -1,0 +1,12 @@
+参考：
+    [求助] 求一个鼠标可以拖拽div，在一群div中可以重新排序的效果。
+        http://bbs.blueidea.com/thread-3115147-1-1.html
+
+    [教程] 拖拽效果（1）— 简单拖拽的实现
+        http://bbs.blueidea.com/thread-3099351-1-1.html
+
+    [作品展示] 拖拽效果（2）— 仿淘宝网flash上传头像效果
+        http://bbs.blueidea.com/thread-3099402-1-1.html
+
+    [作品展示] 拖拽效果（3）—仿支付宝应用中心（原生JS）
+        http://bbs.blueidea.com/forum.php?mod=viewthread&tid=3100605

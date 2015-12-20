@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style type="text/css">
+        *{ margin:0; padding:0;}
+        #dragDiv{ width:200px; height:200px; position:absolute; top:100px; left:100px; background:#ddd;}
+    </style>
+</head>
+
+<body>
+<div id="dragDiv"></div>
+<script type="text/javascript">
+    var dragDiv=document.getElementById('dragDiv');
+    //鼠标按下动作
+    dragDiv.onmousedown=function(event){
+        var e=event||window.event,
+                t=e.target||e.srcElement,
+        //鼠标按下时的坐标x1,y1
+                x1=e.clientX,
+                y1=e.clientY,
+        //鼠标按下时的左右偏移量
+                dragLeft=this.offsetLeft,
+                dragTop=this.offsetTop;
+        document.onmousemove=function(event){
+            var e=event||window.event,
+                    t=e.target||e.srcElement,
+            //鼠标移动时的动态坐标
+                    x2=e.clientX,
+                    y2=e.clientY,
+            //鼠标移动时的坐标的变化量
+                    x=x2-x1,
+                    y=y2-y1;
+            dragDiv.style.left=(dragLeft+x)+'px';
+            dragDiv.style.top=(dragTop+y)+'px';
+        }
+        document.onmouseup=function(){
+            this.onmousemove=null;
+        }
+    }
+</script>
+</body>
+</html>

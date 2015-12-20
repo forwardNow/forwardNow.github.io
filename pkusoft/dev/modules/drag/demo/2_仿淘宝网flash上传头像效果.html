@@ -1,0 +1,209 @@
+<!doctype>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style type="text/css">
+        *{ margin:0; padding:0;}
+        body,img,div{-moz-user-select:none; }
+        #mainBox{  width:800px; height:360px; margin:50px auto;}
+        #imgBox{height:100%; position:relative; overflow:hidden;}
+        #clipImg{ position:absolute; z-index:1;}
+        #clipBox{ width:480px; height:100%; position:absolute; z-index:99; background:#fff; opacity:0.7; filter:alpha(opacity=70); top:0; left:0;}
+        #clipDiv{ width:120px; height:120px; position:absolute; left:0; top:0; background:url(http://h.hiphotos.baidu.com/album/s%3D740%3Bq%3D90/sign=8804149e9c16fdfadc6cc4ea84b4fd69/a8773912b31bb051d7f25c9d377adab44bede0b5.jpg) left top; cursor:move; }
+        #clipBtn{ width:8px; height:8px;cursor:se-resize; border:1px #000 solid; background:#F00; position:absolute; left:110px; top:110px;}
+        #showArea{ left:550px; width:120px; height:120px; position:absolute; overflow:hidden;}
+        #showImg{ position:absolute;}
+    </style>
+</head>
+
+<body>
+<div id="mainBox" onselectstart="return false">
+    <div id="imgBox">
+        <img id="clipImg" src="http://h.hiphotos.baidu.com/album/s%3D740%3Bq%3D90/sign=8804149e9c16fdfadc6cc4ea84b4fd69/a8773912b31bb051d7f25c9d377adab44bede0b5.jpg" /><div id="clipBox"><div id="clipDiv"><span></span></div><div id="clipBtn"><span></span></div></div>
+        <div id="showArea"><img id="showImg" src="http://h.hiphotos.baidu.com/album/s%3D740%3Bq%3D90/sign=8804149e9c16fdfadc6cc4ea84b4fd69/a8773912b31bb051d7f25c9d377adab44bede0b5.jpg" /></div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    var $=function(element){
+        return typeof element=="string"?document.getElementById(element):element;
+    }
+    var CLIPDIV='clipDiv',CLIPBOX='clipBox',CLIPBTN='clipBtn',SHOWIMG='showImg',SHOWAREA='showArea';
+
+    function ImgClip(){
+        this.init.apply(this,arguments);
+    }
+    ImgClip.prototype={
+        //鼠标按下时的X轴坐标
+        _downX:0,
+        //鼠标按下时的Y轴坐标
+        _downY:0,
+        //鼠标按下时裁剪区域的左偏移
+        _downLeft:0,
+        //鼠标按下时裁剪区域的右偏移
+        _downTop:0,
+        //鼠标移动时的X轴坐标
+        _moveX:0,
+        //鼠标移动时的Y轴坐标
+        _moveY:0,
+        //裁剪区域的宽度(高度)
+        _clipW:0,
+        //裁剪区域元素
+        _clipDiv:$(CLIPDIV),
+        //裁剪区域的父元素
+        _clipBox:$(CLIPBOX),
+        //右下角拖拽方块
+        _clipBtn:$(CLIPBTN),
+        //展示照片
+        _showImg:$(SHOWIMG),
+        //裁剪区域父元素高度
+        _boxW:$(CLIPBOX).offsetWidth,
+        //裁剪区域父元素宽度
+        _boxH:$(CLIPBOX).offsetHeight,
+        //右下角拖拽方块宽度
+        _btnW:$(CLIPBTN).offsetWidth,
+        //展示区域宽度
+        _showW:$(SHOWAREA).offsetWidth,
+        //原图片的宽度
+        _initImgW:480,
+        //原图片的高度
+        _initImgH:360,
+
+        //初始化方法
+        init:function(){
+            this._dragImg();
+            this._dragBtn();
+        },
+        //裁剪区域的拖拽
+        _dragImg:function(){
+            this._clipDiv.onmousedown=this.bind(this,this._imgMouseDown);
+        },
+        //右下角方块拖拽改变大小
+        _dragBtn:function(){
+            this._clipBtn.onmousedown=this.bind(this,this._btnMouseDown);
+        },
+        //右下角方块鼠标按下
+        _btnMouseDown:function(event){
+            var e=event||window.event;
+            this._downX=e.clientX;
+            this._downY=e.clientY;
+            this._downLeft=this._clipBtn.offsetLeft;
+            this._downTop=this._clipBtn.offsetTop;
+            this._clipWidth=this._clipDiv.offsetWidth;
+            this._clipHeight=this._clipDiv.offsetHeight;
+            document.onmousemove=this.bind(this,this._btnMouseMove);
+            document.onmouseup=this.bind(this,this._btnMouseUp);
+        },
+        //移动右下角方块改变裁剪区域大小
+        _btnMouseMove:function(event){
+            var e=event||window.event;
+            this._moveX=e.clientX;
+            this._moveY=e.clientY;
+            var changeX=this._moveX-this._downX,changeY=this._moveY-this._downY;
+            var changeMin=changeX>changeY?changeY:changeX;
+            var _clipLeft=this._clipDiv.offsetLeft,_clipTop=this._clipDiv.offsetTop;
+            var _left=this._downLeft+changeMin,_top=this._downTop+changeMin;
+            var _width=this._clipWidth+changeMin,_height=this._clipHeight+changeMin;
+            var changeLeft=this._boxW-this._btnW,changeW=this._boxW-_clipLeft;
+            var changeTop=this._boxH-this._btnW,changeH=this._boxH-_clipTop;
+            //拖动右下角方块改变裁剪区域大小超出边界的处理
+            if(_left<=(_clipLeft+this._btnW)){
+                _left=_clipLeft+this._btnW;
+                _width=2*this._btnW;
+            }
+            if(_top<=(_clipTop+this._btnW)){
+                _top=_clipTop+this._btnW;
+                _height=2*this._btnW;
+            }
+            if(_left>changeLeft){
+                _left=changeLeft;
+                _top=changeH+_clipTop-this._btnW;
+                _width=changeW;
+                _height=changeW;
+            }
+            if(_top>changeTop){
+                _top=changeTop;
+                _left=changeH+_clipLeft-this._btnW;
+                _width=changeH;
+                _height=changeH;
+            }
+            var rate=_width/this._showW;
+            console.log(this._downShowImgW);
+            this._clipBtn.style.left=_left+"px";
+            this._clipBtn.style.top=_top+"px";
+            this._clipDiv.style.width=_width+"px";
+            this._clipDiv.style.height=_height+"px";
+            this._showImg.style.width=(this._initImgW/rate)+"px";
+            this._showImg.style.height=(this._initImgH/rate)+"px";
+            this._showImg.style.left=(-this._clipDiv.offsetLeft/rate)+"px";
+            this._showImg.style.top=(-this._clipDiv.offsetTop/rate)+"px";
+        },
+        //右下角方块鼠标释放
+        _btnMouseUp:function(){
+            this._clipW=this._clipDiv.offsetWidth;
+            this._downLeft=this._clipBtn.offsetLeft;
+            this._downTop=this._clipBtn.offsetTop;
+            document.onmousemove=null;
+        },
+        //裁剪区域鼠标按下
+        _imgMouseDown:function(event){
+            var e=event||window.event;
+            this._downX=e.clientX;
+            this._downY=e.clientY;
+            this._downLeft=this._clipDiv.offsetLeft;
+            this._downTop=this._clipDiv.offsetTop;
+            this._clipW=this._clipDiv.offsetWidth;
+            document.onmousemove=this.bind(this,this._imgMouseMove);
+            document.onmouseup=this.bind(this,this._imgMouseUp);
+        },
+        //裁剪区域鼠标拖动
+        _imgMouseMove:function(event){
+            var e=event||window.event;
+            this._moveX=e.clientX;
+            this._moveY=e.clientY;
+            var changeX=this._moveX-this._downX,changeY=this._moveY-this._downY;
+            var _left=this._downLeft+changeX,_top=this._downTop+changeY;
+            var _clipW=this._clipDiv.offsetWidth,_clipH=this._clipDiv.offsetHeight;
+            var _btnLeft=this._downLeft+_clipW-this._btnW+changeX;
+            var _btnTop=this._downTop+_clipH-this._btnW+changeY;
+            var clipBoxW=this._boxW,clipBoxH=this._boxH;
+            //裁剪区域超出边界处理
+            if(_left<0){
+                _left=0;
+                _btnLeft=_clipW-this._btnW;
+            }
+            if(_top<0){
+                _top=0;
+                _btnTop=_clipH-this._btnW;
+            }
+            if(_left>=(clipBoxW-_clipW)){
+                _left=(clipBoxW-_clipW);
+                _btnLeft=clipBoxW-this._btnW;
+            }
+            if(_top>=(clipBoxH-_clipH)){
+                _top=(clipBoxH-_clipH);
+                _btnTop=clipBoxH-this._btnW;
+            }
+            var rate=this._clipW/this._showW;
+            this._clipDiv.style.left=_left+"px";
+            this._clipDiv.style.top=_top+"px";
+            this._clipBtn.style.left=_btnLeft+"px";
+            this._clipBtn.style.top=_btnTop+"px";
+            this._clipDiv.style.backgroundPosition=(-_left)+"px"+" "+(-_top)+"px";
+            this._showImg.style.left=(-_left/rate)+"px";
+            this._showImg.style.top=(-_top/rate)+"px";
+        },
+        //裁剪区域鼠标释放
+        _imgMouseUp:function(){
+            document.onmousemove=null;
+        },
+        bind:function(obj,handler){
+            return function(){
+                handler.apply(obj,arguments);
+            }
+        }
+    }
+    new ImgClip();
+</script>
+</body>
+</html>
