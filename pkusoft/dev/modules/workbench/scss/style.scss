@@ -118,9 +118,9 @@ body, html {
 
 .sliders-control {
     position       : fixed;
-    bottom: 36px;
-    width: 54px;
-    height: 140px;
+    bottom: 0;
+    width: 48px;
+    height: 100%;
     cursor         : pointer;
     pointer-events : auto;
     display        : none;
@@ -169,7 +169,7 @@ body, html {
         *display   : inline;
         width      : 90%;
         height     : 80%;
-        border     : solid 2px #e2e2e2;
+        border: solid 4px #F2F2F2;
         text-align : left;
     }
     .workbench-body {
@@ -273,45 +273,51 @@ body, html {
     }
 
 }
-.shortcut-list {
 
-    .shortcut-item {
+.icon-list {
+    width: 772px;
+    .icon-group {
         float: left;
-        width: 116px;
-        //height: 120px;
-        padding: 12px 12px 12px 12px;
-        background: url(../images/links_15.png) no-repeat center center;
+        //border: solid 1px #F5F5F5;
+        background: #fefefe;
+        width: 370px;
+        height: 260px;
+        margin: 0px 20px 20px 0px;
+        &.second {
+            margin-right: 0;
+        }
+        &.last {
+            margin-right: 0;
+        }
+    }
+    .icon-item {
+        float: left;
+        width: 100px;
+        height: 100px;
         text-align: center;
-        color: #F5F5F5;
-        &.not-allowed {
-            background-image: url(../images/links_04.png)!important;
-            cursor: not-allowed;
-            .inner {
-                color: #BDBDBD !important;
-            }
-        }
+        margin: 5px;
         .icon {
-            height: 40px;
-            line-height: 40px;
-            vertical-align: middle;
+            height: 80%;
             img {
-                height: 40px;
-                vertical-align: middle;
+                height: 100%;
             }
         }
-        .inner {
-            height: 32px;
-            font-size: 13px;
-            font-weight: normal;
-            line-height: 16px;
+        .title {
+
         }
         &:hover {
-            background-image : url(../images/links_06.png);
-            .inner {
-                color: #6887C0;
+            background: #61c4e2;
+            .title {
+                color: #fff;
+            }
+        }
+        &.not-allowed {
+            cursor: not-allowed;
+            background: #EDEDED;
+            .title {
+                color: #BDBDBD !important;
             }
         }
     }
 }
-
 

@@ -132,9 +132,9 @@ body, html {
 
 .sliders-control {
   position: fixed;
-  bottom: 36px;
-  width: 54px;
-  height: 140px;
+  bottom: 0;
+  width: 48px;
+  height: 100%;
   cursor: pointer;
   pointer-events: auto;
   display: none; }
@@ -169,7 +169,7 @@ body, html {
     *display: inline;
     width: 90%;
     height: 80%;
-    border: solid 2px #e2e2e2;
+    border: solid 4px #F2F2F2;
     text-align: left; }
   .workbench .workbench-body {
     display: inline-block;
@@ -248,33 +248,36 @@ body, html {
             .workbench .page-links .subsys .subsys-body .link-item:hover span > a {
               color: #ff5a00; }
 
-.shortcut-list .shortcut-item {
-  float: left;
-  width: 116px;
-  padding: 12px 12px 12px 12px;
-  background: url(../images/links_15.png) no-repeat center center;
-  text-align: center;
-  color: #F5F5F5; }
-  .shortcut-list .shortcut-item.not-allowed {
-    background-image: url(../images/links_04.png) !important;
-    cursor: not-allowed; }
-    .shortcut-list .shortcut-item.not-allowed .inner {
-      color: #BDBDBD !important; }
-  .shortcut-list .shortcut-item .icon {
-    height: 40px;
-    line-height: 40px;
-    vertical-align: middle; }
-    .shortcut-list .shortcut-item .icon img {
-      height: 40px;
-      vertical-align: middle; }
-  .shortcut-list .shortcut-item .inner {
-    height: 32px;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 16px; }
-  .shortcut-list .shortcut-item:hover {
-    background-image: url(../images/links_06.png); }
-    .shortcut-list .shortcut-item:hover .inner {
-      color: #6887C0; }
+.icon-list {
+  width: 772px; }
+  .icon-list .icon-group {
+    float: left;
+    background: #fefefe;
+    width: 370px;
+    height: 260px;
+    margin: 0px 20px 20px 0px; }
+    .icon-list .icon-group.second {
+      margin-right: 0; }
+    .icon-list .icon-group.last {
+      margin-right: 0; }
+  .icon-list .icon-item {
+    float: left;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 5px; }
+    .icon-list .icon-item .icon {
+      height: 80%; }
+      .icon-list .icon-item .icon img {
+        height: 100%; }
+    .icon-list .icon-item:hover {
+      background: #61c4e2; }
+      .icon-list .icon-item:hover .title {
+        color: #fff; }
+    .icon-list .icon-item.not-allowed {
+      cursor: not-allowed;
+      background: #EDEDED; }
+      .icon-list .icon-item.not-allowed .title {
+        color: #BDBDBD !important; }
 
 /*# sourceMappingURL=style.css.map */

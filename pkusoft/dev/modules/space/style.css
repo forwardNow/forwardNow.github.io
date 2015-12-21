@@ -49,8 +49,8 @@
 
 .property-panel .property-center {
     margin: 1em 0;
-    border: solid 1px #eee;
-    background-color: #fcfcfc;
+    /*border: solid 1px #eee;*/
+    /*background-color: #fcfcfc;*/
 }
 
 .property-center .center-heading {
@@ -61,17 +61,25 @@
     padding: 10px;
 }
 .property-area {
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
+    padding-top: 0.4em;
 }
+.property-area.active {
+    background: #fafafa;
+    margin-bottom: 1.5em;
+}
+
 .property-area .area-heading {
     font-size: 16px;
     color: #1e3287;
     background: url(./images/icon_arrow_off.png) no-repeat 0 center;
-    padding-left: 12px;
     cursor: pointer;
+    border-bottom: dotted 1px transparent;
+    padding: 6px 0 6px 12px;
 }
 .property-area.active .area-heading {
-    background: url(./images/icon_arrow_on.png) no-repeat 0 6px;
+    background: url(./images/icon_arrow_on.png) no-repeat 0 center;
+    border-bottom-color: #CFCFCF;
 }
 .property-area .space-list {
     display: none;
@@ -98,19 +106,21 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    table-layout:fixed;
 }
 .space-item .space-icon {
     /*display: none;*/
-    width: 25%;
+    width: 35%;
     height: 50px;
     text-align: center;
     vertical-align: middle;
 }
 .space-item .space-icon img {
-    width: 80%;
+    width: 90%;
+    /*height: 90%;*/
 }
 .space-item .space-info {
-    width: 80%;
+    width: 64%;
 }
 .space-item .space-info .name {
     color: #333;
@@ -129,7 +139,7 @@
     text-indent: 0.2em;
     font-size: 10px;
     text-align: right;
-    color: #e4e4e4;
+    color: #707070;
     border: solid 1px #63adca;
     position: absolute;
     left: -1px;
@@ -145,6 +155,7 @@
     display: inline-block;
     overflow: hidden;
     line-height: 1.2;
+    display: none;
 }
 .space-list .space-item.active {
     border-color: #7da2ce;

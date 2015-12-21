@@ -6,8 +6,8 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
 
     var property = {
         doc: document,
-        imgDir: require.toUrl( "./space/images" ).replace( "script/", "" ),
-        cssUrl: require.toUrl( "./space/style.css" ).replace( "script/", "" ),
+        imgDir: require.toUrl( "./space/images" ).replace( "script/", "" ).replace("?" + VERSION, ""),
+        cssUrl: require.toUrl( "./space/style.css" ).replace( "script/", "" ).replace("?" + VERSION, ""),
         options: {
             gap: "10px",
             spaceNum: 5,
@@ -48,7 +48,7 @@ define( [ "require", "Sizzle", "utils" ], function ( require, Sizzle, utils ) {
 
             gap = parseInt( gap ) || 10;
             spaceNum = parseInt( spaceNum ) || 4;
-            contentWidth = parseInt( this.container.style.width ) - 60 || 640;
+            contentWidth = parseInt( this.container.offsetWidth ) - 60 || 640;
             spaceWidth = Math.floor( contentWidth / spaceNum - gap );
             iconWidth = spaceWidth * 0.25;
 

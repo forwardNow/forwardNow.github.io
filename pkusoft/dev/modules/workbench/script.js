@@ -66,6 +66,13 @@ define( [ "jquery", "doT", "utils" ], function ( jquery, doT,utils ) {
                 right = pages.slice( index + 1 );
             pages.removeClass( 'current' );
             current.addClass( 'current' );
+
+            // 修复IE7下iframe空白的问题
+            if (index !== 0 && current.data("isLoaded") !== true) {
+                current.find("iframe")[0].contentWindow.location.reload();
+                current.data("isLoaded", true);
+            }
+
             if ( animate === false ) {
                 this.current = index;
                 left.css( {
@@ -172,7 +179,17 @@ define( [ "jquery", "doT", "utils" ], function ( jquery, doT,utils ) {
 ';
     PageSlider.template.page =
         '{{~it.array:value:index}}' +
-            '<div class="page" id="page-{{= index }}"><iframe src="{{= value }}" frameborder="0" width="100%" height="100%"></iframe></div>' +
+            '<div class="page" id="page-{{= index }}">' +
+                '<div class="workbench"><div class="hook"></div><div class="workbench-body" style="width: 90%; height: 90%;">' +
+                    '<iframe src="{{= value }}" frameborder="0" width="100%" height="100%"></iframe>' +
+                '</div></div>' +
+            '</div>' +
+        '{{~}}';
+    PageSlider.template.emptyPage =
+        '{{~it.array:value:index}}' +
+        '<div class="page" id="page-{{= index }}">' +
+            '<iframe src="{{= value }}" frameborder="0" width="100%" height="100%"></iframe>' +
+        '</div>' +
         '{{~}}';
     PageSlider.template.pageTitle =
         '{{~it.array:value:index}}' +

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="./space/style.css">
+    <script> var VERSION = "v=2012-12-21"; </script>
     <script src="require/require.js"></script>
-    <script>
-
-    </script>
     <script>
         require.config( {
             baseUrl: "../modules", // 指定modules所在目录（相对于当前文件）
+            urlArgs: VERSION,
             paths: {
                 "Sizzle": "utils/sizzle.min",
                 "space": "space/script",
@@ -38,8 +38,7 @@
 </head>
 <body>
 
-<!-- 不支持百分比宽度（暂时）-->
-<div class="property-panel js--container" style="width:700px;" data-options="spaceNum:5;hasIcon:false;gap:10px;" >
+<div class="property-panel js--container" style="width:100%;" data-options="spaceNum:6;hasIcon:true;gap:10px;" >
 </div>
 
 
@@ -49,49 +48,6 @@
     {
 
         "centerList": [
-            {
-                "centerId": "001",
-                "center": "青山分局涉案财物仓库1",  // 存放场所
-                "areaList": [          // 区域
-                    {
-                        "area": "收纳箱A",
-                        "spaceAmount": "5",
-                        "spaceList": [ // 空间
-                            {
-                                "spaceId": "ID--A001",
-                                "space": "A001",
-                                "quantity": 0,
-                                "capacity": 100
-                            },
-                            {
-                                "spaceId": "ID--A002",
-                                "space": "A002",
-                                "quantity": 12,
-                                "capacity": 100,
-                                "icon": "default"
-                            },
-                            {
-                                "spaceId": "ID--A003",
-                                "space": "A003",
-                                "quantity": 22,
-                                "capacity": 100,
-                                "icon": "warning"
-                            },
-                            {
-                                "space": "A004",
-                                "quantity": 32,
-                                "capacity": 100,
-                                "icon": "danger"
-                            },
-                            {
-                                "space": "A005",
-                                "quantity": 42,
-                                "capacity": 100
-                            }
-                        ]
-                    }
-                ]
-            },
 
             {
                 "centerId": "002",
@@ -101,6 +57,40 @@
                         "area": "收纳箱B",
                         "spaceAmount": "3",
                         "spaceList": [ // 空间
+                            {
+                                "space": "A001",
+                                "quantity": 0,
+                                "capacity": 100
+                            },
+                            {
+                                "space": "A002",
+                                "quantity": 12,
+                                "capacity": 100,
+                                "icon": "default"
+                            },
+                            {
+                                "space": "A003",
+                                "quantity": 22,
+                                "capacity": 100,
+                                "icon": "warning"
+                            },
+                            {
+                                "space": "A001",
+                                "quantity": 0,
+                                "capacity": 100
+                            },
+                            {
+                                "space": "A002",
+                                "quantity": 12,
+                                "capacity": 100,
+                                "icon": "default"
+                            },
+                            {
+                                "space": "A003",
+                                "quantity": 22,
+                                "capacity": 100,
+                                "icon": "warning"
+                            },
                             {
                                 "space": "A001",
                                 "quantity": 0,

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <style>
+.flow-container * {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+.flow-container {
+    font-size: 12px;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+.flow-container {
+    margin: 20px 100px ;
+    width: 788px;
+    
+}
+.desc-cont {
+
+}
+.flow-node {
+    width: 260px;
+    height: 240px;
+    float: left;
+}
+.flow-node-even {
+    float: right;
+}
+.desc-body {
+
+}
+.desc-heading {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.mod {
+    position: relative;
+    z-index: 1;
+}
+.mod > .left-top,
+.mod > .right-top,
+.mod > .left-bottom,
+.mod > .right-bottom {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background:url(./images/sprite_flow.png) no-repeat -999em -999em;
+}
+
+.mod > .left-top {
+    top: -1px;
+    left: -1px;
+}
+.mod > .right-top {
+    top: -1px;
+    right: -1px;  
+}
+.mod > .left-bottom {
+    bottom: -1px;
+    left: -1px;      
+}
+.mod > .right-bottom {
+    bottom: -1px;
+    right: -1px;      
+}
+.desc {
+    width: 180px;
+    height: 140px;
+    border: dotted 1px #aeaeae;
+    padding: 0 24px;
+    margin-top: 38px;
+    background-color: #fff;
+}
+.desc > .left-top {
+    background-position: 0 0;
+}
+.desc > .right-top {
+    background-position: -17px 0;
+}
+.desc > .left-bottom {
+    background-position: 0 -17px;
+}
+.desc > .right-bottom {
+    background-position: -17px -17px;
+}
+
+.line {
+    position: relative;
+    z-index: 2;
+    height: 8px;
+    background:#65a1dd;
+}
+.line > .line-anchor {
+    position: absolute;
+    width: 20px;
+    height: 76px;
+    background:url(./images/sprite_flow.png) no-repeat 0 -34px;
+    top: -8px;
+    left: 8px;
+}
+.flow-node-start .line-anchor {
+    background-position: -20px -34px;
+}
+.flow-node-start .desc {
+    background-color: #e5f7ff;
+    border-color: #05aeff;
+}
+.flow-node-start .desc > .left-top {
+    background-position: -34px 0;
+}
+.flow-node-start .desc > .right-top {
+    background-position: -51px 0;
+}
+.flow-node-start .desc > .left-bottom {
+    background-position: -34px -17px;
+}
+.flow-node-start .desc > .right-bottom {
+    background-position: -51px -17px;
+}
+.flow-node-end .line-anchor {
+    background-position: -40px -34px;
+}
+.flow-node-end .desc {
+    background-color: #fff9e5;
+    border-color: #fac106;
+}
+.flow-node-end .desc > .left-top {
+    background-position: -68px 0;
+}
+.flow-node-end .desc > .right-top {
+    background-position: -85px 0;
+}
+.flow-node-end .desc > .left-bottom {
+    background-position: -68px -17px;
+}
+.flow-node-end .desc > .right-bottom {
+    background-position: -85px -17px;
+}
+.flow-node-end .line-anchor-end {
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    background:url(./images/sprite_flow.png) no-repeat 999em 999em;
+    top: -8px;
+}
+.flow-node-end.right .line-anchor-end  {
+    background-position: 0 -116px;
+    right: -25px;
+}
+
+.flow-node-end.left  .line-anchor-end {
+    background-position: 0 -140px;
+    left: -25px;
+}
+.flow-corner {
+    border-right: solid 8px #65a1dd;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="flow-container">
+        <div class="flow-row mod">
+            <b class="left-top"></b>
+            <b class="right-top"></b>
+            <b class="left-bottom"></b>
+            <b class="right-bottom"></b>
+
+            <div class="flow-node flow-node-start">
+                <div class="line"> <b class="line-anchor"></b> </div>
+                <div class="desc mod">
+                    <b class="left-top"></b> <b class="right-top"></b> <b class="left-bottom"></b> <b class="right-bottom"></b>
+                    <div class="desc-body">
+                        <h3 class="desc-heading">物品登记1</h3>
+                        <p class="desc-cont">物品登记物品登记物品登记物品登记物品登记物品登记</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flow-node">
+                <div class="line"> <b class="line-anchor"></b> </div>
+                <div class="desc mod">
+                    <b class="left-top"></b> <b class="right-top"></b> <b class="left-bottom"></b> <b class="right-bottom"></b>
+                    <div class="desc-body">
+                        <h3 class="desc-heading">物品登记2</h3>
+                        <p class="desc-cont">物品登记物品登记物品登记物品登记物品登记物品登记</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flow-node flow-node flow-corner">
+                <div class="line"> <b class="line-anchor"></b><b class="line-anchor-end"></b> </div>
+                <div class="desc mod">
+                    <b class="left-top"></b> <b class="right-top"></b> <b class="left-bottom"></b> <b class="right-bottom"></b>
+                    <div class="desc-body">
+                        <h3 class="desc-heading">物品登记3</h3>
+                        <p class="desc-cont">物品登记物品登记物品登记物品登记物品登记物品登记</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flow-node flow-node-even flow-node-end left">
+                <div class="line"> <b class="line-anchor"></b> <b class="line-anchor-end"></b></div>
+                <div class="desc mod">
+                    <b class="left-top"></b> <b class="right-top"></b> <b class="left-bottom"></b> <b class="right-bottom"></b>
+                    <div class="desc-body">
+                        <h3 class="desc-heading">物品登记2</h3>
+                        <p class="desc-cont">物品登记物品登记物品登记物品登记物品登记物品登记</p>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
