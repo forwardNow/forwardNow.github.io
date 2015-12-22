@@ -282,12 +282,16 @@ body, html {
         background: #fefefe;
         width: 370px;
         height: 260px;
-        margin: 0px 20px 20px 0px;
-        &.second {
-            margin-right: 0;
+        border: solid 1px transparent;
+        $icon-group-color: #F2F2F2;
+        &.first {
+            border-right-color: $icon-group-color;
+            border-bottom-color: $icon-group-color;
         }
         &.last {
-            margin-right: 0;
+            border-top-color: $icon-group-color;
+            border-left-color: $icon-group-color;
+            margin: -1px 0 0 -1px;
         }
     }
     .icon-item {
@@ -303,7 +307,7 @@ body, html {
             }
         }
         .title {
-
+            //color: #62ADD5;
         }
         &:hover {
             background: #61c4e2;

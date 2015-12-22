@@ -255,11 +255,14 @@ body, html {
     background: #fefefe;
     width: 370px;
     height: 260px;
-    margin: 0px 20px 20px 0px; }
-    .icon-list .icon-group.second {
-      margin-right: 0; }
+    border: solid 1px transparent; }
+    .icon-list .icon-group.first {
+      border-right-color: #F2F2F2;
+      border-bottom-color: #F2F2F2; }
     .icon-list .icon-group.last {
-      margin-right: 0; }
+      border-top-color: #F2F2F2;
+      border-left-color: #F2F2F2;
+      margin: -1px 0 0 -1px; }
   .icon-list .icon-item {
     float: left;
     width: 100px;
