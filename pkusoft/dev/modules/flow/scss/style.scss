@@ -1,12 +1,181 @@
+.clearfix { display:block; clear: both; height: 0;}
 .flow-container {
     // reset
     * {
         margin    : 0;
         padding   : 0;
         font-size : 100%;
+        font-style: normal;
     }
     font-size   : 12px;
     font-family : "Microsoft Yahei", sans-serif;
+    color: #333;
     width       : 788px;
     margin      : 20px 100px;
+    .mod {
+        position: relative;
+        z-index: 1;
+        & > .left-top,
+        & > .right-top,
+        & > .left-bottom,
+        & > .right-bottom {
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background:url(../images/sprite_flow.png) no-repeat -999em -999em;
+        }
+        & > .left-top {
+            top: -1px;
+            left: -1px;
+        }
+        & > .right-top {
+            top: -1px;
+            right: -1px;
+        }
+        & > .left-bottom {
+            bottom: -1px;
+            left: -1px;
+        }
+        & > .right-bottom {
+            bottom: -1px;
+            right: -1px;
+        }
+    }
+
+    .flow-node {
+        width: 260px;
+        height: 240px;
+        float: left;
+        &.flow-node-start {
+            .line-anchor {
+                background-position: -20px -34px;
+            }
+            .desc {
+                background-color: #e5f7ff;
+                border-color: #05aeff;
+                & > .left-top {
+                    background-position: -34px 0;
+                }
+                & > .right-top {
+                    background-position: -51px 0;
+                }
+                & > .left-bottom {
+                    background-position: -34px -17px;
+                }
+                & > .right-bottom {
+                    background-position: -51px -17px;
+                }
+            }
+        }
+        &.flow-node-end {
+            .line-anchor {
+                background-position: -40px -34px;
+            }
+            .line-anchor-end {
+                display: block;
+                position: absolute;
+                width: 25px;
+                height: 24px;
+                background:url(../images/sprite_flow.png) no-repeat 0 -116px;
+                top: -8px;
+                right: -25px;
+            }
+            .desc {
+                background-color: #fff9e5;
+                border-color: #fac106;
+                & > .left-top {
+                    background-position: -68px 0;
+                }
+                & > .right-top {
+                    background-position: -85px 0;
+                }
+                & > .left-bottom {
+                    background-position: -68px -17px;
+                }
+                & > .right-bottom {
+                    background-position: -85px -17px;
+                }
+            }
+        }
+        &.flow-node-left {
+            float: right;
+            .line-anchor-end {
+                right: auto;
+                background-position: 0 -140px;
+                left: -25px;
+            }
+        }
+        &.flow-corner {
+            border-right: solid 8px #65a1dd;
+            &.flow-node-left {
+                border-right: none 0;
+                border-left: solid 8px #65a1dd;
+            }
+        }
+        .line {
+            position: relative;
+            z-index: 2;
+            height: 8px;
+            background:#65a1dd;
+            .line-anchor {
+                position: absolute;
+                width: 20px;
+                height: 76px;
+                background:url(../images/sprite_flow.png) no-repeat 0 -34px;
+                top: -8px;
+                left: 8px;
+            }
+            .line-anchor-end {
+
+            }
+        }
+        .desc {
+            width: 180px;
+            //height: 140px;
+            border: dotted 1px #aeaeae;
+            padding: 0 24px;
+            margin-top: 38px;
+            margin-left: 4px;
+            background-color: #fff;
+            .left-top {
+                background-position: 0 0;
+            }
+            .right-top {
+                background-position: -17px 0;
+            }
+            .left-bottom {
+                background-position: 0 -17px;
+            }
+            .right-bottom {
+                background-position: -17px -17px;
+            }
+            .desc-body {
+                .desc-heading {
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 8px 0;
+                }
+                .desc-cont {
+                    table {
+                        width: 100%;
+                        td {
+                            padding: 0 0 2px 0;
+                            &:first-child {
+                                color: #666;
+                                width: 64px;
+                                text-align: left;
+                                vertical-align: top;
+                                b {
+                                    float: right;
+                                }
+                            }
+                        }
+                        tr {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -1,11 +1,129 @@
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
 .flow-container {
   font-size: 12px;
   font-family: "Microsoft Yahei", sans-serif;
+  color: #333;
   width: 788px;
   margin: 20px 100px; }
   .flow-container * {
     margin: 0;
     padding: 0;
-    font-size: 100%; }
+    font-size: 100%;
+    font-style: normal; }
+  .flow-container .mod {
+    position: relative;
+    z-index: 1; }
+    .flow-container .mod > .left-top, .flow-container .mod > .right-top, .flow-container .mod > .left-bottom, .flow-container .mod > .right-bottom {
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      background: url(../images/sprite_flow.png) no-repeat -999em -999em; }
+    .flow-container .mod > .left-top {
+      top: -1px;
+      left: -1px; }
+    .flow-container .mod > .right-top {
+      top: -1px;
+      right: -1px; }
+    .flow-container .mod > .left-bottom {
+      bottom: -1px;
+      left: -1px; }
+    .flow-container .mod > .right-bottom {
+      bottom: -1px;
+      right: -1px; }
+  .flow-container .flow-node {
+    width: 260px;
+    height: 240px;
+    float: left; }
+    .flow-container .flow-node.flow-node-start .line-anchor {
+      background-position: -20px -34px; }
+    .flow-container .flow-node.flow-node-start .desc {
+      background-color: #e5f7ff;
+      border-color: #05aeff; }
+      .flow-container .flow-node.flow-node-start .desc > .left-top {
+        background-position: -34px 0; }
+      .flow-container .flow-node.flow-node-start .desc > .right-top {
+        background-position: -51px 0; }
+      .flow-container .flow-node.flow-node-start .desc > .left-bottom {
+        background-position: -34px -17px; }
+      .flow-container .flow-node.flow-node-start .desc > .right-bottom {
+        background-position: -51px -17px; }
+    .flow-container .flow-node.flow-node-end .line-anchor {
+      background-position: -40px -34px; }
+    .flow-container .flow-node.flow-node-end .line-anchor-end {
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 24px;
+      background: url(../images/sprite_flow.png) no-repeat 0 -116px;
+      top: -8px;
+      right: -25px; }
+    .flow-container .flow-node.flow-node-end .desc {
+      background-color: #fff9e5;
+      border-color: #fac106; }
+      .flow-container .flow-node.flow-node-end .desc > .left-top {
+        background-position: -68px 0; }
+      .flow-container .flow-node.flow-node-end .desc > .right-top {
+        background-position: -85px 0; }
+      .flow-container .flow-node.flow-node-end .desc > .left-bottom {
+        background-position: -68px -17px; }
+      .flow-container .flow-node.flow-node-end .desc > .right-bottom {
+        background-position: -85px -17px; }
+    .flow-container .flow-node.flow-node-left {
+      float: right; }
+      .flow-container .flow-node.flow-node-left .line-anchor-end {
+        right: auto;
+        background-position: 0 -140px;
+        left: -25px; }
+    .flow-container .flow-node.flow-corner {
+      border-right: solid 8px #65a1dd; }
+      .flow-container .flow-node.flow-corner.flow-node-left {
+        border-right: none 0;
+        border-left: solid 8px #65a1dd; }
+    .flow-container .flow-node .line {
+      position: relative;
+      z-index: 2;
+      height: 8px;
+      background: #65a1dd; }
+      .flow-container .flow-node .line .line-anchor {
+        position: absolute;
+        width: 20px;
+        height: 76px;
+        background: url(../images/sprite_flow.png) no-repeat 0 -34px;
+        top: -8px;
+        left: 8px; }
+    .flow-container .flow-node .desc {
+      width: 180px;
+      border: dotted 1px #aeaeae;
+      padding: 0 24px;
+      margin-top: 38px;
+      margin-left: 4px;
+      background-color: #fff; }
+      .flow-container .flow-node .desc .left-top {
+        background-position: 0 0; }
+      .flow-container .flow-node .desc .right-top {
+        background-position: -17px 0; }
+      .flow-container .flow-node .desc .left-bottom {
+        background-position: 0 -17px; }
+      .flow-container .flow-node .desc .right-bottom {
+        background-position: -17px -17px; }
+      .flow-container .flow-node .desc .desc-body .desc-heading {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 0; }
+      .flow-container .flow-node .desc .desc-body .desc-cont table {
+        width: 100%; }
+        .flow-container .flow-node .desc .desc-body .desc-cont table td {
+          padding: 0 0 2px 0; }
+          .flow-container .flow-node .desc .desc-body .desc-cont table td:first-child {
+            color: #666;
+            width: 64px;
+            text-align: left;
+            vertical-align: top; }
+            .flow-container .flow-node .desc .desc-body .desc-cont table td:first-child b {
+              float: right; }
 
 /*# sourceMappingURL=style.css.map */
