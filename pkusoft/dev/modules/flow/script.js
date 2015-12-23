@@ -6,7 +6,7 @@ define(["dot/doT.min", "utils/utils"], function(dot, utils) {
         headings: [/*{colId:"",colName:""}*/],
         init: function (options) {
             utils.extend( this, options );
-            this.getHeadings();
+            this.headings.length || this.getHeadings();
             this.render();
             return this;
         },
@@ -33,26 +33,28 @@ define(["dot/doT.min", "utils/utils"], function(dot, utils) {
             return headings;
         },
         getData: function() {
-            var headings,
-                _data,
-                nodes,
-                title,
-                titleId,
-                data
+            var headings, // 标题
+                _data, // 用于dot格式的数据
+                nodes, // 所有节点数据
+                nodeTitle, // 节点的标题名
+                nodeTitleId,
+                nodeContData, // 原始数据
+                nodeContColId,
+                nodeContColName
                 ;
-            data = {};
             headings = this.headings;
-            titleId = headings[0 ].colId;
+            nodeTitleId = headings[0 ].colId;
             nodes = [];
             _data = {"array":nodes };
             utils.each(this.data, function(index, d){
-                title = d[titleId];
+                nodeContData = {};
+                nodeTitle = d[nodeTitleId];
                 for ( var i = 1, len = headings.length; i < len; i++ ) {
-                    var colId = headings[i ].colId;
-                    var colName = headings[i ].colName;
-                    data[colName] = d[colId] || "";
+                    nodeContColId = headings[i ].colId;
+                    nodeContColName = headings[i ].colName;
+                    nodeContData[nodeContColName] = d[nodeContColId] || "";
                 }
-                nodes.push({title:title,data: data});
+                nodes.push({title:nodeTitle,data: nodeContData});
             });
             return _data;
         },

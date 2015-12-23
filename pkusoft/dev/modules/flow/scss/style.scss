@@ -12,6 +12,9 @@
     color: #333;
     width       : 788px;
     margin      : 20px 100px;
+    &>span {
+        visibility: hidden;
+    }
     .mod {
         position: relative;
         z-index: 1;

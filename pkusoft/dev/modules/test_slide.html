@@ -16,7 +16,9 @@
                 "aop": "aop/script"
             }
         } );
-        require( [ 'domReady', "Slide", "utils", "view", "aop" ], function ( domReady, slide, utils, view, aop ) {
+        require( [ 'domReady', "Slide", "utils", "view", "aop", "clone/clone" ], function ( domReady, slide, utils, view, aop, clone ) {
+            window.slide2 = clone(slide);
+
             domReady( function () {
 
                 aop.addAfter(slide,"render", afterRender );
@@ -27,6 +29,17 @@
                     imgUrls: [
                         // "../modules/slide/images/1.jpg",
                         // "../modules/slide/images/2.jpg",
+                        "../modules/slide/images/3.jpg",
+                        "../modules/slide/images/4.jpg"
+                    ]
+                } );
+
+                slide2.init( {
+                    showPageSize: 3,
+                    tempContainer: document.getElementById( "slide2" ),
+                    imgUrls: [
+                         "../modules/slide/images/1.jpg",
+                         "../modules/slide/images/2.jpg",
                         "../modules/slide/images/3.jpg",
                         "../modules/slide/images/4.jpg"
                     ]
@@ -102,6 +115,8 @@
 <div id="addBtn" class="slide-page-add"
      style="width:135px; height:180px; float: left; margin-left: 24px;" title="添加"></div>
 
+<div id="slide2" style="width: 700px; height: 180px; float: left;"></div>
+
 <!-- ~~~~~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~~ -->
 <!--
 
@@ -127,16 +142,6 @@
 
 </div>
 -->
-<div id="testClick">111</div>
-<script>
-//    document.getElementById("testClick" ).addEventListener("click", handler, false);
-//    document.getElementById("testClick" ).addEventListener("click", handler, false);
-document.getElementById("testClick" ).attachEvent("onclick", handler);
-document.getElementById("testClick" ).attachEvent("onclick", handler);
-    function handler () {
-        alert(123);
-    }
-</script>
 
 </body>
 </html>

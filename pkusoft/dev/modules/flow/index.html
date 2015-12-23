@@ -37,39 +37,17 @@
                         }
                     }
                 ]};
-                var data = [{
-                    "objid": "00000000003421",
-                    "caid": "Q4201000000367",
-                    "proid": "420105000069",
-                    "caseId": "A4201026102014040065",
-                    "operateTypeId": 1,
-                    "operateTypeName": "登记",
-                    "excepId": null,
-                    "excepName": null,
-                    "memo": null,
-                    "storageItems": 100,
-                    "operateDate": 1450228693000,
-                    "centerId": "000000000039",
-                    "tstationid": "420105630000",
-                    "sstationid": "420105000000",
-                    "cstationid": "420100000000",
-                    "opunitid": "420105630000",
-                    "opuserid": "249",
-                    "opusername": "派出所保管员",
-                    "optime": 1450228693000,
-                    "name": null,
-                    "status": null,
-                    "otype": null,
-                    "ownerName": null,
-                    "sitesSpace": null,
-                    "amount": null,
-                    "caseName": null
-                }];
+                var data = [
+                    { "proid": "420105000061", "operateTypeName": "登记1", "memo": 1, "operateDate": 1450228693001, "opusername": "派出所保管员1" },
+                    { "proid": "420105000062", "operateTypeName": "登记2", "memo": 2, "operateDate": 1450228693002, "opusername": "派出所保管员2" },
+                    { "proid": "420105000063", "operateTypeName": "登记3", "memo": 3, "operateDate": 1450228693003, "opusername": "派出所保管员3" },
+                    { "proid": "420105000064", "operateTypeName": "登记4", "memo": 4, "operateDate": 1450228693004, "opusername": "派出所保管员4" }
+                ];
                 flow.init({
                     container: document.getElementById("flow-container"),
                     data: data
                 });
-
+                //console.info(flow.getData());
             } );
         } );
 
