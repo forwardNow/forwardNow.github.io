@@ -257,11 +257,11 @@ body, html {
     height: 260px;
     border: solid 1px transparent; }
     .icon-list .icon-group.first {
-      border-right-color: #F2F2F2;
-      border-bottom-color: #F2F2F2; }
+      border-right-color: #C3C3C3;
+      border-bottom-color: #C3C3C3; }
     .icon-list .icon-group.last {
-      border-top-color: #F2F2F2;
-      border-left-color: #F2F2F2;
+      border-top-color: #C3C3C3;
+      border-left-color: #C3C3C3;
       margin: -1px 0 0 -1px; }
   .icon-list .icon-item {
     float: left;

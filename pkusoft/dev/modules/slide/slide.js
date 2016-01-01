@@ -26,16 +26,22 @@ define( [ "require", "utils" ], function ( require, utils ) {
         render: function () {
             var get = utils.getElementsByClassName,
                 pageWidth,
-                pageHeight;
+                pageHeight,
+                container = this.container,
+                containerWidth,
+                containerHeight;
 
-            this.container = get( "js--slideContainer" )[ 0 ];
+            //this.container = get( "js--slideContainer" )[ 0 ];
             this.pageContainer = get( "page-list", this.container )[ 0 ];
             this.pages = get( "page", this.pageContainer );
             this.control.prevBtn = get( "btn-prev", this.container )[ 0 ];
             this.control.nextBtn = get( "btn-next", this.container )[ 0 ];
 
-            pageWidth = parseInt( this.container.clientWidth ) / this.showPageSize + "px";
-            pageHeight = parseInt( this.container.clientHeight ) + "px";
+            containerWidth = container.clientWidth || container.style.width;
+            containerHeight = container.clientHeight || container.style.height;
+
+            pageWidth = parseInt( containerWidth ) / this.showPageSize + "px";
+            pageHeight = parseInt( containerHeight ) + "px";
 
             for ( var i = 0; i < this.pages.length; i++ ) {
                 this.pages[ i ].style.width = pageWidth;
@@ -134,7 +140,7 @@ define( [ "require", "utils" ], function ( require, utils ) {
                 pagesHtml += pageHtml;
             } );
             html = this.template.replace( this.template.simple, "_data", pagesHtml );
-            utils.outerHTML( this.tempContainer, html );
+            this.container = utils.outerHTML( this.tempContainer, html );
 
             return this;
         },

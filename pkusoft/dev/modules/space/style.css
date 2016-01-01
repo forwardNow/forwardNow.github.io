@@ -65,7 +65,8 @@
     padding-top: 0.4em;
 }
 .property-area.active {
-    background: #fafafa;
+    /*background: #fafafa;*/
+    background-color: #EFEFEF;
     margin-bottom: 1.5em;
 }
 

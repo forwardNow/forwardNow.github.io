@@ -21,7 +21,13 @@
 
             domReady( function () {
 
-                aop.addAfter(slide,"render", afterRender );
+                //aop.addAfter(slide,"render", afterRender );
+                aop.addAfter(slide,"render", function(){
+                    afterRender.call(null, slide);
+                } );
+                aop.addAfter(slide2,"render", function(){
+                    afterRender.call(null, slide2);
+                } );
 
                 slide.init( {
                     showPageSize: 4,
@@ -38,8 +44,8 @@
                     showPageSize: 3,
                     tempContainer: document.getElementById( "slide2" ),
                     imgUrls: [
-                         "../modules/slide/images/1.jpg",
-                         "../modules/slide/images/2.jpg",
+                         // "../modules/slide/images/1.jpg",
+                         // "../modules/slide/images/2.jpg",
                         "../modules/slide/images/3.jpg",
                         "../modules/slide/images/4.jpg"
                     ]
@@ -47,7 +53,7 @@
 
                 view.init( { doc: top.document } );
 
-                function afterRender() {
+                function afterRender(slide) {
                     utils.each( slide.pages, function ( index, page ) {
                         var imgUrl = page.getElementsByTagName( "img" )[ 0 ].src;
                         var viewBtn = utils.getElementsByClassName( "view", page, "b" )[ 0 ];
@@ -69,6 +75,7 @@
                 }
 
                 window.slide = slide; // 暴露接口
+                window.utils = utils;
                 addPage( slide );
             } );
         } );
@@ -115,7 +122,7 @@
 <div id="addBtn" class="slide-page-add"
      style="width:135px; height:180px; float: left; margin-left: 24px;" title="添加"></div>
 
-<div id="slide2" style="width: 700px; height: 180px; float: left;"></div>
+<div id="slide2" style="width: 700px; height: 180px; float: left; display: none;"></div>
 
 <!-- ~~~~~~~~~~~~~~~~~~分割线~~~~~~~~~~~~~~~~~~ -->
 <!--

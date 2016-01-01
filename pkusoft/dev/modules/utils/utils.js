@@ -199,17 +199,20 @@
         return returnElements;
     };
 
+    // 返回最后一个节点
     utils.outerHTML = function ( elt, html ) {
-        var container = document.createElement( "div" );
+        var container = document.createElement( "div" ),realContainer;
         container.innerHTML = html;
         while ( container.firstChild ) {
             var firstChild = container.firstChild;
             if ( container.firstChild.nodeType == 1 ) {
                 firstChild.style.cssText = elt.style.cssText;
+                realContainer = firstChild;
             }
-            elt.parentNode.insertBefore( container.firstChild, elt );
+            elt.parentNode.insertBefore( firstChild, elt );
         }
         elt.parentNode.removeChild( elt );
+        return realContainer;
     };
 
 
